@@ -42,7 +42,7 @@ with tab1:
 with tab2:
     st.header("회원가입")
     new_name = st.text_input("이름 (회원가입)")
-    new_school = st.selectbox("학교", config.SCHOOLS)
+    new_school = st.selectbox("소속", config.SCHOOLS)
     new_password = st.text_input(
         "비밀번호 (4자리 숫자)", type="password", max_chars=4, key="new_password"
     )

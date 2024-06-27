@@ -74,9 +74,9 @@ if check_password():
         selected_date = st.selectbox("📅 날짜 선택", ["전체"] + dates)
 
     with col2:
-        # 학교 선택
+        # 소속 선택
         schools = list(set(user["school"] for user in users.values()))
-        selected_school = st.selectbox("🏫 학교 선택", ["전체"] + schools)
+        selected_school = st.selectbox("🏫 소속 선택", ["전체"] + schools)
 
     st.header("📊 통계 결과", divider="rainbow")
 
@@ -89,7 +89,7 @@ if check_password():
                 filtered_data.append(
                     {
                         "이름": name,
-                        "학교": user_data["school"],
+                        "소속": user_data["school"],
                         "총 시도 횟수": user_data["attempts"],
                         "성공 횟수": user_data["success"],
                         "실패 횟수": user_data["failure"],
@@ -107,7 +107,7 @@ if check_password():
                 filtered_data.append(
                     {
                         "이름": name,
-                        "학교": user["school"],
+                        "소속": user["school"],
                         "시도 횟수": result["success"] + result["failure"],
                         "성공 횟수": result["success"],
                         "실패 횟수": result["failure"],

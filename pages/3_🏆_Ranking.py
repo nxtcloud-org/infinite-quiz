@@ -68,7 +68,7 @@ st.header("🔝 전체 TOP 10", divider="rainbow")
 user_list = [
     {
         "이름": data["name"],
-        "학교": data["school"],
+        "소속": data["school"],
         "총 시도 횟수": data["attempts"],
         "포인트": data["point"],
     }
@@ -88,7 +88,7 @@ st.header(f"🔝 {latest_date} TOP 10", divider="rainbow")
 today_user_list = [
     {
         "이름": name,
-        "학교": students[name]["school"],
+        "소속": students[name]["school"],
         "오늘의 시도 횟수": data["success"] + data["failure"],
         "오늘의 포인트": calculate_today_points(data["success"], data["failure"]),
     }
