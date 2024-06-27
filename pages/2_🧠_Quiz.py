@@ -176,7 +176,7 @@ if (
             update_student_data(name, False)
             save_quiz_result(name, False)
 
-        st.experimental_rerun()
+        st.rerun()
 
 # 퀴즈가 끝났을 때 결과 표시
 if st.session_state["quiz_ended"]:
@@ -205,7 +205,7 @@ if st.session_state["quiz_ended"]:
 
     if st.button("퀴즈 다시 시작하기", type="primary"):
         st.session_state["restart_quiz"] = True
-        st.experimental_rerun()
+        st.rerun()
 
 # 퀴즈 진행 상황 표시
 st.sidebar.progress(st.session_state["current_question"] / config.QUIZ_SIZE)

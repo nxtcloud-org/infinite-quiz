@@ -139,4 +139,4 @@ if check_password():
 
     if st.button("🚪 로그아웃"):
         st.session_state["password_correct"] = False
-        st.experimental_rerun()
+        st.rerun()

@@ -73,4 +73,4 @@ if "user" in st.session_state:
     st.sidebar.success(f"{st.session_state['user']['name']}님 로그인됨")
     if st.sidebar.button("로그아웃"):
         del st.session_state["user"]
-        st.experimental_rerun()
+        st.rerun()
