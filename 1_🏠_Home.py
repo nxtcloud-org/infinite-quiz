@@ -58,14 +58,11 @@ def update_quiz_results_structure():
 update_user_data_structure()
 update_quiz_results_structure()
 
-
 if "questions" not in st.session_state:
     st.session_state["questions"] = load_questions(config.QUESTIONS_FILE)
-# 로그인 상태 확인
-if "user" not in st.session_state:
-    st.warning("먼저 로그인해주세요.")
-    st.info("좌측 사이드바에서 '🔐 Login' 페이지로 이동하여 로그인하세요.")
-    st.stop()
+
+if "results" not in st.session_state:
+    st.session_state["results"] = load_results(config.RESULTS_FILE)
 
 st.title(":blue[_AWS SAA_] 제조기 :sunglasses:")
 
@@ -95,19 +92,25 @@ with col2:
 
 st.divider()
 
-st.header(
-    f"🏁 :blue[_{st.session_state['user']['name']}_]님, 환영합니다!", divider="rainbow"
-)
+# 로그인 상태 확인
+if "user" not in st.session_state:
+    st.warning("퀴즈를 시작하려면 먼저 로그인해주세요.")
+    st.info("좌측 사이드바에서 '🔐 Login' 페이지로 이동하여 로그인하세요.")
+else:
+    st.header(
+        f"🏁 :blue[_{st.session_state['user']['name']}_]님, 환영합니다!",
+        divider="rainbow",
+    )
 
-# 전역 변수로 questions와 results를 저장
-if "questions" not in st.session_state:
-    st.session_state["questions"] = load_questions(config.QUESTIONS_FILE)
+    # 전역 변수로 questions와 results를 저장
+    if "questions" not in st.session_state:
+        st.session_state["questions"] = load_questions(config.QUESTIONS_FILE)
 
-if "results" not in st.session_state:
-    st.session_state["results"] = load_results(config.RESULTS_FILE)
+    if "results" not in st.session_state:
+        st.session_state["results"] = load_results(config.RESULTS_FILE)
 
-st.divider()
+    st.divider()
 
-st.subheader(
-    f"이 퀴즈는 총 :blue[_{config.QUIZ_SIZE}개_]의 문제를 :blue[_연속_]으로 맞춰야 합니다."
-)
+    st.subheader(
+        f"이 퀴즈는 총 :blue[_{config.QUIZ_SIZE}개_]의 문제를 :blue[_연속_]으로 맞춰야 합니다."
+    )

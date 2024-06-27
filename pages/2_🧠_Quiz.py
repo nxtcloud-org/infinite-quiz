@@ -3,6 +3,7 @@ import random
 import config
 import json
 from datetime import datetime
+from utils.helpers import load_questions
 
 st.set_page_config(page_title="퀴즈", page_icon="🧠", layout="wide")
 
@@ -91,9 +92,13 @@ def save_quiz_result(name, success):
 
 # 세션 상태 초기화 함수
 def initialize_session_state():
-    st.session_state["quiz_questions"] = random.sample(
-        st.session_state["questions"], config.QUIZ_SIZE
-    )
+    if "questions" not in st.session_state:
+        st.session_state["questions"] = load_questions(config.QUESTIONS_FILE)
+
+    if "quiz_questions" not in st.session_state:
+        st.session_state["quiz_questions"] = random.sample(
+            st.session_state["questions"], config.QUIZ_SIZE
+        )
     st.session_state["current_question"] = 0
     st.session_state["correct_answers"] = 0
     st.session_state["quiz_ended"] = False
@@ -108,6 +113,10 @@ if "user" not in st.session_state:
     st.info("좌측 사이드바에서 '🔐 Login' 페이지로 이동하여 로그인하세요.")
     st.stop()
 
+# 'questions' 초기화
+if "questions" not in st.session_state:
+    st.session_state["questions"] = load_questions(config.QUESTIONS_FILE)
+
 # 퀴즈 시작 또는 재시작 시 세션 상태 초기화
 if "quiz_questions" not in st.session_state or st.session_state.get(
     "restart_quiz", False
@@ -119,6 +128,7 @@ st.title(":blue[_Quiz_] 🎯")
 
 name = st.session_state["user"]["name"]
 st.header(f"{name}님 :blue[화이팅!]", divider="rainbow")
+
 
 # 퀴즈가 끝나지 않았고 아직 풀지 않은 문제가 있을 때만 질문을 표시
 if (
