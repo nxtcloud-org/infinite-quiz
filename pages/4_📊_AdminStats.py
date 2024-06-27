@@ -130,7 +130,8 @@ if check_password():
             df["총 시도 횟수" if selected_date == "전체" else "시도 횟수"].sum(),
         )
         col3.metric("✅ 총 성공 횟수", df["성공 횟수"].sum())
-        col4.metric("⭐ 평균 포인트", f"{df['포인트'].mean():.2f}")
+        # col4.metric("⭐ 평균 포인트", f"{df['포인트'].mean():.2f}")
+        # 당일 점수만 찾아오는 로직이 안됨, 왜냐하면 계정 정보에 바로 점수를 올려놓기 때문, 퀴즈 풀때마다 성공 실패외에 맞춤 틀림 count를 잡아서 데일리로 저장되어야지 가능
     else:
         st.info("선택한 조건에 해당하는 데이터가 없습니다.")
 
