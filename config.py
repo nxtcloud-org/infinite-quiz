@@ -15,8 +15,8 @@ ADMIN_PASSWORD = "1234"
 
 # 포인트 설정
 CORRECT_ANSWER_POINTS = 3  # 문제 정답 시 획득 포인트
-INCORRECT_ANSWER_POINTS = 1  # 문제 오답 시 획득 포인트
-QUIZ_COMPLETION_BONUS = 30  # 성공(퀴즈 모두 정답) 시 추가 보너스 포인트
+WRONG_ANSWER_POINTS = 1
+QUIZ_SUCCESS_BONUS = 30  # 성공(퀴즈 모두 정답) 시 추가 보너스 포인트
 
 # 학교 목록
 SCHOOLS = [

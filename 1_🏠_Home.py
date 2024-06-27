@@ -1,10 +1,64 @@
 import streamlit as st
 from utils.helpers import load_questions, load_results
 import config
+import json
 
 st.set_page_config(
     page_title=config.APP_TITLE, page_icon=config.APP_ICON, layout="wide"
 )
+
+
+def update_user_data_structure():
+    with open(config.STUDENTS_FILE, "r") as f:
+        students = json.load(f)
+
+    updated = False
+    for name, data in students.items():
+        if "wrong" not in data:
+            data["wrong"] = 0
+            updated = True
+        if "correct" not in data:
+            data["correct"] = data["success"] * config.QUIZ_SIZE
+            updated = True
+        # attempts를 success와 failure의 합으로 업데이트
+        data["attempts"] = data["success"] + data["failure"]
+        updated = True
+
+    if updated:
+        with open(config.STUDENTS_FILE, "w") as f:
+            json.dump(students, f)
+
+
+def update_quiz_results_structure():
+    try:
+        with open(config.RESULTS_FILE, "r") as f:
+            results = json.load(f)
+    except FileNotFoundError:
+        return
+
+    updated = False
+    for date, date_data in results.items():
+        for name, user_data in date_data.items():
+            if "correct" not in user_data:
+                user_data["correct"] = user_data["success"] * config.QUIZ_SIZE
+                updated = True
+            if "wrong" not in user_data:
+                user_data["wrong"] = user_data["failure"] * config.QUIZ_SIZE
+                updated = True
+            # attempts를 success와 failure의 합으로 업데이트
+            user_data["attempts"] = user_data["success"] + user_data["failure"]
+            updated = True
+
+    if updated:
+        with open(config.RESULTS_FILE, "w") as f:
+            json.dump(results, f)
+
+
+# 앱 시작 시 데이터 구조 업데이트
+update_user_data_structure()
+update_quiz_results_structure()
+
+
 if "questions" not in st.session_state:
     st.session_state["questions"] = load_questions(config.QUESTIONS_FILE)
 # 로그인 상태 확인

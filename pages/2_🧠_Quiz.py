@@ -19,55 +19,74 @@ def save_users(users):
         json.dump(users, f)
 
 
-# 퀴즈 결과 저장 함수
+def update_student_data(name, is_correct, quiz_completed=False):
+    students = load_users()
+
+    if name in students:
+        if "wrong" not in students[name]:
+            students[name]["wrong"] = 0
+        if "correct" not in students[name]:
+            students[name]["correct"] = 0
+
+        if is_correct:
+            students[name]["correct"] += 1
+            students[name]["point"] += config.CORRECT_ANSWER_POINTS
+        else:
+            students[name]["wrong"] += 1
+            students[name]["point"] += config.WRONG_ANSWER_POINTS
+
+        if quiz_completed:
+            students[name]["success"] += 1
+            students[name]["point"] += config.QUIZ_SUCCESS_BONUS
+        elif st.session_state["quiz_ended"]:
+            students[name]["failure"] += 1
+
+        # attempts를 success와 failure의 합으로 업데이트
+        students[name]["attempts"] = (
+            students[name]["success"] + students[name]["failure"]
+        )
+
+    save_users(students)
+
+
 def save_quiz_result(name, success):
     current_date = datetime.now().strftime("%Y-%m-%d")
 
-    # 기존 결과 불러오기
     try:
         with open(config.RESULTS_FILE, "r") as f:
             results = json.load(f)
     except FileNotFoundError:
         results = {}
 
-    # 현재 날짜의 결과가 없으면 새로 생성
     if current_date not in results:
         results[current_date] = {}
 
-    # 사용자의 결과가 없으면 초기화
     if name not in results[current_date]:
-        results[current_date][name] = {"success": 0, "failure": 0}
+        results[current_date][name] = {
+            "correct": 0,
+            "wrong": 0,
+            "success": 0,
+            "failure": 0,
+            "attempts": 0,
+        }
 
-    # 결과 업데이트
+    results[current_date][name]["correct"] += st.session_state["correct_answers"]
+    results[current_date][name]["wrong"] += (
+        config.QUIZ_SIZE - st.session_state["correct_answers"]
+    )
+
     if success:
         results[current_date][name]["success"] += 1
     else:
         results[current_date][name]["failure"] += 1
 
-    # 결과 저장
+    # attempts를 success와 failure의 합으로 업데이트
+    results[current_date][name]["attempts"] = (
+        results[current_date][name]["success"] + results[current_date][name]["failure"]
+    )
+
     with open(config.RESULTS_FILE, "w") as f:
         json.dump(results, f)
-
-    # student.json 업데이트
-    update_student_data(name, success)
-
-
-def update_student_data(name, is_correct, quiz_completed=False):
-    students = load_users()
-
-    if name in students:
-        students[name]["attempts"] += 1
-        if is_correct:
-            students[name]["success"] += 1
-            students[name]["point"] += config.CORRECT_ANSWER_POINTS
-        else:
-            students[name]["failure"] += 1
-            students[name]["point"] += config.INCORRECT_ANSWER_POINTS
-
-        if quiz_completed:
-            students[name]["point"] += config.QUIZ_COMPLETION_BONUS
-
-    save_users(students)
 
 
 # 세션 상태 초기화 함수

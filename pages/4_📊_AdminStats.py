@@ -54,7 +54,7 @@ def load_quiz_results():
 
 def calculate_points(success, failure):
     return (success * config.CORRECT_ANSWER_POINTS) + (
-        failure * config.INCORRECT_ANSWER_POINTS
+        failure * config.WRONG_ANSWER_POINTS
     )
 
 
