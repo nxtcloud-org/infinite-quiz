@@ -37,9 +37,56 @@ def calculate_today_points(success, failure):
     )
 
 
+def calculate_school_points(students):
+    school_points = {}
+    for student in students.values():
+        school = student["school"]
+        points = student["point"]
+        if school in school_points:
+            school_points[school] += points
+        else:
+            school_points[school] = points
+    return school_points
+
+
 st.title("🏆 랭킹 게시판")
 
 quiz_results, students = load_data()
+
+# 소속별 총 포인트 계산
+school_points = calculate_school_points(students)
+school_ranking = pd.DataFrame(
+    list(school_points.items()), columns=["소속", "총 포인트"]
+)
+school_ranking = school_ranking.sort_values("총 포인트", ascending=False).reset_index(
+    drop=True
+)
+
+# 상위 3개 소속 표시
+st.header("🏫 소속 랭킹 TOP 3", divider="rainbow")
+col1, col2, col3 = st.columns(3)
+if len(school_ranking) >= 1:
+    col1.metric(
+        "1등",
+        f"{school_ranking.iloc[0]['소속']}",
+        f"{school_ranking.iloc[0]['총 포인트']}점",
+    )
+if len(school_ranking) >= 2:
+    col2.metric(
+        "2등",
+        f"{school_ranking.iloc[1]['소속']}",
+        f"{school_ranking.iloc[1]['총 포인트']}점",
+    )
+if len(school_ranking) >= 3:
+    col3.metric(
+        "3등",
+        f"{school_ranking.iloc[2]['소속']}",
+        f"{school_ranking.iloc[2]['총 포인트']}점",
+    )
+
+# 전체 소속 랭킹 표시
+st.header("🏫 소속 랭킹 TOP 10", divider="rainbow")
+st.table(school_ranking.head(10))
 
 # 가장 최근 날짜 찾기
 latest_date = max(quiz_results.keys())
@@ -62,7 +109,7 @@ if top_success["name"]:
 else:
     col3.metric("오늘의 최다 성공자", "아직 없음")
 
-# TOP 10 표시
+# 전체 TOP 10 표시
 st.header("🔝 전체 TOP 10", divider="rainbow")
 
 user_list = [

@@ -95,10 +95,10 @@ def initialize_session_state():
     if "questions" not in st.session_state:
         st.session_state["questions"] = load_questions(config.QUESTIONS_FILE)
 
-    if "quiz_questions" not in st.session_state:
-        st.session_state["quiz_questions"] = random.sample(
-            st.session_state["questions"], config.QUIZ_SIZE
-        )
+    # 항상 새로운 문제 세트 생성
+    st.session_state["quiz_questions"] = random.sample(
+        st.session_state["questions"], config.QUIZ_SIZE
+    )
     st.session_state["current_question"] = 0
     st.session_state["correct_answers"] = 0
     st.session_state["quiz_ended"] = False
@@ -188,6 +188,13 @@ if (
 
         st.rerun()
 
+# 퀴즈 시작 또는 재시작 시 세션 상태 초기화
+if "quiz_questions" not in st.session_state or st.session_state.get(
+    "restart_quiz", False
+):
+    initialize_session_state()
+    st.session_state["restart_quiz"] = False
+
 # 퀴즈가 끝났을 때 결과 표시
 if st.session_state["quiz_ended"]:
     if st.session_state.get("quiz_success", False):
@@ -214,8 +221,9 @@ if st.session_state["quiz_ended"]:
         )
 
     if st.button("퀴즈 다시 시작하기", type="primary"):
-        st.session_state["restart_quiz"] = True
+        initialize_session_state()  # 새로운 문제 세트로 초기화
         st.rerun()
+
 
 # 퀴즈 진행 상황 표시
 st.sidebar.progress(st.session_state["current_question"] / config.QUIZ_SIZE)
