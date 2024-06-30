@@ -107,6 +107,15 @@ def initialize_session_state():
     st.session_state["show_result"] = False
 
 
+def is_length_greater_than_two(lst):
+    return len(lst) >= 2
+
+
+def map_char_to_num(char):
+    char_to_num = {"A": 0, "B": 1, "C": 2, "D": 3}
+    return char_to_num.get(char, 4)  # 매핑에 없는 문자는 기본값 4를 반환
+
+
 # 로그인 상태 확인
 if "user" not in st.session_state:
     st.warning("먼저 로그인해주세요.")
@@ -141,13 +150,19 @@ if (
     st.subheader(f"문제 {st.session_state['current_question'] + 1}")
 
     st.divider()
-    st.write(question["question"])
+    tab1, tab2 = st.tabs(["KOR", "ENG"])
+    with tab1:
+        st.write(question["question"]["kor"])
+    with tab2:
+        st.write(question["question"]["eng"])
     st.divider()
 
-    options = list(question["options"].values())
+    is_multiple_answer = is_length_greater_than_two(question["answer"])
+
+    options = list(question["choices"]["kor"].values())
 
     # 복수 정답 여부 확인
-    is_multiple_answer = isinstance(question["answer"], list)
+    is_multiple_answer = is_length_greater_than_two(question["answer"])
 
     if is_multiple_answer:
         st.write(
@@ -158,16 +173,24 @@ if (
     else:
         user_answer = st.radio("답을 선택하세요:", options)
 
+    on = st.toggle("영문 선택지 확인하기")
+
+    if on:
+        for i in question["choices"]["eng"]:
+            st.write(f"{i} : {question['choices']['eng'][i]}")
+
     st.divider()
     # 다음 버튼
     if st.button("다음", type="primary"):
         st.session_state["user_answer"] = user_answer
 
         if is_multiple_answer:
-            correct_options = [question["options"][ans] for ans in question["answer"]]
+            correct_options = [
+                question["choices"]["kor"][ans] for ans in question["answer"]
+            ]
             is_correct = set(user_answer) == set(correct_options)
         else:
-            correct_option = question["options"][question["answer"]]
+            correct_option = question["choices"]["kor"][question["answer"][0]]
             is_correct = user_answer == correct_option
 
         if is_correct:
@@ -207,12 +230,13 @@ if st.session_state["quiz_ended"]:
         question = st.session_state["quiz_questions"][
             st.session_state["current_question"]
         ]
-        if isinstance(question["answer"], list):
-            correct_options = [question["options"][ans] for ans in question["answer"]]
-            st.error(f"오답입니다. 정답은 {', '.join(correct_options)}입니다.")
-        else:
-            correct_option = question["options"][question["answer"]]
-            st.error(f"오답입니다. 정답은 {correct_option}입니다.")
+
+        correct_options = [
+            question["choices"]["kor"][ans] for ans in question["answer"]
+        ]
+        st.error(f'당신의 오답 : {st.session_state["user_answer"]}')
+        st.info(question["question"]["kor"])
+        st.success(f'정답 : {", ".join(correct_options)}')
         st.warning(
             f"{config.QUIZ_SIZE}문제 중 {st.session_state['correct_answers']}문제를 맞추셨습니다."
         )

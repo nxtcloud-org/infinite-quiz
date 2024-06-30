@@ -6,7 +6,7 @@ APP_ICON = "🏠"
 QUIZ_SIZE = 2  # 퀴즈 문제 수
 
 # 파일 경로
-QUESTIONS_FILE = "exam/exam1-50.json"
+QUESTIONS_FILE = "test_exam/test1.json"
 RESULTS_FILE = "db/quiz_results.json"
 STUDENTS_FILE = "db/student.json"
 
