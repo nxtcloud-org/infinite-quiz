@@ -18,10 +18,9 @@ def update_user_data_structure():
             data["wrong"] = 0
             updated = True
         if "correct" not in data:
-            data["correct"] = data["success"] * config.QUIZ_SIZE
+            data["correct"] = data.get("success", 0) * config.QUIZ_SIZE
             updated = True
-        # attempts를 success와 failure의 합으로 업데이트
-        data["attempts"] = data["success"] + data["failure"]
+        data["attempts"] = data.get("success", 0) + data.get("failure", 0)
         updated = True
 
     if updated:
@@ -39,13 +38,18 @@ def update_quiz_results_structure():
     updated = False
     for date, date_data in results.items():
         for name, user_data in date_data.items():
+            if "success" not in user_data:
+                user_data["success"] = 0
+                updated = True
+            if "failure" not in user_data:
+                user_data["failure"] = 0
+                updated = True
             if "correct" not in user_data:
                 user_data["correct"] = user_data["success"] * config.QUIZ_SIZE
                 updated = True
             if "wrong" not in user_data:
                 user_data["wrong"] = user_data["failure"] * config.QUIZ_SIZE
                 updated = True
-            # attempts를 success와 failure의 합으로 업데이트
             user_data["attempts"] = user_data["success"] + user_data["failure"]
             updated = True
 
@@ -101,13 +105,6 @@ else:
         f"🏁 :blue[_{st.session_state['user']['name']}_]님, 환영합니다!",
         divider="rainbow",
     )
-
-    # 전역 변수로 questions와 results를 저장
-    if "questions" not in st.session_state:
-        st.session_state["questions"] = load_questions(config.QUESTIONS_FILE)
-
-    if "results" not in st.session_state:
-        st.session_state["results"] = load_results(config.RESULTS_FILE)
 
     st.divider()
 
