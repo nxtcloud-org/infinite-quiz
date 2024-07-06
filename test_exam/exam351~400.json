@@ -1,0 +1,694 @@
+[
+    {
+        "id": 351,
+        "question": "솔루션 설계자는 고객 사례 파일을 저장할 시스템을 설계해야 합니다. 파일은 핵심 회사 자산이며 중요합니다. 파일 수는 시간이 지남에 따라 증가합니다. 파일은 Amazon EC2 인스턴스에서 실행되는 여러 애플리케이션 서버에서 동시에 액세스할 수 있어야 합니다. 솔루션에는 중복성이 내장되어 있어야 합니다. 어떤 솔루션이 이러한 요구 사항을 충족합니까?",
+        "options": {
+            "A": "Amazon Elastic File System(Amazon EFS)",
+            "B": "Amazon Elastic Block Store(Amazon EBS)",
+            "C": "Amazon S3 Glacier Deep 아카이브",
+            "D": "AWS 백업"
+        },
+        "answer": "A",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 352,
+        "question": "회사에서 온프레미스 데이터 세트의 보조 사본으로 Amazon S3를 사용하려고 합니다. 회사는 이 복사본에 액세스할 필요가 거의 없습니다. 스토리지 솔루션의 비용은 최소화되어야 합니다. 이러한 요구 사항을 충족하는 스토리지 솔루션은 무엇입니까?",
+        "options": {
+            "A": "S3 기준",
+            "B": "S3 지능형 계층화",
+            "C": "S3 Standard-Infrequent Access(S3 Standard-IA)",
+            "D": "S3 One Zone-Infrequent Access(S3 One Zone-IA)"
+        },
+        "answer": "D",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 353,
+        "question": "게임 회사는 공개 점수판을 데이터 센터에서 AWS 클라우드로 옮기고 있습니다. 이 회사는 Application Load Balancer 뒤에 Amazon EC2 Windows Server 인스턴스를 사용하여 동 적 애플리케이션을 호스팅합니다. 회사는 애플리케이션을 위한 고가용성 스토리지 솔루션이 필요합니다. 애플리케이션은 정적 파일과 동적 서버 측 코드로 구성됩니다. 이러한 요구 사항을 충족하기 위해 솔루션 설계자는 어떤 단계 조합을 수행해야 합니까? (두 가지를 선택하세요.)",
+        "options": {
+            "A": "Amazon S3에 정적 파일을 저장합니다. Amazon CloudFront를 사용하여 엣지에서 객체를 캐싱합니다.",
+            "B": "정적 파일을 Amazon S3에 저장합니다. Amazon ElastiCache를 사용하여 엣지에서 객체를 캐싱합니다.",
+            "C": "Amazon Elastic File System(Amazon EFS)에 서버 측 코드를 저장합니다. 파일을 공유할 각 EC2 인스턴스에 EFS 볼륨을 탑재합니다.",
+            "D": "Windows File Server용 Amazon FSx에 서버 측 코드를 저장합니다. 파일을 공유할 각 EC2 인스턴스에 FSx for Windows File Server 볼륨을 탑재합니다.",
+            "E": "범용 SSD(gp2) Amazon Elastic Block Store(Amazon EBS) 볼륨에 서버 측 코드를 저장합니다. 각 EC2 인스턴스에 EBS 볼륨을 탑재하여 파일을 공유합니다."
+        },
+        "answer": [
+            "A",
+            "D"
+        ],
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 354,
+        "question": "연구소는 약 8TB의 데이터를 처리해야 합니다. 실험실에는 스토리지 하위 시스템에 대해 1밀리초 미만의 대기 시간과 최소 6GBps의 처리량이 필요합니다. Amazon Linux를 실행하는 수 백 개의 Amazon EC2 인스턴스가 데이터를 배포하고 처리합니다. 성능 요구 사항을 충족하는 솔루션은 무엇입니까?",
+        "options": {
+            "A": "NetApp ONTAP 파일 시스템용 Amazon FSx를 생성합니다. 각 볼륨의 계층화 정책을 ALL로 설정했습니다. 원시 데이터를 파일 시스템으로 가져옵니다. EC2 인스턴스에 fila 시스 템을 탑재합니다.",
+            "B": "원시 데이터를 저장할 Amazon S3 버킷을 생성합니다. 영구 SSD 스토리지를 사용하는 Amazon FSx for Lustre 파일 시스템을 생성합니다. Amazon S3에서 데이터를 가져오고 내보내는 옵션을 선택합니다. EC2 인스턴스에 파일 시스템을 탑재합니다.",
+            "C": "원시 데이터를 저장할 Amazon S3 버킷을 생성합니다. 영구 HDD 스토리지를 사용하는 Amazon FSx for Lustre 파일 시스템을 생성합니다. Amazon S3에서 데이터를 가져오고 내보내는 옵션을 선택합니다. EC2 인스턴스에 파일 시스템을 탑재합니다.",
+            "D": "NetApp ONTAP 파일 시스템용 Amazon FSx를 생성합니다. 각 볼륨의 계층화 정책을 NONE으로 설정합니다. 원시 데이터를 파일 시스템으로 가져옵니다. EC2 인스턴스에 파일 시스템을 탑재합니다."
+        },
+        "answer": "B",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 355,
+        "question": "솔루션 설계자는 공용 서브넷과 데이터베이스 서브넷을 포함하는 2계층 아키텍처를 설계하고 있습니다. 퍼블릭 서브넷의 웹 서버는 포트 443에서 인터넷에 열려 있어야 합니다. 데이터베이스 서브넷의 Amazon RDS for MySQL DB 인스턴스는 포트 3306의 웹 서버에서만 액세스할 수 있어야 합니다. 솔루션 설계자가 수행해야 하는 단계의 조합은 무엇입니까? 이러한 요구 사항을 충족합니까? (두 가지를 선택하세요.)",
+        "options": {
+            "A": "퍼블릭 서브넷에 대한 네트워크 ACL을 만듭니다. 포트 3306에서 0.0.0.0/0에 대한 아웃바운드 트래픽을 거부하는 규칙을 추가합니다.",
+            "B": "DB 인스턴스에 대한 보안 그룹을 생성합니다. 포트 3306에서 퍼블릭 서브넷 CIDR 블록의 트래픽을 허용하는 규칙을 추가합니다.",
+            "C": "퍼블릭 서브넷의 웹 서버에 대한 보안 그룹을 생성합니다. 포트 443에서 0.0.0.0/0의 트래픽을 허용하는 규칙을 추가합니다.",
+            "D": "DB 인스턴스에 대한 보안 그룹을 생성합니다. 포트 3306에서 웹 서버 보안 그룹의 트래픽을 허용하는 규칙을 추가합니다.",
+            "E": "DB 인스턴스에 대한 보안 그룹을 생성합니다. 포트 3306에서 웹 서버 보안 그룹의 트래픽을 제외한 모든 트래픽을 거부하는 규칙을 추가합니다."
+        },
+        "answer": [
+            "C",
+            "D"
+        ],
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 356,
+        "question": "회사에서 인공 지능 및 기계 학습(AI/ML)을 연구하는 고객에게 데이터 세트를 판매합니다. 데이터 세트는 us-east-1 리전의 Amazon S3 버킷에 저장되는 형식이 지정된 대용량 파일입니 다. 회사는 고객이 주어진 데이터 세트에 대한 액세스를 구매하는 데 사용하는 웹 애플리케이션을 호스팅합니다. 웹 애플리케이션은 Application Load Balancer 뒤의 여러 Amazon EC2 인스턴스에 배포됩니다. 구매 후 고객은 파일에 대한 액세스를 허용하는 S3 서명 URL을 받습니다. 고객은 북미와 유럽 전역에 분산되어 있습니다. 회사는 데이터 전송과 관련된 비용을 줄이고 성능을 유지하거나 개선하고자 합니다. 솔루션 설계자는 이러한 요구 사항을 충족하기 위해 무엇을 해야 합니까?",
+        "options": {
+            "A": "기존 S3 버킷에서 S3 Transfer Acceleration을 구성합니다. 고객 요청을 S3 Transfer Acceleration 엔드포인트로 안내합니다. 액세스 제어를 위해 S3 서명 URL을 계속 사용하십 시오.",
+            "B": "기존 S3 버킷을 원본으로 사용하여 Amazon CloudFront 배포를 배포합니다. 고객 요청을 CloudFront URL로 전달합니다. 액세스 제어를 위해 CloudFront 서명 URL로 전환하십 시오.",
+            "C": "버킷 사이에 S3 교차 리전 복제가 있는 eu-central-1 리전에서 두 번째 S3 버킷을 설정합니다. 가장 가까운 지역으로 고객 요청을 전달합니다. 액세스 제어를 위해 S3 서명 URL을 계 속 사용하십시오.",
+            "D": "데이터세트를 최종 사용자에게 스트리밍할 수 있도록 웹 애플리케이션을 수정합니다. 기존 S3 버킷에서 데이터를 읽도록 웹 애플리케이션을 구성합니다. 애플리케이션에서 직접 액세스 제 어를 구현합니다."
+        },
+        "answer": "B",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 357,
+        "question": "회사는 AWS 클라우드에서 호스팅되는 게임 애플리케이션을 위한 공유 스토리지 솔루션을 설계하고 있습니다. 회사는 SMB 클라이언트를 사용하여 데이터에 액세스할 수 있는 기능이 필요합 니다. 솔루션은 완전히 관리되어야 합니다. 어떤 AWS 솔루션이 이러한 요구 사항을 충족합니까?",
+        "options": {
+            "A": "탑재 가능한 파일 시스템으로 데이터를 공유하는 AWS DataSync 작업을 생성합니다. 파일 시스템을 애플리케이션 서버에 마운트하십시오.",
+            "B": "Amazon EC2 Windows 인스턴스를 생성합니다. 인스턴스에 Windows 파일 공유 역할을 설치하고 구성합니다. 응용 프로그램 서버를 파일 공유에 연결합니다.",
+            "C": "Windows 파일 서버 파일 시스템용 Amazon FSx를 생성합니다. 원본 서버에 파일 시스템을 연결합니다. 애플리케이션 서버를 파일 시스템에 연결하십시오.",
+            "D": "Amazon S3 버킷을 생성합니다. 애플리케이션에 IAM 역할을 할당하여 S3 버킷에 대한 액세스 권한을 부여합니다. S3 버킷을 애플리케이션 서버에 마운트합니다."
+        },
+        "answer": "C",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 358,
+        "question": "데이터 분석 회사에서 일괄 처리 시스템을 AWS로 마이그레이션하려고 합니다. 회사는 FTP를 통해 낮 동안 주기적으로 수천 개의 작은 데이터 파일을 받습니다. 온프레미스 일괄 작업은 밤 새 데이터 파일을 처리합니다. 그러나 일괄 작업 실행을 완료하는 데 몇 시간이 걸립니다. 회사는 파일을 전송하는 FTP 클라이언트에 대한 최소한의 변경으로 수신 데이터 파일을 처리할 수 있는 AWS 솔루션을 원합니다. 솔루션은 파일이 성공적으로 처리된 수신 데이터 파일을 삭 제해야 합니다. 각 파일을 처리하는 데 3~8분이 소요됩니다. 운영상 가장 효율적인 방식으로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+        "options": {
+            "A": "FTP 서버를 실행하는 Amazon EC2 인스턴스를 사용하여 수신 파일을 Amazon S3 Glacier Flexible Retrieval의 객체로 저장합니다. AWS Batch에서 작업 대기열을 구성합니 다. Amazon EventBridge 규칙을 사용하여 S3 Glacier Flexible Retrieval에서 야간에 객체를 처리하는 작업을 호출합니다. 작업이 개체를 처리한 후 개체를 삭제합니다.",
+            "B": "FTP 서버를 실행하는 Amazon EC2 인스턴스를 사용하여 수신 파일을 Amazon Elastic Block Store(Amazon EBS) 볼륨에 저장합니다. AWS Batch에서 작업 대기열을 구성 합니다. Amazon EventBridge 규칙을 사용하여 야간에 EBS 볼륨에서 파일 프로세스를 호출합니다. 작업이 파일을 처리한 후 파일을 삭제합니다",
+            "C": "AWS Transfer Family를 사용하여 들어오는 파일을 Amazon Elastic Block Store(Amazon EBS) 볼륨에 저장할 FTP 서버를 생성합니다. AWS Batch에서 작업 대기열을 구 성합니다. 각 파일이 도착하면 Amazon S3 이벤트 알림을 사용하여 AWS Batch에서 작업을 호출합니다. 작업이 파일을 처리한 후 파일을 삭제합니다.",
+            "D": "AWS Transfer Family를 사용하여 Amazon S3 Standard에 수신 파일을 저장할 FTP 서버를 생성합니다. 파일을 처리하고 파일이 처리된 후 파일을 삭제하는 AWS Lambda 함 수를 생성합니다. 파일이 도착하면 S3 이벤트 알림을 사용하여 람다 함수를 호출하십시오."
+        },
+        "answer": "D",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 359,
+        "question": "이미지 호스팅 회사는 객체를 Amazon S3 버킷에 저장합니다. 회사는 S3 버킷의 개체가 대중에게 우발적으로 노출되는 것을 방지하려고 합니다. 전체 AWS 계정의 모든 S3 객체는 비공개 로 유지되어야 합니다. 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+        "options": {
+            "A": "Amazon GuardDuty를 사용하여 S3 버킷 정책을 모니터링합니다. AWS Lambda 함수를 사용하여 객체를 공개하는 변경 사항을 수정하는 자동 수정 작업 규칙을 생성합니다.",
+            "B": "AWS Trusted Advisor를 사용하여 공개적으로 액세스 가능한 S3 버킷을 찾습니다. 변경 사항이 감지되면 Trusted Advisor에서 이메일 알림을 구성합니다. 퍼블릭 액세스를 허용하 는 경우 S3 버킷 정책을 수동으로 변경합니다.",
+            "C": "AWS Resource Access Manager를 사용하여 공개적으로 액세스 가능한 S3 버킷을 찾습니다. 변경이 감지되면 Amazon Simple Notification Service(Amazon SNS)를 사 용하여 AWS Lambda 함수를 호출합니다. 프로그래밍 방식으로 변경 사항을 수정하는 Lambda 함수를 배포합니다.",
+            "D": "계정 수준에서 S3 퍼블릭 액세스 차단 기능을 사용합니다. AWS Organizations를 사용하여 IAM 사용자가 설정을 변경하지 못하도록 하는 서비스 제어 정책(SCP)을 생성합니다. 계 정에 SCP를 적용합니다."
+        },
+        "answer": "D",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 360,
+        "question": "한 회사에서 여러 프로덕션 애플리케이션을 호스팅합니다. 애플리케이션 중 하나는 여러 AWS 리전에서 Amazon EC2, AWS Lambda, Amazon RDS, Amazon Simple Notification Service(Amazon SNS) 및 Amazon Simple Queue Service(Amazon SQS)의 리소스로 구성됩니다. 모든 회사 리소스에는 응용 프로그램 이라는 태그 이름과 각 응 용 프로그램에 해당하는 값이 태그로 지정됩니다. 솔루션 설계자는 태그가 지정된 모든 구성 요소를 식별하기 위한 가장 빠른 솔루션을 제공해야 합니다. 어떤 솔루션이 이러한 요구 사항을 충족합니까?",
+        "options": {
+            "A": "AWS CloudTrail을 사용하여 애플리케이션 태그가 있는 리소스 목록을 생성합니다.",
+            "B": "AWS CLI를 사용하여 모든 리전에서 각 서비스를 쿼리하여 태그가 지정된 구성 요소를 보고합니다.",
+            "C": "Amazon CloudWatch Logs Insights에서 쿼리를 실행하여 애플리케이션 태그가 있는 구성 요소에 대해 보고합니다.",
+            "D": "AWS Resource Groups Tag Editor로 쿼리를 실행하여 애플리케이션 태그를 사용하여 전역적으로 리소스에 대해 보고합니다."
+        },
+        "answer": "D",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 361,
+        "question": "한 회사는 AWS에서 서버리스 애플리케이션을 운영하며, 이 애플리케이션은 백엔드 데이터베이스로 Amazon RDS를 사용합니다. 애플리케이션은 때때로 예측할 수 없는 급격한 트래픽 증 가를 겪습니다. 트래픽이 증가할 때마다 애플리케이션은 데이터베이스에 대해 자주 연결을 열고 닫으며, 이로 인해 데이터베이스로부터 오류를 받거나 연결이 부족해지는 문제가 발생합니다. 회사는 애플리케이션이 항상 확장 가능하고 고가용성을 유지할 수 있도록 해야 합니다. 어떤 해결책이 이러한 요구사항을 충족시키며 애플리케이션의 코드 변경 없이 가능할까요?",
+        "options": {
+            "A": "서버리스 애플리케이션의 RDS 데이터베이스의 옵션 그룹에서 최대 연결 수를 증가시킵니다.",
+            "B": "RDS DB 인스턴스의 인스턴스 크기를 최대 부하 트래픽에 맞게 증가시킵니다.",
+            "C": "서버리스 애플리케이션과 Amazon RDS 사이에 Amazon RDS 프록시를 배포합니다.",
+            "D": "Amazon RDS에 대한 예약 인스턴스를 구매하여 최대 부하 트래픽 시에도 데이터베이스를 고가용성으로 유지합니다."
+        },
+        "answer": "C",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 362,
+        "question": "회사에서 AWS Key Management Service(AWS KMS) 키를 사용하여 AWS Lambda 환경 변수를 암호화하고 있습니다. 솔루션 설계자는 환경 변수를 해독하고 사용하는 데 필요한 권한이 있는지 확인해야 합니다. 올바른 권한을 구현하기 위해 솔루션 설계자가 수행해야 하는 단계는 무엇입니까? (두 가지를 선택하세요.)",
+        "options": {
+            "A": "Lambda 리소스 정책에 AWS KMS 권한을 추가합니다.",
+            "B": "Lambda 실행 역할에 AWS KMS 권한을 추가합니다.",
+            "C": "Lambda 함수 정책에 AWS KMS 권한을 추가합니다.",
+            "D": "AWS KMS 키 정책에서 Lambda 실행 역할을 허용합니다.",
+            "E": "AWS KMS 키 정책에서 Lambda 리소스 정책을 허용합니다."
+        },
+        "answer": [
+            "B",
+            "D"
+        ],
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 363,
+        "question": "회사의 애플리케이션은 Auto Scaling 그룹의 Amazon EC2 인스턴스에서 실행됩니다. 회사는 해당 애플리케이션이 일주일 중 임의의 요일에 갑작스러운 트래픽 증가를 경험한다는 사실을 발견했습니다. 회사는 갑작스러운 트래픽 증가 중에도 애플리케이션 성능을 유지하려고 합니다. 이러한 요구 사항을 가장 비용 효율적으로 충족하는 솔루션은 무엇입니까?",
+        "options": {
+            "A": "Auto Scaling 그룹의 크기를 변경하려면 수동 스케일링을 사용하십시오.",
+            "B": "예측 조정을 사용하여 Auto Scaling 그룹의 크기를 변경합니다.",
+            "C": "동적 스케일링을 사용하여 Auto Scaling 그룹의 크기를 변경합니다.",
+            "D": "일정 조정을 사용하여 Auto Scaling 그룹의 크기를 변경합니다."
+        },
+        "answer": "C",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 364,
+        "question": "한 온라인 소매 회사는 5천만 명 이상의 활성 고객을 보유하고 있으며 매일 25,000건 이상의 주문을 받습니다. 회사는 고객의 구매 데이터를 수집하고 이 데이터를 Amazon S3에 저장합니 다. 추가 고객 데이터는 Amazon RDS에 저장됩니다. 회사는 팀이 분석을 수행할 수 있도록 다양한 팀에서 모든 데이터를 사용할 수 있도록 하려고 합니다. 솔루션은 데이터에 대한 세분화된 권한을 관리하는 기능을 제공하고 운영 오버헤드를 최소 화해야 합니다. 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+        "options": {
+            "A": "구매 데이터를 마이그레이션하여 Amazon RDS에 직접 씁니다. RDS 액세스 제어를 사용하여 액세스를 제한하십시오.",
+            "B": "Amazon RDS에서 Amazon S3로 데이터를 주기적으로 복사하도록 AWS Lambda 함수를 예약합니다. AWS Glue 크롤러를 생성합니다. Amazon Athena를 사용하여 데이터를 쿼리합니다. S3 정책을 사용하여 액세스를 제한하십시오.",
+            "C": "AWS Lake Formation을 사용하여 데이터 레이크를 생성합니다. Amazon RDS에 대한 AWS Glue JDBC 연결을 생성합니다. Lake Formation에 S3 버킷을 등록합니다. Lake Formation 액세스 제어를 사용하여 액세스를 제한하십시오.",
+            "D": "Amazon Redshift 클러스터를 생성합니다. Amazon S3 및 Amazon RDS에서 Amazon Redshift로 데이터를 주기적으로 복사하도록 AWS Lambda 함수를 예약합니다. Amazon Redshift 액세스 제어를 사용하여 액세스를 제한하십시오."
+        },
+        "answer": "C",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 365,
+        "question": "한 회사는 Amazon Elastic Kubernetes Service(Amazon EKS)와 Kubernetes 수평형 포드 자동 크기 조정기를 사용하여 컨테이너 애플리케이션을 실행합니다. 작업량이 하루 종일 일정하지 않습니다. 솔루션 설계자는 기존 노드가 클러스터의 최대 용량에 도달해도 노드 수가 자동으로 확장되지 않아 성능 문제가 발생한다는 사실을 알아냈습니다. 최소한의 관리 오버헤드로 이 문제를 해결할 수 있는 솔루션은 무엇입니까?",
+        "options": {
+            "A": "메모리 사용량을 추적하여 노드를 확장합니다.",
+            "B": "Kubernetes Cluster Autoscaler를 사용하여 클러스터의 노드 수를 관리합니다.",
+            "C": "AWS Lambda 함수를 사용하여 EKS 클러스터의 크기를 자동으로 조정합니다.",
+            "D": "Amazon EC2 Auto Scaling 그룹을 사용하여 워크로드를 분산합니다."
+        },
+        "answer": "B",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 366,
+        "question": "회사는 의료 애플리케이션의 데이터를 저장해야 합니다. 애플리케이션의 데이터는 자주 변경됩니다. 새로운 규정은 저장된 데이터의 모든 수준에서 감사 액세스를 요구합니다. 회사는 스토리지 용량이 부족한 온프레미스 인프라에서 애플리케이션을 호스팅합니다. 솔루션 설계자는 새로운 규정을 만족하면서 기존 데이터를 AWS로 안전하게 마이그레이션해야 합니다. 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+        "options": {
+            "A": "AWS DataSync를 사용하여 기존 데이터를 Amazon S3로 이동합니다. AWS CloudTrail을 사용하여 데이터 이벤트를 기록합니다.",
+            "B": "AWS Snowcone을 사용하여 기존 데이터를 Amazon S3로 이동합니다. AWS CloudTrail을 사용하여 관리 이벤트를 기록합니다.",
+            "C": "Amazon S3 Transfer Acceleration을 사용하여 기존 데이터를 Amazon S3로 이동합니다. AWS CloudTrail을 사용하여 데이터 이벤트를 기록합니다.",
+            "D": "AWS Storage Gateway를 사용하여 기존 데이터를 Amazon S3로 이동합니다. AWS CloudTrail을 사용하여 관리 이벤트를 기록합니다."
+        },
+        "answer": "A",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 367,
+        "question": "회사는 Amazon API Gateway 및 AWS Lambda를 사용하여 AWS에서 RESTful 서버리스 웹 애플리케이션을 구축하고 있습니다. 이 웹 애플리케이션의 사용자는 지리적으로 분산되 며 회사는 이러한 사용자에 대한 API 요청 대기 시간을 줄이려고 합니다. 솔루션 설계자는 이러한 요구 사항을 충족하기 위해 어떤 유형의 엔드포인트를 사용해야 합니까?",
+        "options": {
+            "A": "프라이빗 엔드포인트",
+            "B": "지역 종점",
+            "C": "인터페이스 VPC 엔드포인트",
+            "D": "엣지 최적화 엔드포인트"
+        },
+        "answer": "D",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 368,
+        "question": "회사에서 인프라 모니터링 서비스를 실행합니다. 이 회사는 서비스가 고객 AWS 계정의 데이터를 모니터링할 수 있는 새로운 기능을 구축하고 있습니다. 새로운 기능은 고객 계정에서 AWS API를 호출하여 Amazon EC2 인스턴스를 설명하고 Amazon CloudWatch 지표를 읽습니다. 회사는 가장 안전한 방법으로 고객 계정에 대한 액세스 권한을 얻기 위해 무엇을 해야 합니까?",
+        "options": {
+            "A": "고객이 회사 계정에 대한 읽기 전용 EC2 및 CloudWatch 권한과 신뢰 정책을 사용하여 계정에 IAM 역할을 생성하는지 확인하십시오.",
+            "B": "토큰 판매기를 구현하는 서버리스 API를 생성하여 읽기 전용 EC2 및 CloudWatch 권한이 있는 역할에 대한 임시 AWS 자격 증명을 제공합니다.",
+            "C": "고객이 자신의 계정에서 읽기 전용 EC2 및 CloudWatch 권한을 가진 IAM 사용자를 생성하는지 확인합니다. 비밀 관리 시스템에서 고객 액세스 및 비밀 키를 암호화하고 저장합니다.",
+            "D": "고객이 자신의 계정에 Amazon Cognito 사용자를 생성하여 읽기 전용 EC2 및 CloudWatch 권한이 있는 IAM 역할을 사용하는지 확인합니다. 암호 관리 시스템에서 Amazon Cognito 사용자 및 암호를 암호화하고 저장합니다."
+        },
+        "answer": "A",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 369,
+        "question": "회사는 Amazon EC2에서 콘텐츠 관리 시스템(CMS)을 사용하는 웹 사이트를 운영합니다. CMS는 단일 EC2 인스턴스에서 실행되며 데이터 계층에 Amazon Aurora MySQL 다중 AZ DB 인스턴스를 사용합니다. 웹 사이트 이미지는 EC2 인스턴스 내부에 탑재된 Amazon Elastic Block Store(Amazon EBS) 볼륨에 저장됩니다. 웹 사이트의 성능과 복원력을 개선하기 위해 솔루션 설계자가 취해야 하는 작업 조합은 무엇입니까? (두 가지를 선택하세요.)",
+        "options": {
+            "A": "웹사이트 이미지를 모든 EC2 인스턴스에 탑재된 Amazon S3 버킷으로 이동합니다.",
+            "B": "기본 EC2 인스턴스의 NFS 공유를 사용하여 웹사이트 이미지를 공유합니다. 이 공유를 다른 EC2 인스턴스에 마운트합니다.",
+            "C": "모든 EC2 인스턴스에 탑재된 Amazon Elastic File System(Amazon EFS) 파일 시스템으로 웹 사이트 이미지를 이동합니다.",
+            "D": "기존 EC2 인스턴스에서 Amazon 머신 이미지(AMI)를 생성합니다. AMI를 사용하여 Auto Scaling 그룹의 일부로 Application Load Balancer 뒤에 새 인스턴스를 프로비저닝합 니다. 최소 2개의 인스턴스를 유지하도록 Auto Scaling 그룹을 구성합니다. 웹사이트용 AWS Global Accelerator에서 액셀러레이터 구성",
+            "E": "기존 EC2 인스턴스에서 Amazon 머신 이미지(AMI)를 생성합니다. AMI를 사용하여 Auto Scaling 그룹의 일부로 Application Load Balancer 뒤에 새 인스턴스를 프로비저닝합 니다. 최소 2개의 인스턴스를 유지하도록 Auto Scaling 그룹을 구성합니다. 웹 사이트에 대한 Amazon CloudFront 배포를 구성합니다."
+        },
+        "answer": [
+            "C",
+            "E"
+        ],
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 370,
+        "question": "한 글로벌 기업이 AWS Organizations의 여러 AWS 계정에서 애플리케이션을 실행합니다. 회사의 애플리케이션은 멀티파트 업로드를 사용하여 AWS 리전의 여러 Amazon S3 버킷에 데이터를 업로드합니다. 회사는 비용 준수 목적으로 불완전한 멀티파트 업로드에 대해 보고하려고 합니다. 최소한의 운영 오버헤드로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+        "options": {
+            "A": "불완전한 멀티파트 업로드 객체 수를 보고하는 규칙으로 AWS Config를 구성합니다.",
+            "B": "불완전한 멀티파트 업로드 개체 수를 보고하는 SCP(서비스 제어 정책)를 만듭니다.",
+            "C": "불완전한 멀티파트 업로드 객체 수를 보고하도록 S3 스토리지 렌즈를 구성합니다.",
+            "D": "S3 다중 지역 액세스 포인트를 생성하여 불완전한 멀티파트 업로드 객체 수를 보고합니다."
+        },
+        "answer": "C",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 371,
+        "question": "회사는 단일 가용 영역에서 실행되는 Amazon EC2 인스턴스에 애플리케이션을 호스팅합니다. OSI(Open Systems Interconnection) 모델의 전송 계층을 사용하여 애플리케이션에 액 세스할 수 있습니다. 회사는 고가용성을 확보하기 위해 애플리케이션 아키텍처가 필요합니다. 이러한 요구 사항을 가장 비용 효율적으로 충족하는 단계 조합은 무엇입니까? (2개를 선택하세요.)",
+        "options": {
+            "A": "다른 가용 영역에서 새 EC2 인스턴스를 구성합니다. Amazon Route 53을 사용하여 트래픽을 모든 인스턴스로 라우팅합니다.",
+            "B": "EC2 인스턴스 앞에 Network Load Balancer를 구성합니다.",
+            "C": "인스턴스에 대한 TCP 트래픽을 위해 Network Load Balancer를 구성합니다. 인스턴스에 대한 HTTP 및 HTTPS 트래픽에 대해 Application Load Balancer를 구성합니다.",
+            "D": "EC2 인스턴스에 대한 Auto Scaling 그룹을 생성합니다. 여러 가용 영역을 사용하도록 Auto Scaling 그룹을 구성합니다. 인스턴스에서 애플리케이션 상태 확인을 실행하도록 Auto Scaling 그룹을 구성합니다.",
+            "E": "Amazon CloudWatch 경보를 생성합니다. 중지된 상태로 전환되는 EC2 인스턴스를 다시 시작하도록 경보를 구성합니다."
+        },
+        "answer": [
+            "B",
+            "D"
+        ],
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 372,
+        "question": "회사에서 외부 감사인과 회계 데이터를 공유하려고 합니다. 데이터는 프라이빗 서브넷에 상주하는 Amazon RDS DB 인스턴스에 저장됩니다. 감사자는 자체 AWS 계정이 있으며 자체 데이 터베이스 사본이 필요합니다. 회사가 감사자와 데이터베이스를 공유하는 가장 안전한 방법은 무엇입니까?",
+        "options": {
+            "A": "데이터베이스의 읽기 전용 복제본을 생성합니다. 감사자 액세스 권한을 부여하도록 IAM 표준 데이터베이스 인증을 구성합니다.",
+            "B": "데이터베이스 내용을 텍스트 파일로 내보냅니다. 파일을 Amazon S3 버킷에 저장합니다. 감사자를 위한 새 IAM 사용자를 생성합니다. 사용자에게 S3 버킷에 대한 액세스 권한을 부여 합니다.",
+            "C": "데이터베이스의 스냅샷을 Amazon S3 버킷에 복사합니다. IAM 사용자를 생성합니다. 사용자의 키를 감사자와 공유하여 S3 버킷의 객체에 대한 액세스 권한을 부여합니다.",
+            "D": "데이터베이스의 암호화된 스냅샷을 생성합니다. 감사자와 스냅샷을 공유합니다. AWS Key Management Service(AWS KMS) 암호화 키에 대한 액세스를 허용합니다."
+        },
+        "answer": "D",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 373,
+        "question": "회사는 VPC의 프라이빗 서브넷에 있는 Amazon EC2 인스턴스에 배포된 웹 애플리케이션을 실행합니다. 퍼블릭 서브넷에서 확장되는 ALB(Application Load Balancer)는 웹 트래픽 을 EC2 인스턴스로 보냅니다. 회사는 ALB에서 EC2 인스턴스로의 인바운드 트래픽을 제한하는 동시에 EC2 인스턴스의 프라이빗 서브넷 내부 또는 외부의 다른 소스로부터의 액세스를 방 지하는 새로운 보안 조치를 구현하려고 합니다. 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+        "options": {
+            "A": "인터넷에서 EC2 인스턴스의 프라이빗 IP 주소로 트래픽을 보내도록 라우팅 테이블의 경로를 구성합니다.",
+            "B": "ALB의 보안 그룹에서 오는 트래픽만 허용하도록 EC2 인스턴스의 보안 그룹을 구성합니다.",
+            "C": "EC2 인스턴스를 퍼블릭 서브넷으로 이동합니다. EC2 인스턴스에 탄력적 IP 주소 집합을 제공합니다.",
+            "D": "모든 포트에서 모든 TCP 트래픽을 허용하도록 ALB에 대한 보안 그룹을 구성합니다."
+        },
+        "answer": "B",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 374,
+        "question": "회사는 회사의 Amazon RDS 데이터베이스에 연결되는 애플리케이션을 AWS에서 실행합니다. 애플리케이션은 주말과 연중 피크 시간대에 확장됩니다. 회사는 데이터베이스에 연결하는 애 플리케이션에 대해 데이터베이스를 보다 효과적으로 확장하려고 합니다. 최소한의 운영 오버헤드로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+        "options": {
+            "A": "데이터베이스에 대한 대상 그룹 구성과 함께 연결 풀링과 함께 Amazon DynamoDB를 사용하십시오. DynamoDB 엔드포인트를 사용하도록 애플리케이션을 변경합니다.",
+            "B": "데이터베이스의 대상 그룹과 함께 Amazon RDS Proxy를 사용하십시오. RDS Proxy 엔드포인트를 사용하도록 애플리케이션을 변경합니다.",
+            "C": "Amazon EC2에서 실행되는 사용자 지정 프록시를 데이터베이스의 중개자로 사용합니다. 사용자 정의 프록시 엔드포인트를 사용하도록 애플리케이션을 변경하십시오.",
+            "D": "AWS Lambda 함수를 사용하여 데이터베이스에 대한 대상 그룹 구성과 함께 연결 풀링을 제공합니다. Lambda 함수를 사용하도록 애플리케이션을 변경합니다."
+        },
+        "answer": "B",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 375,
+        "question": "한 회사에서 온프레미스 Microsoft SQL Server Enterprise 에디션 데이터베이스를 AWS로 마이그레이션하려고 합니다. 회사의 온라인 애플리케이션은 데이터베이스를 사용하여 거래를 처리합니다. 데이터 분석 팀은 동일한 프로덕션 데이터베이스를 사용하여 분석 처리를 위한 보고서를 실행합니다. 회사는 가능한 한 관리형 서비스로 전환하여 운영 오버헤드를 줄이고 싶어합 니다.최소한의 운영 오버헤드로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+        "options": {
+            "A": "Microsoft SOL Server용 Amazon RDS로 마이그레이션하십시오. 보고 목적으로 읽기 복제본 사용",
+            "B": "Amazon EC2의 Microsoft SQL Server로 마이그레이션합니다. 보고 목적으로 Always On 읽기 복제본 사용",
+            "C": "Amazon DynamoDB로 마이그레이션합니다. 보고 목적으로 DynamoDB 온디맨드 복제본 사용",
+            "D": "Amazon Aurora MySQL로 마이그레이션합니다. 보고 목적으로 Aurora 읽기 전용 복제본 사용"
+        },
+        "answer": "A",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 376,
+        "question": "솔루션 아키텍트는 가용성이 뛰어난 Redis용 Amazon ElastiCache 기반 솔루션을 설계하고 있습니다. 솔루션 아키텍트는 장애로 인해 로컬 및 AWS 리전 내에서 성능 저하 또는 데이터 손실이 발생하지 않도록 해야 합니다. 솔루션은 노드 수준과 지역 수준에서 고가용성을 제공해야 합니다. 어떤 솔루션이 이러한 요구 사항을 충족합니까?",
+        "options": {
+            "A": "여러 노드가 포함된 샤드가 있는 다중 AZ Redis 복제 그룹을 사용하십시오.",
+            "B": "Redis AOF(Append Only Files)가 활성화된 여러 노드가 포함된 Redis 샤드를 사용합니다.",
+            "C": "복제 그룹에 두 개 이상의 읽기 전용 복제본이 있는 다중 AZ Redis 클러스터를 사용합니다.",
+            "D": "Auto Scaling이 활성화된 여러 노드가 포함된 Redis 샤드를 사용합니다."
+        },
+        "answer": "A",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 377,
+        "question": "회사에서 온프레미스 Oracle 데이터베이스를 Amazon Aurora PostgreSQL로 이전하고 있습니다. 데이터베이스에는 동일한 테이블에 쓰는 여러 응용 프로그램이 있습니다. 응용 프로그 램은 각 마이그레이션 사이에 한 달씩 하나씩 마이그레이션해야 합니다. 경영진은 데이터베이스에 많은 수의 읽기 및 쓰기가 있다는 우려를 표명했습니다. 데이터는 마이그레이션하는 동안 두 데이터베이스에서 동기화 상태를 유지해야 합니다. 솔루션 설계자는 무엇을 추천해야 합니까?",
+        "options": {
+            "A": "초기 마이그레이션에는 AWS DataSync를 사용하십시오. AWS Database Migration Service(AWS DMS)를 사용하여 변경 데이터 캡처(CDC) 복제 작업 및 테이블 매핑을 생 성하여 모든 테이블을 선택합니다.",
+            "B": "초기 마이그레이션에 AWS DataSync를 사용합니다. AWS Database Migration Service(AWS DMS)를 사용하여 전체 로드 및 변경 데이터 캡처(CDC) 복제 작업과 테이블 매 핑을 생성하여 모든 테이블을 선택합니다.",
+            "C": "메모리 최적화 복제 인스턴스를 사용하여 AWS DMS(AWS Database Migration Service)와 함께 AWS Schema Conversion Tool을 사용합니다. 전체 로드 및 CDC(변경 데 이터 캡처) 복제 작업과 테이블 매핑을 생성하여 모든 테이블을 선택합니다.",
+            "D": "컴퓨팅 최적화 복제 인스턴스를 사용하여 AWS DMS(AWS Database Migration Service)와 함께 AWS Schema Conversion Tool을 사용합니다. 전체 로드 및 변경 데이터 캡처(CDC) 복제 작업과 테이블 매핑을 생성하여 가장 큰 테이블을 선택합니다."
+        },
+        "answer": "C",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 378,
+        "question": "회사는 오래된 뉴스 영상에서 AWS에 비디오 아카이브를 저장할 수 있는 솔루션을 찾고 있습니다. 회사는 비용을 최소화해야 하며 이러한 파일을 복원할 필요가 거의 없습니다. 파일이 필요할 때 최대 5분 내에 사용할 수 있어야 합니다. 가장 비용 효율적인 솔루션은 무엇입니까?",
+        "options": {
+            "A": "비디오 아카이브를 Amazon S3 Glacier에 저장하고 긴급 검색을 사용합니다.",
+            "B": "비디오 아카이브를 Amazon S3 Glacier에 저장하고 표준 검색을 사용합니다.",
+            "C": "비디오 아카이브를 Amazon S3 Standard-Infrequent Access(S3 Standard-IA)에 저장합니다.",
+            "D": "비디오 아카이브를 Amazon S3 One Zone-Infrequent Access(S3 One Zone-IA)에 저장합니다."
+        },
+        "answer": "A",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 379,
+        "question": "회사에서 이미지 처리를 위한 2계층 애플리케이션을 운영하고 있습니다. 애플리케이션은 각각 1개의 퍼블릭 서브넷과 1개의 프라이빗 서브넷이 있는 2개의 가용 영역을 사용합니다. 웹 계층용 ALB(Application Load Balancer)는 퍼블릭 서브넷을 사용합니다. 애플리케이션 계층의 Amazon EC2 인스턴스는 프라이빗 서브넷을 사용합니다. 사용자는 응용 프로그램이 예상보다 느리게 실행되고 있다고 보고합니다. 웹 서버 로그 파일의 보안 감사는 애플리케이션이 소수의 IP 주소로부터 수백만 건의 불법 요청을 수신하고 있음을 보 여줍니다. 솔루션 설계자는 회사가 보다 영구적인 솔루션을 조사하는 동안 즉각적인 성능 문제를 해결해야 합니다. 이 요구 사항을 충족하기 위해 솔루션 설계자는 무엇을 권장해야 합니까?",
+        "options": {
+            "A": "웹 계층에 대한 인바운드 보안 그룹을 수정합니다. 리소스를 소비하는 IP 주소에 대한 거부 규칙을 추가합니다.",
+            "B": "웹 계층 서브넷에 대한 네트워크 ACL을 수정합니다. 리소스를 소비하는 IP 주소에 대한 인바운드 거부 규칙을 추가합니다.",
+            "C": "애플리케이션 계층에 대한 인바운드 보안 그룹을 수정합니다. 리소스를 소비하는 IP 주소에 대한 거부 규칙을 추가합니다.",
+            "D": "애플리케이션 계층 서브넷에 대한 네트워크 ACL을 수정합니다. 리소스를 소비하는 IP 주소에 대한 인바운드 거부 규칙을 추가합니다."
+        },
+        "answer": "B",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 380,
+        "question": "회사에서 Amazon EC2 인스턴스에 새 애플리케이션을 배포하고 있습니다. 애플리케이션은 Amazon Elastic Block Store(Amazon EBS) 볼륨에 데이터를 씁니다. 회사는 EBS 볼륨 에 기록된 모든 데이터가 유휴 상태에서 암호화되도록 해야 합니다. 이 요구 사항을 충족하는 솔루션은 무엇입니까?",
+        "options": {
+            "A": "EBS 암호화를 지정하는 IAM 역할을 생성합니다. 역할을 EC2 인스턴스에 연결합니다.",
+            "B": "EBS 볼륨을 암호화된 볼륨으로 생성합니다. EBS 볼륨을 EC2 인스턴스에 연결합니다.",
+            "C": "키가 Encrypt이고 값이 True인 EC2 인스턴스 태그를 생성합니다. EBS 수준에서 암호화가 필요한 모든 인스턴스에 태그를 지정합니다.",
+            "D": "계정에서 EBS 암호화를 시행하는 AWS Key Management Service(AWS KMS) 키 정책을 생성합니다. 키 정책이 활성 상태인지 확인하십시오."
+        },
+        "answer": "B",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 381,
+        "question": "회사에서 웹 애플리케이션으로 새로운 비디오 게임을 개발했습니다. 애플리케이션은 데이터베이스 계층에 MySQL용 Amazon RDS가 있는 VPC의 3계층 아키텍처에 있습니다. 여러 플레 이어가 온라인에서 동시에 경쟁합니다. 게임 개발자는 거의 실시간으로 상위 10개 점수판을 표시하고 현재 점수를 유지하면서 게임을 중지하고 복원할 수 있는 기능을 제공하기를 원합니다. 솔루션 설계자는 이러한 요구 사항을 충족하기 위해 무엇을 해야 합니까?",
+        "options": {
+            "A": "웹 애플리케이션이 표시할 점수를 캐시하도록 Memcached 클러스터용 Amazon ElastiCache를 설정합니다.",
+            "B": "Redis 클러스터용 Amazon ElastiCache를 설정하여 웹 애플리케이션이 표시할 점수를 계산하고 캐시합니다.",
+            "C": "웹 애플리케이션 앞에 Amazon CloudFront 배포를 배치하여 애플리케이션 섹션의 점수판을 캐시합니다.",
+            "D": "MySQL용 Amazon RDS에서 읽기 전용 복제본을 생성하여 스코어보드를 계산하고 웹 애플리케이션에 읽기 트래픽을 제공하는 쿼리를 실행합니다."
+        },
+        "answer": "B",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 382,
+        "question": "한 회사에서 Amazon Elastic Container Service(Amazon ECS) 클러스터와 Amazon RDS DB 인스턴스를 사용하여 결제 처리 애플리케이션을 구축하고 실행하려고 합니다. 회사 는 규정 준수를 위해 온프레미스 데이터 센터에서 애플리케이션을 실행합니다. 솔루션 아키텍트는 AWS Outposts를 솔루션의 일부로 사용하려고 합니다. 솔루션 설계자는 회사의 운영 팀과 협력하여 애플리케이션을 구축하고 있습니다. 회사 운영팀에서는 어떤 활동을 담당하나요? (3개를 선택하세요.)",
+        "options": {
+            "A": "Outposts 랙에 탄력적인 전원 및 네트워크 연결 제공",
+            "B": "Outposts에서 실행되는 가상화 하이퍼바이저, 스토리지 시스템 및 AWS 서비스 관리",
+            "C": "데이터센터 환경의 물리적 보안 및 접근통제",
+            "D": "Outposts 랙 내의 전원 공급 장치, 서버 및 네트워킹 장비를 포함한 Outposts 인프라의 가용성",
+            "E": "Outposts 구성 요소의 물리적 유지 관리",
+            "F": "서버 오류 및 유지 관리 이벤트를 완화하기 위해 Amazon ECS 클러스터에 추가 용량 제공"
+        },
+        "answer": [
+            "A",
+            "C",
+            "F"
+        ],
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 383,
+        "question": "한 회사가 여러 소스에서 실시간 스트리밍 데이터를 수집할 새로운 데이터 플랫폼을 준비하고 있습니다. 회사는 Amazon S3에 데이터를 쓰기 전에 데이터를 변환해야 합니다. 회사는 SQL을 사용하여 변환된 데이터를 쿼리할 수 있는 기능이 필요합니다. 이러한 요구 사항을 충족하는 솔루션은 무엇입니까? (두 가지를 선택하세요.)",
+        "options": {
+            "A": "Amazon Kinesis Data Streams를 사용하여 데이터를 스트리밍합니다. Amazon Kinesis Data Analytics를 사용하여 데이터를 변환합니다. Amazon Kinesis Data Firehose를 사용하여 Amazon S3에 데이터를 씁니다. Amazon Athena를 사용하여 Amazon S3에서 변환된 데이터를 쿼리합니다.",
+            "B": "Amazon Managed Streaming for Apache Kafka(Amazon MSK)를 사용하여 데이터를 스트리밍합니다. AWS Glue를 사용하여 데이터를 변환하고 데이터를 Amazon S3에 씁니다. Amazon Athena를 사용하여 Amazon S3에서 변환된 데이터를 쿼리합니다.",
+            "C": "AWS Database Migration Service(AWS DMS)를 사용하여 데이터를 수집합니다. Amazon EMR을 사용하여 데이터를 변환하고 Amazon S3에 데이터를 씁니다. Amazon Athena를 사용하여 Amazon S3에서 변환된 데이터를 쿼리합니다.",
+            "D": "Amazon Managed Streaming for Apache Kafka(Amazon MSK)를 사용하여 데이터를 스트리밍합니다. Amazon Kinesis Data Analytics를 사용하여 데이터를 변환하고 데이터를 Amazon S3에 씁니다. Amazon RDS 쿼리 편집기를 사용하여 Amazon S3에서 변환된 데이터를 쿼리합니다.",
+            "E": "Amazon Kinesis Data Streams를 사용하여 데이터를 스트리밍합니다. AWS Glue를 사용하여 데이터를 변환합니다. Amazon Kinesis Data Firehose를 사용하여 Amazon S3에 데이터를 씁니다. Amazon RDS 쿼리 편집기를 사용하여 Amazon S3에서 변환된 데이터를 쿼리합니다."
+        },
+        "answer": [
+            "A",
+            "B"
+        ],
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 384,
+        "question": "회사는 서로 다른 제품군에 대해 AWS에서 여러 애플리케이션을 호스팅합니다. 애플리케이션은 Amazon EC2 인스턴스 및 Application Load Balancer를 비롯한 다양한 컴퓨팅 리소스 를 사용합니다. 애플리케이션은 여러 AWS 리전의 AWS Organizations에서 동일한 조직의 다른 AWS 계정에서 실행됩니다. 각 제품군의 팀은 개별 계정의 각 컴퓨팅 리소스에 태그를 지 정했습니다. 회사는 조직의 통합 청구 기능에서 각 제품군의 비용에 대한 자세한 정보를 원합니다. 이러한 요구 사항을 충족하는 단계 조합은 무엇입니까? (두 가지를 선택하세요.)",
+        "options": {
+            "A": "AWS 결제 콘솔에서 특정 AWS 생성 태그를 선택합니다.",
+            "B": "AWS 결제 콘솔에서 특정 사용자 정의 태그를 선택합니다.",
+            "C": "AWS 리소스 그룹 콘솔에서 특정 사용자 정의 태그를 선택합니다.",
+            "D": "각 AWS 계정에서 선택한 태그를 활성화합니다.",
+            "E": "조직 마스터 계정에서 선택한 태그를 활성화합니다."
+        },
+        "answer": [
+            "B",
+            "E"
+        ],
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 385,
+        "question": "한 회사가 최근 전 세계 고객을 대상으로 소매 웹 사이트를 배포한다고 발표했습니다. 웹 사이트는 Elastic Load Balancer 뒤에 있는 여러 Amazon EC2 인스턴스에서 실행됩니다. 인스 턴스는 여러 가용 영역의 Auto Scaling 그룹에서 실행됩니다. 회사는 고객이 웹 사이트에 액세스하는 데 사용하는 장치에 따라 다양한 버전의 콘텐츠를 고객에게 제공하려고 합니다. 이러한 요구 사항을 충족하기 위해 솔루션 설계자는 어떤 작업 조합을 수행해야 합니까? (두 가지를 선택하세요.)",
+        "options": {
+            "A": "여러 버전의 콘텐츠를 캐시하도록 Amazon CloudFront를 구성합니다.",
+            "B": "트래픽을 다른 인스턴스로 전달하도록 Network Load Balancer에서 호스트 헤더를 구성합니다.",
+            "C": "User-Agent 헤더를 기반으로 사용자에게 특정 객체를 보내도록 Lambda@Edge 함수를 구성합니다 .",
+            "D": "AWS Global Accelerator를 구성합니다. NLB(Network Load Balancer)에 요청을 전달합니다. 다른 EC2 인스턴스에 대한 호스트 기반 라우팅을 설정하도록 NLB를 구성합니다.",
+            "E": "AWS Global Accelerator를 구성합니다. NLB(Network Load Balancer)에 요청을 전달합니다. 다른 EC2 인스턴스에 대한 경로 기반 라우팅을 설정하도록 NLB를 구성합니다."
+        },
+        "answer": [
+            "A",
+            "c"
+        ],
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 386,
+        "question": "회사는 Salesforce 계정과 Amazon S3 간에 데이터를 안전하게 교환하고자 합니다. 회사는 AWS Key Management Service (AWS KMS) 고객 관리 키 (CMK)를 사용하여 데이터 를 휴식 상태에서 암호화해야 합니다. 또한 데이터를 전송 중에도 암호화해야 합니다. 회사는 Salesforce 계정에 대한 API 액세스를 활성화했습니다. 가장 적은 개발 노력으로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+        "options": {
+            "A": "Salesforce에서 Amazon S3로 데이터를 안전하게 전송하기 위해 AWS Lambda 함수를 생성합니다.",
+            "B": "AWS Step Functions 워크플로우를 생성합니다. Salesforce에서 Amazon S3로 데이터를 안전하게 전송하는 작업을 정의합니다.",
+            "C": "Amazon AppFlow 플로우를 생성합니다. Salesforce에서 Amazon S3로 데이터를 안전하게 전송합니다.",
+            "D": "Salesforce에서 Amazon S3로 데이터를 안전하게 전송하기 위해 사용자 정의 커넥터를 생성합니다."
+        },
+        "answer": "C",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 387,
+        "question": "회사에서 Amazon Elastic Container Service(Amazon ECS)를 사용할 컨테이너화된 애플리케이션을 설계하고 있습니다. 애플리케이션은 내구성이 뛰어나고 RPO(복구 지점 목표)가 8시간인 다른 AWS 리전에 데이터를 복구할 수 있는 공유 파일 시스템에 액세스해야 합니다. 파일 시스템은 리전 내의 각 가용 영역에 탑재 대상을 제공해야 합니다. 솔루션 설계자는 AWS Backup을 사용하여 다른 리전에 대한 복제를 관리하려고 합니다. 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+        "options": {
+            "A": "다중 AZ 배포가 있는 Windows 파일 서버용 Amazon FSx",
+            "B": "다중 AZ 배포가 있는 NetApp ONTAP용 Amazon FSx",
+            "C": "표준 스토리지 클래스가 있는 Amazon Elastic File System(Amazon EFS)",
+            "D": "OpenZFS용 Amazon FSx"
+        },
+        "answer": "C",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 388,
+        "question": "솔루션 설계자는 엔지니어링 도면을 저장하고 보는 데 사용되는 새 웹 애플리케이션의 스토리지 아키텍처를 설계하고 있습니다. 모든 애플리케이션 구성 요소는 AWS 인프라에 배포됩니다. 응용 프로그램 디자인은 사용자가 엔지니어링 도면이 로드될 때까지 기다리는 시간을 최소화하기 위해 캐싱을 지원해야 합니다. 애플리케이션은 페타바이트의 데이터를 저장할 수 있어야 합니다. 솔루션 설계자는 어떤 스토리지 및 캐싱 조합을 사용해야 합니까?",
+        "options": {
+            "A": "Amazon CloudFront를 사용하는 Amazon S3",
+            "B": "Amazon ElastiCache를 사용하는 Amazon S3 Glacier",
+            "C": "Amazon CloudFront를 사용하는 Amazon Elastic Block Store(Amazon EBS) 볼륨.",
+            "D": "Amazon ElastiCache를 사용하는 AWS Storage Gateway"
+        },
+        "answer": "A",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 389,
+        "question": "회사에서 PostgreSQL용 Amazon RDS를 사용하는 애플리케이션을 실행합니다. 애플리케이션은 평일 업무 시간에만 트래픽을 수신합니다. 회사는 이 사용량을 기반으로 비용을 최적화하 고 운영 오버헤드를 줄이려고 합니다. 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+        "options": {
+            "A": "AWS의 인스턴스 스케줄러를 사용하여 시작 및 중지 일정을 구성하십시오.",
+            "B": "자동 백업을 끕니다. 데이터베이스의 매주 수동 스냅샷을 생성합니다.",
+            "C": "최소 CPU 사용률을 기준으로 데이터베이스를 시작하고 중지하는 사용자 지정 AWS Lambda 함수를 생성합니다.",
+            "D": "모든 Upfront 예약 DB 인스턴스를 구매합니다."
+        },
+        "answer": "A",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 390,
+        "question": "회사에서 해당 애플리케이션을 위한 스토리지 솔루션을 찾고 있습니다. 솔루션은 가용성과 확장성이 높아야 합니다. 또한 솔루션은 기본 프로토콜을 통해 AWS 및 온프레미스의 여러 Linux인스턴스에 의해 마운트될 수 있고 최소 크기 요구 사항이 없는 파일 시스템으로 작동해야 합니다. 회사는 온프레미스 네트워크에서 VPC로 액세스하기 위해 사이트 간 VPN을 설정했습니다. 이러한 요구 사항을 충족하는 스토리지 솔루션은 무엇입니까?",
+        "options": {
+            "A": "Amazon FSx 다중 AZ 배포",
+            "B": "Amazon Elastic Block Store(Amazon EBS) 다중 연결 볼륨",
+            "C": "탑재 대상이 여러 개인 Amazon Elastic File System(Amazon EFS)",
+            "D": "단일 탑재 대상 및 여러 액세스 지점이 있는 Amazon Elastic File System(Amazon EFS)"
+        },
+        "answer": "C",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 391,
+        "question": "회사에 통합 결제를 사용하는 여러 AWS 계정이 있습니다. 이 회사는 90일 동안 여러 개의 활성 고성능 Amazon RDS for Oracle 온디맨드 DB 인스턴스를 실행합니다. 회사의 재무 팀은 통합 결제 계정 및 기타 모든 AWS 계정에서 AWS Trusted Advisor에 액세스할 수 있습니다. 재무 팀은 적절한 AWS 계정을 사용하여 RDS에 대한 Trusted Advisor 확인 권장 사항에 액세스해야 합니다. 재무팀은 적절한 Trusted Advisor 수표를 검토하여 RDS 비용을 줄여야 합 니다. 이러한 요구 사항을 충족하기 위해 재무 팀은 어떤 조합의 단계를 수행해야 합니까? (두 가지를 선택하세요.)",
+        "options": {
+            "A": "RDS 인스턴스가 실행 중인 계정의 Trusted Advisor 권장 사항을 사용합니다.",
+            "B": "통합 결제 계정의 Trusted Advisor 권장 사항을 사용하여 모든 RDS 인스턴스 확인을 동시에 확인합니다.",
+            "C": "Amazon RDS 예약 인스턴스 최적화에 대한 Trusted Advisor 검사를 검토합니다.",
+            "D": "Amazon RDS 유휴 DB 인스턴스에 대한 Trusted Advisor 검사를 검토합니다.",
+            "E": "Amazon Redshift 예약 노드 최적화에 대한 Trusted Advisor 검사를 검토합니다."
+        },
+        "answer": [
+            "B",
+            "D"
+        ],
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 392,
+        "question": "전자상거래 회사에서 계절별 온라인 세일을 진행하고 있습니다. 이 회사는 여러 가용 영역에 걸쳐 있는 Amazon EC2 인스턴스에서 웹 사이트를 호스팅합니다. 회사는 자사 웹사이트에서 세 일 기간 동안 급격한 트래픽 증가를 관리할 수 있기를 원합니다. 이러한 요구 사항을 가장 비용 효율적으로 충족하는 솔루션은 무엇입니까?",
+        "options": {
+            "A": "최대 트래픽 로드를 처리할 수 있을 만큼 큰 Auto Scaling 그룹을 생성합니다. Amazon EC2 인스턴스의 절반을 중지합니다. 트래픽이 증가하면 중지된 인스턴스를 사용하여 확장하도 록 Auto Scaling 그룹을 구성합니다.",
+            "B": "웹 사이트에 대한 Auto Scaling 그룹을 생성합니다. 확장할 필요 없이 높은 트래픽 볼륨을 처리할 수 있도록 Auto Scaling 그룹의 최소 크기를 설정합니다.",
+            "C": "Amazon CloudFront 및 Amazon ElastiCache를 사용하여 Auto Scaling 그룹이 원본으로 설정된 동적 콘텐츠를 캐시합니다. CloudFront 및 ElastiCache를 채우는 데 필요한 인스턴스로 Auto Scaling 그룹을 구성합니다. 캐시가 완전히 채워진 후 규모를 축소합니다.",
+            "D": "트래픽 증가에 따라 확장되도록 Auto Scaling 그룹을 구성합니다. 사전 구성된 Amazon 머신 이미지(AMI)에서 새 인스턴스를 시작하기 위한 시작 템플릿을 생성합니다."
+        },
+        "answer": "D",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 393,
+        "question": "솔루션 아키텍트가 Policy1과 Policy2라는 두 가지 IAM 정책을 만들♘습니다. 두 정책 모두 IAM 그룹에 연결됩니다. 클라우드 엔지니어가 IAM 그룹에 IAM 사용자로 추가됩니다. 클라우드 엔지니어는 어떤 작업을 수행할 수 있습니까?",
+        "options": {
+            "A": "IAM 사용자 삭제",
+            "B": "디렉토리 삭제",
+            "C": "Amazon EC2 인스턴스 삭제",
+            "D": "Amazon CloudWatch Logs에서 로그 삭제"
+        },
+        "answer": "C",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 394,
+        "question": "서버리스 애플리케이션은 Amazon API Gateway, AWS Lambda 및 Amazon DynamoDB를 사용합니다. Lambda 함수에는 DynamoDB 테이블을 읽고 쓸 수 있는 권한이 필요합 니다. DynamoDB 테이블에 대한 Lambda 함수 액세스를 가장 안전하게 제공하는 솔루션은 무엇입니까?",
+        "options": {
+            "A": "Lambda 함수에 프로그래밍 방식으로 액세스할 수 있는 IAM 사용자를 생성합니다. DynamoDB 테이블에 대한 읽기 및 쓰기 액세스를 허용하는 정책을 사용자에게 연결합니다. access_key_id 및 secret_access_key 파라미터를 Lambda 환경 변수의 일부로 저장합니다. 다른 AWS 사용자에게 Lambda 함수 구성에 대한 읽기 및 쓰기 액세스 권한이 없는 지 확인하십시오.",
+            "B": "Lambda를 신뢰할 수 있는 서비스로 포함하는 IAM 역할을 생성합니다. DynamoDB 테이블에 대한 읽기 및 쓰기 액세스를 허용하는 역할에 정책을 연결합니다. 새 역할을 실행 역할로 사용하도록 Lambda 함수의 구성을 업데이트합니다.",
+            "C": "Lambda 함수에 프로그래밍 방식으로 액세스할 수 있는 IAM 사용자를 생성합니다. DynamoDB 테이블에 대한 읽기 및 쓰기 액세스를 허용하는 정책을 사용자에게 연결합니다. AWS Systems Manager Parameter Store에 access_key_id 및 secret_access_key 파라미터를 보안 문자열 파라미터로 저장합니다. DynamoDB 테이블에 연결하기 전에 보안 문자열 파라미터를 검색하도록 Lambda 함수 코드를 업데이트합니다.",
+            "D": "DynamoDB를 신뢰할 수 있는 서비스로 포함하는 IAM 역할을 생성합니다. Lambda 함수에서 읽기 및 쓰기 액세스를 허용하는 역할에 정책을 연결합니다. 새 역할에 실행 역할로 연결 되도록 Lambda 함수의 코드를 업데이트합니다."
+        },
+        "answer": "B",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 395,
+        "question": "회사에는 동일한 AWS 리전의 Amazon S3 버킷에서 대량의 데이터를 읽고 쓰는 서비스가 있습니다. 이 서비스는 VPC의 프라이빗 서브넷 내 Amazon EC2 인스턴스에 배포됩니다. 이 서비스는 퍼블릭 서브넷의 NAT 게이트웨이를 통해 Amazon S3와 통신합니다. 그러나 회사는 데이터 출력 비용을 줄일 수 있는 솔루션을 원합니다. 이러한 요구 사항을 가장 비용 효율적으로 충족하는 솔루션은 무엇입니까?",
+        "options": {
+            "A": "퍼블릭 서브넷에서 전용 EC2 NAT 인스턴스를 프로비저닝합니다. 이 인스턴스의 탄력적 네트워크 인터페이스를 모든 S3 트래픽의 대상으로 사용하도록 프라이빗 서브넷에 대한 라우팅 테이블을 구성합니다.",
+            "B": "프라이빗 서브넷에서 전용 EC2 NAT 인스턴스를 프로비저닝합니다. 이 인스턴스의 탄력적 네트워크 인터페이스를 모든 S3 트래픽의 대상으로 사용하도록 퍼블릭 서브넷에 대한 라우팅 테이블을 구성합니다.",
+            "C": "VPC 게이트웨이 엔드포인트를 프로비저닝합니다. 게이트웨이 엔드포인트를 모든 S3 트래픽의 경로로 사용하도록 프라이빗 서브넷에 대한 경로 테이블을 구성합니다.",
+            "D": "두 번째 NAT 게이트웨이를 프로비저닝합니다. 이 NAT 게이트웨이를 모든 S3 트래픽의 대상으로 사용하도록 프라이빗 서브넷에 대한 라우팅 테이블을 구성합니다."
+        },
+        "answer": "C",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 396,
+        "question": "회사는 Auto Scaling 그룹의 Application Load Balancer(ALB) 뒤에 있는 Amazon EC2 인스턴스에서 전자상거래 웹 사이트를 운영합니다. 사이트에서 IP 주소가 변경되는 불법 외부 시스템의 높은 요청 비율과 관련된 성능 문제가 발생하고 있습니다. 보안 팀은 웹 사이트에 대한 잠재적인 DDoS 공격에 대해 걱정하고 있습니다. 회사는 합법적인 사용자에게 최소한의 영향 을 미치는 방식으로 불법적으로 들어오는 요청을 차단해야 합니다. 솔루션 설계자는 무엇을 추천해야 합니까?",
+        "options": {
+            "A": "Amazon Inspector를 배포하고 ALB와 연결합니다.",
+            "B": "AWS WAF를 배포하고 ALB와 연결하고 속도 제한 규칙을 구성합니다.",
+            "C": "들어오는 트래픽을 차단하기 위해 ALB와 연결된 네트워크 ACL에 규칙을 배포합니다.",
+            "D": "Amazon GuardDuty를 배포하고 GuardDuty를 구성할 때 속도 제한 보호를 활성화합니다."
+        },
+        "answer": "B",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 397,
+        "question": "회사는 여러 벤더를 사용하여 Amazon S3 버킷에 저장된 디지털 자산을 배포합니다. 이 회사는 벤더 AWS 계정이 이러한 S3 버킷에서 객체를 다운로드하는 데 필요한 최소한의 액세스 권 한을 갖도록 하려고 합니다. 최소한의 운영 오버헤드로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+        "options": {
+            "A": "익명의 읽기 권한과 모든 버킷을 나열할 수 있는 권한이 있는 버킷 정책을 설계합니다.",
+            "B": "사용자에게 읽기 전용 액세스 권한을 부여하는 버킷 정책을 설계합니다. IAM 엔터티를 보안 주체로 지정합니다.",
+            "C": "IAM 역할에 대해 지정된 읽기 전용 액세스 정책이 있는 교차 계정 IAM 역할을 생성합니다.",
+            "D": "공급업체 사용자에게 읽기 전용 액세스 권한을 부여하는 사용자 정책 및 공급업체 사용자 그룹을 만듭니다."
+        },
+        "answer": "C",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 398,
+        "question": "회사는 AWS에서 애플리케이션을 실행합니다. 애플리케이션이 일관되지 않은 사용량을 수신합니다. 애플리케이션은 AWS Direct Connect를 사용하여 온프레미스 MySQL 호환 데이터베 이스에 연결합니다. 온프레미스 데이터베이스는 지속적으로 최소 2GiB의 메모리를 사용합니다. 회사는 온프레미스 데이터베이스를 관리형 AWS 서비스로 마이그레이션하려고 합니다. 회사는 자동 확장 기능을 사용하여 예기치 않은 작업 부하 증가를 관리하려고 합니다. 최소한의 관리 오버헤드로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+        "options": {
+            "A": "기본 읽기 및 쓰기 용량 설정으로 Amazon DynamoDB 데이터베이스를 프로비저닝합니다.",
+            "B": "최소 용량이 1 Aurora 용량 단위(ACU)인 Amazon Aurora 데이터베이스를 프로비저닝합니다.",
+            "C": "최소 용량이 1 Aurora 용량 단위(ACU)인 Amazon Aurora Serverless v2 데이터베이스를 프로비저닝합니다.",
+            "D": "2GiB의 메모리로 Amazon RDS for MySQL 데이터베이스를 프로비저닝합니다."
+        },
+        "answer": "C",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 399,
+        "question": "회사는 PostgreSQL 단일 AZ DB 인스턴스용 Amazon RDS에 모든 주문을 저장하는 온라인 쇼핑 애플리케이션을 호스팅합니다. 경영진은 단일 실패 지점을 제거하기를 원하며 솔루션 설 계자에게 애플리케이션 코드를 변경하지 않고도 데이터베이스 다운타임을 최소화할 수 있는 접근 방식을 권장하도록 요청했습니다. 어떤 솔루션이 이러한 요구 사항을 충족합니까?",
+        "options": {
+            "A": "데이터베이스 인스턴스를 수정하고 다중 AZ 옵션을 지정하여 기존 데이터베이스 인스턴스를 다중 AZ 배포로 변환합니다.",
+            "B": "새로운 RDS 다중 AZ 배포를 생성합니다. 현재 RDS 인스턴스의 스냅샷을 만들고 스냅샷으로 새 다중 AZ 배포를 복원합니다.",
+            "C": "다른 가용 영역에서 PostgreSQL 데이터베이스의 읽기 전용 복제본을 생성합니다. Amazon Route 53 가중 레코드 세트를 사용하여 데이터베이스 전체에 요청을 분산합니다.",
+            "D": "최소 그룹 크기가 2인 Amazon EC2 Auto Scaling 그룹에 RDS for PostgreSQL 데이터베이스를 배치합니다. Amazon Route 53 가중 레코드 세트를 사용하여 인스턴스 간에 요청을 분산합니다."
+        },
+        "answer": "A",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "id": 400,
+        "question": "회사에서 온프레미스 PostgreSQL 데이터베이스를 Amazon RDS for PostgreSQL DB 인스턴스로 옮겼습니다. 회사는 신제품을 성공적으로 출시했습니다. 데이터베이스의 워크로드가 증가했습니다. 회사는 인프라를 추가하지 않고 더 큰 워크로드를 수용하려고 합니다. 이러한 요구 사항을 가장 비용 효율적으로 충족하는 솔루션은 무엇입니까?",
+        "options": {
+            "A": "전체 워크로드에 대해 예약된 DB 인스턴스를 구매합니다. PostgreSQL DB 인스턴스용 Amazon RDS를 더 크게 만듭니다.",
+            "B": "Amazon RDS for PostgreSQL DB 인스턴스를 다중 AZ DB 인스턴스로 만듭니다.",
+            "C": "총 워크로드에 대해 예약된 DB 인스턴스를 구매합니다. PostgreSQL DB 인스턴스용 다른 Amazon RDS를 추가합니다.",
+            "D": "Amazon RDS for PostgreSQL DB 인스턴스를 온디맨드 DB 인스턴스로 만듭니다."
+        },
+        "answer": "A",
+        "correct": 0,
+        "incorrect": 0
+    }
+]

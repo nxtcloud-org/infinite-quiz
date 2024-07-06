@@ -7,6 +7,11 @@ def load_questions(file_path):
         return json.load(f)
 
 
+def load_homework_questions(file_path):
+    with open(file_path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
 def load_results(file_path):
     try:
         with open(file_path, "r") as f:

@@ -31,7 +31,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/85793-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "D"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 2,
@@ -64,7 +67,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/136955-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "A"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 3,
@@ -97,7 +103,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/99795-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "A"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 4,
@@ -133,7 +142,10 @@
     "answer": [
       "C",
       "D"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 5,
@@ -165,7 +177,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/85026-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "D"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 6,
@@ -198,7 +213,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/84875-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "B"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 7,
@@ -231,7 +249,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/85574-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "C"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 8,
@@ -263,7 +284,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/85038-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "B"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 9,
@@ -295,7 +319,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/85529-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "D"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 10,
@@ -328,7 +355,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/85603-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "B"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 11,
@@ -364,7 +394,10 @@
     "answer": [
       "A",
       "B"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 12,
@@ -399,7 +432,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/85634-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "D"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 13,
@@ -427,7 +463,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/85238-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "C"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 14,
@@ -455,7 +494,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/85319-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "D"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 15,
@@ -483,7 +525,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/84721-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "D"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 16,
@@ -511,7 +556,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/85030-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "C"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 17,
@@ -539,7 +587,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/85227-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "A"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 18,
@@ -567,7 +618,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/85606-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "B"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 19,
@@ -595,7 +649,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/84748-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "A"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 20,
@@ -631,7 +688,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/85029-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "A"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 21,
@@ -659,7 +719,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/85204-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "A"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 23,
@@ -692,7 +755,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/85902-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "C"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 24,
@@ -720,7 +786,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/21775-exam-aws-certified-solutions-architect-associate-saa-c02/",
     "answer": [
       "B"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 25,
@@ -752,7 +821,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/85211-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "B"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 26,
@@ -786,7 +858,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/86676-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "C"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 27,
@@ -819,7 +894,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/86621-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "C"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 28,
@@ -847,7 +925,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/95006-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "D"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 29,
@@ -875,7 +956,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/85751-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "A"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 30,
@@ -903,7 +987,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/85593-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "A"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 31,
@@ -931,7 +1018,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/84728-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "A"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 32,
@@ -967,7 +1057,10 @@
     "answer": [
       "B",
       "E"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 33,
@@ -996,7 +1089,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/85186-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "C"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 34,
@@ -1027,7 +1123,10 @@
     "answer": [
       "A",
       "B"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 35,
@@ -1055,7 +1154,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/85740-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "C"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 36,
@@ -1083,7 +1185,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/84680-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "B"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 37,
@@ -1116,7 +1221,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/85205-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "C"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 38,
@@ -1144,7 +1252,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/85795-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "A"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 39,
@@ -1172,7 +1283,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/85173-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "D"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 40,
@@ -1200,7 +1314,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/85266-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "C"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 41,
@@ -1228,7 +1345,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/85202-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "B"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 42,
@@ -1256,7 +1376,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/84848-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "C"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 43,
@@ -1284,7 +1407,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/85264-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "B"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 44,
@@ -1312,7 +1438,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/85032-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "A"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 45,
@@ -1340,7 +1469,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/85409-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "C"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 46,
@@ -1368,7 +1500,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/85212-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "B"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 47,
@@ -1399,7 +1534,10 @@
     "answer": [
       "B",
       "D"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 48,
@@ -1430,7 +1568,10 @@
     "answer": [
       "A",
       "C"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 49,
@@ -1458,7 +1599,10 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/84838-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "A"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   },
   {
     "idx": 50,
@@ -1495,6 +1639,9 @@
     "answer": [
       "A",
       "C"
-    ]
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
   }
 ]

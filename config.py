@@ -9,6 +9,8 @@ QUIZ_SIZE = 2  # 퀴즈 문제 수
 QUESTIONS_FILE = "test_exam/test1.json"
 RESULTS_FILE = "db/quiz_results.json"
 STUDENTS_FILE = "db/student.json"
+HOMEWORK_FILE = "exam/s3&cloudfront.json"
+
 
 # 관리자 설정
 ADMIN_PASSWORD = "1234"
