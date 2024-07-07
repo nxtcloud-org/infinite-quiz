@@ -132,6 +132,7 @@ if (
             st.write(f"{i} : {question['choices']['eng'][i]}")
 
     st.divider()
+
     # 다음 버튼
     if st.button("다음", type="primary"):
         st.session_state["user_answer"] = user_answer

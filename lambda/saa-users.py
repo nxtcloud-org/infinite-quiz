@@ -58,7 +58,6 @@ def lambda_handler(event, context):
         "register": register_user,
         "login": login_user,
         "get_user": get_user,
-        "update_user": update_user,
     }
 
     if operation in operations:
@@ -114,9 +113,11 @@ def register_user(payload):
                 "school": school,
                 "team": team,
                 "point": 0,
-                "success": 0,
-                "failure": 0,
-                "attempts": 0,
+                "challenge_success": 0,
+                "challenge_failure": 0,
+                "challenge_attempts": 0,
+                "correct_idx": {},
+                "incorrect_idx": {},
             }
         )
         return {
@@ -162,6 +163,9 @@ def login_user(payload):
                 if str(user["password"]) == str(password):  # 문자열로 변환하여 비교
                     # 비밀번호 확인 후 제거
                     del user["password"]
+                    # 문제 정보는 생략
+                    del user["correct_idx"]
+                    del user["incorrect_idx"]
                     return {
                         "statusCode": 200,
                         "body": json.dumps(user, cls=DecimalEncoder),
@@ -199,62 +203,11 @@ def get_user(payload):
         if "Item" in response:
             user = response["Item"]
             del user["password"]  # 보안을 위해 비밀번호는 제외
+            # 문제 정보는 생략
+            del user["correct_idx"]
+            del user["incorrect_idx"]
             return {"statusCode": 200, "body": json.dumps(user)}
         else:
             return {"statusCode": 404, "body": json.dumps("User not found")}
     except ClientError as e:
         return {"statusCode": 500, "body": json.dumps("Error retrieving user")}
-
-
-def update_user(payload):
-    user_id = payload["user_id"]
-    updates = payload["updates"]
-
-    update_expression = "SET "
-    expression_attribute_values = {}
-
-    for key, value in updates.items():
-        if key not in ["user_id", "username", "password"]:  # 이러한 필드는 변경 불가
-            update_expression += f"{key} = :{key}, "
-            expression_attribute_values[f":{key}"] = value
-
-    update_expression = update_expression.rstrip(", ")
-
-    try:
-        response = table.update_item(
-            Key={"user_id": user_id},
-            UpdateExpression=update_expression,
-            ExpressionAttributeValues=expression_attribute_values,
-            ReturnValues="UPDATED_NEW",
-        )
-        return {"statusCode": 200, "body": json.dumps("User updated successfully")}
-    except ClientError as e:
-        return {"statusCode": 500, "body": json.dumps("Error updating user")}
-
-
-# 추가: school이나 team으로 사용자 검색 함수
-def search_users_by_school(school):
-    try:
-        response = table.query(
-            IndexName="school-index",
-            KeyConditionExpression="school = :school",
-            ExpressionAttributeValues={":school": school},
-        )
-        return {"statusCode": 200, "body": json.dumps(response["Items"])}
-    except ClientError as e:
-        return {
-            "statusCode": 500,
-            "body": json.dumps("Error searching users by school"),
-        }
-
-
-def search_users_by_team(team):
-    try:
-        response = table.query(
-            IndexName="team-index",
-            KeyConditionExpression="team = :team",
-            ExpressionAttributeValues={":team": team},
-        )
-        return {"statusCode": 200, "body": json.dumps(response["Items"])}
-    except ClientError as e:
-        return {"statusCode": 500, "body": json.dumps("Error searching users by team")}
