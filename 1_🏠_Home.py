@@ -101,13 +101,15 @@ if "user" not in st.session_state:
     st.warning("퀴즈를 시작하려면 먼저 로그인해주세요.")
     st.info("좌측 사이드바에서 '🔐 Login' 페이지로 이동하여 로그인하세요.")
 else:
+    user = st.session_state.get("user", {})
+    username = user.get("username", "알 수 없는 사용자")
     st.header(
-        f"🏁 :blue[_{st.session_state['user']['name']}_]님, 환영합니다!",
+        f"🏁 :blue[_{username}_]님, 환영합니다!",
         divider="rainbow",
     )
 
     st.divider()
 
     st.subheader(
-        f"이 퀴즈는 총 :blue[_{config.QUIZ_SIZE}개_]의 문제를 :blue[_연속_]으로 맞춰야 합니다."
+        f"현재 Challenge는 총 :blue[_{config.QUIZ_SIZE}개_]의 문제를 :blue[_연속_]으로 맞춰야 합니다."
     )
