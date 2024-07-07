@@ -50,7 +50,7 @@ else:
     st.divider()
 
     st.subheader(
-        f"현재 Challenge는 총 :blue[_{config.QUIZ_SIZE}개_]의 문제를 :blue[_연속_]으로 맞춰야 합니다."
+        f"현재 Challenge는 총 :blue[_{config.CHALLENGE_SIZE}개_]의 문제를 :blue[_연속_]으로 맞춰야 합니다."
     )
 
 # 디버깅용 (개발 중에만 사용, 배포 시 제거)

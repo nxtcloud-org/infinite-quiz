@@ -9,13 +9,13 @@ APP_TITLE = "AWS SAA 자격증 제조기"
 APP_ICON = "🏠"
 
 # 퀴즈 설정
-QUIZ_SIZE = 2  # 퀴즈 문제 수
+CHALLENGE_SIZE = 2  # 퀴즈 문제 수
 
 # 파일 경로
-QUESTIONS_FILE = "exam/homework4_Classic_219.json"
-RESULTS_FILE = "db/quiz_results.json"
+CHALLENGE_FILE = "exam/homework4_Classic_219.json"
 HOMEWORK_FILE = "exam/homework1_S3_CloudFront_119.json"
 USERS_LAMBDA_URL = os.environ.get("USERS_LAMBDA_URL")
+CHALLENGE_LAMBDA_URL = os.environ.get("CHALLENGE_LAMBDA_URL")
 
 # 관리자 설정
 ADMIN_PASSWORD = "4808"
