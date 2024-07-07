@@ -45,7 +45,7 @@ def main():
     selected_date = st.date_input("날짜 선택", datetime.now())
 
     # 숙제 영역 선택
-    quiz_topics = ["s3_cloudfront", "ai", "iam"]  # 예시 토픽들
+    quiz_topics = ["s3_cloudfront", "ai", "iam", "classic"]  # 예시 토픽들
     selected_topic = st.selectbox("숙제 영역 선택", quiz_topics)
 
     # 학생/문제 기준 선택
@@ -71,12 +71,22 @@ def main():
 def display_student_view(data, topic):
     st.subheader("학생별 결과")
 
-    total_questions = (
-        119 if topic == "s3_cloudfront" else 0
-    )  # 다른 토픽의 총 문제 수 추가 필요
+    # 각 토픽별 총 문제 수 설정
+    topic_question_counts = {"s3_cloudfront": 119, "ai": 9, "iam": 56, "classic": 219}
+
+    total_questions = topic_question_counts.get(topic, 0)
 
     df = pd.DataFrame(data)
-    df["정답률"] = df["correct"] / total_questions * 100
+
+    if df.empty:
+        st.warning("선택한 영역에 대한 데이터가 없습니다.")
+        return
+
+    # total_questions 값을 df의 길이만큼 확장
+    df["total_questions"] = total_questions
+
+    # 정답률 계산
+    df["정답률"] = df["correct"] / df["total_questions"] * 100
 
     st.table(
         df[
@@ -90,17 +100,6 @@ def display_student_view(data, topic):
             ]
         ]
     )
-
-    # 개별 학생 선택
-    selected_student = st.selectbox("학생 선택", df["user_name"].tolist())
-    student_data = df[df["user_name"] == selected_student].iloc[0]
-
-    col1, col2, col3 = st.columns(3)
-    col1.metric("맞은 문제 수", student_data["correct"])
-    col2.metric("틀린 문제 수", student_data["incorrect"])
-    col3.metric("정답률", f"{student_data['정답률']:.2f}%")
-
-    st.bar_chart(student_data[["correct", "incorrect"]])
 
 
 def display_question_view(data):
@@ -123,17 +122,6 @@ def display_question_view(data):
             ]
         ]
     )
-
-    # 개별 문제 선택
-    selected_question = st.selectbox("문제 선택", df["quiz_idx"].tolist())
-    question_data = df[df["quiz_idx"] == selected_question].iloc[0]
-
-    col1, col2, col3 = st.columns(3)
-    col1.metric("맞은 학생 수", question_data["correct_count"])
-    col2.metric("틀린 학생 수", question_data["incorrect_count"])
-    col3.metric("정답률", f"{question_data['정답률']:.2f}%")
-
-    st.bar_chart(question_data[["correct_count", "incorrect_count"]])
 
 
 if __name__ == "__main__":

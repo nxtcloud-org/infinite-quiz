@@ -18,7 +18,7 @@ TOPICS = {
         "file": config.IAM_HOMEWORK_FILE,
         "quiz_id": "IAM_HW",
     },
-    "claasic": {
+    "classic": {
         "title": "Classic Architecture",
         "file": config.CLASSIC_HOMEWORK_FILE,
         "quiz_id": "CLASSIC_HW",

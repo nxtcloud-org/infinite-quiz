@@ -6,7 +6,7 @@ import requests
 from datetime import datetime
 
 # 현재 홈워크 주제 설정
-CURRENT_TOPIC = "s3_cloudfront"  # 이 부분은 각 파일마다 다르게 설정
+CURRENT_TOPIC = "iam"  # 이 부분은 각 파일마다 다르게 설정
 
 # Lambda 함수 URL
 HOMEWORK_LAMBDA_URL = config.HOMEWORK_LAMBDA_URL
@@ -134,7 +134,7 @@ if st.button("제출", type="primary"):
                 "date": datetime.now().strftime("%Y-%m-%d"),
                 "quiz_idx": str(question["idx"]),
                 "is_correct": is_correct,
-                "quiz_topic": CURRENT_TOPIC,
+                "quiz_topic": "iam",
             },
         )
 

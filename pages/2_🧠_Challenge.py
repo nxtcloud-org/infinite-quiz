@@ -100,13 +100,13 @@ if (
     st.subheader(f"문제 {st.session_state['current_question'] + 1}")
 
     st.divider()
-    question_idx = question["idx"]
+    quiz_idx = question["idx"]
     tab1, tab2 = st.tabs(["KOR", "ENG"])
     with tab1:
-        st.write(f"문제 번호 : {question_idx}")
+        st.write(f"문제 idx : {quiz_idx}")
         st.write(question["question"]["kor"])
     with tab2:
-        st.write(f"문제 번호 : {question_idx}")
+        st.write(f"문제 idx : {quiz_idx}")
         st.write(question["question"]["eng"])
     st.divider()
 
@@ -133,75 +133,76 @@ if (
 
     # 다음 버튼
     if st.button("다음", type="primary"):
-        st.session_state["user_answer"] = user_answer
+        with st.spinner("결과 확인 중..."):
+            st.session_state["user_answer"] = user_answer
 
-        if is_multiple_answer:
-            correct_options = [
-                question["choices"]["kor"][ans] for ans in question["answer"]
-            ]
-            is_correct = set(user_answer) == set(correct_options)
-        else:
-            correct_option = question["choices"]["kor"][question["answer"][0]]
-            is_correct = user_answer == correct_option
+            if is_multiple_answer:
+                correct_options = [
+                    question["choices"]["kor"][ans] for ans in question["answer"]
+                ]
+                is_correct = set(user_answer) == set(correct_options)
+            else:
+                correct_option = question["choices"]["kor"][question["answer"][0]]
+                is_correct = user_answer == correct_option
 
-        if is_correct:
-            st.session_state["correct_answers"] += 1
-            st.session_state["current_question"] += 1
+            if is_correct:
+                st.session_state["correct_answers"] += 1
+                st.session_state["current_question"] += 1
 
-            # Lambda 함수 호출하여 사용자 데이터 업데이트
-            invoke_lambda(
-                "update_user_data",
-                {
-                    "user_id": user_id,
-                    "quiz_idx": question_idx,
-                    "is_correct": True,
-                    "challenge_completed": st.session_state["current_question"]
-                    == config.CHALLENGE_SIZE,
-                },
-            )
+                # Lambda 함수 호출하여 사용자 데이터 업데이트
+                invoke_lambda(
+                    "update_user_data",
+                    {
+                        "user_id": user_id,
+                        "quiz_idx": question_idx,
+                        "is_correct": True,
+                        "challenge_completed": st.session_state["current_question"]
+                        == config.CHALLENGE_SIZE,
+                    },
+                )
 
-            if st.session_state["current_question"] == config.CHALLENGE_SIZE:
+                if st.session_state["current_question"] == config.CHALLENGE_SIZE:
+                    st.session_state["challenge_ended"] = True
+                    st.session_state["challenge_success"] = True
+
+                    # Lambda 함수 호출하여 Challenge 결과 저장
+                    invoke_lambda(
+                        "save_challenge_result",
+                        {
+                            "user_id": user_id,
+                            "user_name": username,
+                            "success": True,
+                            "correct_count": st.session_state["current_question"],
+                            "incorrect_count": 0,
+                        },
+                    )
+            else:
                 st.session_state["challenge_ended"] = True
-                st.session_state["challenge_success"] = True
+                st.session_state["challenge_success"] = False
 
+                # Lambda 함수 호출하여 사용자 데이터 업데이트 및 Challenge 결과 저장
+                invoke_lambda(
+                    "update_user_data",
+                    {
+                        "user_id": user_id,
+                        "quiz_idx": question_idx,
+                        "is_correct": False,
+                        "challenge_completed": False,
+                    },
+                )
                 # Lambda 함수 호출하여 Challenge 결과 저장
                 invoke_lambda(
                     "save_challenge_result",
                     {
                         "user_id": user_id,
                         "user_name": username,
-                        "success": True,
+                        "success": False,
                         "correct_count": st.session_state["current_question"],
-                        "incorrect_count": 0,
+                        "incorrect_count": 1,
                     },
                 )
-        else:
-            st.session_state["challenge_ended"] = True
-            st.session_state["challenge_success"] = False
 
-            # Lambda 함수 호출하여 사용자 데이터 업데이트 및 Challenge 결과 저장
-            invoke_lambda(
-                "update_user_data",
-                {
-                    "user_id": user_id,
-                    "quiz_idx": question_idx,
-                    "is_correct": False,
-                    "challenge_completed": False,
-                },
-            )
-            # Lambda 함수 호출하여 Challenge 결과 저장
-            invoke_lambda(
-                "save_challenge_result",
-                {
-                    "user_id": user_id,
-                    "user_name": username,
-                    "success": False,
-                    "correct_count": st.session_state["current_question"],
-                    "incorrect_count": 1,
-                },
-            )
-
-        st.rerun()
+            st.rerun()
 
 # Challenge가 끝났을 때 결과 표시
 if st.session_state["challenge_ended"]:
