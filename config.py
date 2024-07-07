@@ -27,12 +27,24 @@ HOMEWORK_CHECK_LAMBDA_URL = os.environ.get("HOMEWORK_CHECK_LAMBDA_URL")
 # 관리자 설정
 ADMIN_PASSWORD = "4808"
 
-# 포인트 설정
-# CORRECT_ANSWER_POINTS = 3  # 문제 정답 시 획득 포인트
-# WRONG_ANSWER_POINTS = 1
-# QUIZ_SUCCESS_BONUS = 30  # 성공(퀴즈 모두 정답) 시 추가 보너스 포인트
-
 # 학교 목록
-SCHOOLS = ["Nxtcloud", "school1", "school2", "school3", "school4", "ETC"]
+SCHOOLS = [
+    "Nxtcloud",
+    "우송대",
+    "호남대",
+    "GIST",
+    "숙명여대",
+    "연세대",
+    "인하대",
+    "ETC",
+]
 
-TEAMS = ["Nxtcloud", "team1", "team2", "team3", "team4", "ETC"]
+TEAMS = [
+    "Nxtcloud",
+    "진성님의지갑털이범들",
+    "소고기-먹자",
+    "강민",
+    "여름학기",
+    "Nxtcloud 인턴",
+    "ETC",
+]
