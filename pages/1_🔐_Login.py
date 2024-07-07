@@ -73,7 +73,10 @@ with tab1:
                             st.info(
                                 "좌측 사이드바의 여러 페이지에서 공부를 시작하세요!"
                             )
-                        elif response["statusCode"] == 401:
+                        elif (
+                            response["statusCode"] == 401
+                            or response["statusCode"] == 404
+                        ):
                             st.error("로그인 정보가 올바르지 않습니다.")
                         else:
                             st.error(
