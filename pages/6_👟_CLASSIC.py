@@ -134,7 +134,7 @@ if st.button("제출", type="primary"):
                 "date": datetime.now().strftime("%Y-%m-%d"),
                 "quiz_idx": str(question["idx"]),
                 "is_correct": is_correct,
-                "quiz_topic": "classic",
+                "quiz_topic": CURRENT_TOPIC,
             },
         )
 
