@@ -185,7 +185,7 @@ if (
                     "update_user_data",
                     {
                         "user_id": user_id,
-                        "quiz_idx": question_idx,
+                        "quiz_idx": quiz_idx,
                         "is_correct": False,
                         "challenge_completed": False,
                     },
