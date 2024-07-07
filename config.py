@@ -12,14 +12,13 @@ APP_ICON = "🏠"
 QUIZ_SIZE = 2  # 퀴즈 문제 수
 
 # 파일 경로
-QUESTIONS_FILE = "test_exam/test1.json"
+QUESTIONS_FILE = "exam/homework4_Classic_219.json"
 RESULTS_FILE = "db/quiz_results.json"
-STUDENTS_FILE = "db/student.json"
-HOMEWORK_FILE = "exam/s3&cloudfront.json"
+HOMEWORK_FILE = "exam/homework1_S3_CloudFront_119.json"
 USERS_LAMBDA_URL = os.environ.get("USERS_LAMBDA_URL")
 
 # 관리자 설정
-ADMIN_PASSWORD = "1234"
+ADMIN_PASSWORD = "4808"
 
 # 포인트 설정
 CORRECT_ANSWER_POINTS = 3  # 문제 정답 시 획득 포인트
