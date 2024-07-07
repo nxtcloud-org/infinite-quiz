@@ -33,8 +33,6 @@ def update_user_data(payload):
     quiz_idx = str(payload["quiz_idx"])  # 문자열로 변환
     is_correct = payload["is_correct"]
     challenge_completed = payload.get("challenge_completed", False)
-    print("퀴즈 성공이야?")
-    print(challenge_completed)
 
     try:
         update_expression = "SET "
@@ -44,13 +42,11 @@ def update_user_data(payload):
         point_increase = 0
 
         if is_correct:
-            print("문제 맞춘 경우")
             update_expression += (
                 "correct_idx.#qidx = if_not_exists(correct_idx.#qidx, :zero) + :inc, "
             )
             point_increase += 3  # CORRECT_ANSWER_POINTS
         else:
-            print("문제 틀린 경우")
             update_expression += (
                 "challenge_failure = if_not_exists(challenge_failure, :zero) + :inc, "
                 "challenge_attempts = if_not_exists(challenge_attempts, :zero) + :inc, "
