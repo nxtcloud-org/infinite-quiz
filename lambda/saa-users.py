@@ -4,11 +4,26 @@ from botocore.exceptions import ClientError
 import uuid
 import os
 import logging
+from decimal import Decimal
 
+# 로깅 설정
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
-# 환경 변수에서 테이블 이름을 가져옵니다. 이렇게 하면 향후 다른 테이블을 사용할 때 유연하게 대응할 수 있습니다.
+# 기존 핸들러를 교체
+for handler in logger.handlers:
+    handler.setFormatter(logging.Formatter("%(asctime)s %(levelname)s %(message)s"))
+
+
+# 사용자 정의 JSON 인코더
+class DecimalEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, Decimal):
+            return float(obj)
+        return super(DecimalEncoder, self).default(obj)
+
+
+# 환경 변수에서 테이블 이름을 가져옵니다.
 TABLE_NAME = os.environ.get("USER_TABLE_NAME")
 
 dynamodb = boto3.resource("dynamodb")
@@ -16,7 +31,7 @@ table = dynamodb.Table(TABLE_NAME)
 
 
 def lambda_handler(event, context):
-    logger.info(f"Received event: {json.dumps(event)}")
+    logger.info(f"Received event: {json.dumps(event, ensure_ascii=False)}")
 
     # Lambda URL을 통해 전달된 이벤트에서 body 추출
     if "body" in event:
@@ -49,8 +64,10 @@ def lambda_handler(event, context):
     if operation in operations:
         try:
             result = operations[operation](payload)
-            logger.info(f"Operation result: {json.dumps(result)}")
-            return json.dumps(result)
+            logger.info(
+                f"Operation result: {json.dumps(result, ensure_ascii=False, cls=DecimalEncoder)}"
+            )
+            return json.dumps(result, cls=DecimalEncoder)
         except Exception as e:
             logger.error(f"Error in operation {operation}: {str(e)}")
             return {
@@ -117,28 +134,61 @@ def register_user(payload):
 
 def login_user(payload):
     username = payload["username"]
+    school = payload["school"]
+    team = payload["team"]
     password = payload["password"]
 
     try:
+        # 첫 번째 쿼리: 사용자 존재 여부 확인
         response = table.query(
-            IndexName="username-index",
-            KeyConditionExpression="username = :username",
-            ExpressionAttributeValues={":username": username},
+            IndexName="username-school-team-index",
+            KeyConditionExpression="username = :username AND school = :school",
+            FilterExpression="team = :team",
+            ExpressionAttributeValues={
+                ":username": username,
+                ":school": school,
+                ":team": team,
+            },
         )
 
         if response["Items"]:
-            user = response["Items"][0]
-            if user["password"] == password:
-                return {
-                    "statusCode": 200,
-                    "body": json.dumps({"user_id": user["user_id"]}),
-                }
+            user_id = response["Items"][0]["user_id"]
+
+            # 두 번째 쿼리: 사용자의 전체 정보 가져오기
+            user_response = table.get_item(Key={"user_id": user_id})
+
+            if "Item" in user_response:
+                user = user_response["Item"]
+                if str(user["password"]) == str(password):  # 문자열로 변환하여 비교
+                    # 비밀번호 확인 후 제거
+                    del user["password"]
+                    return {
+                        "statusCode": 200,
+                        "body": json.dumps(user, cls=DecimalEncoder),
+                    }
+                else:
+                    return {
+                        "statusCode": 401,
+                        "body": json.dumps(
+                            {"message": "비밀번호가 올바르지 않습니다."}
+                        ),
+                    }
             else:
-                return {"statusCode": 401, "body": json.dumps("Incorrect password")}
+                return {
+                    "statusCode": 404,
+                    "body": json.dumps({"message": "사용자 정보를 찾을 수 없습니다."}),
+                }
         else:
-            return {"statusCode": 404, "body": json.dumps("User not found")}
+            return {
+                "statusCode": 404,
+                "body": json.dumps({"message": "사용자를 찾을 수 없습니다."}),
+            }
     except ClientError as e:
-        return {"statusCode": 500, "body": json.dumps("Error during login")}
+        logger.error(f"Error during login: {str(e)}")
+        return {
+            "statusCode": 500,
+            "body": json.dumps({"message": "로그인 중 오류가 발생했습니다."}),
+        }
 
 
 def get_user(payload):

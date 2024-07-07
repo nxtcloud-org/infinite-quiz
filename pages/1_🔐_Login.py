@@ -3,6 +3,9 @@ import json
 import config
 import requests
 
+# 버튼 키관리를 위한 현 페이지 정보
+current_page = __file__.split("/")[-1].split(".")[0]  # 예: '1_🔐_Login'
+
 # Lambda 함수 URL을 환경 변수로 관리
 USERS_LAMBDA_URL = config.USERS_LAMBDA_URL
 
@@ -27,32 +30,77 @@ tab1, tab2 = st.tabs(["로그인", "회원가입"])
 
 with tab1:
     st.header("로그인")
-    login_name = st.text_input("이름")
-    login_password = st.text_input(
-        "비밀번호 (4자리 숫자)", type="password", max_chars=4
-    )
 
-    if st.button("로그인"):
-        response = invoke_lambda(
-            "login", {"username": login_name, "password": login_password}
+    with st.form(key="login_form"):
+        login_name = st.text_input("이름")
+        login_school = st.selectbox(
+            "학교 또는 소속",
+            config.SCHOOLS,
+            index=None,
+            placeholder="학교 또는 소속을 선택해주세요.",
         )
-        if response["statusCode"] == 200:
-            user_data = json.loads(response["body"])
-            user_details = invoke_lambda("get_user", {"user_id": user_data["user_id"]})
-            if user_details["statusCode"] == 200:
-                st.session_state["user"] = json.loads(user_details["body"])
-                st.success(f"{login_name}님, 환영합니다!")
-                st.info("좌측 사이드바에서 '퀴즈' 페이지로 이동하여 퀴즈를 시작하세요.")
+        login_team = st.selectbox(
+            "팀",
+            config.TEAMS,
+            index=None,
+            placeholder="팀을 선택해주세요.",
+        )
+        login_password = st.text_input(
+            "비밀번호 (4자리 숫자)", type="password", max_chars=4
+        )
+        login_button = st.form_submit_button("로그인", type="primary")
+    if login_button:
+        if login_name and login_school and login_team and login_password:
+            if len(login_password) == 4 and login_password.isdigit():
+                with st.spinner("로그인 중..."):
+                    try:
+                        response = invoke_lambda(
+                            "login",
+                            {
+                                "username": login_name,
+                                "school": login_school,
+                                "team": login_team,
+                                "password": login_password,
+                            },
+                        )
+                        if response["statusCode"] == 200:
+                            user_data = json.loads(response["body"])
+                            st.session_state["user"] = user_data
+                            st.success(f"{login_name}님, 환영합니다!")
+                            st.info(
+                                "좌측 사이드바 'Home' 페이지에서 안내사항을 확인할 수 있습니다."
+                            )
+                            st.info(
+                                "좌측 사이드바의 여러 페이지에서 공부를 시작하세요!"
+                            )
+                        elif response["statusCode"] == 401:
+                            st.error("로그인 정보가 올바르지 않습니다.")
+                        else:
+                            st.error(
+                                "로그인 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요."
+                            )
+                    except Exception as e:
+                        st.error(f"로그인 중 오류가 발생했습니다: {str(e)}")
             else:
-                st.error("사용자 정보를 가져오는데 실패했습니다.")
+                st.error("비밀번호는 4자리 숫자여야 합니다.")
         else:
-            st.error("이름 또는 비밀번호가 올바르지 않습니다.")
+            st.error("모든 필드를 입력해주세요.")
+
+# 사이드바에 사용자 정보 및 로그아웃 버튼 표시
+if "user" in st.session_state:
+    st.sidebar.success(f"{st.session_state['user']['username']}님 로그인됨")
+    if st.sidebar.button("로그아웃", key=f"logout_button_{current_page}"):
+        del st.session_state["user"]
+        st.rerun()
+else:
+    st.sidebar.info("로그인이 필요합니다.")
+
 
 with tab2:
     st.header("회원가입")
 
-    with st.form("register_form", clear_on_submit=True):
-        new_name = st.text_input("본명")
+    with st.form(key="register_form", clear_on_submit=True):
+        new_name = st.text_input("이름 (회원가입)")
         new_school = st.selectbox(
             "학교 또는 소속",
             config.SCHOOLS,
@@ -100,35 +148,3 @@ with tab2:
                 st.error("비밀번호는 4자리 숫자여야 합니다.")
         else:
             st.error("이름, 소속, 비밀번호는 필수 입력 항목입니다.")
-
-if "user" in st.session_state:
-    st.sidebar.success(f"{st.session_state['user']['username']}님 로그인됨")
-    if st.sidebar.button("로그아웃"):
-        del st.session_state["user"]
-        st.rerun()
-
-# 사용자 정보 업데이트 (옵션)
-if "user" in st.session_state:
-    st.header("사용자 정보 업데이트")
-    update_school = st.text_input(
-        "소속 업데이트", value=st.session_state["user"].get("school", "")
-    )
-    update_team = st.text_input(
-        "팀 업데이트", value=st.session_state["user"].get("team", "")
-    )
-
-    if st.button("정보 업데이트"):
-        response = invoke_lambda(
-            "update_user",
-            {
-                "user_id": st.session_state["user"]["user_id"],
-                "updates": {"school": update_school, "team": update_team},
-            },
-        )
-        if response["statusCode"] == 200:
-            st.success("사용자 정보가 업데이트되었습니다.")
-            # 세션의 사용자 정보도 업데이트
-            st.session_state["user"]["school"] = update_school
-            st.session_state["user"]["team"] = update_team
-        else:
-            st.error("사용자 정보 업데이트에 실패했습니다.")
