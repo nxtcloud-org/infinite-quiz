@@ -154,7 +154,7 @@ if (
                     "update_user_data",
                     {
                         "user_id": user_id,
-                        "quiz_idx": question_idx,
+                        "quiz_idx": quiz_idx,
                         "is_correct": True,
                         "challenge_completed": st.session_state["current_question"]
                         == config.CHALLENGE_SIZE,
