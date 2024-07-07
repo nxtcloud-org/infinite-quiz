@@ -3,16 +3,41 @@ import boto3
 from botocore.exceptions import ClientError
 import uuid
 import os
+import logging
+
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
 
 # 환경 변수에서 테이블 이름을 가져옵니다. 이렇게 하면 향후 다른 테이블을 사용할 때 유연하게 대응할 수 있습니다.
-TABLE_NAME = os.environ.get("USER_TABLE_NAME", "glen-saa-users")
+TABLE_NAME = os.environ.get("USER_TABLE_NAME")
 
 dynamodb = boto3.resource("dynamodb")
 table = dynamodb.Table(TABLE_NAME)
 
 
 def lambda_handler(event, context):
-    operation = event["operation"]
+    logger.info(f"Received event: {json.dumps(event)}")
+
+    # Lambda URL을 통해 전달된 이벤트에서 body 추출
+    if "body" in event:
+        try:
+            body = json.loads(event["body"])
+        except json.JSONDecodeError:
+            logger.error("Failed to parse event body as JSON")
+            return {
+                "statusCode": 400,
+                "body": json.dumps("Invalid JSON in request body"),
+            }
+    else:
+        body = event
+
+    # operation과 payload 추출
+    operation = body.get("operation")
+    payload = body.get("payload", {})
+
+    if not operation:
+        logger.error("No operation specified in the event")
+        return {"statusCode": 400, "body": json.dumps("No operation specified")}
 
     operations = {
         "register": register_user,
@@ -22,8 +47,18 @@ def lambda_handler(event, context):
     }
 
     if operation in operations:
-        return operations[operation](event.get("payload", {}))
+        try:
+            result = operations[operation](payload)
+            logger.info(f"Operation result: {json.dumps(result)}")
+            return json.dumps(result)
+        except Exception as e:
+            logger.error(f"Error in operation {operation}: {str(e)}")
+            return {
+                "statusCode": 500,
+                "body": json.dumps(f"Error in operation {operation}: {str(e)}"),
+            }
     else:
+        logger.warning(f"Unsupported operation: {operation}")
         return {"statusCode": 400, "body": json.dumps("Unsupported operation")}
 
 
@@ -33,15 +68,20 @@ def register_user(payload):
     school = payload["school"]
     team = payload.get("team", "")
 
-    # Check if username already exists
+    # Check if user with same username and school exists
     response = table.query(
-        IndexName="username-index",
-        KeyConditionExpression="username = :username",
-        ExpressionAttributeValues={":username": username},
+        IndexName="username-school-index",
+        KeyConditionExpression="username = :username AND school = :school",
+        ExpressionAttributeValues={":username": username, ":school": school},
     )
 
     if response["Items"]:
-        return {"statusCode": 400, "body": json.dumps("Username already exists")}
+        existing_user = response["Items"][0]
+        if existing_user["team"] == team:
+            return {
+                "statusCode": 400,
+                "body": json.dumps({"message": "이미 등록된 이름/학교/소속입니다"}),
+            }
 
     user_id = str(uuid.uuid4())
 
@@ -59,9 +99,17 @@ def register_user(payload):
                 "attempts": 0,
             }
         )
-        return {"statusCode": 200, "body": json.dumps("User registered successfully")}
+        return {
+            "statusCode": 200,
+            "body": json.dumps(
+                {"message": "User registered successfully", "user_id": user_id}
+            ),
+        }
     except ClientError as e:
-        return {"statusCode": 500, "body": json.dumps("Error registering user")}
+        return {
+            "statusCode": 500,
+            "body": json.dumps({"message": "Error registering user"}),
+        }
 
 
 def login_user(payload):
