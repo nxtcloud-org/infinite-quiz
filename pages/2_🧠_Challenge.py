@@ -3,8 +3,6 @@ import random
 import config
 from utils.helpers import load_questions
 import requests
-import asyncio
-import aiohttp
 import json
 
 # 버튼 키관리를 위한 현 페이지 정보
@@ -155,6 +153,7 @@ if (
                 "update_user_data",
                 {
                     "user_id": user_id,
+                    "quiz_idx": question_idx,
                     "is_correct": True,
                     "challenge_completed": st.session_state["current_question"]
                     == config.CHALLENGE_SIZE,
@@ -170,9 +169,10 @@ if (
                     "save_challenge_result",
                     {
                         "user_id": user_id,
+                        "user_name": username,
                         "success": True,
-                        "correct_answers": st.session_state["correct_answers"],
-                        "challenge_size": config.CHALLENGE_SIZE,
+                        "correct_count": st.session_state["current_question"],
+                        "incorrect_count": 0,
                     },
                 )
         else:
@@ -182,15 +182,22 @@ if (
             # Lambda 함수 호출하여 사용자 데이터 업데이트 및 Challenge 결과 저장
             invoke_lambda(
                 "update_user_data",
-                {"user_id": user_id, "is_correct": False, "challenge_completed": False},
+                {
+                    "user_id": user_id,
+                    "quiz_idx": question_idx,
+                    "is_correct": False,
+                    "challenge_completed": False,
+                },
             )
+            # Lambda 함수 호출하여 Challenge 결과 저장
             invoke_lambda(
                 "save_challenge_result",
                 {
                     "user_id": user_id,
+                    "user_name": username,
                     "success": False,
-                    "correct_answers": st.session_state["correct_answers"],
-                    "challenge_size": config.CHALLENGE_SIZE,
+                    "correct_count": st.session_state["current_question"],
+                    "incorrect_count": 1,
                 },
             )
 
@@ -211,34 +218,8 @@ if st.session_state["challenge_ended"]:
         ]
     ]
 
-    # 비동기로 Lambda 함수 호출
-    async def call_lambda():
-        async with aiohttp.ClientSession() as session:
-            result = await invoke_lambda_async(
-                session,
-                "save_challenge_result",
-                {
-                    "user_id": user_id,
-                    "success": st.session_state["challenge_success"],
-                    "correct_answers": st.session_state["correct_answers"],
-                    "challenge_size": config.CHALLENGE_SIZE,
-                    "correct_questions": correct_questions,
-                    "wrong_questions": wrong_questions,
-                },
-            )
-            print(f"Lambda result: {result}")  # 디버깅을 위한 로그 추가
-            if isinstance(result, dict) and result.get("statusCode") != 200:
-                print(
-                    f"Error saving challenge result: {result.get('body', 'Unknown error')}"
-                )
-            elif not isinstance(result, dict):
-                print(f"Unexpected result format: {result}")
-
-    # 비동기 함수 실행
-    asyncio.run(call_lambda())
-
     if st.session_state.get("challenge_success", False):
-        st.success(f"축하합니다! {config.CHALLENGE_SIZE}문제를 모두 맞추셨습니다.")
+        st.success(f"축하합니다! 연속 {config.CHALLENGE_SIZE}문제를 모두 맞추셨습니다.")
         st.subheader(
             f"총 {config.CHALLENGE_SIZE}문제를 :green[_연속으로 모두_] 맞추셨습니다!!"
         )

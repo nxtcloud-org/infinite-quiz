@@ -12,7 +12,7 @@ APP_ICON = "🏠"
 CHALLENGE_SIZE = 2  # 퀴즈 문제 수
 
 # 파일 경로
-CHALLENGE_FILE = "exam/homework4_Classic_219.json"
+CHALLENGE_FILE = "exam/homework1_S3_CloudFront_119.json"
 HOMEWORK_FILE = "exam/homework1_S3_CloudFront_119.json"
 USERS_LAMBDA_URL = os.environ.get("USERS_LAMBDA_URL")
 CHALLENGE_LAMBDA_URL = os.environ.get("CHALLENGE_LAMBDA_URL")

@@ -30,61 +30,83 @@ def lambda_handler(event, context):
 
 def update_user_data(payload):
     user_id = payload["user_id"]
+    quiz_idx = str(payload["quiz_idx"])  # 문자열로 변환
     is_correct = payload["is_correct"]
-    quiz_completed = payload.get("quiz_completed", False)
+    challenge_completed = payload.get("challenge_completed", False)
+    print("퀴즈 성공이야?")
+    print(challenge_completed)
 
     try:
-        response = users_table.get_item(Key={"user_id": user_id})
-        user = response["Item"]
-
         update_expression = "SET "
-        expression_attribute_values = {}
+        expression_attribute_values = {":zero": 0, ":inc": 1}
+        expression_attribute_names = {"#qidx": quiz_idx}
+
+        point_increase = 0
 
         if is_correct:
-            update_expression += "correct = correct + :inc, "
-            expression_attribute_values[":inc"] = 1
-            update_expression += "point = point + :correct_points, "
-            expression_attribute_values[":correct_points"] = 3  # CORRECT_ANSWER_POINTS
+            print("문제 맞춘 경우")
+            update_expression += (
+                "correct_idx.#qidx = if_not_exists(correct_idx.#qidx, :zero) + :inc, "
+            )
+            point_increase += 3  # CORRECT_ANSWER_POINTS
         else:
-            update_expression += "wrong = wrong + :inc, "
-            expression_attribute_values[":inc"] = 1
-            update_expression += "point = point + :wrong_points, "
-            expression_attribute_values[":wrong_points"] = 1  # WRONG_ANSWER_POINTS
+            print("문제 틀린 경우")
+            update_expression += (
+                "challenge_failure = if_not_exists(challenge_failure, :zero) + :inc, "
+                "challenge_attempts = if_not_exists(challenge_attempts, :zero) + :inc, "
+                "incorrect_idx.#qidx = if_not_exists(incorrect_idx.#qidx, :zero) + :inc, "
+            )
+            point_increase += 1  # WRONG_ANSWER_POINTS
 
-        if quiz_completed:
-            update_expression += "success = success + :inc, "
-            expression_attribute_values[":inc"] = 1
-            update_expression += "point = point + :bonus_points, "
-            expression_attribute_values[":bonus_points"] = 30  # QUIZ_SUCCESS_BONUS
-        else:
-            update_expression += "failure = failure + :inc, "
-            expression_attribute_values[":inc"] = 1
+        if challenge_completed:
+            update_expression += (
+                "challenge_attempts = if_not_exists(challenge_attempts, :zero) + :inc, "
+                "challenge_success = if_not_exists(challenge_success, :zero) + :inc, "
+            )
+            point_increase += 100  # QUIZ_SUCCESS_BONUS
 
-        update_expression += "attempts = attempts + :inc"
-        expression_attribute_values[":inc"] = 1
+        # point 업데이트를 마지막에 한 번만 수행
+        update_expression += "point = if_not_exists(point, :zero) + :point_increase, "
+        expression_attribute_values[":point_increase"] = point_increase
 
-        users_table.update_item(
+        # 마지막 쉼표 제거
+        update_expression = update_expression.rstrip(", ")
+
+        print("Update Expression:", update_expression)
+        print("Expression Attribute Values:", expression_attribute_values)
+        print("Expression Attribute Names:", expression_attribute_names)
+
+        result = users_table.update_item(
             Key={"user_id": user_id},
             UpdateExpression=update_expression,
             ExpressionAttributeValues=expression_attribute_values,
+            ExpressionAttributeNames=expression_attribute_names,
+            ReturnValues="UPDATED_NEW",
         )
+
+        print("Update Result:", result)
 
         return {"statusCode": 200, "body": json.dumps("User data updated successfully")}
     except ClientError as e:
+        print("DynamoDB ClientError:", e.response["Error"]["Message"])
         return {
             "statusCode": 500,
             "body": json.dumps(f"Error updating user data: {str(e)}"),
+        }
+    except Exception as e:
+        print("Unexpected error:", str(e))
+        return {
+            "statusCode": 500,
+            "body": json.dumps(f"Unexpected error: {str(e)}"),
         }
 
 
 def save_challenge_result(payload):
     user_id = payload["user_id"]
+    user_name = payload["user_name"]
     success = payload["success"]
-    correct_answers = payload["correct_answers"]
-    challenge_size = payload["challenge_size"]
-    wrong_answers = challenge_size - correct_answers
-    correct_questions = payload.get("correct_questions", [])
-    wrong_questions = payload.get("wrong_questions", [])
+    correct_count = payload["correct_count"]
+    incorrect_count = payload["incorrect_count"]
 
     current_date = datetime.now().strftime("%Y-%m-%d")
 
@@ -97,29 +119,20 @@ def save_challenge_result(payload):
             "Item",
             {
                 "user_id": user_id,
+                "user_name": user_name,
                 "date": current_date,
                 "attempts": 0,
                 "successes": 0,
                 "total_correct": 0,
                 "total_wrong": 0,
-                "correct_questions": {},
-                "wrong_questions": {},
             },
         )
 
         # 데이터 업데이트
         item["attempts"] += 1
         item["successes"] += 1 if success else 0
-        item["total_correct"] += correct_answers
-        item["total_wrong"] += wrong_answers
-
-        # 맞춘 문제와 틀린 문제 업데이트
-        for q_idx in correct_questions:
-            item["correct_questions"][q_idx] = (
-                item["correct_questions"].get(q_idx, 0) + 1
-            )
-        for q_idx in wrong_questions:
-            item["wrong_questions"][q_idx] = item["wrong_questions"].get(q_idx, 0) + 1
+        item["total_correct"] += correct_count
+        item["total_wrong"] += incorrect_count
 
         # 업데이트된 항목 저장
         challenge_results_table.put_item(Item=item)
