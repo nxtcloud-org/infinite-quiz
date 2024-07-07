@@ -68,20 +68,23 @@ def register_user(payload):
     school = payload["school"]
     team = payload.get("team", "")
 
-    # Check if user with same username and school exists
+    # Check if user with same username, school and team exists
     response = table.query(
-        IndexName="username-school-index",
+        IndexName="username-school-team-index",
         KeyConditionExpression="username = :username AND school = :school",
-        ExpressionAttributeValues={":username": username, ":school": school},
+        FilterExpression="team = :team",
+        ExpressionAttributeValues={
+            ":username": username,
+            ":school": school,
+            ":team": team,
+        },
     )
 
     if response["Items"]:
-        existing_user = response["Items"][0]
-        if existing_user["team"] == team:
-            return {
-                "statusCode": 400,
-                "body": json.dumps({"message": "이미 등록된 이름/학교/소속입니다"}),
-            }
+        return {
+            "statusCode": 400,
+            "body": json.dumps({"message": "이미 등록된 사용자입니다."}),
+        }
 
     user_id = str(uuid.uuid4())
 
@@ -102,13 +105,13 @@ def register_user(payload):
         return {
             "statusCode": 200,
             "body": json.dumps(
-                {"message": "User registered successfully", "user_id": user_id}
+                {"message": "회원가입이 완료되었습니다.", "user_id": user_id}
             ),
         }
     except ClientError as e:
         return {
             "statusCode": 500,
-            "body": json.dumps({"message": "Error registering user"}),
+            "body": json.dumps({"message": "회원가입 중 오류가 발생했습니다."}),
         }
 
 

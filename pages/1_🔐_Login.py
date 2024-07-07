@@ -51,57 +51,55 @@ with tab1:
 with tab2:
     st.header("회원가입")
 
-    # 결과 메시지를 표시할 빈 요소 생성
-    result_placeholder = st.empty()
-
-    # 폼 생성
-    with st.form("register_form"):
-        new_name = st.text_input("이름 (회원가입)")
-        new_school = st.selectbox("학교 또는 소속", config.SCHOOLS)
-        new_team = st.selectbox("팀", config.TEAMS)
+    with st.form("register_form", clear_on_submit=True):
+        new_name = st.text_input("본명")
+        new_school = st.selectbox(
+            "학교 또는 소속",
+            config.SCHOOLS,
+            index=None,
+            placeholder="학교 또는 소속을 선택해주세요. 선택지에 없는 항목은 관리자에게 문의해주세요.",
+        )
+        new_team = st.selectbox(
+            "팀",
+            config.TEAMS,
+            index=None,
+            placeholder="학교 또는 소속을 선택해주세요. 선택지에 없는 항목은 관리자에게 문의해주세요.",
+        )
         new_password = st.text_input(
             "비밀번호 (4자리 숫자)", type="password", max_chars=4
         )
 
-        # 폼 제출 버튼
-        submit_button = st.form_submit_button("회원가입")
+        submit_button = st.form_submit_button("회원가입", type="primary")
 
     if submit_button:
         if new_name and new_school and new_password:
             if len(new_password) == 4 and new_password.isdigit():
-                try:
-                    response = invoke_lambda(
-                        "register",
-                        {
-                            "username": new_name,
-                            "password": new_password,
-                            "school": new_school,
-                            "team": new_team,
-                        },
-                    )
-                    statuscode = response["statusCode"]
-                    json_body = json.loads(response["body"])
-                    message = json_body["message"]
-                    if statuscode == 400:
-                        result_placeholder.error(f"{message}")
-                    elif statuscode == 200:
-                        result_placeholder.success(
-                            f"회원가입이 완료되었습니다. 로그인탭에서 로그인해주세요."
+                with st.spinner("회원가입 처리 중..."):
+                    try:
+                        response = invoke_lambda(
+                            "register",
+                            {
+                                "username": new_name,
+                                "password": new_password,
+                                "school": new_school,
+                                "team": new_team,
+                            },
                         )
-                        # 폼 초기화
-                        st.experimental_rerun()
-                    else:
-                        result_placeholder.error(
-                            f"회원가입 실패. 관리자에게 문의해주세요."
-                        )
-                except Exception as e:
-                    result_placeholder.error(
-                        f"회원가입 중 오류가 발생했습니다: {str(e)}"
-                    )
+                        statuscode = response["statusCode"]
+                        json_body = json.loads(response["body"])
+                        message = json_body["message"]
+                        if statuscode == 400:
+                            st.error(f"{message}")
+                        elif statuscode == 200:
+                            st.success(f"{message} 로그인탭에서 로그인해주세요.")
+                        else:
+                            st.error(f"회원가입 실패. 관리자에게 문의해주세요.")
+                    except Exception as e:
+                        st.error(f"회원가입 중 오류가 발생했습니다: {str(e)}")
             else:
-                result_placeholder.error("비밀번호는 4자리 숫자여야 합니다.")
+                st.error("비밀번호는 4자리 숫자여야 합니다.")
         else:
-            result_placeholder.error("이름, 소속, 비밀번호는 필수 입력 항목입니다.")
+            st.error("이름, 소속, 비밀번호는 필수 입력 항목입니다.")
 
 if "user" in st.session_state:
     st.sidebar.success(f"{st.session_state['user']['username']}님 로그인됨")
