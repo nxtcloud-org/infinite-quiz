@@ -1,128 +1,186 @@
 import streamlit as st
+import sqlite3
 import pandas as pd
 from datetime import datetime
 import config
-import requests
+import altair as alt
 
-# Lambda 함수 URL
-HOMEWORK_CHECK_LAMBDA_URL = config.HOMEWORK_CHECK_LAMBDA_URL
+# 데이터베이스 연결 함수
+def get_db_connection():
+    conn = sqlite3.connect('db/db.sqlite')
+    conn.row_factory = sqlite3.Row
+    return conn
 
+# 날짜별 문제 풀이 현황을 가져오는 함수
+def get_daily_stats(date, topic):
+    conn = get_db_connection()
+    query = """
+    SELECT 
+        u.id as user_id,
+        u.name as user_name,
+        u.school,
+        u.team,
+        COUNT(*) as total_attempts,
+        SUM(CASE WHEN qr.correct = 1 THEN 1 ELSE 0 END) as correct_answers,
+        SUM(CASE WHEN qr.correct = 0 THEN 1 ELSE 0 END) as incorrect_answers
+    FROM question_results qr
+    JOIN users u ON qr.user_id = u.id
+    WHERE date(qr.created_at) = ?
+    AND qr.topic = ?
+    GROUP BY u.id, u.name, u.school, u.team
+    """
+    df = pd.read_sql_query(query, conn, params=(date, topic))
+    conn.close()
+    return df
 
-def invoke_lambda(operation, payload):
-    try:
-        response = requests.post(
-            HOMEWORK_CHECK_LAMBDA_URL, json={"operation": operation, "payload": payload}
-        )
-        return response.json()
-    except Exception as e:
-        st.error(f"Error calling Lambda function: {str(e)}")
-        return None
+# 주제별 문제 확인 현황을 가져오는 함수
+def get_topic_progress(topic):
+    conn = get_db_connection()
+    idx_list = ",".join(map(str, config.TOPICS[topic].get('idx_list', [])))
+    query = f"""
+    SELECT 
+        u.id as user_id,
+        u.name as user_name,
+        u.school,
+        u.team,
+        COUNT(DISTINCT qr.question_idx) as checked_questions,
+        SUM(CASE WHEN qr.correct = 1 THEN 1 ELSE 0 END) as correct_answers,
+        COUNT(*) as total_attempts
+    FROM question_results qr
+    JOIN users u ON qr.user_id = u.id
+    WHERE qr.question_idx IN ({idx_list})
+    AND qr.topic = ?
+    GROUP BY u.id, u.name, u.school, u.team
+    """
+    df = pd.read_sql_query(query, conn, params=(topic,))
+    conn.close()
+    return df
 
+# 시간대별 활동을 가져오는 함수 (사용자별)
+def get_hourly_activity(date, topic):
+    conn = get_db_connection()
+    query = """
+    SELECT 
+        u.id as user_id,
+        u.name as user_name,
+        strftime('%H', qr.created_at) as hour,
+        COUNT(*) as activity_count
+    FROM question_results qr
+    JOIN users u ON qr.user_id = u.id
+    WHERE date(qr.created_at) = ?
+    AND qr.topic = ?
+    GROUP BY u.id, u.name, strftime('%H', qr.created_at)
+    ORDER BY u.id, hour
+    """
+    df = pd.read_sql_query(query, conn, params=(date, topic))
+    conn.close()
+    return df
 
-def authenticate():
-    if "authenticated" not in st.session_state:
-        st.session_state.authenticated = False
+st.set_page_config(page_title="Topic Dashboard", page_icon="📊", layout="wide")
 
-    if not st.session_state.authenticated:
-        password = st.text_input("관리자 비밀번호를 입력하세요", type="password")
-        if st.button("인증"):
-            if password == config.ADMIN_PASSWORD:
-                st.session_state.authenticated = True
-                st.success("인증되었습니다.")
-                st.rerun()
-            else:
-                st.error("비밀번호가 올바르지 않습니다.")
-    return st.session_state.authenticated
+st.title("📊 Topic Dashboard")
 
+# 주제 선택
+topic_options = list(config.TOPICS.keys())
+selected_topic = st.selectbox("주제 선택", topic_options)
 
-def main():
-    st.title("숙제 확인")
+# 날짜 선택
+selected_date = st.date_input("날짜 선택", datetime.now().date())
 
-    if not authenticate():
-        return
+# 일일 통계
+daily_stats = get_daily_stats(selected_date, selected_topic)
+st.subheader(f"{selected_date} {config.TOPICS[selected_topic]['title']} 일일 통계")
+if not daily_stats.empty:
+    # 필터링 옵션
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        name_filter = st.text_input("이름으로 필터링")
+    with col2:
+        school_filter = st.selectbox("학교로 필터링", ["All"] + list(daily_stats['school'].unique()))
+    with col3:
+        team_filter = st.selectbox("팀으로 필터링", ["All"] + list(daily_stats['team'].unique()))
+    
+    # 필터 적용
+    filtered_stats = daily_stats
+    if name_filter:
+        filtered_stats = filtered_stats[filtered_stats['user_name'].str.contains(name_filter, case=False)]
+    if school_filter != "All":
+        filtered_stats = filtered_stats[filtered_stats['school'] == school_filter]
+    if team_filter != "All":
+        filtered_stats = filtered_stats[filtered_stats['team'] == team_filter]
+    
+    st.dataframe(filtered_stats)
+else:
+    st.info("선택한 날짜와 주제에 대한 데이터가 없습니다.")
 
-    # 날짜 선택
-    selected_date = st.date_input("날짜 선택", datetime.now())
+# 주제별 진행 상황
+topic_progress = get_topic_progress(selected_topic)
+st.subheader(f"{config.TOPICS[selected_topic]['title']} 주제 진행 상황")
+if not topic_progress.empty:
+    total_questions = len(config.TOPICS[selected_topic].get('idx_list', []))
+    topic_progress['progress_percentage'] = (topic_progress['checked_questions'] / total_questions) * 100
+    topic_progress['accuracy_percentage'] = (topic_progress['correct_answers'] / topic_progress['total_attempts']) * 100
+    
+    # 소수점 두 자리까지 반올림
+    topic_progress['progress_percentage'] = topic_progress['progress_percentage'].round(2)
+    topic_progress['accuracy_percentage'] = topic_progress['accuracy_percentage'].round(2)
+    
+    # 표시할 열 선택
+    display_columns = ['user_id', 'user_name', 'school', 'team', 'checked_questions', 'progress_percentage', 'accuracy_percentage']
+    st.dataframe(topic_progress[display_columns])
+    
+    # 사용자 선택 옵션 추가
+    st.subheader("개별 사용자 진행 상황")
+    all_users = topic_progress['user_name'].tolist()
+    selected_users = st.multiselect("표시할 사용자 선택", all_users, default=all_users)
+    
+    # 선택된 사용자만 필터링
+    filtered_progress = topic_progress[topic_progress['user_name'].isin(selected_users)]
+    
+    # st.metric을 사용한 진행 상황 표시
+    cols = st.columns(3)  # 3열 레이아웃 생성
+    for idx, row in filtered_progress.iterrows():
+        with cols[idx % 3]:  # 3열 순환
+            st.metric(
+                label=f"{row['user_name']} ({row['school']}, {row['team']})",
+                value=f"{row['progress_percentage']}%",
+                delta=f"정확도: {row['accuracy_percentage']}%"
+            )
 
-    # 숙제 영역 선택
-    quiz_topics = ["s3_cloudfront", "ai", "iam", "classic"]  # 예시 토픽들
-    selected_topic = st.selectbox("숙제 영역 선택", quiz_topics)
+else:
+    st.info(f"{config.TOPICS[selected_topic]['title']} 주제에 대한 데이터가 없습니다.")
 
-    # 학생/문제 기준 선택
-    view_basis = st.radio("보기 기준", ["학생", "문제"])
+# 시간대별 활동 (사용자별)
+hourly_activity = get_hourly_activity(selected_date, selected_topic)
+st.subheader(f"{selected_date} {config.TOPICS[selected_topic]['title']} 시간대별 활동 (사용자별)")
+if not hourly_activity.empty:
+    # 사용자 선택 옵션
+    users = hourly_activity['user_name'].unique()
+    selected_users = st.multiselect("사용자 선택", users, default=users)
+    
+    # 선택된 사용자의 데이터만 필터링
+    filtered_activity = hourly_activity[hourly_activity['user_name'].isin(selected_users)]
+    
+    # Altair를 사용한 인터랙티브 차트
+    chart = alt.Chart(filtered_activity).mark_line(point=True).encode(
+        x='hour:O',
+        y='activity_count:Q',
+        color='user_name:N',
+        tooltip=['user_name', 'hour', 'activity_count']
+    ).properties(
+        width=600,
+        height=400
+    ).interactive()
+    
+    st.altair_chart(chart, use_container_width=True)
+else:
+    st.info("선택한 날짜와 주제에 대한 시간대별 활동 데이터가 없습니다.")
 
-    if st.button("불러오기"):
-        data = invoke_lambda(
-            "get_homework_results",
-            {
-                "date": selected_date.strftime("%Y-%m-%d"),
-                "quiz_topic": selected_topic,
-                "view_basis": view_basis,
-            },
-        )
-
-        if data:
-            if view_basis == "학생":
-                display_student_view(data, selected_topic)
-            else:
-                display_question_view(data)
-
-
-def display_student_view(data, topic):
-    st.subheader("학생별 결과")
-
-    # 각 토픽별 총 문제 수 설정
-    topic_question_counts = {"s3_cloudfront": 119, "ai": 9, "iam": 56, "classic": 219}
-
-    total_questions = topic_question_counts.get(topic, 0)
-
-    df = pd.DataFrame(data)
-
-    if df.empty:
-        st.warning("선택한 영역에 대한 데이터가 없습니다.")
-        return
-
-    # total_questions 값을 df의 길이만큼 확장
-    df["total_questions"] = total_questions
-
-    # 정답률 계산
-    df["정답률"] = df["correct"] / df["total_questions"] * 100
-
-    st.table(
-        df[
-            [
-                "user_name",
-                "correct",
-                "incorrect",
-                "correct_questions",
-                "incorrect_questions",
-                "정답률",
-            ]
-        ]
-    )
-
-
-def display_question_view(data):
-    st.subheader("문제별 결과")
-
-    df = pd.DataFrame(data)
-    df["정답률"] = (
-        df["correct_count"] / (df["correct_count"] + df["incorrect_count"]) * 100
-    )
-
-    st.table(
-        df[
-            [
-                "quiz_idx",
-                "correct_count",
-                "incorrect_count",
-                "correct_students",
-                "incorrect_students",
-                "정답률",
-            ]
-        ]
-    )
-
-
-if __name__ == "__main__":
-    main()
+# 사이드바에 사용자 정보 및 로그아웃 버튼 표시 (옵션)
+if "user" in st.session_state:
+    st.sidebar.success(f"{st.session_state['user']['name']}님 로그인됨")
+    if st.sidebar.button("로그아웃"):
+        del st.session_state["user"]
+        st.rerun()
+else:
+    st.sidebar.info("로그인이 필요합니다.")
