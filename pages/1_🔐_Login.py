@@ -1,26 +1,47 @@
 import streamlit as st
-import json
+import sqlite3
+import hashlib
 import config
-import requests
+from datetime import datetime
 
 # 버튼 키관리를 위한 현 페이지 정보
 current_page = __file__.split("/")[-1].split(".")[0]  # 예: '1_🔐_Login'
 
-# Lambda 함수 URL을 환경 변수로 관리
-USERS_LAMBDA_URL = config.USERS_LAMBDA_URL
+# 데이터베이스 연결 함수
+def get_db_connection():
+    conn = sqlite3.connect('db/db.sqlite')
+    conn.row_factory = sqlite3.Row
+    return conn
 
+# 비밀번호 해시 함수
+def hash_password(password):
+    return hashlib.sha256(str(password).encode()).hexdigest()
 
-def invoke_lambda(operation, payload):
-    request_data = {"operation": operation, "payload": payload}
+# 로그인 함수
+def login(username, school, team, password):
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    hashed_password = hash_password(password)
+    cursor.execute("SELECT * FROM users WHERE name = ? AND school = ? AND team = ? AND password = ?", 
+                   (username, school, team, hashed_password))
+    user = cursor.fetchone()
+    conn.close()
+    return user
+
+# 회원가입 함수
+def register(username, school, team, password):
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    hashed_password = hash_password(password)
     try:
-        response = requests.post(USERS_LAMBDA_URL, json=request_data)
-        return response.json()
-    except:
-        return {
-            "statusCode": 500,
-            "body": json.dumps({"message": "Error calling Lambda"}),
-        }
-
+        cursor.execute("INSERT INTO users (name, school, team, password) VALUES (?, ?, ?, ?)", 
+                       (username, school, team, hashed_password))
+        conn.commit()
+        return True
+    except sqlite3.IntegrityError:
+        return False
+    finally:
+        conn.close()
 
 st.set_page_config(page_title="로그인/회원가입", page_icon="🔐", layout="wide")
 
@@ -54,34 +75,14 @@ with tab1:
             if len(login_password) == 4 and login_password.isdigit():
                 with st.spinner("로그인 중..."):
                     try:
-                        response = invoke_lambda(
-                            "login",
-                            {
-                                "username": login_name,
-                                "school": login_school,
-                                "team": login_team,
-                                "password": login_password,
-                            },
-                        )
-                        if response["statusCode"] == 200:
-                            user_data = json.loads(response["body"])
-                            st.session_state["user"] = user_data
+                        user = login(login_name, login_school, login_team, login_password)
+                        if user:
+                            st.session_state["user"] = dict(user)
                             st.success(f"{login_name}님, 환영합니다!")
-                            st.info(
-                                "좌측 사이드바 'Home' 페이지에서 안내사항을 확인할 수 있습니다."
-                            )
-                            st.info(
-                                "좌측 사이드바의 여러 페이지에서 공부를 시작하세요!"
-                            )
-                        elif (
-                            response["statusCode"] == 401
-                            or response["statusCode"] == 404
-                        ):
-                            st.error("로그인 정보가 올바르지 않습니다.")
+                            st.info("좌측 사이드바 'Home' 페이지에서 안내사항을 확인할 수 있습니다.")
+                            st.info("좌측 사이드바의 여러 페이지에서 공부를 시작하세요!")
                         else:
-                            st.error(
-                                "로그인 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요."
-                            )
+                            st.error("로그인 정보가 올바르지 않습니다.")
                     except Exception as e:
                         st.error(f"로그인 중 오류가 발생했습니다: {str(e)}")
             else:
@@ -91,13 +92,12 @@ with tab1:
 
 # 사이드바에 사용자 정보 및 로그아웃 버튼 표시
 if "user" in st.session_state:
-    st.sidebar.success(f"{st.session_state['user']['username']}님 로그인됨")
+    st.sidebar.success(f"{st.session_state['user']['name']}님 로그인됨")
     if st.sidebar.button("로그아웃", key=f"logout_button_{current_page}"):
         del st.session_state["user"]
         st.rerun()
 else:
     st.sidebar.info("로그인이 필요합니다.")
-
 
 with tab2:
     st.header("회원가입")
@@ -127,24 +127,10 @@ with tab2:
             if len(new_password) == 4 and new_password.isdigit():
                 with st.spinner("회원가입 처리 중..."):
                     try:
-                        response = invoke_lambda(
-                            "register",
-                            {
-                                "username": new_name,
-                                "password": new_password,
-                                "school": new_school,
-                                "team": new_team,
-                            },
-                        )
-                        statuscode = response["statusCode"]
-                        json_body = json.loads(response["body"])
-                        message = json_body["message"]
-                        if statuscode == 400:
-                            st.error(f"{message}")
-                        elif statuscode == 200:
-                            st.success(f"{message} 로그인탭에서 로그인해주세요.")
+                        if register(new_name, new_school, new_team, new_password):
+                            st.success("회원가입이 완료되었습니다. 로그인탭에서 로그인해주세요.")
                         else:
-                            st.error(f"회원가입 실패. 관리자에게 문의해주세요.")
+                            st.error("이미 존재하는 사용자입니다.")
                     except Exception as e:
                         st.error(f"회원가입 중 오류가 발생했습니다: {str(e)}")
             else:
