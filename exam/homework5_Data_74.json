@@ -1,0 +1,2643 @@
+[
+  {
+    "idx": 249,
+    "question": {
+      "kor": "주로 온프레미스에서 애플리케이션 서버를 실행하는 회사가 AWS로 마이그레이션하기로 결정했습니다. 회사는 온프레미스에서 iSCSI(Internet Small Computer Systems Interface) 스토리지를 확장해야 할 필요성을 최소화하려고 합니다. 회사는 최근에 액세스한 데이터만 로컬에 저장하기를 원합니다.\n회사는 이러한 요구 사항을 충족하기 위해 어떤 AWS 솔루션을 사용해야 합니까?",
+      "eng": "A company that primarily runs its application servers on premises has decided to migrate to AWS. The company wants to minimize its need to scale its Internet Small Computer Systems Interface (iSCSI) storage on premises. The company wants only its recently accessed data to remain stored locally.\nWhich AWS solution should the company use to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon S3 파일 게이트웨이",
+        "B": "AWS Storage Gateway 테이프 게이트웨이",
+        "C": "AWS Storage Gateway 볼륨 게이트웨이 저장 볼륨",
+        "D": "AWS Storage Gateway 볼륨 게이트웨이 캐시 볼륨"
+      },
+      "eng": {
+        "A": "Amazon S3 File Gateway",
+        "B": "AWS Storage Gateway Tape Gateway",
+        "C": "AWS Storage Gateway Volume Gateway stored volumes",
+        "D": "AWS Storage Gateway Volume Gateway cached volumes"
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "Storage Gateway"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/99611-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 275,
+    "question": {
+      "kor": "회사에는 수명이 다한 온프레미스 볼륨 백업 솔루션이 있습니다. 회사는 를 새로운 백업 솔루션의 일부로 사용하고 에 백업되는 동안 AWS AWS 모든 데이터에 대한 로컬 액세스를 유지하려고 합니다. 회사는 AWS에 백업된 데이터가 자동으로 안전하게 전송되기를 원합니다.\n어떤 솔루션이 이러한 요구 사항을 충족합니까?",
+      "eng": "A company has an on-premises volume backup solution that has reached its end of life. The company wants to use AWS as part of a new backup solution and wants to maintain local access to all the data while it is backed up on AWS. The company wants to ensure that the data backed up on AWS is automatically and securely transferred.\nWhich solution meets these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Snowball을 사용하여 온프레미스 솔루션에서 Amazon S3로 데이터를 마이그레이션합니다. 데이터에 대한 로컬 액세스를 제공하기 위해 Snowball S3 엔드포인트를 탑재하도록 온프레미스 시스템을 구성합니다.",
+        "B": "AWS Snowball Edge를 사용하여 온프레미스 솔루션에서 Amazon S3로 데이터를 마이그레이션합니다. Snowball Edge 파일 인터페이스를 사용하여 온프레미스 시스템에 데이터에 대한 로컬 액세스를 제공합니다.",
+        "C": "AWS Storage Gateway를 사용하고 캐시된 볼륨 게이트웨이를 구성합니다. 온프레미스에서 Storage Gateway 소프트웨어 어플라이언스를 실행하고 로컬로 캐시할 데이터 비율을 구성합니다. 데이터에 대한 로컬 액세스를 제공하기 위해 게이트웨이 스토리지 볼륨을 마운트합니다.",
+        "D": "AWS Storage Gateway를 사용하고 저장된 볼륨 게이트웨이를 구성합니다. 온프레미스에서 Storage Gateway 소프트웨어 어플라이언스를 실행하고 게이트웨이 스토리지 볼륨을 온프레미스 스토리지에 매핑합니다. 데이터에 대한 로컬 액세스를 제공하기 위해 게이트웨이 스토리지 볼륨을 마운트합니다."
+      },
+      "eng": {
+        "A": "Use AWS Snowball to migrate data out of the on-premises solution to Amazon S3. Configure on-premises systems to mount the Snowball S3 endpoint to provide local access to the data.",
+        "B": "Use AWS Snowball Edge to migrate data out of the on-premises solution to Amazon S3. Use the Snowball Edge file interface to provide on-premises systems with local access to the data.",
+        "C": "Use AWS Storage Gateway and configure a cached volume gateway. Run the Storage Gateway software appliance on premises and configure a percentage of data to cache locally. Mount the gateway storage volumes to provide local access to the data.",
+        "D": "Use AWS Storage Gateway and configure a stored volume gateway. Run the Storage Gateway software appliance on premises and map the gateway storage volumes to on-premises storage. Mount the gateway storage volumes to provide local access to the data."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "Storage Gateway"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/99692-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 322,
+    "question": {
+      "kor": "회사는 기본 온프레미스 파일 스토리지 볼륨에 대한 재해 복구 계획을 구현하려고 합니다. 파일 스토리지 볼륨은 로컬 스토리지 서버의 iSCSI(Internet Small Computer Systems Interface) 장치에서 마운트됩니다. 파일 스토리지 볼륨은 수백 테라바이트(TB)의 데이터를 보유합니다.\n회사는 최종 사용자가 대기 시간 없이 온프레미스 시스템의 모든 파일 유형에 즉시 액세스할 수 있기를 원합니다.\n회사의 기존 인프라를 최소한으로 변경하면서 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company wants to implement a disaster recovery plan for its primary on-premises file storage volume. The file storage volume is mounted from an Internet Small Computer Systems Interface (iSCSI) device on a local storage server. The file storage volume holds hundreds of terabytes (TB) of data.\nThe company wants to ensure that end users retain immediate access to all file types from the on-premises systems without experiencing latency.\nWhich solution will meet these requirements with the LEAST amount of change to the company's existing infrastructure?"
+    },
+    "choices": {
+      "kor": {
+        "A": "온프레미스에서 호스팅되는 가상 머신(VM)으로 Amazon S3 파일 게이트웨이를 프로비저닝합니다. 로컬 캐시를 10TB로 설정합니다. NFS 프로토콜을 통해 파일에 액세스하도록 기존 애플리케이션을 수정합니다. 재해에서 복구하려면 Amazon EC2 인스턴스를 프로비저닝하고 파일이 포함된 S3 버킷을 탑재합니다.",
+        "B": "AWS Storage Gateway 테이프 게이트웨이를 프로비저닝합니다. 데이터 백업 솔루션을 사용하여 모든 기존 데이터를 가상 테이프 라이브러리에 백업하십시오. 초기 백업이 완료된 후 야간에 실행되도록 데이터 백업 솔루션을 구성합니다. 재해에서 복구하려면 Amazon EC2 인스턴스를 프로비저닝하고 가상 테이프 라이브러리의 볼륨에서 Amazon Elastic Block Store(Amazon EBS) 볼륨으로 데이터를 복원합니다.",
+        "C": "AWS Storage Gateway 볼륨 게이트웨이 캐시 볼륨을 프로비저닝합니다. 로컬 캐시를 10TB로 설정합니다. iSCSI를 사용하여 볼륨 게이트웨이 캐싱 볼륨을 기존 파일 서버에 마운트하고 모든 파일을 스토리지 볼륨에 복사합니다. 스토리지 볼륨의 예약된 스냅샷을 구성합니다. 재해에서 복구하려면 스냅샷을 Amazon Elastic Block Store(Amazon EBS) 볼륨으로 복원하고 EBS 볼륨을 Amazon EC2 인스턴스에 연결합니다.",
+        "D": "기존 파일 스토리지 볼륨과 동일한 양의 디스크 공간으로 AWS Storage Gateway 볼륨 게이트웨이 저장 볼륨을 프로비저닝합니다. iSCSI를 사용하여 볼륨 게이트웨이 저장 볼륨을 기존 파일 서버에 마운트하고 모든 파일을 스토리지 볼륨에 복사합니다. 스토리지 볼륨의 예약된 스냅샷을 구성합니다. 재해에서 복구하려면 스냅샷을 Amazon Elastic Block Store(Amazon EBS) 볼륨으로 복원하고 EBS 볼륨을 Amazon EC2 인스턴스에 연결합니다."
+      },
+      "eng": {
+        "A": "Provision an Amazon S3 File Gateway as a virtual machine (VM) that is hosted on premises. Set the local cache to 10 TB. Modify existing applications to access the files through the NFS protocol. To recover from a disaster, provision an Amazon EC2 instance and mount the S3 bucket that contains the files.",
+        "B": "Provision an AWS Storage Gateway tape gateway. Use a data backup solution to back up all existing data to a virtual tape library. Configure the data backup solution to run nightly after the initial backup is complete. To recover from a disaster, provision an Amazon EC2 instance and restore the data to an Amazon Elastic Block Store (Amazon EBS) volume from the volumes in the virtual tape library.",
+        "C": "Provision an AWS Storage Gateway Volume Gateway cached volume. Set the local cache to 10 TB. Mount the Volume Gateway cached volume to the existing file server by using iSCSI, and copy all files to the storage volume. Configure scheduled snapshots of the storage volume. To recover from a disaster, restore a snapshot to an Amazon Elastic Block Store (Amazon EBS) volume and attach the EBS volume to an Amazon EC2 instance.",
+        "D": "Provision an AWS Storage Gateway Volume Gateway stored volume with the same amount of disk space as the existing file storage volume. Mount the Volume Gateway stored volume to the existing file server by using iSCSI, and copy all files to the storage volume. Configure scheduled snapshots of the storage volume. To recover from a disaster, restore a snapshot to an Amazon Elastic Block Store (Amazon EBS) volume and attach the EBS volume to an Amazon EC2 instance."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "Storage Gateway"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/99711-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 404,
+    "question": {
+      "kor": "회사의 비용에 대한 최근 분석에서는 백업 비용을 줄여야 할 필요성이 강조되었습니다. 회사의 최고 정보 책임자는 온프레미스 백업 인프라를 IT 단순화하고 물리적 백업 테이프 사용을 제거하여 비용을 절감하고자 합니다. 회사는 온프레미스 백업 애플리케이션 및 워크플로우에 대한 기존 투자를 보존해야 합니다.\n솔루션 설계자는 무엇을 추천해야 합니까?",
+      "eng": "A recent analysis of a company's IT expenses highlights the need to reduce backup costs. The company's chief information officer wants to simplify the onpremises backup infrastructure and reduce costs by eliminating the use of physical backup tapes. The company must preserve the existing investment in the on-premises backup applications and workflows.\nWhat should a solutions architect recommend?"
+    },
+    "choices": {
+      "kor": {
+        "A": "NFS 인터페이스를 사용하여 백업 애플리케이션과 연결하도록 AWS Storage Gateway를 설정합니다.",
+        "B": "NFS 인터페이스를 사용하여 백업 애플리케이션과 연결하는 Amazon EFS 파일 시스템을 설정합니다.",
+        "C": "iSCSI 인터페이스를 사용하여 백업 애플리케이션과 연결하는 Amazon EFS 파일 시스템을 설정합니다.",
+        "D": "iSCSI-가상 테이프 라이브러리(VTL) 인터페이스를 사용하여 백업 애플리케이션과 연결하도록 AWS Storage Gateway를 설정합니다."
+      },
+      "eng": {
+        "A": "Set up AWS Storage Gateway to connect with the backup applications using the NFS interface.",
+        "B": "Set up an Amazon EFS file system that connects with the backup applications using the NFS interface.",
+        "C": "Set up an Amazon EFS file system that connects with the backup applications using the iSCSI interface.",
+        "D": "Set up AWS Storage Gateway to connect with the backup applications using the iSCSI-virtual tape library (VTL) interface."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "Storage Gateway"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/116975-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 539,
+    "question": {
+      "kor": "의학 연구실에서 새로운 연구와 관련된 데이터를 생성합니다. 연구소는 온프레미스 파일 기반 애플리케이션을 위해 전국의 클리닉에 최소한의 대기 시간으로 데이터를 제공하고자 합니다. 데이터 파일은 각 클리닉에 대한 읽기 전용 권한이 있는 Amazon S3 버킷에 저장됩니다.\n이러한 요구 사항을 충족하기 위해 솔루션 설계자는 무엇을 권장해야 합니까?",
+      "eng": "A medical research lab produces data that is related to a new study. The lab wants to make the data available with minimum latency to clinics across the country for their on-premises, file-based applications. The data files are stored in an Amazon S3 bucket that has read-only permissions for each clinic.\nWhat should a solutions architect recommend to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "각 클리닉에서 온프레미스로 AWS Storage Gateway 파일 게이트웨이를 가상 머신(VM)으로 배포합니다.",
+        "B": "처리를 위해 AWS DataSync를 사용하여 각 클리닉의 온프레미스 애플리케이션으로 파일을 마이그레이션합니다.",
+        "C": "각 클리닉에서 온프레미스로 AWS Storage Gateway 볼륨 게이트웨이를 가상 머신(VM)으로 배포합니다.",
+        "D": "Amazon Elastic File System(Amazon EFS) 파일 시스템을 각 클리닉의 온프레미스 서버에 연결합니다."
+      },
+      "eng": {
+        "A": "Deploy an AWS Storage Gateway file gateway as a virtual machine (VM) on premises at each clinic",
+        "B": "Migrate the files to each clinic’s on-premises applications by using AWS DataSync for processing.",
+        "C": "Deploy an AWS Storage Gateway volume gateway as a virtual machine (VM) on premises at each clinic.",
+        "D": "Attach an Amazon Elastic File System (Amazon EFS) file system to each clinic’s on-premises servers."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "Storage Gateway"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/95002-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 560,
+    "question": {
+      "kor": "회사는 온프레미스 서버를 사용하여 애플리케이션을 호스팅합니다. 회사의 저장 용량이 부족합니다. 애플리케이션은 블록 스토리지와 NFS 스토리지를 모두 사용합니다. 회사는 기존 애플리케이션을 재설계하지 않고 로컬 캐싱을 지원하는 고성능 솔루션이 필요합니다.\n이러한 요구 사항을 충족하기 위해 솔루션 설계자는 어떤 작업 조합을 수행해야 합니까? (두 가지를 선택하세요.)",
+      "eng": "A company uses on-premises servers to host its applications. The company is running out of storage capacity. The applications use both block storage and NFS storage. The company needs a high-performing solution that supports local caching without re-architecting its existing applications.\nWhich combination of actions should a solutions architect take to meet these requirements? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon S3를 온프레미스 서버에 파일 시스템으로 탑재합니다.",
+        "B": "NFS 스토리지를 대체할 AWS Storage Gateway 파일 게이트웨이를 배포합니다.",
+        "C": "AWS Snowball Edge를 배포하여 온프레미스 서버에 NFS 마운트를 프로비저닝합니다.",
+        "D": "블록 스토리지를 대체할 AWS Storage Gateway 볼륨 게이트웨이를 배포합니다.",
+        "E": "Amazon Elastic File System(Amazon EFS) 볼륨을 배포하고 온프레미스 서버에 탑재합니다."
+      },
+      "eng": {
+        "A": "Mount Amazon S3 as a file system to the on-premises servers.",
+        "B": "Deploy an AWS Storage Gateway file gateway to replace NFS storage.",
+        "C": "Deploy AWS Snowball Edge to provision NFS mounts to on-premises servers.",
+        "D": "Deploy an AWS Storage Gateway volume gateway to replace the block storage.",
+        "E": "Deploy Amazon Elastic File System (Amazon EFS) volumes and mount them to on-premises servers."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "Storage Gateway"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/109552-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B",
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 610,
+    "question": {
+      "kor": "한 제약회사에서 신약을 개발하고 있습니다. 지난 몇 달 동안 회사에서 생성되는 데이터의 양이 기하급수적으로 증가했습니다. 회사의 연구원들은 최소한의 지연으로 즉시 사용할 수 있도록 전체 데이터 세트의 하위 집합을 정기적으로 요구합니다. 그러나 전체 데이터 세트에 매일 액세스할 필요는 없습니다. 현재 모든 데이터는 온프레미스 스토리지 어레이에 상주하고 있으며 회사는\n지속적인 자본 비용을 줄이고 싶어합니다.\n솔루션 설계자는 이러한 요구 사항을 충족하기 위해 어떤 스토리지 솔루션을 권장해야 합니까?",
+      "eng": "A pharmaceutical company is developing a new drug. The volume of data that the company generates has grown exponentially over the past few months.\nThe company's researchers regularly require a subset of the entire dataset to be immediately available with minimal lag. However, the entire dataset does not need to be accessed on a daily basis. All the data currently resides in on-premises storage arrays, and the company wants to reduce ongoing capital expenses.\nWhich storage solution should a solutions architect recommend to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS DataSync를 예약된 cron 작업으로 실행하여 지속적으로 데이터를 Amazon S3 버킷으로 마이그레이션합니다.",
+        "B": "Amazon S3 버킷을 대상 스토리지로 사용하여 AWS Storage Gateway 파일 게이트웨이를 배포합니다. 데이터를 Storage Gateway 어플라이언스로 마이그레이션합니다.",
+        "C": "Amazon S3 버킷을 대상 스토리지로 사용하여 캐시된 볼륨이 있는 AWS Storage Gateway 볼륨 게이트웨이를 배포합니다. 데이터를 Storage Gateway 어플라이언스로 마이그레이션합니다.",
+        "D": "온프레미스 환경에서 AWS로 AWS Site-to-Site VPN 연결을 구성합니다. Amazon Elastic File System(Amazon EFS) 파일 시스템으로 데이터를 마이그레이션합니다."
+      },
+      "eng": {
+        "A": "Run AWS DataSync as a scheduled cron job to migrate the data to an Amazon S3 bucket on an ongoing basis.",
+        "B": "Deploy an AWS Storage Gateway file gateway with an Amazon S3 bucket as the target storage. Migrate the data to the Storage Gateway appliance.",
+        "C": "Deploy an AWS Storage Gateway volume gateway with cached volumes with an Amazon S3 bucket as the target storage. Migrate the data to the Storage Gateway appliance.",
+        "D": "Configure an AWS Site-to-Site VPN connection from the on-premises environment to AWS. Migrate data to an Amazon Elastic File System (Amazon EFS) file system."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "Storage Gateway"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/132996-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 677,
+    "question": {
+      "kor": "회사에 스토리지 용량이 부족한 온프레미스 데이터 센터가 있습니다. 회사는 대역폭 비용을 최소화하면서 스토리지 인프라를 AWS로 마이그레이션하려고 합니다. 솔루션은 추가 비용 없이 데이터를 즉시 검색할 수 있어야 합니다.\n이러한 요구 사항을 어떻게 충족할 수 있습니까?",
+      "eng": "A company has an on-premises data center that is running out of storage capacity. The company wants to migrate its storage infrastructure to AWS while minimizing bandwidth costs. The solution must allow for immediate retrieval of data at no additional cost.\nHow can these requirements be met?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon S3 Glacier Vault를 배포하고 빠른 검색을 활성화합니다. 워크로드에 대해 프로비저닝된 검색 용량을 활성화합니다.",
+        "B": "캐시된 볼륨을 사용하여 AWS Storage Gateway를 배포합니다. Storage Gateway를 사용하면 자주 액세스하는 데이터 하위 집합의 복사본을 로컬에 보관하면서 Amazon S3에 데이터를 저장할 수 있습니다.",
+        "C": "저장된 볼륨을 사용하여 AWS Storage Gateway를 배포하여 데이터를 로컬에 저장합니다. Storage Gateway를 사용하여 데이터의 특정 시점 스냅샷을 Amazon S3에 비동기식으로 백업합니다.",
+        "D": "AWS Direct Connect를 배포하여 온프레미스 데이터 센터에 연결합니다. 데이터를 로컬에 저장하도록 AWS Storage Gateway를 구성합니다. Storage Gateway를 사용하여 데이터의 특정 시점 스냅샷을 Amazon S3에 비동기식으로 백업합니다."
+      },
+      "eng": {
+        "A": "Deploy Amazon S3 Glacier Vault and enable expedited retrieval. Enable provisioned retrieval capacity for the workload.",
+        "B": "Deploy AWS Storage Gateway using cached volumes. Use Storage Gateway to store data in Amazon S3 while retaining copies of frequently accessed data subsets locally.",
+        "C": "Deploy AWS Storage Gateway using stored volumes to store data locally. Use Storage Gateway to asynchronously back up point-in-time snapshots of the data to Amazon S3.",
+        "D": "Deploy AWS Direct Connect to connect with the on-premises data center. Configure AWS Storage Gateway to store data locally. Use Storage Gateway to asynchronously back up point-in-time snapshots of the data to Amazon S3."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "Storage Gateway"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/132910-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 710,
+    "question": {
+      "kor": "소셜 미디어 회사에는 데이터를 수집하고 처리하는 워크로드가 있습니다. 워크로드는 온프레미스 NFS 스토리지에 데이터를 저장합니다. 데이터 저장소는 회사의 확장되는 비즈니스 요구 사항을 충족할 만큼 빠르게 확장할 수 없습니다. 회사는 현재 데이터 스토어를 AWS로 마이그레이션하려고 합니다.\n이러한 요구 사항을 가장 비용 효율적으로 충족하는 솔루션은 무엇입니까?",
+      "eng": "A social media company has workloads that collect and process data. The workloads store the data in on-premises NFS storage. The data store cannot scale fast enough to meet the company’s expanding business needs. The company wants to migrate the current data store to AWS.\nWhich solution will meet these requirements MOST cost-effectively?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Storage Gateway 볼륨 게이트웨이를 설정합니다. Amazon S3 수명 주기 정책을 사용하여 데이터를 적절한 스토리지 클래스로 전환합니다.",
+        "B": "AWS Storage Gateway Amazon S3 파일 게이트웨이를 설정합니다. Amazon S3 수명 주기 정책을 사용하여 데이터를 적절한 스토리지 클래스로 전환합니다.",
+        "C": "Amazon Elastic File System(Amazon EFS) Standard-Infrequent Access(Standard-IA) 스토리지 클래스를 사용합니다. 빈번하지 않은 액세스 수명주기 정책을 활성화합니다.",
+        "D": "One Zone-Infrequent Access(One Zone-IA) 스토리지 클래스를 사용합니다. Amazon Elastic File System(Amazon EFS) 빈번하지 않은 액세스 수명주기 정책을 활성화합니다."
+      },
+      "eng": {
+        "A": "Set up an AWS Storage Gateway Volume Gateway. Use an Amazon S3 Lifecycle policy to transition the data to the appropriate storage class.",
+        "B": "Set up an AWS Storage Gateway Amazon S3 File Gateway. Use an Amazon S3 Lifecycle policy to transition the data to the appropriate storage class.",
+        "C": "Use the Amazon Elastic File System (Amazon EFS) Standard-Infrequent Access (Standard-IA) storage class. Activate the infrequent access lifecycle policy.",
+        "D": "Use the Amazon Elastic File System (Amazon EFS) One Zone-Infrequent Access (One Zone-IA) storage class. Activate the infrequent access lifecycle policy."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "Storage Gateway"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/135263-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 715,
+    "question": {
+      "kor": "회사에는 매일 수백 개의 파일을 생성하는 온프레미스 비즈니스 애플리케이션이 있습니다. 이러한 파일은 SMB 파일 공유에 저장되며 애플리케이션 서버에 대한 지연 시간이 짧은 연결이 필요합니다. 새로운 회사 정책에는 애플리케이션에서 생성된 모든 파일을 AWS에 복사해야 한다고 명시되어 있습니다. AWS에 대한 VPN 연결이 이미 있습니다.\n애플리케이션 개발 팀은 애플리케이션을 AWS로 이동하는 데 필요한 코드를 수정할 시간이 없습니다.\n애플리케이션이 파일을 AWS에 복사할 수 있도록 솔루션 아키텍트는 어떤 서비스를 권장해야 합니까?",
+      "eng": "A company has an on-premises business application that generates hundreds of files each day. These files are stored on an SMB file share and require a low-latency connection to the application servers. A new company policy states all application-generated files must be copied to AWS. There is already a VPN connection to AWS.\nThe application development team does not have time to make the necessary code modifications to move the application to AWS.\nWhich service should a solutions architect recommend to allow the application to copy files to AWS?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Elastic File System(Amazon EFS)",
+        "B": "Windows 파일 서버용 Amazon FSx",
+        "C": "AWS 스노우볼",
+        "D": "AWS 스토리지 게이트웨이"
+      },
+      "eng": {
+        "A": "Amazon Elastic File System (Amazon EFS)",
+        "B": "Amazon FSx for Windows File Server",
+        "C": "AWS Snowball",
+        "D": "AWS Storage Gateway"
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "Storage Gateway"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/138083-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 720,
+    "question": {
+      "kor": "회사에는 온프레미스 ISCSI(Internet Small Computer Systems Interface) 네트워크 스토리지 서버가 여러 대 있습니다. 회사는 AWS 클라우드로 이동하여 이러한 서버의 수를 줄이고 싶어합니다. 솔루션 설계자는 자주 사용되는 데이터에 대한 짧은 대기 시간 액세스를 제공하고 최소한의 인프라 변경으로 온프레미스 서버에 대한 종속성을 줄여야 합니다.\n어떤 솔루션이 이러한 요구 사항을 충족합니까?",
+      "eng": "A company has several on-premises Internet Small Computer Systems Interface (ISCSI) network storage servers. The company wants to reduce the number of these servers by moving to the AWS Cloud. A solutions architect must provide low-latency access to frequently used data and reduce the dependency on on-premises servers with a minimal number of infrastructure changes.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon S3 파일 게이트웨이를 배포합니다.",
+        "B": "Amazon S3에 대한 백업과 함께 Amazon Elastic Block Store(Amazon EBS) 스토리지를 배포합니다.",
+        "C": "저장된 볼륨으로 구성된 AWS Storage Gateway 볼륨 게이트웨이를 배포합니다.",
+        "D": "캐시된 볼륨으로 구성된 AWS Storage Gateway 볼륨 게이트웨이를 배포합니다."
+      },
+      "eng": {
+        "A": "Deploy an Amazon S3 File Gateway.",
+        "B": "Deploy Amazon Elastic Block Store (Amazon EBS) storage with backups to Amazon S3.",
+        "C": "Deploy an AWS Storage Gateway volume gateway that is configured with stored volumes.",
+        "D": "Deploy an AWS Storage Gateway volume gateway that is configured with cached volumes."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "Storage Gateway"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/121170-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 459,
+    "question": {
+      "kor": "회사는 2주 이내에 온프레미스 데이터 센터에서 AWS로 MySQL 데이터베이스를 마이그레이션해야 합니다. 데이터베이스 크기는 20TB입니다. 회사는 다운타임을 최소화하면서 마이그레이션을 완료하기를 원합니다.\n데이터베이스를 가장 비용 효율적으로 마이그레이션하는 솔루션은 무엇입니까?",
+      "eng": "A company needs to migrate a MySQL database from its on-premises data center to AWS within 2 weeks. The database is 20 TB in size. The company wants to complete the migration with minimal downtime.\nWhich solution will migrate the database MOST cost-effectively?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Snowball Edge Storage Optimized 디바이스를 주문합니다. AWS Schema Conversion Tool(AWS SCT)과 함께 AWS Database Migration Service(AWS DMS)를 사용하여 진행 중인 변경 사항을 복제하여 데이터베이스를 마이그레이션합니다. Snowball Edge 디바이스를 AWS로 보내 마이그레이션을 완료하고 진행 중인 복제를 계속합니다.",
+        "B": "AWS Snowmobile 차량을 주문합니다. AWS Schema Conversion Tool(AWS SCT)과 함께 AWS Database Migration Service(AWS DMS)를 사용하여 지속적인 변경 사항이 있는 데이터베이스를 마이그레이션합니다. Snowmobile 차량을 다시 AWS로 보내 마이그레이션을 완료하고 진행 중인 복제를 계속합니다.",
+        "C": "GPU 장치로 AWS Snowball Edge Compute Optimized를 주문합니다. AWS Schema Conversion Tool(AWS SCT)과 함께 AWS Database Migration Service(AWS DMS)를 사용하여 지속적인 변경 사항이 있는 데이터베이스를 마이그레이션합니다. Snowball 디바이스를 AWS로 보내 마이그레이션을 완료하고 진행 중인 복제를 계속합니다.",
+        "D": "1GB 전용 AWS Direct Connect 연결을 주문하여 데이터 센터와의 연결을 설정합니다. AWS Schema Conversion Tool(AWS SCT)과 함께 AWS Database MigrationService(AWS DMS)를 사용하여 진행 중인 변경 사항을 복제하여 데이터베이스를 마이그레이션합니다."
+      },
+      "eng": {
+        "A": "Order an AWS Snowball Edge Storage Optimized device. Use AWS Database Migration Service (AWS DMS) with AWS Schema Conversion Tool (AWS SCT) to migrate the database with replication of ongoing changes. Send the Snowball Edge device to AWS to finish the migration and continue the ongoing replication.",
+        "B": "Order an AWS Snowmobile vehicle. Use AWS Database Migration Service (AWS DMS) with AWS Schema Conversion Tool (AWS SCT) to migrate the database with ongoing changes. Send the Snowmobile vehicle back to AWS to finish the migration and continue the ongoing replication.",
+        "C": "Order an AWS Snowball Edge Compute Optimized with GPU device. Use AWS Database Migration Service (AWS DMS) with AWS Schema Conversion Tool (AWS SCT) to migrate the database with ongoing changes. Send the Snowball device to AWS to finish the migration and continue the ongoing replication",
+        "D": "Order a 1 GB dedicated AWS Direct Connect connection to establish a connection with the data center. Use AWS Database Migration Service (AWS DMS) with AWS Schema Conversion Tool (AWS SCT) to migrate the database with replication of ongoing changes."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "Snowball"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/109377-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 875,
+    "question": {
+      "kor": "한 회사에서 데이터 센터를 이전하고 2주 이내에 50TB의 데이터를 AWS로 안전하게 전송하려고 합니다. 기존 데이터 센터에는 90% 활용되는 AWS에 대한 Site-to-Site VPN 연결이 있습니다.\n솔루션 아키텍트는 이러한 요구 사항을 충족하기 위해 어떤 AWS 서비스를 사용해야 합니까?",
+      "eng": "A company is relocating its data center and wants to securely transfer 50 TB of data to AWS within 2 weeks. The existing data center has a Site-to-Site VPN connection to AWS that is 90% utilized.\nWhich AWS service should a solutions architect use to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "VPC 엔드포인트가 있는 AWS DataSync",
+        "B": "AWS 다이렉트 커넥트",
+        "C": "AWS Snowball Edge 스토리지 최적화",
+        "D": "AWS 스토리지 게이트웨이"
+      },
+      "eng": {
+        "A": "AWS DataSync with a VPC endpoint",
+        "B": "AWS Direct Connect",
+        "C": "AWS Snowball Edge Storage Optimized",
+        "D": "AWS Storage Gateway"
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "Snowball"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/128067-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 453,
+    "question": {
+      "kor": "한 회사는 데이터 센터에서 SMB 파일 서버를 운영하고 있습니다. 파일서버는 회사가 자주 접속하는 대용량 파일을 파일 생성일로부터 최대 7일까지 저장합니다. 7일이 지나면 회사는 최대 24시간의 검색 시간으로 파일에 액세스할 수 있어야 합니다.\n어떤 솔루션이 이러한 요구 사항을 충족합니까?",
+      "eng": "A company runs an SMB file server in its data center. The file server stores large files that the company frequently accesses for up to 7 days after the file creation date. After 7 days, the company needs to be able to access the files with a maximum retrieval time of 24 hours.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS DataSync를 사용하여 SMB 파일 서버에서 AWS로 7일보다 오래된 데이터를 복사합니다.",
+        "B": "회사의 저장 공간을 늘리려면 Amazon S3 파일 게이트웨이를 생성하십시오. 7일 후에 데이터를 S3 Glacier Deep Archive로 전환하는 S3 수명 주기 정책을 생성합니다.",
+        "C": "회사의 저장 공간을 늘리기 위해 Amazon FSx 파일 게이트웨이를 생성합니다. 7일 후에 데이터를 전환하는 Amazon S3 수명 주기 정책을 생성합니다.",
+        "D": "각 사용자에 대해 Amazon S3에 대한 액세스를 구성합니다. 7일 후에 데이터를 S3 Glacier 유연한 검색으로 전환하는 S3 수명 주기 정책을 생성합니다."
+      },
+      "eng": {
+        "A": "Use AWS DataSync to copy data that is older than 7 days from the SMB file server to AWS.",
+        "B": "Create an Amazon S3 File Gateway to increase the company's storage space. Create an S3 Lifecycle policy to transition the data to S3 Glacier Deep Archive after 7 days.",
+        "C": "Create an Amazon FSx File Gateway to increase the company's storage space. Create an Amazon S3 Lifecycle policy to transition the data after 7 days.",
+        "D": "Configure access to Amazon S3 for each user. Create an S3 Lifecycle policy to transition the data to S3 Glacier Flexible Retrieval after 7 days."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "S3 File Gateway",
+      "SMB file server",
+      "Storage Class",
+      "lifecycle policies"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/129714-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 832,
+    "question": {
+      "kor": "회사는 물리적 테이프에 5PB의 아카이빙된 데이터를 가지고 있습니다. 회사는 규정 준수를 위해 테이프의 데이터를 10년 더 보존해야 합니다. 회사는 향후 6개월 내에 AWS로 마이그레이션하기를 원합니다. 테이프를 저장하는 데이터 센터에는 1Gbps 업링크 인터넷 연결이 있습니다.\n이러한 요구 사항을 가장 비용 효율적으로 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company has 5 PB of archived data on physical tapes. The company needs to preserve the data on the tapes for another 10 years for compliance purposes. The company wants to migrate to AWS in the next 6 months. The data center that stores the tapes has a 1 Gbps uplink internet connectivity.\nWhich solution will meet these requirements MOST cost-effectively?"
+    },
+    "choices": {
+      "kor": {
+        "A": "온프레미스에서 테이프의 데이터를 읽습니다. 로컬 NFS 스토리지에 데이터를 준비합니다. AWS DataSync를 사용하여 데이터를 Amazon S3 Glacier Flexible Retrieval로 마이그레이션합니다.",
+        "B": "온프레미스 백업 애플리케이션을 사용하여 테이프에서 데이터를 읽고 Amazon S3 Glacier Deep Archive에 직접 씁니다.",
+        "C": "테이프 게이트웨이가 있는 여러 AWS Snowball 디바이스를 주문합니다. Snowball의 가상 테이프에 물리적 테이프를 복사합니다. Snowball 디바이스를 AWS로 배송합니다. 수명 주기 정책을 생성하여 테이프를 Amazon S3 Glacier Deep Archive로 이동합니다.",
+        "D": "온프레미스 테이프 게이트웨이를 구성합니다. AWS 클라우드에서 가상 테이프를 생성합니다. 백업 소프트웨어를 사용하여 물리적 테이프를 가상 테이프에 복사합니다."
+      },
+      "eng": {
+        "A": "Read the data from the tapes on premises. Stage the data in a local NFS storage. Use AWS DataSync to migrate the data to Amazon S3 Glacier Flexible Retrieval.",
+        "B": "Use an on-premises backup application to read the data from the tapes and to write directly to Amazon S3 Glacier Deep Archive.",
+        "C": "Order multiple AWS Snowball devices that have Tape Gateway. Copy the physical tapes to virtual tapes in Snowball. Ship the Snowball devices to AWS. Create a lifecycle policy to move the tapes to Amazon S3 Glacier Deep Archive.",
+        "D": "Configure an on-premises Tape Gateway. Create virtual tapes in the AWS Cloud. Use backup software to copy the physical tape to the virtual tape."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "S3",
+      "Snowball"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/117215-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 36,
+    "question": {
+      "kor": "회사는 데이터 센터에서 SMB 파일 서버를 실행하고 있습니다. 파일 서버는 파일이 생성된 후 처음 며칠 동안 자주 액세스되는 대용량 파일을 저장합니다. 7일 후에는 파일에 거의 액세스하지 않습니다.\n총 데이터 크기는 증가하고 있으며 회사의 총 스토리지 용량에 근접합니다. 솔루션 설계자는 가장 최근에 액세스한 파일에 대한 짧은 대기 시간 액세스를 잃지 않고 회사의 사용 가능한 스토리지 공간을 늘려야 합니다. 솔루션 설계자는 향후 스토리지 문제를 방지하기 위해 파일 수명 주기 관리도 제공해야 합니다.\n이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company is running an SMB file server in its data center. The file server stores large files that are accessed frequently for the first few days after the files are created. After 7 days the files are rarely accessed.\nThe total data size is increasing and is close to the company's total storage capacity. A solutions architect must increase the company's available storage space without losing low-latency access to the most recently accessed files. The solutions architect must also provide file lifecycle management to avoid future storage issues.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS DataSync를 사용하여 SMB 파일 서버에서 AWS로 7일보다 오래된 데이터를 복사합니다.",
+        "B": "Amazon S3 File Gateway를 생성하여 회사의 스토리지 공간을 확장합니다. 7일 후에 데이터를 S3 Glacier Deep Archive로 전환하는 S3 수명 주기 정책을 생성합니다.",
+        "C": "Amazon FSx for Windows File Server 파일 시스템을 생성하여 회사의 스토리지 공간을 확장합니다.",
+        "D": "각 사용자의 컴퓨터에 유틸리티를 설치하여 Amazon S3에 액세스합니다. 7일 후에 데이터를 S3 Glacier Flexible Retrieval로 전환하는 S3 수명 주기 정책을 생성합니다."
+      },
+      "eng": {
+        "A": "Use AWS DataSync to copy data that is older than 7 days from the SMB file server to AWS.",
+        "B": "Create an Amazon S3 File Gateway to extend the company's storage space. Create an S3 Lifecycle policy to transition the data to S3 Glacier Deep Archive after 7 days.",
+        "C": "Create an Amazon FSx for Windows File Server file system to extend the company's storage space.",
+        "D": "Install a utility on each user's computer to access Amazon S3. Create an S3 Lifecycle policy to transition the data to S3 Glacier Flexible Retrieval after 7 days."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "File gateway",
+      "S3",
+      "Storage Gateway",
+      "lifecycle policies"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/84680-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 791,
+    "question": {
+      "kor": "회사의 데이터 센터에 노후화된 어레이가 있습니다. 어레이는 공유 및 공유를 클라이언트 NAS(Network-Attached Storage) NAS SMB NFS 워크스테이션에 제공합니다. 회사는 새 NAS 어레이를 구매하기를 원하지 않습니다. 회사는 또한 NAS 어레이의 지원 계약을 갱신하는 데 드는 비용을 원하지 않습니다. 일부 데이터는 자주 액세스되지만 대부분의 데이터는 비활성 상태입니다.\n솔루션 설계자는 데이터를 Amazon S3로 마이그레이션하고 S3 수명 주기 정책을 사용하며 클라이언트 워크스테이션에 대해 동일한 모양과 느낌을 유지하는 솔루션을 구현해야 합니다. 솔루션 설계자는 AWS Storage Gateway를 솔루션의 일부로 식별했습니다.\n솔루션 설계자는 이러한 요구 사항을 충족하기 위해 어떤 유형의 스토리지 게이트웨이를 프로비저닝해야 합니까?",
+      "eng": "A company has an aging network-attached storage (NAS) array in its data center. The NAS array presents SMB shares and NFS shares to client workstations. The company does not want to purchase a new NAS array. The company also does not want to incur the cost of renewing the NAS array’s support contract. Some of the data is accessed frequently, but much of the data is inactive.\nA solutions architect needs to implement a solution that migrates the data to Amazon S3, uses S3 Lifecycle policies, and maintains the same look and feel for the client workstations. The solutions architect has identified AWS Storage Gateway as part of the solution.\nWhich type of storage gateway should the solutions architect provision to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "볼륨 게이트웨이",
+        "B": "테이프 게이트웨이",
+        "C": "Amazon FSx 파일 게이트웨이",
+        "D": "Amazon S3 파일 게이트웨이"
+      },
+      "eng": {
+        "A": "Volume Gateway",
+        "B": "Tape Gateway",
+        "C": "Amazon FSx File Gateway",
+        "D": "Amazon S3 File Gateway"
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "File gateway"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/100220-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 795,
+    "question": {
+      "kor": "회사에는 매일 수백 개의 보고서를 생성하는 비즈니스 시스템이 있습니다. 비즈니스 시스템은 보고서를 CSV 형식으로 네트워크 공유에 저장합니다. 회사는 분석을 위해 이 데이터를 거의 실 시간으로 AWS 클라우드에 저장해야 합니다.\n최소한의 관리 오버헤드로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company has a business system that generates hundreds of reports each day. The business system saves the reports to a network share in CSV format.\nThe company needs to store this data in the AWS Cloud in near-real time for analysis.\nWhich solution will meet these requirements with the LEAST administrative overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS DataSync를 사용하여 파일을 Amazon S3로 전송합니다. 매일 끝날 때 실행되는 예약된 작업을 만듭니다.",
+        "B": "Amazon S3 파일 게이트웨이를 생성합니다. S3 파일 게이트웨이에서 새 네트워크 공유를 사용하도록 비즈니스 시스템을 업데이트합니다.",
+        "C": "AWS DataSync를 사용하여 파일을 Amazon S3로 전송합니다. 자동화 워크플로에서 DataSync API를 사용하는 애플리케이션을 생성합니다.",
+        "D": "SFTP용 AWS 전송 엔드포인트를 배포합니다. 네트워크 공유에서 새 파일을 확인하고 SFTP를 사용하여 새 파일을 업로드하는 스크립트를 만듭니다."
+      },
+      "eng": {
+        "A": "Use AWS DataSync to transfer the files to Amazon S3. Create a scheduled task that runs at the end of each day.",
+        "B": "Create an Amazon S3 File Gateway. Update the business system to use a new network share from the S3 File Gateway.",
+        "C": "Use AWS DataSync to transfer the files to Amazon S3. Create an application that uses the DataSync API in the automation workflow.",
+        "D": "Deploy an AWS Transfer for SFTP endpoint. Create a script that checks for new files on the network share and uploads the new files by using SFTP."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "File gateway"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/103452-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 7,
+    "question": {
+      "kor": "한 회사가 AWS에서 여러 Windows 워크로드를 실행합니다. 회사 직원은 두 개의 Amazon EC2 인스턴스에서 호스팅되는 Windows 파일 공유를 사용합니다. 파일 공유는 서로 간에 데이터를 동기화하고 복제본을 유지합니다. 회사는 사용자가 현재 파일에 액세스하는 방식을 보존하는 가용성이 높고 내구성이 뛰어난 스토리지 솔루션을 원합니다.\n솔루션 설계자는 이러한 요구 사항을 충족하기 위해 무엇을 해야 합니까?",
+      "eng": "A company runs multiple Windows workloads on AWS. The company's employees use Windows file shares that are hosted on two Amazon EC2 instances.\nThe file shares synchronize data between themselves and maintain duplicate copies. The company wants a highly available and durable storage solution that preserves how users currently access the files.\nWhat should a solutions architect do to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "모든 데이터를 Amazon S3로 마이그레이션합니다. 사용자가 파일에 액세스할 수 있도록 IAM 인증을 설정합니다.",
+        "B": "Amazon S3 파일 게이트웨이를 설정합니다. 기존 EC2 인스턴스에 S3 File Gateway를 탑재합니다.",
+        "C": "다중 AZ 구성을 사용하여 파일 공유 환경을 Windows 파일 서버용 Amazon FSx로 확장합니다. 모든 데이터를 FSx for Windows File Server로 마이그레이션합니다.",
+        "D": "다중 AZ 구성을 사용하여 파일 공유 환경을 Amazon Elastic File System(Amazon EFS)으로 확장합니다. 모든 데이터를 Amazon EFS로 마이그레이션합니다."
+      },
+      "eng": {
+        "A": "Migrate all the data to Amazon S3. Set up IAM authentication for users to access files.",
+        "B": "Set up an Amazon S3 File Gateway. Mount the S3 File Gateway on the existing EC2 instances.",
+        "C": "Extend the file share environment to Amazon FSx for Windows File Server with a Multi-AZ configuration. Migrate all the data to FSx for Windows File Server.",
+        "D": "Extend the file share environment to Amazon Elastic File System (Amazon EFS) with a Multi-AZ configuration. Migrate all the data to Amazon EFS."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "FSx for Windows File Server",
+      "Windows file sharing"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/85574-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 28,
+    "question": {
+      "kor": "회사는 AWS 클라우드에서 호스팅되는 미디어 애플리케이션을 위한 공유 스토리지 솔루션을 구현하고 있습니다. 회사는 SMB 클라이언트를 사용하여 데이터에 액세스할 수 있는 기능이 필요합니다. 솔루션은 완전히 관리되어야 합니다.\n어떤 AWS 솔루션이 이러한 요구 사항을 충족합니까?",
+      "eng": "A company is implementing a shared storage solution for a media application that is hosted in the AWS Cloud. The company needs the ability to use SMB clients to access data. The solution must be fully managed.\nWhich AWS solution meets these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Storage Gateway 볼륨 게이트웨이를 생성합니다. 필요한 클라이언트 프로토콜을 사용하는 파일 공유를 만듭니다. 응용 프로그램 서버를 파일 공유에 연결합니다.",
+        "B": "AWS Storage Gateway 테이프 게이트웨이를 생성합니다. Amazon S3를 사용하도록 테이프를 구성합니다. 애플리케이션 서버를 테이프 게이트웨이에 연결합니다.",
+        "C": "Amazon EC2 Windows 인스턴스를 생성합니다. 인스턴스에 Windows 파일 공유 역할을 설치하고 구성합니다. 응용 프로그램 서버를 파일 공유에 연결합니다.",
+        "D": "Windows 파일 서버 파일 시스템용 Amazon FSx를 생성합니다. 원본 서버에 파일 시스템을 연결합니다. 애플리케이션 서버를 파일 시스템에 연결하십시오."
+      },
+      "eng": {
+        "A": "Create an AWS Storage Gateway volume gateway. Create a file share that uses the required client protocol. Connect the application server to the file share.",
+        "B": "Create an AWS Storage Gateway tape gateway. Configure tapes to use Amazon S3. Connect the application server to the tape gateway.",
+        "C": "Create an Amazon EC2 Windows instance. Install and configure a Windows file share role on the instance. Connect the application server to the file share.",
+        "D": "Create an Amazon FSx for Windows File Server file system. Attach the file system to the origin server. Connect the application server to the file system."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "FSx for Windows File Server"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/95006-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 114,
+    "question": {
+      "kor": "회사에는 Microsoft Windows 공유 파일 저장소가 필요한 온-프레미스에서 실행되는 대규모 Microsoft SharePoint 배포가 있습니다. 이 회사는 이 워크로드를 AWS 클라우드로 마이그레이션하려고 하며 다양한 스토리지 옵션을 고려하고 있습니다. 저장소 솔루션은 액세스 제어를 위해 가용성이 높고 Active Directory와 통합되어야 합니다.\n이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company has a large Microsoft SharePoint deployment running on-premises that requires Microsoft Windows shared file storage. The company wants to migrate this workload to the AWS Cloud and is considering various storage options. The storage solution must be highly available and integrated with Active Directory for access control.\nWhich solution will satisfy these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon EFS 스토리지를 구성하고 인증을 위한 Active Directory 도메인을 설정합니다.",
+        "B": "두 가용 영역의 AWS Storage Gateway 파일 게이트웨이에 SMB 파일 공유를 생성합니다.",
+        "C": "Amazon S3 버킷을 생성하고 이를 볼륨으로 탑재하도록 Microsoft Windows Server를 구성합니다.",
+        "D": "AWS에서 Windows File Server 파일 시스템용 Amazon FSx를 생성하고 인증을 위한 Active Directory 도메인을 설정합니다."
+      },
+      "eng": {
+        "A": "Configure Amazon EFS storage and set the Active Directory domain for authentication.",
+        "B": "Create an SMB file share on an AWS Storage Gateway file gateway in two Availability Zones.",
+        "C": "Create an Amazon S3 bucket and configure Microsoft Windows Server to mount it as a volume.",
+        "D": "Create an Amazon FSx for Windows File Server file system on AWS and set the Active Directory domain for authentication."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "FSx for Windows File Server"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/86626-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 158,
+    "question": {
+      "kor": "회사에 AWS로 마이그레이션해야 하는 Windows 기반 애플리케이션이 있습니다. 이 애플리케이션은 여러 가용 영역에 배포된 여러 Amazon EC2 Windows 인스턴스에 연결된 공유 Windows 파일 시스템을 사용해야 합니다.\n솔루션 설계자는 이 요구 사항을 충족하기 위해 무엇을 해야 합니까?",
+      "eng": "A company has a Windows-based application that must be migrated to AWS. The application requires the use of a shared Windows file system attached to multiple Amazon EC2 Windows instances that are deployed across multiple Availability Zone:\nWhat should a solutions architect do to meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "볼륨 게이트웨이 모드에서 AWS Storage Gateway를 구성합니다. 각 Windows 인스턴스에 볼륨을 마운트합니다.",
+        "B": "Windows 파일 서버용 Amazon FSx를 구성합니다. Amazon FSx 파일 시스템을 각 Windows 인스턴스에 탑재합니다.",
+        "C": "Amazon Elastic File System(Amazon EFS)을 사용하여 파일 시스템을 구성합니다. EFS 파일 시스템을 각 Windows 인스턴스에 마운트합니다.",
+        "D": "필요한 크기로 Amazon Elastic Block Store(Amazon EBS) 볼륨을 구성합니다. 각 EC2 인스턴스를 볼륨에 연결합니다. 볼륨 내의 파일 시스템을 각 Windows 인스턴스에 마운트합니다."
+      },
+      "eng": {
+        "A": "Configure AWS Storage Gateway in volume gateway mode. Mount the volume to each Windows instance.",
+        "B": "Configure Amazon FSx for Windows File Server. Mount the Amazon FSx file system to each Windows instance.",
+        "C": "Configure a file system by using Amazon Elastic File System (Amazon EFS). Mount the EFS file system to each Windows instance.",
+        "D": "Configure an Amazon Elastic Block Store (Amazon EBS) volume with the required size. Attach each EC2 instance to the volume. Mount the file system within the volume to each Windows instance."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "FSx for Windows File Server"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/87650-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 214,
+    "question": {
+      "kor": "회사에서 Windows 기반 애플리케이션을 온프레미스에서 AWS 클라우드로 마이그레이션하려고 합니다. 애플리케이션에는 애플리케이션 계층, 비즈니스 계층 및 Microsoft SQL Server\n가 포함된 데이터베이스 계층의 세 가지 계층이 있습니다. 회사는 기본 백업 및 데이터 품질 서비스와 같은 SQL Server의 특정 기능을 사용하려고 합니다. 또한 회사는 계층 간에 처리를 위해\n파일을 공유해야 합니다.\n솔루션 설계자는 이러한 요구 사항을 충족하기 위해 아키텍처를 어떻게 설계해야 합니까?",
+      "eng": "A company wants to migrate a Windows-based application from on premises to the AWS Cloud. The application has three tiers: an application tier, a business tier, and a database tier with Microsoft SQL Server. The company wants to use specific features of SQL Server such as native backups and Data Quality Services. The company also needs to share files for processing between the tiers.\nHow should a solutions architect design the architecture to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon EC2 인스턴스에서 세 계층을 모두 호스팅합니다. 계층 간 파일 공유를 위해 Amazon FSx File Gateway를 사용합니다.",
+        "B": "Amazon EC2 인스턴스에서 세 계층을 모두 호스팅합니다. 계층 간 파일 공유를 위해 Amazon FSx for Windows File Server를 사용하십시오.",
+        "C": "Amazon EC2 인스턴스에서 애플리케이션 계층과 비즈니스 계층을 호스팅합니다. Amazon RDS에서 데이터베이스 계층을 호스팅합니다. 계층 간 파일 공유를 위해 Amazon",
+        "D": "Elastic File System(Amazon EFS)을 사용합니다.",
+        "E": "Amazon EC2 인스턴스에서 애플리케이션 계층과 비즈니스 계층을 호스팅합니다. Amazon RDS에서 데이터베이스 계층을 호스팅합니다. 계층 간 파일 공유를 위해 프로비저닝된",
+        "F": "IOPS SSD(io2) Amazon Elastic Block Store(Amazon EBS) 볼륨을 사용합니다."
+      },
+      "eng": {
+        "A": "Host all three tiers on Amazon EC2 instances. Use Amazon FSx File Gateway for file sharing between the tiers.",
+        "B": "Host all three tiers on Amazon EC2 instances. Use Amazon FSx for Windows File Server for file sharing between the tiers.",
+        "C": "Host the application tier and the business tier on Amazon EC2 instances. Host the database tier on Amazon RDS. Use Amazon Elastic File System (Amazon EFS) for file sharing between the tiers.",
+        "D": "Host the application tier and the business tier on Amazon EC2 instances. Host the database tier on Amazon RDS. Use a Provisioned IOPS SSD (io2) Amazon Elastic Block Store (Amazon EBS) volume for file sharing between the tiers."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "FSx for Windows File Server"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/99670-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 243,
+    "question": {
+      "kor": "솔루션 설계자는 Windows 인터넷 정보 서비스(IIS) 웹 애플리케이션을 AWS로 마이그레이션해야 합니다. 애플리케이션은 현재 사용자의 온프레미스 NAS(Network-Attached Storage)에서 호스팅되는 파일 공유에 의존합니다. 솔루션 설계자는 IIS 웹 서버를 스토리지 솔루션에 연결된 여러 가용 영역의 Amazon EC2 인스턴스로 마이그레이션하고 인스턴스에 연결된 Elastic Load Balancer를 구성할 것을 제안했습니다.\n온프레미스 파일 공유에 대한 어떤 대체가 가장 탄력적이고 내구성이 있습니까?",
+      "eng": "A solutions architect must migrate a Windows Internet Information Services (IIS) web application to AWS. The application currently relies on a file share hosted in the user's on-premises network-attached storage (NAS). The solutions architect has proposed migrating the IIS web servers to Amazon EC2 instances in multiple Availability Zones that are connected to the storage solution, and configuring an Elastic Load Balancer attached to the instances.\nWhich replacement to the on-premises file share is MOST resilient and durable?"
+    },
+    "choices": {
+      "kor": {
+        "A": "파일 공유를 Amazon RDS로 마이그레이션합니다.",
+        "B": "파일 공유를 AWS Storage Gateway로 마이그레이션합니다.",
+        "C": "파일 공유를 Amazon FSx for Windows File Server로 마이그레이션합니다.",
+        "D": "파일 공유를 Amazon Elastic File System(Amazon EFS)으로 마이그레이션합니다."
+      },
+      "eng": {
+        "A": "Migrate the file share to Amazon RDS.",
+        "B": "Migrate the file share to AWS Storage Gateway.",
+        "C": "Migrate the file share to Amazon FSx for Windows File Server.",
+        "D": "Migrate the file share to Amazon Elastic File System (Amazon EFS)."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "FSx for Windows File Server"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/102186-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 283,
+    "question": {
+      "kor": "회사는 직원들에게 기밀 및 민감한 파일에 대한 안전한 액세스를 제공해야 합니다. 회사는 권한이 있는 사용자만 파일에 액세스할 수 있기를 원합니다. 파일은 직원의 장치에 안전하게 다운로드되어야 합니다.\n파일은 온프레미스 Windows 파일 서버에 저장됩니다. 그러나 원격 사용량의 증가로 인해 파일 서버의 용량이 부족합니다.\n이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company needs to provide its employees with secure access to confidential and sensitive files. The company wants to ensure that the files can be accessed only by authorized users. The files must be downloaded securely to the employees’ devices.\nThe files are stored in an on-premises Windows file server. However, due to an increase in remote usage, the file server is running out of capacity. .\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "파일 서버를 퍼블릭 서브넷의 Amazon EC2 인스턴스로 마이그레이션합니다. 인바운드 트래픽을 직원의 IP 주소로 제한하도록 보안 그룹을 구성합니다.",
+        "B": "파일을 Amazon FSx for Windows File Server 파일 시스템으로 마이그레이션합니다. Amazon FSx 파일 시스템을 온프레미스 Active Directory와 통합합니다. AWS 클라이언트 VPN을 구성합니다.",
+        "C": "파일을 Amazon S3로 마이그레이션하고 프라이빗 VPC 엔드포인트를 생성합니다. 다운로드를 허용하려면 서명된 URL을 만듭니다.",
+        "D": "파일을 Amazon S3로 마이그레이션하고 퍼블릭 VPC 엔드포인트를 생성합니다. 직원이 AWS IAM Identity Center(AWS Single Sign-On)로 로그인하도록 허용합니다."
+      },
+      "eng": {
+        "A": "Migrate the file server to an Amazon EC2 instance in a public subnet. Configure the security group to limit inbound traffic to the employees’ IP addresses.",
+        "B": "Migrate the files to an Amazon FSx for Windows File Server file system. Integrate the Amazon FSx file system with the on-premises Active Directory. Configure AWS Client VPN.",
+        "C": "Migrate the files to Amazon S3, and create a private VPC endpoint. Create a signed URL to allow download.",
+        "D": "Migrate the files to Amazon S3, and create a public VPC endpoint. Allow employees to sign on with AWS IAM Identity Center (AWS Single Sign-On)."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "FSx for Windows File Server"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/99792-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 353,
+    "question": {
+      "kor": "게임 회사는 공개 점수판을 데이터 센터에서 AWS 클라우드로 옮기고 있습니다. 이 회사는 Application Load Balancer 뒤에 Amazon EC2 Windows Server 인스턴스를 사용하여 동적 애플리케이션을 호스팅합니다. 회사는 애플리케이션을 위한 고가용성 스토리지 솔루션이 필요합니다. 애플리케이션은 정적 파일과 동적 서버 측 코드로 구성됩니다.\n이러한 요구 사항을 충족하기 위해 솔루션 설계자는 어떤 단계 조합을 수행해야 합니까? (두 가지를 선택하세요.)",
+      "eng": "A gaming company is moving its public scoreboard from a data center to the AWS Cloud. The company uses Amazon EC2 Windows Server instances behind an Application Load Balancer to host its dynamic application. The company needs a highly available storage solution for the application. The application consists of static files and dynamic server-side code.\nWhich combination of steps should a solutions architect take to meet these requirements? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon S3에 정적 파일을 저장합니다. Amazon CloudFront를 사용하여 엣지에서 객체를 캐싱합니다.",
+        "B": "정적 파일을 Amazon S3에 저장합니다. Amazon ElastiCache를 사용하여 엣지에서 객체를 캐싱합니다.",
+        "C": "Amazon Elastic File System(Amazon EFS)에 서버 측 코드를 저장합니다. 파일을 공유할 각 EC2 인스턴스에 EFS 볼륨을 탑재합니다.",
+        "D": "Windows File Server용 Amazon FSx에 서버 측 코드를 저장합니다. 파일을 공유할 각 EC2 인스턴스에 FSx for Windows File Server 볼륨을 탑재합니다.",
+        "E": "범용 SSD(gp2) Amazon Elastic Block Store(Amazon EBS) 볼륨에 서버 측 코드를 저장합니다. 각 EC2 인스턴스에 EBS 볼륨을 탑재하여 파일을 공유합니다."
+      },
+      "eng": {
+        "A": "Store the static files on Amazon S3. Use Amazon CloudFront to cache objects at the edge.",
+        "B": "Store the static files on Amazon S3. Use Amazon ElastiCache to cache objects at the edge.",
+        "C": "Store the server-side code on Amazon Elastic File System (Amazon EFS). Mount the EFS volume on each EC2 instance to share the files.",
+        "D": "Store the server-side code on Amazon FSx for Windows File Server. Mount the FSx for Windows File Server volume on each EC2 instance to share the files.",
+        "E": "Store the server-side code on a General Purpose SSD (gp2) Amazon Elastic Block Store (Amazon EBS) volume. Mount the EBS volume on each EC2 instance to share the files."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "FSx for Windows File Server",
+      "S3"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/100230-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A",
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 357,
+    "question": {
+      "kor": "회사는 AWS 클라우드에서 호스팅되는 게임 애플리케이션을 위한 공유 스토리지 솔루션을 설계하고 있습니다. 회사는 SMB 클라이언트를 사용하여 데이터에 액세스할 수 있는 기능이 필요합니다. 솔루션은 완전히 관리되어야 합니다.\n어떤 AWS 솔루션이 이러한 요구 사항을 충족합니까?",
+      "eng": "A company is designing a shared storage solution for a gaming application that is hosted in the AWS Cloud. The company needs the ability to use SMB clients to access data. The solution must be fully managed.\nWhich AWS solution meets these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "탑재 가능한 파일 시스템으로 데이터를 공유하는 AWS DataSync 작업을 생성합니다. 파일 시스템을 애플리케이션 서버에 마운트하십시오.",
+        "B": "Amazon EC2 Windows 인스턴스를 생성합니다. 인스턴스에 Windows 파일 공유 역할을 설치하고 구성합니다. 응용 프로그램 서버를 파일 공유에 연결합니다.",
+        "C": "Windows 파일 서버 파일 시스템용 Amazon FSx를 생성합니다. 원본 서버에 파일 시스템을 연결합니다. 애플리케이션 서버를 파일 시스템에 연결하십시오.",
+        "D": "Amazon S3 버킷을 생성합니다. 애플리케이션에 IAM 역할을 할당하여 S3 버킷에 대한 액세스 권한을 부여합니다. S3 버킷을 애플리케이션 서버에 마운트합니다."
+      },
+      "eng": {
+        "A": "Create an AWS DataSync task that shares the data as a mountable file system. Mount the file system to the application server.",
+        "B": "Create an Amazon EC2 Windows instance. Install and configure a Windows file share role on the instance. Connect the application server to the file share.",
+        "C": "Create an Amazon FSx for Windows File Server file system. Attach the file system to the origin server. Connect the application server to the file system.",
+        "D": "Create an Amazon S3 bucket. Assign an IAM role to the application to grant access to the S3 bucket. Mount the S3 bucket to the application server."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "FSx for Windows File Server"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/99809-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 290,
+    "question": {
+      "kor": "회사에서 재무 위험 모델링을 위해 AWS에서 고성능 컴퓨팅(HPC) 인프라를 사용하려고 합니다. 회사의 HPC 워크로드는 Linux에서 실행됩니다. 각 HPC 워크플로는 수백 개의 Amazon EC2 스팟 인스턴스에서 실행되고 수명이 짧으며 궁극적으로 분석 및 향후 장기적 사용을 위해 영구 스토리지에 저장되는 수천 개의 출력 파일을 생성합니다.\n이 회사는 모든 EC2 인스턴스에서 데이터를 처리할 수 있도록 온프레미스 데이터를 장기 영구 스토리지로 복사할 수 있는 클라우드 스토리지 솔루션을 찾고 있습니다. 솔루션은 또한 데이터 세트와 출력 파일을 읽고 쓰기 위해 영구 스토리지와 통합된 고성능 파일 시스템이어야 합니다.\n이러한 요구 사항을 충족하는 AWS 서비스 조합은 무엇입니까?",
+      "eng": "A company wants to use high performance computing (HPC) infrastructure on AWS for financial risk modeling. The company’s HPC workloads run on Linux.\nEach HPC workflow runs on hundreds of Amazon EC2 Spot Instances, is short-lived, and generates thousands of output files that are ultimately stored in persistent storage for analytics and long-term future use.\nThe company seeks a cloud storage solution that permits the copying of on-premises data to long-term persistent storage to make data available for processing by all EC2 instances. The solution should also be a high performance file system that is integrated with persistent storage to read and write datasets and output files.\nWhich combination of AWS services meets these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon S3와 통합된 Amazon FSx for Lustre",
+        "B": "Amazon S3와 통합된 Windows 파일 서버용 Amazon FSx",
+        "C": "Amazon Elastic Block Store(Amazon EBS)와 통합된 Amazon S3 Glacier",
+        "D": "Amazon Elastic Block Store(Amazon EBS) 범용 SSD(gp2) 볼륨과 통합된 VPC 엔드포인트가 있는 Amazon S3 버킷"
+      },
+      "eng": {
+        "A": "Amazon FSx for Lustre integrated with Amazon S3",
+        "B": "Amazon FSx for Windows File Server integrated with Amazon S3",
+        "C": "Amazon S3 Glacier integrated with Amazon Elastic Block Store (Amazon EBS)",
+        "D": "Amazon S3 bucket with a VPC endpoint integrated with an Amazon Elastic Block Store (Amazon EBS) General Purpose SSD (gp2) volume"
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "FSx for Lustre"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/87634-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 354,
+    "question": {
+      "kor": "연구소는 약 8TB의 데이터를 처리해야 합니다. 실험실에는 스토리지 하위 시스템에 대해 1밀리초 미만의 대기 시간과 최소 6GBps의 처리량이 필요합니다. Amazon Linux를 실행하는 수백 개의 Amazon EC2 인스턴스가 데이터를 배포하고 처리합니다.\n성능 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A research laboratory needs to process approximately 8 TB of data. The laboratory requires sub-millisecond latencies and a minimum throughput of 6 GBps for the storage subsystem. Hundreds of Amazon EC2 instances that run Amazon Linux will distribute and process the data.\nWhich solution will meet the performance requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "NetApp ONTAP 파일 시스템용 Amazon FSx를 생성합니다. 각 볼륨의 계층화 정책을 ALL로 설정했습니다. 원시 데이터를 파일 시스템으로 가져옵니다. EC2 인스턴스에 fila 시스템을 탑재합니다.",
+        "B": "원시 데이터를 저장할 Amazon S3 버킷을 생성합니다. 영구 SSD 스토리지를 사용하는 Amazon FSx for Lustre 파일 시스템을 생성합니다. Amazon S3에서 데이터를 가져오고 내보내는 옵션을 선택합니다. EC2 인스턴스에 파일 시스템을 탑재합니다.",
+        "C": "원시 데이터를 저장할 Amazon S3 버킷을 생성합니다. 영구 HDD 스토리지를 사용하는 Amazon FSx for Lustre 파일 시스템을 생성합니다. Amazon S3에서 데이터를 가져오고 내보내는 옵션을 선택합니다. EC2 인스턴스에 파일 시스템을 탑재합니다.",
+        "D": "NetApp ONTAP 파일 시스템용 Amazon FSx를 생성합니다. 각 볼륨의 계층화 정책을 NONE으로 설정합니다. 원시 데이터를 파일 시스템으로 가져옵니다. EC2 인스턴스에 파일 시스템을 탑재합니다."
+      },
+      "eng": {
+        "A": "Create an Amazon FSx for NetApp ONTAP file system. Sat each volume’ tiering policy to ALL. Import the raw data into the file system. Mount the fila system on the EC2 instances.",
+        "B": "Create an Amazon S3 bucket to store the raw data. Create an Amazon FSx for Lustre file system that uses persistent SSD storage. Select the option to import data from and export data to Amazon S3. Mount the file system on the EC2 instances.",
+        "C": "Create an Amazon S3 bucket to store the raw data. Create an Amazon FSx for Lustre file system that uses persistent HDD storage. Select the option to import data from and export data to Amazon S3. Mount the file system on the EC2 instances.",
+        "D": "Create an Amazon FSx for NetApp ONTAP file system. Set each volume’s tiering policy to NONE. Import the raw data into the file system. Mount the file system on the EC2 instances."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "FSx for Lustre"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/99676-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 639,
+    "question": {
+      "kor": "한 회사는 최근 해양 조사에서 얻은 200TB의 데이터를 AWS Snowball Edge Storage Optimized 디바이스에 복사합니다. 이 회사는 석유 및 가스 매장지를 찾기 위해 AWS에 호스팅되는 고성능 컴퓨팅(HPC) 클러스터를 보유하고 있습니다. 솔루션 아키텍트는 Snowball Edge Storage Optimized 디바이스의 데이터에 대한 일관된 밀리초 미만의 지연 시간과 높은 처리량 액세스를 클러스터에 제공해야 합니다. 회사는 디바이스를 AWS로 다시 보내고 있습니다.\n어떤 솔루션이 이러한 요구 사항을 충족합니까?",
+      "eng": "A company copies 200 TB of data from a recent ocean survey onto AWS Snowball Edge Storage Optimized devices. The company has a high performance computing (HPC) cluster that is hosted on AWS to look for oil and gas deposits. A solutions architect must provide the cluster with consistent sub-millisecond latency and high-throughput access to the data on the Snowball Edge Storage Optimized devices. The company is sending the devices back to AWS.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon S3 버킷을 생성합니다. 데이터를 S3 버킷으로 가져옵니다. S3 버킷을 사용하도록 AWS Storage Gateway 파일 게이트웨이를 구성합니다. HPC 클러스터 인스턴스에서 파일 게이트웨이에 액세스합니다.",
+        "B": "Amazon S3 버킷을 생성합니다. 데이터를 S3 버킷으로 가져옵니다. Lustre 파일 시스템용 Amazon FSx를 구성하고 이를 S3 버킷과 통합합니다. HPC 클러스터 인스턴스에서 FSx for Lustre 파일 시스템에 액세스합니다.",
+        "C": "Amazon S3 버킷과 Amazon Elastic File System(Amazon EFS) 파일 시스템을 생성합니다. 데이터를 S3 버킷으로 가져옵니다. S3 버킷의 데이터를 EFS 파일 시스템에 복사 합니다. HPC 클러스터 인스턴스에서 EFS 파일 시스템에 액세스합니다.",
+        "D": "Lustre 파일 시스템용 Amazon FSx를 생성합니다. 데이터를 FSx for Lustre 파일 시스템으로 직접 가져옵니다. HPC 클러스터 인스턴스에서 FSx for Lustre 파일 시스템에 액세스합니다."
+      },
+      "eng": {
+        "A": "Create an Amazon S3 bucket. Import the data into the S3 bucket. Configure an AWS Storage Gateway file gateway to use the S3 bucket. Access the file gateway from the HPC cluster instances.",
+        "B": "Create an Amazon S3 bucket. Import the data into the S3 bucket. Configure an Amazon FSx for Lustre file system, and integrate it with the S3 bucket. Access the FSx for Lustre file system from the HPC cluster instances.",
+        "C": "Create an Amazon S3 bucket and an Amazon Elastic File System (Amazon EFS) file system. Import the data into the S3 bucket. Copy the data from the S3 bucket to the EFS file system. Access the EFS file system from the HPC cluster instances.",
+        "D": "Create an Amazon FSx for Lustre file system. Import the data directly into the FSx for Lustre file system. Access the FSx for Lustre file system from the HPC cluster instances."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "FSx for Lustre"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/132866-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 781,
+    "question": {
+      "kor": "회사는 온프레미스 데이터 센터에서 호스팅되는 게임 애플리케이션용 공유 스토리지 솔루션을 구현하고 있습니다. 회사는 Lustre 클라이언트를 사용하여 데이터에 액세스할 수 있는 기능이 필요합니다. 솔루션은 완전히 관리되어야 합니다.\n어떤 솔루션이 이러한 요구 사항을 충족합니까?",
+      "eng": "A company is implementing a shared storage solution for a gaming application that is hosted in an on-premises data center. The company needs the ability to use Lustre clients to access data. The solution must be fully managed.\nWhich solution meets these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Storage Gateway 파일 게이트웨이를 생성합니다. 필요한 클라이언트 프로토콜을 사용하는 파일 공유를 만듭니다. 응용 프로그램 서버를 파일 공유에 연결합니다.",
+        "B": "Amazon EC2 Windows 인스턴스를 생성합니다. 인스턴스에 Windows 파일 공유 역할을 설치하고 구성합니다. 응용 프로그램 서버를 파일 공유에 연결합니다.",
+        "C": "Amazon Elastic File System(Amazon EFS) 파일 시스템을 만들고 Lustre를 지원하도록 구성합니다. 원본 서버에 파일 시스템을 연결합니다. 애플리케이션 서버를 파일 시스템에 연결하십시오.",
+        "D": "Amazon FSx for Lustre 파일 시스템을 생성합니다. 원본 서버에 파일 시스템을 연결합니다. 애플리케이션 서버를 파일 시스템에 연결하십시오."
+      },
+      "eng": {
+        "A": "Create an AWS Storage Gateway file gateway. Create a file share that uses the required client protocol. Connect the application server to the file share.",
+        "B": "Create an Amazon EC2 Windows instance. Install and configure a Windows file share role on the instance. Connect the application server to the file share.",
+        "C": "Create an Amazon Elastic File System (Amazon EFS) file system, and configure it to support Lustre. Attach the file system to the origin server. Connect the application server to the file system.",
+        "D": "Create an Amazon FSx for Lustre file system. Attach the file system to the origin server. Connect the application server to the file system."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "FSx for Lustre"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/85811-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 794,
+    "question": {
+      "kor": "회사는 AWS 클라우드에서 호스팅되는 게임 애플리케이션용 공유 스토리지 솔루션을 구현하고 있습니다. 회사는 Lustre 클라이언트를 사용하여 데이터에 액세스할 수 있는 기능이 필요합니다. 솔루션은 완전히 관리되어야 합니다.\n어떤 솔루션이 이러한 요구 사항을 충족합니까?",
+      "eng": "A company is implementing a shared storage solution for a gaming application that is hosted in the AWS Cloud. The company needs the ability to use Lustre clients to access data. The solution must be fully managed.\nWhich solution meets these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "탑재 가능한 파일 시스템으로 데이터를 공유하는 AWS DataSync 작업을 생성합니다. 파일 시스템을 애플리케이션 서버에 마운트하십시오.",
+        "B": "AWS Storage Gateway 파일 게이트웨이를 생성합니다. 필요한 클라이언트 프로토콜을 사용하는 파일 공유를 만듭니다. 응용 프로그램 서버를 파일 공유에 연결합니다.",
+        "C": "Amazon Elastic File System(Amazon EFS) 파일 시스템을 만들고 Lustre를 지원하도록 구성합니다. 원본 서버에 파일 시스템을 연결합니다. 애플리케이션 서버를 파일 시스템에 연결하십시오.",
+        "D": "Amazon FSx for Lustre 파일 시스템을 생성합니다. 원본 서버에 파일 시스템을 연결합니다. 애플리케이션 서버를 파일 시스템에 연결하십시오."
+      },
+      "eng": {
+        "A": "Create an AWS DataSync task that shares the data as a mountable file system. Mount the file system to the application server.",
+        "B": "Create an AWS Storage Gateway file gateway. Create a file share that uses the required client protocol. Connect the application server to the file share.",
+        "C": "Create an Amazon Elastic File System (Amazon EFS) file system, and configure it to support Lustre. Attach the file system to the origin server. Connect the application server to the file system.",
+        "D": "Create an Amazon FSx for Lustre file system. Attach the file system to the origin server. Connect the application server to the file system."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "FSx for Lustre"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/102184-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 869,
+    "question": {
+      "kor": "솔루션 아키텍트는 AWS 클라우드에서 고성능 컴퓨팅 워크로드(HPC)를 호스팅해야 합니다. 워크로드는 수백 개의 인스턴스에서 Amazon EC2 실행되며 대규모 데이터 세트의 분산 처리를 활성화하려면 공유 파일 시스템에 대한 병렬 액세스가 필요합니다. 데이터 세트는 여러 인스턴스에서 동시에 액세스됩니다. 워크로드에는 1ms 이내의 액세스 지연 시간이 필요합니다. 처리가 완료된 후 엔지니어는 수동 후처리를 위해 데이터세트에 액세스해야 합니다.\n어떤 솔루션이 이러한 요구 사항을 충족합니까?",
+      "eng": "A solutions architect needs to host a high performance computing (HPC) workload in the AWS Cloud. The workload will run on hundreds of Amazon EC2 instances and will require parallel access to a shared file system to enable distributed processing of large datasets. Datasets will be accessed across multiple instances simultaneously. The workload requires access latency within 1 ms. After processing has completed, engineers will need access to the dataset for manual postprocessing.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Elastic File System(Amazon EFS)을 공유 파일 시스템으로 사용하십시오. Amazon EFS에서 데이터세트에 액세스합니다.",
+        "B": "공유 파일 시스템으로 사용할 Amazon S3 버킷을 탑재합니다. S3 버킷에서 직접 사후 처리를 수행합니다.",
+        "C": "Amazon FSx for Lustre를 공유 파일 시스템으로 사용합니다. 사후 처리를 위해 파일 시스템을 Amazon S3 버킷에 연결합니다.",
+        "D": "Amazon S3 버킷을 공유하여 처리 및 사후 처리를 위해 모든 인스턴스에 탑재할 수 있도록 AWS Resource Access Manager를 구성합니다."
+      },
+      "eng": {
+        "A": "Use Amazon Elastic File System (Amazon EFS) as a shared file system. Access the dataset from Amazon EFS.",
+        "B": "Mount an Amazon S3 bucket to serve as the shared file system. Perform postprocessing directly from the S3 bucket.",
+        "C": "Use Amazon FSx for Lustre as a shared file system. Link the file system to an Amazon S3 bucket for postprocessing.",
+        "D": "Configure AWS Resource Access Manager to share an Amazon S3 bucket so that it can be mounted to all instances for processing and postprocessing."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "FSx for Lustre"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/125584-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 39,
+    "question": {
+      "kor": "회사는 온프레미스에서 실행되는 Windows 파일 서버에 5TB 이상의 파일 데이터를 보유하고 있습니다. 사용자와 애플리케이션은 매일 데이터와 상호 작용합니다.\n이 회사는 Windows 워크로드를 AWS로 이전하고 있습니다. 회사가 이 프로세스를 계속 진행함에 따라 회사는 최소한의 대기 시간으로 AWS 및 온프레미스 파일 스토리지에 액세스해야 합니다. 회사는 운영 오버헤드를 최소화하고 기존 파일 액세스 패턴을 크게 변경할 필요가 없는 솔루션이 필요합니다. 이 회사는 AWS에 연결하기 위해 AWS Site-to-Site VPN 연결을 사용 합니다.\n솔루션 설계자는 이러한 요구 사항을 충족하기 위해 무엇을 해야 합니까?",
+      "eng": "A company has more than 5 TB of file data on Windows file servers that run on premises. Users and applications interact with the data each day.\nThe company is moving its Windows workloads to AWS. As the company continues this process, the company requires access to AWS and on-premises file storage with minimum latency. The company needs a solution that minimizes operational overhead and requires no significant changes to the existing file access patterns. The company uses an AWS Site-to-Site VPN connection for connectivity to AWS.\nWhat should a solutions architect do to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS에서 Windows File Server용 Amazon FSx를 배포하고 구성합니다. 온프레미스 파일 데이터를 FSx for Windows File Server로 이동합니다. AWS에서 Windows File Server용 FSx를 사용하도록 워크로드를 재구성합니다.",
+        "B": "온프레미스에 Amazon S3 파일 게이트웨이를 배포하고 구성합니다. 온프레미스 파일 데이터를 S3 파일 게이트웨이로 이동합니다. S3 파일 게이트웨이를 사용하도록 온프레미스 워크로드 및 클라우드 워크로드를 재구성합니다.",
+        "C": "온프레미스에 Amazon S3 파일 게이트웨이를 배포하고 구성합니다. 온프레미스 파일 데이터를 Amazon S3로 이동합니다. Amazon S3를 직접 사용하거나 S3 파일 게이트웨이를 사용하도록 워크로드를 재구성합니다. 각 워크로드의 위치에 따라 다릅니다.",
+        "D": "AWS에서 Windows 파일 서버용 Amazon FSx를 배포하고 구성합니다. 온프레미스에 Amazon FSx 파일 게이트웨이를 배포하고 구성합니다. 온프레미스 파일 데이터를 FSx 파일 게이트웨이로 이동합니다. AWS에서 Windows File Server용 FSx를 사용하도록 클라우드 워크로드를 구성합니다. FSx 파일 게이트웨이를 사용하도록 온프레미스 워크로드를 구성 합니다."
+      },
+      "eng": {
+        "A": "Deploy and configure Amazon FSx for Windows File Server on AWS. Move the on-premises file data to FSx for Windows File Server. Reconfigure the workloads to use FSx for Windows File Server on AWS.",
+        "B": "Deploy and configure an Amazon S3 File Gateway on premises. Move the on-premises file data to the S3 File Gateway. Reconfigure the on-premises workloads and the cloud workloads to use the S3 File Gateway.",
+        "C": "Deploy and configure an Amazon S3 File Gateway on premises. Move the on-premises file data to Amazon S3. Reconfigure the workloads to use either Amazon S3 directly or the S3 File Gateway. depending on each workload's location.",
+        "D": "Deploy and configure Amazon FSx for Windows File Server on AWS. Deploy and configure an Amazon FSx File Gateway on premises. Move the onpremises file data to the FSx File Gateway. Configure the cloud workloads to use FSx for Windows File Server on AWS. Configure the on-premises workloads to use the FSx File Gateway."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "FSx File Gateway",
+      "FSx for Windows File Server",
+      "hybrid storage"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/85173-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 606,
+    "question": {
+      "kor": "연구 회사는 시뮬레이션 응용 프로그램과 시각화 응용 프로그램으로 구동되는 실험을 실행합니다. 시뮬레이션 애플리케이션은 Linux에서 실행되며 5분마다 NFS 공유에 중간 데이터를 출력 합니다. 시각화 응용 프로그램은 시뮬레이션 출력을 표시하고 SMB 파일 시스템이 필요한 Windows 데스크톱 응용 프로그램입니다.\n회사는 두 개의 동기화된 파일 시스템을 유지 관리합니다. 이 전략은 데이터 중복 및 비효율적인 리소스 사용을 유발합니다. 회사는 애플리케이션에 코드를 변경하지 않고 애플리케이션을 AWS로 마이그레이션해야 합니다.\n이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A research company runs experiments that are powered by a simulation application and a visualization application. The simulation application runs on Linux and outputs intermediate data to an NFS share every 5 minutes. The visualization application is a Windows desktop application that displays the simulation output and requires an SMB file system.\nThe company maintains two synchronized file systems. This strategy is causing data duplication and inefficient resource usage. The company needs to migrate the applications to AWS without making code changes to either application.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "두 애플리케이션을 모두 AWS Lambda로 마이그레이션합니다. 애플리케이션 간에 데이터를 교환할 Amazon S3 버킷을 생성합니다.",
+        "B": "두 애플리케이션을 모두 Amazon Elastic Container Service(Amazon ECS)로 마이그레이션합니다. 스토리지용 Amazon FSx 파일 게이트웨이를 구성합니다.",
+        "C": "시뮬레이션 애플리케이션을 Linux Amazon EC2 인스턴스로 마이그레이션합니다. 시각화 애플리케이션을 Windows EC2 인스턴스로 마이그레이션합니다. 애플리케이션 간에 데이터를 교환하도록 Amazon Simple Queue Service(Amazon SQS)를 구성합니다.",
+        "D": "시뮬레이션 애플리케이션을 Linux Amazon EC2 인스턴스로 마이그레이션합니다. 시각화 애플리케이션을 Windows EC2 인스턴스로 마이그레이션합니다. 스토리지용 NetApp",
+        "E": "ONTAP용 Amazon FSx를 구성합니다."
+      },
+      "eng": {
+        "A": "Migrate both applications to AWS Lambda. Create an Amazon S3 bucket to exchange data between the applications.",
+        "B": "Migrate both applications to Amazon Elastic Container Service (Amazon ECS). Configure Amazon FSx File Gateway for storage.",
+        "C": "Migrate the simulation application to Linux Amazon EC2 instances. Migrate the visualization application to Windows EC2 instances. Configure Amazon Simple Queue Service (Amazon SQS) to exchange data between the applications.",
+        "D": "Migrate the simulation application to Linux Amazon EC2 instances. Migrate the visualization application to Windows EC2 instances. Configure Amazon FSx for NetApp ONTAP for storage."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "FSx"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/99512-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 726,
+    "question": {
+      "kor": "한 회사는 CIFS 및 NFS 파일 공유를 위해 기본 AWS 지역에서 NetApp ONTAP용 Amazon FSx를 사용합니다. Amazon EC2 인스턴스에서 실행되는 애플리케이션은 파일 공유에 액세스합니다. 회사는 보조 지역에 스토리지 재해 복구(DR) 솔루션이 필요합니다. 보조 리전에 복제된 데이터는 기본 리전과 동일한 프로토콜을 사용하여 액세스해야 합니다.\n최소한의 운영 오버헤드로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company uses Amazon FSx for NetApp ONTAP in its primary AWS Region for CIFS and NFS file shares. Applications that run on Amazon EC2 instances access the file shares. The company needs a storage disaster recovery (DR) solution in a secondary Region. The data that is replicated in the secondary\nRegion needs to be accessed by using the same protocols as the primary Region.\nWhich solution will meet these requirements with the LEAST operational overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Lambda 함수를 생성하여 Amazon S3 버킷에 데이터를 복사합니다. S3 버킷을 보조 리전에 복제합니다.",
+        "B": "AWS Backup을 사용하여 FSx for ONTAP 볼륨의 백업을 생성합니다. 볼륨을 보조 리전에 복사합니다. 백업에서 ONTAP 인스턴스용 새 FSx를 생성합니다.",
+        "C": "보조 지역에 FSx for ONTAP 인스턴스를 생성합니다. NetApp SnapMirror를 사용하여 기본 지역에서 보조 지역으로 데이터를 복제합니다.",
+        "D": "Amazon Elastic File System(Amazon EFS) 볼륨을 생성합니다. 현재 데이터를 볼륨으로 마이그레이션합니다. 볼륨을 보조 리전에 복제합니다."
+      },
+      "eng": {
+        "A": "Create an AWS Lambda function to copy the data to an Amazon S3 bucket. Replicate the S3 bucket to the secondary Region.",
+        "B": "Create a backup of the FSx for ONTAP volumes by using AWS Backup. Copy the volumes to the secondary Region. Create a new FSx for ONTAP instance from the backup.",
+        "C": "Create an FSx for ONTAP instance in the secondary Region. Use NetApp SnapMirror to replicate data from the primary Region to the secondary Region.",
+        "D": "Create an Amazon Elastic File System (Amazon EFS) volume. Migrate the current data to the volume. Replicate the volume to the secondary Region."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "FSx"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/125545-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 765,
+    "question": {
+      "kor": "일기 예보 회사는 밀리초 미만의 대기 시간으로 수백 기가바이트의 데이터를 처리해야 합니다. 이 회사는 데이터 센터에 HPC(고성능 컴퓨팅) 환경을 보유하고 있으며 예측 기능을 확장하려고 합니다.\n솔루션 설계자는 대량의 지속적인 처리량을 처리할 수 있는 고가용성 클라우드 스토리지 솔루션을 식별해야 합니다. 솔루션에 저장된 파일은 전체 데이터 세트에 동시에 액세스하고 처리하는 수천 개의 컴퓨팅 인스턴스에 액세스할 수 있어야 합니다.\n솔루션 설계자는 이러한 요구 사항을 충족하기 위해 무엇을 해야 합니까?",
+      "eng": "A weather forecasting company needs to process hundreds of gigabytes of data with sub-millisecond latency. The company has a high performance computing (HPC) environment in its data center and wants to expand its forecasting capabilities.\nA solutions architect must identify a highly available cloud storage solution that can handle large amounts of sustained throughput. Files that are stored in the solution should be accessible to thousands of compute instances that will simultaneously access and process the entire dataset.\nWhat should the solutions architect do to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Lustre 스크래치 파일 시스템에는 Amazon FSx를 사용하십시오.",
+        "B": "Lustre 영구 파일 시스템에는 Amazon FSx를 사용하십시오.",
+        "C": "버스팅 처리량 모드와 함께 Amazon Elastic File System(Amazon EFS)을 사용합니다.",
+        "D": "프로비저닝된 처리량 모드와 함께 Amazon Elastic File System(Amazon EFS)을 사용합니다."
+      },
+      "eng": {
+        "A": "Use Amazon FSx for Lustre scratch file systems.",
+        "B": "Use Amazon FSx for Lustre persistent file systems.",
+        "C": "Use Amazon Elastic File System (Amazon EFS) with Bursting Throughput mode.",
+        "D": "Use Amazon Elastic File System (Amazon EFS) with Provisioned Throughput mode."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "FSx"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/125586-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 901,
+    "question": {
+      "kor": "한 회사가 온프레미스 스토리지에서 AWS로 대량의 데이터를 마이그레이션하고 있습니다. 동일한 AWS 리전에 있는 Windows, Mac 및 Linux 기반 Amazon EC2 인스턴스는 SMB 및 NFS 스토리지 프로토콜을 사용하여 데이터에 액세스합니다. 회사는 정기적으로 데이터의 일부에 액세스합니다. 회사는 나머지 데이터에 드물게 액세스합니다.\n회사는 데이터를 호스팅하기 위한 솔루션을 설계해야 합니다.\n최소한의 운영 오버헤드로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company is migrating a large amount of data from on-premises storage to AWS. Windows, Mac, and Linux based Amazon EC2 instances in the same AWS Region will access the data by using SMB and NFS storage protocols. The company will access a portion of the data routinely. The company will access the remaining data infrequently.\nThe company needs to design a solution to host the data.\nWhich solution will meet these requirements with the LEAST operational overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "EFS Intelligent-Tiering을 사용하는 Amazon Elastic File System(Amazon EFS) 볼륨을 생성합니다. AWS DataSync를 사용하여 데이터를 EFS 볼륨으로 마이그레이션합니다.",
+        "B": "ONTAP 인스턴스용 Amazon FSx를 생성합니다. 자동 계층화 정책을 사용하는 루트 볼륨이 있는 FSx for ONTAP 파일 시스템을 생성합니다. 데이터를 FSx for ONTAP 볼륨으로 마이그레이션합니다.",
+        "C": "S3 Intelligent-Tiering을 사용하는 Amazon S3 버킷을 생성합니다. AWS Storage Gateway Amazon S3 파일 게이트웨이를 사용하여 데이터를 S3 버킷으로 마이그레이션합니다.",
+        "D": "OpenZFS 파일 시스템용 Amazon FSx를 생성합니다. 데이터를 새 볼륨으로 마이그레이션합니다."
+      },
+      "eng": {
+        "A": "Create an Amazon Elastic File System (Amazon EFS) volume that uses EFS Intelligent-Tiering. Use AWS DataSync to migrate the data to the EFS volume.",
+        "B": "Create an Amazon FSx for ONTAP instance. Create an FSx for ONTAP file system with a root volume that uses the auto tiering policy. Migrate the data to the FSx for ONTAP volume.",
+        "C": "Create an Amazon S3 bucket that uses S3 Intelligent-Tiering. Migrate the data to the S3 bucket by using an AWS Storage Gateway Amazon S3 File Gateway.",
+        "D": "Create an Amazon FSx for OpenZFS file system. Migrate the data to the new volume."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "FSx"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/132892-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 971,
+    "question": {
+      "kor": "한 회사가 AWS에서 호스팅하는 미디어 애플리케이션을 위한 공유 스토리지 솔루션을 구현하고 있습니다. 회사는 SMB 클라이언트를 사용하여 저장된 데이터에 액세스할 수 있는 기능이 필요합니다.\n최소한의 관리 오버헤드로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company is implementing a shared storage solution for a media application that the company hosts on AWS. The company needs the ability to use SMB clients to access stored data.\nWhich solution will meet these requirements with the LEAST administrative overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Storage Gateway 볼륨 게이트웨이를 생성합니다. 필요한 클라이언트 프로토콜을 사용하는 파일 공유를 만듭니다. 애플리케이션 서버를 파일 공유에 연결합니다.",
+        "B": "AWS Storage Gateway 테이프 게이트웨이를 생성합니다. Amazon S3를 사용하도록 테이프를 구성합니다. 애플리케이션 서버를 테이프 게이트웨이에 연결합니다.",
+        "C": "Amazon EC2 Windows 인스턴스를 생성합니다. 인스턴스에 Windows 파일 공유 역할을 설치하고 구성합니다. 애플리케이션 서버를 파일 공유에 연결합니다.",
+        "D": "Windows 파일 서버용 Amazon FSx 파일 시스템을 생성합니다. 애플리케이션 서버를 파일 시스템에 연결합니다."
+      },
+      "eng": {
+        "A": "Create an AWS Storage Gateway Volume Gateway. Create a file share that uses the required client protocol. Connect the application server to the file share.",
+        "B": "Create an AWS Storage Gateway Tape Gateway. Configure tapes to use Amazon S3. Connect the application server to the Tape Gateway.",
+        "C": "Create an Amazon EC2 Windows instance. Install and configure a Windows file share role on the instance. Connect the application server to the file share.",
+        "D": "Create an Amazon FSx for Windows File Server file system. Connect the application server to the file system."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "FSx"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/139861-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 74,
+    "question": {
+      "kor": "회사에서 온프레미스 애플리케이션을 AWS로 마이그레이션하려고 합니다. 이 애플리케이션은 수십 기가바이트에서 수백 테라바이트에 이르는 다양한 크기의 출력 파일을 생성합니다. 애플리\n케이션 데이터는 표준 파일 시스템 구조에 저장되어야 합니다. 회사는 자동으로 확장되는 솔루션을 원합니다. 가용성이 높고 최소한의 운영 오버헤드가 필요합니다.\n이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company wants to migrate its on-premises application to AWS. The application produces output files that vary in size from tens of gigabytes to hundreds of terabytes. The application data must be stored in a standard file system structure. The company wants a solution that scales automatically. is highly available, and requires minimum operational overhead.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Elastic Container Service(Amazon ECS)에서 컨테이너로 실행되도록 애플리케이션을 마이그레이션합니다. 저장을 위해 Amazon S3를 사용합니다.",
+        "B": "Amazon Elastic Kubernetes Service(Amazon EKS)에서 컨테이너로 실행되도록 애플리케이션을 마이그레이션합니다. 저장을 위해 Amazon Elastic Block Store(Amazon EBS)를 사용합니다.",
+        "C": "다중 AZ Auto Scaling 그룹의 Amazon EC2 인스턴스로 애플리케이션을 마이그레이션합니다. 스토리지에 Amazon Elastic File System(Amazon EFS)을 사용합니다.",
+        "D": "다중 AZ Auto Scaling 그룹의 Amazon EC2 인스턴스로 애플리케이션을 마이그레이션합니다. 저장을 위해 Amazon Elastic Block Store(Amazon EBS)를 사용합니다."
+      },
+      "eng": {
+        "A": "Migrate the application to run as containers on Amazon Elastic Container Service (Amazon ECS). Use Amazon S3 for storage.",
+        "B": "Migrate the application to run as containers on Amazon Elastic Kubernetes Service (Amazon EKS). Use Amazon Elastic Block Store (Amazon EBS) for storage.",
+        "C": "Migrate the application to Amazon EC2 instances in a Multi-AZ Auto Scaling group. Use Amazon Elastic File System (Amazon EFS) for storage.",
+        "D": "Migrate the application to Amazon EC2 instances in a Multi-AZ Auto Scaling group. Use Amazon Elastic Block Store (Amazon EBS) for storage."
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "EFS",
+      "auto scaling",
+      "availability"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/85265-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 351,
+    "question": {
+      "kor": "솔루션 설계자는 고객 사례 파일을 저장할 시스템을 설계해야 합니다. 파일은 핵심 회사 자산이며 중요합니다. 파일 수는 시간이 지남에 따라 증가합니다.\n파일은 Amazon EC2 인스턴스에서 실행되는 여러 애플리케이션 서버에서 동시에 액세스할 수 있어야 합니다. 솔루션에는 중복성이 내장되어 있어야 합니다.\n어떤 솔루션이 이러한 요구 사항을 충족합니까?",
+      "eng": "A solutions architect needs to design a system to store client case files. The files are core company assets and are important. The number of files will grow over time.\nThe files must be simultaneously accessible from multiple application servers that run on Amazon EC2 instances. The solution must have built-in redundancy.\nWhich solution meets these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Elastic File System(Amazon EFS)",
+        "B": "Amazon Elastic Block Store(Amazon EBS)",
+        "C": "Amazon S3 Glacier Deep 아카이브",
+        "D": "AWS 백업"
+      },
+      "eng": {
+        "A": "Amazon Elastic File System (Amazon EFS)",
+        "B": "Amazon Elastic Block Store (Amazon EBS)",
+        "C": "Amazon S3 Glacier Deep Archive",
+        "D": "AWS Backup"
+      }
+    },
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "EFS"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/95024-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 441,
+    "question": {
+      "kor": "회사는 온프레미스 NAS(Network Attached Storage) 시스템을 사용하여 HPC(고성능 컴퓨팅) 워크로드에 파일 공유를 제공합니다. 회사는 지연 시간에 민감한 HPC 워크로드와 스토리지를 AWS 클라우드로 마이그레이션하려고 합니다. 회사는 파일 시스템에서 NFS 및 SMB 다중 프로토콜 액세스를 제공할 수 있어야 합니다.\n가장 짧은 대기 시간으로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까? (2개를 선택하세요.)",
+      "eng": "A company uses an on-premises network-attached storage (NAS) system to provide file shares to its high performance computing (HPC) workloads. The company wants to migrate its latency-sensitive HPC workloads and its storage to the AWS Cloud. The company must be able to provide NFS and SMB multiprotocol access from the file system.\nWhich solution will meet these requirements with the LEAST latency? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "컴퓨팅 최적화 EC2 인스턴스를 클러스터 배치 그룹에 배포합니다.",
+        "B": "컴퓨팅 최적화 EC2 인스턴스를 파티션 배치 그룹에 배포합니다.",
+        "C": "EC2 인스턴스를 Amazon FSx for Lustre 파일 시스템에 연결합니다.",
+        "D": "EC2 인스턴스를 Amazon FSx for OpenZFS 파일 시스템에 연결합니다.",
+        "E": "EC2 인스턴스를 NetApp ONTAP 파일 시스템용 Amazon FSx에 연결합니다."
+      },
+      "eng": {
+        "A": "Deploy compute optimized EC2 instances into a cluster placement group.",
+        "B": "Deploy compute optimized EC2 instances into a partition placement group.",
+        "C": "Attach the EC2 instances to an Amazon FSx for Lustre file system.",
+        "D": "Attach the EC2 instances to an Amazon FSx for OpenZFS file system.",
+        "E": "Attach the EC2 instances to an Amazon FSx for NetApp ONTAP file system."
+      }
+    },
+    "category": [
+      "EC2",
+      "Storage"
+    ],
+    "subcategory": [
+      "FSx",
+      "placement group"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/126797-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A",
+      "E"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 579,
+    "question": {
+      "kor": "한 회사는 AWS 클라우드에서 긴밀하게 결합된 고성능 컴퓨팅(HPC) 환경을 설계하고 있습니다. 회사는 네트워킹 및 스토리지를 위해 HPC 환경을 최적화하는 기능을 포함해야 합니다.\n이러한 요구 사항을 충족하는 솔루션 조합은 무엇입니까? (2개를 선택하세요.)",
+      "eng": "A company is designing a tightly coupled high performance computing (HPC) environment in the AWS Cloud. The company needs to include features that will optimize the HPC environment for networking and storage.\nWhich combination of solutions will meet these requirements? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Global Accelerator에서 액셀러레이터를 생성합니다. 가속기에 대한 사용자 지정 라우팅을 구성합니다.",
+        "B": "Lustre 파일 시스템용 Amazon FSx를 생성합니다. 스크래치 스토리지로 파일 시스템을 구성합니다.",
+        "C": "Amazon CloudFront 배포판을 생성합니다. 뷰어 프로토콜 정책을 HTTP 및 HTTPS로 구성합니다.",
+        "D": "Amazon EC2 인스턴스를 시작합니다. EFA(Elastic Fabric Adapter)를 인스턴스에 연결합니다.",
+        "E": "환경을 관리하기 위해 AWS Elastic Beanstalk 배포를 생성합니다."
+      },
+      "eng": {
+        "A": "Create an accelerator in AWS Global Accelerator. Configure custom routing for the accelerator.",
+        "B": "Create an Amazon FSx for Lustre file system. Configure the file system with scratch storage.",
+        "C": "Create an Amazon CloudFront distribution. Configure the viewer protocol policy to be HTTP and HTTPS.",
+        "D": "Launch Amazon EC2 instances. Attach an Elastic Fabric Adapter (EFA) to the instances.",
+        "E": "Create an AWS Elastic Beanstalk deployment to manage the environment."
+      }
+    },
+    "category": [
+      "EC2",
+      "Storage"
+    ],
+    "subcategory": [
+      "EFA",
+      "FSx for Lustre"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/133034-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B",
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 358,
+    "question": {
+      "kor": "데이터 분석 회사에서 일괄 처리 시스템을 AWS로 마이그레이션하려고 합니다. 회사는 FTP를 통해 낮 동안 주기적으로 수천 개의 작은 데이터 파일을 받습니다. 온프레미스 일괄 작업은 밤새 데이터 파일을 처리합니다. 그러나 일괄 작업 실행을 완료하는 데 몇 시간이 걸립니다.\n회사는 파일을 전송하는 FTP 클라이언트에 대한 최소한의 변경으로 수신 데이터 파일을 처리할 수 있는 AWS 솔루션을 원합니다. 솔루션은 파일이 성공적으로 처리된 수신 데이터 파일을 삭제해야 합니다. 각 파일을 처리하는 데 3~8분이 소요됩니다.\n운영상 가장 효율적인 방식으로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A data analytics company wants to migrate its batch processing system to AWS. The company receives thousands of small data files periodically during the day through FTP. A onpremises batch job processes the data files overnight. However, the batch job takes hours to finish running.\nThe company wants the AWS solution to process incoming data files are possible with minimal changes to the FTP clients that send the files. The solution must delete the incoming data files the files have been processed successfully. Processing for each file needs to take 3-8 minutes.\nWhich solution will meet these requirements in the MOST operationally efficient way?"
+    },
+    "choices": {
+      "kor": {
+        "A": "FTP 서버를 실행하는 Amazon EC2 인스턴스를 사용하여 수신 파일을 Amazon S3 Glacier Flexible Retrieval의 객체로 저장합니다. AWS Batch에서 작업 대기열을 구성합니다. Amazon EventBridge 규칙을 사용하여 S3 Glacier Flexible Retrieval에서 야간에 객체를 처리하는 작업을 호출합니다. 작업이 개체를 처리한 후 개체를 삭제합니다.",
+        "B": "FTP 서버를 실행하는 Amazon EC2 인스턴스를 사용하여 수신 파일을 Amazon Elastic Block Store(Amazon EBS) 볼륨에 저장합니다. AWS Batch에서 작업 대기열을 구성 합니다. Amazon EventBridge 규칙을 사용하여 야간에 EBS 볼륨에서 파일 프로세스를 호출합니다. 작업이 파일을 처리한 후 파일을 삭제합니다.",
+        "C": "AWS Transfer Family를 사용하여 들어오는 파일을 Amazon Elastic Block Store(Amazon EBS) 볼륨에 저장할 FTP 서버를 생성합니다. AWS Batch에서 작업 대기열을 구성합니다. 각 파일이 도착하면 Amazon S3 이벤트 알림을 사용하여 AWS Batch에서 작업을 호출합니다. 작업이 파일을 처리한 후 파일을 삭제합니다.",
+        "D": "AWS Transfer Family를 사용하여 Amazon S3 Standard에 수신 파일을 저장할 FTP 서버를 생성합니다. 파일을 처리하고 파일이 처리된 후 파일을 삭제하는 AWS Lambda 함수를 생성합니다. 파일이 도착하면 S3 이벤트 알림을 사용하여 람다 함수를 호출하십시오."
+      },
+      "eng": {
+        "A": "Use an Amazon EC2 instance that runs an FTP server to store incoming files as objects in Amazon S3 Glacier Flexible Retrieval. Configure a job queue in AWS Batch. Use Amazon EventBridge rules to invoke the job to process the objects nightly from S3 Glacier Flexible Retrieval. Delete the objects after the job has processed the objects.",
+        "B": "Use an Amazon EC2 instance that runs an FTP server to store incoming files on an Amazon Elastic Block Store (Amazon EBS) volume. Configure a job queue in AWS Batch. Use Amazon EventBridge rules to invoke the process the files nightly from the EBS volume. Delete the files after the job has processed the files.",
+        "C": "Use AWS Transfer Family to create an FTP server to store incoming files on an Amazon Elastic Block Store (Amazon EBS) volume. Configure a job queue in AWS Batch. Use an Amazon S3 event notification when each files arrives to invoke the job in AWS Batch. Delete the files after the job has processed the files.",
+        "D": "Use AWS Transfer Family to create an FTP server to store incoming files in Amazon S3 Standard. Create an AWS Lambda function to process the files and to delete the files after they are proessed. Use an S3 event notification to invoke the lambda function when the files arrive."
+      }
+    },
+    "category": [
+      "Data Transfer"
+    ],
+    "subcategory": [
+      "Transfer Family"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/111317-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 504,
+    "question": {
+      "kor": "회사에서 고가용성 SFTP 서비스를 실행합니다. SFTP 서비스는 탄력적 IP 주소로 실행되는 두 개의 Amazon EC2 Linux 인스턴스를 사용하여 인터넷에서 신뢰할 수 있는 IP 소스의 트래픽을 허용합니다. SFTP 서비스는 인스턴스에 연결된 공유 스토리지에서 지원합니다. 사용자 계정은 SFTP 서버에서 Linux 사용자로 생성되고 관리됩니다.\n회사는 높은 IOPS 성능과 고도로 구성 가능한 보안을 제공하는 서버리스 옵션을 원합니다. 회사는 또한 사용자 권한에 대한 제어를 유지하기를 원합니다.\n이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company runs a highly available SFTP service. The SFTP service uses two Amazon EC2 Linux instances that run with elastic IP addresses to accept traffic from trusted IP sources on the internet. The SFTP service is backed by shared storage that is attached to the instances. User accounts are created and managed as Linux users in the SFTP servers.\nThe company wants a serverless option that provides high IOPS performance and highly configurable security. The company also wants to maintain control over user permissions.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "암호화된 Amazon Elastic Block Store(Amazon EBS) 볼륨을 생성합니다. 신뢰할 수 있는 IP 주소만 허용하는 퍼블릭 엔드포인트로 AWS Transfer Family SFTP 서비스를 생성합니다. EBS 볼륨을 SFTP 서비스 엔드포인트에 연결합니다. 사용자에게 SFTP 서비스에 대한 액세스 권한을 부여합니다.",
+        "B": "암호화된 Amazon Elastic File System(Amazon EFS) 볼륨을 생성합니다. 탄력적 IP 주소와 인터넷 연결 액세스가 있는 VPC 엔드포인트를 사용하여 AWS Transfer Family SFTP 서비스를 생성합니다. 신뢰할 수 있는 IP 주소만 허용하는 엔드포인트에 보안 그룹을 연결합니다. EFS 볼륨을 SFTP 서비스 엔드포인트에 연결합니다. 사용자에게 SFTP 서비스에 대한 액세스 권한을 부여합니다.",
+        "C": "기본 암호화가 활성화된 Amazon S3 버킷을 생성합니다. 신뢰할 수 있는 IP 주소만 허용하는 퍼블릭 엔드포인트로 AWS Transfer Family SFTP 서비스를 생성합니다. S3 버킷을 SFTP 서비스 엔드포인트에 연결합니다. 사용자에게 SFTP 서비스에 대한 액세스 권한을 부여합니다.",
+        "D": "기본 암호화가 활성화된 Amazon S3 버킷을 생성합니다. 프라이빗 서브넷에서 내부 액세스 권한이 있는 VPC 엔드포인트로 AWS Transfer Family SFTP 서비스를 생성합니다. 신뢰할 수 있는 IP 주소만 허용하는 보안 그룹을 연결합니다. S3 버킷을 SFTP 서비스 엔드포인트에 연결합니다. 사용자에게 SFTP 서비스에 대한 액세스 권한을 부여합니다."
+      },
+      "eng": {
+        "A": "Create an encrypted Amazon Elastic Block Store (Amazon EBS) volume. Create an AWS Transfer Family SFTP service with a public endpoint that allows only trusted IP addresses. Attach the EBS volume to the SFTP service endpoint. Grant users access to the SFTP service.",
+        "B": "Create an encrypted Amazon Elastic File System (Amazon EFS) volume. Create an AWS Transfer Family SFTP service with elastic IP addresses and a VPC endpoint that has internet-facing access. Attach a security group to the endpoint that allows only trusted IP addresses. Attach the EFS volume to the SFTP service endpoint. Grant users access to the SFTP service.",
+        "C": "Create an Amazon S3 bucket with default encryption enabled. Create an AWS Transfer Family SFTP service with a public endpoint that allows only trusted IP addresses. Attach the S3 bucket to the SFTP service endpoint. Grant users access to the SFTP service.",
+        "D": "Create an Amazon S3 bucket with default encryption enabled. Create an AWS Transfer Family SFTP service with a VPC endpoint that has internal access in a private subnet. Attach a security group that allows only trusted IP addresses. Attach the S3 bucket to the SFTP service endpoint. Grant users access to the SFTP service."
+      }
+    },
+    "category": [
+      "Data Transfer"
+    ],
+    "subcategory": [
+      "Transfer Family"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/109270-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 575,
+    "question": {
+      "kor": "회사에서 온프레미스 레거시 애플리케이션을 AWS로 마이그레이션하려고 합니다. 애플리케이션은 온프레미스 ERP(전사적 자원 관리) 시스템에서 고객 주문 파일을 수집합니다. 그런 다음 애플리케이션은 파일을 SFTP 서버에 업로드합니다. 애플리케이션은 매시간 주문 파일을 확인하는 예약된 작업을 사용합니다.\n회사에는 이미 온프레미스 네트워크에 연결된 AWS 계정이 있습니다. AWS의 새로운 애플리케이션은 기존 ERP 시스템과의 통합을 지원해야 합니다. 새로운 애플리케이션은 안전하고 탄력적이어야 하며 SFTP 프로토콜을 사용하여 ERP 시스템의 주문을 즉시 처리해야 합니다.\n어떤 솔루션이 이러한 요구 사항을 충족합니까?",
+      "eng": "A company wants to migrate an on-premises legacy application to AWS. The application ingests customer order files from an on-premises enterprise resource planning (ERP) system. The application then uploads the files to an SFTP server. The application uses a scheduled job that checks for order files every hour.\nThe company already has an AWS account that has connectivity to the on-premises network. The new application on AWS must support integration with the existing ERP system. The new application must be secure and resilient and must use the SFTP protocol to process orders from the ERP system immediately.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "두 개의 가용 영역에 AWS Transfer Family SFTP 인터넷 연결 서버를 생성합니다. Amazon S3 스토리지를 사용하세요. 주문 파일을 처리하는 AWS Lambda 함수를 생성합니다. S3 이벤트 알림을 사용하여 s3:ObjectCreated:* 이벤트를 Lambda 함수로 보냅니다.",
+        "B": "하나의 가용 영역에 AWS Transfer Family SFTP 인터넷 연결 서버를 생성합니다. Amazon Elastic File System(Amazon EFS) 스토리지를 사용합니다. 주문 파일을 처리하는 AWS Lambda 함수를 생성합니다. Transfer Family 관리형 워크플로를 사용하여 Lambda 함수를 호출합니다.",
+        "C": "두 개의 가용 영역에 AWS Transfer Family SFTP 내부 서버를 생성합니다. Amazon Elastic File System(Amazon EFS) 스토리지를 사용합니다. 주문 파일을 처리하기 위해 AWS Step Functions 상태 머신을 생성합니다. Amazon EventBridge Scheduler를 사용하면 상태 시스템을 호출하여 Amazon EFS에서 주문 파일을 주기적으로 확인할 수 있습니다.",
+        "D": "두 개의 가용 영역에 AWS Transfer Family SFTP 내부 서버를 생성합니다. Amazon S3 스토리지를 사용하세요. 주문 파일을 처리하는 AWS Lambda 함수를 생성합니다.",
+        "E": "Transfer Family 관리형 워크플로를 사용하여 Lambda 함수를 호출합니다."
+      },
+      "eng": {
+        "A": "Create an AWS Transfer Family SFTP internet-facing server in two Availability Zones. Use Amazon S3 storage. Create an AWS Lambda function to process order files. Use S3 Event Notifications to send s3:ObjectCreated:* events to the Lambda function.",
+        "B": "Create an AWS Transfer Family SFTP internet-facing server in one Availability Zone. Use Amazon Elastic File System (Amazon EFS) storage. Create an AWS Lambda function to process order files. Use a Transfer Family managed workflow to invoke the Lambda function.",
+        "C": "Create an AWS Transfer Family SFTP internal server in two Availability Zones. Use Amazon Elastic File System (Amazon EFS) storage. Create an AWS Step Functions state machine to process order files. Use Amazon EventBridge Scheduler to invoke the state machine to periodically check Amazon EFS for order files.",
+        "D": "Create an AWS Transfer Family SFTP internal server in two Availability Zones. Use Amazon S3 storage. Create an AWS Lambda function to process order files. Use a Transfer Family managed workflow to invoke the Lambda function."
+      }
+    },
+    "category": [
+      "Data Transfer"
+    ],
+    "subcategory": [
+      "Transfer Family"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/132890-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 670,
+    "question": {
+      "kor": "회사는 Amazon S3를 데이터 레이크로 사용합니다. 회사에는 SFTP를 사용하여 데이터 파일을 업로드해야 하는 새로운 파트너가 있습니다. 솔루션 설계자는 운영 오버헤드를 최소화하는 고가용성 SFTP 솔루션을 구현해야 합니다.\n이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company uses Amazon S3 as its data lake. The company has a new partner that must use SFTP to upload data files. A solutions architect needs to implement a highly available SFTP solution that minimizes operational overhead.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Transfer Family를 사용하여 공개적으로 액세스할 수 있는 SFTP 엔드포인트가 있는 지원 서버를 구성합니다. S3 데이터 레이크를 대상으로 선택합니다.",
+        "B": "Amazon S3 파일 게이트웨이를 SFTP 서버로 사용합니다. S3 파일 게이트웨이 엔드포인트 URL을 새 파트너에게 노출합니다. S3 파일 게이트웨이 엔드포인트를 새 파트너와 공유합니다.",
+        "C": "VPC의 프라이빗 서브넷에서 Amazon EC2 인스턴스를 시작합니다. VPN을 사용하여 EC2 인스턴스에 파일을 업로드하도록 새 파트너에게 지시합니다. EC2 인스턴스에서 cron 작업 스크립트를 실행하여 S3 데이터 레이크에 파일을 업로드합니다.",
+        "D": "VPC의 프라이빗 서브넷에서 Amazon EC2 인스턴스를 시작합니다. EC2 인스턴스 앞에 NLB(Network Load Balancer)를 배치합니다. NLB에 대한 SFTP 수신기 포트를 만듭니다. NLB 호스트 이름을 새 파트너와 공유합니다. EC2 인스턴스에서 cron 작업 스크립트를 실행하여 S3 데이터 레이크에 파일을 업로드합니다."
+      },
+      "eng": {
+        "A": "Use AWS Transfer Family to configure an SFTP-enabled server with a publicly accessible endpoint. Choose the S3 data lake as the destination.",
+        "B": "Use Amazon S3 File Gateway as an SFTP server. Expose the S3 File Gateway endpoint URL to the new partner. Share the S3 File Gateway endpoint with the new partner.",
+        "C": "Launch an Amazon EC2 instance in a private subnet in a VPC. Instruct the new partner to upload files to the EC2 instance by using a VPN. Run a cron job script, on the EC2 instance to upload files to the S3 data lake.",
+        "D": "Launch Amazon EC2 instances in a private subnet in a VPC. Place a Network Load Balancer (NLB) in front of the EC2 instances. Create an SFTP listener port for the NLB. Share the NLB hostname with the new partner. Run a cron job script on the EC2 instances to upload files to the S3 data lake."
+      }
+    },
+    "category": [
+      "Data Transfer"
+    ],
+    "subcategory": [
+      "Transfer Family"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/87566-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 789,
+    "question": {
+      "kor": "회사는 고객이 온프레미스 Microsoft Active Directory를 사용하여 Amazon S3에 저장된 파일을 다운로드할 수 있는 기능을 제공하려고 합니다. 고객의 애플리케이션은 SFTP 클라이언트를 사용하여 파일을 다운로드합니다.\n최소한의 운영 오버헤드로 이러한 요구 사항을 충족하고 고객의 애플리케이션을 변경하지 않는 솔루션은 무엇입니까?",
+      "eng": "A company wants to give a customer the ability to use on-premises Microsoft Active Directory to download files that are stored in Amazon S3. The customer’s application uses an SFTP client to download the files.\nWhich solution will meet these requirements with the LEAST operational overhead and no changes to the customer’s application?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon S3용 SFTP로 AWS Transfer Family를 설정합니다. 통합된 Active Directory 인증을 구성합니다.",
+        "B": "온프레미스 클라이언트를 Amazon S3와 동기화하도록 AWS DMS(AWS Database Migration Service)를 설정합니다. 통합된 Active Directory 인증을 구성합니다.",
+        "C": "AWS IAM Identity Center(AWS Single Sign-On)를 사용하여 온프레미스 위치와 S3 위치 간에 동기화하도록 AWS DataSync를 설정합니다.",
+        "D": "SFTP로 Windows Amazon EC2 인스턴스를 설정하여 온프레미스 클라이언트를 Amazon S3와 연결합니다. AWS Identity and Access Management(IAM)를 통합합니다."
+      },
+      "eng": {
+        "A": "Set up AWS Transfer Family with SFTP for Amazon S3. Configure integrated Active Directory authentication.",
+        "B": "Set up AWS Database Migration Service (AWS DMS) to synchronize the on-premises client with Amazon S3. Configure integrated Active Directory authentication.",
+        "C": "Set up AWS DataSync to synchronize between the on-premises location and the S3 location by using AWS IAM Identity Center (AWS Single Sign-On).",
+        "D": "Set up a Windows Amazon EC2 instance with SFTP to connect the on-premises client with Amazon S3. Integrate AWS Identity and Access Management (IAM)."
+      }
+    },
+    "category": [
+      "Data Transfer"
+    ],
+    "subcategory": [
+      "Transfer Family"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/99703-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 807,
+    "question": {
+      "kor": "AWS를 사용하는 회사는 제품 제조업체에 데이터를 전송하는 애플리케이션을 구축하고 있습니다. 회사에는 자체 ID 공급자(IdP)가 있습니다. 회사는 사용자가 애플리케이션을 사용하여 데이터를 전송하는 동안 IdP가 애플리케이션 사용자를 인증하기를 원합니다. 회사는 AS2(Applicability Statement 2) 프로토콜을 사용해야 합니다.\n이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company that uses AWS is building an application to transfer data to a product manufacturer. The company has its own identity provider (IdP). The company wants the IdP to authenticate application users while the users use the application to transfer data. The company must use Applicability Statement 2 (AS2) protocol.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS DataSync를 사용하여 데이터를 전송하십시오. IdP 인증을 위한 AWS Lambda 함수를 생성합니다.",
+        "B": "Amazon AppFlow 흐름을 사용하여 데이터를 전송합니다. IdP 인증을 위한 Amazon Elastic Container Service(Amazon ECS) 작업을 생성합니다.",
+        "C": "AWS Transfer Family를 사용하여 데이터를 전송합니다. IdP 인증을 위한 AWS Lambda 함수를 생성합니다.",
+        "D": "AWS Storage Gateway를 사용하여 데이터를 전송합니다. IdP 인증을 위한 Amazon Cognito 자격 증명 풀을 생성합니다."
+      },
+      "eng": {
+        "A": "Use AWS DataSync to transfer the data. Create an AWS Lambda function for IdP authentication.",
+        "B": "Use Amazon AppFlow flows to transfer the data. Create an Amazon Elastic Container Service (Amazon ECS) task for IdP authentication.",
+        "C": "Use AWS Transfer Family to transfer the data. Create an AWS Lambda function for IdP authentication.",
+        "D": "Use AWS Storage Gateway to transfer the data. Create an Amazon Cognito identity pool for IdP authentication."
+      }
+    },
+    "category": [
+      "Data Transfer"
+    ],
+    "subcategory": [
+      "Transfer Family"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/109524-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 931,
+    "question": {
+      "kor": "회사에는 SFTP를 사용하여 여러 공급업체로부터 재무 데이터를 수집하는 온프레미스 애플리케이션이 있습니다. 회사는 AWS 클라우드로 마이그레이션하고 있습니다. 이 회사는 Amazon S3 API를 사용하여 공급업체로부터 파일을 업로드하는 애플리케이션을 만들었습니다.\n일부 공급업체는 S3 API를 지원하지 않는 레거시 애플리케이션에서 시스템을 실행합니다. 공급업체는 SFTP 기반 애플리케이션을 계속 사용하여 데이터를 업로드하기를 원합니다. 회사는 레거시 애플리케이션을 사용하는 공급업체의 요구에 맞게 관리형 서비스를 사용하려고 합니다.\n최소한의 운영 오버헤드로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company has an on-premises application that uses SFTP to collect financial data from multiple vendors. The company is migrating to the AWS Cloud. The company has created an application that uses Amazon S3 APIs to upload files from vendors.\nSome vendors run their systems on legacy applications that do not support S3 APIs. The vendors want to continue to use SFTP-based applications to upload data. The company wants to use managed services for the needs of the vendors that use legacy applications.\nWhich solution will meet these requirements with the LEAST operational overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS DMS(AWS Database Migration Service) 인스턴스를 생성하여 레거시 애플리케이션을 사용하는 공급업체의 스토리지에서 Amazon S3로 데이터를 복제합니다. AWS DMS 인스턴스에 액세스하기 위한 자격 증명을 공급업체에 제공합니다.",
+        "B": "레거시 애플리케이션을 사용하는 공급업체를 위한 AWS Transfer Family 엔드포인트를 생성합니다.",
+        "C": "SFTP 서버를 실행하도록 Amazon EC2 인스턴스를 구성합니다. 레거시 애플리케이션을 사용하는 공급업체에 SFTP 서버를 사용하여 데이터를 업로드하도록 지시합니다.",
+        "D": "레거시 애플리케이션을 사용하여 SMB 파일 공유에 파일을 업로드하는 공급업체를 위해 Amazon S3 파일 게이트웨이를 구성합니다."
+      },
+      "eng": {
+        "A": "Create an AWS Database Migration Service (AWS DMS) instance to replicate data from the storage of the vendors that use legacy applications to Amazon S3. Provide the vendors with the credentials to access the AWS DMS instance.",
+        "B": "Create an AWS Transfer Family endpoint for vendors that use legacy applications.",
+        "C": "Configure an Amazon EC2 instance to run an SFTP server. Instruct the vendors that use legacy applications to use the SFTP server to upload data.",
+        "D": "Configure an Amazon S3 File Gateway for vendors that use legacy applications to upload files to an SMB file share."
+      }
+    },
+    "category": [
+      "Data Transfer"
+    ],
+    "subcategory": [
+      "Transfer Family"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/135268-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 6,
+    "question": {
+      "kor": "회사는 NFS를 사용하여 온프레미스 네트워크 연결 스토리지에 대용량 비디오 파일을 저장합니다. 각 비디오 파일의 크기는 1MB에서 500GB까지입니다. 총 스토리지는 70TB이며 더 이상 증가하지 않습니다. 회사는 비디오 파일을 Amazon S3로 마이그레이션하기로 결정합니다. 회사는 최소한의 네트워크 대역폭을 사용하면서 가능한 한 빨리 비디오 파일을 마이그레이션해야 합니다.\n이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company uses NFS to store large video files in on-premises network attached storage. Each video file ranges in size from 1 MB to 500 GB. The total storage is 70 TB and is no longer growing. The company decides to migrate the video files to Amazon S3. The company must migrate the video files as soon as possible while using the least possible network bandwidth.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 버킷을 생성합니다. S3 버킷에 쓸 수 있는 권한이 있는 IAM 역할을 생성합니다. AWS CLI를 사용하여 모든 파일을 S3 버킷에 로컬로 복사합니다.",
+        "B": "AWS Snowball Edge 작업을 생성합니다. 온프레미스에서 Snowball Edge 디바이스를 받습니다. Snowball Edge 클라이언트를 사용하여 데이터를 디바이스로 전송합니다. AWS가 데이터를 Amazon S3로 가져올 수 있도록 장치를 반환하십시오.",
+        "C": "온프레미스에 S3 파일 게이트웨이를 배포합니다. S3 파일 게이트웨이에 연결할 공용 서비스 엔드포인트를 생성합니다. S3 버킷을 생성합니다. S3 File Gateway에서 새 NFS 파일 공유를 생성합니다. 새 파일 공유가 S3 버킷을 가리키도록 합니다. 기존 NFS 파일 공유에서 S3 파일 게이트웨이로 데이터를 전송합니다.",
+        "D": "온프레미스 네트워크와 AWS 간에 AWS Direct Connect 연결을 설정합니다. 온프레미스에 S3 파일 게이트웨이를 배포합니다. S3 파일 게이트웨이에 연결할 퍼블릭 가상 인터페이스(VIF)를 생성합니다. S3 버킷을 생성합니다. S3 File Gateway에서 새 NFS 파일 공유를 생성합니다. 새 파일 공유가 S3 버킷을 가리키도록 합니다. 기존 NFS 파일 공유에서 S3 파일 게이트웨이로 데이터를 전송합니다."
+      },
+      "eng": {
+        "A": "Create an S3 bucket. Create an IAM role that has permissions to write to the S3 bucket. Use the AWS CLI to copy all files locally to the S3 bucket.",
+        "B": "Create an AWS Snowball Edge job. Receive a Snowball Edge device on premises. Use the Snowball Edge client to transfer data to the device. Return the device so that AWS can import the data into Amazon S3.",
+        "C": "Deploy an S3 File Gateway on premises. Create a public service endpoint to connect to the S3 File Gateway. Create an S3 bucket. Create a new NFS file share on the S3 File Gateway. Point the new file share to the S3 bucket. Transfer the data from the existing NFS file share to the S3 File Gateway.",
+        "D": "Set up an AWS Direct Connect connection between the on-premises network and AWS. Deploy an S3 File Gateway on premises. Create a public virtual interface (VIF) to connect to the S3 File Gateway. Create an S3 bucket. Create a new NFS file share on the S3 File Gateway. Point the new file share to the S3 bucket. Transfer the data from the existing NFS file share to the S3 File Gateway."
+      }
+    },
+    "category": [
+      "Data Transfer"
+    ],
+    "subcategory": [
+      "Snowball"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/84875-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 255,
+    "question": {
+      "kor": "회사는 30일 이내에 데이터 센터에서 AWS 클라우드로 20TB의 데이터를 마이그레이션해야 합니다. 회사의 네트워크 대역폭은 15Mbps로 제한되며 사용률이 70%를 초과할 수 없습니다.\n솔루션 설계자는 이러한 요구 사항을 충족하기 위해 무엇을 해야 합니까?",
+      "eng": "A company must migrate 20 TB of data from a data center to the AWS Cloud within 30 days. The company’s network bandwidth is limited to 15 Mbps and cannot exceed 70% utilization.\nWhat should a solutions architect do to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Snowball을 사용하십시오.",
+        "B": "AWS DataSync를 사용합니다.",
+        "C": "안전한 VPN 연결을 사용하십시오.",
+        "D": "Amazon S3 Transfer Acceleration을 사용합니다."
+      },
+      "eng": {
+        "A": "Use AWS Snowball.",
+        "B": "Use AWS DataSync.",
+        "C": "Use a secure VPN connection.",
+        "D": "Use Amazon S3 Transfer Acceleration."
+      }
+    },
+    "category": [
+      "Data Transfer"
+    ],
+    "subcategory": [
+      "Snowball"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/99603-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 268,
+    "question": {
+      "kor": "회사는 온프레미스 NAS(Network-Attached Storage) 시스템에서 AWS 클라우드로 600TB의 데이터를 전송해야 합니다. 데이터 전송은 2주 이내에 완료되어야 합니다. 데이터는 민감하며 전송 중에 암호화되어야 합니다. 회사의 인터넷 연결은 100Mbps의 업로드 속도를 지원할 수 있습니다.\n이러한 요구 사항을 가장 비용 효율적으로 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company needs to transfer 600 TB of data from its on-premises network-attached storage (NAS) system to the AWS Cloud. The data transfer must be complete within 2 weeks. The data is sensitive and must be encrypted in transit. The company’s internet connection can support an upload speed of 100\nMbps.\nWhich solution meets these requirements MOST cost-effectively?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon S3 멀티파트 업로드 기능을 사용하여 HTTPS를 통해 파일을 전송합니다.",
+        "B": "온프레미스 NAS 시스템과 가장 가까운 AWS 리전 간에 VPN 연결을 생성합니다. VPN 연결을 통해 데이터를 전송합니다.",
+        "C": "AWS Snow Family 콘솔을 사용하여 여러 AWS Snowball Edge Storage Optimized 디바이스를 주문합니다. 디바이스를 사용하여 데이터를 Amazon S3로 전송합니다.",
+        "D": "회사 위치와 가장 가까운 AWS 리전 간에 10Gbps AWS Direct Connect 연결을 설정합니다. VPN 연결을 통해 데이터를 리전으로 전송하여 Amazon S3에 데이터를 저장합니다."
+      },
+      "eng": {
+        "A": "Use Amazon S3 multi-part upload functionality to transfer the files over HTTPS.",
+        "B": "Create a VPN connection between the on-premises NAS system and the nearest AWS Region. Transfer the data over the VPN connection.",
+        "C": "Use the AWS Snow Family console to order several AWS Snowball Edge Storage Optimized devices. Use the devices to transfer the data to Amazon S3.",
+        "D": "Set up a 10 Gbps AWS Direct Connect connection between the company location and the nearest AWS Region. Transfer the data over a VPN connection into the Region to store the data in Amazon S3."
+      }
+    },
+    "category": [
+      "Data Transfer"
+    ],
+    "subcategory": [
+      "Snowball"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/102166-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 632,
+    "question": {
+      "kor": "한 회사에는 다음 달 내에 AWS 클라우드로 이동해야 하는 150TB의 보관된 이미지 데이터가 온프레미스에 저장되어 있습니다. 회사의 현재 네트워크 연결은 야간에만 이 목적으로 최대 100Mbps의 업로드를 허용합니다.\n이 데이터를 이동하고 마이그레이션 기한을 맞추는 가장 비용 효율적인 메커니즘은 무엇입니까?",
+      "eng": "A company has 150 TB of archived image data stored on-premises that needs to be moved to the AWS Cloud within the next month. The company’s current network connection allows up to 100 Mbps uploads for this purpose during the night only.\nWhat is the MOST cost-effective mechanism to move this data and meet the migration deadline?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Snowmobile을 사용하여 AWS로 데이터를 전송합니다.",
+        "B": "여러 AWS Snowball 장치를 주문하여 AWS로 데이터를 전송합니다.",
+        "C": "Amazon S3 Transfer Acceleration을 활성화하고 데이터를 안전하게 업로드합니다.",
+        "D": "Amazon S3 VPC 엔드포인트를 생성하고 VPN을 설정하여 데이터를 업로드합니다."
+      },
+      "eng": {
+        "A": "Use AWS Snowmobile to ship the data to AWS.",
+        "B": "Order multiple AWS Snowball devices to ship the data to AWS.",
+        "C": "Enable Amazon S3 Transfer Acceleration and securely upload the data.",
+        "D": "Create an Amazon S3 VPC endpoint and establish a VPN to upload the data."
+      }
+    },
+    "category": [
+      "Data Transfer"
+    ],
+    "subcategory": [
+      "Snowball"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/132952-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 773,
+    "question": {
+      "kor": "회사에서 보고용으로 50TB의 데이터를 사용합니다. 회사는 이 데이터를 온프레미스에서 AWS로 이동하려고 합니다. 회사 데이터 센터의 맞춤형 애플리케이션은 매주 데이터 변환 작업을 실행합니다. 회사는 데이터 전송이 완료될 때까지 애플리케이션을 일시 중지할 계획이며 가능한 한 빨리 전송 프로세스를 시작해야 합니다.\n데이터 센터에는 추가 워크로드에 사용할 수 있는 네트워크 대역폭이 없습니다. 솔루션 설계자는 데이터를 전송하고 변환 작업이 AWS 클라우드에서 계속 실행되도록 구성해야 합니다.\n최소한의 운영 오버헤드로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company uses 50 TB of data for reporting. The company wants to move this data from on premises to AWS. A custom application in the company’s data center runs a weekly data transformation job. The company plans to pause the application until the data transfer is complete and needs to begin the transfer process as soon as possible.\nThe data center does not have any available network bandwidth for additional workloads. A solutions architect must transfer the data and must configure the transformation job to continue to run in the AWS Cloud.\nWhich solution will meet these requirements with the LEAST operational overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS DataSync를 사용하여 데이터를 이동하십시오. AWS Glue를 사용하여 사용자 지정 변환 작업을 생성합니다.",
+        "B": "데이터를 이동할 AWS Snowcone 디바이스를 주문합니다. 장치에 변환 응용 프로그램을 배포합니다.",
+        "C": "AWS Snowball Edge Storage Optimized 디바이스를 주문합니다. 데이터를 장치에 복사합니다. AWS Glue를 사용하여 사용자 지정 변환 작업을 생성합니다.",
+        "D": "Amazon EC2 컴퓨팅을 포함하는 AWS Snowball Edge Storage Optimized 디바이스를 주문합니다. 데이터를 장치에 복사합니다. AWS에서 새 EC2 인스턴스를 생성하여 변환",
+        "E": "애플리케이션을 실행합니다."
+      },
+      "eng": {
+        "A": "Use AWS DataSync to move the data. Create a custom transformation job by using AWS Glue.",
+        "B": "Order an AWS Snowcone device to move the data. Deploy the transformation application to the device.",
+        "C": "Order an AWS Snowball Edge Storage Optimized device. Copy the data to the device. Create a custom transformation job by using AWS Glue.",
+        "D": "Order an AWS Snowball Edge Storage Optimized device that includes Amazon EC2 compute. Copy the data to the device. Create a new EC2 instance on AWS to run the transformation application."
+      }
+    },
+    "category": [
+      "Data Transfer"
+    ],
+    "subcategory": [
+      "Snowball"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/85912-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 842,
+    "question": {
+      "kor": "회사는 6주 안에 10PB의 데이터를 Amazon S3로 마이그레이션할 예정입니다. 현재 데이터 센터에는 인터넷에 대한 500Mbps 업링크가 있습니다. 다른 온프레미스 애플리케이션은 업링크를 공유합니다. 회사는 이 일회성 마이그레이션 작업에 인터넷 대역폭의 80%를 사용할 수 있습니다.\n어떤 솔루션이 이러한 요구 사항을 충족합니까?",
+      "eng": "A company will migrate 10 PB of data to Amazon S3 in 6 weeks. The current data center has a 500 Mbps uplink to the internet. Other on-premises applications share the uplink. The company can use 80% of the internet bandwidth for this one-time migration task.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "데이터를 Amazon S3로 마이그레이션하고 자동으로 데이터를 확인하도록 AWS DataSync를 구성합니다.",
+        "B": "rsync를 사용하여 데이터를 Amazon S3로 직접 전송합니다.",
+        "C": "AWS CLI와 여러 복사 프로세스를 사용하여 데이터를 Amazon S3에 직접 보냅니다.",
+        "D": "여러 AWS Snowball 디바이스를 주문합니다. 데이터를 장치에 복사합니다. 디바이스를 AWS로 보내 데이터를 Amazon S3에 복사합니다."
+      },
+      "eng": {
+        "A": "Configure AWS DataSync to migrate the data to Amazon S3 and to automatically verify the data.",
+        "B": "Use rsync to transfer the data directly to Amazon S3.",
+        "C": "Use the AWS CLI and multiple copy processes to send the data directly to Amazon S3.",
+        "D": "Order multiple AWS Snowball devices. Copy the data to the devices. Send the devices to AWS to copy the data to Amazon S3."
+      }
+    },
+    "category": [
+      "Data Transfer"
+    ],
+    "subcategory": [
+      "Snowball"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/121186-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 914,
+    "question": {
+      "kor": "한 데이터 분석 회사에는 전 세계적으로 분산된 80개의 사무실이 있습니다. 각 사무실은 1PB의 데이터를 호스팅하고 1~2Gbps의 인터넷 대역폭을 보유합니다.\n회사는 사무실에서 Amazon S3로 대량의 데이터를 일회성 마이그레이션해야 합니다. 회사는 4주 이내에 마이그레이션을 완료해야 합니다.\n이러한 요구 사항을 가장 비용 효율적으로 충족하는 솔루션은 무엇입니까?",
+      "eng": "A data analytics company has 80 offices that are distributed globally. Each office hosts 1 PB of data and has between 1 and 2 Gbps of internet bandwidth.\nThe company needs to perform a one-time migration of a large amount of data from its offices to Amazon S3. The company must complete the migration within 4 weeks.\nWhich solution will meet these requirements MOST cost-effectively?"
+    },
+    "choices": {
+      "kor": {
+        "A": "각 사무실에 새로운 10Gbps AWS Direct Connect 연결을 설정합니다. 데이터를 Amazon S3로 전송합니다.",
+        "B": "여러 AWS Snowball Edge 스토리지 최적화 장치를 사용하여 데이터를 Amazon S3에 저장하고 전송합니다.",
+        "C": "AWS Snowmobile을 사용하여 데이터를 Amazon S3에 저장하고 전송합니다.",
+        "D": "데이터를 Amazon S3로 전송하도록 AWS Storage Gateway 볼륨 게이트웨이를 설정합니다."
+      },
+      "eng": {
+        "A": "Establish a new 10 Gbps AWS Direct Connect connection to each office. Transfer the data to Amazon S3.",
+        "B": "Use multiple AWS Snowball Edge storage-optimized devices to store and transfer the data to Amazon S3.",
+        "C": "Use an AWS Snowmobile to store and transfer the data to Amazon S3.",
+        "D": "Set up an AWS Storage Gateway Volume Gateway to transfer the data to Amazon S3."
+      }
+    },
+    "category": [
+      "Data Transfer"
+    ],
+    "subcategory": [
+      "Snowball"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/133010-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 183,
+    "question": {
+      "kor": "회사는 데이터 센터의 NAS(Network Attached Storage)에 700TB의 백업 데이터를 저장하고 있습니다. 이 백업 데이터는 드문 규제 요청을 위해 액세스할 수 있어야 하며 7년 동안 보관해야 합니다. 회사는 이 백업 데이터를 데이터 센터에서 AWS로 마이그레이션하기로 결정했습니다. 마이그레이션은 1개월 이내에 완료되어야 합니다. 회사는 데이터 전송에 사용할 수 있는 공용 인터넷 연결에 500Mbps의 전용 대역폭을 가지고 있습니다.\n최저 비용으로 데이터를 마이그레이션하고 저장하려면 솔루션 설계자가 무엇을 해야 합니까?",
+      "eng": "A company has 700 TB of backup data stored in network attached storage (NAS) in its data center. This backup data need to be accessible for infrequent regulatory requests and must be retained 7 years. The company has decided to migrate this backup data from its data center to AWS. The migration must be complete within 1 month. The company has 500 Mbps of dedicated bandwidth on its public internet connection available for data transfer.\nWhat should a solutions architect do to migrate and store the data at the LOWEST cost?"
+    },
+    "choices": {
+      "kor": {
+        "A": "데이터를 전송할 AWS Snowball 디바이스를 주문합니다. 수명 주기 정책을 사용하여 파일을 Amazon S3 Glacier Deep Archive로 전환합니다.",
+        "B": "데이터 센터와 Amazon VPC 간에 VPN 연결을 배포합니다. AWS CLI를 사용하여 온프레미스에서 Amazon S3 Glacier로 데이터를 복사합니다.",
+        "C": "500Mbps AWS Direct Connect 연결을 프로비저닝하고 데이터를 Amazon S3로 전송합니다. 수명 주기 정책을 사용하여 파일을 Amazon S3 Glacier Deep Archive로 전환합니다.",
+        "D": "AWS DataSync를 사용하여 데이터를 전송하고 온프레미스에 DataSync 에이전트를 배포합니다. DataSync 작업을 사용하여 온프레미스 NAS 스토리지에서 Amazon S3 Glacier로 파일을 복사합니다."
+      },
+      "eng": {
+        "A": "Order AWS Snowball devices to transfer the data. Use a lifecycle policy to transition the files to Amazon S3 Glacier Deep Archive.",
+        "B": "Deploy a VPN connection between the data center and Amazon VPC. Use the AWS CLI to copy the data from on premises to Amazon S3 Glacier.",
+        "C": "Provision a 500 Mbps AWS Direct Connect connection and transfer the data to Amazon S3. Use a lifecycle policy to transition the files to Amazon S3 Glacier Deep Archive.",
+        "D": "Use AWS DataSync to transfer the data and deploy a DataSync agent on premises. Use the DataSync task to copy files from the on-premises NAS storage to Amazon S3 Glacier."
+      }
+    },
+    "category": [
+      "Data Transfer"
+    ],
+    "subcategory": [
+      "S3",
+      "S3 Glacier Deep Archive",
+      "Snowball",
+      "lifecycle policies"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/94983-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 549,
+    "question": {
+      "kor": "회사는 AWS에서 확장 가능한 웹 애플리케이션을 호스팅하려고 합니다. 응용 프로그램은 전 세계 여러 지역의 사용자가 액세스할 수 있습니다. 애플리케이션 사용자는 최대 기가바이트 크기의 고유한 데이터를 다운로드하고 업로드할 수 있습니다. 개발 팀은 업로드 및 다운로드 대기 시간을 최소화하고 성능을 최대화할 수 있는 비용 효율적인 솔루션을 원합니다.\n이를 달성하기 위해 솔루션 설계자는 무엇을 해야 합니까?",
+      "eng": "A company wants to host a scalable web application on AWS. The application will be accessed by users from different geographic regions of the world. Application users will be able to download and upload unique data up to gigabytes in size. The development team wants a cost-effective solution to minimize upload and download latency and maximize performance.\nWhat should a solutions architect do to accomplish this?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Transfer Acceleration과 함께 Amazon S3를 사용하여 애플리케이션을 호스팅합니다.",
+        "B": "CacheControl 헤더와 함께 Amazon S3를 사용하여 애플리케이션을 호스팅합니다.",
+        "C": "Auto Scaling 및 Amazon CloudFront와 함께 Amazon EC2를 사용하여 애플리케이션을 호스팅합니다.",
+        "D": "Auto Scaling 및 Amazon ElastiCache와 함께 Amazon EC2를 사용하여 애플리케이션을 호스팅합니다."
+      },
+      "eng": {
+        "A": "Use Amazon S3 with Transfer Acceleration to host the application.",
+        "B": "Use Amazon S3 with CacheControl headers to host the application.",
+        "C": "Use Amazon EC2 with Auto Scaling and Amazon CloudFront to host the application.",
+        "D": "Use Amazon EC2 with Auto Scaling and Amazon ElastiCache to host the application."
+      }
+    },
+    "category": [
+      "Data Transfer"
+    ],
+    "subcategory": [
+      "S3",
+      "Transfer Acceleration"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/109424-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 32,
+    "question": {
+      "kor": "회사에서 온프레미스 데이터 센터를 AWS로 마이그레이션하려고 합니다. 데이터 센터는 NFS 기반 파일 시스템에 데이터를 저장하는 SFTP 서버를 호스팅합니다. 서버에는 전송해야 하는 200GB의 데이터가 있습니다. 서버는 Amazon Elastic File System(Amazon EFS) 파일 시스템을 사용하는 Amazon EC2 인스턴스에서 호스팅되어야 합니다.\n이 작업을 자동화하기 위해 솔루션 설계자가 수행해야 하는 단계 조합은 무엇입니까? (두 가지를 선택하세요.)",
+      "eng": "A company wants to migrate an on-premises data center to AWS. The data center hosts an SFTP server that stores its data on an NFS-based file system.\nThe server holds 200 GB of data that needs to be transferred. The server must be hosted on an Amazon EC2 instance that uses an Amazon Elastic File System (Amazon EFS) file system.\nWhich combination of steps should a solutions architect take to automate this task? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "EFS 파일 시스템과 동일한 가용 영역에서 EC2 인스턴스를 시작합니다.",
+        "B": "온프레미스 데이터 센터에 AWS DataSync 에이전트를 설치합니다.",
+        "C": "데이터를 위해 EC2 인스턴스에 보조 Amazon Elastic Block Store(Amazon EBS) 볼륨을 생성합니다.",
+        "D": "운영 체제 복사 명령을 수동으로 사용하여 데이터를 EC2 인스턴스로 푸시합니다.",
+        "E": "AWS DataSync를 사용하여 온프레미스 SFTP 서버에 적합한 위치 구성을 생성합니다."
+      },
+      "eng": {
+        "A": "Launch the EC2 instance into the same Availability Zone as the EFS file system.",
+        "B": "Install an AWS DataSync agent in the on-premises data center.",
+        "C": "Create a secondary Amazon Elastic Block Store (Amazon EBS) volume on the EC2 instance for the data.",
+        "D": "Manually use an operating system copy command to push the data to the EC2 instance.",
+        "E": "Use AWS DataSync to create a suitable location configuration for the on-premises SFTP server."
+      }
+    },
+    "category": [
+      "Data Transfer"
+    ],
+    "subcategory": [
+      "DataSync",
+      "S3"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/85814-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B",
+      "E"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 91,
+    "question": {
+      "kor": "회사는 단일 공장에 있는 여러 기계에서 매일 10TB의 계측 데이터를 받습니다. 데이터는 공장 내에 위치한 온프레미스 데이터 센터의 SAN(Storage Area Network)에 저장된 JSON 파일로 구성됩니다. 이 회사는 이 데이터를 거의 실시간에 가까운 중요한 분석을 제공하는 여러 추가 시스템에서 액세스할 수 있는 Amazon S3로 보내려고 합니다. 데이터가 민감한 것으로 간주되기 때문에 안전한 전송이 중요합니다.\n가장 안정적인 데이터 전송을 제공하는 솔루션은 무엇입니까?",
+      "eng": "A company receives 10 TB of instrumentation data each day from several machines located at a single factory. The data consists of JSON files stored on a storage area network (SAN) in an on-premises data center located within the factory. The company wants to send this data to Amazon S3 where it can be accessed by several additional systems that provide critical near-real-time analytics. A secure transfer is important because the data is considered sensitive.\nWhich solution offers the MOST reliable data transfer?"
+    },
+    "choices": {
+      "kor": {
+        "A": "퍼블릭 인터넷을 통한 AWS DataSync",
+        "B": "AWS Direct Connect를 통한 AWS DataSync",
+        "C": "퍼블릭 인터넷을 통한 AWS DMS(AWS Database Migration Service)",
+        "D": "AWS Direct Connect를 통한 AWS DMS(AWS Database Migration Service)"
+      },
+      "eng": {
+        "A": "AWS DataSync over public internet",
+        "B": "AWS DataSync over AWS Direct Connect",
+        "C": "AWS Database Migration Service (AWS DMS) over public internet",
+        "D": "AWS Database Migration Service (AWS DMS) over AWS Direct Connect"
+      }
+    },
+    "category": [
+      "Data Transfer"
+    ],
+    "subcategory": [
+      "DataSync",
+      "Direct Connect"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/85801-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 339,
+    "question": {
+      "kor": "한 회사가 최근 다른 AWS 리전에 재해 복구 사이트를 만들었습니다. 회사는 정기적으로 두 리전의 NFS 파일 시스템 간에 대량의 데이터를 주고 받아야 합니다.\n최소한의 운영 오버헤드로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company recently created a disaster recovery site in a different AWS Region. The company needs to transfer large amounts of data back and forth between NFS file systems in the two Regions on a periodic basis.\nWhich solution will meet these requirements with the LEAST operational overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS DataSync를 사용하십시오.",
+        "B": "AWS Snowball 디바이스를 사용합니다.",
+        "C": "Amazon EC2에서 SFTP 서버를 설정합니다.",
+        "D": "AWS 데이터베이스 마이그레이션 서비스(AWS DMS)를 사용합니다."
+      },
+      "eng": {
+        "A": "Use AWS DataSync.",
+        "B": "Use AWS Snowball devices.",
+        "C": "Set up an SFTP server on Amazon EC2.",
+        "D": "Use AWS Database Migration Service (AWS DMS)."
+      }
+    },
+    "category": [
+      "Data Transfer"
+    ],
+    "subcategory": [
+      "DataSync"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/99949-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 481,
+    "question": {
+      "kor": "회사는 회사 데이터 센터의 대규모 NAS(Network-Attached Storage) 시스템에 700테라바이트의 데이터를 저장하고 있습니다. 이 회사는 10Gbps AWS Direct Connect 연결을 사용하는 하이브리드 환경을 보유하고 있습니다.\n규제 기관의 감사 후 회사는 90일 이내에 데이터를 클라우드로 옮길 수 있습니다. 회사는 데이터를 중단 없이 효율적으로 이동해야 합니다. 회사는 여전히 이전 기간 동안 데이터에 액세스하고 데이터를 업데이트할 수 있어야 합니다.\n이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company is storing 700 terabytes of data on a large network-attached storage (NAS) system in its corporate data center. The company has a hybrid environment with a 10 Gbps AWS Direct Connect connection.\nAfter an audit from a regulator, the company has 90 days to move the data to the cloud. The company needs to move the data efficiently and without disruption. The company still needs to be able to access and update the data during the transfer window.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "회사 데이터 센터에서 AWS DataSync 에이전트를 생성합니다. 데이터 전송 작업 생성 Amazon S3 버킷으로의 전송을 시작합니다.",
+        "B": "데이터를 AWS Snowball Edge Storage Optimized 디바이스에 백업합니다. 디바이스를 AWS 데이터 센터로 배송합니다. 온프레미스 파일 시스템에 대상 Amazon S3 버킷을 탑재합니다.",
+        "C": "rsync를 사용하여 Direct Connect 연결을 통해 로컬 스토리지에서 지정된 Amazon S3 버킷으로 데이터를 직접 복사합니다.",
+        "D": "테이프에 데이터를 백업합니다. 테이프를 AWS 데이터 센터로 배송합니다. 온프레미스 파일 시스템에 대상 Amazon S3 버킷을 탑재합니다."
+      },
+      "eng": {
+        "A": "Create an AWS DataSync agent in the corporate data center. Create a data transfer task Start the transfer to an Amazon S3 bucket.",
+        "B": "Back up the data to AWS Snowball Edge Storage Optimized devices. Ship the devices to an AWS data center. Mount a target Amazon S3 bucket on the on-premises file system.",
+        "C": "Use rsync to copy the data directly from local storage to a designated Amazon S3 bucket over the Direct Connect connection.",
+        "D": "Back up the data on tapes. Ship the tapes to an AWS data center. Mount a target Amazon S3 bucket on the on-premises file system."
+      }
+    },
+    "category": [
+      "Data Transfer"
+    ],
+    "subcategory": [
+      "DataSync"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/109403-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 489,
+    "question": {
+      "kor": "회사는 온프레미스 위치에서 Amazon S3 버킷으로 100GB의 기록 데이터를 마이그레이션하려고 합니다. 이 회사는 온프레미스에 100Mbps 인터넷 연결을 갖추고 있습니다. 회사는 S3 버킷으로 전송되는 데이터를 암호화해야 합니다. 회사는 새로운 데이터를 Amazon S3에 직접 저장합니다.\n최소한의 운영 오버헤드로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company wants to migrate 100 GB of historical data from an on-premises location to an Amazon S3 bucket. The company has a 100 megabits per second (Mbps) internet connection on premises. The company needs to encrypt the data in transit to the S3 bucket. The company will store new data directly in Amazon S3.\nWhich solution will meet these requirements with the LEAST operational overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS CLI에서 s3 sync 명령을 사용하여 데이터를 S3 버킷으로 직접 이동합니다.",
+        "B": "AWS DataSync를 사용하여 온프레미스 위치에서 S3 버킷으로 데이터 마이그레이션",
+        "C": "AWS Snowball을 사용하여 데이터를 S3 버킷으로 이동",
+        "D": "온프레미스 위치에서 AWS로 IPsec VPN을 설정합니다. AWS CLI에서 s3 cp 명령을 사용하여 데이터를 S3 버킷으로 직접 이동"
+      },
+      "eng": {
+        "A": "Use the s3 sync command in the AWS CLI to move the data directly to an S3 bucket",
+        "B": "Use AWS DataSync to migrate the data from the on-premises location to an S3 bucket",
+        "C": "Use AWS Snowball to move the data to an S3 bucket",
+        "D": "Set up an IPsec VPN from the on-premises location to AWS. Use the s3 cp command in the AWS CLI to move the data directly to an S3 bucket"
+      }
+    },
+    "category": [
+      "Data Transfer"
+    ],
+    "subcategory": [
+      "DataSync"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/109490-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 517,
+    "question": {
+      "kor": "솔루션 아키텍트는 Amazon S3 버킷의 파일을 Amazon Elastic File System(Amazon EFS) 파일 시스템과 다른 S3 버킷으로 복사해야 합니다. 파일은 계속해서 복사되어야 합니다.\n새 파일은 원본 S3 버킷에 지속적으로 추가됩니다. 복사된 파일은 원본 파일이 변경된 경우에만 덮어써야 합니다.\n최소한의 운영 오버헤드로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A solutions architect needs to copy files from an Amazon S3 bucket to an Amazon Elastic File System (Amazon EFS) file system and another S3 bucket. The files must be copied continuously. New files are added to the original S3 bucket consistently. The copied files should be overwritten only if the source file changes.\nWhich solution will meet these requirements with the LEAST operational overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "대상 S3 버킷과 EFS 파일 시스템 모두에 대한 AWS DataSync 위치를 생성합니다. 대상 S3 버킷 및 EFS 파일 시스템에 대한 작업을 생성합니다. 변경된 데이터만 전송하도록 전송 모드를 설정하세요.",
+        "B": "AWS Lambda 함수를 생성합니다. 파일 시스템을 함수에 마운트합니다. Amazon S3에서 파일이 생성되고 변경될 때 함수를 호출하도록 S3 이벤트 알림을 설정합니다. 파일 시스템과 대상 S3 버킷에 파일을 복사하는 기능을 구성합니다.",
+        "C": "대상 S3 버킷과 EFS 파일 시스템 모두에 대한 AWS DataSync 위치를 생성합니다. 대상 S3 버킷 및 EFS 파일 시스템에 대한 작업을 생성합니다. 모든 데이터를 전송하려면 전송 모드를 설정하세요.",
+        "D": "파일 시스템과 동일한 VPC에서 Amazon EC2 인스턴스를 시작합니다. 파일 시스템을 마운트합니다. 원본 S3 버킷에서 변경된 모든 객체를 대상 S3 버킷 및 탑재된 파일 시스템에 정기적으로 동기화하는 스크립트를 만듭니다."
+      },
+      "eng": {
+        "A": "Create an AWS DataSync location for both the destination S3 bucket and the EFS file system. Create a task for the destination S3 bucket and the EFS file system. Set the transfer mode to transfer only data that has changed.",
+        "B": "Create an AWS Lambda function. Mount the file system to the function. Set up an S3 event notification to invoke the function when files are created and changed in Amazon S3. Configure the function to copy files to the file system and the destination S3 bucket.",
+        "C": "Create an AWS DataSync location for both the destination S3 bucket and the EFS file system. Create a task for the destination S3 bucket and the EFS file system. Set the transfer mode to transfer all data.",
+        "D": "Launch an Amazon EC2 instance in the same VPC as the file system. Mount the file system. Create a script to routinely synchronize all objects that changed in the origin S3 bucket to the destination S3 bucket and the mounted file system."
+      }
+    },
+    "category": [
+      "Data Transfer"
+    ],
+    "subcategory": [
+      "DataSync"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/129722-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 551,
+    "question": {
+      "kor": "회사에는 온프레미스에 여러 Windows 파일 서버가 있습니다. 이 회사는 파일을 Windows File Server 파일 시스템용 Amazon FSx로 마이그레이션하고 통합하려고 합니다. 액세스 권한이 변경되지 않도록 하려면 파일 권한을 보존해야 합니다.\n이러한 요구 사항을 충족하는 솔루션은 무엇입니까? (두 가지를 선택하세요.)",
+      "eng": "A company has multiple Windows file servers on premises. The company wants to migrate and consolidate its files into an Amazon FSx for Windows File Server file system. File permissions must be preserved to ensure that access rights do not change.\nWhich solutions will meet these requirements? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "온프레미스에 AWS DataSync 에이전트를 배포합니다. 데이터를 FSx for Windows 파일 서버 파일 시스템으로 전송하도록 DataSync 작업을 예약합니다.",
+        "B": "AWS CLI를 사용하여 각 파일 서버의 공유를 Amazon S3 버킷에 복사합니다. 데이터를 FSx for Windows File Server 파일 시스템으로 전송하도록 AWS DataSync 작업을 예약합니다.",
+        "C": "각 파일 서버에서 드라이브를 제거합니다. Amazon S3로 가져오기 위해 드라이브를 AWS로 배송합니다. 데이터를 FSx for Windows File Server 파일 시스템으로 전송하도록 AWS DataSync 작업을 예약합니다.",
+        "D": "AWS Snowcone 디바이스를 주문합니다. 장치를 온프레미스 네트워크에 연결합니다. 디바이스에서 AWS DataSync 에이전트를 시작합니다. 데이터를 FSx for Windows 파일 서버 파일 시스템으로 전송하도록 DataSync 작업을 예약합니다.",
+        "E": "AWS Snowball Edge Storage Optimized 디바이스를 주문합니다. 장치를 온프레미스 네트워크에 연결합니다. AWS CLI를 사용하여 디바이스에 데이터를 복사합니다. Amazon S3로 가져오기 위해 디바이스를 AWS로 반송합니다. 데이터를 FSx for Windows File Server 파일 시스템으로 전송하도록 AWS DataSync 작업을 예약합니다."
+      },
+      "eng": {
+        "A": "Deploy AWS DataSync agents on premises. Schedule DataSync tasks to transfer the data to the FSx for Windows File Server file system.",
+        "B": "Copy the shares on each file server into Amazon S3 buckets by using the AWS CLI. Schedule AWS DataSync tasks to transfer the data to the FSx for Windows File Server file system.",
+        "C": "Remove the drives from each file server. Ship the drives to AWS for import into Amazon S3. Schedule AWS DataSync tasks to transfer the data to the FSx for Windows File Server file system.",
+        "D": "Order an AWS Snowcone device. Connect the device to the on-premises network. Launch AWS DataSync agents on the device. Schedule DataSync tasks to transfer the data to the FSx for Windows File Server file system.",
+        "E": "Order an AWS Snowball Edge Storage Optimized device. Connect the device to the on-premises network. Copy data to the device by using the AWS CLI. Ship the device back to AWS for import into Amazon S3. Schedule AWS DataSync tasks to transfer the data to the FSx for Windows File Server file system."
+      }
+    },
+    "category": [
+      "Data Transfer"
+    ],
+    "subcategory": [
+      "DataSync",
+      "Snowcone"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/109689-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A",
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 557,
+    "question": {
+      "kor": "회사는 데이터를 온프레미스에 저장합니다. 데이터의 양은 회사가 사용할 수 있는 용량을 초과하여 증가하고 있습니다.\n회사는 온프레미스 위치에서 Amazon S3 버킷으로 데이터를 마이그레이션하려고 합니다. 회사에는 전송 후 데이터의 무결성을 자동으로 검증하는 솔루션이 필요합니다.\n어떤 솔루션이 이러한 요구 사항을 충족합니까?",
+      "eng": "A company stores its data on premises. The amount of data is growing beyond the company's available capacity.\nThe company wants to migrate its data from the on-premises location to an Amazon S3 bucket. The company needs a solution that will automatically validate the integrity of the data after the transfer.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Snowball Edge 디바이스를 주문하십시오. S3 버킷으로 온라인 데이터 전송을 수행하도록 Snowball Edge 디바이스를 구성합니다.",
+        "B": "AWS DataSync 에이전트를 온프레미스에 배포합니다. S3 버킷으로의 온라인 데이터 전송을 수행하도록 DataSync 에이전트를 구성합니다.",
+        "C": "온프레미스에서 Amazon S3 파일 게이트웨이를 생성합니다. S3 파일 게이트웨이를 구성하여 S3 버킷으로 온라인 데이터 전송을 수행합니다.",
+        "D": "온프레미스에서 Amazon S3 Transfer Acceleration에 액셀러레이터를 구성합니다. S3 버킷으로의 온라인 데이터 전송을 수행하도록 액셀러레이터를 구성합니다."
+      },
+      "eng": {
+        "A": "Order an AWS Snowball Edge device. Configure the Snowball Edge device to perform the online data transfer to an S3 bucket",
+        "B": "Deploy an AWS DataSync agent on premises. Configure the DataSync agent to perform the online data transfer to an S3 bucket.",
+        "C": "Create an Amazon S3 File Gateway on premises Configure the S3 File Gateway to perform the online data transfer to an S3 bucket",
+        "D": "Configure an accelerator in Amazon S3 Transfer Acceleration on premises. Configure the accelerator to perform the online data transfer to an S3 bucket."
+      }
+    },
+    "category": [
+      "Data Transfer"
+    ],
+    "subcategory": [
+      "DataSync"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/125338-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 647,
+    "question": {
+      "kor": "한 금융 서비스 회사는 두 개의 데이터 센터를 폐쇄하고 100TB가 넘는 데이터를 AWS로 마이그레이션하려고 합니다. 데이터는 하위 폴더의 깊은 계층 구조로 구성된 수백만 개의 작은 파일을 포함하는 복잡한 디렉터리 구조를 가지고 있습니다. 대부분의 데이터는 구조화되지 않았으며 회사의 파일 스토리지에는 다양한 공급업체의 SMB 기반 스토리지 유형이 포함되어 있습니다.\n회사는 마이그레이션 후 데이터에 액세스하기 위해 애플리케이션을 변경하지 않기를 원합니다.\n솔루션 설계자는 운영 오버헤드를 최소화하면서 이러한 요구 사항을 충족하기 위해 어떤 접근 방식을 취해야 합니까?",
+      "eng": "A financial services company intends to shut down two data centers and migrate over 100 TB of data to AWS. The data has a complex directory structure, containing millions of small files organized in deep hierarchies of subfolders. Most of the data is unstructured, and the company's file storage includes SMBbased storage types from various vendors. The company wishes to avoid altering its applications to access the data post-migration.\nWhat approach should a solutions architect take to meet these requirements while minimizing operational overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Direct Connect를 활용하여 데이터를 Amazon S3로 마이그레이션합니다.",
+        "B": "AWS DataSync를 사용하여 데이터를 Amazon FSx for Lustre로 마이그레이션합니다.",
+        "C": "AWS DataSync를 사용하여 Windows 파일 서버용 Amazon FSx로 데이터를 전송합니다.",
+        "D": "AWS Direct Connect를 사용하여 온프레미스 파일 스토리지를 AWS Storage Gateway 볼륨 게이트웨이로 마이그레이션합니다."
+      },
+      "eng": {
+        "A": "Utilize AWS Direct Connect to migrate the data to Amazon S3.",
+        "B": "Employ AWS DataSync to migrate the data to Amazon FSx for Lustre.",
+        "C": "Use AWS DataSync to transfer the data to Amazon FSx for Windows File Server.",
+        "D": "Use AWS Direct Connect to migrate the on-premises file storage to an AWS Storage Gateway volume gateway."
+      }
+    },
+    "category": [
+      "Data Transfer"
+    ],
+    "subcategory": [
+      "DataSync"
+    ],
+    "rote_memorization": false,
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 663,
+    "question": {
+      "kor": "한 회사의 온프레미스 데이터 센터에 소량의 데이터를 Amazon S3에 정기적으로 백업해야 하는 NFS 서버가 있습니다.\n이러한 요구 사항을 충족하고 가장 비용 효율적인 솔루션은 무엇입니까?",
+      "eng": "A company has NFS servers in an on-premises data center that need to periodically back up small amounts of data to Amazon S3.\nWhich solution meets these requirements and is MOST cost-effective?"
+    },
+    "choices": {
+      "kor": {
+        "A": "온프레미스 서버의 데이터를 Amazon S3에 복사하도록 AWS Glue를 설정합니다.",
+        "B": "온프레미스 서버에 AWS DataSync 에이전트를 설정하고 데이터를 Amazon S3에 동기화합니다.",
+        "C": "AWS Transfer for SFTP를 사용하여 SFTP 동기화를 설정하여 온프레미스에서 Amazon S3로 데이터를 동기화합니다.",
+        "D": "온프레미스 데이터 센터와 VPC 간에 AWS Direct Connect 연결을 설정하고 데이터를 Amazon S3에 복사합니다."
+      },
+      "eng": {
+        "A": "Set up AWS Glue to copy the data from the on-premises servers to Amazon S3.",
+        "B": "Set up an AWS DataSync agent on the on-premises servers, and sync the data to Amazon S3.",
+        "C": "Set up an SFTP sync using AWS Transfer for SFTP to sync data from on premises to Amazon S3.",
+        "D": "Set up an AWS Direct Connect connection between the on-premises data center and a VPC, and copy the data to Amazon S3."
+      }
+    },
+    "category": [
+      "Data Transfer"
+    ],
+    "subcategory": [
+      "DataSync"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/132867-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 787,
+    "question": {
+      "kor": "대학 연구소는 온프레미스 Windows 파일 서버에서 Amazon FSx for Windows File Server로 30TB의 데이터를 마이그레이션해야 합니다. 실험실에는 대학의 다른 많은 부서에서 공유하는 1Gbps 네트워크 링크가 있습니다.\n실험실은 데이터 전송 성능을 최대화할 데이터 마이그레이션 서비스를 구현하려고 합니다. 그러나 실험실은 서비스가 다른 부서에 미치는 영향을 최소화하기 위해 사용하는 대역폭의 양을 제어할 수 있어야 합니다. 데이터 마이그레이션은 향후 5일 이내에 이루어져야 합니다.\n이러한 요구 사항을 충족하는 AWS 솔루션은 무엇입니까?",
+      "eng": "A university research laboratory needs to migrate 30 TB of data from an on-premises Windows file server to Amazon FSx for Windows File Server. The laboratory has a 1 Gbps network link that many other departments in the university share.\nThe laboratory wants to implement a data migration service that will maximize the performance of the data transfer. However, the laboratory needs to be able to control the amount of bandwidth that the service uses to minimize the impact on other departments. The data migration must take place within the next 5 days.\nWhich AWS solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS 스노우콘",
+        "B": "Amazon FSx 파일 게이트웨이",
+        "C": "AWS 데이터싱크",
+        "D": "AWS Transfer Family"
+      },
+      "eng": {
+        "A": "AWS Snowcone",
+        "B": "Amazon FSx File Gateway",
+        "C": "AWS DataSync",
+        "D": "AWS Transfer Family"
+      }
+    },
+    "category": [
+      "Data Transfer"
+    ],
+    "subcategory": [
+      "DataSync"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/99659-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 847,
+    "question": {
+      "kor": "회사에서 온프레미스 데이터 센터를 AWS로 마이그레이션하려고 합니다. 데이터 센터는 NFS 기반 파일 시스템에 데이터를 저장하는 스토리지 서버를 호스팅합니다. 스토리지 서버는 200GB의 데이터를 보유합니다. 회사는 기존 서비스를 중단하지 않고 데이터를 마이그레이션해야 합니다. AWS의 여러 리소스는 NFS 프로토콜을 사용하여 데이터에 액세스할 수 있어야 합니다.\n이러한 요구 사항을 가장 비용 효율적으로 충족하는 단계 조합은 무엇입니까? (2개를 선택하세요.)",
+      "eng": "A company wants to migrate an on-premises data center to AWS. The data center hosts a storage server that stores data in an NFS-based file system. The storage server holds 200 GB of data. The company needs to migrate the data without interruption to existing services. Multiple resources in AWS must be able to access the data by using the NFS protocol.\nWhich combination of steps will meet these requirements MOST cost-effectively? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "Lustre 파일 시스템용 Amazon FSx를 생성합니다.",
+        "B": "Amazon Elastic File System(Amazon EFS) 파일 시스템을 생성합니다.",
+        "C": "데이터를 수신할 Amazon S3 버킷을 생성합니다.",
+        "D": "운영 체제 복사 명령을 수동으로 사용하여 데이터를 AWS 대상으로 푸시합니다.",
+        "E": "온프레미스 데이터 센터에 AWS DataSync 에이전트를 설치합니다. 온프레미스 위치와 AWS 간에 DataSync 작업을 사용합니다."
+      },
+      "eng": {
+        "A": "Create an Amazon FSx for Lustre file system.",
+        "B": "Create an Amazon Elastic File System (Amazon EFS) file system.",
+        "C": "Create an Amazon S3 bucket to receive the data.",
+        "D": "Manually use an operating system copy command to push the data into the AWS destination.",
+        "E": "Install an AWS DataSync agent in the on-premises data center. Use a DataSync task between the on-premises location and AWS."
+      }
+    },
+    "category": [
+      "Data Transfer"
+    ],
+    "subcategory": [
+      "DataSync"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/121176-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B",
+      "E"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 906,
+    "question": {
+      "kor": "한 금융 서비스 회사는 두 개의 데이터 센터를 폐쇄하고 100TB가 넘는 데이터를 AWS로 마이그레이션하려고 합니다. 데이터는 하위 폴더의 깊은 계층에 저장된 수백만 개의 작은 파일로 구성된 복잡한 디렉터리 구조를 가지고 있습니다. 대부분의 데이터는 비정형이며 회사의 파일 스토리지는 여러 공급업체의 SMB 기반 스토리지 유형으로 구성됩니다. 회사는 마이그레이션 후 데이터에 액세스하기 위해 애플리케이션을 변경하고 싶지 않습니다.\n최소한의 운영 오버헤드로 이러한 요구 사항을 충족하려면 솔루션 설계자가 무엇을 해야 합니까?",
+      "eng": "A financial services company wants to shut down two data centers and migrate more than 100 TB of data to AWS. The data has an intricate directory structure with millions of small files stored in deep hierarchies of subfolders. Most of the data is unstructured, and the company’s file storage consists of SMB-based storage types from multiple vendors. The company does not want to change its applications to access the data after migration.\nWhat should a solutions architect do to meet these requirements with the LEAST operational overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Direct Connect를 사용하여 데이터를 Amazon S3로 마이그레이션하십시오.",
+        "B": "AWS DataSync를 사용하여 데이터를 Amazon FSx for Lustre로 마이그레이션합니다.",
+        "C": "AWS DataSync를 사용하여 데이터를 Amazon FSx for Windows File Server로 마이그레이션합니다.",
+        "D": "AWS Direct Connect를 사용하여 온프레미스 데이터 스토리지를 AWS Storage Gateway 볼륨 게이트웨이로 마이그레이션합니다."
+      },
+      "eng": {
+        "A": "Use AWS Direct Connect to migrate the data to Amazon S3.",
+        "B": "Use AWS DataSync to migrate the data to Amazon FSx for Lustre.",
+        "C": "Use AWS DataSync to migrate the data to Amazon FSx for Windows File Server.",
+        "D": "Use AWS Direct Connect to migrate the data on-premises file storage to an AWS Storage Gateway volume gateway."
+      }
+    },
+    "category": [
+      "Data Transfer",
+      "File storage"
+    ],
+    "subcategory": [
+      "DataSync"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/132938-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 366,
+    "question": {
+      "kor": "회사는 의료 애플리케이션의 데이터를 저장해야 합니다. 애플리케이션의 데이터는 자주 변경됩니다. 새로운 규정은 저장된 데이터의 모든 수준에서 감사 액세스를 요구합니다.\n회사는 스토리지 용량이 부족한 온프레미스 인프라에서 애플리케이션을 호스팅합니다. 솔루션 설계자는 새로운 규정을 만족하면서 기존 데이터를 AWS로 안전하게 마이그레이션해야 합니다.\n이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company needs to store data from its healthcare application. The application's data frequently changes. A new regulation requires audit access at all levels of the stored data.\nThe company hosts the application on an on-premises infrastructure that is running out of storage capacity. A solutions architect must securely migrate the existing data to AWS while satisfying the new regulation.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS DataSync를 사용하여 기존 데이터를 Amazon S3로 이동합니다. AWS CloudTrail을 사용하여 데이터 이벤트를 기록합니다.",
+        "B": "AWS Snowcone을 사용하여 기존 데이터를 Amazon S3로 이동합니다. AWS CloudTrail을 사용하여 관리 이벤트를 기록합니다.",
+        "C": "Amazon S3 Transfer Acceleration을 사용하여 기존 데이터를 Amazon S3로 이동합니다. AWS CloudTrail을 사용하여 데이터 이벤트를 기록합니다.",
+        "D": "AWS Storage Gateway를 사용하여 기존 데이터를 Amazon S3로 이동합니다. AWS CloudTrail을 사용하여 관리 이벤트를 기록합니다."
+      },
+      "eng": {
+        "A": "Use AWS DataSync to move the existing data to Amazon S3. Use AWS CloudTrail to log data events.",
+        "B": "Use AWS Snowcone to move the existing data to Amazon S3. Use AWS CloudTrail to log management events.",
+        "C": "Use Amazon S3 Transfer Acceleration to move the existing data to Amazon S3. Use AWS CloudTrail to log data events.",
+        "D": "Use AWS Storage Gateway to move the existing data to Amazon S3. Use AWS CloudTrail to log management events."
+      }
+    },
+    "category": [
+      "Data Transfer"
+    ],
+    "subcategory": [
+      "CloudTrail",
+      "DataSync",
+      "S3"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/87682-exam-aws-certified-solutions-architect-associate-saa-c02/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 387,
+    "question": {
+      "kor": "회사에서 Amazon Elastic Container Service(Amazon ECS)를 사용할 컨테이너화된 애플리케이션을 설계하고 있습니다. 애플리케이션은 내구성이 뛰어나고 RPO(복구 지점 목표)가 8시간인 다른 AWS 리전에 데이터를 복구할 수 있는 공유 파일 시스템에 액세스해야 합니다. 파일 시스템은 리전 내의 각 가용 영역에 탑재 대상을 제공해야 합니다.\n솔루션 설계자는 AWS Backup을 사용하여 다른 리전에 대한 복제를 관리하려고 합니다.\n이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company is designing a containerized application that will use Amazon Elastic Container Service (Amazon ECS). The application needs to access a shared file system that is highly durable and can recover data to another AWS Region with a recovery point objective (RPO) of 8 hours. The file system needs to provide a mount target m each Availability Zone within a Region.\nA solutions architect wants to use AWS Backup to manage the replication to another Region.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "다중 AZ 배포가 있는 Windows 파일 서버용 Amazon FSx",
+        "B": "다중 AZ 배포가 있는 NetApp ONTAP용 Amazon FSx",
+        "C": "표준 스토리지 클래스가 있는 Amazon Elastic File System(Amazon EFS)",
+        "D": "OpenZFS용 Amazon FSx"
+      },
+      "eng": {
+        "A": "Amazon FSx for Windows File Server with a Multi-AZ deployment",
+        "B": "Amazon FSx for NetApp ONTAP with a Multi-AZ deployment",
+        "C": "Amazon Elastic File System (Amazon EFS) with the Standard storage class",
+        "D": "Amazon FSx for OpenZFS"
+      }
+    },
+    "category": [
+      "Container",
+      "Storage"
+    ],
+    "subcategory": [],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/109456-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  }
+]

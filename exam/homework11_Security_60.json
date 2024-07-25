@@ -1,0 +1,2114 @@
+[
+  {
+    "idx": 318,
+    "question": {
+      "kor": "솔루션 설계자는 Amazon S3 버킷에 업로드된 모든 객체가 암호화되도록 하려면 어떻게 해야 합니까?",
+      "eng": "What should a solutions architect do to ensure that all objects uploaded to an Amazon S3 bucket are encrypted?"
+    },
+    "choices": {
+      "kor": {
+        "A": "PutObject에 s3:x-amz-acl 헤더 세트가 없는 경우 거부하도록 버킷 정책을 업데이트합니다.",
+        "B": "PutObject에 프라이빗으로 설정된 s3:x-amz-acl 헤더가 없는 경우 거부하도록 버킷 정책을 업데이트합니다.",
+        "C": "PutObject에 true로 설정된 aws:SecureTransport 헤더가 없는 경우 거부하도록 버킷 정책을 업데이트합니다.",
+        "D": "PutObject에 x-amz-server-side-encryption 헤더 세트가 없는 경우 거부하도록 버킷 정책을 업데이트합니다."
+      },
+      "eng": {
+        "A": "Update the bucket policy to deny if the PutObject does not have an s3:x-amz-acl header set.",
+        "B": "Update the bucket policy to deny if the PutObject does not have an s3:x-amz-acl header set to private.",
+        "C": "Update the bucket policy to deny if the PutObject does not have an aws:SecureTransport header set to true.",
+        "D": "Update the bucket policy to deny if the PutObject does not have an x-amz-server-side-encryption header set."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "server-side encryption"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/99685-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 699,
+    "question": {
+      "kor": "회사에서 기밀 데이터를 Amazon S3에 저장할 준비를 하고 있습니다. 규정 준수를 위해 데이터는 유휴 상태에서 암호화되어야 합니다. 감사 목적으로 암호화 키 사용을 기록해야 합니다. 키는 매년 교체해야 합니다.\n어떤 솔루션이 이러한 요구 사항을 충족하고 운영상 가장 효율적입니까?",
+      "eng": "A company is preparing to store confidential data in Amazon S3. For compliance reasons, the data must be encrypted at rest. Encryption key usage must be logged for auditing purposes. Keys must be rotated every year.\nWhich solution meets these requirements and is the MOST operationally efficient?"
+    },
+    "choices": {
+      "kor": {
+        "A": "고객 제공 키를 사용한 서버 측 암호화(SSE-C)",
+        "B": "Amazon S3 관리 키(SSE-S3)를 사용한 서버 측 암호화",
+        "C": "수동 교체가 있는 AWS KMS 키(SSE-KMS)를 사용한 서버 측 암호화",
+        "D": "자동 교체가 있는 AWS KMS 키(SSE-KMS)를 사용한 서버 측 암호화"
+      },
+      "eng": {
+        "A": "Server-side encryption with customer-provided keys (SSE-C)",
+        "B": "Server-side encryption with Amazon S3 managed keys (SSE-S3)",
+        "C": "Server-side encryption with AWS KMS keys (SSE-KMS) with manual rotation",
+        "D": "Server-side encryption with AWS KMS keys (SSE-KMS) with automatic rotation"
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "server-side encryption"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/85817-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 177,
+    "question": {
+      "kor": "회사의 웹 애플리케이션이 Application Load Balancer 뒤의 Amazon EC2 인스턴스에서 실행 중입니다. 이 회사는 최근 정책을 변경하여 이제 특정 국가에서만 애플리케이션에 액세스하도록 요구합니다.\n이 요구 사항을 충족하는 구성은 무엇입니까?",
+      "eng": "A company’s web application is running on Amazon EC2 instances behind an Application Load Balancer. The company recently changed its policy, which now requires the application to be accessed from one specific country only.\nWhich configuration will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "EC2 인스턴스에 대한 보안 그룹을 구성합니다.",
+        "B": "Application Load Balancer에서 보안 그룹을 구성합니다.",
+        "C": "VPC의 Application Load Balancer에서 AWS WAF를 구성합니다.",
+        "D": "인스턴스를 EC2 포함하는 서브넷에 대한 네트워크 ACL을 구성합니다."
+      },
+      "eng": {
+        "A": "Configure the security group for the EC2 instances.",
+        "B": "Configure the security group on the Application Load Balancer.",
+        "C": "Configure AWS WAF on the Application Load Balancer in a VPC.",
+        "D": "Configure the network ACL for the subnet that contains the EC2 instances."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "WAF"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/87528-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 263,
+    "question": {
+      "kor": "회사에서 새로운 모바일 앱을 개발하고 있습니다. 회사는 교차 사이트 스크립팅 또는 SQL 주입과 같은 일반적인 애플리케이션 수준 공격으로부터 ALB(Application Load Balancer)를 보호하기 위해 적절한 트래픽 필터링을 구현해야 합니다. 이 회사는 최소한의 인프라와 운영 인력을 보유하고 있습니다. 회사는 AWS 환경의 서버를 관리, 업데이트 및 보호하는 책임을 줄여야 합니다.\n이러한 요구 사항을 충족하기 위해 솔루션 설계자는 무엇을 권장해야 합니까?",
+      "eng": "A company is developing a new mobile app. The company must implement proper traffic filtering to protect its Application Load Balancer (ALB) against common application-level attacks, such as cross-site scripting or SQL injection. The company has minimal infrastructure and operational staff. The company needs to reduce its share of the responsibility in managing, updating, and securing servers for its AWS environment.\nWhat should a solutions architect recommend to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS WAF 규칙을 구성하고 이를 ALB와 연결합니다.",
+        "B": "퍼블릭 호스팅이 활성화된 Amazon S3를 사용하여 애플리케이션을 배포합니다.",
+        "C": "AWS Shield Advanced를 배포하고 ALB를 보호된 리소스로 추가합니다.",
+        "D": "타사 방화벽을 실행하는 Amazon EC2 인스턴스로 트래픽을 보낸 다음 트래픽을 현재 ALB로 전달하는 새 ALB를 생성합니다."
+      },
+      "eng": {
+        "A": "Configure AWS WAF rules and associate them with the ALB.",
+        "B": "Deploy the application using Amazon S3 with public hosting enabled.",
+        "C": "Deploy AWS Shield Advanced and add the ALB as a protected resource.",
+        "D": "Create a new ALB that directs traffic to an Amazon EC2 instance running a third-party firewall, which then passes the traffic to the current ALB."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "WAF"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/95301-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 302,
+    "question": {
+      "kor": "회사에서 Amazon API Gateway 및 AWS Lambda를 사용하는 공개적으로 액세스 가능한 서버리스 애플리케이션을 실행하고 있습니다. 최근 애플리케이션의 트래픽이 봇넷의 사기성 요청으로 인해 급증했습니다.\n승인되지 않은 사용자의 요청을 차단하기 위해 솔루션 설계자는 어떤 단계를 수행해야 합니까? (두 가지를 선택하세요.)",
+      "eng": "A company is running a publicly accessible serverless application that uses Amazon API Gateway and AWS Lambda. The application’s traffic recently spiked due to fraudulent requests from botnets.\nWhich steps should a solutions architect take to block requests from unauthorized users? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "정품 사용자에게만 공유되는 API 키로 사용량 계획을 생성합니다.",
+        "B": "사기성 IP 주소의 요청을 무시하도록 Lambda 함수 내에 논리를 통합합니다.",
+        "C": "악성 요청을 대상으로 하는 AWS WAF 규칙을 구현하고 이를 필터링하는 작업을 트리거합니다.",
+        "D": "기존 공개 API를 비공개 API로 전환합니다. DNS 레코드를 업데이트하여 사용자를 새 API 엔드포인트로 리디렉션합니다.",
+        "E": "API에 액세스를 시도하는 각 사용자에 대해 IAM 역할을 생성합니다. 사용자는 API 호출 시 역할을 맡게 됩니다."
+      },
+      "eng": {
+        "A": "Create a usage plan with an API key that is shared with genuine users only.",
+        "B": "Integrate logic within the Lambda function to ignore the requests from fraudulent IP addresses.",
+        "C": "Implement an AWS WAF rule to target malicious requests and trigger actions to filter them out.",
+        "D": "Convert the existing public API to a private API. Update the DNS records to redirect users to the new API endpoint.",
+        "E": "Create an IAM role for each user attempting to access the API. A user will assume the role when making the API call."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "WAF"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/87516-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A",
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 334,
+    "question": {
+      "kor": "미디어 회사는 AWS에서 웹 사이트를 호스팅합니다. 웹 사이트 애플리케이션의 아키텍처에는 ALB(Application Load Balancer) 뒤에 있는 Amazon EC2 인스턴스 플릿과 Amazon Aurora에서 호스팅되는 데이터베이스가 포함됩니다. 회사의 사이버 보안 팀은 애플리케이션이 SQL 주입에 취약하다고 보고합니다.\n회사는 이 문제를 어떻게 해결해야 할까요?",
+      "eng": "A media company hosts its website on AWS. The website application’s architecture includes a fleet of Amazon EC2 instances behind an Application Load Balancer (ALB) and a database that is hosted on Amazon Aurora. The company’s cybersecurity team reports that the application is vulnerable to SQL injection.\nHow should the company resolve this issue?"
+    },
+    "choices": {
+      "kor": {
+        "A": "ALB 앞에서 AWS WAF를 사용합니다. 적절한 웹 ACL을 AWS WAF와 연결합니다.",
+        "B": "고정 응답으로 SQL 주입에 응답하는 ALB 수신기 규칙을 생성합니다.",
+        "C": "모든 SQL 삽입 시도를 자동으로 차단하려면 AWS Shield Advanced에 가입하십시오.",
+        "D": "모든 SQL 주입 시도를 자동으로 차단하도록 Amazon Inspector를 설정합니다."
+      },
+      "eng": {
+        "A": "Use AWS WAF in front of the ALB. Associate the appropriate web ACLs with AWS WAF.",
+        "B": "Create an ALB listener rule to reply to SQL injections with a fixed response.",
+        "C": "Subscribe to AWS Shield Advanced to block all SQL injection attempts automatically.",
+        "D": "Set up Amazon Inspector to block all SQL injection attempts automatically."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "WAF"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/99708-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 396,
+    "question": {
+      "kor": "회사는 Auto Scaling 그룹의 Application Load Balancer(ALB) 뒤에 있는 Amazon EC2 인스턴스에서 전자상거래 웹 사이트를 운영합니다. 사이트에서 IP 주소가 변경되는 불법 외부 시스템의 높은 요청 비율과 관련된 성능 문제가 발생하고 있습니다. 보안 팀은 웹 사이트에 대한 잠재적인 DDoS 공격에 대해 걱정하고 있습니다. 회사는 합법적인 사용자에게 최소한의 영향을 미치는 방식으로 불법적으로 들어오는 요청을 차단해야 합니다.\n솔루션 설계자는 무엇을 추천해야 합니까?",
+      "eng": "A company operates an ecommerce website on Amazon EC2 instances behind an Application Load Balancer (ALB) in an Auto Scaling group. The site is experiencing performance issues related to a high request rate from illegitimate external systems with changing IP addresses. The security team is worried about potential DDoS attacks against the website. The company must block the illegitimate incoming requests in a way that has a minimal impact on legitimate users.\nWhat should a solutions architect recommend?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Inspector를 배포하고 ALB와 연결합니다.",
+        "B": "AWS WAF를 배포하고 ALB와 연결하고 속도 제한 규칙을 구성합니다.",
+        "C": "들어오는 트래픽을 차단하기 위해 ALB와 연결된 네트워크 ACL에 규칙을 배포합니다.",
+        "D": "Amazon GuardDuty를 배포하고 GuardDuty를 구성할 때 속도 제한 보호를 활성화합니다."
+      },
+      "eng": {
+        "A": "Deploy Amazon Inspector and associate it with the ALB.",
+        "B": "Deploy AWS WAF, associate it with the ALB, and configure a rate-limiting rule.",
+        "C": "Deploy rules to the network ACLs associated with the ALB to block the incomingtraffic.",
+        "D": "Deploy Amazon GuardDuty and enable rate-limiting protection when configuring GuardDuty."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "WAF"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/109378-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 494,
+    "question": {
+      "kor": "회사는 대상 그룹이 있는 Auto Scaling 그룹의 Amazon EC2 인스턴스에서 웹 애플리케이션을 실행합니다. 회사는 더 나은 사용자 경험을 위해 세션 선호도(고정 세션)와 함께 작동하도록 애플리케이션을 설계했습니다.\n애플리케이션은 인터넷을 통해 공개적으로 엔드포인트로 사용할 수 있어야 합니다. 추가 보안을 위해 엔드포인트에 WAF를 적용해야 합니다. 세션 선호도(고정 세션)는 엔드포인트에서 구성되어야 합니다.\n이러한 요구 사항을 충족하는 단계 조합은 무엇입니까? (2개를 선택하세요.)",
+      "eng": "A company runs a web application on Amazon EC2 instances in an Auto Scaling group that has a target group. The company designed the application to work with session affinity (sticky sessions) for a better user experience.\nThe application must be available publicly over the internet as an endpoint. A WAF must be applied to the endpoint for additional security. Session affinity (sticky sessions) must be configured on the endpoint.\nWhich combination of steps will meet these requirements? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "공용 Network Load Balancer를 생성합니다. 적용 대상 그룹을 지정합니다.",
+        "B": "게이트웨이 로드 밸런서를 생성합니다. 적용 대상 그룹을 지정합니다.",
+        "C": "공개 Application Load Balancer를 생성합니다. 적용 대상 그룹을 지정합니다.",
+        "D": "두 번째 대상 그룹을 생성합니다. EC2 인스턴스에 탄력적 IP 주소를 추가합니다.",
+        "E": "AWS WAF에서 웹 ACL을 생성합니다. 웹 ACL을 엔드포인트와 연결합니다."
+      },
+      "eng": {
+        "A": "Create a public Network Load Balancer. Specify the application target group.",
+        "B": "Create a Gateway Load Balancer. Specify the application target group.",
+        "C": "Create a public Application Load Balancer. Specify the application target group.",
+        "D": "Create a second target group. Add Elastic IP addresses to the EC2 instances.",
+        "E": "Create a web ACL in AWS WAF. Associate the web ACL with the endpoint."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "WAF"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/128009-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C",
+      "E"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 657,
+    "question": {
+      "kor": "회사의 웹사이트는 대중에게 제품을 판매하는 데 사용됩니다. 이 사이트는 ALB(Application Load Balancer) 뒤에 있는 Auto Scaling 그룹의 Amazon EC2 인스턴스에서 실행됩니다.\nAmazon CloudFront 배포판도 있으며 AWS WAF는 SQL 주입 공격으로부터 보호하는 데 사용되고 있습니다. ALB는 CloudFront 배포의 오리진입니다. 최근 보안 로그를 검토한 결과, 해당 웹사이트에 대한 접근을 차단해야 할 외부 악성 IP가 발견되었습니다.\n솔루션 설계자는 애플리케이션을 보호하기 위해 무엇을 해야 합니까?",
+      "eng": "A company’s website is used to sell products to the public. The site runs on Amazon EC2 instances in an Auto Scaling group behind an Application Load Balancer (ALB). There is also an Amazon CloudFront distribution, and AWS WAF is being used to protect against SQL injection attacks. The ALB is the origin for the CloudFront distribution. A recent review of security logs revealed an external malicious IP that needs to be blocked from accessing the website.\nWhat should a solutions architect do to protect the application?"
+    },
+    "choices": {
+      "kor": {
+        "A": "CloudFront 배포의 네트워크 ACL을 수정하여 악성 IP 주소에 대한 거부 규칙을 추가합니다.",
+        "B": "AWS WAF 구성을 수정하여 악성 IP 주소를 차단하는 IP 일치 조건을 추가합니다.",
+        "C": "ALB 뒤의 대상 그룹에 있는 EC2 인스턴스에 대한 네트워크 ACL을 수정하여 악성 IP 주소를 거부합니다.",
+        "D": "악성 IP 주소를 거부하도록 ALB 뒤의 대상 그룹에 있는 EC2 인스턴스에 대한 보안 그룹을 수정합니다."
+      },
+      "eng": {
+        "A": "Modify the network ACL on the CloudFront distribution to add a deny rule for the malicious IP address.",
+        "B": "Modify the configuration of AWS WAF to add an IP match condition to block the malicious IP address.",
+        "C": "Modify the network ACL for the EC2 instances in the target groups behind the ALB to deny the malicious IP address.",
+        "D": "Modify the security groups for the EC2 instances in the target groups behind the ALB to deny the malicious IP address."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "WAF"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/132940-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 676,
+    "question": {
+      "kor": "한 회사가 Amazon RDS 데이터베이스를 사용하여 Amazon EC2 인스턴스에 애플리케이션을 배포했습니다. 회사는 최소 권한 원칙을 사용하여 데이터베이스 액세스 자격 증명을 구성했습니다. 회사의 보안 팀은 SQL 주입 및 기타 웹 기반 공격으로부터 애플리케이션과 데이터베이스를 보호하려고 합니다.\n최소한의 운영 오버헤드로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company has deployed its application on Amazon EC2 instances with an Amazon RDS database. The company used the principle of least privilege to configure the database access credentials. The company's security team wants to protect the application and the database from SQL injection and other web-based attacks.\nWhich solution will meet these requirements with the LEAST operational overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "보안 그룹과 네트워크 ACL을 사용하여 데이터베이스와 애플리케이션 서버를 보호하십시오.",
+        "B": "AWS WAF를 사용하여 애플리케이션을 보호하십시오. RDS 매개변수 그룹을 사용하여 보안 설정을 구성합니다.",
+        "C": "AWS 네트워크 방화벽을 사용하여 애플리케이션과 데이터베이스를 보호하십시오.",
+        "D": "다양한 기능을 위해 애플리케이션 코드에서 다양한 데이터베이스 계정을 사용합니다. 데이터베이스 사용자에게 과도한 권한을 부여하지 마십시오."
+      },
+      "eng": {
+        "A": "Use security groups and network ACLs to secure the database and application servers.",
+        "B": "Use AWS WAF to protect the application. Use RDS parameter groups to configure the security settings.",
+        "C": "Use AWS Network Firewall to protect the application and the database.",
+        "D": "Use different database accounts in the application code for different functions. Avoid granting excessive privileges to the database users."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "WAF"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/132915-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 689,
+    "question": {
+      "kor": "회사는 Amazon API Gateway를 사용하여 타사 서비스 공급자가 액세스하는 REST API를 관리합니다. 회사는 SQL 주입 및 크로스 사이트 스크립팅 공격으로부터 REST API를 보호해야 합니다.\n이러한 요구 사항을 충족하는 가장 운영 효율적인 솔루션은 무엇입니까?",
+      "eng": "A company uses Amazon API Gateway to manage its REST APIs that third-party service providers access. The company must protect the REST APIs from SQL injection and cross-site scripting attacks.\nWhat is the MOST operationally efficient solution that meets these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Shield를 구성합니다.",
+        "B": "AWS WAF를 구성합니다.",
+        "C": "Amazon CloudFront 배포를 사용하여 API 게이트웨이를 설정합니다. CloudFront에서 AWS Shield를 구성합니다.",
+        "D": "Amazon CloudFront 배포로 API 게이트웨이를 설정합니다. CloudFront에서 AWS WAF를 구성합니다."
+      },
+      "eng": {
+        "A": "Configure AWS Shield.",
+        "B": "Configure AWS WAF.",
+        "C": "Set up API Gateway with an Amazon CloudFront distribution. Configure AWS Shield in CloudFront.",
+        "D": "Set up API Gateway with an Amazon CloudFront distribution. Configure AWS WAF in CloudFront."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "WAF"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/121172-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 703,
+    "question": {
+      "kor": "회사에서 애플리케이션을 AWS로 마이그레이션하려고 합니다. 회사는 애플리케이션의 현재 가용성을 높이고 싶어합니다. 회사는 애플리케이션 아키텍처에서 AWS WAF를 사용하려고 합니다.\n이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company wants to migrate an application to AWS. The company wants to increase the application's current availability. The company wants to use AWS WAF in the application's architecture.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "두 개의 가용 영역에 걸쳐 애플리케이션을 호스팅하는 여러 Amazon EC2 인스턴스를 포함하는 Auto Scaling 그룹을 생성합니다. Application Load Balancer(ALB)를 구성하고 Auto Scaling 그룹을 대상으로 설정합니다. WAF를 ALB에 연결합니다.",
+        "B": "애플리케이션을 호스팅하는 여러 Amazon EC2 인스턴스를 포함하는 클러스터 배치 그룹을 생성합니다. Application Load Balancer를 구성하고 EC2 인스턴스를 대상으로 설정합니다. WAF를 배치 그룹에 연결합니다.",
+        "C": "두 개의 가용 영역에 걸쳐 애플리케이션을 호스팅하는 두 개의 Amazon EC2 인스턴스를 생성합니다. EC2 인스턴스를 ALB(Application Load Balancer)의 대상으로 구성합니다. WAF를 ALB에 연결합니다.",
+        "D": "두 개의 가용 영역에 걸쳐 애플리케이션을 호스팅하는 여러 Amazon EC2 인스턴스를 포함하는 Auto Scaling 그룹을 생성합니다. Application Load Balancer(ALB)를 구성하고 Auto Scaling 그룹을 대상으로 설정합니다. WAF를 Auto Scaling 그룹에 연결합니다."
+      },
+      "eng": {
+        "A": "Create an Auto Scaling group that contains multiple Amazon EC2 instances that host the application across two Availability Zones. Configure an Application Load Balancer (ALB) and set the Auto Scaling group as the target. Connect a WAF to the ALB.",
+        "B": "Create a cluster placement group that contains multiple Amazon EC2 instances that hosts the application. Configure an Application Load Balancer and set the EC2 instances as the targets. Connect a WAF to the placement group.",
+        "C": "Create two Amazon EC2 instances that host the application across two Availability Zones. Configure the EC2 instances as the targets of an Application Load Balancer (ALB). Connect a WAF to the ALB.",
+        "D": "Create an Auto Scaling group that contains multiple Amazon EC2 instances that host the application across two Availability Zones. Configure an Application Load Balancer (ALB) and set the Auto Scaling group as the target. Connect a WAF to the Auto Scaling group."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "WAF"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/139856-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 709,
+    "question": {
+      "kor": "한 회사는 AWS를 사용하여 공개 전자상거래 웹사이트를 호스팅합니다. 웹 사이트는 인터넷 트래픽에 AWS Global Accelerator 액셀러레이터를 사용합니다. Global Accelerator 액셀러레이터는 Auto Scaling 그룹의 진입점인 ALB(Application Load Balancer)로 트래픽을 전달합니다.\n회사는 최근 웹사이트에서 DDoS 공격을 확인했습니다. 회사에는 향후 공격을 완화할 수 있는 솔루션이 필요합니다.\n최소한의 구현 노력으로 이러한 요구 사항을 충족할 수 있는 솔루션은 무엇입니까?",
+      "eng": "A company uses AWS to host its public ecommerce website. The website uses an AWS Global Accelerator accelerator for traffic from the internet. The Global Accelerator accelerator forwards the traffic to an Application Load Balancer (ALB) that is the entry point for an Auto Scaling group.\nThe company recently identified a DDoS attack on the website. The company needs a solution to mitigate future attacks.\nWhich solution will meet these requirements with the LEAST implementation effort?"
+    },
+    "choices": {
+      "kor": {
+        "A": "속도 기반 규칙을 사용하여 Global Accelerator Accelerator가 트래픽을 차단하도록 AWS WAF 웹 ACL을 구성합니다.",
+        "B": "VPC 네트워크 ACL을 업데이트하여 공격을 차단하기 위해 ALB 지표를 읽도록 AWS Lambda 함수를 구성합니다.",
+        "C": "속도 기반 규칙을 사용하여 트래픽을 차단하도록 ALB에서 AWS WAF 웹 ACL을 구성합니다.",
+        "D": "Global Accelerator 액셀러레이터 앞에 Amazon CloudFront 배포를 구성합니다."
+      },
+      "eng": {
+        "A": "Configure an AWS WAF web ACL for the Global Accelerator accelerator to block traffic by using rate-based rules.",
+        "B": "Configure an AWS Lambda function to read the ALB metrics to block attacks by updating a VPC network ACL.",
+        "C": "Configure an AWS WAF web ACL on the ALB to block traffic by using rate-based rules.",
+        "D": "Configure an Amazon CloudFront distribution in front of the Global Accelerator accelerator."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "WAF"
+    ],
+    "rote_memorization": false,
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 780,
+    "question": {
+      "kor": "회사에는 전 세계 20,000개 이상의 소매점 위치에 배포된 클라이언트에게 서비스를 제공하는 애플리케이션이 있습니다. 애플리케이션은 포트 443에서 HTTPS를 통해 노출되는 백엔드 웹 서비스로 구성됩니다. 애플리케이션은 ALB(Application Load Balancer) 뒤의 Amazon EC2 인스턴스에서 호스팅됩니다. 소매점은 공용 인터넷을 통해 웹 애플리케이션과 통신합니다.\n회사는 각 소매점에서 현지 ISP가 할당한 IP 주소를 등록할 수 있도록 허용합니다.\n회사 보안팀에서는 소매점에서 등록한 IP 주소로만 접속을 제한하여 애플리케이션 엔드포인트의 보안을 강화할 것을 권장합니다.\n솔루션 설계자는 이러한 요구 사항을 충족하기 위해 무엇을 해야 합니까?",
+      "eng": "A company has an application that serves clients that are deployed in more than 20.000 retail storefront locations around the world. The application consists of backend web services that are exposed over HTTPS on port 443. The application is hosted on Amazon EC2 instances behind an Application Load Balancer (ALB). The retail locations communicate with the web application over the public internet. The company allows each retail location to register the IP address that the retail location has been allocated by its local ISP.\nThe company's security team recommends to increase the security of the application endpoint by restricting access to only the IP addresses registered by the retail locations.\nWhat should a solutions architect do to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS WAF 웹 ACL을 ALB와 연결합니다. ALB의 IP 규칙 세트를 사용하여 트래픽을 필터링합니다. 등록된 IP 주소를 포함하도록 규칙의 IP 주소를 업데이트합니다.",
+        "B": "AWS Firewall Manager를 배포하여 ALConfigure 방화벽 규칙을 관리하여 AL로의 트래픽을 제한합니다. 등록된 IP 주소를 포함하도록 방화벽 규칙을 수정합니다.",
+        "C": "Amazon DynamoDB 테이블에 IP 주소를 저장합니다. ALB에서 AWS Lambda 인증 기능을 구성하여 수신 요청이 등록된 IP 주소에서 오는지 확인합니다.",
+        "D": "ALB의 공용 인터페이스가 포함된 서브넷에서 네트워크 ACL을 구성합니다. 등록된 각 IP 주소에 대한 항목으로 네트워크 ACL의 수신 규칙을 업데이트합니다."
+      },
+      "eng": {
+        "A": "Associate an AWS WAF web ACL with the ALB. Use IP rule sets on the ALB to filter traffic. Update the IP addresses in the rule to include the registered IP addresses.",
+        "B": "Deploy AWS Firewall Manager to manage the ALConfigure firewall rules to restrict traffic to the ALModify the firewall rules to include the registered IP addresses.",
+        "C": "Store the IP addresses in an Amazon DynamoDB table. Configure an AWS Lambda authorization function on the ALB to validate that incoming requests are from the registered IP addresses.",
+        "D": "Configure the network ACL on the subnet that contains the public interface of the ALB. Update the ingress rules on the network ACL with entries for each of the registered IP addresses."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "WAF"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/121216-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 164,
+    "question": {
+      "kor": "한 회사가 AWS에서 온라인 트랜잭션 처리(OLTP) 워크로드를 실행하고 있습니다. 이 워크로드는 다중 AZ 배포에서 암호화되지 않은 Amazon RDS DB 인스턴스를 사용합니다. 매일 데이터베이스 스냅샷은 이 인스턴스에서 가져옵니다.\n앞으로 데이터베이스와 스냅샷이 항상 암호화되도록 하기 위해 솔루션 설계자는 어떻게 해야 합니까?",
+      "eng": "A company is running an online transaction processing (OLTP) workload on AWS. This workload uses an unencrypted Amazon RDS DB instance in a Multi-AZ deployment. Daily database snapshots are taken from this instance.\nWhat should a solutions architect do to ensure the database and snapshots are always encrypted moving forward?"
+    },
+    "choices": {
+      "kor": {
+        "A": "최신 DB 스냅샷 사본을 암호화한다. 암호화된 스냅샷을 복원하여 기존 DB 인스턴스를 교체합니다.",
+        "B": "새로운 암호화된 Amazon Elastic Block Store(Amazon EBS) 볼륨을 생성하고 여기에 스냅샷을 복사합니다. DB 인스턴스에서 암호화를 활성화합니다.",
+        "C": "스냅샷을 복사하고 AWS Key Management Service(AWS KMS)를 사용하여 암호화를 활성화합니다. 암호화된 스냅샷을 기존 DB 인스턴스로 복원합니다.",
+        "D": "AWS Key Management Service(AWS KMS) 관리형 키(SSE-KMS)로 서버 측 암호화를 사용하여 암호화된 Amazon S3 버킷에 스냅샷을 복사합니다."
+      },
+      "eng": {
+        "A": "Encrypt a copy of the latest DB snapshot. Replace existing DB instance by restoring the encrypted snapshot.",
+        "B": "Create a new encrypted Amazon Elastic Block Store (Amazon EBS) volume and copy the snapshots to it. Enable encryption on the DB instance.",
+        "C": "Copy the snapshots and enable encryption using AWS Key Management Service (AWS KMS) Restore encrypted snapshot to an existing DB instance.",
+        "D": "Copy the snapshots to an Amazon S3 bucket that is encrypted using server-side encryption with AWS Key Management Service (AWS KMS) managed keys (SSE-KMS)."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "Snapshot encyption"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/85941-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 939,
+    "question": {
+      "kor": "AWS를 기반으로 운영되는 한 금융 서비스 회사는 업계 표준을 충족하도록 보안 제어를 설계했습니다. 업계 표준에는 NIST(National Institute of Standards and Technology) 및 PCI DSS(지불 카드 산업 데이터 보안 표준)가 포함됩니다.\n회사의 제3자 감사자는 설계된 통제가 구현되었고 올바르게 작동하고 있다는 증거가 필요합니다. 이 회사는 AWS Organizations의 단일 조직에 수백 개의 AWS 계정을 보유하고 있습니다. 회사는 계정 전체의 현재 통제 상태를 모니터링해야 합니다.\n어떤 솔루션이 이러한 요구 사항을 충족합니까?",
+      "eng": "A financial services company that runs on AWS has designed its security controls to meet industry standards. The industry standards include the National\nInstitute of Standards and Technology (NIST) and the Payment Card Industry Data Security Standard (PCI DSS).\nThe company's third-party auditors need proof that the designed controls have been implemented and are functioning correctly. The company has hundreds of AWS accounts in a single organization in AWS Organizations. The company needs to monitor the current state of the controls across accounts.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "하나의 계정을 조직 마스터 계정에서 Amazon Inspector 위임 관리자 계정으로 지정합니다. Inspector를 Organizations와 통합하여 모든 AWS 계정에서 리소스를 검색하고 스캔합니다. NIST 및 PCI DSS에 대한 Inspector 산업 표준을 활성화합니다.",
+        "B": "하나의 계정을 조직 마스터 계정에서 Amazon GuardDuty 위임 관리자 계정으로 지정합니다. 지정된 GuardDuty 관리자 계정에서 GuardDuty를 활성화하여 모든 멤버 계정을 보호 합니다. NIST 및 PCI DSS에 대한 GuardDuty 산업 표준을 활성화합니다.",
+        "C": "조직 마스터 계정에서 AWS CloudTrail 조직 추적을 구성합니다. 하나의 계정을 규정 준수 계정으로 지정합니다. 규정 준수 계정에서 NIST 및 PCI DSS에 대한 CloudTrail 보안 표준을 활성화합니다.",
+        "D": "하나의 계정을 조직 마스터 계정에서 AWS Security Hub 위임 관리자 계정으로 지정합니다. 지정된 Security Hub 관리자 계정에서 모든 회원 계정에 대해 Security Hub를 활성화 합니다. NIST 및 PCI DSS에 대한 Security Hub 표준을 활성화합니다."
+      },
+      "eng": {
+        "A": "Designate one account as the Amazon Inspector delegated administrator account from the Organizations management account. Integrate Inspector with Organizations to discover and scan resources across all AWS accounts. Enable Inspector industry standards for NIST and PCI DSS.",
+        "B": "Designate one account as the Amazon GuardDuty delegated administrator account from the Organizations management account. In the designated GuardDuty administrator account, enable GuardDuty to protect all member accounts. Enable GuardDuty industry standards for NIST and PCI DSS.",
+        "C": "Configure an AWS CloudTrail organization trail in the Organizations management account. Designate one account as the compliance account. Enable CloudTrail security standards for NIST and PCI DSS in the compliance account.",
+        "D": "Designate one account as the AWS Security Hub delegated administrator account from the Organizations management account. In the designated Security Hub administrator account, enable Security Hub for all member accounts. Enable Security Hub standards for NIST and PCI DSS."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "Security Hub"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/136994-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 310,
+    "question": {
+      "kor": "회사는 리전의 데이터베이스에 기밀 ap-southeast-3 Amazon Aurora PostgreSQL 데이터를 저장합니다. 데이터베이스는 AWS Key Management Service(AWS KMS) 고객 관리형 키로 암호화됩니다. 이 회사는 최근에 인수되었으며 ap-southeast-3에서 인수 회사의 AWS 계정과 데이터베이스 백업을 안전하게 공유해야 합니다.\n솔루션 설계자는 이러한 요구 사항을 충족하기 위해 무엇을 해야 합니까?",
+      "eng": "A company stores confidential data in an Amazon Aurora PostgreSQL database in the ap-southeast-3 Region. The database is encrypted with an AWS Key\nManagement Service (AWS KMS) customer managed key. The company was recently acquired and must securely share a backup of the database with the acquiring company’s AWS account in ap-southeast-3.\nWhat should a solutions architect do to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "데이터베이스 스냅샷을 생성합니다. 스냅샷을 암호화되지 않은 새 스냅샷에 복사합니다. 인수 회사의 AWS 계정과 새 스냅샷을 공유합니다.",
+        "B": "데이터베이스 스냅샷을 생성합니다. 인수 회사의 AWS 계정을 KMS 키 정책에 추가합니다. 인수 회사의 AWS 계정과 스냅샷을 공유합니다.",
+        "C": "다른 AWS 관리형 KMS 키를 사용하는 데이터베이스 스냅샷을 생성합니다. 인수 회사의 AWS 계정을 KMS 키 별칭에 추가합니다. 인수 회사의 AWS 계정과 스냅샷을 공유합니다.",
+        "D": "데이터베이스 스냅샷을 생성합니다. 데이터베이스 스냅샷을 다운로드합니다. Amazon S3 버킷에 데이터베이스 스냅샷을 업로드합니다. 인수 회사의 AWS 계정에서 액세스를 허용하도록 S3 버킷 정책을 업데이트합니다."
+      },
+      "eng": {
+        "A": "Create a database snapshot. Copy the snapshot to a new unencrypted snapshot. Share the new snapshot with the acquiring company’s AWS account.",
+        "B": "Create a database snapshot. Add the acquiring company’s AWS account to the KMS key policy. Share the snapshot with the acquiring company’s AWS account.",
+        "C": "Create a database snapshot that uses a different AWS managed KMS key. Add the acquiring company’s AWS account to the KMS key alias. Share the snapshot with the acquiring company's AWS account.",
+        "D": "Create a database snapshot. Download the database snapshot. Upload the database snapshot to an Amazon S3 bucket. Update the S3 bucket policy to allow access from the acquiring company’s AWS account."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "KMS"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/100299-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 266,
+    "question": {
+      "kor": "회사는 온프레미스 데이터 센터의 여러 애플리케이션에 영향을 미치는 위반을 경험했습니다. 공격자는 서버에서 실행 중인 맞춤형 애플리케이션의 취약점을 이용했습니다. 이 회사는 현재 Amazon EC2 인스턴스에서 실행되도록 애플리케이션을 마이그레이션하고 있습니다. 이 회사는 EC2 인스턴스의 취약성을 능동적으로 스캔하고 결과를 자세히 설명하는 보고서를 보내는\n솔루션을 구현하려고 합니다.\n이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company experienced a breach that affected several applications in its on-premises data center. The attacker took advantage of vulnerabilities in the custom applications that were running on the servers. The company is now migrating its applications to run on Amazon EC2 instances. The company wants to implement a solution that actively scans for vulnerabilities on the EC2 instances and sends a report that details the findings.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Shield를 배포하여 EC2 인스턴스의 취약점을 스캔합니다. 결과를 AWS CloudTrail에 기록하는 AWS Lambda 함수를 생성합니다.",
+        "B": "Amazon Macie 및 AWS Lambda 함수를 배포하여 EC2 인스턴스의 취약점을 스캔합니다. 결과를 AWS CloudTrail에 기록합니다.",
+        "C": "Amazon GuardDuty를 켭니다. GuardDuty 에이전트를 EC2 인스턴스에 배포합니다. 결과를 자세히 설명하는 보고서의 생성 및 배포를 자동화하도록 AWS Lambda 함수를 구성합니다.",
+        "D": "Amazon Inspector를 켭니다. Amazon Inspector 에이전트를 EC2 인스턴스에 배포합니다. 결과를 자세히 설명하는 보고서의 생성 및 배포를 자동화하도록 AWS Lambda 함수를",
+        "E": "구성합니다."
+      },
+      "eng": {
+        "A": "Deploy AWS Shield to scan the EC2 instances for vulnerabilities. Create an AWS Lambda function to log any findings to AWS CloudTrail.",
+        "B": "Deploy Amazon Macie and AWS Lambda functions to scan the EC2 instances for vulnerabilities. Log any findings to AWS CloudTrail.",
+        "C": "Turn on Amazon GuardDuty. Deploy the GuardDuty agents to the EC2 instances. Configure an AWS Lambda function to automate the generation and distribution of reports that detail the findings.",
+        "D": "Turn on Amazon Inspector. Deploy the Amazon Inspector agent to the EC2 instances. Configure an AWS Lambda function to automate the generation and distribution of reports that detail the findings."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "Inspector"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/99808-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 582,
+    "question": {
+      "kor": "보안 감사 결과 Amazon EC2 인스턴스가 정기적으로 패치되지 않는 것으로 나타났습니다. 솔루션 설계자는 대규모 인스턴스 전체에 EC2 대해 정기적인 보안 스캔을 실행할 솔루션을 제공해야 합니다. 또한 솔루션은 정기적으로 EC2 인스턴스를 패치하고 각 인스턴스의 패치 상태에 대한 보고서를 제공해야 합니다.\n이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A security audit reveals that Amazon EC2 instances are not being patched regularly. A solutions architect needs to provide a solution that will run regular security scans across a large fleet of EC2 instances. The solution should also patch the EC2 instances on a regular schedule and provide a report of each instance’s patch status.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "EC2 인스턴스에서 소프트웨어 취약성을 스캔하도록 Amazon Macie를 설정합니다. 각 EC2 인스턴스에서 cron 작업을 설정하여 정기적인 일정에 따라 인스턴스를 패치합니다.",
+        "B": "계정에서 Amazon GuardDuty를 켭니다. 소프트웨어 취약성에 대해 EC2 인스턴스를 스캔하도록 GuardDuty를 구성합니다. 정기적인 일정에 따라 EC2 인스턴스를 패치하도록 AWS Systems Manager Session Manager를 설정합니다.",
+        "C": "소프트웨어 취약성에 대해 EC2 인스턴스를 스캔하도록 Amazon Detective를 설정합니다. 정기적인 일정에 따라 EC2 인스턴스를 패치하도록 Amazon EventBridge 예약 규칙을 설정합니다.",
+        "D": "계정에서 Amazon Inspector를 켭니다. 소프트웨어 취약성에 대해 EC2 인스턴스를 스캔하도록 Amazon Inspector를 구성합니다. 정기적인 일정에 따라 EC2 인스턴스를 패치하도록 AWS Systems Manager Patch Manager를 설정합니다."
+      },
+      "eng": {
+        "A": "Set up Amazon Macie to scan the EC2 instances for software vulnerabilities. Set up a cron job on each EC2 instance to patch the instance on a regular schedule.",
+        "B": "Turn on Amazon GuardDuty in the account. Configure GuardDuty to scan the EC2 instances for software vulnerabilities. Set up AWS Systems Manager Session Manager to patch the EC2 instances on a regular schedule.",
+        "C": "Set up Amazon Detective to scan the EC2 instances for software vulnerabilities. Set up an Amazon EventBridge scheduled rule to patch the EC2 instances on a regular schedule.",
+        "D": "Turn on Amazon Inspector in the account. Configure Amazon Inspector to scan the EC2 instances for software vulnerabilities. Set up AWS Systems Manager Patch Manager to patch the EC2 instances on a regular schedule."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "Inspector"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/99796-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 727,
+    "question": {
+      "kor": "한 회사는 수백 대의 온프레미스 가상 머신(VM)을 Amazon EC2 인스턴스로 마이그레이션했습니다. 인스턴스는 여러 Linux 배포판과 함께 다양한 Windows Server 버전을 실행합니다.\n회사는 운영 체제의 인벤토리 및 업데이트를 자동화하는 솔루션을 원합니다. 또한 회사는 정기적인 월별 검토를 위해 각 인스턴스의 일반적인 취약점에 대한 요약을 필요로 합니다.\n솔루션 설계자는 이러한 요구 사항을 충족하기 위해 무엇을 권장해야 합니까?",
+      "eng": "A company has migrated a fleet of hundreds of on-premises virtual machines (VMs) to Amazon EC2 instances. The instances run a diverse fleet of Windows Server versions along with several Linux distributions. The company wants a solution that will automate inventory and updates of the operating systems. The company also needs a summary of common vulnerabilities of each instance for regular monthly reviews.\nWhat should a solutions architect recommend to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "모든 EC2 인스턴스를 관리하도록 AWS 시스템 관리자 패치 관리자를 설정합니다. 월별 보고서를 생성하도록 AWS Security Hub를 구성합니다.",
+        "B": "모든 EC2 인스턴스를 관리하도록 AWS 시스템 관리자 패치 관리자를 설정합니다. Amazon Inspector를 배포하고 월별 보고서를 구성합니다.",
+        "C": "AWS Shield Advanced를 설정하고 월별 보고서를 구성합니다. AWS Config를 배포하여 EC2 인스턴스에 패치 설치를 자동화합니다.",
+        "D": "모든 EC2 인스턴스를 모니터링하려면 계정에 Amazon GuardDuty를 설정하십시오. AWS Config를 배포하여 EC2 인스턴스에 패치 설치를 자동화합니다."
+      },
+      "eng": {
+        "A": "Set up AWS Systems Manager Patch Manager to manage all the EC2 instances. Configure AWS Security Hub to produce monthly reports.",
+        "B": "Set up AWS Systems Manager Patch Manager to manage all the EC2 instances. Deploy Amazon Inspector, and configure monthly reports.",
+        "C": "Set up AWS Shield Advanced, and configure monthly reports. Deploy AWS Config to automate patch installations on the EC2 instances.",
+        "D": "Set up Amazon GuardDuty in the account to monitor all EC2 instances. Deploy AWS Config to automate patch installations on the EC2 instances."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "Inspector"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/137853-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 609,
+    "question": {
+      "kor": "전자 상거래 회사는 AWS Organizations의 조직에 속한 AWS 계정에서 애플리케이션을 실행합니다. 애플리케이션은 모든 계정의 Amazon Aurora PostgreSQL 데이터베이스에서 실행됩니다. 회사는 악의적인 활동을 방지해야 하며 데이터베이스에 대한 비정상적으로 실패하거나 불완전한 로그인 시도를 식별해야 합니다.\n어떤 솔루션이 운영상 가장 효율적인 방식으로 이러한 요구 사항을 충족합니까?",
+      "eng": "An ecommerce company runs applications in AWS accounts that are part of an organization in AWS Organizations. The applications run on Amazon Aurora PostgreSQL databases across all the accounts. The company needs to prevent malicious activity and must identify abnormal failed and incomplete login attempts to the databases.\nWhich solution will meet these requirements in the MOST operationally efficient way?"
+    },
+    "choices": {
+      "kor": {
+        "A": "서비스 제어 정책(SCP)을 조직의 루트에 연결하여 실패한 로그인 시도를 식별합니다.",
+        "B": "조직의 회원 계정에 대해 Amazon GuardDuty에서 Amazon RDS 보호 기능을 활성화합니다.",
+        "C": "Amazon CloudWatch Logs의 로그 그룹에 Aurora 일반 로그를 게시합니다. 로그 데이터를 중앙 Amazon S3 버킷으로 내보냅니다.",
+        "D": "AWS CloudTrail의 모든 Aurora PostgreSQL 데이터베이스 이벤트를 중앙 Amazon S3 버킷에 게시합니다."
+      },
+      "eng": {
+        "A": "Attach service control policies (SCPs) to the root of the organization to identity the failed login attempts.",
+        "B": "Enable the Amazon RDS Protection feature in Amazon GuardDuty for the member accounts of the organization.",
+        "C": "Publish the Aurora general logs to a log group in Amazon CloudWatch Logs. Export the log data to a central Amazon S3 bucket.",
+        "D": "Publish all the Aurora PostgreSQL database events in AWS CloudTrail to a central Amazon S3 bucket."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "GuardDuty"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/132916-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 694,
+    "question": {
+      "kor": "회사의 웹 애플리케이션은 VPC의 Application Load Balancer 뒤에서 실행되는 여러 Amazon EC2 인스턴스로 구성됩니다. MySQL DB 인스턴스용 Amazon RDS에는 데이터가 포함되어 있습니다. 회사에는 AWS 환경에서 의심스럽거나 예상치 못한 동작을 자동으로 감지하고 대응할 수 있는 기능이 필요합니다. 이 회사는 이미 자사 아키텍처에 AWS WAF를 추가했습니다.\n솔루션 설계자는 위협으로부터 보호하기 위해 다음으로 무엇을 해야 합니까?",
+      "eng": "A company's web application consists of multiple Amazon EC2 instances that run behind an Application Load Balancer in a VPC. An Amazon RDS for MySQL DB instance contains the data. The company needs the ability to automatically detect and respond to suspicious or unexpected behavior in its AWS environment. The company already has added AWS WAF to its architecture.\nWhat should a solutions architect do next to protect against threats?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon GuardDuty를 사용하여 위협 탐지를 수행하십시오. GuardDuty 결과를 필터링하고 AWS Lambda 함수를 호출하여 AWS WAF 규칙을 조정하도록 Amazon EventBridge를 구성합니다.",
+        "B": "AWS Firewall Manager를 사용하여 위협 탐지를 수행합니다. Firewall Manager 결과를 필터링하고 AWS Lambda 함수를 호출하여 AWS WAF 웹 ACL을 조정하도록 Amazon EventBridge를 구성합니다.",
+        "C": "Amazon Inspector를 사용하여 위협 탐지를 수행하고 AWS WAF 규칙을 업데이트합니다. 웹 애플리케이션에 대한 액세스를 제한하려면 VPC 네트워크 ACL을 만듭니다.",
+        "D": "Amazon Macie를 사용하여 위협 탐지를 수행하고 AWS WAF 규칙을 업데이트합니다. 웹 애플리케이션에 대한 액세스를 제한하려면 VPC 네트워크 ACL을 만듭니다."
+      },
+      "eng": {
+        "A": "Use Amazon GuardDuty to perform threat detection. Configure Amazon EventBridge to filter for GuardDuty findings and to invoke an AWS Lambda function to adjust the AWS WAF rules.",
+        "B": "Use AWS Firewall Manager to perform threat detection. Configure Amazon EventBridge to filter for Firewall Manager findings and to invoke an AWS Lambda function to adjust the AWS WAF web ACL.",
+        "C": "Use Amazon Inspector to perform threat detection and to update the AWS WAF rules. Create a VPC network ACL to limit access to the web application.",
+        "D": "Use Amazon Macie to perform threat detection and to update the AWS WAF rules. Create a VPC network ACL to limit access to the web application."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "GuardDuty"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/137862-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 67,
+    "question": {
+      "kor": "한 회사에 AWS에 배포된 3계층 웹 애플리케이션이 있습니다. 웹 서버는 VPC의 퍼블릭 서브넷에 배포됩니다. 애플리케이션 서버와 데이터베이스 서버는 동일한 VPC의 프라이빗 서브넷에 배포됩니다. 이 회사는 검사 VPC의 AWS Marketplace에서 타사 가상 방화벽 어플라이언스를 배포했습니다. 기기는 IP 패킷을 수락할 수 있는 IP 인터페이스로 구성됩니다.\n솔루션 설계자는 트래픽이 웹 서버에 도달하기 전에 애플리케이션에 대한 모든 트래픽을 검사하기 위해 웹 애플리케이션을 어플라이언스와 통합해야 합니다.\n최소한의 운영 오버헤드로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company has a three-tier web application that is deployed on AWS. The web servers are deployed in a public subnet in a VPC. The application servers and database servers are deployed in private subnets in the same VPC. The company has deployed a third-party virtual firewall appliance from AWS Marketplace in an inspection VPC. The appliance is configured with an IP interface that can accept IP packets.\nA solutions architect needs to integrate the web application with the appliance to inspect all traffic to the application before the traffic reaches the web server.\nWhich solution will meet these requirements with the LEAST operational overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "애플리케이션 VPC의 퍼블릭 서브넷에 Network Load Balancer를 생성하여 패킷 검사를 위해 어플라이언스로 트래픽을 라우팅합니다.",
+        "B": "애플리케이션 VPC의 퍼블릭 서브넷에 Application Load Balancer를 생성하여 패킷 검사를 위해 트래픽을 어플라이언스로 라우팅합니다.",
+        "C": "Transit Gateway를 통해 들어오는 패킷을 라우팅하도록 라우팅 테이블을 구성하는 검사 VPC에 Transit Gateway를 배포합니다.",
+        "D": "검사 VPC에 게이트웨이 로드 밸런서를 배포합니다. 수신 패킷을 수신하고 패킷을 어플라이언스로 전달하기 위한 게이트웨이 로드 밸런서 엔드포인트를 생성합니다."
+      },
+      "eng": {
+        "A": "Create a Network Load Balancer in the public subnet of the application's VPC to route the traffic to the appliance for packet inspection.",
+        "B": "Create an Application Load Balancer in the public subnet of the application's VPC to route the traffic to the appliance for packet inspection.",
+        "C": "Deploy a transit gateway in the inspection VPConfigure route tables to route the incoming packets through the transit gateway.",
+        "D": "Deploy a Gateway Load Balancer in the inspection VPC. Create a Gateway Load Balancer endpoint to receive the incoming packets and forward the packets to the appliance."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "Gateway Load Balancer"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/94990-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 3,
+    "question": {
+      "kor": "솔루션 설계자는 Amazon EC2 인스턴스를 호스팅하는 VPC 네트워크를 보호해야 합니다. EC2 인스턴스는 매우 민감한 데이터를 포함하고 프라이빗 서브넷에서 실행됩니다. 회사 정책에 따라 VPC에서 실행되는 EC2 인스턴스는 타사 URL을 사용하는 소프트웨어 제품 업데이트를 위해 인터넷에서 승인된 타사 소프트웨어 리포지토리에만 액세스할 수 있습니다. 다른 인터넷 트래픽은 차단되어야 합니다.\n어떤 솔루션이 이러한 요구 사항을 충족합니까?",
+      "eng": "A solutions architect must secure a VPC network that hosts Amazon EC2 instances. The EC2 instances contain highly sensitive data and run in a private subnet. According to company policy, the EC2 instances that run in the VPC can access only approved third-party software repositories on the internet for software product updates that use the third party’s URL. Other internet traffic must be blocked.\nWhich solution meets these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "아웃바운드 트래픽을 AWS 네트워크 방화벽 방화벽으로 라우팅하도록 프라이빗 서브넷의 라우팅 테이블을 업데이트합니다. 도메인 목록 규칙 그룹을 구성합니다.",
+        "B": "AWS WAF 웹 ACL을 설정합니다. 소스 및 대상 IP 주소 범위 집합을 기반으로 트래픽 요청을 필터링하는 사용자 지정 규칙 집합을 만듭니다.",
+        "C": "엄격한 인바운드 보안 그룹 규칙을 구현합니다. URL을 지정하여 인터넷에서 승인된 소프트웨어 리포지토리에 대한 트래픽만 허용하는 아웃바운드 규칙을 구성합니다.",
+        "D": "EC2 인스턴스 앞에 Application Load Balancer(ALB)를 구성합니다. 모든 아웃바운드 트래픽을 ALB로 보냅니다. 인터넷에 대한 아웃바운드 액세스를 위해 ALB의 대상 그룹에서 URL 기반 규칙 리스너를 사용합니다."
+      },
+      "eng": {
+        "A": "Update the route table for the private subnet to route the outbound traffic to an AWS Network Firewall firewall. Configure domain list rule groups.",
+        "B": "Set up an AWS WAF web ACL. Create a custom set of rules that filter traffic requests based on source and destination IP address range sets.",
+        "C": "Implement strict inbound security group rules. Configure an outbound rule that allows traffic only to the authorized software repositories on the internet by specifying the URLs.",
+        "D": "Configure an Application Load Balancer (ALB) in front of the EC2 instances. Direct all outbound traffic to the ALB. Use a URL-based rule listener in the ALB’s target group for outbound access to the internet."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "Firewall",
+      "VPC security"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/99795-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 97,
+    "question": {
+      "kor": "최근에 AWS로 마이그레이션한 회사에서 프로덕션 VPC로 들어오고 나가는 트래픽을 보호하기 위한 솔루션을 구현하려고 합니다. 이 회사는 온프레미스 데이터 센터에 검사 서버를 가지고 있었습니다. 검사 서버는 트래픽 흐름 검사 및 트래픽 필터링과 같은 특정 작업을 수행했습니다. 회사는 AWS 클라우드에서 동일한 기능을 갖기를 원합니다.\n이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company recently migrated to AWS and wants to implement a solution to protect the traffic that flows in and out of the production VPC. The company had an inspection server in its on-premises data center. The inspection server performed specific operations such as traffic flow inspection and traffic filtering.\nThe company wants to have the same functionalities in the AWS Cloud.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "프로덕션 VPC에서 트래픽 검사 및 트래픽 필터링에 Amazon GuardDuty를 사용하십시오.",
+        "B": "트래픽 미러링을 사용하여 트래픽 검사 및 필터링을 위해 프로덕션 VPC의 트래픽을 미러링합니다.",
+        "C": "AWS Network Firewall을 사용하여 프로덕션 VPC에 대한 트래픽 검사 및 트래픽 필터링에 필요한 규칙을 생성합니다.",
+        "D": "AWS Firewall Manager를 사용하여 프로덕션 VPC에 대한 트래픽 검사 및 트래픽 필터링에 필요한 규칙을 생성합니다."
+      },
+      "eng": {
+        "A": "Use Amazon GuardDuty for traffic inspection and traffic filtering in the production VPC.",
+        "B": "Use Traffic Mirroring to mirror traffic from the production VPC for traffic inspection and filtering.",
+        "C": "Use AWS Network Firewall to create the required rules for traffic inspection and traffic filtering for the production VPC.",
+        "D": "Use AWS Firewall Manager to create the required rules for traffic inspection and traffic filtering for the production VPC."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "Firewall"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/84731-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 176,
+    "question": {
+      "kor": "한 글로벌 기업이 Amazon API Gateway를 사용하여 us-east-1 리전 및 ap-southeast-2 리전의 로열티 클럽 사용자를 위한 REST API를 설계하고 있습니다. 솔루션 설계자는 SQL 주입 및 교차 사이트 스크립팅 공격으로부터 여러 계정에 걸쳐 이러한 API Gateway 관리형 REST API를 보호하는 솔루션을 설계해야 합니다.\n최소한의 관리 노력으로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A global company is using Amazon API Gateway to design REST APIs for its loyalty club users in the us-east-1 Region and the ap-southeast-2 Region. A solutions architect must design a solution to protect these API Gateway managed REST APIs across multiple accounts from SQL injection and cross-site scripting attacks.\nWhich solution will meet these requirements with the LEAST amount of administrative effort?"
+    },
+    "choices": {
+      "kor": {
+        "A": "두 리전에서 AWS WAF를 설정합니다. 리전 웹 ACL을 API 단계와 연결합니다.",
+        "B": "두 리전에서 AWS Firewall Manager를 설정합니다. AWS WAF 규칙을 중앙에서 구성합니다.",
+        "C": "목욕 지역에 AWS Shield를 설정하십시오. 리전 웹 ACL을 API 단계와 연결합니다.",
+        "D": "리전 중 하나에 AWS Shield를 설정합니다. 리전 웹 ACL을 API 단계와 연결합니다."
+      },
+      "eng": {
+        "A": "Set up AWS WAF in both Regions. Associate Regional web ACLs with an API stage.",
+        "B": "Set up AWS Firewall Manager in both Regions. Centrally configure AWS WAF rules.",
+        "C": "Set up AWS Shield in bath Regions. Associate Regional web ACLs with an API stage.",
+        "D": "Set up AWS Shield in one of the Regions. Associate Regional web ACLs with an API stage."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "Firewall"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/86450-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 293,
+    "question": {
+      "kor": "솔루션 설계자는 Amazon EC2 인스턴스를 호스팅하는 VPC 네트워크를 보호해야 합니다. 인스턴스는 매우 민감한 데이터를 포함하고 EC2 프라이빗 서브넷에서 실행됩니다. 회사 정책에 따라 VPC에서 실행되는 EC2 인스턴스는 타사 URL을 사용하는 소프트웨어 제품 업데이트를 위해 인터넷에서 승인된 타사 소프트웨어 리포지토리에만 액세스할 수 있습니다. 다른 인터넷 트래픽은 차단되어야 합니다.\n어떤 솔루션이 이러한 요구 사항을 충족합니까?",
+      "eng": "A solutions architect must secure a VPC network that hosts Amazon EC2 instances. The EC2 instances contain highly sensitive data and run in a private subnet. According to company policy, the EC2 instances that run in the VPC can access only approved third-party software repositories on the internet for software product updates that use the third party’s URL. Other internet traffic must be blocked.\nWhich solution meets these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "아웃바운드 트래픽을 AWS 네트워크 방화벽 방화벽으로 라우팅하도록 프라이빗 서브넷의 라우팅 테이블을 업데이트합니다. 도메인 목록 규칙 그룹을 구성합니다.",
+        "B": "AWS WAF 웹 ACL을 설정합니다. 소스 및 대상 IP 주소 범위 집합을 기반으로 트래픽 요청을 필터링하는 사용자 지정 규칙 집합을 만듭니다.",
+        "C": "엄격한 인바운드 보안 그룹 규칙을 구현합니다. URL을 지정하여 인터넷에서 승인된 소프트웨어 리포지토리에 대한 트래픽만 허용하는 아웃바운드 규칙을 구성합니다.",
+        "D": "EC2 인스턴스 앞에 Application Load Balancer(ALB)를 구성합니다. 모든 아웃바운드 트래픽을 ALB로 보냅니다. 인터넷에 대한 아웃바운드 액세스를 위해 ALB의 대상 그룹에서 URL 기반 규칙 리스너를 사용합니다."
+      },
+      "eng": {
+        "A": "Update the route table for the private subnet to route the outbound traffic to an AWS Network Firewall firewall. Configure domain list rule groups.",
+        "B": "Set up an AWS WAF web ACL. Create a custom set of rules that filter traffic requests based on source and destination IP address range sets.",
+        "C": "Implement strict inbound security group rules. Configure an outbound rule that allows traffic only to the authorized software repositories on the internet by specifying the URLs.",
+        "D": "Configure an Application Load Balancer (ALB) in front of the EC2 instances. Direct all outbound traffic to the ALB. Use a URL-based rule listener in the ALB’s target group for outbound access to the internet."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "Firewall"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/99795-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 220,
+    "question": {
+      "kor": "회사에서 Amazon EC2 인스턴스에 새 애플리케이션을 배포하고 있습니다. 애플리케이션은 Amazon Elastic Block Store(Amazon EBS) 볼륨에 데이터를 씁니다. 회사는 EBS 볼륨\n에 기록된 모든 데이터가 유휴 상태에서 암호화되도록 해야 합니다.\n이 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company is deploying a new application on Amazon EC2 instances. The application writes data to Amazon Elastic Block Store (Amazon EBS) volumes.\nThe company needs to ensure that all data that is written to the EBS volumes is encrypted at rest.\nWhich solution will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "EBS 암호화를 지정하는 IAM 역할을 생성합니다. 역할을 EC2 인스턴스에 연결합니다.",
+        "B": "EBS 볼륨을 암호화된 볼륨으로 생성합니다. EBS 볼륨을 EC2 인스턴스에 연결합니다.",
+        "C": "키가 Encrypt이고 값이 True인 EC2 인스턴스 태그를 생성합니다. EBS 수준에서 암호화가 필요한 모든 인스턴스에 태그를 지정합니다.",
+        "D": "계정에서 EBS 암호화를 시행하는 AWS Key Management Service(AWS KMS) 키 정책을 생성합니다. 키 정책이 활성 상태인지 확인하십시오."
+      },
+      "eng": {
+        "A": "Create an IAM role that specifies EBS encryption. Attach the role to the EC2 instances.",
+        "B": "Create the EBS volumes as encrypted volumes. Attach the EBS volumes to the EC2 instances.",
+        "C": "Create an EC2 instance tag that has a key of Encrypt and a value of True. Tag all instances that require encryption at the EBS level.",
+        "D": "Create an AWS Key Management Service (AWS KMS) key policy that enforces EBS encryption in the account. Ensure that the key policy is active."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "EBS encryption"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/102187-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 624,
+    "question": {
+      "kor": "Amazon EC2 인스턴스에 호스팅된 회사 웹 사이트는 저장된 분류된 데이터를 처리합니다. 애플리케이션은 Amazon Elastic Block Store(Amazon EBS) 볼륨에 데이터를 씁니다. 회\n사는 EBS 볼륨에 기록된 모든 데이터가 저장 시 암호화되었는지 확인해야 합니다. 이 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company website hosted on Amazon EC2 instances processes classified data stored in. The application writes data to Amazon Elastic Block Store (Amazon EBS) volumes. The company needs to ensure that all data that is written to the EBS volumes is encrypted at rest. Which solution will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "EBS 암호화를 지정하는 IAM 역할을 생성합니다. EC2 인스턴스에 역할을 연결합니다.",
+        "B": "EBS 볼륨을 암호화된 볼륨으로 생성합니다. EBS 볼륨을 EC2 인스턴스에 연결합니다.",
+        "C": "키가 Encrypt이고 값이 True인 EC2 인스턴스 태그를 생성합니다. EBS 수준에서 암호화가 필요한 모든 인스턴스에 태그를 지정합니다.",
+        "D": "계정에 EBS 암호화를 적용하는 AWS Key Management Service(AWS KMS) 키 정책을 생성합니다. 키 정책이 활성 상태인지 확인하세요."
+      },
+      "eng": {
+        "A": "Create an IAM role that specifies EBS encryption. Attach the role to the EC2 instances.",
+        "B": "Create the EBS volumes as encrypted volumes. Attach the EBS volumes to the EC2 instances.",
+        "C": "Create an EC2 instance tag that has a key of Encrypt and a value of True. Tag all instances that require encryption at the EBS level.",
+        "D": "Create an AWS Key Management Service (AWS KMS) key policy that enforces EBS encryption in the account. Ensure that the key policy is active."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "EBS encryption"
+    ],
+    "rote_memorization": false,
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 18,
+    "question": {
+      "kor": "한 회사가 최근 애플리케이션 마이그레이션 이니셔티브를 지원하기 위해 AWS MSP(Managed Service Provider) 파트너와 계약을 체결했습니다. 솔루션 설계자는 기존 AWS 계정의 Amazon Machine Image(AMI)를 MSP 파트너의 AWS 계정과 공유해야 합니다. AMI는 Amazon Elastic Block Store(Amazon EBS)에서 지원하며 AWS Key Management Service(AWS KMS) 고객 관리형 키를 사용하여 EBS 볼륨 스냅샷을 암호화합니다.\n솔루션 설계자가 AMI를 MSP 파트너의 AWS 계정과 공유할 수 있는 가장 안전한 방법은 무엇입니까?",
+      "eng": "A company recently signed a contract with an AWS Managed Service Provider (MSP) Partner for help with an application migration initiative. A solutions architect needs ta share an Amazon Machine Image (AMI) from an existing AWS account with the MSP Partner's AWS account. The AMI is backed by Amazon Elastic Block Store (Amazon EBS) and uses an AWS Key Management Service (AWS KMS) customer managed key to encrypt EBS volume snapshots.\nWhat is the MOST secure way for the solutions architect to share the AMI with the MSP Partner's AWS account?"
+    },
+    "choices": {
+      "kor": {
+        "A": "암호화된 AMI와 스냅샷을 공개적으로 사용 가능하게 만드십시오. MSP 파트너의 AWS 계정이 키를 사용할 수 있도록 키 정책을 수정합니다.",
+        "B": "AMI의 launchPermission 속성을 수정합니다. MSP 파트너의 AWS 계정과만 AMI를 공유합니다. MSP 파트너의 AWS 계정이 키를 사용할 수 있도록 키 정책을 수정합니다.",
+        "C": "AMI의 launchPermission 속성을 수정합니다. MSP 파트너의 AWS 계정과만 AMI를 공유합니다. 암호화를 위해 MSP 파트너가 소유한 새 KMS 키를 신뢰하도록 키 정책을 수정합니다.",
+        "D": "소스 계정에서 MSP 파트너의 AWS 계정에 있는 Amazon S3 버킷으로 AMI를 내보내고 MSP 파트너가 소유한 새 KMS 키로 S3 버킷을 암호화합니다. MSP 파트너의 AWS 계정에서 AMI를 복사하고 시작합니다."
+      },
+      "eng": {
+        "A": "Make the encrypted AMI and snapshots publicly available. Modify the key policy to allow the MSP Partner's AWS account to use the key.",
+        "B": "Modify the launchPermission property of the AMI. Share the AMI with the MSP Partner's AWS account only. Modify the key policy to allow the MSP Partner's AWS account to use the key.",
+        "C": "Modify the launchPermission property of the AMI. Share the AMI with the MSP Partner's AWS account only. Modify the key policy to trust a new KMS key that is owned by the MSP Partner for encryption.",
+        "D": "Export the AMI from the source account to an Amazon S3 bucket in the MSP Partner's AWS account, Encrypt the S3 bucket with a new KMS key that is owned by the MSP Partner. Copy and launch the AMI in the MSP Partner's AWS account."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "AMI sharing",
+      "KMS",
+      "cross-account access"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/85606-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 123,
+    "question": {
+      "kor": "한 회사에 두 개의 Amazon EC2 인스턴스에서 호스팅되는 동적 웹 애플리케이션이 있습니다. 회사에는 종료를 수행하기 SSL 위해 각 인스턴스에 있는 자체 SSL 인증서가 있습니다.\n최근 트래픽이 증가했으며 운영 팀은 SSL 암호화 및 암호 해독으로 인해 웹 서버의 컴퓨팅 용량이 최대 한도에 도달했다고 판단했습니다.\n애플리케이션의 성능을 높이려면 솔루션 설계자가 무엇을 해야 합니까?",
+      "eng": "A company has a dynamic web application hosted on two Amazon EC2 instances. The company has its own SSL certificate, which is on each instance to perform SSL termination.\nThere has been an increase in traffic recently, and the operations team determined that SSL encryption and decryption is causing the compute capacity of the web servers to reach their maximum limit.\nWhat should a solutions architect do to increase the application's performance?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Certificate Manager(ACM)를 사용하여 새 SSL 인증서를 생성합니다. 각 인스턴스에 ACM 인증서를 설치합니다.",
+        "B": "Amazon S3 버킷 생성 SSL 인증서를 S3 버킷으로 마이그레이션합니다. SSL 종료를 위해 버킷을 참조하도록 EC2 인스턴스를 구성합니다.",
+        "C": "다른 EC2 인스턴스를 프록시 서버로 생성합니다. SSL 인증서를 새 인스턴스로 마이그레이션하고 기존 EC2 인스턴스에 직접 연결하도록 구성합니다.",
+        "D": "SSL 인증서를 AWS Certificate Manager(ACM)로 가져옵니다. ACM의 SSL 인증서를 사용하는 HTTPS 리스너로 Application Load Balancer를 생성합니다."
+      },
+      "eng": {
+        "A": "Create a new SSL certificate using AWS Certificate Manager (ACM). Install the ACM certificate on each instance.",
+        "B": "Create an Amazon S3 bucket Migrate the SSL certificate to the S3 bucket. Configure the EC2 instances to reference the bucket for SSL termination.",
+        "C": "Create another EC2 instance as a proxy server. Migrate the SSL certificate to the new instance and configure it to direct connections to the existing EC2 instances.",
+        "D": "Import the SSL certificate into AWS Certificate Manager (ACM). Create an Application Load Balancer with an HTTPS listener that uses the SSL certificate from ACM."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "ACM"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/85943-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 261,
+    "question": {
+      "kor": "회사에서는 SSL/TLS 인증서를 사용하도록 Amazon CloudFront 배포를 구성하려고 합니다. 회사는 배포에 기본 도메인 이름을 사용하기를 원하지 않습니다. 대신 회사는 배포에 다른 도메인 이름을 사용하기를 원합니다.\n추가 비용 없이 인증서를 배포할 수 있는 솔루션은 무엇입니까?",
+      "eng": "A company wants to configure its Amazon CloudFront distribution to use SSL/TLS certificates. The company does not want to use the default domain name for the distribution. Instead, the company wants to use a different domain name for the distribution.\nWhich solution will deploy the certificate without incurring any additional costs?"
+    },
+    "choices": {
+      "kor": {
+        "A": "us-east-1 지역의 AWS Certificate Manager(ACM)에서 Amazon 발급 사설 인증서를 요청합니다.",
+        "B": "us-west-1 지역의 AWS Certificate Manager(ACM)에서 Amazon 발급 개인 인증서를 요청합니다.",
+        "C": "us-east-1 지역의 AWS Certificate Manager(ACM)에서 Amazon 발급 공인 인증서를 요청합니다.",
+        "D": "us-west-1 지역의 AWS Certificate Manager(ACM)에서 Amazon 발급 공인 인증서를 요청합니다."
+      },
+      "eng": {
+        "A": "Request an Amazon-issued private certificate from AWS Certificate Manager (ACM) in the us-east-1 Region.",
+        "B": "Request an Amazon-issued private certificate from AWS Certificate Manager (ACM) in the us-west-1 Region.",
+        "C": "Request an Amazon-issued public certificate from AWS Certificate Manager (ACM) in the us-east-1 Region.",
+        "D": "Request an Amazon-issued public certificate from AWS Certificate Manager (ACM) in the us-west-1 Region."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "ACM"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/137823-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 419,
+    "question": {
+      "kor": "회사는 AWS 리전에 워크로드가 있습니다. 고객은 Amazon API Gateway REST API를 사용하여 워크로드에 연결하고 액세스합니다. 이 회사는 Amazon Route 53을 DNS 공급자로 사용합니다. 회사는 모든 고객에게 개별적이고 안전한 URL을 제공하고자 합니다.\n가장 높은 운영 효율성으로 이러한 요구 사항을 충족하는 단계 조합은 무엇입니까? (3개를 선택하세요.)",
+      "eng": "A company has a workload in an AWS Region. Customers connect to and access the workload by using an Amazon API Gateway REST API. The company uses Amazon Route 53 as its DNS provider. The company wants to provide individual and secure URLs for all customers.\nWhich combination of steps will meet these requirements with the MOST operational efficiency? (Choose three.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "등록기관에 필요한 도메인을 등록합니다. Route 53 호스팅 영역에서 와일드카드 사용자 지정 도메인 이름을 생성하고 API 게이트웨이 엔드포인트를 가리키는 영역에 기록합니다.",
+        "B": "다른 리전에 있는 AWS Certificate Manager(ACM)의 도메인과 일치하는 와일드카드 인증서를 요청합니다.",
+        "C": "Route 53에서 필요에 따라 각 고객에 대한 호스팅 영역을 생성합니다. API 게이트웨이 엔드포인트를 가리키는 영역 레코드를 생성합니다.",
+        "D": "동일한 리전의 AWS Certificate Manager(ACM)에서 사용자 지정 도메인 이름과 일치하는 와일드카드 인증서를 요청합니다.",
+        "E": "API Gateway에서 각 고객에 대해 여러 API 끝점을 만듭니다.",
+        "F": "API Gateway에서 REST API용 사용자 정의 도메인 이름을 생성합니다. AWS Certificate Manager(ACM)에서 인증서를 가져옵니다."
+      },
+      "eng": {
+        "A": "Register the required domain in a registrar. Create a wildcard custom domain name in a Route 53 hosted zone and record in the zone that points to the API Gateway endpoint.",
+        "B": "Request a wildcard certificate that matches the domains in AWS Certificate Manager (ACM) in a different Region.",
+        "C": "Create hosted zones for each customer as required in Route 53. Create zone records that point to the API Gateway endpoint.",
+        "D": "Request a wildcard certificate that matches the custom domain name in AWS Certificate Manager (ACM) in the same Region.",
+        "E": "Create multiple API endpoints for each customer in API Gateway.",
+        "F": "Create a custom domain name in API Gateway for the REST API. Import the certificate from AWS Certificate Manager (ACM)."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "ACM"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/111382-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A",
+      "D",
+      "F"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 644,
+    "question": {
+      "kor": "보안 요구 사항을 충족하려면 회사는 Amazon RDS MySQL DB 인스턴스와 통신하는 동안 전송 중인 모든 애플리케이션 데이터를 암호화해야 합니다. 최근 보안 감사에서는 AWS Key\nManagement Service(AWS KMS)를 사용하여 저장 데이터 암호화가 활성화되어 있지만 전송 중인 데이터는 활성화되지 않은 것으로 나타났습니다.\n솔루션 설계자는 보안 요구 사항을 충족하기 위해 무엇을 해야 합니까?",
+      "eng": "To meet security requirements, a company needs to encrypt all of its application data in transit while communicating with an Amazon RDS MySQL DB instance. A recent security audit revealed that encryption at rest is enabled using AWS Key Management Service (AWS KMS), but data in transit is not enabled.\nWhat should a solutions architect do to satisfy the security requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "데이터베이스에서 IAM 데이터베이스 인증을 활성화합니다.",
+        "B": "자체 서명된 인증서를 제공합니다. RDS 인스턴스에 대한 모든 연결에 인증서를 사용하십시오.",
+        "C": "RDS 인스턴스의 스냅샷을 찍습니다. 암호화가 활성화된 새 인스턴스로 스냅샷을 복원합니다.",
+        "D": "AWS에서 제공하는 루트 인증서를 다운로드합니다. RDS 인스턴스에 대한 모든 연결에 인증서를 제공하십시오."
+      },
+      "eng": {
+        "A": "Enable IAM database authentication on the database.",
+        "B": "Provide self-signed certificates. Use the certificates in all connections to the RDS instance.",
+        "C": "Take a snapshot of the RDS instance. Restore the snapshot to a new instance with encryption enabled.",
+        "D": "Download AWS-provided root certificates. Provide the certificates in all connections to the RDS instance."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "ACM"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/132933-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 711,
+    "question": {
+      "kor": "한 로봇 회사가 의료 수술을 위한 솔루션을 설계하고 있습니다. 로봇은 고급 센서, 카메라 및 AI 알고리즘을 사용하여 환경을 인식하고 수술을 완료합니다.\n회사에는 백엔드 서비스와의 원활한 통신을 보장할 AWS 클라우드의 공용 로드 밸런서가 필요합니다. 로드 밸런서는 쿼리 문자열을 기반으로 트래픽을 다른 대상 그룹으로 라우팅할 수 있어야 합니다. 트래픽도 암호화되어야 합니다.\n어떤 솔루션이 이러한 요구 사항을 충족합니까?",
+      "eng": "A robotics company is designing a solution for medical surgery. The robots will use advanced sensors, cameras, and AI algorithms to perceive their environment and to complete surgeries.\nThe company needs a public load balancer in the AWS Cloud that will ensure seamless communication with backend services. The load balancer must be capable of routing traffic based on the query strings to different target groups. The traffic must also be encrypted.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "ACM(AWS Certificate Manager)에서 첨부된 인증서와 함께 Network Load Balancer를 사용하십시오. 쿼리 매개변수 기반 라우팅을 사용합니다.",
+        "B": "게이트웨이 로드 밸런서를 사용합니다. AWS Identity and Access Management(IAM)에서 생성된 인증서를 가져옵니다. 인증서를 로드 밸런서에 연결합니다. HTTP 경로 기반 라우팅을 사용합니다.",
+        "C": "ACM(AWS Certificate Manager)에서 첨부된 인증서와 함께 Application Load Balancer를 사용합니다. 쿼리 매개변수 기반 라우팅을 사용합니다.",
+        "D": "Network Load Balancer를 사용하십시오. AWS Identity and Access Management(IAM)에서 생성된 인증서를 가져옵니다. 인증서를 로드 밸런서에 연결합니다. 쿼리 매개변수 기반 라우팅을 사용합니다."
+      },
+      "eng": {
+        "A": "Use a Network Load Balancer with a certificate attached from AWS Certificate Manager (ACM). Use query parameter-based routing.",
+        "B": "Use a Gateway Load Balancer. Import a generated certificate in AWS Identity and Access Management (IAM). Attach the certificate to the load balancer. Use HTTP path-based routing.",
+        "C": "Use an Application Load Balancer with a certificate attached from AWS Certificate Manager (ACM). Use query parameter-based routing.",
+        "D": "Use a Network Load Balancer. Import a generated certificate in AWS Identity and Access Management (IAM). Attach the certificate to the load balancer. Use query parameter-based routing."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "ACM"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/136955-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 755,
+    "question": {
+      "kor": "회사는 Amazon CloudFront 배포를 사용하여 웹 사이트의 콘텐츠 페이지를 제공합니다. 회사는 고객이 회사 웹 사이트에 액세스할 때 TLS 인증서를 사용하도록 해야 합니다. 회사는 TLS 인증서의 생성 및 갱신을 자동화하려고 합니다.\n이러한 요구 사항을 가장 효율적으로 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company uses an Amazon CloudFront distribution to serve content pages for its website. The company needs to ensure that clients use a TLS certificate when accessing the company's website. The company wants to automate the creation and renewal of the TLS certificates.\nWhich solution will meet these requirements with the MOST operational efficiency?"
+    },
+    "choices": {
+      "kor": {
+        "A": "CloudFront 보안 정책을 사용하여 인증서를 생성합니다.",
+        "B": "원본 CloudFront 액세스 제어(OAC)를 사용하여 인증서를 생성합니다.",
+        "C": "AWS Certificate Manager(ACM)를 사용하여 인증서를 생성합니다. 도메인에 대해 DNS 검증을 사용하십시오.",
+        "D": "AWS Certificate Manager(ACM)를 사용하여 인증서를 생성합니다. 도메인에 대한 이메일 유효성 검사를 사용합니다."
+      },
+      "eng": {
+        "A": "Use a CloudFront security policy to create a certificate.",
+        "B": "Use a CloudFront origin access control (OAC) to create a certificate.",
+        "C": "Use AWS Certificate Manager (ACM) to create a certificate. Use DNS validation for the domain.",
+        "D": "Use AWS Certificate Manager (ACM) to create a certificate. Use email validation for the domain."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "ACM"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/117037-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 867,
+    "question": {
+      "kor": "다국적 기업에는 회사가 운영되는 각 국가에 대한 하위 도메인이 있습니다. 하위 도메인의 형식은 example.com, country1.example.com 및 country2.example.com입니다. 회사의 워크로드는 Application Load Balancer 뒤에 있습니다. 회사는 전송 중인 웹사이트 데이터를 암호화하려고 합니다.\n이러한 요구 사항을 충족하는 단계 조합은 무엇입니까? (2개를 선택하세요.)",
+      "eng": "An international company has a subdomain for each country that the company operates in. The subdomains are formatted as example.com, country1.example.com, and country2.example.com. The company's workloads are behind an Application Load Balancer. The company wants to encrypt the website data that is in transit.\nWhich combination of steps will meet these requirements? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "ACM(AWS Certificate Manager) 콘솔을 사용하여 apex 최상위 도메인 example com에 대한 퍼블릭 인증서와 *.example.com에 대한 와일드카드 인증서를 요청합니다.",
+        "B": "ACM(AWS Certificate Manager) 콘솔을 사용하여 apex 최상위 도메인 example.com에 대한 개인 인증서와 *.example.com에 대한 와일드카드 인증서를 요청합니다.",
+        "C": "ACM(AWS Certificate Manager) 콘솔을 사용하여 apex 최상위 도메인 example.com에 대한 공인 및 사설 인증서를 요청합니다.",
+        "D": "이메일 주소로 도메인 소유권을 확인합니다. 필수 DNS 레코드를 DNS 공급자에 추가하여 DNS 유효성 검사로 전환하세요.",
+        "E": "필요한 DNS 레코드를 DNS 공급자에 추가하여 도메인에 대한 도메인 소유권을 확인합니다."
+      },
+      "eng": {
+        "A": "Use the AWS Certificate Manager (ACM) console to request a public certificate for the apex top domain example com and a wildcard certificate for *.example.com.",
+        "B": "Use the AWS Certificate Manager (ACM) console to request a private certificate for the apex top domain example.com and a wildcard certificate for *.example.com.",
+        "C": "Use the AWS Certificate Manager (ACM) console to request a public and private certificate for the apex top domain example.com.",
+        "D": "Validate domain ownership by email address. Switch to DNS validation by adding the required DNS records to the DNS provider.",
+        "E": "Validate domain ownership for the domain by adding the required DNS records to the DNS provider."
+      }
+    },
+    "category": [
+      "Security"
+    ],
+    "subcategory": [
+      "ACM"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/125582-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A",
+      "E"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 58,
+    "question": {
+      "kor": "한 회사가 AWS에서 2계층 웹 애플리케이션을 개발하고 있습니다. 이 회사의 개발자는 백엔드 Amazon RDS 데이터베이스에 직접 연결되는 Amazon EC2 인스턴스에 애플리케이션을 배포했습니다. 회사는 애플리케이션에 데이터베이스 자격 증명을 하드코딩해서는 안 됩니다. 또한 회사는 정기적으로 데이터베이스 자격 증명을 자동으로 교체하는 솔루션을 구현해야 합니다.\n최소한의 운영 오버헤드로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company is developing a two-tier web application on AWS. The company's developers have deployed the application on an Amazon EC2 instance that connects directly to a backend Amazon RDS database. The company must not hardcode database credentials in the application. The company must also implement a solution to automatically rotate the database credentials on a regular basis.\nWhich solution will meet these requirements with the LEAST operational overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "인스턴스 메타데이터에 데이터베이스 자격 증명을 저장합니다. Amazon EventBridge(Amazon CloudWatch Events) 규칙을 사용하여 RDS 자격 증명과 인스턴스 메타데이터를 동시에 업데이트하는 예약된 AWS Lambda 함수를 실행합니다.",
+        "B": "암호화된 Amazon S3 버킷의 구성 파일에 데이터베이스 자격 증명을 저장합니다. Amazon EventBridge(Amazon CloudWatch Events) 규칙을 사용하여 RDS 자격 증명과 구성 파일의 자격 증명을 동시에 업데이트하는 예약된 AWS Lambda 함수를 실행합니다. S3 버전 관리를 사용하여 이전 값으로 폴백할 수 있습니다.",
+        "C": "데이터베이스 자격 증명을 AWS Secrets Manager에 비밀로 저장합니다. 보안 비밀에 대해 자동 회전을 켭니다. 암호에 대한 액세스 권한을 부여하려면 EC2 역할에 필요한 권한을 연결합니다.",
+        "D": "데이터베이스 자격 증명을 AWS Systems Manager Parameter Store에 암호화된 파라미터로 저장합니다. 암호화된 매개변수에 대해 자동 회전을 켭니다. 암호화된 매개변수에 대한 액세스 권한을 부여하려면 필요한 권한을 EC2 역할에 연결하십시오."
+      },
+      "eng": {
+        "A": "Store the database credentials in the instance metadata. Use Amazon EventBridge (Amazon CloudWatch Events) rules to run a scheduled AWS Lambda function that updates the RDS credentials and instance metadata at the same time.",
+        "B": "Store the database credentials in a configuration file in an encrypted Amazon S3 bucket. Use Amazon EventBridge (Amazon CloudWatch Events) rules to run a scheduled AWS Lambda function that updates the RDS credentials and the credentials in the configuration file at the same time. Use S3 Versioning to ensure the ability to fall back to previous values.",
+        "C": "Store the database credentials as a secret in AWS Secrets Manager. Turn on automatic rotation for the secret. Attach the required permission to the EC2 role to grant access to the secret.",
+        "D": "Store the database credentials as encrypted parameters in AWS Systems Manager Parameter Store. Turn on automatic rotation for the encrypted parameters. Attach the required permission to the EC2 role to grant access to the encrypted parameters."
+      }
+    },
+    "category": [
+      "Secrets Manager"
+    ],
+    "subcategory": [
+      "permissions"
+    ],
+    "rote_memorization": true,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/85580-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 87,
+    "question": {
+      "kor": "회사에서 기밀 데이터를 Amazon S3에 저장할 준비를 하고 있습니다. 규정 준수를 위해 데이터는 유휴 상태에서 암호화되어야 합니다. 감사 목적으로 암호화 키 사용을 기록해야 합니다. 키는 매년 교체해야 합니다.\n어떤 솔루션이 이러한 요구 사항을 충족하고 운영상 가장 효율적입니까?",
+      "eng": "A company is preparing to store confidential data in Amazon S3. For compliance reasons, the data must be encrypted at rest. Encryption key usage must be logged for auditing purposes. Keys must be rotated every year.\nWhich solution meets these requirements and is the MOST operationally efficient?"
+    },
+    "choices": {
+      "kor": {
+        "A": "고객 제공 키를 사용한 서버 측 암호화(SSE-C)",
+        "B": "Amazon S3 관리 키(SSE-S3)를 사용한 서버 측 암호화",
+        "C": "수동 교체가 있는 AWS KMS 키(SSE-KMS)를 사용한 서버 측 암호화",
+        "D": "자동 교체가 있는 AWS KMS 키(SSE-KMS)를 사용한 서버 측 암호화"
+      },
+      "eng": {
+        "A": "Server-side encryption with customer-provided keys (SSE-C)",
+        "B": "Server-side encryption with Amazon S3 managed keys (SSE-S3)",
+        "C": "Server-side encryption with AWS KMS keys (SSE-KMS) with manual rotation",
+        "D": "Server-side encryption with AWS KMS keys (SSE-KMS) with automatic rotation"
+      }
+    },
+    "category": [
+      "KMS"
+    ],
+    "subcategory": [
+      "keys",
+      "rotation"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/85817-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 33,
+    "question": {
+      "kor": "회사의 컨테이너화된 애플리케이션이 Amazon EC2 인스턴스에서 실행됩니다. 애플리케이션은 다른 비즈니스 애플리케이션과 통신하기 전에 보안 인증서를 다운로드해야 합니다. 회사는 거의 실시간으로 인증서를 암호화하고 해독할 수 있는 매우 안전한 솔루션을 원합니다. 또한 솔루션은 데이터가 암호화된 후 고가용성 스토리지에 데이터를 저장해야 합니다.\n최소한의 운영 오버헤드로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company's containerized application runs on an Amazon EC2 instance. The application needs to download security certificates before it can communicate with other business applications. The company wants a highly secure solution to encrypt and decrypt the certificates in near real time. The solution also needs to store data in highly available storage after the data is encrypted.\nWhich solution will meet these requirements with the LEAST operational overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "암호화된 인증서에 대한 AWS Secrets Manager 비밀을 생성합니다. 필요에 따라 인증서를 수동으로 업데이트합니다. 세분화된 IAM 액세스를 사용하여 데이터에 대한 액세스를 제어 합니다.",
+        "B": "Python 암호화 라이브러리를 사용하여 암호화 작업을 수신하고 수행하는 AWS Lambda 함수를 생성합니다. Amazon S3 버킷에 함수를 저장합니다.",
+        "C": "AWS Key Management Service(AWS KMS) 고객 관리형 키를 생성합니다. EC2 역할이 암호화 작업에 KMS 키를 사용하도록 허용합니다. 암호화된 데이터를 Amazon S3에 저장합니다.",
+        "D": "AWS Key Management Service(AWS KMS) 고객 관리형 키를 생성합니다. EC2 역할이 암호화 작업에 KMS 키를 사용하도록 허용합니다. 암호화된 데이터를 Amazon",
+        "E": "Elastic Block Store(Amazon EBS) 볼륨에 저장합니다."
+      },
+      "eng": {
+        "A": "Create AWS Secrets Manager secrets for encrypted certificates. Manually update the certificates as needed. Control access to the data by using finegrained IAM access.",
+        "B": "Create an AWS Lambda function that uses the Python cryptography library to receive and perform encryption operations. Store the function in an Amazon S3 bucket.",
+        "C": "Create an AWS Key Management Service (AWS KMS) customer managed key. Allow the EC2 role to use the KMS key for encryption operations. Store the encrypted data on Amazon S3.",
+        "D": "Create an AWS Key Management Service (AWS KMS) customer managed key. Allow the EC2 role to use the KMS key for encryption operations. Store the encrypted data on Amazon Elastic Block Store (Amazon EBS) volumes."
+      }
+    },
+    "category": [
+      "KMS"
+    ],
+    "subcategory": [
+      "customer managed key"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/85186-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 152,
+    "question": {
+      "kor": "회사에서 데이터를 Amazon S3 버킷으로 이동할 계획입니다. 데이터는 S3 버킷에 저장될 때 암호화되어야 합니다. 또한 암호화 키는 매년 자동으로 순환되어야 합니다.\n최소한의 운영 오버헤드로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company is planning to move its data to an Amazon S3 bucket. The data must be encrypted when it is stored in the S3 bucket. Additionally, the encryption key must be automatically rotated every year.\nWhich solution will meet these requirements with the LEAST operational overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "데이터를 S3 버킷으로 이동합니다. Amazon S3 관리형 암호화 키(SSE-S3)로 서버 측 암호화를 사용합니다. SSE-S3 암호화 키의 기본 제공 키 회전 동작을 사용합니다.",
+        "B": "AWS Key Management Service(AWS KMS) 고객 관리형 키를 생성합니다. 자동 키 순환을 활성화합니다. 고객 관리형 KMS 키를 사용하도록 S3 버킷의 기본 암호화 동작을 설정합니다. 데이터를 S3 버킷으로 이동합니다.",
+        "C": "AWS Key Management Service(AWS KMS) 고객 관리형 키를 생성합니다. 고객 관리형 KMS 키를 사용하도록 S3 버킷의 기본 암호화 동작을 설정합니다. 데이터를 S3 버킷으로 이동합니다. 매년 KMS 키를 수동으로 교체합니다.",
+        "D": "데이터를 S3 버킷으로 이동하기 전에 고객 키 자료로 데이터를 암호화합니다. 키 자료 없이 AWS Key Management Service(AWS KMS) 키를 생성합니다. 고객 키 자료를 KMS 키로 가져옵니다. 자동 키 순환을 활성화합니다."
+      },
+      "eng": {
+        "A": "Move the data to the S3 bucket. Use server-side encryption with Amazon S3 managed encryption keys (SSE-S3). Use the built-in key rotation behavior of SSE-S3 encryption keys.",
+        "B": "Create an AWS Key Management Service (AWS KMS) customer managed key. Enable automatic key rotation. Set the S3 bucket’s default encryption behavior to use the customer managed KMS key. Move the data to the S3 bucket.",
+        "C": "Create an AWS Key Management Service (AWS KMS) customer managed key. Set the S3 bucket’s default encryption behavior to use the customer managed KMS key. Move the data to the S3 bucket. Manually rotate the KMS key every year.",
+        "D": "Encrypt the data with customer key material before moving the data to the S3 bucket. Create an AWS Key Management Service (AWS KMS) key without key material. Import the customer key material into the KMS key. Enable automatic key rotation."
+      }
+    },
+    "category": [
+      "KMS"
+    ],
+    "subcategory": [
+      "S3",
+      "keys"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/89081-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 163,
+    "question": {
+      "kor": "회사에서 응용 프로그램의 데이터를 암호화해야 하는 개발자를 지원하기 위해 확장 가능한 키 관리 인프라를 구축하려고 합니다.\n솔루션 아키텍트는 운영 부담을 줄이기 위해 무엇을 해야 합니까?",
+      "eng": "A company wants to build a scalable key management infrastructure to support developers who need to encrypt data in their applications.\nWhat should a solutions architect do to reduce the operational burden?"
+    },
+    "choices": {
+      "kor": {
+        "A": "다단계 인증(MFA)을 사용하여 암호화 키를 보호하십시오.",
+        "B": "AWS Key Management Service(AWS KMS)를 사용하여 암호화 키를 보호합니다.",
+        "C": "AWS Certificate Manager(ACM)를 사용하여 암호화 키를 생성, 저장 및 할당합니다.",
+        "D": "IAM 정책을 사용하여 암호화 키를 보호할 수 있는 액세스 권한이 있는 사용자의 범위를 제한합니다."
+      },
+      "eng": {
+        "A": "Use multi-factor authentication (MFA) to protect the encryption keys.",
+        "B": "Use AWS Key Management Service (AWS KMS) to protect the encryption keys.",
+        "C": "Use AWS Certificate Manager (ACM) to create, store, and assign the encryption keys.",
+        "D": "Use an IAM policy to limit the scope of users who have access permissions to protect the encryption keys."
+      }
+    },
+    "category": [
+      "KMS"
+    ],
+    "subcategory": [],
+    "rote_memorization": true,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/85942-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 226,
+    "question": {
+      "kor": "회사에서 Amazon RDS DB 인스턴스에 데이터를 저장할 계획입니다. 회사는 미사용 데이터를 암호화해야 합니다.\n솔루션 설계자는 이 요구 사항을 충족하기 위해 무엇을 해야 합니까?",
+      "eng": "A company is planning to store data on Amazon RDS DB instances. The company must encrypt the data at rest.\nWhat should a solutions architect do to meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Key Management Service(AWS KMS)에서 키를 생성합니다. DB 인스턴스에 대한 암호화를 활성화합니다.",
+        "B": "암호화 키를 생성합니다. AWS Secrets Manager에 키를 저장합니다. 키를 사용하여 DB 인스턴스를 암호화합니다.",
+        "C": "AWS Certificate Manager(ACM)에서 인증서를 생성합니다. 인증서를 사용하여 DB 인스턴스에서 SSL/TLS를 활성화합니다.",
+        "D": "AWS Identity and Access Management(IAM)에서 인증서를 생성합니다. 인증서를 사용하여 DB 인스턴스에서 SSL/TLS를 활성화합니다."
+      },
+      "eng": {
+        "A": "Create a key in AWS Key Management Service (AWS KMS). Enable encryption for the DB instances.",
+        "B": "Create an encryption key. Store the key in AWS Secrets Manager. Use the key to encrypt the DB instances.",
+        "C": "Generate a certificate in AWS Certificate Manager (ACM). Enable SSL/TLS on the DB instances by using the certificate.",
+        "D": "Generate a certificate in AWS Identity and Access Management (IAM). Enable SSL/TLS on the DB instances by using the certificate."
+      }
+    },
+    "category": [
+      "KMS"
+    ],
+    "subcategory": [],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/99702-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 231,
+    "question": {
+      "kor": "회사는 Amazon Aurora MySQL DB 클러스터를 스토리지로 사용하는 다중 계층 웹 애플리케이션을 호스팅합니다. 애플리케이션 계층은 Amazon EC2 인스턴스에서 호스팅됩니다. 회사의 IT 보안 지침에 따라 데이터베이스 자격 증명을 암호화하고 14일마다 교체해야 합니다.\n최소한의 운영 노력으로 이 요구 사항을 충족하려면 솔루션 설계자가 무엇을 해야 합니까?",
+      "eng": "A company hosts a multi-tier web application that uses an Amazon Aurora MySQL DB cluster for storage. The application tier is hosted on Amazon EC2 instances. The company’s IT security guidelines mandate that the database credentials be encrypted and rotated every 14 days.\nWhat should a solutions architect do to meet this requirement with the LEAST operational effort?"
+    },
+    "choices": {
+      "kor": {
+        "A": "새 AWS Key Management Service(AWS KMS) 암호화 키를 생성합니다. AWS Secrets Manager를 사용하여 적절한 자격 증명과 함께 KMS 키를 사용하는 새 암호를 생성합니다. 암호를 Aurora DB 클러스터와 연결합니다. 14일의 사용자 지정 순환 기간을 구성합니다.",
+        "B": "AWS Systems Manager Parameter Store에서 두 개의 매개변수를 생성합니다. 하나는 사용자 이름을 문자열 매개변수로 사용하고 다른 하나는 SecureString 유형을 암호로 사용합니다. 암호 매개변수에 대해 AWS Key Management Service(AWS KMS) 암호화를 선택하고 애플리케이션 계층에서 이러한 매개변수를 로드합니다. 14일마다 암호를 교체하는 AWS Lambda 함수를 구현합니다.",
+        "C": "자격 증명이 포함된 파일을 AWS KMS(AWS Key Management Service) 암호화 Amazon Elastic File System(Amazon EFS) 파일 시스템에 저장합니다. 애플리케이션 계층의 모든 EC2 인스턴스에 EFS 파일 시스템을 탑재합니다. 응용 프로그램이 파일을 읽을 수 있고 슈퍼 사용자만 파일을 수정할 수 있도록 파일 시스템의 파일에 대한 액세스를 제한합니다. 14일마다 Aurora에서 키를 교체하고 새 자격 증명을 파일에 쓰는 AWS Lambda 함수를 구현합니다.",
+        "D": "애플리케이션이 자격 증명을 로드하는 데 사용하는 AWS KMS(AWS Key Management Service) 암호화 Amazon S3 버킷에 자격 증명이 포함된 파일을 저장합니다. 올바른 자격 증명이 사용되도록 정기적으로 파일을 응용 프로그램에 다운로드하십시오. 14일마다 Aurora 자격 증명을 교체하고 이 자격 증명을 S3 버킷의 파일에 업로드하는 AWS Lambda 함수를 구현합니다."
+      },
+      "eng": {
+        "A": "Create a new AWS Key Management Service (AWS KMS) encryption key. Use AWS Secrets Manager to create a new secret that uses the KMS key with the appropriate credentials. Associate the secret with the Aurora DB cluster. Configure a custom rotation period of 14 days.",
+        "B": "Create two parameters in AWS Systems Manager Parameter Store: one for the user name as a string parameter and one that uses the SecureString type for the password. Select AWS Key Management Service (AWS KMS) encryption for the password parameter, and load these parameters in the application tier. Implement an AWS Lambda function that rotates the password every 14 days.",
+        "C": "Store a file that contains the credentials in an AWS Key Management Service (AWS KMS) encrypted Amazon Elastic File System (Amazon EFS) file system. Mount the EFS file system in all EC2 instances of the application tier. Restrict the access to the file on the file system so that the application can read the file and that only super users can modify the file. Implement an AWS Lambda function that rotates the key in Aurora every 14 days and writes new credentials into the file.",
+        "D": "Store a file that contains the credentials in an AWS Key Management Service (AWS KMS) encrypted Amazon S3 bucket that the application uses to load the credentials. Download the file to the application regularly to ensure that the correct credentials are used. Implement an AWS Lambda function that rotates the Aurora credentials every 14 days and uploads these credentials to the file in the S3 bucket."
+      }
+    },
+    "category": [
+      "KMS",
+      "Secrets Manager"
+    ],
+    "subcategory": [],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/99790-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 241,
+    "question": {
+      "kor": "회사에서 새로운 웹 기반 고객 관계 관리 애플리케이션을 구축하고 있습니다. 애플리케이션은 Application Load Balancer(ALB) 뒤에 있는 Amazon Elastic Block Store(Amazon EBS) 볼륨이 지원하는 여러 Amazon EC2 인스턴스를 사용합니다. 이 애플리케이션은 Amazon Aurora 데이터베이스도 사용합니다. 애플리케이션의 모든 데이터는 유휴 및 전송 중에 암호화되어야 합니다.\n이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company is building a new web-based customer relationship management application. The application will use several Amazon EC2 instances that are backed by Amazon Elastic Block Store (Amazon EBS) volumes behind an Application Load Balancer (ALB). The application will also use an Amazon Aurora database. All data for the application must be encrypted at rest and in transit.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "ALB에서 AWS Key Management Service(AWS KMS) 인증서를 사용하여 전송 중인 데이터를 암호화합니다. AWS Certificate Manager(ACM)를 사용하여 유휴 상태의 EBS 볼륨 및 Aurora 데이터베이스 스토리지를 암호화합니다.",
+        "B": "AWS 루트 계정을 사용하여 AWS Management Console에 로그인합니다. 회사의 암호화 인증서를 업로드합니다. 루트 계정에 있는 동안 계정의 저장 및 전송 중인 모든 데이터에 대해 암호화를 켜는 옵션을 선택합니다.",
+        "C": "AWS Key Management Service(AWS KMS)를 사용하여 유휴 상태의 EBS 볼륨 및 Aurora 데이터베이스 스토리지를 암호화합니다. ALB에 AWS Certificate Manager(ACM) 인증서를 연결하여 전송 중인 데이터를 암호화합니다.",
+        "D": "BitLocker를 사용하여 유휴 상태의 모든 데이터를 암호화합니다. 회사의 TLS 인증서 키를 AWS Key Management Service(AWS KMS)로 가져옵니다. KMS 키를 ALB에 연결하여 전송 중인 데이터를 암호화합니다."
+      },
+      "eng": {
+        "A": "Use AWS Key Management Service (AWS KMS) certificates on the ALB to encrypt data in transit. Use AWS Certificate Manager (ACM) to encrypt the EBS volumes and Aurora database storage at rest.",
+        "B": "Use the AWS root account to log in to the AWS Management Console. Upload the company’s encryption certificates. While in the root account, select the option to turn on encryption for all data at rest and in transit for the account.",
+        "C": "Use AWS Key Management Service (AWS KMS) to encrypt the EBS volumes and Aurora database storage at rest. Attach an AWS Certificate Manager (ACM) certificate to the ALB to encrypt data in transit.",
+        "D": "Use BitLocker to encrypt all data at rest. Import the company’s TLS certificate keys to AWS Key Management Service (AWS KMS) Attach the KMS keys to the ALB to encrypt data in transit."
+      }
+    },
+    "category": [
+      "KMS",
+      "Security"
+    ],
+    "subcategory": [
+      "ACM"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/95325-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 372,
+    "question": {
+      "kor": "회사에서 외부 감사인과 회계 데이터를 공유하려고 합니다. 데이터는 프라이빗 서브넷에 상주하는 Amazon RDS DB 인스턴스에 저장됩니다. 감사자는 자체 AWS 계정이 있으며 자체 데이터베이스 사본이 필요합니다.\n회사가 감사자와 데이터베이스를 공유하는 가장 안전한 방법은 무엇입니까?",
+      "eng": "A company wants to share accounting data with an external auditor. The data is stored in an Amazon RDS DB instance that resides in a private subnet. The auditor has its own AWS account and requires its own copy of the database.\nWhat is the MOST secure way for the company to share the database with the auditor?"
+    },
+    "choices": {
+      "kor": {
+        "A": "데이터베이스의 읽기 전용 복제본을 생성합니다. 감사자 액세스 권한을 부여하도록 IAM 표준 데이터베이스 인증을 구성합니다.",
+        "B": "데이터베이스 내용을 텍스트 파일로 내보냅니다. 파일을 Amazon S3 버킷에 저장합니다. 감사자를 위한 새 IAM 사용자를 생성합니다. 사용자에게 S3 버킷에 대한 액세스 권한을 부여 합니다.",
+        "C": "데이터베이스의 스냅샷을 Amazon S3 버킷에 복사합니다. IAM 사용자를 생성합니다. 사용자의 키를 감사자와 공유하여 S3 버킷의 객체에 대한 액세스 권한을 부여합니다.",
+        "D": "데이터베이스의 암호화된 스냅샷을 생성합니다. 감사자와 스냅샷을 공유합니다. AWS Key Management Service(AWS KMS) 암호화 키에 대한 액세스를 허용합니다."
+      },
+      "eng": {
+        "A": "Create a read replica of the database. Configure IAM standard database authentication to grant the auditor access.",
+        "B": "Export the database contents to text files. Store the files in an Amazon S3 bucket. Create a new IAM user for the auditor. Grant the user access to the S3 bucket.",
+        "C": "Copy a snapshot of the database to an Amazon S3 bucket. Create an IAM user. Share the user's keys with the auditor to grant access to the object in the S3 bucket.",
+        "D": "Create an encrypted snapshot of the database. Share the snapshot with the auditor. Allow access to the AWS Key Management Service (AWS KMS) encryption key."
+      }
+    },
+    "category": [
+      "KMS"
+    ],
+    "subcategory": [],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/109398-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 498,
+    "question": {
+      "kor": "회사에서 전자상거래 애플리케이션을 구축 중이며 중요한 고객 정보를 저장해야 합니다. 회사는 고객이 웹사이트에서 구매 거래를 완료할 수 있는 기능을 제공해야 합니다. 회사는 또한 민감한 고객 데이터를 데이터베이스 관리자로부터 보호해야 합니다.\n어떤 솔루션이 이러한 요구 사항을 충족합니까?",
+      "eng": "A company is building an ecommerce application and needs to store sensitive customer information. The company needs to give customers the ability to complete purchase transactions on the website. The company also needs to ensure that sensitive customer data is protected, even from database administrators.\nWhich solution meets these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Elastic Block Store(Amazon EBS) 볼륨에 민감한 데이터를 저장합니다. EBS 암호화를 사용하여 데이터를 암호화합니다. IAM 인스턴스 역할을 사용하여 액세스를 제한합니다.",
+        "B": "MySQL용 Amazon RDS에 민감한 데이터를 저장합니다. AWS Key Management Service(AWS KMS) 클라이언트 측 암호화를 사용하여 데이터를 암호화합니다.",
+        "C": "민감한 데이터를 Amazon S3에 저장합니다. AWS Key Management Service(AWS KMS) 서버 측 암호화를 사용하여 데이터를 암호화합니다. S3 버킷 정책을 사용하여 액세스를 제한하십시오.",
+        "D": "민감한 데이터를 Windows Server용 Amazon FSx에 저장합니다. 응용 프로그램 서버에 파일 공유를 탑재합니다. Windows 파일 권한을 사용하여 액세스를 제한하십시오."
+      },
+      "eng": {
+        "A": "Store sensitive data in an Amazon Elastic Block Store (Amazon EBS) volume. Use EBS encryption to encrypt the data. Use an IAM instance role to restrict access.",
+        "B": "Store sensitive data in Amazon RDS for MySQL. Use AWS Key Management Service (AWS KMS) client-side encryption to encrypt the data.",
+        "C": "Store sensitive data in Amazon S3. Use AWS Key Management Service (AWS KMS) server-side encryption to encrypt the data. Use S3 bucket policies to restrict access.",
+        "D": "Store sensitive data in Amazon FSx for Windows Server. Mount the file share on application servers. Use Windows file permissions to restrict access."
+      }
+    },
+    "category": [
+      "KMS"
+    ],
+    "subcategory": [],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/117024-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 645,
+    "question": {
+      "kor": "기업은 고객에게 데이터에 대한 안전한 액세스를 제공해야 합니다. 회사는 고객 데이터를 처리하고 결과를 Amazon S3 버킷에 저장합니다.\n모든 데이터에는 강력한 규정과 보안 요구 사항이 적용됩니다. 저장된 데이터는 암호화되어야 합니다. 각 고객은 AWS 계정의 데이터에만 액세스할 수 있어야 합니다. 회사 직원은 데이터에 접근할 수 없어야 합니다.\n어떤 솔루션이 이러한 요구 사항을 충족합니까?",
+      "eng": "A company needs to provide customers with secure access to its data. The company processes customer data and stores the results in an Amazon S3 bucket.\nAll the data is subject to strong regulations and security requirements. The data must be encrypted at rest. Each customer must be able to access only their data from their AWS account. Company employees must not be able to access the data.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "각 고객에 대해 AWS Certificate Manager(ACM) 인증서를 프로비저닝합니다. 클라이언트 측 데이터를 암호화합니다. 개인 인증서 정책에서 고객이 제공하는 IAM 역할을 제외한 모든 보안 주체의 인증서에 대한 액세스를 거부합니다.",
+        "B": "각 고객에 대해 별도의 AWS Key Management Service(AWS KMS) 키를 제공합니다. 서버측 데이터를 암호화합니다. S3 버킷 정책에서 고객이 제공하는 IAM 역할을 제외한 모든 보안 주체에 대한 데이터 암호 해독을 거부합니다.",
+        "C": "각 고객에 대해 별도의 AWS Key Management Service(AWS KMS) 키를 프로비저닝합니다. 서버측 데이터를 암호화합니다. 각 KMS 키 정책에서 고객이 제공하는 IAM 역할을 제외한 모든 보안 주체에 대한 데이터 암호 해독을 거부합니다.",
+        "D": "각 고객에 대해 AWS Certificate Manager(ACM) 인증서를 프로비저닝합니다. 클라이언트 측 데이터를 암호화합니다. 공인 인증서 정책에서 고객이 제공하는 IAM 역할을 제외한 모든 보안 주체의 인증서에 대한 액세스를 거부합니다."
+      },
+      "eng": {
+        "A": "Provision an AWS Certificate Manager (ACM) certificate for each customer. Encrypt the data client-side. In the private certificate policy, deny access to the certificate for all principals except an IAM role that the customer provides.",
+        "B": "Provision a separate AWS Key Management Service (AWS KMS) key for each customer. Encrypt the data server-side. In the S3 bucket policy, deny decryption of data for all principals except an IAM role that the customer provides.",
+        "C": "Provision a separate AWS Key Management Service (AWS KMS) key for each customer. Encrypt the data server-side. In each KMS key policy, deny decryption of data for all principals except an IAM role that the customer provides.",
+        "D": "Provision an AWS Certificate Manager (ACM) certificate for each customer. Encrypt the data client-side. In the public certificate policy, deny access to the certificate for all principals except an IAM role that the customer provides."
+      }
+    },
+    "category": [
+      "KMS"
+    ],
+    "subcategory": [],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/132859-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 713,
+    "question": {
+      "kor": "한 회사가 데이터를 Amazon S3 버킷으로 마이그레이션할 계획입니다. 데이터는 S3 버킷 내에서 저장 시 암호화되어야 합니다. 암호화 키는 매년 자동으로 순환되어야 합니다.\n최소한의 운영 오버헤드로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company is planning to migrate data to an Amazon S3 bucket. The data must be encrypted at rest within the S3 bucket. The encryption key must be rotated automatically every year.\nWhich solution will meet these requirements with the LEAST operational overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "데이터를 S3 버킷으로 마이그레이션합니다. Amazon S3 관리형 키(SSE-S3)로 서버 측 암호화를 사용합니다. SSE-S3 암호화 키의 내장 키 순환 동작을 사용합니다.",
+        "B": "AWS Key Management Service(AWS KMS) 고객 관리형 키를 생성합니다. 자동 키 순환을 활성화합니다. 고객 관리형 KMS 키를 사용하도록 S3 버킷의 기본 암호화 동작을 설정합니다. 데이터를 S3 버킷으로 마이그레이션합니다.",
+        "C": "AWS Key Management Service(AWS KMS) 고객 관리형 키를 생성합니다. 고객 관리형 KMS 키를 사용하도록 S3 버킷의 기본 암호화 동작을 설정합니다. 데이터를 S3 버킷으로 마이그레이션합니다. 매년 KMS 키를 수동으로 순환합니다.",
+        "D": "고객 키 자료를 사용하여 데이터를 암호화합니다. 데이터를 S3 버킷으로 마이그레이션합니다. 키 자료 없이 AWS Key Management Service(AWS KMS) 키를 생성합니다. 고객 키 자료를 KMS 키로 가져옵니다. 자동 키 순환을 활성화합니다."
+      },
+      "eng": {
+        "A": "Migrate the data to the S3 bucket. Use server-side encryption with Amazon S3 managed keys (SSE-S3). Use the built-in key rotation behavior of SSE-S3 encryption keys.",
+        "B": "Create an AWS Key Management Service (AWS KMS) customer managed key. Enable automatic key rotation. Set the S3 bucket's default encryption behavior to use the customer managed KMS key. Migrate the data to the S3 bucket.",
+        "C": "Create an AWS Key Management Service (AWS KMS) customer managed key. Set the S3 bucket's default encryption behavior to use the customer managed KMS key. Migrate the data to the S3 bucket. Manually rotate the KMS key every year.",
+        "D": "Use customer key material to encrypt the data. Migrate the data to the S3 bucket. Create an AWS Key Management Service (AWS KMS) key without key material. Import the customer key material into the KMS key. Enable automatic key rotation."
+      }
+    },
+    "category": [
+      "KMS"
+    ],
+    "subcategory": [],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/136805-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 763,
+    "question": {
+      "kor": "회사는 민감한 데이터를 Amazon S3에 저장합니다. 솔루션 설계자는 암호화 솔루션을 만들어야 합니다. 회사는 암호화해야 하는 모든 데이터에 대해 최소한의 노력으로 암호화 키를 생성, 순환 및 비활성화할 수 있는 사용자의 능력을 완전히 제어해야 합니다.\n어떤 솔루션이 이러한 요구 사항을 충족합니까?",
+      "eng": "A company stores sensitive data in Amazon S3. A solutions architect needs to create an encryption solution. The company needs to fully control the ability of users to create, rotate, and disable encryption keys with minimal effort for any data that must be encrypted.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon S3 관리형 암호화 키(SSE-S3)와 함께 기본 서버 측 암호화를 사용하여 민감한 데이터를 저장합니다.",
+        "B": "AWS Key Management Service(AWS KMS)를 사용하여 고객 관리형 키를 생성합니다. AWS KMS 키(SSE-KMS)로 서버 측 암호화를 사용하여 S3 객체를 암호화하려면 새 키를 사용합니다.",
+        "C": "AWS Key Management Service(AWS KMS)를 사용하여 AWS 관리형 키를 생성합니다. AWS KMS 키(SSE-KMS)로 서버 측 암호화를 사용하여 S3 객체를 암호화하려면 새 키를 사용합니다.",
+        "D": "S3 객체를 Amazon EC2 인스턴스로 다운로드합니다. 고객 관리 키를 사용하여 객체를 암호화합니다. 암호화된 객체를 Amazon S3에 다시 업로드합니다."
+      },
+      "eng": {
+        "A": "Use default server-side encryption with Amazon S3 managed encryption keys (SSE-S3) to store the sensitive data.",
+        "B": "Create a customer managed key by using AWS Key Management Service (AWS KMS). Use the new key to encrypt the S3 objects by using server-side encryption with AWS KMS keys (SSE-KMS).",
+        "C": "Create an AWS managed key by using AWS Key Management Service (AWS KMS). Use the new key to encrypt the S3 objects by using server-side encryption with AWS KMS keys (SSE-KMS).",
+        "D": "Download S3 objects to an Amazon EC2 instance. Encrypt the objects by using customer managed keys. Upload the encrypted objects back into Amazon S3."
+      }
+    },
+    "category": [
+      "KMS"
+    ],
+    "subcategory": [],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/129719-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 767,
+    "question": {
+      "kor": "한 회사가 Amazon RDS 데이터베이스를 기반으로 하는 Amazon EC2에서 매우 민감한 애플리케이션을 실행하고 있습니다. 규정 준수 규정에 따라 모든 개인 식별 정보(PII)는 저장 시 암호화되어야 합니다.\n인프라에 대한 변경 사항을 최소화하면서 이 요구 사항을 충족하기 위해 솔루션 설계자는 어떤 솔루션을 권장해야 합니까?",
+      "eng": "A company is running a highly sensitive application on Amazon EC2 backed by an Amazon RDS database. Compliance regulations mandate that all personally identifiable information (PII) be encrypted at rest.\nWhich solution should a solutions architect recommend to meet this requirement with the LEAST amount of changes to the infrastructure?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Certificate Manager를 배포하여 인증서를 생성합니다. 인증서를 사용하여 데이터베이스 볼륨을 암호화합니다.",
+        "B": "AWS CloudHSM을 배포하고, 암호화 키를 생성하고, 키를 사용하여 데이터베이스 볼륨을 암호화합니다.",
+        "C": "AWS KMS(AWS Key Management Service) 키를 사용하여 SSL 암호화를 구성하여 데이터베이스 볼륨을 암호화합니다.",
+        "D": "AWS KMS(AWS Key Management Service) 키를 사용하여 Amazon Elastic Block Store(Amazon EBS) 암호화 및 Amazon RDS 암호화를 구성하여 인스턴스 및 데이",
+        "E": "터베이스 볼륨을 암호화합니다."
+      },
+      "eng": {
+        "A": "Deploy AWS Certificate Manager to generate certificates. Use the certificates to encrypt the database volume.",
+        "B": "Deploy AWS CloudHSM, generate encryption keys, and use the keys to encrypt database volumes.",
+        "C": "Configure SSL encryption using AWS Key Management Service (AWS KMS) keys to encrypt database volumes.",
+        "D": "Configure Amazon Elastic Block Store (Amazon EBS) encryption and Amazon RDS encryption with AWS Key Management Service (AWS KMS) keys to encrypt instance and database volumes."
+      }
+    },
+    "category": [
+      "KMS"
+    ],
+    "subcategory": [],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/138289-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 868,
+    "question": {
+      "kor": "회사는 온프레미스 키 관리자에서 암호화 키를 사용해야 합니다. 키 관리자는 규제 및 규정 준수 요구 사항으로 인해 AWS 클라우드 외부에 있습니다. 회사는 AWS 클라우드 외부에 보관되고 다양한 공급업체의 다양한 외부 키 관리자를 지원하는 암호화 키를 사용하여 암호화 및 암호 해독을 관리하려고 합니다.\n최소한의 운영 오버헤드로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company is required to use cryptographic keys in its on-premises key manager. The key manager is outside of the AWS Cloud because of regulatory and compliance requirements. The company wants to manage encryption and decryption by using cryptographic keys that are retained outside of the AWS Cloud and that support a variety of external key managers from different vendors.\nWhich solution will meet these requirements with the LEAST operational overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "CloudHSM 클러스터가 지원하는 AWS CloudHSM 키 스토어를 사용하십시오.",
+        "B": "외부 키 관리자가 지원하는 AWS Key Management Service(AWS KMS) 외부 키 스토어를 사용합니다.",
+        "C": "기본 AWS Key Management Service(AWS KMS) 관리형 키 스토어를 사용합니다.",
+        "D": "AWS CloudHSM 클러스터가 지원하는 사용자 지정 키 스토어를 사용합니다."
+      },
+      "eng": {
+        "A": "Use AWS CloudHSM key store backed by a CloudHSM cluster.",
+        "B": "Use an AWS Key Management Service (AWS KMS) external key store backed by an external key manager.",
+        "C": "Use the default AWS Key Management Service (AWS KMS) managed key store.",
+        "D": "Use a custom key store backed by an AWS CloudHSM cluster."
+      }
+    },
+    "category": [
+      "KMS"
+    ],
+    "subcategory": [],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/125583-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 887,
+    "question": {
+      "kor": "회사는 인스턴스를 Amazon EC2 사용하고 Amazon Elastic Block Store(Amazon EBS) 볼륨에 데이터를 저장합니다. 회사는 AWS Key Management Service(AWS KMS)를사용하여 모든 저장 데이터가 암호화되었는지 확인해야 합니다. 회사는 암호화 키의 순환을 제어할 수 있어야 합니다.\n최소한의 운영 오버헤드로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company uses Amazon EC2 instances and stores data on Amazon Elastic Block Store (Amazon EBS) volumes. The company must ensure that all data is encrypted at rest by using AWS Key Management Service (AWS KMS). The company must be able to control rotation of the encryption keys.\nWhich solution will meet these requirements with the LEAST operational overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "고객 관리형 키를 생성합니다. 키를 사용하여 EBS 볼륨을 암호화합니다.",
+        "B": "AWS 관리형 키를 사용하여 EBS 볼륨을 암호화합니다. 키를 사용하여 자동 키 순환을 구성합니다.",
+        "C": "가져온 키 자료를 사용하여 외부 KMS 키를 생성합니다. 키를 사용하여 EBS 볼륨을 암호화합니다.",
+        "D": "AWS 소유 키를 사용하여 EBS 볼륨을 암호화합니다."
+      },
+      "eng": {
+        "A": "Create a customer managed key. Use the key to encrypt the EBS volumes.",
+        "B": "Use an AWS managed key to encrypt the EBS volumes. Use the key to configure automatic key rotation.",
+        "C": "Create an external KMS key with imported key material. Use the key to encrypt the EBS volumes.",
+        "D": "Use an AWS owned key to encrypt the EBS volumes."
+      }
+    },
+    "category": [
+      "KMS"
+    ],
+    "subcategory": [],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/129723-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 731,
+    "question": {
+      "kor": "한 회사가 워크로드를 AWS로 마이그레이션하고 있습니다. 회사는 SQL Server 인스턴스에서 실행되는 온프레미스 관계형 데이터베이스에 민감하고 중요한 데이터를 보유하고 있습니다.\n회사는 AWS 클라우드를 사용하여 보안을 강화하고 데이터베이스의 운영 오버헤드를 줄이고 싶어합니다.\n이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company is migrating its workloads to AWS. The company has sensitive and critical data in on-premises relational databases that run on SQL Server instances.\nThe company wants to use the AWS Cloud to increase security and reduce operational overhead for the databases.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "데이터베이스를 Amazon EC2 인스턴스로 마이그레이션합니다. 암호화를 위해 AWS Key Management Service(AWS KMS) AWS 관리형 키를 사용합니다.",
+        "B": "데이터베이스를 SQL Server DB 인스턴스용 다중 AZ Amazon RDS로 마이그레이션합니다. 암호화를 위해 AWS Key Management Service(AWS KMS) AWS 관리형 키를 사용합니다.",
+        "C": "데이터를 Amazon S3 버킷으로 마이그레이션합니다. Amazon Macie를 사용하여 데이터 보안을 보장하세요.",
+        "D": "데이터베이스를 Amazon DynamoDB 테이블로 마이그레이션합니다. Amazon CloudWatch Logs를 사용하여 데이터 보안을 보장하세요."
+      },
+      "eng": {
+        "A": "Migrate the databases to Amazon EC2 instances. Use an AWS Key Management Service (AWS KMS) AWS managed key for encryption.",
+        "B": "Migrate the databases to a Multi-AZ Amazon RDS for SQL Server DB instance. Use an AWS Key Management Service (AWS KMS) AWS managed key for encryption.",
+        "C": "Migrate the data to an Amazon S3 bucket. Use Amazon Macie to ensure data security.",
+        "D": "Migrate the databases to an Amazon DynamoDB table. Use Amazon CloudWatch Logs to ensure data security."
+      }
+    },
+    "category": [
+      "Database",
+      "KMS"
+    ],
+    "subcategory": [],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/139853-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 345,
+    "question": {
+      "kor": "한 회사가 AWS에서 자체 관리형 DNS 서비스를 구현했습니다. 이 솔루션은 다음으로 구성됩니다.\n* 서로 다른 AWS 리전의 Amazon EC2 인스턴스\n* AWS Global Accelerator의 표준 가속기 엔드포인트\n회사는 DDoS 공격으로부터 솔루션을 보호하려고 합니다.\n솔루션 설계자는 이 요구 사항을 충족하기 위해 무엇을 해야 합니까?",
+      "eng": "A company has implemented a self-managed DNS service on AWS. The solution consists of the following: * Amazon EC2 instances in different AWS Regions * Endpoints of a standard accelerator in AWS Global Accelerator\nThe company wants to protect the solution against DDoS attacks.\nWhat should a solutions architect do to meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Shield Advanced에 가입하십시오. 보호할 리소스로 액셀러레이터를 추가합니다.",
+        "B": "AWS Shield Advanced에 가입합니다. 보호할 리소스로 EC2 인스턴스를 추가합니다.",
+        "C": "속도 기반 규칙을 포함하는 AWS WAF 웹 ACL을 생성합니다. 웹 ACL을 가속기와 연결합니다.",
+        "D": "비율 기반 규칙을 포함하는 AWS WAF 웹 ACL을 생성합니다. 웹 ACL을 EC2 인스턴스와 연결합니다."
+      },
+      "eng": {
+        "A": "Subscribe to AWS Shield Advanced. Add the accelerator as a resource to protect.",
+        "B": "Subscribe to AWS Shield Advanced. Add the EC2 instances as resources to protect.",
+        "C": "Create an AWS WAF web ACL that includes a rate-based rule. Associate the web ACL with the accelerator.",
+        "D": "Create an AWS WAF web ACL that includes a rate-based rule. Associate the web ACL with the EC2 instances."
+      }
+    },
+    "category": [
+      "DDoS"
+    ],
+    "subcategory": [
+      "Shield Advanced"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/102164-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 618,
+    "question": {
+      "kor": "한 도시에서는 ALB(Application Load Balancer) 뒤에 Amazon EC2 인스턴스에서 실행되는 웹 애플리케이션을 배포했습니다. 애플리케이션 사용자는 산발적인 성능을 보고했는데, 이는 무작위 IP 주소에서 발생하는 DDoS 공격과 관련된 것으로 보입니다. 도시에는 구성 변경을 최소화하고 DDoS 소스에 대한 감사 추적을 제공하는 솔루션이 필요합니다.\n이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A city has deployed a web application running on Amazon EC2 instances behind an Application Load Balancer (ALB). The application's users have reported sporadic performance, which appears to be related to DDoS attacks originating from random IP addresses. The city needs a solution that requires minimal configuration changes and provides an audit trail for the DDoS sources.\nWhich solution meets these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "ALB에서 AWS WAF 웹 ACL을 활성화하고 알 수 없는 소스의 트래픽을 차단하는 규칙을 구성합니다.",
+        "B": "Amazon Inspector를 구독하세요. AWS DDoS 대응 팀(DRT)을 참여시켜 완화 제어 기능을 서비스에 통합하십시오.",
+        "C": "AWS Shield Advanced를 구독하세요. AWS DDoS 대응 팀(DRT)을 참여시켜 완화 제어 기능을 서비스에 통합하십시오.",
+        "D": "애플리케이션에 대한 Amazon CloudFront 배포를 생성하고 ALB를 오리진으로 설정합니다. 배포에서 AWS WAF 웹 ACL을 활성화하고 알 수 없는 소스의 트래픽을 차단하는 규칙을 구성합니다."
+      },
+      "eng": {
+        "A": "Enable an AWS WAF web ACL on the ALB, and configure rules to block traffic from unknown sources.",
+        "B": "Subscribe to Amazon Inspector. Engage the AWS DDoS Response Team (DRT) to integrate mitigating controls into the service.",
+        "C": "Subscribe to AWS Shield Advanced. Engage the AWS DDoS Response Team (DRT) to integrate mitigating controls into the service.",
+        "D": "Create an Amazon CloudFront distribution for the application, and set the ALB as the origin. Enable an AWS WAF web ACL on the distribution, and configure rules to block traffic from unknown sources"
+      }
+    },
+    "category": [
+      "DDoS"
+    ],
+    "subcategory": [
+      "Shield Advanced"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/132865-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 78,
+    "question": {
+      "kor": "한 회사가 AWS 클라우드에서 공개 웹 애플리케이션을 출시할 준비를 하고 있습니다. 아키텍처는 ELB(Elastic Load Balancer) 뒤에 있는 VPC 내의 Amazon EC2 인스턴스로 구성됩니다. 타사 서비스가 DNS에 사용됩니다. 회사의 솔루션 설계자는 대규모 DDoS 공격을 탐지하고 방어하는 솔루션을 추천해야 합니다.\n어떤 솔루션이 이러한 요구 사항을 충족합니까?",
+      "eng": "A company is preparing to launch a public-facing web application in the AWS Cloud. The architecture consists of Amazon EC2 instances within a VPC behind an Elastic Load Balancer (ELB). A third-party service is used for the DNS. The company's solutions architect must recommend a solution to detect and protect against large-scale DDoS attacks.\nWhich solution meets these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "계정에서 Amazon GuardDuty를 활성화합니다.",
+        "B": "EC2 인스턴스에서 Amazon Inspector를 활성화합니다.",
+        "C": "AWS Shield를 활성화하고 여기에 Amazon Route 53을 할당합니다.",
+        "D": "AWS Shield Advanced를 활성화하고 여기에 ELB를 할당합니다."
+      },
+      "eng": {
+        "A": "Enable Amazon GuardDuty on the account.",
+        "B": "Enable Amazon Inspector on the EC2 instances.",
+        "C": "Enable AWS Shield and assign Amazon Route 53 to it.",
+        "D": "Enable AWS Shield Advanced and assign the ELB to it."
+      }
+    },
+    "category": [
+      "DDoS"
+    ],
+    "subcategory": [
+      "Shield",
+      "Shield Advanced"
+    ],
+    "rote_memorization": true,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/85203-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 145,
+    "question": {
+      "kor": "회사는 최근 웹 공격으로 인해 공용 웹 애플리케이션의 보안에 대해 우려하고 있습니다. 애플리케이션은 Application Load Balancer(ALB)를 사용합니다. 솔루션 설계자는 애플리케이션에 대한 DDoS 공격의 위험을 줄여야 합니다.\n솔루션 설계자는 이 요구 사항을 충족하기 위해 무엇을 해야 합니까?",
+      "eng": "A company is concerned about the security of its public web application due to recent web attacks. The application uses an Application Load Balancer (ALB).\nA solutions architect must reduce the risk of DDoS attacks against the application.\nWhat should the solutions architect do to meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "ALB에 Amazon Inspector 에이전트를 추가합니다.",
+        "B": "공격을 방지하도록 Amazon Macie를 구성합니다.",
+        "C": "공격을 방지하려면 AWS Shield Advanced를 활성화하십시오.",
+        "D": "ALB를 모니터링하도록 Amazon GuardDuty를 구성합니다."
+      },
+      "eng": {
+        "A": "Add an Amazon Inspector agent to the ALB.",
+        "B": "Configure Amazon Macie to prevent attacks.",
+        "C": "Enable AWS Shield Advanced to prevent attacks.",
+        "D": "Configure Amazon GuardDuty to monitor the ALB."
+      }
+    },
+    "category": [
+      "DDoS"
+    ],
+    "subcategory": [
+      "Shield"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/87526-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 50,
+    "question": {
+      "kor": "솔루션 설계자는 웹 사이트를 위한 고가용성 인프라를 설계해야 합니다. 이 웹 사이트는 Amazon EC2 인스턴스에서 실행되는 Windows 웹 서버로 구동됩니다. 솔루션 설계자는 수천 개의 IP 주소에서 발생하는 대규모 DDoS 공격을 완화할 수 있는 솔루션을 구현해야 합니다. 다운타임은 웹사이트에 허용되지 않습니다.\n그러한 공격으로부터 웹 사이트를 보호하기 위해 솔루션 설계자는 어떤 조치를 취해야 합니까? (두 가지를 선택하세요.)",
+      "eng": "A solutions architect must design a highly available infrastructure for a website. The website is powered by Windows web servers that run on Amazon EC2 instances. The solutions architect must implement a solution that can mitigate a large-scale DDoS attack that originates from thousands of IP addresses.\nDowntime is not acceptable for the website.\nWhich actions should the solutions architect take to protect the website from such an attack? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Shield Advanced를 사용하여 DDoS 공격을 중지하십시오.",
+        "B": "공격자를 자동으로 차단하도록 Amazon GuardDuty를 구성합니다.",
+        "C": "정적 및 동적 콘텐츠 모두에 대해 Amazon CloudFront를 사용하도록 웹 사이트를 구성합니다.",
+        "D": "AWS Lambda 함수를 사용하여 공격자 IP 주소를 VPC 네트워크 ACL에 자동으로 추가합니다.",
+        "E": "CPU 사용률이 80%로 설정된 대상 추적 조정 정책과 함께 Auto Scaling 그룹에서 EC2 스팟 인스턴스를 사용합니다."
+      },
+      "eng": {
+        "A": "Use AWS Shield Advanced to stop the DDoS attack.",
+        "B": "Configure Amazon GuardDuty to automatically block the attackers.",
+        "C": "Configure the website to use Amazon CloudFront for both static and dynamic content.",
+        "D": "Use an AWS Lambda function to automatically add attacker IP addresses to VPC network ACLs.",
+        "E": "Use EC2 Spot Instances in an Auto Scaling group with a target tracking scaling policy that is set to 80% CPU utilization."
+      }
+    },
+    "category": [
+      "DDoS"
+    ],
+    "subcategory": [
+      "CloudFront",
+      "Shield",
+      "Shield Advanced"
+    ],
+    "rote_memorization": true,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/85342-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A",
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 296,
+    "question": {
+      "kor": "회사에서 API로 구동되는 클라우드 통신 플랫폼을 설계하고 있습니다. 애플리케이션은 NLB(Network Load Balancer) 뒤의 Amazon EC2 인스턴스에서 호스팅됩니다. 이 회사는 Amazon API Gateway를 사용하여 외부 사용자에게 API를 통해 애플리케이션에 대한 액세스 권한을 제공합니다. 이 회사는 SQL 인젝션과 같은 웹 익스플로잇으로부터 플랫폼을 보호하고 대규모의 정교한 DDoS 공격을 감지하고 완화하기를 원합니다.\n어떤 솔루션 조합이 MOST 보호를 제공합니까? (두 가지를 선택하세요.)",
+      "eng": "A company is designing a cloud communications platform that is driven by APIs. The application is hosted on Amazon EC2 instances behind a Network Load Balancer (NLB). The company uses Amazon API Gateway to provide external users with access to the application through APIs. The company wants to protect the platform against web exploits like SQL injection and also wants to detect and mitigate large, sophisticated DDoS attacks.\nWhich combination of solutions provides the MOST protection? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS WAF를 사용하여 NLB를 보호하십시오.",
+        "B": "NLB와 함께 AWS Shield Advanced를 사용합니다.",
+        "C": "AWS WAF를 사용하여 Amazon API Gateway를 보호합니다.",
+        "D": "AWS Shield Standard와 함께 Amazon GuardDuty 사용",
+        "E": "Amazon API Gateway와 함께 AWS Shield Standard를 사용합니다."
+      },
+      "eng": {
+        "A": "Use AWS WAF to protect the NLB.",
+        "B": "Use AWS Shield Advanced with the NLB.",
+        "C": "Use AWS WAF to protect Amazon API Gateway.",
+        "D": "Use Amazon GuardDuty with AWS Shield Standard",
+        "E": "Use AWS Shield Standard with Amazon API Gateway."
+      }
+    },
+    "category": [
+      "DDoS",
+      "Security"
+    ],
+    "subcategory": [
+      "API Gateway",
+      "Shield Advanced",
+      "WAF"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/87640-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B",
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  }
+]
