@@ -504,44 +504,6 @@
     "correct_students": []
   },
   {
-    "idx": 362,
-    "question": {
-      "kor": "회사에서 AWS Key Management Service(AWS KMS) 키를 사용하여 AWS Lambda 환경 변수를 암호화하고 있습니다. 솔루션 설계자는 환경 변수를 해독하고 사용하는 데 필요한\n권한이 있는지 확인해야 합니다.\n올바른 권한을 구현하기 위해 솔루션 설계자가 수행해야 하는 단계는 무엇입니까? (두 가지를 선택하세요.)",
-      "eng": "A company is using AWS Key Management Service (AWS KMS) keys to encrypt AWS Lambda environment variables. A solutions architect needs to ensure that the required permissions are in place to decrypt and use the environment variables.\nWhich steps must the solutions architect take to implement the correct permissions? (Choose two.)"
-    },
-    "choices": {
-      "kor": {
-        "A": "Lambda 리소스 정책에 AWS KMS 권한을 추가합니다.",
-        "B": "Lambda 실행 역할에 AWS KMS 권한을 추가합니다.",
-        "C": "Lambda 함수 정책에 AWS KMS 권한을 추가합니다.",
-        "D": "AWS KMS 키 정책에서 Lambda 실행 역할을 허용합니다.",
-        "E": "AWS KMS 키 정책에서 Lambda 리소스 정책을 허용합니다."
-      },
-      "eng": {
-        "A": "Add AWS KMS permissions in the Lambda resource policy.",
-        "B": "Add AWS KMS permissions in the Lambda execution role.",
-        "C": "Add AWS KMS permissions in the Lambda function policy.",
-        "D": "Allow the Lambda execution role in the AWS KMS key policy.",
-        "E": "Allow the Lambda resource policy in the AWS KMS key policy."
-      }
-    },
-    "category": [
-      "IAM"
-    ],
-    "subcategory": [
-      "Role"
-    ],
-    "rote_memorization": false,
-    "reference": "https://www.examtopics.com/discussions/amazon/view/116979-exam-aws-certified-solutions-architect-associate-saa-c03/",
-    "answer": [
-      "B",
-      "D"
-    ],
-    "correct": 0,
-    "incorrect": 0,
-    "correct_students": []
-  },
-  {
     "idx": 368,
     "question": {
       "kor": "회사에서 인프라 모니터링 서비스를 실행합니다. 이 회사는 서비스가 고객 AWS 계정의 데이터를 모니터링할 수 있는 새로운 기능을 구축하고 있습니다. 새로운 기능은 고객 계정에서 AWS API를 호출하여 Amazon EC2 인스턴스를 설명하고 Amazon CloudWatch 지표를 읽습니다.\n회사는 가장 안전한 방법으로 고객 계정에 대한 액세스 권한을 얻기 위해 무엇을 해야 합니까?",

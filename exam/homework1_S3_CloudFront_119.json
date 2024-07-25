@@ -49,8 +49,7 @@
         "A": "S3 Glacier 볼트를 생성합니다. 개체에 WORM(Write-Once, Read-Many) 볼트 잠금 정책을 적용합니다.",
         "B": "S3 객체 잠금이 활성화된 S3 버킷을 생성합니다. 버전 관리를 활성화합니다. 보존 기간을 100년으로 설정합니다. 거버넌스 모드를 새 객체에 대한 S3 버킷의 기본 보관 모드로 사용합니다.",
         "C": "S3 버킷을 생성합니다. AWS CloudTrail을 사용하여 객체를 수정하는 모든 S3 API 이벤트를 추적합니다. 알림을 받으면 회사가 가지고 있는 모든 백업 버전에서 수정된 개체를 복원합니다.",
-        "D": "S3 객체 잠금이 활성화된 S3 버킷을 생성합니다. 버전 관리를 활성화합니다. 객체에 법적 보존을 추가합니다. 객체를 삭제해야 하는 사용자의 IAM 정책에 s3:PutObjectLegalHold 권",
-        "E": "한을 추가합니다."
+        "D": "S3 객체 잠금이 활성화된 S3 버킷을 생성합니다. 버전 관리를 활성화합니다. 객체에 법적 보존을 추가합니다. 객체를 삭제해야 하는 사용자의 IAM 정책에 s3:PutObjectLegalHold 권한을 추가합니다."
       },
       "eng": {
         "A": "Create an S3 Glacier vault. Apply a write-once, read-many (WORM) vault lock policy to the objects.",
@@ -3294,42 +3293,6 @@
     "reference": "https://www.examtopics.com/discussions/amazon/view/111434-exam-aws-certified-solutions-architect-associate-saa-c03/",
     "answer": [
       "C"
-    ],
-    "correct": 0,
-    "incorrect": 0,
-    "correct_students": []
-  },
-  {
-    "idx": 724,
-    "question": {
-      "kor": "한 회사는 기본 TTL이 0초인 Amazon CloudFront 배포를 사용하여 Amazon S3에서 트래픽이 많은 정적 웹 사이트를 호스팅하고 있습니다. 회사는 웹 사이트의 성능을 향상시키기 위해 캐싱을 구현하려고 합니다. 그러나 회사에서는 배포 후 몇 분 이상 오래된 콘텐츠가 제공되지 않도록 하고 싶어합니다.\n솔루션 설계자는 이러한 요구 사항을 충족하기 위해 어떤 캐싱 방법 조합을 구현해야 합니까? (2개를 선택하세요.)",
-      "eng": "A company is hosting a high-traffic static website on Amazon S3 with an Amazon CloudFront distribution that has a default TTL of 0 seconds. The company wants to implement caching to improve performance for the website. However, the company also wants to ensure that stale content is not served for more than a few minutes after a deployment.\nWhich combination of caching methods should a solutions architect implement to meet these requirements? (Choose two.)"
-    },
-    "choices": {
-      "kor": {
-        "A": "CloudFront 기본 TTL을 2분으로 설정합니다.",
-        "B": "S3 버킷에 기본 TTL을 2분으로 설정합니다.",
-        "C": "Amazon S3의 객체에 Cache-Control 개인 지시문을 추가합니다.",
-        "D": "AWS Lambda@Edge 함수를 생성하여 HTTP 응답에 Expires 헤더를 추가합니다. 시청자 응답 시 실행되도록 기능을 구성합니다.",
-        "E": "Amazon S3의 객체에 24시간의 Cache-Control max-age 지시문을 추가합니다. 배포 시 CloudFront 무효화를 생성하여 엣지 캐시에서 변경된 파일을 모두 지웁니다."
-      },
-      "eng": {
-        "A": "Set the CloudFront default TTL to 2 minutes.",
-        "B": "Set a default TTL of 2 minutes on the S3 bucket.",
-        "C": "Add a Cache-Control private directive to the objects in Amazon S3.",
-        "D": "Create an AWS Lambda@Edge function to add an Expires header to HTTP responses. Configure the function to run on viewer response.",
-        "E": "Add a Cache-Control max-age directive of 24 hours to the objects in Amazon S3. On deployment, create a CloudFront invalidation to clear any changed files from edge caches."
-      }
-    },
-    "category": [
-      "Content Delivery"
-    ],
-    "subcategory": [],
-    "rote_memorization": false,
-    "reference": "https://www.examtopics.com/discussions/amazon/view/137850-exam-aws-certified-solutions-architect-associate-saa-c03/",
-    "answer": [
-      "A",
-      "E"
     ],
     "correct": 0,
     "incorrect": 0,

@@ -1,0 +1,2741 @@
+[
+  {
+    "idx": 179,
+    "question": {
+      "kor": "한 회사에서 여러 가용 영역의 Amazon EC2 인스턴스에서 실행되는 웹 기반 애플리케이션을 구축하고 있습니다. 웹 애플리케이션은 총 약 900TB 크기의 텍스트 문서 저장소에 대한 액세스를 제공합니다. 회사는 웹 애플리케이션이 높은 수요 기간을 경험할 것으로 예상합니다. 솔루션 설계자는 텍스트 문서의 저장소 구성 요소가 항상 응용 프로그램의 요구 사항을 충족하도록 확장할 수 있는지 확인해야 합니다. 회사는 솔루션의 전체 비용에 대해 우려하고 있습니다.\n이러한 요구 사항을 가장 비용 효율적으로 충족하는 스토리지 솔루션은 무엇입니까?",
+      "eng": "A company is building a web-based application running on Amazon EC2 instances in multiple Availability Zones. The web application will provide access to a repository of text documents totaling about 900 TB in size. The company anticipates that the web application will experience periods of high demand. A solutions architect must ensure that the storage component for the text documents can scale to meet the demand of the application at all times. The company is concerned about the overall cost of the solution.\nWhich storage solution meets these requirements MOST cost-effectively?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Elastic Block Store(Amazon EBS)",
+        "B": "Amazon Elastic File System(Amazon EFS)",
+        "C": "Amazon OpenSearch 서비스(Amazon Elasticsearch 서비스)",
+        "D": "아마존 S3"
+      },
+      "eng": {
+        "A": "Amazon Elastic Block Store (Amazon EBS)",
+        "B": "Amazon Elastic File System (Amazon EFS)",
+        "C": "Amazon OpenSearch Service (Amazon Elasticsearch Service)",
+        "D": "Amazon S3"
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/86512-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 933,
+    "question": {
+      "kor": "회사의 애플리케이션이 여러 데이터 소스로부터 데이터를 수신하고 있습니다. 데이터의 크기는 다양하며 시간이 지남에 따라 증가할 것으로 예상됩니다. 현재 최대 크기는 700KB입니다. 더 많은 데이터 소스가 추가됨에 따라 데이터 볼륨과 데이터 크기가 계속해서 증가하고 있습니다.\n회사는 Amazon DynamoDB를 애플리케이션의 기본 데이터베이스로 사용하기로 결정했습니다. 솔루션 설계자는 대용량 데이터를 처리하는 솔루션을 식별해야 합니다.\n어떤 솔루션이 운영상 가장 효율적인 방식으로 이러한 요구 사항을 충족합니까?",
+      "eng": "A company’s application is receiving data from multiple data sources. The size of the data varies and is expected to increase over time. The current maximum size is 700 KB. The data volume and data size continue to grow as more data sources are added.\nThe company decides to use Amazon DynamoDB as the primary database for the application. A solutions architect needs to identify a solution that handles the large data sizes.\nWhich solution will meet these requirements in the MOST operationally efficient way?"
+    },
+    "choices": {
+      "kor": {
+        "A": "DynamoDB 항목 크기 제한을 초과하는 데이터를 필터링하는 AWS Lambda 함수를 생성하십시오. Amazon DocumentDB(MongoDB 호환) 데이터베이스에 더 큰 데이터를 저장합니다.",
+        "B": "대용량 데이터를 Amazon S3 버킷에 객체로 저장합니다. DynamoDB 테이블에서 데이터의 S3 URL을 가리키는 속성이 있는 항목을 생성합니다.",
+        "C": "들어오는 모든 대용량 데이터를 동일한 파티션 키를 가진 항목 컬렉션으로 분할합니다. BatchWriteItem API 작업을 사용하여 단일 작업으로 DynamoDB 테이블에 데이터를 씁니다.",
+        "D": "gzip 압축을 사용하여 DynamoDB 테이블에 기록되는 대형 객체를 압축하는 AWS Lambda 함수를 생성합니다."
+      },
+      "eng": {
+        "A": "Create an AWS Lambda function to filter the data that exceeds DynamoDB item size limits. Store the larger data in an Amazon DocumentDB (with MongoDB compatibility) database.",
+        "B": "Store the large data as objects in an Amazon S3 bucket. In a DynamoDB table, create an item that has an attribute that points to the S3 URL of the data.",
+        "C": "Split all incoming large data into a collection of items that have the same partition key. Write the data to a DynamoDB table in a single operation by using the BatchWriteItem API operation.",
+        "D": "Create an AWS Lambda function that uses gzip compression to compress the large objects as they are written to a DynamoDB table."
+      }
+    },
+    "category": [
+      "S3",
+      "Database"
+    ],
+    "subcategory": [
+      "DynamoDB"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/135302-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 473,
+    "question": {
+      "kor": "회사는 Amazon Linux EC2 인스턴스 그룹에서 애플리케이션을 실행합니다. 규정 준수를 위해 회사는 모든 애플리케이션 로그 파일을 7년 동안 보관해야 합니다. 로그 파일은 모든 파일에 동시에 액세스할 수 있어야 하는 보고 도구로 분석됩니다.\n이러한 요구 사항을 가장 비용 효율적으로 충족하는 스토리지 솔루션은 무엇입니까?",
+      "eng": "A company runs an application on a group of Amazon Linux EC2 instances. For compliance reasons, the company must retain all application log files for 7 years. The log files will be analyzed by a reporting tool that must be able to access all the files concurrently.\nWhich storage solution meets these requirements MOST cost-effectively?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Elastic Block Store(Amazon EBS)",
+        "B": "Amazon Elastic File System(Amazon EFS)",
+        "C": "Amazon EC2 인스턴스 스토어",
+        "D": "아마존 S3"
+      },
+      "eng": {
+        "A": "Amazon Elastic Block Store (Amazon EBS)",
+        "B": "Amazon Elastic File System (Amazon EFS)",
+        "C": "Amazon EC2 instance store",
+        "D": "Amazon S3"
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/61526-exam-aws-certified-solutions-architect-associate-saa-c02/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 844,
+    "question": {
+      "kor": "한 회사가 온프레미스 데이터 센터에서 AWS 클라우드로 2계층 애플리케이션을 마이그레이션했습니다. 데이터 계층은 12TB의 범용 SSD Amazon Elastic Block Store(Amazon EBS) 스토리지를 갖춘 Oracle용 Amazon RDS의 다중 AZ 배포입니다. 이 애플리케이션은 평균 문서 크기가 6MB인 이진 대형 개체(BLOB)로 데이터베이스의 문서를 처리하고 저장하도록 설계되었습니다.\n시간이 지남에 따라 데이터베이스 크기가 증가하여 성능이 저하되고 스토리지 비용이 증가했습니다. 회사는 데이터베이스 성능을 개선해야 하며 가용성과 탄력성이 뛰어난 솔루션이 필요합니다.\n이러한 요구 사항을 가장 비용 효율적으로 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company has migrated a two-tier application from its on-premises data center to the AWS Cloud. The data tier is a Multi-AZ deployment of Amazon RDS for Oracle with 12 TB of General Purpose SSD Amazon Elastic Block Store (Amazon EBS) storage. The application is designed to process and store documents in the database as binary large objects (blobs) with an average document size of 6 MB.\nThe database size has grown over time, reducing the performance and increasing the cost of storage. The company must improve the database performance and needs a solution that is highly available and resilient.\nWhich solution will meet these requirements MOST cost-effectively?"
+    },
+    "choices": {
+      "kor": {
+        "A": "RDS DB 인스턴스 크기를 줄입니다. 스토리지 용량을 24TiB로 늘립니다. 스토리지 유형을 마그네틱으로 변경합니다.",
+        "B": "RDS DB 인스턴스 크기를 늘리십시오. 스토리지 용량을 24Ti로 늘립니다. 스토리지 유형을 프로비저닝된 IOPS로 변경합니다.",
+        "C": "Amazon S3 버킷을 생성합니다. S3 버킷에 문서를 저장하도록 애플리케이션을 업데이트합니다. 기존 데이터베이스에 개체 메타데이터를 저장합니다.",
+        "D": "Amazon DynamoDB 테이블을 생성합니다. DynamoDB를 사용하도록 애플리케이션을 업데이트합니다. AWS Database Migration Service(AWS DMS)를 사용하여 Oracle 데이터베이스에서 DynamoDB로 데이터를 마이그레이션합니다."
+      },
+      "eng": {
+        "A": "Reduce the RDS DB instance size. Increase the storage capacity to 24 TiB. Change the storage type to Magnetic.",
+        "B": "Increase the RDS DB instance size. Increase the storage capacity to 24 TiChange the storage type to Provisioned IOPS.",
+        "C": "Create an Amazon S3 bucket. Update the application to store documents in the S3 bucket. Store the object metadata in the existing database.",
+        "D": "Create an Amazon DynamoDB table. Update the application to use DynamoDB. Use AWS Database Migration Service (AWS DMS) to migrate data from the Oracle database to DynamoDB."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "object metadata"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/121215-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 63,
+    "question": {
+      "kor": "회사에서 Amazon S3 Standard 스토리지를 사용하여 백업 파일을 저장하고 있습니다. 1개월 동안 파일에 자주 액세스합니다. 그러나 1개월이 지나면 파일에 액세스하지 않습니다. 회사는 파일을 무기한으로 보관해야 합니다.\n이러한 요구 사항을 가장 비용 효율적으로 충족하는 스토리지 솔루션은 무엇입니까?",
+      "eng": "A company is storing backup files by using Amazon S3 Standard storage. The files are accessed frequently for 1 month. However, the files are not accessed after 1 month. The company must keep the files indefinitely.\nWhich storage solution will meet these requirements MOST cost-effectively?"
+    },
+    "choices": {
+      "kor": {
+        "A": "개체를 자동으로 마이그레이션하도록 S3 Intelligent-Tiering을 구성합니다.",
+        "B": "1개월 후에 객체를 S3 Standard에서 S3 Glacier Deep Archive로 전환하는 S3 수명 주기 구성을 생성합니다.",
+        "C": "1개월 후 객체를 S3 Standard에서 S3 Standard-Infrequent Access(S3 Standard-IA)로 전환하는 S3 수명 주기 구성을 생성합니다.",
+        "D": "1개월 후에 객체를 S3 Standard에서 S3 One Zone-Infrequent Access(S3 One Zone-IA)로 전환하는 S3 수명 주기 구성을 생성합니다."
+      },
+      "eng": {
+        "A": "Configure S3 Intelligent-Tiering to automatically migrate objects.",
+        "B": "Create an S3 Lifecycle configuration to transition objects from S3 Standard to S3 Glacier Deep Archive after 1 month.",
+        "C": "Create an S3 Lifecycle configuration to transition objects from S3 Standard to S3 Standard-Infrequent Access (S3 Standard-IA) after 1 month.",
+        "D": "Create an S3 Lifecycle configuration to transition objects from S3 Standard to S3 One Zone-Infrequent Access (S3 One Zone-IA) after 1 month."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Storage Class"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/85092-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 89,
+    "question": {
+      "kor": "회사에는 각각 크기가 약 5MB인 많은 수의 파일을 생성하는 응용 프로그램이 있습니다. 파일은 Amazon S3에 저장됩니다. 회사 정책에 따라 파일은 삭제되기 전에 4년 동안 저장되어야 합니다. 파일에는 재현하기 어려운 중요한 비즈니스 데이터가 포함되어 있으므로 즉각적인 액세스 가능성이 항상 필요합니다. 파일은 개체 생성 후 처음 30일 동안 자주 액세스되지만 처음 30일 이후에는 거의 액세스되지 않습니다.\n가장 비용 효율적인 스토리지 솔루션은 무엇입니까?",
+      "eng": "A company has an application that generates a large number of files, each approximately 5 MB in size. The files are stored in Amazon S3. Company policy requires the files to be stored for 4 years before they can be deleted. Immediate accessibility is always required as the files contain critical business data that is not easy to reproduce. The files are frequently accessed in the first 30 days of the object creation but are rarely accessed after the first 30 days.\nWhich storage solution is MOST cost-effective?"
+    },
+    "choices": {
+      "kor": {
+        "A": "객체 생성 30일 후에 S3 Standard에서 S3 Glacier로 파일을 이동하는 S3 버킷 수명 주기 정책을 생성합니다. 객체 생성 후 4년이 지나면 파일을 삭제하십시오.",
+        "B": "S3 Standard에서 S3 One Zone-Infrequent Access(S3 One Zone-IA)로 객체 생성 30일 후에 파일을 이동하는 S3 버킷 수명 주기 정책을 생성합니다. 객체 생성 후 4년이 지나면 파일을 삭제하십시오.",
+        "C": "객체 생성 30일 후에 S3 Standard에서 S3 Standard-Infrequent Access(S3 Standard-IA)로 파일을 이동하는 S3 버킷 수명 주기 정책을 생성합니다. 객체 생성 후 4년이 지나면 파일을 삭제하십시오.",
+        "D": "객체 생성 30일 후에 S3 Standard에서 S3 Standard-Infrequent Access(S3 Standard-IA)로 파일을 이동하는 S3 버킷 수명 주기 정책을 생성합니다. 객체 생성 4년 후 파일을 S3 Glacier로 이동합니다."
+      },
+      "eng": {
+        "A": "Create an S3 bucket lifecycle policy to move files from S3 Standard to S3 Glacier 30 days from object creation. Delete the files 4 years after object creation.",
+        "B": "Create an S3 bucket lifecycle policy to move files from S3 Standard to S3 One Zone-Infrequent Access (S3 One Zone-IA) 30 days from object creation. Delete the files 4 years after object creation.",
+        "C": "Create an S3 bucket lifecycle policy to move files from S3 Standard to S3 Standard-Infrequent Access (S3 Standard-IA) 30 days from object creation. Delete the files 4 years after object creation.",
+        "D": "Create an S3 bucket lifecycle policy to move files from S3 Standard to S3 Standard-Infrequent Access (S3 Standard-IA) 30 days from object creation. Move the files to S3 Glacier 4 years after object creation."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Storage Class",
+      "lifecycle policies"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/85310-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 112,
+    "question": {
+      "kor": "솔루션 설계자는 Amazon S3를 사용하여 새로운 디지털 미디어 애플리케이션의 스토리지 아키텍처를 설계하고 있습니다. 미디어 파일은 가용 영역 손실에 대한 복원력이 있어야 합니다. 일부 파일은 자주 액세스되는 반면 다른 파일은 예측할 수 없는 패턴으로 거의 액세스되지 않습니다. 솔루션 설계자는 미디어 파일을 저장하고 검색하는 비용을 최소화해야 합니다.\n이러한 요구 사항을 충족하는 스토리지 옵션은 무엇입니까?",
+      "eng": "A solutions architect is using Amazon S3 to design the storage architecture of a new digital media application. The media files must be resilient to the loss of an Availability Zone. Some files are accessed frequently while other files are rarely accessed in an unpredictable pattern. The solutions architect must minimize the costs of storing and retrieving the media files.\nWhich storage option meets these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 기준",
+        "B": "S3 지능형 계층화",
+        "C": "S3 Standard-Infrequent Access(S3 Standard-IA)",
+        "D": "S3 One Zone-Infrequent Access(S3 One Zone-IA)"
+      },
+      "eng": {
+        "A": "S3 Standard",
+        "B": "S3 Intelligent-Tiering",
+        "C": "S3 Standard-Infrequent Access (S3 Standard-IA)",
+        "D": "S3 One Zone-Infrequent Access (S3 One Zone-IA)"
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Storage Class",
+      "unpredictable pattern"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/84943-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 117,
+    "question": {
+      "kor": "전자상거래 회사는 AWS 클라우드에서 분석 애플리케이션을 호스팅합니다. 이 애플리케이션은 매월 약 300MB의 데이터를 생성합니다. 데이터는 JSON 형식으로 저장됩니다. 회사는 데이터 백업을 위한 재해 복구 솔루션을 평가하고 있습니다. 데이터는 필요한 경우 밀리초 단위로 액세스할 수 있어야 하며 데이터는 30일 동안 보관되어야 합니다.\n이러한 요구 사항을 가장 비용 효율적으로 충족하는 솔루션은 무엇입니까?",
+      "eng": "An ecommerce company hosts its analytics application in the AWS Cloud. The application generates about 300 MB of data each month. The data is stored in JSON format. The company is evaluating a disaster recovery solution to back up the data. The data must be accessible in milliseconds if it is needed, and the data must be kept for 30 days.\nWhich solution meets these requirements MOST cost-effectively?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon OpenSearch 서비스(Amazon Elasticsearch 서비스)",
+        "B": "Amazon S3 Glacier",
+        "C": "Amazon S3 표준",
+        "D": "PostgreSQL용 Amazon RDS"
+      },
+      "eng": {
+        "A": "Amazon OpenSearch Service (Amazon Elasticsearch Service)",
+        "B": "Amazon S3 Glacier",
+        "C": "Amazon S3 Standard",
+        "D": "Amazon RDS for PostgreSQL"
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Storage Class"
+    ],
+    "rote_memorization": true,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/87632-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 125,
+    "question": {
+      "kor": "회사는 중요한 애플리케이션에 대한 애플리케이션 로그 파일을 10년 동안 보관해야 합니다. 애플리케이션 팀은 문제 해결을 위해 지난 달의 로그에 정기적으로 액세스하지만 한 달이 지난 로그는 거의 액세스하지 않습니다. 애플리케이션은 매월 10TB 이상의 로그를 생성합니다.\n이러한 요구 사항을 가장 비용 효율적으로 충족하는 스토리지 옵션은 무엇입니까?",
+      "eng": "A company needs to retain application log files for a critical application for 10 years. The application team regularly accesses logs from the past month for troubleshooting, but logs older than 1 month are rarely accessed. The application generates more than 10 TB of logs per month.\nWhich storage option meets these requirements MOST cost-effectively?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon S3에 로그를 저장합니다. AWS Backup을 사용하여 1개월 이상 된 로그를 S3 Glacier Deep Archive로 이동합니다.",
+        "B": "로그를 Amazon S3에 저장합니다. S3 수명 주기 정책을 사용하여 1개월 이상 된 로그를 S3 Glacier Deep Archive로 이동합니다.",
+        "C": "Amazon CloudWatch Logs에 로그를 저장합니다. AWS Backup을 사용하여 1개월 이상 된 로그를 S3 Glacier Deep Archive로 이동합니다.",
+        "D": "Amazon CloudWatch Logs에 로그를 저장합니다. Amazon S3 수명 주기 정책을 사용하여 1개월 이상 된 로그를 S3 Glacier Deep Archive로 이동합니다."
+      },
+      "eng": {
+        "A": "Store the logs in Amazon S3. Use AWS Backup to move logs more than 1 month old to S3 Glacier Deep Archive.",
+        "B": "Store the logs in Amazon S3. Use S3 Lifecycle policies to move logs more than 1 month old to S3 Glacier Deep Archive.",
+        "C": "Store the logs in Amazon CloudWatch Logs. Use AWS Backup to move logs more than 1 month old to S3 Glacier Deep Archive.",
+        "D": "Store the logs in Amazon CloudWatch Logs. Use Amazon S3 Lifecycle policies to move logs more than 1 month old to S3 Glacier Deep Archive."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "lifecycle policies"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/86864-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 132,
+    "question": {
+      "kor": "한 회사에서 인기 있는 노래 클립으로 만든 벨소리를 판매합니다. 벨소리가 포함된 파일은 Amazon S3 Standard에 저장되며 크기는 128KB 이상입니다. 회사에는 수백만 개의 파일이 있지만 90일보다 오래된 벨소리의 경우 다운로드가 자주 발생하지 않습니다. 회사는 사용자가 가장 많이 액세스하는 파일을 쉽게 사용할 수 있도록 유지하면서 스토리지 비용을 절감해야 합니다.\n이러한 요구 사항을 가장 비용 효율적으로 충족하기 위해 회사는 어떤 조치를 취해야 합니까?",
+      "eng": "A company sells ringtones created from clips of popular songs. The files containing the ringtones are stored in Amazon S3 Standard and are at least 128 KB in size. The company has millions of files, but downloads are infrequent for ringtones older than 90 days. The company needs to save money on storage while keeping the most accessed files readily available for its users.\nWhich action should the company take to meet these requirements MOST cost-effectively?"
+    },
+    "choices": {
+      "kor": {
+        "A": "객체의 초기 스토리지 계층에 대해 S3 Standard-Infrequent Access(S3 Standard-IA) 스토리지를 구성합니다.",
+        "B": "파일을 S3 Intelligent-Tiering으로 이동하고 90일 후에 개체를 더 저렴한 스토리지 계층으로 이동하도록 구성합니다.",
+        "C": "개체를 관리하도록 S3 인벤토리를 구성하고 90일 후에 개체를 S3 Standard-Infrequent Access(S3 Standard-IA)로 이동합니다.",
+        "D": "90일 후에 객체를 S3 Standard에서 S3 Standard-Infrequent Access(S3 Standard-IA)로 이동하는 S3 수명 주기 정책을 구현합니다."
+      },
+      "eng": {
+        "A": "Configure S3 Standard-Infrequent Access (S3 Standard-IA) storage for the initial storage tier of the objects.",
+        "B": "Move the files to S3 Intelligent-Tiering and configure it to move objects to a less expensive storage tier after 90 days.",
+        "C": "Configure S3 inventory to manage objects and move them to S3 Standard-Infrequent Access (S3 Standard-IA) after 90 days.",
+        "D": "Implement an S3 Lifecycle policy that moves the objects from S3 Standard to S3 Standard-Infrequent Access (S3 Standard-IA) after 90 days."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Storage Class",
+      "lifecycle policies"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/86933-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 151,
+    "question": {
+      "kor": "솔루션 설계자는 회사의 스토리지 비용을 줄이기 위해 솔루션을 구현해야 합니다. 회사의 모든 데이터는 Amazon S3 Standard 스토리지 클래스에 있습니다. 회사는 모든 데이터를 최소 25년 동안 보관해야 합니다. 가장 최근 2년 간의 데이터는 가용성이 높고 즉시 검색할 수 있어야 합니다.\n이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A solutions architect needs to implement a solution to reduce a company's storage costs. All the company's data is in the Amazon S3 Standard storage class. The company must keep all data for at least 25 years. Data from the most recent 2 years must be highly available and immediately retrievable.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 수명 주기 정책을 설정하여 객체를 S3 Glacier Deep Archive로 즉시 전환하십시오.",
+        "B": "2년 후 객체를 S3 Glacier Deep Archive로 전환하도록 S3 수명 주기 정책을 설정합니다.",
+        "C": "S3 Intelligent-Tiering을 사용합니다. 보관 옵션을 활성화하여 데이터가 S3 Glacier Deep Archive에 보관되도록 합니다.",
+        "D": "객체를 S3 One Zone-Infrequent Access(S3 One Zone-IA)로 즉시 전환하고 2년 후에 S3 Glacier Deep Archive로 전환하도록 S3 수명 주기 정책을 설정합니다."
+      },
+      "eng": {
+        "A": "Set up an S3 Lifecycle policy to transition objects to S3 Glacier Deep Archive immediately.",
+        "B": "Set up an S3 Lifecycle policy to transition objects to S3 Glacier Deep Archive after 2 years.",
+        "C": "Use S3 Intelligent-Tiering. Activate the archiving option to ensure that data is archived in S3 Glacier Deep Archive.",
+        "D": "Set up an S3 Lifecycle policy to transition objects to S3 One Zone-Infrequent Access (S3 One Zone-IA) immediately and to S3 Glacier Deep Archive after 2 years."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Storage Class",
+      "lifecycle policies"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/86731-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 233,
+    "question": {
+      "kor": "회사는 다른 팀이 액세스할 수 있도록 하루에 한 번씩 데이터베이스를 Amazon S3로 내보내야 합니다. 내보낸 객체 크기는 2GB에서 5GB 사이입니다. 데이터에 대한 S3 액세스 패턴은 가변적이며 빠르게 변화합니다. 데이터는 즉시 사용할 수 있어야 하며 최대 3개월 동안 액세스할 수 있어야 합니다. 회사에는 검색 시간을 늘리지 않는 가장 비용 효율적인 솔루션이 필요합니다.\n이러한 요구 사항을 충족하려면 회사에서 어떤 S3 스토리지 클래스를 사용해야 합니까?",
+      "eng": "A company needs to export its database once a day to Amazon S3 for other teams to access. The exported object size varies between 2 GB and 5 GB. The S3 access pattern for the data is variable and changes rapidly. The data must be immediately available and must remain accessible for up to 3 months. The company needs the most cost-effective solution that will not increase retrieval time.\nWhich S3 storage class should the company use to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 지능형 계층화",
+        "B": "S3 Glacier 즉시 검색",
+        "C": "S3 표준",
+        "D": "S3 Standard-Infrequent Access(S3 스탠다드-IA)"
+      },
+      "eng": {
+        "A": "S3 Intelligent-Tiering",
+        "B": "S3 Glacier Instant Retrieval",
+        "C": "S3 Standard",
+        "D": "S3 Standard-Infrequent Access (S3 Standard-IA)"
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Storage Class"
+    ],
+    "rote_memorization": true,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/95300-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 260,
+    "question": {
+      "kor": "회사는 데이터 객체를 Amazon S3 Standard 스토리지에 저장합니다. 한 솔루션 설계자는 데이터의 75%가 30일 후에 거의 액세스되지 않는다는 사실을 발견했습니다. 회사는 동일한 고가용성 및 탄력성으로 모든 데이터에 즉시 액세스할 수 있어야 하지만 스토리지 비용을 최소화하기를 원합니다.\n이러한 요구 사항을 충족하는 스토리지 솔루션은 무엇입니까?",
+      "eng": "A company stores its data objects in Amazon S3 Standard storage. A solutions architect has found that 75% of the data is rarely accessed after 30 days. The company needs all the data to remain immediately accessible with the same high availability and resiliency, but the company wants to minimize storage costs.\nWhich storage solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "30일 후에 데이터 객체를 S3 Glacier Deep Archive로 이동합니다.",
+        "B": "30일 후에 데이터 객체를 S3 Standard-Infrequent Access(S3 Standard-IA)로 이동합니다.",
+        "C": "30일 후에 데이터 객체를 S3 One Zone-Infrequent Access(S3 One Zone-IA)로 이동합니다.",
+        "D": "데이터 객체를 S3 One Zone-Infrequent Access(S3 One Zone-IA)로 즉시 이동합니다."
+      },
+      "eng": {
+        "A": "Move the data objects to S3 Glacier Deep Archive after 30 days.",
+        "B": "Move the data objects to S3 Standard-Infrequent Access (S3 Standard-IA) after 30 days.",
+        "C": "Move the data objects to S3 One Zone-Infrequent Access (S3 One Zone-IA) after 30 days.",
+        "D": "Move the data objects to S3 One Zone-Infrequent Access (S3 One Zone-IA) immediately."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Storage Class",
+      "lifecycle policies"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/100229-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 287,
+    "question": {
+      "kor": "회사에는 자동차의 IoT 센서에서 데이터를 수집하는 애플리케이션이 있습니다. 데이터는 Amazon Kinesis Data Firehose를 통해 Amazon S3에 스트리밍 및 저장됩니다. 데이터는 매년 수조 개의 S3 객체를 생성합니다. 매일 아침 회사는 지난 30일 동안의 데이터를 사용하여 일련의 기계 학습(ML) 모델을 재교육합니다.\n매년 4회 회사는 이전 12개월의 데이터를 사용하여 분석을 수행하고 다른 ML 모델을 교육합니다. 데이터는 최대 1년 동안 최소한의 지연으로 사용할 수 있어야 합니다. 1년 후에는 데이터를 보관 목적으로 보관해야 합니다.\n이러한 요구 사항을 가장 비용 효율적으로 충족하는 스토리지 솔루션은 무엇입니까?",
+      "eng": "A company has an application that collects data from IoT sensors on automobiles. The data is streamed and stored in Amazon S3 through Amazon Kinesis Data Firehose. The data produces trillions of S3 objects each year. Each morning, the company uses the data from the previous 30 days to retrain a suite of machine learning (ML) models.\nFour times each year, the company uses the data from the previous 12 months to perform analysis and train other ML models. The data must be available with minimal delay for up to 1 year. After 1 year, the data must be retained for archival purposes.\nWhich storage solution meets these requirements MOST cost-effectively?"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 Intelligent-Tiering 스토리지 클래스를 사용합니다. 1년 후 객체를 S3 Glacier Deep Archive로 전환하는 S3 수명 주기 정책을 생성합니다.",
+        "B": "S3 Intelligent-Tiering 스토리지 클래스를 사용합니다. 1년 후 자동으로 객체를 S3 Glacier Deep Archive로 이동하도록 S3 Intelligent-Tiering을 구성합니다.",
+        "C": "S3 Standard-Infrequent Access(S3 Standard-IA) 스토리지 클래스를 사용합니다. 1년 후 객체를 S3 Glacier Deep Archive로 전환하는 S3 수명 주기 정책을 생성합니다.",
+        "D": "S3 Standard 스토리지 클래스를 사용합니다. 30일 후에 객체를 S3 Standard-Infrequent Access(S3 Standard-IA)로 전환한 다음 1년 후에 S3 Glacier Deep Archive로 전환하는 S3 수명 주기 정책을 생성합니다."
+      },
+      "eng": {
+        "A": "Use the S3 Intelligent-Tiering storage class. Create an S3 Lifecycle policy to transition objects to S3 Glacier Deep Archive after 1 year.",
+        "B": "Use the S3 Intelligent-Tiering storage class. Configure S3 Intelligent-Tiering to automatically move objects to S3 Glacier Deep Archive after 1 year.",
+        "C": "Use the S3 Standard-Infrequent Access (S3 Standard-IA) storage class. Create an S3 Lifecycle policy to transition objects to S3 Glacier Deep Archive after 1 year.",
+        "D": "Use the S3 Standard storage class. Create an S3 Lifecycle policy to transition objects to S3 Standard-Infrequent Access (S3 Standard-IA) after 30 days, and then to S3 Glacier Deep Archive after 1 year."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Storage Class",
+      "lifecycle policies"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/102137-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 289,
+    "question": {
+      "kor": "회사의 보안 팀이 VPC 흐름 로그에서 네트워크 트래픽을 캡처하도록 요청합니다. 로그는 90일 동안 자주 액세스한 후 간헐적으로 액세스합니다.\n솔루션 설계자는 로그를 구성할 때 이러한 요구 사항을 충족하기 위해 무엇을 해야 합니까?",
+      "eng": "A company’s security team requests that network traffic be captured in VPC Flow Logs. The logs will be frequently accessed for 90 days and then accessed intermittently.\nWhat should a solutions architect do to meet these requirements when configuring the logs?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon CloudWatch를 대상으로 사용하십시오. 90일 만료로 CloudWatch 로그 그룹 설정",
+        "B": "Amazon Kinesis를 대상으로 사용합니다. 항상 90일 동안 로그를 유지하도록 Kinesis 스트림을 구성합니다.",
+        "C": "AWS CloudTrail을 대상으로 사용합니다. Amazon S3 버킷에 저장하도록 CloudTrail을 구성하고 S3 Intelligent-Tiering을 활성화합니다.",
+        "D": "Amazon S3를 대상으로 사용합니다. S3 수명 주기 정책을 활성화하여 90일 후에 로그를 S3 Standard-Infrequent Access(S3 Standard-IA)로 전환합니다."
+      },
+      "eng": {
+        "A": "Use Amazon CloudWatch as the target. Set the CloudWatch log group with an expiration of 90 days",
+        "B": "Use Amazon Kinesis as the target. Configure the Kinesis stream to always retain the logs for 90 days.",
+        "C": "Use AWS CloudTrail as the target. Configure CloudTrail to save to an Amazon S3 bucket, and enable S3 Intelligent-Tiering.",
+        "D": "Use Amazon S3 as the target. Enable an S3 Lifecycle policy to transition the logs to S3 Standard-Infrequent Access (S3 Standard-IA) after 90 days."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Storage Class",
+      "lifecycle policies"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/95007-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 352,
+    "question": {
+      "kor": "회사에서 온프레미스 데이터 세트의 보조 사본으로 Amazon S3를 사용하려고 합니다. 회사는 이 복사본에 액세스할 필요가 거의 없습니다. 스토리지 솔루션의 비용은 최소화되어야 합니다.\n이러한 요구 사항을 충족하는 스토리지 솔루션은 무엇입니까?",
+      "eng": "A company wants to use Amazon S3 for the secondary copy of its on-premises dataset. The company would rarely need to access this copy. The storage solution's cost should be minimal.\nWhich storage solution meets these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 기준",
+        "B": "S3 지능형 계층화",
+        "C": "S3 Standard-Infrequent Access(S3 Standard-IA)",
+        "D": "S3 One Zone-Infrequent Access(S3 One Zone-IA)"
+      },
+      "eng": {
+        "A": "S3 Standard",
+        "B": "S3 Intelligent-Tiering",
+        "C": "S3 Standard-Infrequent Access (S3 Standard-IA)",
+        "D": "S3 One Zone-Infrequent Access (S3 One Zone-IA)"
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Storage Class"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/27770-exam-aws-certified-solutions-architect-associate-saa-c02/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 378,
+    "question": {
+      "kor": "회사는 오래된 뉴스 영상에서 AWS에 비디오 아카이브를 저장할 수 있는 솔루션을 찾고 있습니다. 회사는 비용을 최소화해야 하며 이러한 파일을 복원할 필요가 거의 없습니다. 파일이 필요할 때 최대 5분 내에 사용할 수 있어야 합니다.\n가장 비용 효율적인 솔루션은 무엇입니까?",
+      "eng": "A company is looking for a solution that can store video archives in AWS from old news footage. The company needs to minimize costs and will rarely need to restore these files. When the files are needed, they must be available in a maximum of five minutes.\nWhat is the MOST cost-effective solution?"
+    },
+    "choices": {
+      "kor": {
+        "A": "비디오 아카이브를 Amazon S3 Glacier에 저장하고 긴급 검색을 사용합니다.",
+        "B": "비디오 아카이브를 Amazon S3 Glacier에 저장하고 표준 검색을 사용합니다.",
+        "C": "비디오 아카이브를 Amazon S3 Standard-Infrequent Access(S3 Standard-IA)에 저장합니다.",
+        "D": "비디오 아카이브를 Amazon S3 One Zone-Infrequent Access(S3 One Zone-IA)에 저장합니다."
+      },
+      "eng": {
+        "A": "Store the video archives in Amazon S3 Glacier and use Expedited retrievals.",
+        "B": "Store the video archives in Amazon S3 Glacier and use Standard retrievals.",
+        "C": "Store the video archives in Amazon S3 Standard-Infrequent Access (S3 Standard-IA).",
+        "D": "Store the video archives in Amazon S3 One Zone-Infrequent Access (S3 One Zone-IA)."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Storage Class"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/109470-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 442,
+    "question": {
+      "kor": "회사는 수집된 원시 데이터를 Amazon S3 버킷에 저장합니다. 이 데이터는 회사 고객을 대신하여 여러 유형의 분석에 사용됩니다. 요청된 분석 유형에 따라 S3 객체에 대한 액세스 패턴이 결정됩니다.\n회사는 접속 패턴을 예측하거나 통제할 수 없습니다. 회사는 S3 비용을 줄이고자 합니다.\n이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company stores raw collected data in an Amazon S3 bucket. The data is used for several types of analytics on behalf of the company's customers. The type of analytics requested to determines the access pattern on the S3 objects.\nThe company cannot predict or control the access pattern. The company wants to reduce its S3 costs. which solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 복제를 사용하여 자주 액세스하지 않는 개체를 S3 Standard-Infrequent Access(S3 Standard-IA)로 전환합니다.",
+        "B": "S3 수명 주기 규칙을 사용하여 객체를 S3 Standard에서 Standard-Infrequent Access로 전환(S3 Standard-IA)",
+        "C": "S3 수명 주기 규칙을 사용하여 객체를 S3 Standard에서 S3 Intelligent-Tiering으로 전환",
+        "D": "S3 Inventory를 사용하여 S3 Standard에서 S3 Intelligent-Tiering으로 액세스하지 않은 객체를 식별하고 전환"
+      },
+      "eng": {
+        "A": "Use S3 replication to transition infrequently accessed objects to S3 Standard-Infrequent Access (S3 Standard-IA)",
+        "B": "Use S3 Lifecycle rules to transition objects from S3 Standard to Standard-Infrequent Access (S3 Standard-IA).",
+        "C": "Use S3 Lifecycle rules for transition objects from S3 Standard to S3 Intelligent-Tiering.",
+        "D": "Use S3 Inventory to identify and transition objects that have not been accessed from S3 Standard to S3 Intelligent-Tiering."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "lifecycle policies",
+      "Storage Class"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/109452-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 451,
+    "question": {
+      "kor": "회사에 보고서를 생성하는 재무 응용 프로그램이 있습니다. 보고서 크기는 평균 50KB이며 Amazon S3에 저장됩니다. 보고서는 생산 후 첫 주 동안 자주 액세스되며 몇 년 동안 저장해야 합니다. 보고서는 6시간 이내에 검색할 수 있어야 합니다.\n이러한 요구 사항을 가장 비용 효율적으로 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company has a financial application that produces reports. The reports average 50 KB in size and are stored in Amazon S3. The reports are frequently accessed during the first week after production and must be stored for several years. The reports must be retrievable within 6 hours.\nWhich solution meets these requirements MOST cost-effectively?"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 Standard를 사용합니다. S3 수명 주기 규칙을 사용하여 7일 후에 보고서를 S3 Glacier로 전환합니다.",
+        "B": "S3 Standard를 사용합니다. S3 수명 주기 규칙을 사용하여 7일 후에 보고서를 S3 Standard-Infrequent Access(S3 Standard-IA)로 전환합니다.",
+        "C": "S3 Intelligent-Tiering을 사용합니다. 보고서를 S3 Standard-Infrequent Access(S3 Standard-IA) 및 S3 Glacier로 전환하도록 S3 Intelligent-Tiering을 구성합니다.",
+        "D": "S3 Standard를 사용합니다. S3 수명 주기 규칙을 사용하여 7일 후에 보고서를 S3 Glacier Deep Archive로 전환합니다."
+      },
+      "eng": {
+        "A": "Use S3 Standard. Use an S3 Lifecycle rule to transition the reports to S3 Glacier after 7 days.",
+        "B": "Use S3 Standard. Use an S3 Lifecycle rule to transition the reports to S3 Standard-Infrequent Access (S3 Standard-IA) after 7 days.",
+        "C": "Use S3 Intelligent-Tiering. Configure S3 Intelligent-Tiering to transition the reports to S3 Standard-Infrequent Access (S3 Standard-IA) and S3 Glacier.",
+        "D": "Use S3 Standard. Use an S3 Lifecycle rule to transition the reports to S3 Glacier Deep Archive after 7 days."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Storage Class",
+      "lifecycle policies"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/116896-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 628,
+    "question": {
+      "kor": "us-east-1 지역에서 사진 호스팅 서비스를 운영하는 회사가 있습니다. 이 서비스를 통해 여러 국가의 사용자가 사진을 업로드하고 볼 수 있습니다. 일부 사진은 몇 달 동안 많이 조회되지만 다른 사진은 일주일 미만 동안 조회됩니다. 이 애플리케이션에서는 각 사진당 최대 20MB까지 업로드할 수 있습니다. 이 서비스는 사진 메타데이터를 사용하여 각 사용자에게 표시할 사진을 결정합니다.\n가장 비용 효율적으로 적절한 사용자 액세스를 제공하는 솔루션은 무엇입니까?",
+      "eng": "A company is running a photo hosting service in the us-east-1 Region. The service enables users across multiple countries to upload and view photos. Some photos are heavily viewed for months, and others are viewed for less than a week. The application allows uploads of up to 20 MB for each photo. The service uses the photo metadata to determine which photos to display to each user.\nWhich solution provides the appropriate user access MOST cost-effectively?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon DynamoDB에 사진을 저장합니다. DynamoDB Accelerator(DAX)를 켜서 자주 보는 항목을 캐시합니다.",
+        "B": "Amazon S3 Intelligent-Tiering 스토리지 클래스에 사진을 저장합니다. 사진 메타데이터와 해당 S3 위치를 DynamoDB에 저장합니다.",
+        "C": "Amazon S3 Standard 스토리지 클래스에 사진을 저장합니다. 30일이 지난 사진을 S3 Standard-Infrequent Access(S3 Standard-IA) 스토리지 클래스로 이동하도록 S3 수명 주기 정책을 설정합니다. 메타데이터를 추적하려면 객체 태그를 사용하세요.",
+        "D": "Amazon S3 Glacier 스토리지 클래스에 사진을 저장합니다. 30일이 지난 사진을 S3 Glacier Deep Archive 스토리지 클래스로 이동하도록 S3 수명 주기 정책을 설정합니다. 사진 메타데이터와 해당 S3 위치를 Amazon OpenSearch Service에 저장합니다."
+      },
+      "eng": {
+        "A": "Store the photos in Amazon DynamoDB. Turn on DynamoDB Accelerator (DAX) to cache frequently viewed items.",
+        "B": "Store the photos in the Amazon S3 Intelligent-Tiering storage class. Store the photo metadata and its S3 location in DynamoDB.",
+        "C": "Store the photos in the Amazon S3 Standard storage class. Set up an S3 Lifecycle policy to move photos older than 30 days to the S3 Standard- Infrequent Access (S3 Standard-IA) storage class. Use the object tags to keep track of metadata.",
+        "D": "Store the photos in the Amazon S3 Glacier storage class. Set up an S3 Lifecycle policy to move photos older than 30 days to the S3 Glacier Deep Archive storage class. Store the photo metadata and its S3 location in Amazon OpenSearch Service."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Storage Class",
+      "DynamoDB"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/132885-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 664,
+    "question": {
+      "kor": "미디어 회사는 연령에 따라 다양한 영화 수요에 따라 구매 후 5분 이내에 스트리밍 콘텐츠를 제공하여 사용자 요구를 충족해야 합니다. 이에 따라 회사는 호스팅 서비스 비용을 최소화하는 것을 목표로 합니다.\n이러한 요구 사항에 맞는 솔루션은 무엇입니까?",
+      "eng": "A media company needs to cater to user demands by providing streaming content within 5 minutes of purchase, with varying demand for movies based on their age. The company aims to minimize hosting service costs accordingly.\nWhich solution aligns with these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "모든 미디어 콘텐츠를 Amazon S3에 저장합니다. 영화에 대한 수요가 감소함에 따라 S3 수명 주기 정책을 사용하여 미디어 데이터를 자주 액세스하지 않는 계층으로 전환합니다.",
+        "B": "최신 영화 비디오 파일은 S3 Standard에 저장하고 이전 영화 비디오 파일은 S3 Standard-Infrequent Access(S3 Standard-IA)에 저장합니다. 표준 검색을 사용하여 오래된 영화의 비디오 파일을 검색합니다.",
+        "C": "S3 Intelligent-Tiering에 최신 영화 비디오 파일을 저장합니다. 오래된 영화 비디오 파일의 경우 유연한 검색 기능이 있는 S3 Glacier를 사용하십시오. 신속 검색을 사용하여 오래된 영화의 비디오 파일을 검색합니다.",
+        "D": "최신 영화 비디오 파일은 S3 Standard에 저장하고 이전 영화 비디오 파일은 유연한 검색을 통해 S3 Glacier에 저장합니다. 대량 검색을 사용하여 오래된 영화의 비디오 파일을 검색합니다."
+      },
+      "eng": {
+        "A": "Store all media content in Amazon S3. Use S3 Lifecycle policies to transition media data to the Infrequent Access tier as demand for a movie decreases.",
+        "B": "Store newer movie video files in S3 Standard and older movie video files in S3 Standard-Infrequent Access (S3 Standard-IA). Retrieve the video file for an older movie using standard retrieval.",
+        "C": "Store newer movie video files in S3 Intelligent-Tiering. For older movie video files, use S3 Glacier with Flexible Retrieval. Retrieve the video file for an older movie using expedited retrieval.",
+        "D": "Store newer movie video files in S3 Standard and older movie video files in S3 Glacier with Flexible Retrieval. Retrieve the video file for an older movie using bulk retrieval."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Storage Class"
+    ],
+    "rote_memorization": false,
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 707,
+    "question": {
+      "kor": "한 회사에 수천 명의 사용자가 있는 웹 애플리케이션이 있습니다. 이 애플리케이션은 사용자가 업로드한 8~10개의 이미지를 사용하여 AI 이미지를 생성합니다. 사용자는 생성된 AI 이미지를 6시간마다 한 번씩 다운로드할 수 있습니다. 또한 이 회사는 사용자가 생성된 AI 이미지를 언제든지 다운로드할 수 있는 프리미엄 사용자 옵션도 제공합니다. 회사는 사용자가 업로드한 이미지를 사용하여 1년에 2번 AI 모델 훈련을 실행합니다. 회사에는 이미지를 저장할 스토리지 솔루션이 필요합니다.\n이러한 요구 사항을 가장 비용 효율적으로 충족하는 스토리지 솔루션은 무엇입니까?",
+      "eng": "A company has a web application that has thousands of users. The application uses 8-10 user-uploaded images to generate AI images. Users can download the generated AI images once every 6 hours. The company also has a premium user option that gives users the ability to download the generated AI images anytime. The company uses the user-uploaded images to run AI model training twice a year. The company needs a storage solution to store the images.\nWhich storage solution meets these requirements MOST cost-effectively?"
+    },
+    "choices": {
+      "kor": {
+        "A": "업로드된 이미지를 Amazon S3 Glacier Deep Archive로 이동합니다. 프리미엄 사용자 생성 AI 이미지를 S3 Standard로 이동합니다. 프리미엄이 아닌 사용자 생성 AI 이미지를 S3 Standard-Infrequent Access(S3 Standard-IA)로 이동합니다.",
+        "B": "업로드된 이미지를 Amazon S3 Glacier Deep Archive로 이동합니다. 생성된 모든 AI 이미지를 S3 Glacier 유연한 검색으로 이동합니다.",
+        "C": "업로드된 이미지를 Amazon S3 One Zone-Infrequent Access(S3 One Zone-IA)로 이동합니다. 프리미엄 사용자 생성 AI 이미지를 S3 Standard로 이동합니다. 프리미엄이 아닌 사용자 생성 AI 이미지를 S3 Standard-Infrequent Access(S3 Standard-IA)로 이동합니다.",
+        "D": "업로드된 이미지를 Amazon S3 One Zone-Infrequent Access(S3 One Zone-IA)로 이동합니다. 생성된 모든 AI 이미지를 S3 Glacier 유연한 검색으로 이동합니다."
+      },
+      "eng": {
+        "A": "Move uploaded images to Amazon S3 Glacier Deep Archive. Move premium user-generated AI images to S3 Standard. Move non-premium usergenerated AI images to S3 Standard-Infrequent Access (S3 Standard-IA).",
+        "B": "Move uploaded images to Amazon S3 Glacier Deep Archive. Move all generated AI images to S3 Glacier Flexible Retrieval.",
+        "C": "Move uploaded images to Amazon S3 One Zone-Infrequent Access (S3 One Zone-IA). Move premium user-generated AI images to S3 Standard. Move non-premium user-generated AI images to S3 Standard-Infrequent Access (S3 Standard-IA).",
+        "D": "Move uploaded images to Amazon S3 One Zone-Infrequent Access (S3 One Zone-IA). Move all generated AI images to S3 Glacier Flexible Retrieval."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Storage Class"
+    ],
+    "rote_memorization": false,
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 719,
+    "question": {
+      "kor": "회사에서 여러 AWS 계정에 대한 로깅 솔루션을 구축하려고 합니다. 회사는 현재 모든 계정의 로그를 중앙 집중식 계정에 저장합니다. 회사는 VPC 흐름 로그와 AWS CloudTrail 로그를 저장하기 위해 중앙 집중식 계정에 Amazon S3 버킷을 생성했습니다. 모든 로그는 빈번한 분석을 위해 30일 동안 가용성이 높아야 하며, 백업 목적으로 추가 60일 동안 유지되고 생성 후 90일 후에 삭제되어야 합니다.\n이러한 요구 사항을 가장 비용 효율적으로 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company wants to build a logging solution for its multiple AWS accounts. The company currently stores the logs from all accounts in a centralized account.\nThe company has created an Amazon S3 bucket in the centralized account to store the VPC flow logs and AWS CloudTrail logs. All logs must be highly available for 30 days for frequent analysis, retained for an additional 60 days for backup purposes, and deleted 90 days after creation.\nWhich solution will meet these requirements MOST cost-effectively?"
+    },
+    "choices": {
+      "kor": {
+        "A": "생성 후 30일이 지나면 객체를 S3 Standard 스토리지 클래스로 전환합니다. 90일 후에 객체를 삭제하도록 Amazon S3에 지시하는 만료 작업을 작성합니다.",
+        "B": "생성 후 30일이 지나면 객체를 S3 Standard-Infrequent Access(S3 Standard-IA) 스토리지 클래스로 전환합니다. 90일 후에 모든 객체를 S3 Glacier Flexible Retrieval 스토리지 클래스로 이동합니다. 90일 후에 객체를 삭제하도록 Amazon S3에 지시하는 만료 작업을 작성합니다.",
+        "C": "생성 후 30일이 지나면 객체를 S3 Glacier Flexible Retrieval 스토리지 클래스로 전환합니다. 90일 후에 객체를 삭제하도록 Amazon S3에 지시하는 만료 작업을 작성합니다.",
+        "D": "생성 후 30일이 지나면 객체를 S3 One Zone-Infrequent Access(S3 One Zone-IA) 스토리지 클래스로 전환합니다. 90일 후에 모든 객체를 S3 Glacier Flexible Retrieval 스토리지 클래스로 이동합니다. 90일 후에 객체를 삭제하도록 Amazon S3에 지시하는 만료 작업을 작성합니다."
+      },
+      "eng": {
+        "A": "Transition objects to the S3 Standard storage class 30 days after creation. Write an expiration action that directs Amazon S3 to delete objects after 90 days.",
+        "B": "Transition objects to the S3 Standard-Infrequent Access (S3 Standard-IA) storage class 30 days after creation. Move all objects to the S3 Glacier Flexible Retrieval storage class after 90 days. Write an expiration action that directs Amazon S3 to delete objects after 90 days.",
+        "C": "Transition objects to the S3 Glacier Flexible Retrieval storage class 30 days after creation. Write an expiration action that directs Amazon S3 to delete objects after 90 days.",
+        "D": "Transition objects to the S3 One Zone-Infrequent Access (S3 One Zone-IA) storage class 30 days after creation. Move all objects to the S3 Glacier Flexible Retrieval storage class after 90 days. Write an expiration action that directs Amazon S3 to delete objects after 90 days."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Storage Class"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/111434-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 748,
+    "question": {
+      "kor": "회사에서 Amazon S3 Standard에 페타바이트 규모의 데이터를 저장하고 있습니다. 데이터는 여러 S3 버킷에 저장되며 다양한 빈도로 액세스됩니다. 회사는 모든 데이터에 대한 액세스 패턴을 알지 못합니다. 회사는 S3 사용 비용을 최적화하기 위해 각 S3 버킷에 대한 솔루션을 구현해야 합니다.\n이러한 요구 사항을 가장 효율적으로 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company is storing petabytes of data in Amazon S3 Standard. The data is stored in multiple S3 buckets and is accessed with varying frequency. The company does not know access patterns for all the data. The company needs to implement a solution for each S3 bucket to optimize the cost of S3 usage.\nWhich solution will meet these requirements with the MOST operational efficiency?"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 버킷의 객체를 S3 Intelligent-Tiering으로 전환하는 규칙으로 S3 수명 주기 구성을 생성합니다.",
+        "B": "S3 스토리지 클래스 분석 도구를 사용하여 S3 버킷의 각 객체에 대한 올바른 계층을 결정합니다. 각 개체를 식별된 스토리지 계층으로 이동합니다.",
+        "C": "S3 버킷의 객체를 S3 Glacier Instant Retrieval로 전환하는 규칙으로 S3 수명 주기 구성을 생성합니다.",
+        "D": "S3 버킷의 객체를 S3 One Zone-Infrequent Access(S3 One Zone-IA)로 전환하는 규칙으로 S3 수명 주기 구성을 생성합니다."
+      },
+      "eng": {
+        "A": "Create an S3 Lifecycle configuration with a rule to transition the objects in the S3 bucket to S3 Intelligent-Tiering.",
+        "B": "Use the S3 storage class analysis tool to determine the correct tier for each object in the S3 bucket. Move each object to the identified storage tier.",
+        "C": "Create an S3 Lifecycle configuration with a rule to transition the objects in the S3 bucket to S3 Glacier Instant Retrieval.",
+        "D": "Create an S3 Lifecycle configuration with a rule to transition the objects in the S3 bucket to S3 One Zone-Infrequent Access (S3 One Zone-IA)."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "lifecycle policies",
+      "Storage Class"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/103404-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 759,
+    "question": {
+      "kor": "한 회사는 Amazon S3 버킷을 데이터 레이크 스토리지 플랫폼으로 사용합니다. S3 버킷에는 여러 팀과 수백 개의 애플리케이션에서 무작위로 액세스하는 엄청난 양의 데이터가 포함되어 있습니다. 회사는 S3 스토리지 비용을 절감하고 자주 액세스하는 객체에 대한 즉각적인 가용성을 제공하고자 합니다.\n이러한 요구 사항을 충족하는 가장 운영 효율적인 솔루션은 무엇입니까?",
+      "eng": "A company uses an Amazon S3 bucket as its data lake storage platform. The S3 bucket contains a massive amount of data that is accessed randomly by multiple teams and hundreds of applications. The company wants to reduce the S3 storage costs and provide immediate availability for frequently accessed objects.\nWhat is the MOST operationally efficient solution that meets these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "객체를 S3 Intelligent-Tiering 스토리지 클래스로 전환하는 S3 수명 주기 규칙을 생성합니다.",
+        "B": "Amazon S3 Glacier에 객체를 저장합니다. S3 Select를 사용하여 애플리케이션에 데이터에 대한 액세스 권한을 제공합니다.",
+        "C": "S3 스토리지 클래스 분석의 데이터를 사용하여 객체를 S3 Standard-Infrequent Access(S3 Standard-IA) 스토리지 클래스로 자동 전환하는 S3 수명 주기 규칙을 생성합니다.",
+        "D": "객체를 S3 Standard-Infrequent Access(S3 Standard-IA) 스토리지 클래스로 전환합니다. 애플리케이션에서 객체에 액세스할 때 객체를 S3 Standard 스토리지 클래스로 전환하는 AWS Lambda 함수를 생성합니다."
+      },
+      "eng": {
+        "A": "Create an S3 Lifecycle rule to transition objects to the S3 Intelligent-Tiering storage class.",
+        "B": "Store objects in Amazon S3 Glacier. Use S3 Select to provide applications with access to the data.",
+        "C": "Use data from S3 storage class analysis to create S3 Lifecycle rules to automatically transition objects to the S3 Standard-Infrequent Access (S3 Standard-IA) storage class.",
+        "D": "Transition objects to the S3 Standard-Infrequent Access (S3 Standard-IA) storage class. Create an AWS Lambda function to transition objects to the S3 Standard storage class when they are accessed by an application."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "lifecycle policies",
+      "Storage Class"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/136995-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 769,
+    "question": {
+      "kor": "회사는 재생성할 수 없는 많은 파일을 생성하는 애플리케이션에 대해 스토리지 비용을 최적화해야 Amazon S3 합니다. 각 파일은 약 5MB이며 Amazon S3 Standard 스토리지에 저장됩니다.\n회사는 파일을 삭제하기 전에 해당 파일을 4년 동안 보관해야 합니다. 파일에 즉시 액세스할 수 있어야 합니다. 파일은 객체 생성 후 처음 30일 동안 자주 액세스되지만 처음 30일 이후에는 거의 액세스되지 않습니다.\n이러한 요구 사항을 가장 비용 효율적으로 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company needs to optimize its Amazon S3 storage costs for an application that generates many files that cannot be recreated. Each file is approximately 5MB and is stored in Amazon S3 Standard storage.\nThe company must store the files for 4 years before the files can be deleted. The files must be immediately accessible. The files are frequently accessed in the first 30 days of object creation, but they are rarely accessed after the first 30 days.\nWhich solution will meet these requirements MOST cost-effectively?"
+    },
+    "choices": {
+      "kor": {
+        "A": "객체 생성 후 30일이 지나면 파일을 S3 Glacier Instant Retrieval로 이동하는 S3 수명 주기 정책을 생성합니다. 객체 생성 후 4년이 지나면 파일을 삭제합니다.",
+        "B": "객체 생성 후 30일이 지나면 파일을 S3 One Zone-Infrequent Access(S3 One Zone-IA)로 이동하는 S3 수명 주기 정책을 생성합니다. 객체 생성 후 4년이 지나면 파일을 삭제합니다.",
+        "C": "객체 생성 후 30일 후에 파일을 S3 Standard-Infrequent Access(S3 Standard-IA)로 이동하는 S3 수명 주기 정책을 생성합니다. 객체 생성 후 4년이 지나면 파일을 삭제합니다.",
+        "D": "객체 생성 후 30일이 지나면 S3 Standard-Infrequent Access(S3 Standard-IA)로 파일을 이동하는 S3 수명 주기 정책을 생성합니다. 객체 생성 후 4년이 지나면 파일을 S3 Glacier 유연한 검색으로 이동합니다."
+      },
+      "eng": {
+        "A": "Create an S3 Lifecycle policy to move the files to S3 Glacier Instant Retrieval 30 days after object creation. Delete the files 4 years after object creation.",
+        "B": "Create an S3 Lifecycle policy to move the files to S3 One Zone-Infrequent Access (S3 One Zone-IA) 30 days after object creation. Delete the files 4 years after object creation.",
+        "C": "Create an S3 Lifecycle policy to move the files to S3 Standard-Infrequent Access (S3 Standard-IA) 30 days after object creation. Delete the files 4 years after object creation.",
+        "D": "Create an S3 Lifecycle policy to move the files to S3 Standard-Infrequent Access (S3 Standard-IA) 30 days after object creation. Move the files to S3 Glacier Flexible Retrieval 4 years after object creation."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Storage Class"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/139805-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 843,
+    "question": {
+      "kor": "솔루션 아키텍트는 비즈니스 사용자가 Amazon S3에 객체를 업로드할 수 있는 애플리케이션을 설계하고 있습니다. 솔루션은 객체 내구성을 극대화해야 합니다. 또한 객체는 언제든지 언제든지 쉽게 사용할 수 있어야 합니다. 사용자는 객체가 업로드된 후 처음 30일 이내에 객체에 자주 액세스하지만 30일보다 오래된 객체에는 사용자가 액세스할 가능성이 훨씬 적습니다.\n이러한 요구 사항을 가장 비용 효율적으로 충족하는 솔루션은 무엇입니까?",
+      "eng": "A solutions architect is designing an application that will allow business users to upload objects to Amazon S3. The solution needs to maximize object durability. Objects also must be readily available at any time and for any length of time. Users will access objects frequently within the first 30 days after the objects are uploaded, but users are much less likely to access objects that are older than 30 days.\nWhich solution meets these requirements MOST cost-effectively?"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 수명 주기 규칙을 사용하여 모든 객체를 S3 Standard에 저장하여 30일 후에 객체를 S3 Glacier로 전환합니다.",
+        "B": "30일 후에 객체를 S3 Standard-Infrequent Access(S3 Standard-IA)로 전환하려면 S3 수명 주기 규칙을 사용하여 모든 객체를 S3 Standard에 저장합니다.",
+        "C": "30일 후에 객체를 S3 One Zone-Infrequent Access(S3 One Zone-IA)로 전환하는 S3 수명 주기 규칙을 사용하여 모든 객체를 S3 Standard에 저장합니다.",
+        "D": "S3 수명 주기 규칙을 사용하여 모든 객체를 S3 Intelligent-Tiering에 저장하여 30일 후에 객체를 S3 Standard-Infrequent Access(S3 Standard-IA)로 전환합니다."
+      },
+      "eng": {
+        "A": "Store all the objects in S3 Standard with an S3 Lifecycle rule to transition the objects to S3 Glacier after 30 days.",
+        "B": "Store all the objects in S3 Standard with an S3 Lifecycle rule to transition the objects to S3 Standard-Infrequent Access (S3 Standard-IA) after 30 days.",
+        "C": "Store all the objects in S3 Standard with an S3 Lifecycle rule to transition the objects to S3 One Zone-Infrequent Access (S3 One Zone-IA) after 30 days.",
+        "D": "Store all the objects in S3 Intelligent-Tiering with an S3 Lifecycle rule to transition the objects to S3 Standard-Infrequent Access (S3 Standard-IA) after 30 days."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Storage Class"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/121214-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 872,
+    "question": {
+      "kor": "회사는 Amazon S3 버킷에 대량의 이미지 파일을 저장합니다. 이미지는 처음 180일 동안 쉽게 사용할 수 있어야 합니다. 다음 180일 동안 이미지에 자주 액세스하지 않습니다. 360일이 지나면 이미지를 보관해야 하지만 요청 시 즉시 사용할 수 있어야 합니다. 5년 후에는 감사자만 이미지에 액세스할 수 있습니다. 감사자는 12시간 이내에 이미지를 검색할 수 있어야 합니다. 이 과정에서 이미지가 손실될 수 없습니다.\n개발자는 처음 180일 동안 S3 Standard 스토리지를 사용합니다. 개발자는 S3 수명 주기 규칙을 구성해야 합니다.\n이러한 요구 사항을 가장 비용 효율적으로 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company stores a large volume of image files in an Amazon S3 bucket. The images need to be readily available for the first 180 days. The images are infrequently accessed for the next 180 days. After 360 days, the images need to be archived but must be available instantly upon request. After 5 years, only auditors can access the images. The auditors must be able to retrieve the images within 12 hours. The images cannot be lost during this process.\nA developer will use S3 Standard storage for the first 180 days. The developer needs to configure an S3 Lifecycle rule.\nWhich solution will meet these requirements MOST cost-effectively?"
+    },
+    "choices": {
+      "kor": {
+        "A": "180일 후에 객체를 S3 One Zone-Infrequent Access(S3 One Zone-IA)로 전환합니다. 360일 후 S3 Glacier 즉시 검색, 5년 후 S3 Glacier Deep Archive.",
+        "B": "180일 후에 객체를 S3 One Zone-Infrequent Access(S3 One Zone-IA)로 전환합니다. 360일 후 S3 Glacier 유연한 검색 및 5년 후 S3 Glacier Deep Archive.",
+        "C": "180일 후에 객체를 S3 Standard-Infrequent Access(S3 Standard-IA)로 전환하고, 360일 후에 S3 Glacier Instant Retrieval로 전환하고, 5년 후에 S3 Glacier Deep Archive로 전환합니다.",
+        "D": "180일 후에 객체를 S3 Standard-Infrequent Access(S3 Standard-IA)로 전환하고, 360일 후에 S3 Glacier 유연한 검색으로, 5년 후에 S3 Glacier Deep Archive로 전환합니다."
+      },
+      "eng": {
+        "A": "Transition the objects to S3 One Zone-Infrequent Access (S3 One Zone-IA) after 180 days. S3 Glacier Instant Retrieval after 360 days, and S3 Glacier Deep Archive after 5 years.",
+        "B": "Transition the objects to S3 One Zone-Infrequent Access (S3 One Zone-IA) after 180 days. S3 Glacier Flexible Retrieval after 360 days, and S3 Glacier Deep Archive after 5 years.",
+        "C": "Transition the objects to S3 Standard-Infrequent Access (S3 Standard-IA) after 180 days, S3 Glacier Instant Retrieval after 360 days, and S3 Glacier Deep Archive after 5 years.",
+        "D": "Transition the objects to S3 Standard-Infrequent Access (S3 Standard-IA) after 180 days, S3 Glacier Flexible Retrieval after 360 days, and S3 Glacier Deep Archive after 5 years."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Storage Class",
+      "lifecycle policies"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/125244-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 909,
+    "question": {
+      "kor": "미디어 회사는 Amazon S3에 영화를 저장합니다. 각 영화는 크기가 1GB에서 10GB 사이인 단일 비디오 파일에 저장됩니다.\n회사는 사용자가 구매한 후 5분 이내에 영화의 스트리밍 콘텐츠를 제공할 수 있어야 합니다. 20년이 넘은 영화보다 20년 미만의 영화에 대한 수요가 더 높습니다. 회사는 수요에 따라 호스팅 서비스 비용을 최소화하려고 합니다.\n어떤 솔루션이 이러한 요구 사항을 충족합니까?",
+      "eng": "A media company stores movies in Amazon S3. Each movie is stored in a single video file that ranges from 1 GB to 10 GB in size.\nThe company must be able to provide the streaming content of a movie within 5 minutes of a user purchase. There is higher demand for movies that are less than 20 years old than for movies that are more than 20 years old. The company wants to minimize hosting service costs based on demand.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "모든 미디어 콘텐츠를 Amazon S3에 저장합니다. 영화에 대한 수요가 감소할 때 S3 수명 주기 정책을 사용하여 미디어 데이터를 Infrequent Access 계층으로 이동합니다.",
+        "B": "S3 Standard에 최신 영화 비디오 파일을 저장합니다. S3 Standard-infrequent Access(S3 Standard-IA)에 오래된 영화 비디오 파일을 저장합니다. 사용자가 오래된 영화를 주문하면 표준 검색을 사용하여 비디오 파일을 검색합니다.",
+        "C": "S3 Intelligent-Tiering에 최신 영화 비디오 파일을 저장합니다. S3 Glacier 유연한 검색에 오래된 영화 비디오 파일을 저장합니다. 사용자가 오래된 영화를 주문하면 빠른 검색을 사용하여 비디오 파일을 검색합니다.",
+        "D": "S3 Standard에 최신 영화 비디오 파일을 저장합니다. S3 Glacier 유연한 검색에 오래된 영화 비디오 파일을 저장합니다. 사용자가 오래된 영화를 주문하면 대량 검색을 사용하여 비디오 파일을 검색합니다."
+      },
+      "eng": {
+        "A": "Store all media content in Amazon S3. Use S3 Lifecycle policies to move media data into the Infrequent Access tier when the demand for a movie decreases.",
+        "B": "Store newer movie video files in S3 Standard. Store older movie video files in S3 Standard-infrequent Access (S3 Standard-IA). When a user orders an older movie, retrieve the video file by using standard retrieval.",
+        "C": "Store newer movie video files in S3 Intelligent-Tiering. Store older movie video files in S3 Glacier Flexible Retrieval. When a user orders an older movie, retrieve the video file by using expedited retrieval.",
+        "D": "Store newer movie video files in S3 Standard. Store older movie video files in S3 Glacier Flexible Retrieval. When a user orders an older movie, retrieve the video file by using bulk retrieval."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Storage Class",
+      "lifecycle policies"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/132949-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 936,
+    "question": {
+      "kor": "한 회사는 최근 애플리케이션을 AWS로 마이그레이션했습니다. 애플리케이션은 여러 가용 영역에 걸쳐 Auto Scaling 그룹의 Amazon EC2 Linux 인스턴스에서 실행됩니다. 애플리케이션은 EFS Standard-Infrequent Access 스토리지를 사용하는 Amazon Elastic File System(Amazon EFS) 파일 시스템에 데이터를 저장합니다. 응용 프로그램은 회사의 파일을 색인화합니다. 인덱스는 Amazon RDS 데이터베이스에 저장됩니다.\n회사는 일부 애플리케이션 및 서비스 변경을 통해 스토리지 비용을 최적화해야 합니다.\n이러한 요구 사항을 가장 비용 효율적으로 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company recently migrated its application to AWS. The application runs on Amazon EC2 Linux instances in an Auto Scaling group across multiple Availability Zones. The application stores data in an Amazon Elastic File System (Amazon EFS) file system that uses EFS Standard-Infrequent Access storage. The application indexes the company's files. The index is stored in an Amazon RDS database.\nThe company needs to optimize storage costs with some application and services changes.\nWhich solution will meet these requirements MOST cost-effectively?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Intelligent-Tiering 수명주기 정책을 사용하는 Amazon S3 버킷을 생성하십시오. 모든 파일을 S3 버킷에 복사합니다. Amazon S3 API를 사용하여 파일을 저장하고 검색하도록 애플리케이션을 업데이트합니다.",
+        "B": "Windows 파일 서버 파일 공유용 Amazon FSx를 배포합니다. CIFS 프로토콜을 사용하여 파일을 저장하고 검색하도록 애플리케이션을 업데이트합니다.",
+        "C": "OpenZFS 파일 시스템 공유용 Amazon FSx를 배포합니다. 새 탑재 지점을 사용하여 파일을 저장하고 검색하도록 애플리케이션을 업데이트합니다.",
+        "D": "S3 Glacier 유연한 검색을 사용하는 Amazon S3 버킷을 생성합니다. 모든 파일을 S3 버킷에 복사합니다. Amazon S3 API를 사용하여 파일을 표준 검색으로 저장하고 검색하도록 애플리케이션을 업데이트합니다."
+      },
+      "eng": {
+        "A": "Create an Amazon S3 bucket that uses an Intelligent-Tiering lifecycle policy. Copy all files to the S3 bucket. Update the application to use Amazon S3 API to store and retrieve files.",
+        "B": "Deploy Amazon FSx for Windows File Server file shares. Update the application to use CIFS protocol to store and retrieve files.",
+        "C": "Deploy Amazon FSx for OpenZFS file system shares. Update the application to use the new mount point to store and retrieve files.",
+        "D": "Create an Amazon S3 bucket that uses S3 Glacier Flexible Retrieval. Copy all files to the S3 bucket. Update the application to use Amazon S3 API to store and retrieve files as standard retrievals."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Storage Class"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/137046-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 605,
+    "question": {
+      "kor": "회사는 Amazon S3를 사용하여 고해상도 사진을 S3 버킷에 저장합니다. 애플리케이션 변경을 최소화하기 위해 회사는 사진을 S3 개체의 최신 버전으로 저장합니다. 회사는 사진의 가장 최근 버전 두 개만 유지하면 됩니다.\n회사는 비용을 줄이고 싶어합니다. 회사는 S3 버킷을 큰 비용으로 식별했습니다.\n최소한의 운영 오버헤드로 S3 비용을 줄이는 솔루션은 무엇입니까?",
+      "eng": "A company uses Amazon S3 to store high-resolution pictures in an S3 bucket. To minimize application changes, the company stores the pictures as the latest version of an S3 object. The company needs to retain only the two most recent versions of the pictures.\nThe company wants to reduce costs. The company has identified the S3 bucket as a large expense.\nWhich solution will reduce the S3 costs with the LEAST operational overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 수명 주기를 사용하여 만료된 객체 버전을 삭제하고 가장 최근 버전 2개를 유지합니다.",
+        "B": "AWS Lambda 함수를 사용하여 이전 버전을 확인하고 가장 최근 버전 2개를 제외한 모든 버전을 삭제합니다.",
+        "C": "S3 배치 작업을 사용하여 최신이 아닌 객체 버전을 삭제하고 가장 최근 버전 2개만 유지합니다.",
+        "D": "S3 버킷에서 버전 관리를 비활성화하고 가장 최근 버전 2개를 유지합니다."
+      },
+      "eng": {
+        "A": "Use S3 Lifecycle to delete expired object versions and retain the two most recent versions.",
+        "B": "Use an AWS Lambda function to check for older versions and delete all but the two most recent versions.",
+        "C": "Use S3 Batch Operations to delete noncurrent object versions and retain only the two most recent versions.",
+        "D": "Deactivate versioning on the S3 bucket and retain the two most recent versions."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "lifecycle policies"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/109668-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 496,
+    "question": {
+      "kor": "회사는 AWS CloudTrail 로그를 3년 동안 보관해야 합니다. 회사는 상위 계정의 AWS Organizations를 사용하여 AWS 계정 집합에 CloudTrail을 적용하고 있습니다. CloudTrail 대상 S3 버킷은 S3 버전 관리가 활성화된 상태로 구성됩니다. 3년 후 현재 객체를 삭제하는 S3 수명 주기 정책이 있습니다.\nS3 버킷 사용 4년차 이후 S3 버킷 지표는 개체 수가 계속 증가했음을 보여줍니다. 그러나 S3 버킷에 전달되는 새 CloudTrail 로그의 수는 일관되게 유지되었습니다.\n가장 비용 효율적인 방식으로 3년 이상 된 개체를 삭제하는 솔루션은 무엇입니까?",
+      "eng": "A company needs to retain its AWS CloudTrail logs for 3 years. The company is enforcing CloudTrail across a set of AWS accounts by using AWS Organizations from the parent account. The CloudTrail target S3 bucket is configured with S3 Versioning enabled. An S3 Lifecycle policy is in place to delete current objects after 3 years.\nAfter the fourth year of use of the S3 bucket, the S3 bucket metrics show that the number of objects has continued to rise. However, the number of new CloudTrail logs that are delivered to the S3 bucket has remained consistent.\nWhich solution will delete objects that are older than 3 years in the MOST cost-effective manner?"
+    },
+    "choices": {
+      "kor": {
+        "A": "3년 후에 개체가 만료되도록 조직의 중앙 집중식 CloudTrail 추적을 구성합니다.",
+        "B": "현재 버전뿐만 아니라 이전 버전도 삭제하도록 S3 수명 주기 정책을 구성합니다.",
+        "C": "Amazon S3에서 3년 이상 된 객체를 열거하고 삭제하는 AWS Lambda 함수를 생성합니다.",
+        "D": "상위 계정을 S3 버킷으로 전달되는 모든 객체의 소유자로 구성합니다."
+      },
+      "eng": {
+        "A": "Configure the organization’s centralized CloudTrail trail to expire objects after 3 years.",
+        "B": "Configure the S3 Lifecycle policy to delete previous versions as well as current versions.",
+        "C": "Create an AWS Lambda function to enumerate and delete objects from Amazon S3 that are older than 3 years.",
+        "D": "Configure the parent account as the owner of all objects that are delivered to the S3 bucket."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "lifecycle policies"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/95314-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 57,
+    "question": {
+      "kor": "회사는 회계 기록을 Amazon S3에 저장해야 합니다. 기록은 1년 동안 즉시 액세스할 수 있어야 하며 추가 9년 동안 보관해야 합니다. 관리 사용자 및 루트 사용자를 포함하여 회사의 그 누구도 전체 10년 기간 동안 레코드를 삭제할 수 없습니다. 기록은 최대한 탄력적으로 저장해야 합니다.\n이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company needs to store its accounting records in Amazon S3. The records must be immediately accessible for 1 year and then must be archived for an additional 9 years. No one at the company, including administrative users and root users, can be able to delete the records during the entire 10-year period.\nThe records must be stored with maximum resiliency.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "전체 10년 동안 S3 Glacier에 레코드를 저장합니다. 액세스 제어 정책을 사용하여 10년 동안 레코드 삭제를 거부합니다.",
+        "B": "S3 Intelligent-Tiering을 사용하여 레코드를 저장합니다. IAM 정책을 사용하여 레코드 삭제를 거부합니다. 10년 후 삭제를 허용하도록 IAM 정책을 변경합니다.",
+        "C": "S3 수명 주기 정책을 사용하여 1년 후 레코드를 S3 Standard에서 S3 Glacier Deep Archive로 전환합니다. 10년 동안 규정 준수 모드에서 S3 객체 잠금을 사용합니다.",
+        "D": "S3 수명 주기 정책을 사용하여 1년 후 레코드를 S3 Standard에서 S3 One Zone-Infrequent Access(S3 One Zone-IA)로 전환합니다. 10년 동안 거버넌스 모드에서 S3 객체 잠금을 사용합니다."
+      },
+      "eng": {
+        "A": "Store the records in S3 Glacier for the entire 10-year period. Use an access control policy to deny deletion of the records for a period of 10 years.",
+        "B": "Store the records by using S3 Intelligent-Tiering. Use an IAM policy to deny deletion of the records. After 10 years, change the IAM policy to allow deletion.",
+        "C": "Use an S3 Lifecycle policy to transition the records from S3 Standard to S3 Glacier Deep Archive after 1 year. Use S3 Object Lock in compliance mode for a period of 10 years.",
+        "D": "Use an S3 Lifecycle policy to transition the records from S3 Standard to S3 One Zone-Infrequent Access (S3 One Zone-IA) after 1 year. Use S3 Object Lock in governance mode for a period of 10 years."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Storage Class",
+      "lifecycle policies"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/85532-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 445,
+    "question": {
+      "kor": "한 회사에서 역사적 사건의 이미지를 저장하는 웹사이트를 운영하고 있습니다. 웹사이트 사용자는 이미지 속 사건이 발생한 연도를 기준으로 이미지를 검색하고 볼 수 있는 기능이 필요합니다.\n평균적으로 사용자는 각 이미지를 1년에 한두 번만 요청합니다. 회사는 이미지를 저장하고 사용자에게 전달할 수 있는 가용성이 뛰어난 솔루션을 원합니다.\n이러한 요구 사항을 가장 비용 효율적으로 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company runs a website that stores images of historical events. Website users need the ability to search and view images based on the year that the event in the image occurred. On average, users request each image only once or twice a year. The company wants a highly available solution to store and deliver the images to users.\nWhich solution will meet these requirements MOST cost-effectively?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Elastic Block Store(Amazon EBS)에 이미지를 저장합니다. Amazon EC2에서 실행되는 웹 서버를 사용하십시오.",
+        "B": "Amazon Elastic File System(Amazon EFS)에 이미지를 저장합니다. Amazon EC2에서 실행되는 웹 서버를 사용하십시오.",
+        "C": "Amazon S3 Standard에 이미지를 저장합니다. S3 Standard를 사용하면 정적 웹 사이트를 통해 이미지를 직접 전달할 수 있습니다.",
+        "D": "Amazon S3 Standard-Infrequent Access(S3 Standard-IA)에 이미지를 저장합니다. S3 Standard-IA를 사용하면 정적 웹 사이트를 통해 이미지를 직접 전달할 수 있습니다."
+      },
+      "eng": {
+        "A": "Store images in Amazon Elastic Block Store (Amazon EBS). Use a web server that runs on Amazon EC2.",
+        "B": "Store images in Amazon Elastic File System (Amazon EFS). Use a web server that runs on Amazon EC2.",
+        "C": "Store images in Amazon S3 Standard. Use S3 Standard to directly deliver images by using a static website.",
+        "D": "Store images in Amazon S3 Standard-Infrequent Access (S3 Standard-IA). Use S3 Standard-IA to directly deliver images by using a static website."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Storage Class",
+      "static website hosting"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/127135-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 565,
+    "question": {
+      "kor": "제조 회사에는 Amazon S3 버킷에 .csv 파일을 업로드하는 기계 센서가 있습니다. 이러한 .csv 파일은 이미지로 변환되어야 하며 그래픽 보고서의 자동 생성을 위해 가능한 한 빨리 사용할 수 있어야 합니다.\n이미지는 1개월이 지나면 관련이 없게 되지만 1년에 두 번 기계 학습(ML) 모델을 훈련시키기 위해 .csv 파일을 보관해야 합니다. ML 교육 및 감사는 몇 주 전에 미리 계획됩니다.\n이러한 요구 사항을 가장 비용 효율적으로 충족하는 단계 조합은 무엇입니까? (두 가지를 선택하세요.)",
+      "eng": "A manufacturing company has machine sensors that upload .csv files to an Amazon S3 bucket. These .csv files must be converted into images and must be made available as soon as possible for the automatic generation of graphical reports.\nThe images become irrelevant after 1 month, but the .csv files must be kept to train machine learning (ML) models twice a year. The ML trainings and audits are planned weeks in advance.\nWhich combination of steps will meet these requirements MOST cost-effectively? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "매시간 .csv 파일을 다운로드하고 이미지 파일을 생성하며 이미지를 S3 버킷에 업로드하는 Amazon EC2 스팟 인스턴스를 시작합니다.",
+        "B": ".csv 파일을 이미지로 변환하고 이미지를 S3 버킷에 저장하는 AWS Lambda 함수를 설계합니다. .csv 파일이 업로드되면 Lambda 함수를 호출합니다.",
+        "C": "S3 버킷의 .csv 파일 및 이미지 파일에 대한 S3 수명 주기 규칙을 생성합니다. .csv 파일을 업로드하고 1일 후에 S3 Standard에서 S3 Glacier로 전환합니다. 30일 후에 이미지 파일을 만료하십시오.",
+        "D": "S3 버킷의 .csv 파일 및 이미지 파일에 대한 S3 수명 주기 규칙을 생성합니다. 업로드 1일 후 .csv 파일을 S3 Standard에서 S3 One Zone-Infrequent Access(S3 One Zone-IA)로 전환합니다. 30일 후에 이미지 파일을 만료하십시오.",
+        "E": "S3 버킷의 .csv 파일 및 이미지 파일에 대한 S3 수명 주기 규칙을 생성합니다. .csv 파일을 업로드하고 1일 후에 S3 Standard에서 S3 Standard-Infrequent Access(S3 Standard-IA)로 전환합니다. RRS(Reduced Redundancy Storage)에 이미지 파일을 보관합니다."
+      },
+      "eng": {
+        "A": "Launch an Amazon EC2 Spot Instance that downloads the .csv files every hour, generates the image files, and uploads the images to the S3 bucket.",
+        "B": "Design an AWS Lambda function that converts the .csv files into images and stores the images in the S3 bucket. Invoke the Lambda function when a .csv file is uploaded.",
+        "C": "Create S3 Lifecycle rules for .csv files and image files in the S3 bucket. Transition the .csv files from S3 Standard to S3 Glacier 1 day after they are uploaded. Expire the image files after 30 days.",
+        "D": "Create S3 Lifecycle rules for .csv files and image files in the S3 bucket. Transition the .csv files from S3 Standard to S3 One Zone-Infrequent Access (S3 One Zone-IA) 1 day after they are uploaded. Expire the image files after 30 days.",
+        "E": "Create S3 Lifecycle rules for .csv files and image files in the S3 bucket. Transition the .csv files from S3 Standard to S3 Standard-Infrequent Access (S3 Standard-IA) 1 day after they are uploaded. Keep the image files in Reduced Redundancy Storage (RRS)."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "lifecycle policies",
+      "S3 Event Notification",
+      "Lambda",
+      "Storage Class"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/109288-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B",
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 90,
+    "question": {
+      "kor": "개발 팀은 다른 팀에서 액세스할 웹 사이트를 호스팅해야 합니다. 웹 사이트 콘텐츠는 HTML, CSS, 클라이언트 측 JavaScript 및 이미지로 구성됩니다.\n웹 사이트 호스팅에 가장 비용 효율적인 방법은 무엇입니까?",
+      "eng": "A development team needs to host a website that will be accessed by other teams. The website contents consist of HTML, CSS, client-side JavaScript, and images.\nWhich method is the MOST cost-effective for hosting the website?"
+    },
+    "choices": {
+      "kor": {
+        "A": "웹 사이트를 컨테이너화하고 AWS Fargate에서 호스팅합니다.",
+        "B": "Amazon S3 버킷을 생성하고 그곳에서 웹사이트를 호스팅합니다.",
+        "C": "Amazon EC2 인스턴스에 웹 서버를 배포하여 웹사이트를 호스팅합니다.",
+        "D": "Express.js 프레임워크를 사용하는 AWS Lambda 대상으로 Application Load Balancer를 구성합니다."
+      },
+      "eng": {
+        "A": "Containerize the website and host it in AWS Fargate.",
+        "B": "Create an Amazon S3 bucket and host the website there.",
+        "C": "Deploy a web server on an Amazon EC2 instance to host the website.",
+        "D": "Configure an Application Load Balancer with an AWS Lambda target that uses the Express.js framework."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "static website hosting"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/85199-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 521,
+    "question": {
+      "kor": "소셜 미디어 회사는 사용자가 AWS 클라우드에서 호스팅되는 애플리케이션에 이미지를 업로드할 수 있도록 허용하려고 합니다. 회사는 이미지가 여러 장치 유형에 표시될 수 있도록 이미지 크기를 자동으로 조정하는 솔루션이 필요합니다. 애플리케이션은 하루 종일 예측할 수 없는 트래픽 패턴을 경험합니다. 회사는 확장성을 극대화하는 고가용성 솔루션을 찾고 있습니다.\n솔루션 설계자는 이러한 요구 사항을 충족하기 위해 무엇을 해야 합니까?",
+      "eng": "A social media company wants to allow its users to upload images in an application that is hosted in the AWS Cloud. The company needs a solution that automatically resizes the images so that the images can be displayed on multiple device types. The application experiences unpredictable traffic patterns throughout the day. The company is seeking a highly available solution that maximizes scalability.\nWhat should a solutions architect do to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "이미지 크기를 조정하고 이미지를 Amazon S3 버킷에 저장하기 위해 AWS Lambda 함수를 호출하는 Amazon S3에서 호스팅되는 정적 웹 사이트를 생성합니다.",
+        "B": "AWS Step Functions를 호출하여 이미지 크기를 조정하고 Amazon RDS 데이터베이스에 이미지를 저장하는 Amazon CloudFront에서 호스팅되는 정적 웹 사이트를 생성합니다.",
+        "C": "Amazon EC2 인스턴스에서 실행되는 웹 서버에서 호스팅되는 동적 웹 사이트를 만듭니다. EC2 인스턴스에서 실행되는 프로세스를 구성하여 이미지 크기를 조정하고 Amazon S3 버킷에 이미지를 저장합니다.",
+        "D": "Amazon Simple Queue Service(Amazon SQS)에서 크기 조정 작업을 생성하는 자동 확장 Amazon Elastic Container Service(Amazon ECS) 클러스터에서 호스팅되는 동적 웹 사이트를 생성합니다. 크기 조정 작업을 처리하기 위해 Amazon EC2 인스턴스에서 실행되는 이미지 크기 조정 프로그램을 설정합니다."
+      },
+      "eng": {
+        "A": "Create a static website hosted in Amazon S3 that invokes AWS Lambda functions to resize the images and store the images in an Amazon S3 bucket.",
+        "B": "Create a static website hosted in Amazon CloudFront that invokes AWS Step Functions to resize the images and store the images in an Amazon RDS database.",
+        "C": "Create a dynamic website hosted on a web server that runs on an Amazon EC2 instance. Configure a process that runs on the EC2 instance to resize the images and store the images in an Amazon S3 bucket.",
+        "D": "Create a dynamic website hosted on an automatically scaling Amazon Elastic Container Service (Amazon ECS) cluster that creates a resize job in Amazon Simple Queue Service (Amazon SQS). Set up an image-resizing program that runs on an Amazon EC2 instance to process the resize jobs."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "static website hosting",
+      "Lambda subnet"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/109713-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 160,
+    "question": {
+      "kor": "보고 팀은 매일 Amazon S3 버킷에서 파일을 받습니다. 보고 팀은 Amazon QuickSight에서 사용하기 위해 매일 동시에 이 초기 S3 버킷에서 분석 S3 버킷으로 파일을 수동으로 검토하고 복사합니다. 더 많은 팀이 더 큰 크기의 더 많은 파일을 초기 S3 버킷으로 보내기 시작했습니다. 보고 팀은 파일이 초기 S3 버킷에 들어갈 때 자동으로 파일 분석 S3 버킷을 이동하려고 합니다. 보고 팀은 또한 AWS Lambda 함수를 사용하여 복사된 데이터에서 패턴 일치 코드를 실행하려고 합니다. 또한 보고 팀은 데이터 파일을 Amazon SageMaker Pipelines의 파이프라인으로 보내려고 합니다.\n최소한의 운영 오버헤드로 이러한 요구 사항을 충족하려면 솔루션 설계자가 무엇을 해야 합니까?",
+      "eng": "A reporting team receives files each day in an Amazon S3 bucket. The reporting team manually reviews and copies the files from this initial S3 bucket to an analysis S3 bucket each day at the same time to use with Amazon QuickSight. Additional teams are starting to send more files in larger sizes to the initial S3 bucket.\nThe reporting team wants to move the files automatically analysis S3 bucket as the files enter the initial S3 bucket. The reporting team also wants to use AWS Lambda functions to run pattern-matching code on the copied data. In addition, the reporting team wants to send the data files to a pipeline in Amazon SageMaker Pipelines.\nWhat should a solutions architect do to meet these requirements with the LEAST operational overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "분석 S3 버킷에 파일을 복사하는 Lambda 함수를 생성합니다. 분석 S3 버킷에 대한 S3 이벤트 알림을 생성합니다. 이벤트 알림의 대상으로 Lambda 및 SageMaker 파이프라인을 구성합니다. s3:ObjectCreated:Put을 이벤트 유형으로 구성합니다.",
+        "B": "분석 S3 버킷에 파일을 복사하는 Lambda 함수를 생성합니다. Amazon EventBridge(Amazon CloudWatch Events)에 이벤트 알림을 보내도록 분석 S3 버킷을 구성합니다. EventBridge(CloudWatch 이벤트)에서 ObjectCreated 규칙을 구성합니다. Lambda 및 SageMaker 파이프라인을 규칙의 대상으로 구성합니다.",
+        "C": "S3 버킷 간에 S3 복제를 구성합니다. 분석 S3 버킷에 대한 S3 이벤트 알림을 생성합니다. 이벤트 알림의 대상으로 Lambda 및 SageMaker 파이프라인을 구성합니다. s3:ObjectCreated:Put을 이벤트 유형으로 구성합니다.",
+        "D": "S3 버킷 간에 S3 복제를 구성합니다. Amazon EventBridge(Amazon CloudWatch Events)에 이벤트 알림을 보내도록 분석 S3 버킷을 구성합니다. EventBridge(CloudWatch 이벤트)에서 ObjectCreated 규칙을 구성합니다. Lambda 및 SageMaker 파이프라인을 규칙의 대상으로 구성합니다."
+      },
+      "eng": {
+        "A": "Create a Lambda function to copy the files to the analysis S3 bucket. Create an S3 event notification for the analysis S3 bucket. Configure Lambda and SageMaker Pipelines as destinations of the event notification. Configure s3:ObjectCreated:Put as the event type.",
+        "B": "Create a Lambda function to copy the files to the analysis S3 bucket. Configure the analysis S3 bucket to send event notifications to Amazon EventBridge (Amazon CloudWatch Events). Configure an ObjectCreated rule in EventBridge (CloudWatch Events). Configure Lambda and SageMaker Pipelines as targets for the rule.",
+        "C": "Configure S3 replication between the S3 buckets. Create an S3 event notification for the analysis S3 bucket. Configure Lambda and SageMaker Pipelines as destinations of the event notification. Configure s3:ObjectCreated:Put as the event type.",
+        "D": "Configure S3 replication between the S3 buckets. Configure the analysis S3 bucket to send event notifications to Amazon EventBridge (Amazon CloudWatch Events). Configure an ObjectCreated rule in EventBridge (CloudWatch Events). Configure Lambda and SageMaker Pipelines as targets for the rule."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "replicaton",
+      "S3 Event Notification"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/85872-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 637,
+    "question": {
+      "kor": "한 회사가 Amazon S3 버킷에 파일을 업로드하는 데 사용되는 애플리케이션을 호스팅합니다. 업로드되면 파일을 처리하여 메타데이터를 추출하는데, 이 작업에는 5초도 채 걸리지 않습니다.\n업로드의 양과 빈도는 매 시간 몇 개의 파일부터 수백 개의 동시 업로드까지 다양합니다. 회사는 솔루션 설계자에게 이러한 요구 사항을 충족할 수 있는 비용 효율적인 아키텍처를 설계하도록 요청했습니다.\n솔루션 설계자는 무엇을 추천해야 합니까?",
+      "eng": "A company hosts an application used to upload files to an Amazon S3 bucket. Once uploaded, the files are processed to extract metadata, which takes less than 5 seconds. The volume and frequency of the uploads varies from a few files each hour to hundreds of concurrent uploads. The company has asked a solutions architect to design a cost-effective architecture that will meet these requirements.\nWhat should the solutions architect recommend?"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 API 호출을 기록하도록 AWS CloudTrail 추적을 구성합니다. AWS AppSync를 사용하여 파일을 처리합니다.",
+        "B": "파일을 처리하기 위해 AWS Lambda 함수를 호출하도록 S3 버킷 내에서 객체 생성 이벤트 알림을 구성합니다.",
+        "C": "데이터를 처리하고 Amazon S3로 전송하도록 Amazon Kinesis Data Streams를 구성합니다. AWS Lambda 함수를 호출하여 파일을 처리합니다.",
+        "D": "Amazon S3에 업로드된 파일을 처리하도록 Amazon Simple 알림 서비스(Amazon SNS) 주제를 구성합니다. AWS Lambda 함수를 호출하여 파일을 처리합니다."
+      },
+      "eng": {
+        "A": "Configure AWS CloudTrail trails to log S3 API calls. Use AWS AppSync to process the files.",
+        "B": "Configure an object-created event notification within the S3 bucket to invoke an AWS Lambda function to process the files.",
+        "C": "Configure Amazon Kinesis Data Streams to process and send data to Amazon S3. Invoke an AWS Lambda function to process the files.",
+        "D": "Configure an Amazon Simple Notification Service (Amazon SNS) topic to process the files uploaded to Amazon S3. Invoke an AWS Lambda function to process the files."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "S3 Event Notification",
+      "Lambda"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/132997-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 69,
+    "question": {
+      "kor": "한 회사가 여러 대륙에 걸쳐 도시의 온도, 습도 및 기압에 대한 데이터를 수집합니다. 회사가 매일 각 사이트에서 수집하는 평균 데이터 양은 500GB입니다. 각 사이트에는 고속 인터넷 연결이 있습니다.\n회사는 이러한 모든 글로벌 사이트의 데이터를 단일 Amazon S3 버킷에 가능한 한 빨리 집계하려고 합니다. 솔루션은 운영 복잡성을 최소화해야 합니다.\n어떤 솔루션이 이러한 요구 사항을 충족합니까?",
+      "eng": "A company collects data for temperature, humidity, and atmospheric pressure in cities across multiple continents. The average volume of data that the company collects from each site daily is 500 GB. Each site has a high-speed Internet connection.\nThe company wants to aggregate the data from all these global sites as quickly as possible in a single Amazon S3 bucket. The solution must minimize operational complexity.\nWhich solution meets these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "대상 S3 버킷에서 S3 Transfer Acceleration을 켭니다. 멀티파트 업로드를 사용하여 사이트 데이터를 대상 S3 버킷에 직접 업로드합니다.",
+        "B": "각 사이트의 데이터를 가장 가까운 리전의 S3 버킷에 업로드합니다. S3 교차 리전 복제를 사용하여 객체를 대상 S3 버킷에 복사합니다. 그런 다음 원본 S3 버킷에서 데이터를 제거합니다.",
+        "C": "AWS Snowball Edge Storage Optimized 장치 작업을 매일 예약하여 각 사이트에서 가장 가까운 리전으로 데이터를 전송합니다. S3 교차 리전 복제를 사용하여 객체를 대상 S3 버킷에 복사합니다.",
+        "D": "각 사이트에서 가장 가까운 리전의 Amazon EC2 인스턴스로 데이터를 업로드합니다. Amazon Elastic Block Store(Amazon EBS) 볼륨에 데이터를 저장합니다. 정기적으로 EBS 스냅샷을 생성하여 대상 S3 버킷이 포함된 리전에 복사합니다. 해당 리전에서 EBS 볼륨을 복원합니다."
+      },
+      "eng": {
+        "A": "Turn on S3 Transfer Acceleration on the destination S3 bucket. Use multipart uploads to directly upload site data to the destination S3 bucket.",
+        "B": "Upload the data from each site to an S3 bucket in the closest Region. Use S3 Cross-Region Replication to copy objects to the destination S3 bucket. Then remove the data from the origin S3 bucket.",
+        "C": "Schedule AWS Snowball Edge Storage Optimized device jobs daily to transfer data from each site to the closest Region. Use S3 Cross-Region Replication to copy objects to the destination S3 bucket.",
+        "D": "Upload the data from each site to an Amazon EC2 instance in the closest Region. Store the data in an Amazon Elastic Block Store (Amazon EBS) volume. At regular intervals, take an EBS snapshot and copy it to the Region that contains the destination S3 bucket. Restore the EBS volume in that Region."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Transfer Acceleration"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/84973-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 581,
+    "question": {
+      "kor": "회사에 새로운 모바일 앱이 있습니다. 세계 어디에서나 사용자는 자신이 선택한 주제에 대한 지역 뉴스를 볼 수 있습니다. 사용자는 앱 내부에서 사진과 비디오를 게시할 수도 있습니다.\n사용자는 콘텐츠가 게시된 후 처음 몇 분 안에 콘텐츠에 액세스하는 경우가 많습니다. 새로운 콘텐츠가 이전 콘텐츠를 빠르게 대체한 다음 이전 콘텐츠는 사라집니다. 뉴스의 지역적 특성은 사용자가 뉴스가 업로드되는 AWS 지역 내에서 콘텐츠의 90%를 소비한다는 것을 의미합니다.\n콘텐츠 업로드에 가장 짧은 지연 시간을 제공하여 사용자 경험을 최적화하는 솔루션은 무엇입니까?",
+      "eng": "A company has a new mobile app. Anywhere in the world, users can see local news on topics they choose. Users also can post photos and videos from inside the app.\nUsers access content often in the first minutes after the content is posted. New content quickly replaces older content, and then the older content disappears.\nThe local nature of the news means that users consume 90% of the content within the AWS Region where it is uploaded.\nWhich solution will optimize the user experience by providing the LOWEST latency for content uploads?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon S3에 콘텐츠를 업로드하고 저장합니다. 업로드에는 Amazon CloudFront를 사용하십시오.",
+        "B": "Amazon S3에 콘텐츠를 업로드하고 저장합니다. 업로드에는 S3 Transfer Acceleration을 사용하세요.",
+        "C": "사용자에게 가장 가까운 지역의 Amazon EC2 인스턴스에 콘텐츠를 업로드합니다. 데이터를 Amazon S3에 복사합니다.",
+        "D": "사용자에게 가장 가까운 지역의 Amazon S3에 콘텐츠를 업로드하고 저장합니다. Amazon CloudFront의 여러 배포판을 사용하십시오."
+      },
+      "eng": {
+        "A": "Upload and store content in Amazon S3. Use Amazon CloudFront for the uploads.",
+        "B": "Upload and store content in Amazon S3. Use S3 Transfer Acceleration for the uploads.",
+        "C": "Upload content to Amazon EC2 instances in the Region that is closest to the user. Copy the data to Amazon S3.",
+        "D": "Upload and store content in Amazon S3 in the Region that is closest to the user. Use multiple distributions of Amazon CloudFront."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Transfer Acceleration"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/132925-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 495,
+    "question": {
+      "kor": "이미지 호스팅 회사는 대규모 자산을 Amazon S3 Standard 버킷에 업로드합니다. 회사는 S3 API를 사용하여 멀티파트 업로드를 병렬로 사용하고 동일한 객체가 다시 업로드되면 덮어씁니다. 업로드 후 처음 30일 동안 개체에 자주 액세스합니다. 개체는 30일 후에 덜 자주 사용되지만 각 개체에 대한 액세스 패턴은 일관되지 않습니다. 회사는 저장된 자산의 고가용성과 탄력성을 유지하면서 S3 스토리지 비용을 최적화해야 합니다.\n이러한 요구 사항을 충족하기 위해 솔루션 설계자가 권장해야 하는 작업 조합은 무엇입니까? (두 가지를 선택하세요.)",
+      "eng": "An image hosting company uploads its large assets to Amazon S3 Standard buckets. The company uses multipart upload in parallel by using S3 APIs and overwrites if the same object is uploaded again. For the first 30 days after upload, the objects will be accessed frequently. The objects will be used less frequently after 30 days, but the access patterns for each object will be inconsistent. The company must optimize its S3 storage costs while maintaining high availability and resiliency of stored assets.\nWhich combination of actions should a solutions architect recommend to meet these requirements? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "30일 후에 자산을 S3 Intelligent-Tiering으로 이동합니다.",
+        "B": "불완전한 멀티파트 업로드를 정리하도록 S3 수명 주기 정책을 구성합니다.",
+        "C": "만료된 개체 삭제 마커를 정리하도록 S3 수명 주기 정책을 구성합니다.",
+        "D": "30일 후에 자산을 S3 Standard-Infrequent Access(S3 Standard-IA)로 이동합니다.",
+        "E": "30일 후 자산을 S3 One Zone-Infrequent Access(S3 One Zone-IA)로 이동합니다."
+      },
+      "eng": {
+        "A": "Move assets to S3 Intelligent-Tiering after 30 days.",
+        "B": "Configure an S3 Lifecycle policy to clean up incomplete multipart uploads.",
+        "C": "Configure an S3 Lifecycle policy to clean up expired object delete markers.",
+        "D": "Move assets to S3 Standard-Infrequent Access (S3 Standard-IA) after 30 days.",
+        "E": "Move assets to S3 One Zone-Infrequent Access (S3 One Zone-IA) after 30 days."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Storage Class",
+      "lifecycle policies",
+      "multipart uploads"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/99755-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A",
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 616,
+    "question": {
+      "kor": "한 회사는 매달 약 300TB의 Amazon S3 Standard 스토리지를 유지 관리합니다. S3 객체의 크기는 일반적으로 약 50GB이며 글로벌 애플리케이션에 의해 멀티파트 업로드로 자주 교체됩니다. S3 객체의 수와 크기는 일정하게 유지되지만 회사의 S3 스토리지 비용은 매달 증가하고 있습니다.\n이 상황에서 솔루션 설계자는 어떻게 비용을 절감해야 합니까?",
+      "eng": "A company maintains about 300 TB in Amazon S3 Standard storage month after month. The S3 objects are each typically around 50 GB in size and are frequently replaced with multipart uploads by their global application. The number and size of S3 objects remain constant, but the company's S3 storage costs are increasing each month.\nHow should a solutions architect reduce costs in this situation?"
+    },
+    "choices": {
+      "kor": {
+        "A": "멀티파트 업로드에서 Amazon S3 Transfer Acceleration으로 전환합니다.",
+        "B": "불완전한 멀티파트 업로드를 삭제하는 S3 수명 주기 정책을 활성화합니다.",
+        "C": "객체가 너무 빨리 보관되지 않도록 S3 인벤토리를 구성합니다.",
+        "D": "Amazon S3에 저장되는 객체 수를 줄이도록 Amazon CloudFront를 구성합니다."
+      },
+      "eng": {
+        "A": "Switch from multipart uploads to Amazon S3 Transfer Acceleration.",
+        "B": "Enable an S3 Lifecycle policy that deletes incomplete multipart uploads.",
+        "C": "Configure S3 inventory to prevent objects from being archived too quickly.",
+        "D": "Configure Amazon CloudFront to reduce the number of objects stored in Amazon S3."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "lifecycle policies",
+      "multipart uploads"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/132904-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 745,
+    "question": {
+      "kor": "한 회사는 정기적으로 GB 크기의 파일을 Amazon S3에 업로드합니다. 회사는 파일을 업로드한 후 Amazon EC2 스팟 인스턴스 집합을 사용하여 파일 형식을 트랜스코딩합니다. 회사는 온프레미스 데이터 센터에서 Amazon S3로 데이터를 업로드할 때와 Amazon S3에서 EC2 인스턴스로 데이터를 다운로드할 때 처리량을 확장해야 합니다.\n어떤 솔루션이 이러한 요구 사항을 충족합니까? (2개를 선택하세요.)",
+      "eng": "A company regularly uploads GB-sized files to Amazon S3. After the company uploads the files, the company uses a fleet of Amazon EC2 Spot Instances to transcode the file format. The company needs to scale throughput when the company uploads data from the on-premises data center to Amazon S3 and when the company downloads data from Amazon S3 to the EC2 instances.\nWhich solutions will meet these requirements? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 버킷에 직접 액세스하는 대신 S3 버킷 액세스 포인트를 사용하십시오.",
+        "B": "파일을 여러 S3 버킷에 업로드합니다.",
+        "C": "S3 멀티파트 업로드를 사용합니다.",
+        "D": "객체의 여러 바이트 범위를 병렬로 가져옵니다.",
+        "E": "파일을 업로드할 때 각 개체에 임의의 접두사를 추가합니다."
+      },
+      "eng": {
+        "A": "Use the S3 bucket access point instead of accessing the S3 bucket directly.",
+        "B": "Upload the files into multiple S3 buckets.",
+        "C": "Use S3 multipart uploads.",
+        "D": "Fetch multiple byte-ranges of an object in parallel.",
+        "E": "Add a random prefix to each object when uploading the files."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "multipart uploads",
+      "byte-ranges of an object"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/132852-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C",
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 904,
+    "question": {
+      "kor": "한 회사는 수백만 개의 보관 파일을 Amazon S3로 마이그레이션했습니다. 솔루션 설계자는 고객이 제공한 키를 사용하여 모든 보관 데이터를 암호화하는 솔루션을 구현해야 합니다. 솔루션은 암호화되지 않은 기존 개체와 향후 개체를 암호화해야 합니다.\n어떤 솔루션이 이러한 요구 사항을 충족합니까?",
+      "eng": "A company migrated millions of archival files to Amazon S3. A solutions architect needs to implement a solution that will encrypt all the archival data by using a customer-provided key. The solution must encrypt existing unencrypted objects and future objects.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon S3 인벤토리 보고서를 필터링하여 암호화되지 않은 객체 목록을 생성합니다. 고객 제공 키(SSE-C)를 사용한 서버 측 암호화를 통해 목록의 객체를 암호화하도록 S3 배치 작업 작업을 구성합니다. 고객 제공 키(SSE-C)로 서버 측 암호화를 사용하도록 S3 기본 암호화 기능을 구성합니다.",
+        "B": "S3 Storage Lens 지표를 사용하여 암호화되지 않은 S3 버킷을 식별합니다. AWS KMS 키(SSE-KMS)로 서버 측 암호화를 사용하도록 S3 기본 암호화 기능을 구성합니다.",
+        "C": "Amazon S3에 대한 AWS 사용 보고서를 필터링하여 암호화되지 않은 객체 목록을 생성합니다. AWS KMS 키(SSE-KMS)를 사용한 서버 측 암호화를 통해 목록의 객체를 암호화하도록 AWS Batch 작업을 구성합니다. AWS KMS 키(SSE-KMS)로 서버 측 암호화를 사용하도록 S3 기본 암호화 기능을 구성합니다.",
+        "D": "Amazon S3에 대한 AWS 사용 보고서를 필터링하여 암호화되지 않은 객체 목록을 생성합니다. 고객 제공 키(SSE-C)로 서버 측 암호화를 사용하도록 S3 기본 암호화 기능을 구성합니다."
+      },
+      "eng": {
+        "A": "Create a list of unencrypted objects by filtering an Amazon S3 Inventory report. Configure an S3 Batch Operations job to encrypt the objects from the list with a server-side encryption with a customer-provided key (SSE-C). Configure the S3 default encryption feature to use a server-side encryption with a customer-provided key (SSE-C).",
+        "B": "Use S3 Storage Lens metrics to identify unencrypted S3 buckets. Configure the S3 default encryption feature to use a server-side encryption with AWS KMS keys (SSE-KMS).",
+        "C": "Create a list of unencrypted objects by filtering the AWS usage report for Amazon S3. Configure an AWS Batch job to encrypt the objects from the list with a server-side encryption with AWS KMS keys (SSE-KMS). Configure the S3 default encryption feature to use a server-side encryption with AWS KMS keys (SSE-KMS).",
+        "D": "Create a list of unencrypted objects by filtering the AWS usage report for Amazon S3. Configure the S3 default encryption feature to use a server-side encryption with a customer-provided key (SSE-C)."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Inventory report",
+      "Batch operation"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/132930-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 370,
+    "question": {
+      "kor": "한 글로벌 기업이 AWS Organizations의 여러 AWS 계정에서 애플리케이션을 실행합니다. 회사의 애플리케이션은 멀티파트 업로드를 사용하여 AWS 리전의 여러 Amazon S3 버킷에 데이터를 업로드합니다. 회사는 비용 준수 목적으로 불완전한 멀티파트 업로드에 대해 보고하려고 합니다.\n최소한의 운영 오버헤드로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A global company runs its applications in multiple AWS accounts in AWS Organizations. The company's applications use multipart uploads to upload data to multiple Amazon S3 buckets across AWS Regions. The company wants to report on incomplete multipart uploads for cost compliance purposes.\nWhich solution will meet these requirements with the LEAST operational overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "불완전한 멀티파트 업로드 객체 수를 보고하는 규칙으로 AWS Config를 구성합니다.",
+        "B": "불완전한 멀티파트 업로드 개체 수를 보고하는 SCP(서비스 제어 정책)를 만듭니다.",
+        "C": "불완전한 멀티파트 업로드 객체 수를 보고하도록 S3 스토리지 렌즈를 구성합니다.",
+        "D": "S3 다중 지역 액세스 포인트를 생성하여 불완전한 멀티파트 업로드 객체 수를 보고합니다."
+      },
+      "eng": {
+        "A": "Configure AWS Config with a rule to report the incomplete multipart upload object count.",
+        "B": "Create a service control policy (SCP) to report the incomplete multipart upload object count.",
+        "C": "Configure S3 Storage Lens to report the incomplete multipart upload object count.",
+        "D": "Create an S3 Multi-Region Access Point to report the incomplete multipart upload object count."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Storage Lens"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/125459-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 432,
+    "question": {
+      "kor": "솔루션 설계자는 스토리지 비용을 최적화해야 합니다. 솔루션 설계자는 더 이상 액세스하지 않거나 거의 액세스하지 않는 Amazon S3 버킷을 식별해야 합니다.\n최소한의 운영 오버헤드로 이 목표를 달성할 수 있는 솔루션은 무엇입니까?",
+      "eng": "A solutions architect needs to optimize storage costs. The solutions architect must identify any Amazon S3 buckets that are no longer being accessed or are rarely accessed.\nWhich solution will accomplish this goal with the LEAST operational overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "고급 활동 메트릭에 대한 S3 Storage Lens 대시보드를 사용하여 버킷 액세스 패턴을 분석합니다.",
+        "B": "AWS Management Console에서 S3 대시보드를 사용하여 버킷 액세스 패턴을 분석합니다.",
+        "C": "버킷에 대한 Amazon CloudWatch BucketSizeBytes 지표를 켭니다. Amazon Athena에서 메트릭 데이터를 사용하여 버킷 액세스 패턴을 분석합니다.",
+        "D": "S3 객체 모니터링을 위해 AWS CloudTrail을 켭니다. Amazon CloudWatch Logs와 통합된 CloudTrail 로그를 사용하여 버킷 액세스 패턴을 분석합니다."
+      },
+      "eng": {
+        "A": "Analyze bucket access patterns by using the S3 Storage Lens dashboard for advanced activity metrics.",
+        "B": "Analyze bucket access patterns by using the S3 dashboard in the AWS Management Console.",
+        "C": "Turn on the Amazon CloudWatch BucketSizeBytes metric for buckets. Analyze bucket access patterns by using the metrics data with Amazon Athena.",
+        "D": "Turn on AWS CloudTrail for S3 object monitoring. Analyze bucket access patterns by using CloudTrail logs that are integrated with Amazon CloudWatch Logs."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Storage Lens"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/99803-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 691,
+    "question": {
+      "kor": "한 글로벌 기업이 AWS에서 워크로드를 실행하고 있습니다. 이 회사의 애플리케이션은 민감한 데이터 저장 및 분석을 위해 AWS 리전 전체에서 Amazon S3 버킷을 사용합니다. 회사는 매일 수백만 개의 객체를 여러 S3 버킷에 저장합니다. 회사는 버전 관리가 활성화되지 않은 모든 S3 버킷을 식별하려고 합니다.\n이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A global company runs its workloads on AWS. The company's application uses Amazon S3 buckets across AWS Regions for sensitive data storage and analysis. The company stores millions of objects in multiple S3 buckets daily. The company wants to identify all S3 buckets that are not versioning-enabled.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "여러 지역에서 버전 관리가 활성화되지 않은 모든 S3 버킷을 식별하는 규칙이 있는 AWS CloudTrail 이벤트를 설정합니다.",
+        "B": "Amazon S3 Storage Lens를 사용하여 여러 지역에서 버전 관리가 활성화되지 않은 모든 S3 버킷을 식별합니다.",
+        "C": "S3용 IAM 액세스 분석기를 활성화하여 여러 지역에서 버전 관리가 활성화되지 않은 모든 S3 버킷을 식별합니다.",
+        "D": "S3 다중 지역 액세스 포인트를 생성하여 지역 전체에 걸쳐 버전 관리가 활성화되지 않은 모든 S3 버킷을 식별합니다."
+      },
+      "eng": {
+        "A": "Set up an AWS CloudTrail event that has a rule to identify all S3 buckets that are not versioning-enabled across Regions.",
+        "B": "Use Amazon S3 Storage Lens to identify all S3 buckets that are not versioning-enabled across Regions.",
+        "C": "Enable IAM Access Analyzer for S3 to identify all S3 buckets that are not versioning-enabled across Regions.",
+        "D": "Create an S3 Multi-Region Access Point to identify all S3 buckets that are not versioning-enabled across Regions."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Storage Lens"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/137847-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 967,
+    "question": {
+      "kor": "한 글로벌 기업이 AWS에서 워크로드를 실행하고 있습니다. 이 회사의 애플리케이션은 민감한 데이터 저장 및 분석을 위해 AWS 리전 전체에서 Amazon S3 버킷을 사용합니다. 회사는 매일 수백만 개의 객체를 여러 S3 버킷에 저장합니다. 회사는 버전 관리가 활성화되지 않은 모든 S3 버킷을 식별하려고 합니다.\n이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A global company runs its workloads on AWS. The company's application uses Amazon S3 buckets across AWS Regions for sensitive data storage and analysis. The company stores millions of objects in multiple S3 buckets daily. The company wants to identify all S3 buckets that are not versioning-enabled.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "여러 지역에서 버전 관리가 활성화되지 않은 모든 S3 버킷을 식별하는 규칙이 있는 AWS CloudTrail 이벤트를 설정합니다.",
+        "B": "Amazon S3 Storage Lens를 사용하여 여러 지역에서 버전 관리가 활성화되지 않은 모든 S3 버킷을 식별합니다.",
+        "C": "S3용 IAM 액세스 분석기를 활성화하여 여러 지역에서 버전 관리가 활성화되지 않은 모든 S3 버킷을 식별합니다.",
+        "D": "S3 다중 지역 액세스 포인트를 생성하여 지역 전체에 걸쳐 버전 관리가 활성화되지 않은 모든 S3 버킷을 식별합니다."
+      },
+      "eng": {
+        "A": "Set up an AWS CloudTrail event that has a rule to identify all S3 buckets that are not versioning-enabled across Regions.",
+        "B": "Use Amazon S3 Storage Lens to identify all S3 buckets that are not versioning-enabled across Regions.",
+        "C": "Enable IAM Access Analyzer for S3 to identify all S3 buckets that are not versioning-enabled across Regions.",
+        "D": "Create an S3 Multi-Region Access Point to identify all S3 buckets that are not versioning-enabled across Regions."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Storage Lens",
+      "Versioning"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/139804-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 325,
+    "question": {
+      "kor": "회사에서 1PB 온프레미스 이미지 리포지토리를 AWS로 마이그레이션하려고 합니다. 이미지는 서버리스 웹 애플리케이션에서 사용됩니다. 리포지토리에 저장된 이미지는 거의 액세스되지 않지만 즉시 사용할 수 있어야 합니다. 또한 미사용 이미지를 암호화하고 우발적인 삭제로부터 보호해야 합니다.\n어떤 솔루션이 이러한 요구 사항을 충족합니까?",
+      "eng": "A company wants to migrate its 1 PB on-premises image repository to AWS. The images will be used by a serverless web application images stored in the repository are rarely accessed, but they must be immediately available. Additionally, the images must be encrypted at rest and protected from accidental deletion.\nWhich solution meets these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "클라이언트 측 암호화를 구현하고 이미지를 Amazon S3 Glacier 볼트에 저장합니다. 우발적인 삭제를 방지하기 위해 볼트 잠금을 설정합니다.",
+        "B": "S3 Standard-Infrequent Access(S3 Standard-IA) 스토리지 클래스의 Amazon S3 버킷에 이미지를 저장합니다. S3 버킷에서 버전 관리, 기본 암호화 및 MFA 삭제를 활성화합니다.",
+        "C": "Amazon FSx for Windows File Server 파일 공유에 이미지를 저장합니다. AWS Key Management Service(AWS KMS) 고객 마스터 키(CMK)를 사용하여 파일 공유의 이미지를 암호화하도록 Amazon FSx 파일 공유를 구성합니다. 우발적인 삭제를 방지하려면 이미지에 NTFS 권한 집합을 사용하십시오.",
+        "D": "Infrequent Access 스토리지 클래스의 Amazon Elastic File System(Amazon EFS) 파일 공유에 이미지를 저장합니다. AWS Key Management Service(AWS KMS) 고객 마스터 키(CMK)를 사용하여 파일 공유의 이미지를 암호화하도록 EFS 파일 공유를 구성합니다. 우발적인 삭제를 방지하려면 이미지에 NFS 권한 집합을 사용하십시오."
+      },
+      "eng": {
+        "A": "Implement client-side encryption and store the images in an Amazon S3 Glacier vault. Set a vault lock to prevent accidental deletion.",
+        "B": "Store the images in an Amazon S3 bucket in the S3 Standard-Infrequent Access (S3 Standard-IA) storage class. Enable versioning, default encryption, and MFA Delete on the S3 bucket.",
+        "C": "Store the images in an Amazon FSx for Windows File Server file share. Configure the Amazon FSx file share to use an AWS Key Management Service (AWS KMS) customer master key (CMK) to encrypt the images in the file share. Use NTFS permission sets on the images to prevent accidental deletion.",
+        "D": "Store the Images in an Amazon Elastic File System (Amazon EFS) file share in the Infrequent Access storage class. Configure the EFS file share to use an AWS Key Management Service (AWS KMS) customer master key (CMK) to encrypt the images in the file share. Use NFS permission sets on the images to prevent accidental deletion."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Storage Class",
+      "Versioning",
+      "MFA"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/68997-exam-aws-certified-solutions-architect-associate-saa-c02/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 11,
+    "question": {
+      "kor": "회사에는 중요한 데이터가 포함된 Amazon S3 버킷이 있습니다. 회사는 우발적인 삭제로부터 데이터를 보호해야 합니다.\n이러한 요구 사항을 충족하기 위해 솔루션 설계자는 어떤 단계 조합을 수행해야 합니까? (두 가지를 선택하세요.)",
+      "eng": "A company has an Amazon S3 bucket that contains critical data. The company must protect the data from accidental deletion.\nWhich combination of steps should a solutions architect take to meet these requirements? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 버킷에서 버전 관리를 활성화합니다.",
+        "B": "S3 버킷에서 MFA 삭제를 활성화합니다.",
+        "C": "S3 버킷에 버킷 정책을 생성합니다.",
+        "D": "S3 버킷에서 기본 암호화를 활성화합니다.",
+        "E": "S3 버킷의 객체에 대한 수명 주기 정책을 생성합니다."
+      },
+      "eng": {
+        "A": "Enable versioning on the S3 bucket.",
+        "B": "Enable MFA Delete on the S3 bucket.",
+        "C": "Create a bucket policy on the S3 bucket.",
+        "D": "Enable default encryption on the S3 bucket.",
+        "E": "Create a lifecycle policy for the objects in the S3 bucket."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "MFA Delete",
+      "Versioning"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/84750-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A",
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 106,
+    "question": {
+      "kor": "회사는 Amazon S3를 사용하여 기밀 감사 문서를 저장합니다. S3 버킷은 버킷 정책을 사용하여 최소 권한 원칙에 따라 감사 팀 IAM 사용자 자격 증명에 대한 액세스를 제한합니다. 회사 관리자는 S3 버킷의 문서를 실수로 삭제하는 것에 대해 걱정하고 보다 안전한 솔루션을 원합니다.\n솔루션 설계자는 감사 문서를 보호하기 위해 무엇을 해야 합니까?",
+      "eng": "A company uses Amazon S3 to store its confidential audit documents. The S3 bucket uses bucket policies to restrict access to audit team IAM user credentials according to the principle of least privilege. Company managers are worried about accidental deletion of documents in the S3 bucket and want a more secure solution.\nWhat should a solutions architect do to secure the audit documents?"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 버킷에서 버전 관리 및 MFA 삭제 기능을 활성화합니다.",
+        "B": "각 감사 팀 IAM 사용자 계정의 IAM 사용자 자격 증명에서 다중 요소 인증(MFA)을 활성화합니다.",
+        "C": "감사 날짜 동안 s3:DeleteObject 작업을 거부하도록 감사 팀의 IAM 사용자 계정에 S3 수명 주기 정책을 추가합니다.",
+        "D": "AWS Key Management Service(AWS KMS)를 사용하여 S3 버킷을 암호화하고 감사 팀 IAM 사용자 계정이 KMS 키에 액세스하지 못하도록 제한합니다."
+      },
+      "eng": {
+        "A": "Enable the versioning and MFA Delete features on the S3 bucket.",
+        "B": "Enable multi-factor authentication (MFA) on the IAM user credentials for each audit team IAM user account.",
+        "C": "Add an S3 Lifecycle policy to the audit team's IAM user accounts to deny the s3:DeleteObject action during audit dates.",
+        "D": "Use AWS Key Management Service (AWS KMS) to encrypt the S3 bucket and restrict audit team IAM user accounts from accessing the KMS key."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "MFA Delete",
+      "Versioning"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/85808-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 471,
+    "question": {
+      "kor": "솔루션 설계자는 Amazon S3 버킷을 저장용으로 사용하여 문서 검토 애플리케이션을 구현하고 있습니다. 솔루션은 우발적인 문서 삭제를 방지하고 문서의 모든 버전을 사용할 수 있도록 보장해야 합니다. 사용자는 문서를 다운로드, 수정 및 업로드할 수 있어야 합니다.\n이러한 요구 사항을 충족하려면 어떤 조합의 조치를 취해야 합니까? (두 가지를 선택하세요.)",
+      "eng": "A solutions architect is implementing a document review application using an Amazon S3 bucket for storage. The solution must prevent accidental deletion of the documents and ensure that all versions of the documents are available. Users must be able to download, modify, and upload documents.\nWhich combination of actions should be taken to meet these requirements? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "읽기 전용 버킷 ACL을 활성화합니다.",
+        "B": "버킷에서 버전 관리를 활성화합니다.",
+        "C": "IAM 정책을 버킷에 연결합니다.",
+        "D": "버킷에서 MFA 삭제를 활성화합니다.",
+        "E": "AWS KMS를 사용하여 버킷을 암호화합니다."
+      },
+      "eng": {
+        "A": "Enable a read-only bucket ACL.",
+        "B": "Enable versioning on the bucket.",
+        "C": "Attach an IAM policy to the bucket.",
+        "D": "Enable MFA Delete on the bucket.",
+        "E": "Encrypt the bucket using AWS KMS."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Versioning",
+      "MFA Delete"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/95460-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B",
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 457,
+    "question": {
+      "kor": "로펌은 대중과 정보를 공유해야 합니다. 이 정보에는 공개적으로 읽을 수 있어야 하는 수백 개의 파일이 포함됩니다. 지정된 미래 날짜 이전에 누구든지 파일을 수정하거나 삭제하는 것은 금지됩니다.\n가장 안전한 방식으로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A law firm needs to share information with the public. The information includes hundreds of files that must be publicly readable. Modifications or deletions of the files by anyone before a designated future date are prohibited.\nWhich solution will meet these requirements in the MOST secure way?"
+    },
+    "choices": {
+      "kor": {
+        "A": "정적 웹 사이트 호스팅용으로 구성된 Amazon S3 버킷에 모든 파리를 업로드합니다. 지정된 날짜까지 S3 버킷에 액세스하는 모든 AWS 보안 주체에게 읽기 전용 IAM 권한을 부여합니다.",
+        "B": "S3 버전 관리가 활성화된 새 Amazon S3 버킷을 생성합니다. 지정된 날짜에 따라 보존 기간이 있는 S3 Object Lock을 사용하십시오. 정적 웹 사이트 호스팅을 위해 S3 버킷을 구성 합니다. 객체에 대한 읽기 전용 액세스를 허용하도록 S3 버킷 정책을 설정합니다.",
+        "C": "S3 버전 관리가 활성화된 새 Amazon S3 버킷을 생성합니다. 객체 수정 또는 삭제 시 AWS Lambda 함수를 실행하도록 이벤트 트리거를 구성합니다. 개체를 프라이빗 S3 버킷의 원래 버전으로 바꾸도록 Lambda 함수를 구성합니다.",
+        "D": "정적 웹 사이트 호스팅용으로 구성된 Amazon S3 버킷에 모든 파일을 업로드합니다. 파일이 포함된 폴더를 선택합니다. 지정된 날짜에 따라 보존 기간이 있는 S3 Object Lock을 사용하십시오. S3 버킷에 액세스하는 모든 AWS 보안 주체에게 읽기 전용 IAM 권한을 부여합니다."
+      },
+      "eng": {
+        "A": "Upload all flies to an Amazon S3 bucket that is configured for static website hosting. Grant read-only IAM permissions to any AWS principals that access the S3 bucket until the designated date.",
+        "B": "Create a new Amazon S3 bucket with S3 Versioning enabled. Use S3 Object Lock with a retention period in accordance with the designated date. Configure the S3 bucket for static website hosting. Set an S3 bucket policy to allow read-only access to the objects.",
+        "C": "Create a new Amazon S3 bucket with S3 Versioning enabled. Configure an event trigger to run an AWS Lambda function in case of object modification or deletion. Configure the Lambda function to replace the objects with the original versions from a private S3 bucket.",
+        "D": "Upload all files to an Amazon S3 bucket that is configured for static website hosting. Select the folder that contains the files. Use S3 Object Lock with a retention period in accordance with the designated date. Grant read-only IAM permissions to any AWS principals that access the S3 bucket."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Versioning",
+      "Object Lock",
+      "static website hosting",
+      "bucket policy"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/109725-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 12,
+    "question": {
+      "kor": "회사는 Amazon S3에 데이터를 저장하고 데이터가 변경되지 않도록 해야 합니다. 회사는 Amazon S3에 업로드된 새 객체가 회사에서 객체를 수정하기로 결정할 때까지 불특정한 시간 동안 변경 불가능한 상태로 유지되기를 원합니다. 회사 AWS 계정의 특정 사용자만 개체를 삭제할 수 있습니다.\n솔루션 설계자는 이러한 요구 사항을 충족하기 위해 무엇을 해야 합니까?",
+      "eng": "A company needs to store data in Amazon S3 and must prevent the data from being changed. The company wants new objects that are uploaded to Amazon S3 to remain unchangeable for a nonspecific amount of time until the company decides to modify the objects. Only specific users in the company's AWS account can have the ability 10 delete the objects.\nWhat should a solutions architect do to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 Glacier 볼트를 생성합니다. 개체에 WORM(Write-Once, Read-Many) 볼트 잠금 정책을 적용합니다.",
+        "B": "S3 객체 잠금이 활성화된 S3 버킷을 생성합니다. 버전 관리를 활성화합니다. 보존 기간을 100년으로 설정합니다. 거버넌스 모드를 새 객체에 대한 S3 버킷의 기본 보관 모드로 사용합니다.",
+        "C": "S3 버킷을 생성합니다. AWS CloudTrail을 사용하여 객체를 수정하는 모든 S3 API 이벤트를 추적합니다. 알림을 받으면 회사가 가지고 있는 모든 백업 버전에서 수정된 개체를 복원합니다.",
+        "D": "S3 객체 잠금이 활성화된 S3 버킷을 생성합니다. 버전 관리를 활성화합니다. 객체에 법적 보존을 추가합니다. 객체를 삭제해야 하는 사용자의 IAM 정책에 s3:PutObjectLegalHold 권한을 추가합니다."
+      },
+      "eng": {
+        "A": "Create an S3 Glacier vault. Apply a write-once, read-many (WORM) vault lock policy to the objects.",
+        "B": "Create an S3 bucket with S3 Object Lock enabled. Enable versioning. Set a retention period of 100 years. Use governance mode as the S3 bucket’s default retention mode for new objects.",
+        "C": "Create an S3 bucket. Use AWS CloudTrail to track any S3 API events that modify the objects. Upon notification, restore the modified objects from any backup versions that the company has.",
+        "D": "Create an S3 bucket with S3 Object Lock enabled. Enable versioning. Add a legal hold to the objects. Add the s3:PutObjectLegalHold permission to the IAM policies of users who need to delete the objects."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Object Lock",
+      "legal hold",
+      "S3 Glacier vault"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/85634-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 431,
+    "question": {
+      "kor": "회사는 데이터를 Amazon S3 버킷에 PDF 형식으로 저장합니다. 회사는 모든 신규 및 기존 데이터를 Amazon S3에 7년 동안 보관해야 한다는 법적 요구 사항을 따라야 합니다.\n최소한의 운영 오버헤드로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company stores data in PDF format in an Amazon S3 bucket. The company must follow a legal requirement to retain all new and existing data in Amazon S3 for 7 years.\nWhich solution will meet these requirements with the LEAST operational overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 버킷에 대한 S3 버전 관리 기능을 켭니다. 7년 후 데이터를 삭제하도록 S3 수명 주기를 구성합니다. 모든 S3 객체에 대한 MFA(Multi-Factor Authentication) 삭제를 구성합니다.",
+        "B": "S3 버킷에 대한 거버넌스 보존 모드로 S3 객체 잠금을 켭니다. 7년 후에 만료되도록 보존 기간을 설정합니다. 모든 기존 개체를 다시 복사하여 기존 데이터를 준수하도록 합니다.",
+        "C": "S3 버킷에 대해 규정 준수 보존 모드로 S3 객체 잠금을 켭니다. 7년 후에 만료되도록 보존 기간을 설정합니다. 모든 기존 개체를 다시 복사하여 기존 데이터를 준수하도록 합니다.",
+        "D": "S3 버킷에 대해 규정 준수 보존 모드로 S3 객체 잠금을 켭니다. 7년 후에 만료되도록 보존 기간을 설정합니다. S3 배치 작업을 사용하여 기존 데이터를 규정에 맞게 가져옵니다."
+      },
+      "eng": {
+        "A": "Turn on the S3 Versioning feature for the S3 bucket. Configure S3 Lifecycle to delete the data after 7 years. Configure multi-factor authentication (MFA) delete for all S3 objects.",
+        "B": "Turn on S3 Object Lock with governance retention mode for the S3 bucket. Set the retention period to expire after 7 years. Recopy all existing objects to bring the existing data into compliance.",
+        "C": "Turn on S3 Object Lock with compliance retention mode for the S3 bucket. Set the retention period to expire after 7 years. Recopy all existing objects to bring the existing data into compliance.",
+        "D": "Turn on S3 Object Lock with compliance retention mode for the S3 bucket. Set the retention period to expire after 7 years. Use S3 Batch Operations to bring the existing data into compliance."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Object Lock",
+      "compliance mode",
+      "Batch operation"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/109404-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 29,
+    "question": {
+      "kor": "회사에는 사용자가 웹 인터페이스 또는 모바일 앱을 통해 문서를 업로드하는 프로덕션 웹 애플리케이션이 있습니다. 새로운 규제 요구 사항에 따라. 새 문서는 저장된 후에 수정하거나 삭제할 수 없습니다.\n솔루션 설계자는 이 요구 사항을 충족하기 위해 무엇을 해야 합니까?",
+      "eng": "A company has a production web application in which users upload documents through a web interface or a mobile app. According to a new regulatory requirement. new documents cannot be modified or deleted after they are stored.\nWhat should a solutions architect do to meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 버전 관리 및 S3 객체 잠금이 활성화된 Amazon S3 버킷에 업로드된 문서를 저장합니다.",
+        "B": "업로드된 문서를 Amazon S3 버킷에 저장합니다. 문서를 주기적으로 보관하도록 S3 수명 주기 정책을 구성합니다.",
+        "C": "업로드된 문서를 S3 버전 관리가 활성화된 Amazon S3 버킷에 저장합니다. 모든 액세스를 읽기 전용으로 제한하도록 ACL을 구성합니다.",
+        "D": "업로드된 문서를 Amazon Elastic File System(Amazon EFS) 볼륨에 저장합니다. 읽기 전용 모드로 볼륨을 마운트하여 데이터에 액세스하십시오."
+      },
+      "eng": {
+        "A": "Store the uploaded documents in an Amazon S3 bucket with S3 Versioning and S3 Object Lock enabled.",
+        "B": "Store the uploaded documents in an Amazon S3 bucket. Configure an S3 Lifecycle policy to archive the documents periodically.",
+        "C": "Store the uploaded documents in an Amazon S3 bucket with S3 Versioning enabled. Configure an ACL to restrict all access to read-only.",
+        "D": "Store the uploaded documents on an Amazon Elastic File System (Amazon EFS) volume. Access the data by mounting the volume in read-only mode."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Versioning",
+      "Object Lock"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/85751-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 159,
+    "question": {
+      "kor": "회사는 의료 실험의 결과를 Amazon S3 리포지토리에 저장해야 합니다. 리포지토리는 소수의 과학자가 새 파일을 추가할 수 있도록 허용하고 다른 모든 사용자는 읽기 전용 액세스로 제한해야 합니다. 어떤 사용자도 리포지토리의 파일을 수정하거나 삭제할 수 없습니다. 회사는 모든 파일을 생성일로부터 최소 1년 동안 저장소에 보관해야 합니다.\n이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company needs to save the results from a medical trial to an Amazon S3 repository. The repository must allow a few scientists to add new files and must restrict all other users to read-only access. No users can have the ability to modify or delete any files in the repository. The company must keep every file in the repository for a minimum of 1 year after its creation date.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "법적 보존 기간이 1년인 거버넌스 모드에서 S3 객체 잠금을 사용합니다.",
+        "B": "보존 기간이 365일인 규정 준수 모드에서 S3 객체 잠금을 사용합니다.",
+        "C": "IAM 역할을 사용하여 모든 사용자가 S3 버킷의 객체를 삭제하거나 변경하지 못하도록 제한합니다. S3 버킷 정책을 사용하여 IAM 역할만 허용하십시오.",
+        "D": "객체가 추가될 때마다 AWS Lambda 함수를 호출하도록 S3 버킷을 구성합니다. 수정된 개체가 적절하게 표시될 수 있도록 저장된 개체의 해시를 추적하도록 기능을 구성합니다."
+      },
+      "eng": {
+        "A": "Use S3 Object Lock in governance mode with a legal hold of 1 year.",
+        "B": "Use S3 Object Lock in compliance mode with a retention period of 365 days.",
+        "C": "Use an IAM role to restrict all users from deleting or changing objects in the S3 bucket. Use an S3 bucket policy to only allow the IAM role.",
+        "D": "Configure the S3 bucket to invoke an AWS Lambda function every time an object is added. Configure the function to track the hash of the saved object so that modified objects can be marked accordingly."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Object Lock",
+      "governance mode",
+      "compliance mode"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/86359-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 886,
+    "question": {
+      "kor": "회사에서 온프레미스 가상 머신(VM)을 AWS에 백업하려고 합니다. 회사의 백업 솔루션은 온프레미스 백업을 Amazon S3 버킷에 객체로 내보냅니다. S3 백업은 30일 동안 보관되어야 하며 30일 후에 자동으로 삭제되어야 합니다.\n이러한 요구 사항을 충족하는 단계 조합은 무엇입니까? (3개를 선택하세요.)",
+      "eng": "A company wants to back up its on-premises virtual machines (VMs) to AWS. The company's backup solution exports on-premises backups to an Amazon S3 bucket as objects. The S3 backups must be retained for 30 days and must be automatically deleted after 30 days.\nWhich combination of steps will meet these requirements? (Choose three.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 객체 잠금이 활성화된 S3 버킷을 생성합니다.",
+        "B": "객체 버전 관리가 활성화된 S3 버킷을 생성합니다.",
+        "C": "객체의 기본 보존 기간을 30일로 구성합니다.",
+        "D": "30일 동안 객체를 보호하도록 S3 수명 주기 정책을 구성합니다.",
+        "E": "30일 후에 객체가 만료되도록 S3 수명 주기 정책을 구성합니다.",
+        "F": "30일 보존 기간으로 객체에 태그를 지정하도록 백업 솔루션을 구성합니다."
+      },
+      "eng": {
+        "A": "Create an S3 bucket that has S3 Object Lock enabled.",
+        "B": "Create an S3 bucket that has object versioning enabled.",
+        "C": "Configure a default retention period of 30 days for the objects.",
+        "D": "Configure an S3 Lifecycle policy to protect the objects for 30 days.",
+        "E": "Configure an S3 Lifecycle policy to expire the objects after 30 days.",
+        "F": "Configure the backup solution to tag the objects with a 30-day retention period"
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Object Lock",
+      "lifecycle policies",
+      "default retention period"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/129721-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A",
+      "C",
+      "E"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 513,
+    "question": {
+      "kor": "회사는 계약 문서를 보관해야 합니다. 계약은 5년 동안 지속됩니다. 회사는 5년 동안 문서를 덮어쓰거나 삭제할 수 없도록 해야 합니다. 회사는 미사용 문서를 암호화하고 매년 암호화 키를 자동으로 교체해야 합니다.\n최소한의 운영 오버헤드로 이러한 요구 사항을 충족하기 위해 솔루션 설계자가 수행해야 하는 단계 조합은 무엇입니까? (두 가지를 선택하세요.)",
+      "eng": "A company needs to store contract documents. A contract lasts for 5 years. During the 5-year period, the company must ensure that the documents cannot be overwritten or deleted. The company needs to encrypt the documents at rest and rotate the encryption keys automatically every year.\nWhich combination of steps should a solutions architect take to meet these requirements with the LEAST operational overhead? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon S3에 문서를 저장합니다. 거버넌스 모드에서 S3 객체 잠금을 사용합니다.",
+        "B": "Amazon S3에 문서를 저장합니다. 규정 준수 모드에서 S3 객체 잠금을 사용합니다.",
+        "C": "Amazon S3 관리형 암호화 키(SSE-S3)로 서버 측 암호화를 사용합니다. 키 순환을 구성합니다.",
+        "D": "AWS Key Management Service(AWS KMS) 고객 관리형 키로 서버 측 암호화를 사용합니다. 키 순환을 구성합니다.",
+        "E": "AWS Key Management Service(AWS KMS) 고객 제공(가져온) 키로 서버 측 암호화를 사용합니다. 키 순환을 구성합니다."
+      },
+      "eng": {
+        "A": "Store the documents in Amazon S3. Use S3 Object Lock in governance mode.",
+        "B": "Store the documents in Amazon S3. Use S3 Object Lock in compliance mode.",
+        "C": "Use server-side encryption with Amazon S3 managed encryption keys (SSE-S3). Configure key rotation.",
+        "D": "Use server-side encryption with AWS Key Management Service (AWS KMS) customer managed keys. Configure key rotation.",
+        "E": "Use server-side encryption with AWS Key Management Service (AWS KMS) customer provided (imported) keys. Configure key rotation."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Object Lock",
+      "encryption at rest",
+      "KMS"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/87535-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B",
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 140,
+    "question": {
+      "kor": "회사에서 애플리케이션을 서버리스 솔루션으로 이동하려고 합니다. 서버리스 솔루션은 SQL을 사용하여 기존 및 신규 데이터를 분석해야 합니다. 회사는 데이터를 Amazon S3 버킷에 저장합니다. 데이터는 암호화가 필요하며 다른 AWS 리전에 복제되어야 합니다.\n최소한의 운영 오버헤드로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company wants to move its application to a serverless solution. The serverless solution needs to analyze existing and new data by using SQL. The company stores the data in an Amazon S3 bucket. The data requires encryption and must be replicated to a different AWS Region.\nWhich solution will meet these requirements with the LEAST operational overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "새 S3 버킷을 생성합니다. 새 S3 버킷에 데이터를 로드합니다. S3 교차 리전 복제(CRR)를 사용하여 암호화된 객체를 다른 리전의 S3 버킷에 복제합니다. AWS KMS 다중 리전 키(SSE-KMS)로 서버 측 암호화를 사용합니다. Amazon Athena를 사용하여 데이터를 쿼리합니다.",
+        "B": "새 S3 버킷을 생성합니다. 새 S3 버킷에 데이터를 로드합니다. S3 CRR(Cross-Region Replication)을 사용하여 암호화된 객체를 다른 리전의 S3 버킷에 복제합니다. AWS KMS 다중 리전 키(SSE-KMS)로 서버 측 암호화를 사용합니다. Amazon RDS를 사용하여 데이터를 쿼리합니다.",
+        "C": "기존 S3 버킷에 데이터를 로드합니다. S3 CRR(Cross-Region Replication)을 사용하여 암호화된 객체를 다른 리전의 S3 버킷에 복제합니다. Amazon S3 관리형 암호화 키(SSE-S3)로 서버 측 암호화를 사용합니다. Amazon Athena를 사용하여 데이터를 쿼리합니다.",
+        "D": "기존 S3 버킷에 데이터를 로드합니다. S3 CRR(Cross-Region Replication)을 사용하여 암호화된 객체를 다른 리전의 S3 버킷에 복제합니다. Amazon S3 관리형 암호화 키(SSE-S3)로 서버 측 암호화를 사용합니다. Amazon RDS를 사용하여 데이터를 쿼리합니다."
+      },
+      "eng": {
+        "A": "Create a new S3 bucket. Load the data into the new S3 bucket. Use S3 Cross-Region Replication (CRR) to replicate encrypted objects to an S3 bucket in another Region. Use server-side encryption with AWS KMS multi-Region keys (SSE-KMS). Use Amazon Athena to query the data.",
+        "B": "Create a new S3 bucket. Load the data into the new S3 bucket. Use S3 Cross-Region Replication (CRR) to replicate encrypted objects to an S3 bucket in another Region. Use server-side encryption with AWS KMS multi-Region keys (SSE-KMS). Use Amazon RDS to query the data.",
+        "C": "Load the data into the existing S3 bucket. Use S3 Cross-Region Replication (CRR) to replicate encrypted objects to an S3 bucket in another Region. Use server-side encryption with Amazon S3 managed encryption keys (SSE-S3). Use Amazon Athena to query the data.",
+        "D": "Load the data into the existing S3 bucket. Use S3 Cross-Region Replication (CRR) to replicate encrypted objects to an S3 bucket in another Region. Use server-side encryption with Amazon S3 managed encryption keys (SSE-S3). Use Amazon RDS to query the data."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "encryption",
+      "CRR"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/85993-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 635,
+    "question": {
+      "kor": "회사에는 us-west-2 지역에 애플리케이션이 배포된 여러 AWS 계정이 있습니다. 애플리케이션 로그는 각 계정의 Amazon S3 버킷 내에 저장됩니다. 회사는 단일 S3 버킷을 사용하는 중앙 집중식 로그 분석 솔루션을 구축하려고 합니다. 로그는 us-west-2를 벗어나면 안 되며, 회사는 최소한의 운영 오버헤드를 원합니다.\n이러한 요구 사항을 충족하고 가장 비용 효율적인 솔루션은 무엇입니까?",
+      "eng": "A company has multiple AWS accounts with applications deployed in the us-west-2 Region. Application logs are stored within Amazon S3 buckets in each account. The company wants to build a centralized log analysis solution that uses a single S3 bucket. Logs must not leave us-west-2, and the company wants to incur minimal operational overhead.\nWhich solution meets these requirements and is MOST cost-effective?"
+    },
+    "choices": {
+      "kor": {
+        "A": "애플리케이션 S3 버킷 중 하나에서 중앙 집중식 S3 버킷으로 객체를 복사하는 S3 수명 주기 정책을 생성합니다.",
+        "B": "S3 동일 리전 복제를 사용하여 S3 버킷의 로그를 us-west-2의 다른 S3 버킷으로 복제합니다. 로그 분석을 위해 이 S3 버킷을 사용하세요.",
+        "C": "매일 PutObject API 작업을 사용하여 버킷의 전체 콘텐츠를 us-west-2의 다른 S3 버킷에 복사하는 스크립트를 작성합니다. 로그 분석을 위해 이 S3 버킷을 사용하세요.",
+        "D": "로그가 S3 버킷(s3:ObjectCreated:* 이벤트)으로 전달될 때마다 트리거되는 AWS Lambda 함수를 이러한 계정에 작성합니다. us-west-2의 다른 S3 버킷에 로그를 복사합니다. 로그 분석을 위해 이 S3 버킷을 사용하세요."
+      },
+      "eng": {
+        "A": "Create an S3 Lifecycle policy that copies the objects from one of the application S3 buckets to the centralized S3 bucket.",
+        "B": "Use S3 Same-Region Replication to replicate logs from the S3 buckets to another S3 bucket in us-west-2. Use this S3 bucket for log analysis.",
+        "C": "Write a script that uses the PutObject API operation every day to copy the entire contents of the buckets to another S3 bucket in us-west-2. Use this S3 bucket for log analysis.",
+        "D": "Write AWS Lambda functions in these accounts that are triggered every time logs are delivered to the S3 buckets (s3:ObjectCreated:* event). Copy the logs to another S3 bucket in us-west-2. Use this S3 bucket for log analysis."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "SRR"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/132923-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 749,
+    "question": {
+      "kor": "온라인 사진 공유 회사는 us-west-1 지역에 있는 Amazon S3 버킷에 사진을 저장합니다. 회사는 us-east-1 지역에 모든 새 사진의 사본을 저장해야 합니다.\n최소한의 운영 노력으로 이 요구 사항을 충족할 수 있는 솔루션은 무엇입니까?",
+      "eng": "An online photo-sharing company stores its photos in an Amazon S3 bucket that exists in the us-west-1 Region. The company needs to store a copy of all new photos in the us-east-1 Region.\nWhich solution will meet this requirement with the LEAST operational effort?"
+    },
+    "choices": {
+      "kor": {
+        "A": "us-east-1에 두 번째 S3 버킷을 생성합니다. S3 교차 리전 복제를 사용하여 기존 S3 버킷의 사진을 두 번째 S3 버킷으로 복사합니다.",
+        "B": "기존 S3 버킷의 CORS(교차 원본 리소스 공유) 구성을 생성합니다. CORS 규칙의 AllowedOrigin 요소에 us-east-1을 지정합니다.",
+        "C": "여러 가용 영역에 걸쳐 us-east-1에 두 번째 S3 버킷을 생성합니다. S3 수명 주기 규칙을 생성하여 두 번째 S3 버킷에 사진을 저장합니다.",
+        "D": "us-east-1에 두 번째 S3 버킷을 생성합니다. 객체 생성 및 업데이트 이벤트에 대한 S3 이벤트 알림을 구성하여 AWS Lambda 함수를 호출하여 기존 S3 버킷의 사진을 두 번째 S3 버",
+        "E": "킷으로 복사합니다."
+      },
+      "eng": {
+        "A": "Create a second S3 bucket in us-east-1. Use S3 Cross-Region Replication to copy photos from the existing S3 bucket to the second S3 bucket.",
+        "B": "Create a cross-origin resource sharing (CORS) configuration of the existing S3 bucket. Specify us-east-1 in the CORS rule's AllowedOrigin element.",
+        "C": "Create a second S3 bucket in us-east-1 across multiple Availability Zones. Create an S3 Lifecycle rule to save photos into the second S3 bucket.",
+        "D": "Create a second S3 bucket in us-east-1. Configure S3 event notifications on object creation and update events to invoke an AWS Lambda function to copy photos from the existing S3 bucket to the second S3 bucket."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "CRR"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/121222-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 968,
+    "question": {
+      "kor": "회사는 AWS 클라우드에서 중요한 스토리지 애플리케이션을 실행합니다. 애플리케이션은 두 AWS 리전에서 Amazon S3를 사용합니다. 회사는 애플리케이션이 공용 네트워크 정체 없이 원격 사용자 데이터를 가장 가까운 S3 버킷으로 보내기를 원합니다. 또한 회사는 최소한의 Amazon S3 관리로 애플리케이션 장애 조치를 원합니다.\n이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company runs its critical storage application in the AWS Cloud. The application uses Amazon S3 in two AWS Regions. The company wants the application to send remote user data to the nearest S3 bucket with no public network congestion. The company also wants the application to fail over with the least amount of management of Amazon S3.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "두 지역 간에 활성-활성 설계를 구현합니다. 사용자에게 가장 가까운 지역 S3 엔드포인트를 사용하도록 애플리케이션을 구성합니다.",
+        "B": "S3 다중 지역 액세스 포인트에 활성-수동 구성을 사용하십시오. 각 지역에 대한 글로벌 엔드포인트를 생성합니다.",
+        "C": "사용자에게 가장 가까운 지역 S3 엔드포인트로 사용자 데이터를 보냅니다. S3 버킷을 동기화된 상태로 유지하도록 S3 교차 계정 복제 규칙을 구성합니다.",
+        "D": "단일 글로벌 엔드포인트가 있는 활성-활성 구성에서 다중 지역 액세스 포인트를 사용하도록 Amazon S3를 설정합니다. S3 교차 리전 복제를 구성합니다."
+      },
+      "eng": {
+        "A": "Implement an active-active design between the two Regions. Configure the application to use the regional S3 endpoints closest to the user.",
+        "B": "Use an active-passive configuration with S3 Multi-Region Access Points. Create a global endpoint for each of the Regions.",
+        "C": "Send user data to the regional S3 endpoints closest to the user. Configure an S3 cross-account replication rule to keep the S3 buckets synchronized.",
+        "D": "Set up Amazon S3 to use Multi-Region Access Points in an active-active configuration with a single global endpoint. Configure S3 Cross-Region Replication."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Access Points",
+      "CRR"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/139744-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 638,
+    "question": {
+      "kor": "한 회사에 전 세계 학생들에게 주문형 교육 비디오를 제공하는 애플리케이션이 있습니다. 또한 이 애플리케이션을 사용하면 승인된 콘텐츠 개발자가 비디오를 업로드할 수 있습니다. 데이터는 us-east-2 리전의 Amazon S3 버킷에 저장됩니다.\n회사는 eu-west-2 리전에 S3 버킷을, ap-southeast-1 리전에 S3 버킷을 생성했습니다. 회사는 데이터를 새로운 S3 버킷에 복제하려고 합니다. 회사는 eu-west-2 및 ap-southeast-1 근처에서 비디오를 업로드하는 개발자와 비디오를 스트리밍하는 학생의 대기 시간을 최소화해야 합니다.\n애플리케이션을 가장 적게 변경하여 이러한 요구 사항을 충족하는 단계 조합은 무엇입니까? (2개를 선택하세요.)",
+      "eng": "A company has an application that delivers on-demand training videos to students around the world. The application also allows authorized content developers to upload videos. The data is stored in an Amazon S3 bucket in the us-east-2 Region.\nThe company has created an S3 bucket in the eu-west-2 Region and an S3 bucket in the ap-southeast-1 Region. The company wants to replicate the data to the new S3 buckets. The company needs to minimize latency for developers who upload videos and students who stream videos near eu-west-2 and apsoutheast- 1.\nWhich combination of steps will meet these requirements with the FEWEST changes to the application? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "us-east-2 S3 버킷에서 eu-west-2 S3 버킷으로 단방향 복제를 구성합니다. us-east-2 S3 버킷에서 ap-southeast-1 S3 버킷으로의 단방향 복제를 구성합니다.",
+        "B": "us-east-2 S3 버킷에서 eu-west-2 S3 버킷으로 단방향 복제를 구성합니다. eu-west-2 S3 버킷에서 ap-southeast-1 S3 버킷으로의 단방향 복제를 구성합니다.",
+        "C": "세 지역 모두에 있는 S3 버킷 간에 양방향(양방향) 복제를 구성합니다.",
+        "D": "S3 다중 지역 액세스 포인트를 생성합니다. 비디오 스트리밍을 위해 다중 지역 액세스 포인트의 Amazon 리소스 이름(ARN)을 사용하도록 애플리케이션을 수정합니다. 비디오 업로드용 애플리케이션을 수정하지 마십시오.",
+        "E": "S3 다중 지역 액세스 포인트를 생성합니다. 비디오 스트리밍 및 업로드를 위해 다중 지역 액세스 포인트의 Amazon 리소스 이름(ARN)을 사용하도록 애플리케이션을 수정합니다."
+      },
+      "eng": {
+        "A": "Configure one-way replication from the us-east-2 S3 bucket to the eu-west-2 S3 bucket. Configure one-way replication from the us-east-2 S3 bucket to the ap-southeast-1 S3 bucket.",
+        "B": "Configure one-way replication from the us-east-2 S3 bucket to the eu-west-2 S3 bucket. Configure one-way replication from the eu-west-2 S3 bucket to the ap-southeast-1 S3 bucket.",
+        "C": "Configure two-way (bidirectional) replication among the S3 buckets that are in all three Regions.",
+        "D": "Create an S3 Multi-Region Access Point. Modify the application to use the Amazon Resource Name (ARN) of the Multi-Region Access Point for video streaming. Do not modify the application for video uploads.",
+        "E": "Create an S3 Multi-Region Access Point. Modify the application to use the Amazon Resource Name (ARN) of the Multi-Region Access Point for video streaming and uploads."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "replicaton",
+      "S3 Multi-Region Access Point"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/132924-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C",
+      "E"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 556,
+    "question": {
+      "kor": "회사는 중앙 집중식 AWS 계정을 사용하여 다양한 Amazon S3 버킷에 로그 데이터를 저장합니다. 솔루션 설계자는 데이터가 S3 버킷에 업로드되기 전에 미사용 데이터가 암호화되었는지 확인해야 합니다. 또한 데이터는 전송 중에 암호화되어야 합니다.\n어떤 솔루션이 이러한 요구 사항을 충족합니까?",
+      "eng": "A company is using a centralized AWS account to store log data in various Amazon S3 buckets. A solutions architect needs to ensure that the data is encrypted at rest before the data is uploaded to the S3 buckets. The data also must be encrypted in transit.\nWhich solution meets these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "클라이언트 측 암호화를 사용하여 S3 버킷에 업로드되는 데이터를 암호화합니다.",
+        "B": "서버 측 암호화를 사용하여 S3 버킷에 업로드되는 데이터를 암호화합니다.",
+        "C": "S3 업로드를 위해 S3 관리형 암호화 키(SSE-S3)로 서버 측 암호화를 사용해야 하는 버킷 정책을 만듭니다.",
+        "D": "기본 AWS Key Management Service(AWS KMS) 키를 사용하여 S3 버킷을 암호화하는 보안 옵션을 활성화합니다."
+      },
+      "eng": {
+        "A": "Use client-side encryption to encrypt the data that is being uploaded to the S3 buckets.",
+        "B": "Use server-side encryption to encrypt the data that is being uploaded to the S3 buckets.",
+        "C": "Create bucket policies that require the use of server-side encryption with S3 managed encryption keys (SSE-S3) for S3 uploads.",
+        "D": "Enable the security option to encrypt the S3 buckets through the use of a default AWS Key Management Service (AWS KMS) key."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "encryption"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/95031-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 953,
+    "question": {
+      "kor": "회사는 중요한 보관 데이터 파일을 생성하는 애플리케이션을 AWS 클라우드에서 실행합니다. 회사는 애플리케이션의 데이터 스토리지를 재설계하려고 합니다. 회사는 데이터 파일을 암호화하고 데이터가 암호화되어 AWS로 전송되기 전에 제3자가 데이터에 액세스할 수 없도록 하고 싶어합니다. 회사는 이미 Amazon S3 버킷을 생성했습니다.\n어떤 솔루션이 이러한 요구 사항을 충족합니까?",
+      "eng": "A company runs an application in the AWS Cloud that generates sensitive archival data files. The company wants to rearchitect the application's data storage. The company wants to encrypt the data files and to ensure that third parties do not have access to the data before the data is encrypted and sent to AWS. The company has already created an Amazon S3 bucket.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon S3 관리형 암호화 키로 클라이언트 측 암호화를 사용하도록 S3 버킷을 구성합니다. S3 버킷을 사용하여 아카이브 파일을 저장하도록 애플리케이션을 구성합니다.",
+        "B": "AWS KMS 키(SSE-KMS)로 서버 측 암호화를 사용하도록 S3 버킷을 구성합니다. S3 버킷을 사용하여 아카이브 파일을 저장하도록 애플리케이션을 구성합니다.",
+        "C": "AWS KMS 키(SSE-KMS)와 함께 이중 계층 서버 측 암호화를 사용하도록 S3 버킷을 구성합니다. S3 버킷을 사용하여 아카이브 파일을 저장하도록 애플리케이션을 구성합니다.",
+        "D": "AWS Key Management Service(AWS KMS)에 저장된 키로 클라이언트 측 암호화를 사용하도록 애플리케이션을 구성합니다. S3 버킷에 아카이브 파일을 저장하도록 애플리케이션을 구성합니다."
+      },
+      "eng": {
+        "A": "Configure the S3 bucket to use client-side encryption with an Amazon S3 managed encryption key. Configure the application to use the S3 bucket to store the archival files.",
+        "B": "Configure the S3 bucket to use server-side encryption with AWS KMS keys (SSE-KMS). Configure the application to use the S3 bucket to store the archival files.",
+        "C": "Configure the S3 bucket to use dual-layer server-side encryption with AWS KMS keys (SSE-KMS). Configure the application to use the S3 bucket to store the archival files.",
+        "D": "Configure the application to use client-side encryption with a key stored in AWS Key Management Service (AWS KMS). Configure the application to store the archival files in the S3 bucket."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "encryption"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/138010-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 446,
+    "question": {
+      "kor": "회사에는 Amazon S3 버킷에 수백만 개의 객체가 있는 서버리스 웹 사이트가 있습니다. 회사는 S3 버킷을 Amazon CloudFront 배포의 오리진으로 사용합니다. 회사는 개체가 로드되기 전에 S3 버킷에 암호화를 설정하지 않았습니다. 솔루션 설계자는 모든 기존 객체와 향후 S3 버킷에 추가되는 모든 객체에 대해 암호화를 활성화해야 합니다.\n최소한의 노력으로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company has a serverless website with millions of objects in an Amazon S3 bucket. The company uses the S3 bucket as the origin for an Amazon CloudFront distribution. The company did not set encryption on the S3 bucket before the objects were loaded. A solutions architect needs to enable encryption for all existing objects and for all objects that are added to the S3 bucket in the future.\nWhich solution will meet these requirements with the LEAST amount of effort?"
+    },
+    "choices": {
+      "kor": {
+        "A": "새 S3 버킷을 생성합니다. 새 S3 버킷에 대한 기본 암호화 설정을 켭니다. 모든 기존 개체를 임시 로컬 저장소에 다운로드합니다. 새 S3 버킷에 객체를 업로드합니다.",
+        "B": "S3 버킷의 기본 암호화 설정을 켭니다. S3 Inventory 기능을 사용하여 암호화되지 않은 객체를 나열하는 .csv 파일을 생성합니다. 복사 명령을 사용하여 해당 객체를 암호화하는 S3 배치 작업 작업을 실행합니다.",
+        "C": "AWS Key Management Service(AWS KMS)를 사용하여 새 암호화 키를 생성합니다. AWS KMS 관리형 암호화 키(SSE-KMS)로 서버 측 암호화를 사용하도록 S3 버킷의 설정을 변경합니다. S3 버킷에 대한 버전 관리를 켭니다.",
+        "D": "AWS Management Console에서 Amazon S3로 이동합니다. S3 버킷의 객체를 찾습니다. 암호화 필드를 기준으로 정렬합니다. 암호화되지 않은 각 개체를 선택합니다. 수정 버튼을 사용하여 S3 버킷의 모든 암호화되지 않은 객체에 기본 암호화 설정을 적용합니다."
+      },
+      "eng": {
+        "A": "Create a new S3 bucket. Turn on the default encryption settings for the new S3 bucket. Download all existing objects to temporary local storage. Upload the objects to the new S3 bucket.",
+        "B": "Turn on the default encryption settings for the S3 bucket. Use the S3 Inventory feature to create a .csv file that lists the unencrypted objects. Run an S3 Batch Operations job that uses the copy command to encrypt those objects.",
+        "C": "Create a new encryption key by using AWS Key Management Service (AWS KMS). Change the settings on the S3 bucket to use server-side encryption with AWS KMS managed encryption keys (SSE-KMS). Turn on versioning for the S3 bucket.",
+        "D": "Navigate to Amazon S3 in the AWS Management Console. Browse the S3 bucket’s objects. Sort by the encryption field. Select each unencrypted object. Use the Modify button to apply default encryption settings to every unencrypted object in the S3 bucket."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "encryption at rest",
+      "inventory feature",
+      "Batch operation"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/95040-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 466,
+    "question": {
+      "kor": "병원은 환자 기록을 Amazon S3 버킷에 저장해야 합니다. 병원의 규정 준수 팀은 모든 PHI(보호된 건강 정보)가 전송 및 저장 중에 암호화되도록 해야 합니다. 규정 준수 팀은 미사용 데이터에 대한 암호화 키를 관리해야 합니다.\n이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A hospital needs to store patient records in an Amazon S3 bucket. The hospital’s compliance team must ensure that all protected health information (PHI) is encrypted in transit and at rest. The compliance team must administer the encryption key for data at rest.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Certificate Manager(ACM)에서 퍼블릭 SSL/TLS 인증서를 생성합니다. 인증서를 Amazon S3와 연결합니다. AWS KMS 키(SSE-KMS)로 서버 측 암호화를 사용하도록 각 S3 버킷에 대한 기본 암호화를 구성합니다. KMS 키를 관리할 규정 준수 팀을 할당합니다.",
+        "B": "S3 버킷 정책에서 aws:SecureTransport 조건을 사용하여 HTTPS(TLS)를 통한 암호화된 연결만 허용합니다. S3 관리형 암호화 키(SSE-S3)로 서버 측 암호화를 사용하도록 각 S3 버킷에 대한 기본 암호화를 구성합니다. SSE-S3 키를 관리할 규정 준수 팀을 할당합니다.",
+        "C": "S3 버킷 정책에서 aws:SecureTransport 조건을 사용하여 HTTPS(TLS)를 통한 암호화된 연결만 허용합니다. AWS KMS 키(SSE-KMS)로 서버 측 암호화를 사용하도록 각 S3 버킷에 대한 기본 암호화를 구성합니다. KMS 키를 관리할 규정 준수 팀을 할당합니다.",
+        "D": "S3 버킷 정책에서 aws:SecureTransport 조건을 사용하여 HTTPS(TLS)를 통한 암호화된 연결만 허용합니다. Amazon Macie를 사용하여 Amazon S3에 저장된 민감한 데이터를 보호하십시오. Macie를 관리할 규정 준수 팀을 지정합니다."
+      },
+      "eng": {
+        "A": "Create a public SSL/TLS certificate in AWS Certificate Manager (ACM). Associate the certificate with Amazon S3. Configure default encryption for each S3 bucket to use server-side encryption with AWS KMS keys (SSE-KMS). Assign the compliance team to manage the KMS keys.",
+        "B": "Use the aws:SecureTransport condition on S3 bucket policies to allow only encrypted connections over HTTPS (TLS). Configure default encryption for each S3 bucket to use server-side encryption with S3 managed encryption keys (SSE-S3). Assign the compliance team to manage the SSE-S3 keys.",
+        "C": "Use the aws:SecureTransport condition on S3 bucket policies to allow only encrypted connections over HTTPS (TLS). Configure default encryption for each S3 bucket to use server-side encryption with AWS KMS keys (SSE-KMS). Assign the compliance team to manage the KMS keys.",
+        "D": "Use the aws:SecureTransport condition on S3 bucket policies to allow only encrypted connections over HTTPS (TLS). Use Amazon Macie to protect the sensitive data that is stored in Amazon S3. Assign the compliance team to manage Macie."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "encryption in flight"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/100232-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 475,
+    "question": {
+      "kor": "소셜 미디어 회사는 웹사이트용 기능을 구축하고 있습니다. 이 기능을 통해 사용자는 사진을 업로드할 수 있습니다. 회사는 대규모 이벤트 기간 동안 수요가 크게 증가할 것으로 예상하고 웹사이트가 사용자의 업로드 트래픽을 처리할 수 있는지 확인해야 합니다.\nMOST 확장성으로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A social media company is building a feature for its website. The feature will give users the ability to upload photos. The company expects significant increases in demand during large events and must ensure that the website can handle the upload traffic from users.\nWhich solution meets these requirements with the MOST scalability?"
+    },
+    "choices": {
+      "kor": {
+        "A": "사용자의 브라우저에서 응용 프로그램 서버로 파일을 업로드합니다. 파일을 Amazon S3 버킷으로 전송합니다.",
+        "B": "AWS Storage Gateway 파일 게이트웨이를 프로비저닝합니다. 사용자의 브라우저에서 파일 게이트웨이로 직접 파일을 업로드합니다.",
+        "C": "애플리케이션에서 Amazon S3 미리 서명된 URL을 생성합니다. 사용자 브라우저에서 S3 버킷으로 직접 파일을 업로드합니다.",
+        "D": "Amazon Elastic File System(Amazon EFS) 파일 시스템을 프로비저닝합니다. 사용자의 브라우저에서 파일 시스템으로 직접 파일을 업로드합니다."
+      },
+      "eng": {
+        "A": "Upload files from the user's browser to the application servers. Transfer the files to an Amazon S3 bucket.",
+        "B": "Provision an AWS Storage Gateway file gateway. Upload files directly from the user's browser to the file gateway.",
+        "C": "Generate Amazon S3 presigned URLs in the application. Upload files directly from the user's browser into an S3 bucket.",
+        "D": "Provision an Amazon Elastic File System (Amazon EFS) file system. Upload files directly from the user's browser to the file system."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "signed URL"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/109692-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "C"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 862,
+    "question": {
+      "kor": "회사는 연구 데이터를 수집하고 전 세계 회사 직원들과 공유합니다. 회사는 Amazon S3 버킷에 데이터를 수집 및 저장하고 AWS 클라우드에서 데이터를 처리하려고 합니다. 회사는 해당 데이터를 회사 직원과 공유합니다. 회사에는 운영 오버헤드를 최소화하는 AWS 클라우드의 보안 솔루션이 필요합니다.\n어떤 솔루션이 이러한 요구 사항을 충족합니까?",
+      "eng": "A company collects and shares research data with the company's employees all over the world. The company wants to collect and store the data in an Amazon S3 bucket and process the data in the AWS Cloud. The company will share the data with the company's employees. The company needs a secure solution in the AWS Cloud that minimizes operational overhead.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Lambda 함수를 사용하여 S3의 미리 서명된 URL을 생성하십시오. 직원들에게 URL을 사용하도록 지시하십시오.",
+        "B": "각 직원에 대한 IAM 사용자를 생성합니다. 각 직원에 대해 S3 액세스를 허용하는 IAM 정책을 생성합니다. 직원들에게 AWS Management Console을 사용하도록 지시하십시오.",
+        "C": "S3 파일 게이트웨이를 생성합니다. 업로드할 공유와 다운로드할 공유를 만듭니다. 직원이 로컬 컴퓨터에 공유를 마운트하여 S3 파일 게이트웨이를 사용할 수 있도록 허용합니다.",
+        "D": "AWS Transfer Family SFTP 엔드포인트를 구성합니다. 사용자 정의 ID 공급자 옵션을 선택합니다. AWS Secrets Manager를 사용하여 사용자 자격 증명을 관리합니다. 직원에게 Transfer Family를 사용하도록 지시하십시오."
+      },
+      "eng": {
+        "A": "Use an AWS Lambda function to create an S3 presigned URL. Instruct employees to use the URL.",
+        "B": "Create an IAM user for each employee. Create an IAM policy for each employee to allow S3 access. Instruct employees to use the AWS Management Console.",
+        "C": "Create an S3 File Gateway. Create a share for uploading and a share for downloading. Allow employees to mount shares on their local computers to use S3 File Gateway.",
+        "D": "Configure AWS Transfer Family SFTP endpoints. Select the custom identity provider options. Use AWS Secrets Manager to manage the user credentials Instruct employees to use Transfer Family."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "signed URL"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/125574-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 949,
+    "question": {
+      "kor": "회사는 운영 데이터를 생성하고 Amazon S3 버킷에 데이터를 저장합니다. 회사의 연간 감사를 위해 외부 컨설턴트는 S3 버킷에 저장된 연간 보고서에 액세스해야 합니다. 외부 컨설턴트는 7일 동안 보고서에 액세스해야 합니다.\n회사는 외부 컨설턴트가 보고서에만 접근할 수 있도록 하는 솔루션을 구현해야 합니다.\n가장 효율적인 운영 효율성으로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company creates operations data and stores the data in an Amazon S3 bucket. For the company's annual audit, an external consultant needs to access an annual report that is stored in the S3 bucket. The external consultant needs to access the report for 7 days.\nThe company must implement a solution to allow the external consultant access to only the report.\nWhich solution will meet these requirements with the MOST operational efficiency?"
+    },
+    "choices": {
+      "kor": {
+        "A": "공개 정적 웹 사이트를 호스팅하도록 구성된 새 S3 버킷을 생성하십시오. 작업 데이터를 새 S3 버킷으로 마이그레이션합니다. S3 웹사이트 URL을 외부 컨설턴트와 공유하세요.",
+        "B": "7일 동안 S3 버킷에 대한 공개 액세스를 활성화합니다. 외부 컨설턴트가 감사를 완료하면 S3 버킷에 대한 액세스 권한을 제거합니다.",
+        "C": "S3 버킷의 보고서에 액세스할 수 있는 새 IAM 사용자를 생성합니다. 외부 컨설턴트에게 액세스 키를 제공합니다. 7일 후에 액세스 키를 취소합니다.",
+        "D": "S3 버킷의 보고서 위치에 필요한 액세스 권한이 있는 미리 서명된 URL을 생성합니다. 미리 서명된 URL을 외부 컨설턴트와 공유하세요."
+      },
+      "eng": {
+        "A": "Create a new S3 bucket that is configured to host a public static website. Migrate the operations data to the new S3 bucket. Share the S3 website URL with the external consultant.",
+        "B": "Enable public access to the S3 bucket for 7 days. Remove access to the S3 bucket when the external consultant completes the audit.",
+        "C": "Create a new IAM user that has access to the report in the S3 bucket. Provide the access keys to the external consultant. Revoke the access keys after 7 days.",
+        "D": "Generate a presigned URL that has the required access to the location of the report on the S3 bucket. Share the presigned URL with the external consultant."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "signed URL"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/google/view/139092-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "D"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 662,
+    "question": {
+      "kor": "Amazon EC2 인스턴스에 호스팅된 회사 웹 사이트는 Amazon S3에 저장된 분류된 데이터를 처리합니다. 보안 문제로 인해 회사에서는 EC2 리소스와 Amazon S3 간에 비공개적이고 안전한 연결이 필요합니다.\n이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company's website hosted on Amazon EC2 instances processes classified data stored in Amazon S3. Due to security concerns, the company requires a private and secure connection between its EC2 resources and Amazon S3.\nWhich solution meets these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "VPC 엔드포인트에서의 액세스를 허용하도록 S3 버킷 정책을 설정하십시오.",
+        "B": "S3 버킷에 대한 읽기-쓰기 액세스 권한을 부여하도록 IAM 정책을 설정합니다.",
+        "C": "프라이빗 서브넷 외부의 리소스에 액세스하기 위해 NAT 게이트웨이를 설정합니다.",
+        "D": "S3 버킷에 액세스하기 위한 액세스 키 ID와 보안 액세스 키를 설정합니다."
+      },
+      "eng": {
+        "A": "Set up S3 bucket policies to allow access from a VPC endpoint.",
+        "B": "Set up an IAM policy to grant read-write access to the S3 bucket.",
+        "C": "Set up a NAT gateway to access resources outside the private subnet.",
+        "D": "Set up an access key ID and a secret access key to access the S3 bucket."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "bucket policy"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/google/view/133462-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 751,
+    "question": {
+      "kor": "한 회사는 수많은 애플리케이션이 액세스하는 Amazon S3 버킷에서 데이터 레이크를 관리합니다. 버킷에는 각 애플리케이션에 대한 고유한 S3 접두사가 포함되어 있습니다. 회사는 각 애플리케이션을 특정 접두사로 제한하고 각 접두사 아래의 개체를 세부적으로 제어하기를 원합니다.\n최소한의 운영 오버헤드로 이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company manages a data lake in an Amazon S3 bucket that numerous applications access. The S3 bucket contains a unique prefix for each application.\nThe company wants to restrict each application to its specific prefix and to have granular control of the objects under each prefix.\nWhich solution will meet these requirements with the LEAST operational overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "각 애플리케이션에 대한 전용 S3 액세스 포인트 및 액세스 포인트 정책을 생성합니다.",
+        "B": "S3 배치 작업 작업을 생성하여 S3 버킷의 각 객체에 대한 ACL 권한을 설정합니다.",
+        "C": "S3 버킷의 객체를 각 애플리케이션의 새 S3 버킷에 복제합니다. 접두사별로 복제 규칙을 만듭니다.",
+        "D": "S3 버킷의 객체를 각 애플리케이션의 새 S3 버킷에 복제합니다. 각 애플리케이션에 대한 전용 S3 액세스 포인트를 생성합니다."
+      },
+      "eng": {
+        "A": "Create dedicated S3 access points and access point policies for each application.",
+        "B": "Create an S3 Batch Operations job to set the ACL permissions for each object in the S3 bucket.",
+        "C": "Replicate the objects in the S3 bucket to new S3 buckets for each application. Create replication rules by prefix.",
+        "D": "Replicate the objects in the S3 bucket to new S3 buckets for each application. Create dedicated S3 access points for each application."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "S3 access points"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/139857-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 786,
+    "question": {
+      "kor": "미디어 회사는 공개적으로 사용 가능한 스트리밍 비디오 콘텐츠에 Amazon CloudFront를 사용합니다. 이 회사는 액세스 권한이 있는 사용자를 제어하여 Amazon S3에서 호스팅되는 비디오 콘텐츠를 보호하려고 합니다. 회사의 일부 사용자는 쿠키를 지원하지 않는 사용자 지정 HTTP 클라이언트를 사용하고 있습니다. 회사의 일부 사용자는 액세스에 사용하는 하드코딩된 URL을 변경할 수 없습니다.\n사용자에게 미치는 영향을 최소화하면서 이러한 요구 사항을 충족하는 서비스 또는 방법은 무엇입니까? (두 가지를 선택하세요.)",
+      "eng": "A media company uses Amazon CloudFront for its publicly available streaming video content. The company wants to secure the video content that is hosted in Amazon S3 by controlling who has access. Some of the company’s users are using a custom HTTP client that does not support cookies. Some of the company’s users are unable to change the hardcoded URLs that they are using for access.\nWhich services or methods will meet these requirements with the LEAST impact to the users? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "서명된 쿠키",
+        "B": "서명된 URL",
+        "C": "AWS 앱싱크",
+        "D": "JSON 웹 토큰(JWT)",
+        "E": "AWS Secrets Manager"
+      },
+      "eng": {
+        "A": "Signed cookies",
+        "B": "Signed URLs",
+        "C": "AWS AppSync",
+        "D": "JSON Web Token (JWT)",
+        "E": "AWS Secrets Manager"
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "signged url",
+      "sigend cookie"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/99831-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A",
+      "B"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  },
+  {
+    "idx": 100,
+    "question": {
+      "kor": "조사 회사는 미국 지역에서 몇 년 동안 데이터를 수집했습니다. 회사는 크기가 3TB이고 계속 증가하는 Amazon S3 버킷에서 데이터를 호스팅합니다. 회사는 S3 버킷을 보유한 유럽 마케팅 회사와 데이터를 공유하기 시작했습니다. 회사는 데이터 전송 비용이 가능한 한 낮게 유지되기를 원합니다.\n이러한 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A survey company has gathered data for several years from areas in the United States. The company hosts the data in an Amazon S3 bucket that is 3 TB in size and growing. The company has started to share the data with a European marketing firm that has S3 buckets. The company wants to ensure that its data transfer costs remain as low as possible.\nWhich solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "회사의 S3 버킷에서 요청자 지불 기능을 구성합니다.",
+        "B": "회사의 S3 버킷에서 마케팅 회사의 S3 버킷 중 하나로 S3 교차 리전 복제를 구성합니다.",
+        "C": "마케팅 회사가 회사의 S3 버킷에 액세스할 수 있도록 마케팅 회사에 대한 교차 계정 액세스를 구성합니다.",
+        "D": "S3 Intelligent-Tiering을 사용하도록 회사의 S3 버킷을 구성합니다. 마케팅 회사의 S3 버킷 중 하나에 S3 버킷을 동기화합니다."
+      },
+      "eng": {
+        "A": "Configure the Requester Pays feature on the company's S3 bucket.",
+        "B": "Configure S3 Cross-Region Replication from the company's S3 bucket to one of the marketing firm's S3 buckets.",
+        "C": "Configure cross-account access for the marketing firm so that the marketing firm has access to the company's S3 bucket.",
+        "D": "Configure the company's S3 bucket to use S3 Intelligent-Tiering. Sync the S3 bucket to one of the marketing firm's S3 buckets."
+      }
+    },
+    "category": [
+      "S3"
+    ],
+    "subcategory": [
+      "Requester Pays feature"
+    ],
+    "rote_memorization": false,
+    "reference": "https://www.examtopics.com/discussions/amazon/view/85738-exam-aws-certified-solutions-architect-associate-saa-c03/",
+    "answer": [
+      "A"
+    ],
+    "correct": 0,
+    "incorrect": 0,
+    "correct_students": []
+  }
+]
