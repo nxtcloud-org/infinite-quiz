@@ -1,0 +1,529 @@
+[
+  {
+    "idx": 312,
+    "oldIdx": 473,
+    "question": {
+      "kor": "여러 Amazon EC2 인스턴스 간에 파일 공유를 제공하는 AWS 서비스는 무엇입니까?",
+      "eng": "Which AWS service allows for file sharing between multiple Amazon EC2 instances?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Direct Connect",
+        "B": "AWS Snowball Edge",
+        "C": "AWS Backup",
+        "D": "Amazon Elastic File System (Amazon EFS)"
+      },
+      "eng": {
+        "A": "AWS Direct Connect",
+        "B": "AWS Snowball Edge",
+        "C": "AWS Backup",
+        "D": "Amazon Elastic File System (Amazon EFS)"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "Amazon EFS"
+    ]
+  },
+  {
+    "idx": 313,
+    "oldIdx": 625,
+    "question": {
+      "kor": "한 회사가 AWS 컴퓨팅 리소스와 함께 사용할 관리형 NFS 파일 시스템이 필요합니다. 어떤 AWS 서비스나 기능이 이 요구 사항을 충족합니까?",
+      "eng": "A company needs a managed NFS file system that the company can use with its AWS compute resources. Which AWS service or feature will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Elastic Block Store (Amazon EBS)",
+        "B": "AWS Storage Gateway Tape Gateway",
+        "C": "Amazon S3 Glacier Flexible Retrieval",
+        "D": "Amazon Elastic File System (Amazon EFS)"
+      },
+      "eng": {
+        "A": "Amazon Elastic Block Store (Amazon EBS)",
+        "B": "AWS Storage Gateway Tape Gateway",
+        "C": "Amazon S3 Glacier Flexible Retrieval",
+        "D": "Amazon Elastic File System (Amazon EFS)"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "Amazon EFS"
+    ]
+  },
+  {
+    "idx": 314,
+    "oldIdx": 364,
+    "question": {
+      "kor": "어떤 AWS 서비스가 온프레미스 애플리케이션에 AWS 클라우드에 저장된 데이터에 대한 저지연 액세스를 제공합니까?",
+      "eng": "Which AWS service provides on-premises applications with low-latency access to data that is stored in the AWS Cloud?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon CloudFront",
+        "B": "AWS Storage Gateway",
+        "C": "AWS Backup",
+        "D": "AWS DataSync"
+      },
+      "eng": {
+        "A": "Amazon CloudFront",
+        "B": "AWS Storage Gateway",
+        "C": "AWS Backup",
+        "D": "AWS DataSync"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "AWS Storage Gateway"
+    ]
+  },
+  {
+    "idx": 315,
+    "oldIdx": 90,
+    "question": {
+      "kor": "온프레미스 사용자가 거의 무제한 클라우드 스토리지에 액세스할 수 있는 하이브리드 클라우드 스토리지 서비스는 무엇입니까?",
+      "eng": "Which AWS service is a hybrid cloud storage service that provides on-premises users access to virtually unlimited cloud storage?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS DataSync",
+        "B": "Amazon S3 Glacier",
+        "C": "AWS Storage Gateway",
+        "D": "Amazon Elastic Block Store (Amazon EBS)"
+      },
+      "eng": {
+        "A": "AWS DataSync",
+        "B": "Amazon S3 Glacier",
+        "C": "AWS Storage Gateway",
+        "D": "Amazon Elastic Block Store (Amazon EBS)"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "AWS Storage Gateway"
+    ]
+  },
+  {
+    "idx": 316,
+    "oldIdx": 3,
+    "question": {
+      "kor": "회사는 온프레미스에 사용할 수 있는 공간을 초과하는 대용량 파일 저장 요구 사항이 있는 중앙 집중식 사용자 그룹을 보유하고 있습니다. 회사는 이 그룹의 파일 저장 기능을 확장하고 로컬에서 콘텐츠를 공유하는 성능 이점을 유지하기를 원합니다. 이 시나리오에 대한 가장 운영 효율적인 AWS 솔루션은 무엇입니까?",
+      "eng": "A company has a centralized group of users with large file storage requirements that have exceeded the space available on premises. The company wants to extend its file storage capabilities for this group while retaining the performance benefit of sharing content locally. What is the MOST operationally efficient AWS solution for this scenario?"
+    },
+    "choices": {
+      "kor": {
+        "A": "각 사용자에 대해 Amazon S3 버킷을 생성합니다. S3 파일 시스템 마운팅 유틸리티를 사용하여 각 버킷을 마운트합니다.",
+        "B": "AWS Storage Gateway 파일 게이트웨이를 구성하고 배포합니다. 각 사용자의 워크스테이션을 파일 게이트웨이에 연결합니다.",
+        "C": "각 사용자의 작업 환경을 Amazon WorkSpaces로 이동합니다. 각 사용자에 대해 Amazon WorkDocs 계정을 설정합니다.",
+        "D": "Amazon EC2 인스턴스를 배포하고 Amazon Elastic Block Store (Amazon EBS) Provisioned IOPS 볼륨을 연결합니다. 사용자와 EBS 볼륨을 직접 공유합니다."
+      },
+      "eng": {
+        "A": "Create an Amazon S3 bucket for each user. Mount each bucket by using an S3 file system mounting utility.",
+        "B": "Configure and deploy an AWS Storage Gateway file gateway. Connect each user’s workstation to the file gateway.",
+        "C": "Move each user’s working environment to Amazon WorkSpaces. Set up an Amazon WorkDocs account for each user.",
+        "D": "Deploy an Amazon EC2 instance and attach an Amazon Elastic Block Store (Amazon EBS) Provisioned IOPS volume. Share the EBS volume directly with the users."
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "AWS Storage Gateway"
+    ]
+  },
+  {
+    "idx": 317,
+    "oldIdx": 103,
+    "question": {
+      "kor": "회사는 온프레미스 백업 서버의 공간이 부족합니다. 기존 백업 워크플로우를 변경하지 않고 AWS 서비스를 사용하여 백업을 수행하고자 합니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A company is using a third-party service to back up 10 TB of data to a tape library. The on-premises backup server is running out of space. The company wants to use AWS services for the backups without changing its existing backup workflows. Which AWS service should the company use to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Elastic Block Store (Amazon EBS)",
+        "B": "AWS Storage Gateway",
+        "C": "Amazon Elastic Container Service (Amazon ECS)",
+        "D": "AWS Lambda"
+      },
+      "eng": {
+        "A": "Amazon Elastic Block Store (Amazon EBS)",
+        "B": "AWS Storage Gateway",
+        "C": "Amazon Elastic Container Service (Amazon ECS)",
+        "D": "AWS Lambda"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "AWS Storage Gateway"
+    ]
+  },
+  {
+    "idx": 318,
+    "oldIdx": 205,
+    "question": {
+      "kor": "회사는 클라우드 기반이지만 로컬 캐시된 스토리지로 온프레미스 스토리지를 대체하려고 합니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A company is planning to move data backups to the AWS Cloud. The company needs to replace on-premises storage with storage that is cloud-based but locally cached. Which AWS service meets these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Storage Gateway",
+        "B": "AWS Snowcone",
+        "C": "AWS Backup",
+        "D": "Amazon Elastic File System (Amazon EFS)"
+      },
+      "eng": {
+        "A": "AWS Storage Gateway",
+        "B": "AWS Snowcone",
+        "C": "AWS Backup",
+        "D": "Amazon Elastic File System (Amazon EFS)"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "AWS Storage Gateway"
+    ]
+  },
+  {
+    "idx": 319,
+    "oldIdx": 255,
+    "question": {
+      "kor": "한 회사는 데이터 백업을 저장하기 위해 물리적 테이프 라이브러리를 보유하고 있습니다. 테이프 라이브러리의 공간이 부족합니다. 회사는 AWS 클라우드로 테이프 라이브러리의 용량을 확장해야 합니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A company has a physical tape library to store data backups. The tape library is running out of space. The company needs to extend the tape library's capacity to the AWS Cloud. Which AWS service should the company use to meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Elastic File System (Amazon EFS)",
+        "B": "Amazon Elastic Block Store (Amazon EBS)",
+        "C": "Amazon S3",
+        "D": "AWS Storage Gateway"
+      },
+      "eng": {
+        "A": "Amazon Elastic File System (Amazon EFS)",
+        "B": "Amazon Elastic Block Store (Amazon EBS)",
+        "C": "Amazon S3",
+        "D": "AWS Storage Gateway"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "AWS Storage Gateway"
+    ]
+  },
+  {
+    "idx": 320,
+    "oldIdx": 533,
+    "question": {
+      "kor": "AWS 솔루션 중 어떤 것이 NFS와 같은 프로토콜을 사용하여 Amazon S3에서 객체를 저장하고 검색할 수 있는 기능을 제공합니까?",
+      "eng": "Which AWS solution gives companies the ability to use protocols such as NFS to store and retrieve objects in Amazon S3?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon FSx for Lustre",
+        "B": "AWS Storage Gateway 볼륨 게이트웨이",
+        "C": "AWS Storage Gateway 파일 게이트웨이",
+        "D": "Amazon Elastic File System (Amazon EFS)"
+      },
+      "eng": {
+        "A": "Amazon FSx for Lustre",
+        "B": "AWS Storage Gateway volume gateway",
+        "C": "AWS Storage Gateway file gateway",
+        "D": "Amazon Elastic File System (Amazon EFS)"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "AWS Storage Gateway"
+    ]
+  },
+  {
+    "idx": 321,
+    "oldIdx": 110,
+    "question": {
+      "kor": "회사는 온프레미스 NFS 워크로드를 AWS로 마이그레이션하려고 합니다. 이 요구 사항을 충족하는 AWS Storage Gateway 유형은 무엇입니까?",
+      "eng": "A company wants to migrate its NFS on-premises workload to AWS. Which AWS Storage Gateway type should the company use to meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "테이프 게이트웨이",
+        "B": "볼륨 게이트웨이",
+        "C": "Amazon FSx 파일 게이트웨이",
+        "D": "Amazon S3 파일 게이트웨이"
+      },
+      "eng": {
+        "A": "Tape Gateway",
+        "B": "Volume Gateway",
+        "C": "Amazon FSx File Gateway",
+        "D": "Amazon S3 File Gateway"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "Amazon S3 File Gateway"
+    ]
+  },
+  {
+    "idx": 322,
+    "oldIdx": 123,
+    "question": {
+      "kor": "회사는 기존 온프레미스 애플리케이션을 위해 Amazon S3에 파일을 저장하고 검색하고자 합니다. 산업 표준 파일 시스템 프로토콜을 사용해야 합니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A company wants to store and retrieve files in Amazon S3 for its existing on-premises applications by using industry-standard file system protocols. Which AWS service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS DataSync",
+        "B": "AWS Snowball Edge",
+        "C": "Amazon S3 File Gateway",
+        "D": "AWS Transfer Family"
+      },
+      "eng": {
+        "A": "AWS DataSync",
+        "B": "AWS Snowball Edge",
+        "C": "Amazon S3 File Gateway",
+        "D": "AWS Transfer Family"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "Amazon S3 File Gateway"
+    ]
+  },
+  {
+    "idx": 323,
+    "oldIdx": 109,
+    "question": {
+      "kor": "회사는 Windows 기반 애플리케이션을 위해 완전 관리형 Windows 파일 서버를 원합니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A company wants a fully managed Windows file server for its Windows-based applications. Which AWS service will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon FSx",
+        "B": "Amazon Elastic Kubernetes Service (Amazon EKS)",
+        "C": "Amazon Elastic Container Service (Amazon ECS)",
+        "D": "Amazon EMR"
+      },
+      "eng": {
+        "A": "Amazon FSx",
+        "B": "Amazon Elastic Kubernetes Service (Amazon EKS)",
+        "C": "Amazon Elastic Container Service (Amazon ECS)",
+        "D": "Amazon EMR"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "Amazon FSx"
+    ]
+  },
+  {
+    "idx": 324,
+    "oldIdx": 196,
+    "question": {
+      "kor": "회사는 Server Message Block (SMB) 프로토콜을 통해 액세스할 수 있는 완전 관리형, 고신뢰성 및 확장 가능한 파일 스토리지를 원합니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A company needs fully managed, highly reliable, and scalable file storage that is accessible over the Server Message Block (SMB) protocol. Which AWS service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon S3",
+        "B": "Amazon Elastic File System (Amazon EFS)",
+        "C": "Amazon FSx for Windows File Server",
+        "D": "Amazon Elastic Block Store (Amazon EBS)"
+      },
+      "eng": {
+        "A": "Amazon S3",
+        "B": "Amazon Elastic File System (Amazon EFS)",
+        "C": "Amazon FSx for Windows File Server",
+        "D": "Amazon Elastic Block Store (Amazon EBS)"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "Amazon FSx"
+    ]
+  },
+  {
+    "idx": 325,
+    "oldIdx": 317,
+    "question": {
+      "kor": "회사가 Microsoft 워크로드 및 파일 시스템을 네이티브로 지원하는 완전 관리형 파일 서버가 필요합니다. 파일 서버는 SMB 프로토콜도 지원해야 합니다. 이 요구 사항을 충족할 AWS 서비스는 무엇입니까?",
+      "eng": "A company needs a fully managed file server that natively supports Microsoft workloads and file systems. The file server must also support the SMB protocol. Which AWS service should the company use to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Elastic File System (Amazon EFS)",
+        "B": "Amazon FSx for Lustre",
+        "C": "Amazon FSx for Windows File Server",
+        "D": "Amazon Elastic Block Store (Amazon EBS)"
+      },
+      "eng": {
+        "A": "Amazon Elastic File System (Amazon EFS)",
+        "B": "Amazon FSx for Lustre",
+        "C": "Amazon FSx for Windows File Server",
+        "D": "Amazon Elastic Block Store (Amazon EBS)"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "Amazon FSx"
+    ]
+  },
+  {
+    "idx": 326,
+    "oldIdx": 312,
+    "question": {
+      "kor": "회사가 온프레미스 워크로드에서 AWS의 Windows 파일 공유에 액세스할 수 있도록 하고자 합니다. 회사는 데이터 센터에 추가 인프라 또는 애플리케이션을 프로비저닝하고 싶지 않습니다. 이 요구 사항을 충족할 AWS 서비스는 무엇입니까?",
+      "eng": "A company wants to provide access to Windows file shares in AWS from its on-premises workloads. The company does not want to provision any additional infrastructure or applications in its data center. Which AWS service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon FSx File Gateway",
+        "B": "AWS DataSync",
+        "C": "Amazon S3",
+        "D": "AWS Snow Family"
+      },
+      "eng": {
+        "A": "Amazon FSx File Gateway",
+        "B": "AWS DataSync",
+        "C": "Amazon S3",
+        "D": "AWS Snow Family"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "Amazon FSx"
+    ]
+  },
+  {
+    "idx": 327,
+    "oldIdx": 400,
+    "question": {
+      "kor": "회사가 컴퓨팅, 스토리지 및 데이터베이스 리소스에 대한 중앙 데이터 보호 정책을 정의하고자 합니다. 이 요구 사항을 충족할 AWS 서비스는 무엇입니까?",
+      "eng": "A company wants to define a central data protection policy that works across AWS services for compute, storage, and database resources. Which AWS service will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Batch",
+        "B": "AWS Elastic Disaster Recovery",
+        "C": "AWS Backup",
+        "D": "Amazon FSx"
+      },
+      "eng": {
+        "A": "AWS Batch",
+        "B": "AWS Elastic Disaster Recovery",
+        "C": "AWS Backup",
+        "D": "Amazon FSx"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "AWS Backup"
+    ]
+  },
+  {
+    "idx": 328,
+    "oldIdx": 685,
+    "question": {
+      "kor": "회사는 AWS 서비스와 하이브리드 워크로드 전반에 걸쳐 데이터 보호를 중앙 집중화하고 자동화할 수 있는 완전 관리형 서비스를 원합니다. 이 요구 사항을 충족할 수 있는 AWS 서비스는 무엇입니까?",
+      "eng": "A company wants a fully managed service that centralizes and automates data protection across AWS services and hybrid workloads. Which AWS service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Artifact",
+        "B": "AWS Backup",
+        "C": "AWS Batch",
+        "D": "AWS Shield"
+      },
+      "eng": {
+        "A": "AWS Artifact",
+        "B": "AWS Backup",
+        "C": "AWS Batch",
+        "D": "AWS Shield"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Storage"
+    ],
+    "subcategory": [
+      "AWS Backup"
+    ]
+  }
+]

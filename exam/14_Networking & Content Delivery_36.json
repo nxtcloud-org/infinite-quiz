@@ -1,0 +1,1134 @@
+[
+  {
+    "idx": 509,
+    "oldIdx": 49,
+    "question": {
+      "kor": "회사는 최소한의 지연으로 전 세계에 이미지와 비디오를 제공하는 애플리케이션을 구축하고 있습니다. 가장 비용 효율적으로 이를 달성하는 방법은 무엇입니까?",
+      "eng": "A company is building an application that needs to deliver images and videos globally with minimal latency. Which approach can the company use to accomplish this in a cost effective manner?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon CloudFront를 통해 콘텐츠를 제공",
+        "B": "Amazon S3에 콘텐츠를 저장하고 S3 간 지역 복제를 활성화",
+        "C": "여러 AWS 리전에 VPN을 구현",
+        "D": "AWS PrivateLink를 통해 콘텐츠 제공"
+      },
+      "eng": {
+        "A": "Deliver the content through Amazon CloudFront.",
+        "B": "Store the content on Amazon S3 and enable S3 cross-region replication.",
+        "C": "Implement a VPN across multiple AWS Regions.",
+        "D": "Deliver the content through AWS PrivateLink."
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "Amazon CloudFront"
+    ]
+  },
+  {
+    "idx": 510,
+    "oldIdx": 85,
+    "question": {
+      "kor": "회사가 최종 사용자에게 가까운 위치에서 애플리케이션을 배포할 수 있도록 지원하는 AWS 서비스는 무엇입니까?",
+      "eng": "Which AWS service enables companies to deploy an application close to end users?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon CloudFront",
+        "B": "AWS Auto Scaling",
+        "C": "AWS AppSync",
+        "D": "Amazon Route 53"
+      },
+      "eng": {
+        "A": "Amazon CloudFront",
+        "B": "AWS Auto Scaling",
+        "C": "AWS AppSync",
+        "D": "Amazon Route 53"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "Amazon CloudFront"
+    ]
+  },
+  {
+    "idx": 511,
+    "oldIdx": 194,
+    "question": {
+      "kor": "회사는 전 세계적으로 데이터, 비디오, 애플리케이션 및 API를 안전하게 제공하기 위해 콘텐츠 전송 네트워크가 필요합니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A company needs a content delivery network that provides secure delivery of data, videos, applications, and APIs to users globally with low latency and high transfer speeds. Which AWS service meets these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon CloudFront",
+        "B": "Elastic Load Balancing",
+        "C": "Amazon S3",
+        "D": "Amazon Elastic Transcoder"
+      },
+      "eng": {
+        "A": "Amazon CloudFront",
+        "B": "Elastic Load Balancing",
+        "C": "Amazon S3",
+        "D": "Amazon Elastic Transcoder"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "Amazon CloudFront"
+    ]
+  },
+  {
+    "idx": 512,
+    "oldIdx": 269,
+    "question": {
+      "kor": "회사는 전 세계 사용자에게 정적 웹사이트를 제공하기 위해 Amazon EC2 인스턴스를 사용하려고 합니다. 회사는 사용자의 지연 시간을 최소화해야 합니다. 이 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company wants to use Amazon EC2 instances to provide a static website to users all over the world. The company needs to minimize latency for the users. Which solution meets these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "여러 엣지 위치에 EC2 인스턴스를 사용합니다.",
+        "B": "동일한 가용 영역에 EC2 인스턴스를 사용하지만 다른 AWS 리전에서 사용합니다.",
+        "C": "Amazon CloudFront를 사용하고 소스로 구성된 EC2 인스턴스를 사용합니다.",
+        "D": "동일한 가용 영역에 EC2 인스턴스를 사용하지만 다른 AWS 계정에서 사용합니다."
+      },
+      "eng": {
+        "A": "Use EC2 instances in multiple edge locations.",
+        "B": "Use EC2 instances in the same Availability Zone but in different AWS Regions.",
+        "C": "Use Amazon CloudFront with the EC2 instances configured as the source.",
+        "D": "Use EC2 instances in the same Availability Zone but in different AWS accounts."
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "Amazon CloudFront"
+    ]
+  },
+  {
+    "idx": 513,
+    "oldIdx": 365,
+    "question": {
+      "kor": "Amazon CloudFront가 제공하는 것은 무엇입니까?",
+      "eng": "What does Amazon CloudFront provide?"
+    },
+    "choices": {
+      "kor": {
+        "A": "단일 통합 인터페이스에서 애플리케이션을 지원하기 위한 모든 리소스의 자동 확장",
+        "B": "데이터, 비디오, 애플리케이션 및 API를 전 세계 사용자에게 저지연으로 안전하게 전달",
+        "C": "지연 기반 라우팅, 지리적 DNS, 지리 근접성 및 가중치 라운드 로빈을 포함한 다양한 라우팅 유형을 통해 전 세계 트래픽을 직접 관리할 수 있는 능력",
+        "D": "Amazon EC2 인스턴스, 컨테이너, IP 주소 및 AWS Lambda 함수와 같은 여러 대상에 걸쳐 수신 애플리케이션 트래픽을 자동으로 분산"
+      },
+      "eng": {
+        "A": "Automatic scaling for all resources to power an application from a single unified interface",
+        "B": "Secure delivery of data, videos, applications, and APIs to users globally with low latency",
+        "C": "Ability to directly manage traffic globally through a variety of routing types, including latency-based routing, geo DNS, geoproximity, and weighted round robin",
+        "D": "Automatic distribution of incoming application traffic across multiple targets, such as Amazon EC2 instances, containers, IP addresses, and AWS Lambda functions"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "Amazon CloudFront"
+    ]
+  },
+  {
+    "idx": 514,
+    "oldIdx": 426,
+    "question": {
+      "kor": "회사가 웹사이트를 Amazon EC2 인스턴스에 호스팅하고 있습니다. 회사는 웹사이트가 전 세계 사용자에게 도달하고 최소한의 지연 시간으로 제공되도록 하고자 합니다. 이 요구 사항을 충족할 AWS 서비스는 무엇입니까?",
+      "eng": "A company hosts its website on Amazon EC2 instances. The company needs to ensure that the website reaches a global audience and provides minimum latency to users. Which AWS service should the company use to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Route 53",
+        "B": "Amazon CloudFront",
+        "C": "Elastic Load Balancing",
+        "D": "AWS Lambda"
+      },
+      "eng": {
+        "A": "Amazon Route 53",
+        "B": "Amazon CloudFront",
+        "C": "Elastic Load Balancing",
+        "D": "AWS Lambda"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "Amazon CloudFront"
+    ]
+  },
+  {
+    "idx": 515,
+    "oldIdx": 597,
+    "question": {
+      "kor": "회사는 AWS에서 웹사이트를 운영하고 있습니다. 전 세계 사용자에게 웹사이트를 전달하고 낮은 지연 시간의 응답을 제공하고자 합니다. 어떤 AWS 서비스가 이 요구 사항을 충족합니까?",
+      "eng": "A company has a website on AWS. The company wants to deliver the website to a worldwide audience and provide low-latency response times for global users. Which AWS service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS CloudFormation",
+        "B": "Amazon CloudFront",
+        "C": "Amazon ElastiCache",
+        "D": "Amazon DynamoDB"
+      },
+      "eng": {
+        "A": "AWS CloudFormation",
+        "B": "Amazon CloudFront",
+        "C": "Amazon ElastiCache",
+        "D": "Amazon DynamoDB"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "Amazon CloudFront"
+    ]
+  },
+  {
+    "idx": 516,
+    "oldIdx": 643,
+    "question": {
+      "kor": "어떤 AWS 서비스가 콘텐츠를 캐시하기 위해 엣지 위치를 사용합니까?",
+      "eng": "Which AWS service uses edge locations to cache content?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Kinesis",
+        "B": "Amazon Simple Queue Service (Amazon SQS)",
+        "C": "Amazon CloudFront",
+        "D": "Amazon Route 53"
+      },
+      "eng": {
+        "A": "Amazon Kinesis",
+        "B": "Amazon Simple Queue Service (Amazon SQS)",
+        "C": "Amazon CloudFront",
+        "D": "Amazon Route 53"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "Amazon CloudFront"
+    ]
+  },
+  {
+    "idx": 517,
+    "oldIdx": 80,
+    "question": {
+      "kor": "어떤 AWS 서비스가 다중 리전 및 다중 가용 영역 아키텍처에 대해 빠른 장애 조치를 통해 높은 가용성 애플리케이션을 제공하는 데 도움을 줍니까?",
+      "eng": "Which AWS service helps deliver highly available applications with fast failover for multi-Region and Multi-AZ architectures?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS WAF",
+        "B": "AWS Global Accelerator",
+        "C": "AWS Shield",
+        "D": "AWS Direct Connect"
+      },
+      "eng": {
+        "A": "AWS WAF",
+        "B": "AWS Global Accelerator",
+        "C": "AWS Shield",
+        "D": "AWS Direct Connect"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "AWS Global Accelerator"
+    ]
+  },
+  {
+    "idx": 518,
+    "oldIdx": 86,
+    "question": {
+      "kor": "AWS의 글로벌 네트워크 인프라를 통해 트래픽을 전달하여 네트워크 성능을 향상시키는 AWS 서비스 또는 기능은 무엇입니까?",
+      "eng": "Which AWS service or feature improves network performance by sending traffic through the AWS worldwide network infrastructure?"
+    },
+    "choices": {
+      "kor": {
+        "A": "경로 테이블",
+        "B": "AWS Transit Gateway",
+        "C": "AWS Global Accelerator",
+        "D": "Amazon VPC"
+      },
+      "eng": {
+        "A": "Route table",
+        "B": "AWS Transit Gateway",
+        "C": "AWS Global Accelerator",
+        "D": "Amazon VPC"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "AWS Global Accelerator"
+    ]
+  },
+  {
+    "idx": 519,
+    "oldIdx": 663,
+    "question": {
+      "kor": "회사는 전 세계 여러 AWS 리전에서 애플리케이션을 배포했습니다. 회사는 애플리케이션의 성능과 가용성을 개선하고자 합니다. 이 요구 사항을 충족할 수 있는 AWS 서비스는 무엇입니까?",
+      "eng": "A company deployed an application in multiple AWS Regions around the world. The company wants to improve the application’s performance and availability. Which AWS service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Global Accelerator",
+        "B": "Amazon DataZone",
+        "C": "AWS Cloud Map",
+        "D": "AWS Auto Scaling"
+      },
+      "eng": {
+        "A": "AWS Global Accelerator",
+        "B": "Amazon DataZone",
+        "C": "AWS Cloud Map",
+        "D": "AWS Auto Scaling"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "AWS Global Accelerator"
+    ]
+  },
+  {
+    "idx": 520,
+    "oldIdx": 707,
+    "question": {
+      "kor": "한 회사가 Application Load Balancer 뒤에 여러 퍼블릭 애플리케이션을 배포했습니다. 이 회사는 애플리케이션의 성능을 개선하고자 합니다. 어떤 AWS 서비스가 이러한 요구 사항을 충족할까요?",
+      "eng": "A company has deployed several public applications behind Application Load Balancers. The company wants to improve the performance of the applications. Which AWS service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS 글로벌 엑셀러레이터",
+        "B": "아마존 커넥트",
+        "C": "아마존 엘라스티캐시",
+        "D": "Amazon CloudWatch"
+      },
+      "eng": {
+        "A": "AWS Global Accelerator",
+        "B": "Amazon Connect",
+        "C": "Amazon ElastiCache",
+        "D": "Amazon CloudWatch"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "AWS Global Accelerator"
+    ]
+  },
+  {
+    "idx": 521,
+    "oldIdx": 321,
+    "question": {
+      "kor": "어떤 AWS 서비스가 글로벌 엣지 로케이션을 사용합니까? (2개를 선택하십시오)",
+      "eng": "Which AWS services make use of global edge locations? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Fargate",
+        "B": "Amazon CloudFront",
+        "C": "AWS Global Accelerator",
+        "D": "AWS Wavelength",
+        "E": "Amazon VPC"
+      },
+      "eng": {
+        "A": "AWS Fargate",
+        "B": "Amazon CloudFront",
+        "C": "AWS Global Accelerator",
+        "D": "AWS Wavelength",
+        "E": "Amazon VPC"
+      }
+    },
+    "answers": [
+      "B",
+      "C"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "Amazon CloudFront",
+      "AWS Global Accelerator"
+    ]
+  },
+  {
+    "idx": 522,
+    "oldIdx": 242,
+    "question": {
+      "kor": "회사는 전 세계적으로 액세스할 수 있는 전자 상거래 플랫폼을 생성하려고 합니다. 회사는 사용자를 플랫폼에 연결하기 위해 고가용성과 확장성을 갖춘 DNS 웹 서비스가 필요합니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A company wants to create a globally accessible ecommerce platform for its customers. The company wants to use a highly available and scalable DNS web service to connect users to the platform. Which AWS service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon EC2",
+        "B": "Amazon VPC",
+        "C": "Amazon Route 53",
+        "D": "Amazon RDS"
+      },
+      "eng": {
+        "A": "Amazon EC2",
+        "B": "Amazon VPC",
+        "C": "Amazon Route 53",
+        "D": "Amazon RDS"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "Amazon Route 53"
+    ]
+  },
+  {
+    "idx": 523,
+    "oldIdx": 476,
+    "question": {
+      "kor": "회사가 퍼블릭 웹사이트를 AWS로 마이그레이션하고 있습니다. 회사는 웹사이트의 도메인 이름을 AWS에서 호스팅하고자 합니다. 이 요구 사항을 충족할 AWS 서비스는 무엇입니까?",
+      "eng": "A company is migrating its public website to AWS. The company wants to host the domain name for the website on AWS. Which AWS service should the company use to meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Lambda",
+        "B": "Amazon Route 53",
+        "C": "Amazon CloudFront",
+        "D": "AWS Direct Connect"
+      },
+      "eng": {
+        "A": "AWS Lambda",
+        "B": "Amazon Route 53",
+        "C": "Amazon CloudFront",
+        "D": "AWS Direct Connect"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "Amazon Route 53"
+    ]
+  },
+  {
+    "idx": 524,
+    "oldIdx": 496,
+    "question": {
+      "kor": "클라우드 프랙티셔너가 AWS 워크로드를 위해 고가용성 및 확장 가능한 DNS 서비스를 사용하려고 합니다. 이 요구 사항을 충족할 AWS 서비스는 무엇입니까?",
+      "eng": "A cloud practitioner wants to use a highly available and scalable DNS service for its AWS workload.Which AWS service will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Route 53",
+        "B": "Amazon Lightsail",
+        "C": "AWS Amplify Hosting",
+        "D": "Amazon S3"
+      },
+      "eng": {
+        "A": "Amazon Route 53",
+        "B": "Amazon Lightsail",
+        "C": "AWS Amplify Hosting",
+        "D": "Amazon S3"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "Amazon Route 53"
+    ]
+  },
+  {
+    "idx": 525,
+    "oldIdx": 528,
+    "question": {
+      "kor": "어떤 AWS 서비스가 DNS 해상도를 제공합니까?",
+      "eng": "Which AWS service provides DNS resolution?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon CloudFront",
+        "B": "Amazon VPC",
+        "C": "Amazon Route 53",
+        "D": "AWS Direct Connect"
+      },
+      "eng": {
+        "A": "Amazon CloudFront",
+        "B": "Amazon VPC",
+        "C": "Amazon Route 53",
+        "D": "AWS Direct Connect"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "Amazon Route 53"
+    ]
+  },
+  {
+    "idx": 526,
+    "oldIdx": 208,
+    "question": {
+      "kor": "다른 AWS 리전에 걸쳐 장애 조치를 통해 고가용성과 저지연을 제공하는 AWS 서비스는 무엇입니까? (2개를 선택하십시오)",
+      "eng": "Which AWS services or features provide high availability and low latency by enabling failover across different AWS Regions? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Route 53",
+        "B": "Network Load Balancer",
+        "C": "Amazon S3 Transfer Acceleration",
+        "D": "AWS Global Accelerator",
+        "E": "Application Load Balancer"
+      },
+      "eng": {
+        "A": "Amazon Route 53",
+        "B": "Network Load Balancer",
+        "C": "Amazon S3 Transfer Acceleration",
+        "D": "AWS Global Accelerator",
+        "E": "Application Load Balancer"
+      }
+    },
+    "answers": [
+      "A",
+      "D"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "Amazon Route 53",
+      "AWS Global Accelerator"
+    ]
+  },
+  {
+    "idx": 527,
+    "oldIdx": 21,
+    "question": {
+      "kor": "사용자가 회사의 온프레미스 데이터 센터와 AWS 클라우드 간에 전용 네트워크 연결을 설정할 수 있도록 하는 AWS 서비스 또는 기능은 무엇입니까?",
+      "eng": "Which AWS service or feature allows a user to establish a dedicated network connection between a company’s on-premises data center and the AWS Cloud?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Direct Connect",
+        "B": "VPC 피어링",
+        "C": "AWS VPN",
+        "D": "Amazon Route 53"
+      },
+      "eng": {
+        "A": "AWS Direct Connect",
+        "B": "VPC peering",
+        "C": "AWS VPN",
+        "D": "Amazon Route 53"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "AWS Direct Connect"
+    ]
+  },
+  {
+    "idx": 528,
+    "oldIdx": 73,
+    "question": {
+      "kor": "온프레미스 워크로드와 AWS 클라우드 워크로드 간의 비공개 연결을 생성할 수 있는 AWS 서비스 또는 기능은 무엇입니까?",
+      "eng": "Which AWS service or feature can be used to create a private connection between an on-premises workload and an AWS Cloud workload?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Route 53",
+        "B": "Amazon Macie",
+        "C": "AWS Direct Connect",
+        "D": "AWS PrivateLink"
+      },
+      "eng": {
+        "A": "Amazon Route 53",
+        "B": "Amazon Macie",
+        "C": "AWS Direct Connect",
+        "D": "AWS PrivateLink"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "AWS Direct Connect"
+    ]
+  },
+  {
+    "idx": 529,
+    "oldIdx": 326,
+    "question": {
+      "kor": "회사가 AWS와 회사 네트워크 간의 프라이빗 네트워크 연결을 설정하려고 합니다. 이 요구 사항을 충족할 AWS 서비스 또는 기능은 무엇입니까?",
+      "eng": "326A company wants to establish a private network connection between AWS and its corporate network. Which AWS service or feature will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Connect",
+        "B": "Amazon Route 53",
+        "C": "AWS Direct Connect",
+        "D": "VPC 피어링"
+      },
+      "eng": {
+        "A": "Amazon Connect",
+        "B": "Amazon Route 53",
+        "C": "AWS Direct Connect",
+        "D": "VPC peering"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "AWS Direct Connect"
+    ]
+  },
+  {
+    "idx": 530,
+    "oldIdx": 357,
+    "question": {
+      "kor": "회사가 온프레미스 데이터 센터를 AWS 클라우드에 연결해야 합니다. 회사는 일관된 네트워크 성능을 가진 전용 저지연 연결이 필요합니다. 이 요구 사항을 충족할 AWS 서비스는 무엇입니까?",
+      "eng": "A company needs to connect its on-premises data center to the AWS Cloud. The company needs a dedicated, low-latency connection with consistent network performance. Which AWS service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Global Accelerator",
+        "B": "Amazon CloudFront",
+        "C": "AWS Direct Connect",
+        "D": "AWS Managed VPN"
+      },
+      "eng": {
+        "A": "AWS Global Accelerator",
+        "B": "Amazon CloudFront",
+        "C": "AWS Direct Connect",
+        "D": "AWS Managed VPN"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "AWS Direct Connect"
+    ]
+  },
+  {
+    "idx": 531,
+    "oldIdx": 466,
+    "question": {
+      "kor": "회사가 온프레미스 데이터 센터에서 AWS 애플리케이션에 실시간 데이터 피드를 전달하는 아키텍처를 구축 중입니다. 회사는 최소한의 지연으로 일관된 네트워크 연결이 필요합니다. 이 요구 사항을 충족하기 위해 애플리케이션과 데이터 센터를 연결하는 데 사용해야 하는 것은 무엇입니까?",
+      "eng": "A company is building AWS architecture to deliver real-time data feeds from an on-premises data center into an application that runs on AWS. The company needs a consistent network connection with minimal latency. What should the company use to connect the application and the data center to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Direct Connect",
+        "B": "공용 인터넷",
+        "C": "AWS VPN",
+        "D": "Amazon Connect"
+      },
+      "eng": {
+        "A": "AWS Direct Connect",
+        "B": "Public internet",
+        "C": "AWS VPN",
+        "D": "Amazon Connect"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "AWS Direct Connect"
+    ]
+  },
+  {
+    "idx": 532,
+    "oldIdx": 471,
+    "question": {
+      "kor": "인터넷 서비스 제공업체(ISP)와 콜로케이션 시설을 구현하는 데 필요한 AWS 서비스 또는 기능은 무엇입니까?",
+      "eng": "Which AWS service or feature requires an internet service provider (ISP) and a colocation facility to be implemented?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS VPN",
+        "B": "Amazon Connect",
+        "C": "AWS Direct Connect",
+        "D": "인터넷 게이트웨이"
+      },
+      "eng": {
+        "A": "AWS VPN",
+        "B": "Amazon Connect",
+        "C": "AWS Direct Connect",
+        "D": "Internet gateway"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "AWS Direct Connect"
+    ]
+  },
+  {
+    "idx": 533,
+    "oldIdx": 547,
+    "question": {
+      "kor": "회사가 대역폭 처리량을 유지하고 공용 인터넷 기반 연결보다 더 일관된 네트워크 환경을 제공하고자 합니다. 이 요구 사항을 충족하기 위해 어떤 AWS 서비스를 선택해야 합니까?",
+      "eng": "A company wants to maintain bandwidth throughput and provide a more consistent network experience than public internet-based connections. Which AWS service should the company choose?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS VPN",
+        "B": "AWS Direct Connect",
+        "C": "Amazon Connect",
+        "D": "Amazon CloudFront"
+      },
+      "eng": {
+        "A": "AWS VPN",
+        "B": "AWS Direct Connect",
+        "C": "Amazon Connect",
+        "D": "Amazon CloudFront"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "AWS Direct Connect"
+    ]
+  },
+  {
+    "idx": 534,
+    "oldIdx": 616,
+    "question": {
+      "kor": "회사는 온프레미스 데이터 센터와 AWS 클라우드 간에 전용 네트워크 연결을 설정해야 합니다. 이 네트워크는 공용 인터넷을 사용할 수 없습니다. 어떤 AWS 서비스 또는 기능이 이 요구 사항을 충족합니까?",
+      "eng": "A company needs to set up dedicated network connectivity between its on-premises data center and the AWS Cloud. The network cannot use the public internet. Which AWS service or feature will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Transit Gateway",
+        "B": "AWS VPN",
+        "C": "Amazon CloudFront",
+        "D": "AWS Direct Connect"
+      },
+      "eng": {
+        "A": "AWS Transit Gateway",
+        "B": "AWS VPN",
+        "C": "Amazon CloudFront",
+        "D": "AWS Direct Connect"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "AWS Direct Connect"
+    ]
+  },
+  {
+    "idx": 535,
+    "oldIdx": 630,
+    "question": {
+      "kor": "어떤 AWS 서비스가 온프레미스에서 AWS 클라우드로의 개인 네트워크 연결을 생성할 수 있습니까?",
+      "eng": "Which AWS service can create a private network connection from on premises to the AWS Cloud?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Config",
+        "B": "가상 사설 클라우드 (Amazon VPC)",
+        "C": "AWS Direct Connect",
+        "D": "Amazon Route 53"
+      },
+      "eng": {
+        "A": "AWS Config",
+        "B": "Virtual Private Cloud (Amazon VPC)",
+        "C": "AWS Direct Connect",
+        "D": "Amazon Route 53"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "AWS Direct Connect"
+    ]
+  },
+  {
+    "idx": 536,
+    "oldIdx": 608,
+    "question": {
+      "kor": "회사는 1주일 이내에 온프레미스에서 AWS 클라우드로 보안 네트워크 연결을 설정해야 합니다. 어떤 솔루션이 이 요구 사항을 충족합니까?",
+      "eng": "A company wants to set up a secure network connection from on premises to the AWS Cloud within 1 week. Which solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Direct Connect",
+        "B": "Amazon VPC",
+        "C": "AWS Site-to-Site VPN",
+        "D": "Edge location"
+      },
+      "eng": {
+        "A": "AWS Direct Connect",
+        "B": "Amazon VPC",
+        "C": "AWS Site-to-Site VPN",
+        "D": "Edge location"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "AWS Site-to-Site VPN"
+    ]
+  },
+  {
+    "idx": 537,
+    "oldIdx": 181,
+    "question": {
+      "kor": "온프레미스 네트워크를 VPC에 연결할 수 있는 AWS 서비스 또는 기능은 무엇입니까? (2개를 선택하십시오)",
+      "eng": "Which AWS services or features enable users to connect on-premises networks to a VPC? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS VPN",
+        "B": "Elastic Load Balancing",
+        "C": "AWS Direct Connect",
+        "D": "VPC 피어링",
+        "E": "Amazon CloudFront"
+      },
+      "eng": {
+        "A": "AWS VPN",
+        "B": "Elastic Load Balancing",
+        "C": "AWS Direct Connect",
+        "D": "VPC peering",
+        "E": "Amazon CloudFront"
+      }
+    },
+    "answers": [
+      "A",
+      "C"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "AWS VPN",
+      "AWS Direct Connect"
+    ]
+  },
+  {
+    "idx": 538,
+    "oldIdx": 327,
+    "question": {
+      "kor": "어떤 AWS 서비스 또는 기능이 두 VPC 간의 네트워크 연결을 생성할 수 있는 기능을 제공합니까? (2개를 선택하십시오)",
+      "eng": "Which AWS services or features give users the ability to create a network connection between two VPCs? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "VPC 엔드포인트",
+        "B": "Amazon Route 53",
+        "C": "VPC 피어링",
+        "D": "AWS Direct Connect",
+        "E": "AWS Transit Gateway"
+      },
+      "eng": {
+        "A": "VPC endpoints",
+        "B": "Amazon Route 53",
+        "C": "VPC peering",
+        "D": "AWS Direct Connect",
+        "E": "AWS Transit Gateway"
+      }
+    },
+    "answers": [
+      "C",
+      "E"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "AWS Transit Gateway",
+      "VPC Peering"
+    ]
+  },
+  {
+    "idx": 539,
+    "oldIdx": 653,
+    "question": {
+      "kor": "회사는 여러 VPC와 온프레미스 네트워크 간의 중앙 집중식 게이트웨이 역할을 할 수 있는 AWS 네트워킹 솔루션을 사용하고자 합니다. 이 요구 사항을 충족할 수 있는 AWS 서비스 또는 기능은 무엇입니까?",
+      "eng": "A company wants to use an AWS networking solution that can act as a centralized gateway between multiple VPCs and on-premises networks. Which AWS service or feature will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "VPC 게이트웨이 엔드포인트",
+        "B": "AWS Direct Connect",
+        "C": "AWS Transit Gateway",
+        "D": "AWS PrivateLink"
+      },
+      "eng": {
+        "A": "Gateway VPC endpoint",
+        "B": "AWS Direct Connect",
+        "C": "AWS Transit Gateway",
+        "D": "AWS PrivateLink"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "AWS Transit Gateway"
+    ]
+  },
+  {
+    "idx": 540,
+    "oldIdx": 443,
+    "question": {
+      "kor": "VPC와 온프레미스 네트워크를 중앙 허브에 연결할 수 있는 기능을 제공하는 AWS 서비스 또는 기능은 무엇입니까?",
+      "eng": "Which AWS service or feature gives users the ability to connect VPCs and on-premises networks to a central hub?"
+    },
+    "choices": {
+      "kor": {
+        "A": "가상 프라이빗 게이트웨이",
+        "B": "AWS Transit Gateway",
+        "C": "인터넷 게이트웨이",
+        "D": "고객 게이트웨이"
+      },
+      "eng": {
+        "A": "Virtual private gateway",
+        "B": "AWS Transit Gateway",
+        "C": "Internet gateway",
+        "D": "Customer gateway"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "AWS Transit Gateway"
+    ]
+  },
+  {
+    "idx": 541,
+    "oldIdx": 445,
+    "question": {
+      "kor": "회사가 여러 VPC와 온프레미스 네트워크를 연결하고 있습니다. 회사는 AWS 서비스를 클라우드 라우터로 사용하여 피어링 관계를 간소화하려고 합니다. 이 요구 사항을 충족할 AWS 서비스는 무엇입니까?",
+      "eng": "A company is connecting multiple VPCs and on-premises networks. The company needs to use an AWS service as a cloud router to simplify peering relationships. Which AWS service can the company use to meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Direct Connect",
+        "B": "AWS Transit Gateway",
+        "C": "Amazon Connect",
+        "D": "Amazon Route 53"
+      },
+      "eng": {
+        "A": "AWS Direct Connect",
+        "B": "AWS Transit Gateway",
+        "C": "Amazon Connect",
+        "D": "Amazon Route 53"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "AWS Transit Gateway"
+    ]
+  },
+  {
+    "idx": 542,
+    "oldIdx": 70,
+    "question": {
+      "kor": "네트워크 엔지니어가 AWS Direct Connect를 사용하여 온프레미스 네트워크를 AWS 클라우드에 연결하는 하이브리드 클라우드 아키텍처를 구축해야 합니다. 회사는 단일 AWS 리전에서 몇 개의 VPC를 보유하고 있으며, 시간이 지남에 따라 VPC 수가 수백 개로 증가할 것으로 예상됩니다. VPC 수가 증가함에 따라 이 연결을 단순화하고 확장하는 데 사용할 AWS 서비스 또는 기능은 무엇입니까?",
+      "eng": "A network engineer needs to build a hybrid cloud architecture connecting on-premises networks to the AWS Cloud using AWS Direct Connect. The company has a few VPCs in a single AWS Region and expects to increase the number of VPCs to hundreds over time. Which AWS service or feature should the engineer use to simplify and scale this connectivity as the VPCs increase in number?"
+    },
+    "choices": {
+      "kor": {
+        "A": "VPC 엔드포인트",
+        "B": "AWS Transit Gateway",
+        "C": "Amazon Route 53",
+        "D": "AWS Secrets Manager"
+      },
+      "eng": {
+        "A": "VPC endpoints",
+        "B": "AWS Transit Gateway",
+        "C": "Amazon Route 53",
+        "D": "AWS Secrets Manager"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "AWS Transit Gateway"
+    ]
+  },
+  {
+    "idx": 543,
+    "oldIdx": 644,
+    "question": {
+      "kor": "회사가 인터넷에 접근하지 않고 Amazon EC2 인스턴스에서 Amazon S3 버킷에 안전하게 접근하려고 합니다. 이 목표를 달성하기 위해 회사는 무엇을 사용해야 합니까?",
+      "eng": "A company wants to securely access an Amazon S3 bucket from an Amazon EC2 instance without accessing the internet. What should the company use to accomplish this goal?"
+    },
+    "choices": {
+      "kor": {
+        "A": "VPN 연결",
+        "B": "인터넷 게이트웨이",
+        "C": "VPC 엔드포인트",
+        "D": "NAT 게이트웨이"
+      },
+      "eng": {
+        "A": "VPN connection",
+        "B": "Internet gateway",
+        "C": "VPC endpoint",
+        "D": "NAT gateway"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "VPC endpoint"
+    ]
+  },
+  {
+    "idx": 544,
+    "oldIdx": 715,
+    "question": {
+      "kor": "어떤 회사가 지원되는 AWS 서비스와 VPC를 연결하려고 합니다. 회사는 내부 트래픽을 퍼블릭 인터넷에 노출하고 싶어하지 않습니다. 어떤 AWS 서비스가 이러한 요구 사항을 충족할까요?",
+      "eng": "A company wants to connect its supported AWS services and VPCs. The company does not want to expose its internal traffic to the public internet. Which AWS service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Inspector",
+        "B": "AWS PrivateLink",
+        "C": "Amazon Connect",
+        "D": "AWS Internet Gateway"
+      },
+      "eng": {
+        "A": "Amazon Inspector",
+        "B": "AWS PrivateLink",
+        "C": "Amazon Connect",
+        "D": "AWS Internet Gateway"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Networking & Content Delivery"
+    ],
+    "subcategory": [
+      "AWS PrivateLink"
+    ]
+  }
+]

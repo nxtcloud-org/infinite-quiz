@@ -1,0 +1,773 @@
+[
+  {
+    "idx": 288,
+    "oldIdx": 87,
+    "question": {
+      "kor": "매우 내구성 있는 객체 스토리지를 제공하는 AWS 서비스는 무엇입니까?",
+      "eng": "Which AWS service provides highly durable object storage?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon S3",
+        "B": "Amazon Elastic File System (Amazon EFS)",
+        "C": "Amazon Elastic Block Store (Amazon EBS)",
+        "D": "Amazon FSx"
+      },
+      "eng": {
+        "A": "Amazon S3",
+        "B": "Amazon Elastic File System (Amazon EFS)",
+        "C": "Amazon Elastic Block Store (Amazon EBS)",
+        "D": "Amazon FSx"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Storage",
+      "Amazon S3"
+    ],
+    "subcategory": [
+      "Amazon S3"
+    ]
+  },
+  {
+    "idx": 289,
+    "oldIdx": 179,
+    "question": {
+      "kor": "Amazon S3의 핵심 기능 중 일부를 설명한 것은 무엇입니까?",
+      "eng": "Which of the following describes some of the core functionality of Amazon S3?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon S3는 Amazon EC2와 함께 사용하도록 설계된 고성능 블록 스토리지 서비스입니다.",
+        "B": "Amazon S3는 고성능, 보안, 확장성 및 데이터 가용성을 제공하는 객체 스토리지 서비스입니다.",
+        "C": "Amazon S3는 업계 표준 SMB 프로토콜을 통해 액세스할 수 있는 완전 관리형, 고신뢰성 및 확장 가능한 파일 스토리지 시스템입니다.",
+        "D": "Amazon S3는 AWS 클라우드 서비스 및 온프레미스 리소스와 함께 사용하기 위한 확장 가능한, 완전 관리형 탄력적 NFS입니다."
+      },
+      "eng": {
+        "A": "Amazon S3 is a high-performance block storage service that is designed for use with Amazon EC2.",
+        "B": "Amazon S3 is an object storage service that provides high-level performance, security, scalability, and data availability.",
+        "C": "Amazon S3 is a fully managed, highly reliable, and scalable file storage system that is accessible over the industry-standard SMB protocol.",
+        "D": "Amazon S3 is a scalable, fully managed elastic NFS for use with AWS Cloud services and on-premises resources."
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Storage",
+      "Amazon S3"
+    ],
+    "subcategory": [
+      "Amazon S3"
+    ]
+  },
+  {
+    "idx": 290,
+    "oldIdx": 313,
+    "question": {
+      "kor": "회사가 정적 콘텐츠를 위한 내구성 있는 스토리지와 가장 저렴한 비용으로 무한히 확장 가능한 데이터 스토리지 인프라를 원합니다. 회사가 선택해야 할 AWS 서비스는 무엇입니까?",
+      "eng": "A company wants durable storage for static content and infinitely scalable data storage infrastructure at the lowest cost. Which AWS service should the company choose?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Elastic Block Store (Amazon EBS)",
+        "B": "Amazon S3",
+        "C": "AWS Storage Gateway",
+        "D": "Amazon Elastic File System (Amazon EFS)"
+      },
+      "eng": {
+        "A": "Amazon Elastic Block Store (Amazon EBS)",
+        "B": "Amazon S3",
+        "C": "AWS Storage Gateway",
+        "D": "Amazon Elastic File System (Amazon EFS)"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Storage",
+      "Amazon S3"
+    ],
+    "subcategory": [
+      "Amazon S3"
+    ]
+  },
+  {
+    "idx": 291,
+    "oldIdx": 658,
+    "question": {
+      "kor": "Amazon S3에 저장할 수 있는 데이터의 총 용량은 얼마입니까?",
+      "eng": "What is the total volume of data that can be stored in Amazon S3?"
+    },
+    "choices": {
+      "kor": {
+        "A": "10 PB",
+        "B": "50 PB",
+        "C": "100 PB",
+        "D": "사실상 무제한"
+      },
+      "eng": {
+        "A": "10 PB",
+        "B": "50 PB",
+        "C": "100 PB",
+        "D": "Virtually unlimited"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Storage",
+      "Amazon S3"
+    ],
+    "subcategory": [
+      "Amazon S3"
+    ]
+  },
+  {
+    "idx": 292,
+    "oldIdx": 153,
+    "question": {
+      "kor": "회사는 서버 로그를 쿼리하여 고객 경험에 대한 통찰력을 얻고자 합니다. 이 데이터를 가장 비용 효율적으로 저장할 수 있는 AWS 서비스는 무엇입니까?",
+      "eng": "A company wants to query its server logs to gain insights about its customers’ experiences. Which AWS service will store this data MOST cost-effectively?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Aurora",
+        "B": "Amazon Elastic File System (Amazon EFS)",
+        "C": "Amazon Elastic Block Store (Amazon EBS)",
+        "D": "Amazon S3"
+      },
+      "eng": {
+        "A": "Amazon Aurora",
+        "B": "Amazon Elastic File System (Amazon EFS)",
+        "C": "Amazon Elastic Block Store (Amazon EBS)",
+        "D": "Amazon S3"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Storage",
+      "Amazon S3"
+    ],
+    "subcategory": [
+      "Amazon S3"
+    ]
+  },
+  {
+    "idx": 293,
+    "oldIdx": 450,
+    "question": {
+      "kor": "회사가 파일을 AWS 클라우드에 저장하려고 합니다. 사용자는 이러한 파일을 공용 URL을 사용하여 직접 다운로드할 수 있어야 합니다. 이 요구 사항을 충족할 AWS 서비스 또는 기능은 무엇입니까?",
+      "eng": "A company wants to store its files in the AWS Cloud. Users need to be able to download these files directly using a public URL. Which AWS service or feature will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Redshift",
+        "B": "Amazon Elastic Block Store (Amazon EBS)",
+        "C": "Amazon Elastic File System (Amazon EFS)",
+        "D": "Amazon S3"
+      },
+      "eng": {
+        "A": "Amazon Redshift",
+        "B": "Amazon Elastic Block Store (Amazon EBS)",
+        "C": "Amazon Elastic File System (Amazon EFS)",
+        "D": "Amazon S3"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Storage",
+      "Amazon S3"
+    ],
+    "subcategory": [
+      "Amazon S3"
+    ]
+  },
+  {
+    "idx": 294,
+    "oldIdx": 294,
+    "question": {
+      "kor": "알 수 없는 액세스 패턴에 가장 비용 효율적인 Amazon S3 스토리지 클래스는 무엇입니까?",
+      "eng": "Which Amazon S3 storage class is MOST cost-effective for unknown access patterns?"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 표준",
+        "B": "S3 표준-비정기적 액세스 (S3 Standard-IA)",
+        "C": "S3 원존-비정기적 액세스 (S3 One Zone-IA)",
+        "D": "S3 인텔리전스 티어링"
+      },
+      "eng": {
+        "A": "S3 Standard",
+        "B": "S3 Standard-Infrequent Access (S3 Standard-IA)",
+        "C": "S3 One Zone-Infrequent Access (S3 One Zone-IA)",
+        "D": "S3 Intelligent-Tiering"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Storage",
+      "Amazon S3"
+    ],
+    "subcategory": [
+      "S3 Storage Classes"
+    ]
+  },
+  {
+    "idx": 295,
+    "oldIdx": 349,
+    "question": {
+      "kor": "Amazon S3 Intelligent-Tiering 스토리지 클래스가 제공하는 기능은 무엇입니까?",
+      "eng": "What does the Amazon S3 Intelligent-Tiering storage class offer?"
+    },
+    "choices": {
+      "kor": {
+        "A": "스토리지 용량 예약을 통한 결제 유연성",
+        "B": "데이터를 암호화된 Amazon Elastic Block Store (Amazon EBS) 볼륨에 복사하여 데이터 장기 보존",
+        "C": "접근 패턴 변경에 따라 객체를 계층 간에 이동하여 자동 비용 절감",
+        "D": "데이터 아카이브를 위한 안전하고 내구성이 뛰어나며 최저 비용의 스토리지"
+      },
+      "eng": {
+        "A": "Payment flexibility by reserving storage capacity",
+        "B": "Long-term retention of data by copying the data to an encrypted Amazon Elastic Block Store (Amazon EBS) volume",
+        "C": "Automatic cost savings by moving objects between tiers based on access pattern changes",
+        "D": "Secure, durable, and lowest cost storage for data archival"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Storage",
+      "Amazon S3"
+    ],
+    "subcategory": [
+      "S3 Storage Classes"
+    ]
+  },
+  {
+    "idx": 296,
+    "oldIdx": 453,
+    "question": {
+      "kor": "클라우드 엔지니어가 데이터를 Amazon S3에 저장하고자 합니다. 엔지니어는 일부 데이터에 매년 액세스하고 일부 데이터에는 매일 액세스합니다. 가장 비용 효율적으로 이 요구 사항을 충족할 S3 스토리지 클래스는 무엇입니까?",
+      "eng": "A cloud engineer wants to store data in Amazon S3. The engineer will access some of the data yearly and some of the data daily. Which S3 storage class will meet these requirements MOST cost-effectively?"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 Standard",
+        "B": "S3 Glacier Deep Archive",
+        "C": "S3 One Zone-Infrequent Access (S3 One Zone-IA)",
+        "D": "S3 Intelligent-Tiering"
+      },
+      "eng": {
+        "A": "S3 Standard",
+        "B": "S3 Glacier Deep Archive",
+        "C": "S3 One Zone-Infrequent Access (S3 One Zone-IA)",
+        "D": "S3 Intelligent-Tiering"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Storage",
+      "Amazon S3"
+    ],
+    "subcategory": [
+      "S3 Storage Classes"
+    ]
+  },
+  {
+    "idx": 297,
+    "oldIdx": 607,
+    "question": {
+      "kor": "회사는 Amazon S3를 사용하여 크기가 5 메가바이트인 오디오 파일을 저장할 필요가 있습니다. 회사는 파일을 거의 액세스하지 않지만, 즉시 파일을 검색할 수 있어야 합니다. 가장 비용 효율적으로 이 요구 사항을 충족할 수 있는 S3 저장 클래스는 무엇입니까?",
+      "eng": "A company needs to use Amazon S3 to store audio files that are each 5 megabytes in size. The company will rarely access the files, but the company must be able to retrieve the files immediately. Which S3 storage class will meet these requirements MOST cost-effectively?"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 Standard",
+        "B": "S3 Standard-Infrequent Access (S3 Standard-IA)",
+        "C": "S3 Glacier Flexible Retrieval",
+        "D": "S3 Glacier Deep Archive"
+      },
+      "eng": {
+        "A": "S3 Standard",
+        "B": "S3 Standard-Infrequent Access (S3 Standard-IA)",
+        "C": "S3 Glacier Flexible Retrieval",
+        "D": "S3 Glacier Deep Archive"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Storage",
+      "Amazon S3"
+    ],
+    "subcategory": [
+      "S3 Storage Classes"
+    ]
+  },
+  {
+    "idx": 298,
+    "oldIdx": 251,
+    "question": {
+      "kor": "회사는 Amazon S3에 데이터를 저장하려고 합니다. 데이터에 거의 접근하지 않으며 필요할 경우 데이터를 재생성할 수 있습니다. 회사는 가장 비용 효율적인 스토리지 클래스를 원합니다. 이 요구 사항을 충족하는 S3 스토리지 클래스는 무엇입니까?",
+      "eng": "A company wants to store data in Amazon S3. The company rarely access the data, and the data can be regenerated if necessary. The company wants to store the data in the most cost-effective storage class. Which S3 storage class will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 Standard",
+        "B": "S3 Intelligent-Tiering",
+        "C": "S3 Standard-Infrequent Access (S3 Standard-IA)",
+        "D": "S3 One Zone-Infrequent Access (S3 One Zone-IA)"
+      },
+      "eng": {
+        "A": "S3 Standard",
+        "B": "S3 Intelligent-Tiering",
+        "C": "S3 Standard-Infrequent Access (S3 Standard-IA)",
+        "D": "S3 One Zone-Infrequent Access (S3 One Zone-IA)"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Storage",
+      "Amazon S3"
+    ],
+    "subcategory": [
+      "S3 Storage Classes"
+    ]
+  },
+  {
+    "idx": 299,
+    "oldIdx": 446,
+    "question": {
+      "kor": "회사가 많은 양의 데이터를 저장하고 있으며 감사자는 연간 두 번만 데이터에 액세스합니다. 가장 낮은 비용으로 데이터를 저장하기 위해 회사는 어떤 Amazon S3 스토리지 클래스를 사용해야 합니까?",
+      "eng": "A company stores a large amount of data that auditors access only twice each year. Which Amazon S3 storage class should the company use to store the data with the LOWEST cost?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon S3 Outposts",
+        "B": "Amazon S3 Glacier Instant Retrieval",
+        "C": "Amazon S3 Standard",
+        "D": "Amazon S3 Intelligent-Tiering"
+      },
+      "eng": {
+        "A": "Amazon S3 Outposts",
+        "B": "Amazon S3 Glacier Instant Retrieval",
+        "C": "Amazon S3 Standard",
+        "D": "Amazon S3 Intelligent-Tiering"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Storage",
+      "Amazon S3"
+    ],
+    "subcategory": [
+      "S3 Storage Classes"
+    ]
+  },
+  {
+    "idx": 300,
+    "oldIdx": 201,
+    "question": {
+      "kor": "회사는 AWS 클라우드에 자주 액세스되지 않는 데이터를 저장하려고 합니다. 회사는 필요할 경우 데이터를 12시간 이내에 검색할 수 있어야 합니다. 회사는 기가바이트당 저장 비용이 가장 저렴한 솔루션을 원합니다. 이 요구 사항을 충족하는 Amazon S3 스토리지 클래스는 무엇입니까?",
+      "eng": "A company is storing data that will not be frequently accessed in the AWS Cloud. If the company needs to access the data, the data needs to be retrieved within 12 hours. The company wants a solution that is cost-effective for storage costs for each gigabyte. Which Amazon S3 storage class will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 Standard",
+        "B": "S3 Glacier Flexible Retrieval",
+        "C": "S3 One Zone-Infrequent Access (S3 One Zone-IA)",
+        "D": "S3 Standard-Infrequent Access (S3 Standard-IA)"
+      },
+      "eng": {
+        "A": "S3 Standard",
+        "B": "S3 Glacier Flexible Retrieval",
+        "C": "S3 One Zone-Infrequent Access (S3 One Zone-IA)",
+        "D": "S3 Standard-Infrequent Access (S3 Standard-IA)"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Storage",
+      "Amazon S3"
+    ],
+    "subcategory": [
+      "S3 Storage Classes"
+    ]
+  },
+  {
+    "idx": 301,
+    "oldIdx": 456,
+    "question": {
+      "kor": "회사가 데이터 아카이브 및 장기 백업을 위해 거의 사용하지 않는 데이터를 저장해야 합니다. 이 요구 사항을 가장 비용 효율적으로 충족할 AWS 서비스 또는 스토리지 클래스는 무엇입니까?",
+      "eng": "A company needs to store infrequently used data for data archives and long-term backups. Which AWS service or storage class will meet these requirements MOST cost-effectively?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon FSx for Lustre",
+        "B": "Amazon Elastic Block Store (Amazon EBS)",
+        "C": "Amazon Elastic File System (Amazon EFS)",
+        "D": "Amazon S3 Glacier Flexible Retrieval"
+      },
+      "eng": {
+        "A": "Amazon FSx for Lustre",
+        "B": "Amazon Elastic Block Store (Amazon EBS)",
+        "C": "Amazon Elastic File System (Amazon EFS)",
+        "D": "Amazon S3 Glacier Flexible Retrieval"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Storage",
+      "Amazon S3"
+    ],
+    "subcategory": [
+      "S3 Storage Classes"
+    ]
+  },
+  {
+    "idx": 302,
+    "oldIdx": 700,
+    "question": {
+      "kor": "회사는 단일 자리수 밀리초 이내에 Amazon S3 객체 스토리지에 액세스할 수 있는 솔루션을 원합니다. 이 요구사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company wants an Amazon S3 solution that provides access to object storage within single-digit milliseconds. Which solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 Express One Zone",
+        "B": "S3 Standard",
+        "C": "S3 Glacier Flexible Retrieval",
+        "D": "S3 Glacier Instant Retrieval"
+      },
+      "eng": {
+        "A": "S3 Express One Zone",
+        "B": "S3 Standard",
+        "C": "S3 Glacier Flexible Retrieval",
+        "D": "S3 Glacier Instant Retrieval"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Storage",
+      "Amazon S3"
+    ],
+    "subcategory": [
+      "S3 Express One Zone"
+    ]
+  },
+  {
+    "idx": 303,
+    "oldIdx": 18,
+    "question": {
+      "kor": "회사는 민감한 고객 데이터를 Amazon S3 버킷에 저장하고 있습니다. 회사는 실수로 데이터를 삭제하거나 덮어쓰지 않도록 보호하기를 원합니다. 이 요구 사항을 충족하기 위해 회사가 사용할 S3 기능은 무엇입니까?",
+      "eng": "A company is storing sensitive customer data in an Amazon S3 bucket. The company wants to protect the data from accidental deletion or overwriting. Which S3 feature should the company use to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 수명 주기 규칙",
+        "B": "S3 버전 관리",
+        "C": "S3 버킷 정책",
+        "D": "S3 서버 측 암호화"
+      },
+      "eng": {
+        "A": "S3 Lifecycle rules",
+        "B": "S3 Versioning",
+        "C": "S3 bucket policies",
+        "D": "S3 server-side encryption"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Storage",
+      "Amazon S3"
+    ],
+    "subcategory": [
+      "S3 Versioning"
+    ]
+  },
+  {
+    "idx": 304,
+    "oldIdx": 219,
+    "question": {
+      "kor": "Amazon S3에서 객체를 보호하기 위해 사용할 수 있는 암호화 유형은 무엇입니까? (2개를 선택하십시오)",
+      "eng": "Which encryption types can be used to protect objects at rest in Amazon S3? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon S3 관리 암호화 키(SSE-S3)를 사용한 서버 측 암호화",
+        "B": "AWS KMS 관리 키(SSE-KMS)를 사용한 서버 측 암호화",
+        "C": "TLS",
+        "D": "SSL",
+        "E": "투명 데이터 암호화 (TDE)"
+      },
+      "eng": {
+        "A": "Server-side encryption with Amazon S3 managed encryption keys (SSE-S3)",
+        "B": "Server-side encryption with AWS KMS managed keys (SSE-KMS)",
+        "C": "TLS",
+        "D": "SSL",
+        "E": "Transparent Data Encryption (TDE)"
+      }
+    },
+    "answers": [
+      "A",
+      "B"
+    ],
+    "category": [
+      "Storage",
+      "Amazon S3"
+    ],
+    "subcategory": [
+      "S3 Encryption"
+    ]
+  },
+  {
+    "idx": 305,
+    "oldIdx": 523,
+    "question": {
+      "kor": "회사는 법적 및 규정 요구 사항을 충족하기 위해 쓰기 일회-읽기 여러번(WORM) 모델을 사용하여 문서를 아카이브해야 합니다. 이 요구 사항을 충족하기 위해 Amazon S3의 어떤 기능을 사용할 수 있습니까?",
+      "eng": "A company must archive its documents by using a write-once, read-many (WORM) model to meet legal and compliance obligations. Which feature of Amazon S3 can the company use to meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 Versioning",
+        "B": "S3 bucket policy",
+        "C": "S3 Glacier Vault Lock",
+        "D": "S3 multi-factor authentication (MFA) delete"
+      },
+      "eng": {
+        "A": "S3 Versioning",
+        "B": "S3 bucket policy",
+        "C": "S3 Glacier Vault Lock",
+        "D": "S3 multi-factor authentication (MFA) delete"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Storage",
+      "Amazon S3"
+    ],
+    "subcategory": [
+      "S3 Glacier Vault Lock"
+    ]
+  },
+  {
+    "idx": 306,
+    "oldIdx": 274,
+    "question": {
+      "kor": "회사는 더 이상 자주 액세스하지 않는 데이터를 아카이빙하여 비용을 절감하려고 합니다. 이 요구 사항을 충족하는 Amazon S3 기능은 무엇입니까?",
+      "eng": "A company wants to save costs by archiving data that is no longer frequently accessed by end users. Which Amazon S3 feature will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 버전 관리",
+        "B": "S3 수명 주기",
+        "C": "S3 객체 잠금",
+        "D": "S3 인벤토리"
+      },
+      "eng": {
+        "A": "S3 Versioning",
+        "B": "S3 Lifecycle",
+        "C": "S3 Object Lock",
+        "D": "S3 Inventory"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Storage",
+      "Amazon S3"
+    ],
+    "subcategory": [
+      "S3 Lifecycle"
+    ]
+  },
+  {
+    "idx": 307,
+    "oldIdx": 338,
+    "question": {
+      "kor": "회사가 Amazon S3 객체에 대한 태그, 버킷 및 접두사를 추적하려고 합니다. 이 요구 사항을 충족할 S3 기능은 무엇입니까?",
+      "eng": "A company wants to track tags, buckets, and prefixes for its Amazon S3 objects. Which S3 feature will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 인벤토리 보고서",
+        "B": "S3 라이프사이클",
+        "C": "S3 버전 관리",
+        "D": "S3 ACL"
+      },
+      "eng": {
+        "A": "S3 Inventory report",
+        "B": "S3 Lifecycle",
+        "C": "S3 Versioning",
+        "D": "S3 ACLs"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Storage",
+      "Amazon S3"
+    ],
+    "subcategory": [
+      "S3 Inventory report"
+    ]
+  },
+  {
+    "idx": 308,
+    "oldIdx": 143,
+    "question": {
+      "kor": "사용자는 Amazon S3 버킷으로 파일을 장거리로 빠르고 안전하게 이동하려고 합니다. 이 요구 사항을 충족하는 S3 기능은 무엇입니까?",
+      "eng": "A company needs to quickly and securely move files over long distances between its client and an Amazon S3 bucket. Which S3 feature will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 버전 관리",
+        "B": "S3 Transfer Acceleration",
+        "C": "S3 ACLs",
+        "D": "S3 Intelligent-Tiering"
+      },
+      "eng": {
+        "A": "S3 Versioning",
+        "B": "S3 Transfer Acceleration",
+        "C": "S3ACLs",
+        "D": "S3 Intelligent-Tiering"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Storage",
+      "Amazon S3"
+    ],
+    "subcategory": [
+      "S3 Transfer Acceleration"
+    ]
+  },
+  {
+    "idx": 309,
+    "oldIdx": 368,
+    "question": {
+      "kor": "어떤 Amazon S3 기능 또는 스토리지 클래스가 AWS 백본 네트워크와 엣지 로케이션을 사용하여 최종 사용자에서 Amazon S3로의 지연 시간을 줄입니까?",
+      "eng": "Which Amazon S3 feature or storage class uses the AWS backbone network and edge locations to reduce latencies from the end user to Amazon S3?"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 Cross-Region Replication",
+        "B": "S3 Transfer Acceleration",
+        "C": "S3 Event Notifications",
+        "D": "S3 Standard-Infrequent Access (S3 Standard-IA)"
+      },
+      "eng": {
+        "A": "S3 Cross-Region Replication",
+        "B": "S3 Transfer Acceleration",
+        "C": "S3 Event Notifications",
+        "D": "S3 Standard-Infrequent Access (S3 Standard-IA)"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Storage",
+      "Amazon S3"
+    ],
+    "subcategory": [
+      "S3 Transfer Acceleration"
+    ]
+  },
+  {
+    "idx": 310,
+    "oldIdx": 560,
+    "question": {
+      "kor": "회사가 AWS 기술을 사용하여 정적 웹사이트를 배포해야 합니다. 가장 적은 운영 오버헤드로 이 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company needs to use AWS technology to deploy a static website. Which solution meets this requirement with the LEAST amount of operational overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon EC2에서 웹사이트 배포",
+        "B": "AWS Elastic Beanstalk에서 웹사이트 호스팅",
+        "C": "Amazon Lightsail로 웹사이트 배포",
+        "D": "Amazon S3에서 웹사이트 호스팅"
+      },
+      "eng": {
+        "A": "Deploy the website on Amazon EC2.",
+        "B": "Host the website on AWS Elastic Beanstalk.",
+        "C": "Deploy the website with Amazon Lightsail.",
+        "D": "Host the website on Amazon S3."
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Storage",
+      "Amazon S3"
+    ],
+    "subcategory": [
+      "S3 static website hosting"
+    ]
+  },
+  {
+    "idx": 311,
+    "oldIdx": 83,
+    "question": {
+      "kor": "사용자가 S3 콘솔에서 ACL 및 S3 버킷 정책이 있는 모든 Amazon S3 버킷을 검토하려고 합니다. 이 요구 사항을 충족하는 AWS 서비스 또는 리소스는 무엇입니까?",
+      "eng": "A user wants to review all Amazon S3 buckets with ACLs and S3 bucket policies in the S3 console. Which AWS service or resource will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 Multi-Region Access Points",
+        "B": "S3 Storage Lens",
+        "C": "AWS IAM Identity Center (AWS Single Sign-On)",
+        "D": "Access Analyzer for S3"
+      },
+      "eng": {
+        "A": "S3 Multi-Region Access Points",
+        "B": "S3 Storage Lens",
+        "C": "AWS IAM Identity Center (AWS Single Sign-On)",
+        "D": "Access Analyzer for S3"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Storage",
+      "Amazon S3"
+    ],
+    "subcategory": [
+      "Access Analyzer for S3"
+    ]
+  }
+]

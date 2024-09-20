@@ -1,0 +1,5272 @@
+[
+  {
+    "idx": 1,
+    "oldIdx": 11,
+    "question": {
+      "kor": "온프레미스 워크로드를 AWS 클라우드로 이동할 때 사용자가 경험하는 이점은 무엇입니까?",
+      "eng": "Which of the following is an advantage that users experience when they move on-premises workloads to the AWS Cloud?"
+    },
+    "choices": {
+      "kor": {
+        "A": "데이터 센터 운영 및 유지 비용 제거",
+        "B": "하드웨어 제공업체의 할인과 동일한 가격 할인",
+        "C": "모든 운영 제어를 AWS에 분배",
+        "D": "운영 비용 제거"
+      },
+      "eng": {
+        "A": "Elimination of expenses for running and maintaining data centers",
+        "B": "Price discounts that are identical to discounts from hardware providers",
+        "C": "Distribution of all operational controls to AWS",
+        "D": "Elimination of operational expenses"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 2,
+    "oldIdx": 89,
+    "question": {
+      "kor": "AWS 클라우드로 이동함으로써 얻을 수 있는 이점은 무엇입니까? (2개를 선택하십시오)",
+      "eng": "Which of the following are advantages of moving to the AWS Cloud? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "모든 보안 책임을 AWS에 넘길 수 있는 능력",
+        "B": "종량제 모델 사용",
+        "C": "물리적 인프라에 대한 전체 제어 권한 보유",
+        "D": "필요한 용량을 예측할 필요가 없음",
+        "E": "사용자 액세스 제어에 대해 걱정할 필요 없음"
+      },
+      "eng": {
+        "A": "The ability to turn over the responsibility for all security to AWS.",
+        "B": "The ability to use the pay-as-you-go model.",
+        "C": "The ability to have full control over the physical infrastructure.",
+        "D": "No longer having to guess what capacity will be required.",
+        "E": "No longer worrying about users access controls."
+      }
+    },
+    "answers": [
+      "B",
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 3,
+    "oldIdx": 97,
+    "question": {
+      "kor": "AWS 클라우드 컴퓨팅이 비용을 절감하는 데 어떻게 도움이 됩니까? (2개를 선택하십시오)",
+      "eng": "How does AWS Cloud computing help businesses reduce costs? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS는 모든 AWS 리전에서 동일한 서비스 가격을 청구합니다.",
+        "B": "AWS는 필요에 따라 용량을 조정할 수 있습니다.",
+        "C": "AWS는 1주일 이상 유휴 상태인 Amazon EC2 인스턴스에 대해 할인 혜택을 제공합니다.",
+        "D": "AWS는 AWS 클라우드에서 인터넷으로 전송되는 데이터에 대해 비용을 청구하지 않습니다.",
+        "E": "AWS는 온프레미스 데이터 센터 구축 및 유지 관리 비용의 많은 부분을 제거합니다."
+      },
+      "eng": {
+        "A": "AWS charges the same prices for services in every AWS Region.",
+        "B": "AWS enables capacity to be adjusted on demand.",
+        "C": "AWS offers discounts for Amazon EC2 instances that remain idle for more than 1 week.",
+        "D": "AWS does not charge for data sent from the AWS Cloud to the internet.",
+        "E": "AWS eliminates many of the costs of building and maintaining on-premises data centers."
+      }
+    },
+    "answers": [
+      "B",
+      "E"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 4,
+    "oldIdx": 133,
+    "question": {
+      "kor": "AWS를 위한 클라우드 컴퓨팅 사용의 이점은 무엇입니까?",
+      "eng": "Which option is a benefit of using AWS for cloud computing?"
+    },
+    "choices": {
+      "kor": {
+        "A": "변동 비용을 고정 비용으로 대체",
+        "B": "종량제 가격",
+        "C": "속도와 민첩성 감소",
+        "D": "데이터 센터 운영 및 유지 관리 비용 증가"
+      },
+      "eng": {
+        "A": "Trade variable expense for fixed expense",
+        "B": "Pay-as-you-go pricing",
+        "C": "Decreased speed and agility",
+        "D": "Spending money running and maintaining data centers"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 5,
+    "oldIdx": 180,
+    "question": {
+      "kor": "미리 정해진 고정 비용을 가변 비용으로 대체할 수 있는 기술 서비스는 AWS의 어떤 이점을 보여줍니까?",
+      "eng": "Which AWS benefit is demonstrated by on-demand technology services that enable companies to replace upfront fixed expenses with variable expenses?"
+    },
+    "choices": {
+      "kor": {
+        "A": "고가용성",
+        "B": "규모의 경제",
+        "C": "종량제 가격",
+        "D": "글로벌 도달 범위"
+      },
+      "eng": {
+        "A": "High availability",
+        "B": "Economies of scale",
+        "C": "Pay-as-you-go pricing",
+        "D": "Global reach"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 6,
+    "oldIdx": 359,
+    "question": {
+      "kor": "AWS 클라우드는 온프레미스 데이터 센터에 비해 컴퓨팅 리소스의 총 소유 비용(TCO)을 어떻게 낮추나요? (2개를 선택하십시오)",
+      "eng": "In which ways does the AWS Cloud offer lower total cost of ownership (TCO) of computing resources than on-premises data centers? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS는 초기 자본 지출을 사용한 만큼 지불 비용으로 대체합니다.",
+        "B": "AWS는 고가용성으로 설계되어 사용자 다운타임을 제거합니다.",
+        "C": "AWS는 온프레미스 IT 직원의 필요성을 제거합니다.",
+        "D": "AWS는 규모의 경제를 활용하여 지속적으로 가격을 낮춥니다.",
+        "E": "AWS는 Amazon EC2 인스턴스에 대한 단일 가격 모델을 제공합니다."
+      },
+      "eng": {
+        "A": "AWS replaces upfront capital expenditures with pay-as-you-go costs.",
+        "B": "AWS is designed for high availability, which eliminates user downtime.",
+        "C": "AWS eliminates the need for on-premises IT staff.",
+        "D": "AWS uses economies of scale to continually reduce prices.",
+        "E": "AWS offers a single pricing model for Amazon EC2 instances."
+      }
+    },
+    "answers": [
+      "A",
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 7,
+    "oldIdx": 403,
+    "question": {
+      "kor": "AWS 클라우드의 비용 효율성을 나타내는 진술은 무엇입니까? (2개를 선택하십시오.)",
+      "eng": "Which statements represent the cost-effectiveness of the AWS Cloud? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "사용자는 고정 비용을 가변 비용으로 전환할 수 있습니다.",
+        "B": "사용자는 몇 분 안에 전 세계에 배포할 수 있습니다.",
+        "C": "AWS는 속도와 민첩성을 증가시킵니다.",
+        "D": "AWS는 인프라 패치를 책임집니다.",
+        "E": "사용자는 규모의 경제의 혜택을 누릴 수 있습니다."
+      },
+      "eng": {
+        "A": "Users can trade fixed expenses for variable expenses.",
+        "B": "Users can deploy all over the world in minutes.",
+        "C": "AWS offers increased speed and agility.",
+        "D": "AWS is responsible for patching the infrastructure.",
+        "E": "Users benefit from economies of scale."
+      }
+    },
+    "answers": [
+      "A",
+      "E"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 8,
+    "oldIdx": 454,
+    "question": {
+      "kor": "AWS 클라우드를 사용할 때의 경제적 이점은 무엇입니까? (2개를 선택하십시오.)",
+      "eng": "Which of the following are economic benefits of using the AWS Cloud? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "소비 기반 가격",
+        "B": "영구 라이선스",
+        "C": "규모의 경제",
+        "D": "추가 비용 없이 AWS Enterprise Support 제공",
+        "E": "하드웨어 직접 소유 모델"
+      },
+      "eng": {
+        "A": "Consumption-based pricing",
+        "B": "Perpetual licenses",
+        "C": "Economies of scale",
+        "D": "AWS Enterprise Support at no additional cost",
+        "E": "Bring-your-own-hardware model"
+      }
+    },
+    "answers": [
+      "A",
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 9,
+    "oldIdx": 530,
+    "question": {
+      "kor": "전자 상거래 회사가 데이터 센터 워크로드를 AWS 클라우드로 이동하여 매우 동적인 사용 패턴을 지원하고자 합니다. 이러한 유형의 워크로드 마이그레이션을 위해 AWS 클라우드를 비용 효율적으로 만드는 이점은 무엇입니까? (2개를 선택하십시오.)",
+      "eng": "An ecommerce company plans to move its data center workload to the AWS Cloud to support highly dynamic usage patterns. Which benefits make the AWS Cloud cost-effective for the migration of this type of workload? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "신뢰성",
+        "B": "보안",
+        "C": "탄력성",
+        "D": "사용한 만큼만 지불",
+        "E": "고가용성"
+      },
+      "eng": {
+        "A": "Reliability",
+        "B": "Security",
+        "C": "Elasticity",
+        "D": "Pay-as-you-go resource",
+        "E": "High availability"
+      }
+    },
+    "answers": [
+      "C",
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 10,
+    "oldIdx": 568,
+    "question": {
+      "kor": "회사가 AWS 클라우드로 마이그레이션했습니다. 이제 회사는 필요할 때마다 서비스 비용을 지불합니다. 이 회사가 클라우드 컴퓨팅의 어떤 이점을 활용하고 있습니까?",
+      "eng": "A company migrated to the AWS Cloud. Now the company pays for services on an as-needed basis. Which advantage of cloud computing is the company benefiting from?"
+    },
+    "choices": {
+      "kor": {
+        "A": "데이터 센터 운영 및 유지 관리 비용 절감",
+        "B": "속도와 민첩성 증가",
+        "C": "몇 분 안에 전 세계로 확장",
+        "D": "고정 비용을 가변 비용으로 전환"
+      },
+      "eng": {
+        "A": "Stop spending money running and maintaining data centers",
+        "B": "Increase speed and agility",
+        "C": "Go global in minutes",
+        "D": "Trade fixed expense for variable expense"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 11,
+    "oldIdx": 618,
+    "question": {
+      "kor": "회사는 온프레미스 인프라를 AWS 클라우드로 마이그레이션하고자 합니다. 클라우드 컴퓨팅의 어떤 장점이 회사가 선행 비용을 줄이는 데 도움이 될 수 있습니까?",
+      "eng": "A company wants to migrate its on-premises infrastructure to the AWS Cloud. Which advantage of cloud computing will help the company reduce upfront costs?"
+    },
+    "choices": {
+      "kor": {
+        "A": "몇 분 만에 글로벌 확장",
+        "B": "속도와 민첩성 향상",
+        "C": "대규모 경제의 이점",
+        "D": "고정 비용을 변동 비용으로 전환"
+      },
+      "eng": {
+        "A": "Go global in minutes",
+        "B": "Increase speed and agility",
+        "C": "Benefit from massive economies of scale",
+        "D": "Trade fixed expense for variable expense"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 12,
+    "oldIdx": 628,
+    "question": {
+      "kor": "한 온라인 소매 회사가 온프레미스 워크로드를 AWS로 마이그레이션하려고 합니다. 회사는 비용 효율적으로 계절적 워크로드 증가를 자동으로 처리할 수 있는 기능이 필요합니다. 이 요구 사항을 충족하려면 어떤 AWS 클라우드 기능이 필요합니까? (두 가지 선택)",
+      "eng": "An online retail company wants to migrate its on-premises workload to AWS. The company needs to automatically handle a seasonal workload increase in a cost-effective manner. Which AWS Cloud features will help the company meet this requirement? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "교차 지역 워크로드 배포",
+        "B": "사용한 만큼만 지불하는 가격 책정",
+        "C": "내장된 AWS CloudTrail 감사 기능",
+        "D": "자동 확장 정책",
+        "E": "중앙 집중식 로깅"
+      },
+      "eng": {
+        "A": "Cross-Region workload deployment",
+        "B": "Pay-as-you-go pricing",
+        "C": "Built-in AWS CloudTrail audit capabilities",
+        "D": "Auto Scaling policies",
+        "E": "Centralized logging"
+      }
+    },
+    "answers": [
+      "B",
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 13,
+    "oldIdx": 669,
+    "question": {
+      "kor": "회사가 온프레미스 IT 아키텍처에서 AWS 클라우드로 이동할 때 얻는 이점은 무엇입니까? (두 가지 선택)",
+      "eng": "Which benefits does a company gain when the company moves from on-premises IT architecture to the AWS Cloud? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "하드웨어 문제 해결, 용량 계획 및 조달 작업 감소 또는 제거",
+        "B": "교육받은 IT 직원의 필요 제거",
+        "C": "클라우드로 마이그레이션된 모든 애플리케이션의 자동 보안 구성",
+        "D": "재해 복구 계획의 필요 제거",
+        "E": "새로운 기능 및 애플리케이션의 빠른 배포"
+      },
+      "eng": {
+        "A": "Reduced or eliminated tasks for hardware troubleshooting, capacity planning, and procurement",
+        "B": "Elimination of the need for trained IT staff",
+        "C": "Automatic security configuration of all applications that are migrated to the cloud",
+        "D": "Elimination of the need for disaster recovery planning",
+        "E": "Faster deployment of new features and applications"
+      }
+    },
+    "answers": [
+      "A",
+      "E"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 14,
+    "oldIdx": 50,
+    "question": {
+      "kor": "클라우드 컴퓨팅의 이점 중 하나인 규모의 경제의 이점은 무엇입니까?",
+      "eng": "Which option is a benefit of the economies of scale based on the advantages of cloud computing?"
+    },
+    "choices": {
+      "kor": {
+        "A": "고정 비용을 가변 비용으로 대체할 수 있는 능력",
+        "B": "속도와 민첩성 증가",
+        "C": "고정 비용 대비 변동 비용 감소",
+        "D": "데이터 센터 전반의 운영 비용 증가"
+      },
+      "eng": {
+        "A": "The ability to trade variable expense for fixed expense",
+        "B": "Increased speed and agility",
+        "C": "Lower variable costs over fixed costs",
+        "D": "Increased operational costs across data centers"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 15,
+    "oldIdx": 76,
+    "question": {
+      "kor": "AWS 클라우드 사용의 이점은 무엇입니까? (2개를 선택하십시오)",
+      "eng": "Which of the following are advantages of the AWS Cloud? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "가변 비용을 자본 비용으로 대체",
+        "B": "높은 규모의 경제",
+        "C": "몇 분 만에 글로벌 출시",
+        "D": "하드웨어 인프라 관리에 집중",
+        "E": "용량을 보장하기 위해 과잉 프로비저닝"
+      },
+      "eng": {
+        "A": "Trade variable expenses for capital expenses",
+        "B": "High economies of scale",
+        "C": "Launch globally in minutes",
+        "D": "Focus on managing hardware infrastructure",
+        "E": "Overprovision to ensure capacity"
+      }
+    },
+    "answers": [
+      "B",
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 16,
+    "oldIdx": 210,
+    "question": {
+      "kor": "AWS 클라우드의 이점은 무엇입니까? (2개를 선택하십시오)",
+      "eng": "Which abilities are benefits of the AWS Cloud? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "가변 비용을 자본 비용으로 대체",
+        "B": "몇 분 만에 글로벌 배포",
+        "C": "배포 이전에 용량 계획",
+        "D": "규모의 경제 활용",
+        "E": "네트워크 연결성에 대한 의존도 감소"
+      },
+      "eng": {
+        "A": "Trade variable expenses for capital expenses.",
+        "B": "Deploy globally in minutes.",
+        "C": "Plan capacity in advance of deployments.",
+        "D": "Take advantage of economies of scale.",
+        "E": "Reduce dependencies on network connectivity."
+      }
+    },
+    "answers": [
+      "B",
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 17,
+    "oldIdx": 271,
+    "question": {
+      "kor": "회사가 온프레미스 생산 워크로드를 AWS로 이전할 때 받는 이점은 무엇입니까? (두 가지를 선택하세요)",
+      "eng": "Which of the following are benefits that a company receives when it moves an on-premises production workload to AWS? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS는 회사 직원에게 모든 AWS 서비스 사용에 대한 교육을 제공합니다.",
+        "B": "AWS는 클라우드의 모든 보안을 관리합니다.",
+        "C": "AWS는 기술 계정 관리자(TAM)로부터 무료 지원을 제공합니다.",
+        "D": "AWS는 고가용성을 제공합니다.",
+        "E": "AWS는 규모의 경제를 제공합니다."
+      },
+      "eng": {
+        "A": "AWS trains the company's staff on the use of all the AWS services.",
+        "B": "AWS manages all security in the cloud.",
+        "C": "AWS offers free support from technical account managers (TAMs).",
+        "D": "AWS offers high availability.",
+        "E": "AWS provides economies of scale."
+      }
+    },
+    "answers": [
+      "D",
+      "E"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 18,
+    "oldIdx": 491,
+    "question": {
+      "kor": "AWS 클라우드로 이전할 때의 이점은 무엇입니까? (2개를 선택하십시오.)",
+      "eng": "Which of the following are advantages of moving to the AWS Cloud? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "사용자가 몇 초 만에 모든 AWS 서비스를 구현할 수 있습니다.",
+        "B": "AWS는 인프라 및 애플리케이션 보안에 대한 모든 책임을 집니다.",
+        "C": "사용자는 속도와 민첩성이 증가합니다.",
+        "D": "사용자는 대규모 경제의 혜택을 누릴 수 있습니다.",
+        "E": "사용자는 데이터 센터에서 하드웨어를 AWS 클라우드로 이동할 수 있습니다."
+      },
+      "eng": {
+        "A": "Users can implement all AWS services in seconds.",
+        "B": "AWS assumes all responsibility for the security of infrastructure and applications.",
+        "C": "Users experience increased speed and agility.",
+        "D": "Users benefit from massive economies of scale.",
+        "E": "Users can move hardware from their data center to the AWS Cloud."
+      }
+    },
+    "answers": [
+      "C",
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 19,
+    "oldIdx": 510,
+    "question": {
+      "kor": "AWS 클라우드의 어떤 이점이 모든 AWS 사용자의 총 사용량 때문에 사용 비용을 낮추는 데 도움이 됩니까?",
+      "eng": "Which benefit of the AWS Cloud helps companies achieve lower usage costs because of the aggregate usage of all AWS users?"
+    },
+    "choices": {
+      "kor": {
+        "A": "용량을 추측할 필요 없음",
+        "B": "몇 분 안에 전 세계로 확장할 수 있는 능력",
+        "C": "규모의 경제",
+        "D": "증가된 속도와 민첩성"
+      },
+      "eng": {
+        "A": "No need to guess capacity",
+        "B": "Ability to go global in minutes",
+        "C": "Economies of scale",
+        "D": "Increased speed and agility"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 20,
+    "oldIdx": 666,
+    "question": {
+      "kor": "변동 비용을 최소화하는 AWS 클라우드 컴퓨팅의 이점은 무엇입니까?",
+      "eng": "Which option is an advantage of AWS Cloud computing that minimizes variable costs?"
+    },
+    "choices": {
+      "kor": {
+        "A": "고가용성",
+        "B": "규모의 경제",
+        "C": "글로벌 도달",
+        "D": "민첩성"
+      },
+      "eng": {
+        "A": "High availability",
+        "B": "Economies of scale",
+        "C": "Global reach",
+        "D": "Agility"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 21,
+    "oldIdx": 34,
+    "question": {
+      "kor": "AWS 클라우드 컴퓨팅의 민첩성이란 무엇을 의미합니까? (2개를 선택하십시오)",
+      "eng": "What does the concept of agility mean in AWS Cloud computing? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS 리소스가 구현되는 속도",
+        "B": "AWS가 새로운 AWS 리전을 생성하는 속도",
+        "C": "빠르게 실험할 수 있는 능력",
+        "D": "낭비된 용량의 제거",
+        "E": "클라우드 컴퓨팅 진입 비용의 저렴함"
+      },
+      "eng": {
+        "A": "The speed at which AWS resources are implemented",
+        "B": "The speed at which AWS creates new AWS Regions",
+        "C": "The ability to experiment quickly",
+        "D": "The elimination of wasted capacity",
+        "E": "The low cost of entry into cloud computing"
+      }
+    },
+    "answers": [
+      "A",
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 22,
+    "oldIdx": 169,
+    "question": {
+      "kor": "회사는 클라우드 컴퓨팅의 이점에 대해 더 알고 싶어 합니다. 회사는 민첩성의 운영 장점을 이해하고자 합니다. AWS는 사용자에게 어떤 민첩성을 제공합니까?",
+      "eng": "A company wants to know more about the benefits offered by cloud computing. The company wants to understand the operational advantage of agility. How does AWS provide agility for users?"
+    },
+    "choices": {
+      "kor": {
+        "A": "여러 리전에 워크로드를 배포하여 고가용성을 보장하는 능력",
+        "B": "많은 서비스 및 리소스에 대해 종량제 모델",
+        "C": "인프라 관리 업무를 AWS 클라우드로 전환하는 능력",
+        "D": "최소한의 노력으로 리소스를 신속하게 프로비저닝하고 해제하는 능력"
+      },
+      "eng": {
+        "A": "The ability the ensure high availability by deploying workloads to multiple regions",
+        "B": "A pay-as-you-go model for many services and resources",
+        "C": "The ability to transfer infrastructure management to the AWS Cloud",
+        "D": "The ability to provision and deprovision resources quickly with minimal effort"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 23,
+    "oldIdx": 215,
+    "question": {
+      "kor": "회사는 AWS 클라우드에서 애플리케이션을 신속하게 개발, 테스트 및 출시할 수 있어야 합니다. 이 요구 사항을 충족하는 클라우드 컴퓨팅의 이점은 무엇입니까?",
+      "eng": "A company must be able to develop, test, and launch an application in the AWS Cloud quickly. Which advantage of cloud computing will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "용량 추측 중지",
+        "B": "고정 비용을 가변 비용으로 대체",
+        "C": "규모의 경제 달성",
+        "D": "속도와 민첩성 증가"
+      },
+      "eng": {
+        "A": "Stop guessing capacity",
+        "B": "Trade fixed expense for variable expense",
+        "C": "Achieve economies of scale",
+        "D": "Increase speed and agility"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 24,
+    "oldIdx": 299,
+    "question": {
+      "kor": "AWS 클라우드 이점 중 어떤 것이 회사에 컴퓨팅, 스토리지 및 데이터베이스 인프라에 몇 분 만에 액세스할 수 있도록 클라우드 리소스를 신속하게 배포할 수 있는 능력을 제공합니까?",
+      "eng": "Which AWS Cloud benefit gives a company the ability to quickly deploy cloud resources to access compute, storage, and database infrastructures in a matter of minutes?"
+    },
+    "choices": {
+      "kor": {
+        "A": "탄력성",
+        "B": "비용 절감",
+        "C": "민첩성",
+        "D": "신뢰성"
+      },
+      "eng": {
+        "A": "Elasticity",
+        "B": "Cost savings",
+        "C": "Agility",
+        "D": "Reliability"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 25,
+    "oldIdx": 420,
+    "question": {
+      "kor": "AWS 클라우드는 회사가 프로세스와 클라우드 인프라에 민첩성을 구축하는 데 어떻게 도움을 줍니까?",
+      "eng": "How does the AWS Cloud help companies build agility into their processes and cloud infrastructure?"
+    },
+    "choices": {
+      "kor": {
+        "A": "필요한 용량을 알지 못할 때 너무 많은 용량을 프로비저닝하는 것을 피할 수 있습니다.",
+        "B": "새로운 지리적 지역으로 확장할 수 있습니다.",
+        "C": "다양한 기술에 접근하여 빠르게 실험하고 혁신할 수 있습니다.",
+        "D": "IT 리소스를 사용할 때만 비용을 지불할 수 있습니다."
+      },
+      "eng": {
+        "A": "Companies can avoid provisioning too much capacity when they do not know how much capacity is required.",
+        "B": "Companies can expand into new geographic regions.",
+        "C": "Companies can access a range of technologies to experiment and innovate quickly.",
+        "D": "Companies can pay for IT resources only when they use the resources."
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 26,
+    "oldIdx": 522,
+    "question": {
+      "kor": "소매 회사가 새로운 모바일 앱을 구축 중입니다. 회사는 이 앱을 온프레미스 데이터 센터에 구축할지 AWS 클라우드에 구축할지 평가하고 있습니다. 이 앱을 AWS 클라우드에 구축할 때의 이점은 무엇입니까? (2개를 선택하십시오.)",
+      "eng": "A retail company is building a new mobile app. The company is evaluating whether to build the app at an on-premises data center or in the AWS Cloud. Which of the following are benefits of building this app in the AWS Cloud? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "대규모 초기 자본 지출과 낮은 변동 비용",
+        "B": "새로운 프로젝트를 시도하는 속도 증가",
+        "C": "인프라의 물리적 보안을 완전히 제어할 수 있음",
+        "D": "애플리케이션이 인기를 얻을 때 몇 분 안에 확장할 수 있는 유연성",
+        "E": "애플리케이션 서버를 호스팅할 특정 데이터 센터를 선택할 수 있는 능력"
+      },
+      "eng": {
+        "A": "A large, upfront capital expense and low variable expenses",
+        "B": "Increased speed for trying out new projects",
+        "C": "Complete control over the physical security of the infrastructure",
+        "D": "Flexibility to scale up in minutes as the application becomes popular",
+        "E": "Ability to pick the specific data centers that will host the application servers"
+      }
+    },
+    "answers": [
+      "B",
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 27,
+    "oldIdx": 624,
+    "question": {
+      "kor": "한 회사가 새로운 애플리케이션 인프라를 몇 분 안에 설정할 수 있는 능력이 필요합니다. 클라우드 컴퓨팅의 어느 장점이 이 요구 사항을 충족할 수 있습니까?",
+      "eng": "A company needs to have the ability to set up infrastructure for new applications in minutes. Which advantage of cloud computing will help the company meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "고정 비용을 변동 비용으로 교환",
+        "B": "몇 분 안에 글로벌로 이동",
+        "C": "속도와 민첩성 증가",
+        "D": "용량 추정을 멈춤"
+      },
+      "eng": {
+        "A": "Trade fixed expense for variable expense",
+        "B": "Go global in minutes",
+        "C": "Increase speed and agility",
+        "D": "Stop guessing capacity"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 28,
+    "oldIdx": 642,
+    "question": {
+      "kor": "한 회사가 온프레미스 인프라 대신 AWS 클라우드로 마이그레이션하려고 합니다. 이 마이그레이션의 이점은 무엇입니까? (두 가지 선택)",
+      "eng": "A company is migrating to the AWS Cloud instead of running its infrastructure on premises. Which of the following are advantages of this migration? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "보안 감사 수행 필요성 제거",
+        "B": "글로벌 도달 범위 및 민첩성 증가",
+        "C": "몇 분 안에 글로벌로 배포할 수 있는 능력",
+        "D": "IT 직원 비용 제거",
+        "E": "모든 컴퓨팅 서비스의 기본 중복성"
+      },
+      "eng": {
+        "A": "Elimination of the need to perform security auditing",
+        "B": "Increased global reach and agility",
+        "C": "Ability to deploy globally in minutes",
+        "D": "Elimination of the cost of IT staff members",
+        "E": "Redundancy by default for all compute services"
+      }
+    },
+    "answers": [
+      "B",
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 29,
+    "oldIdx": 719,
+    "question": {
+      "kor": "온프레미스 서버를 운영하는 회사가 새로운 사업 라인을 시작하기로 결정했습니다. 회사는 새로운 워크로드에 추가 서버가 필요하다고 판단합니다. 클라우드 컴퓨팅의 어떤 이점이 회사가 가능한 한 빨리 추가 인프라를 프로비저닝하는 데 도움이 될 수 있습니까?",
+      "eng": "A company that operates on-premises servers decides to start a new line of business. The company determines that additional servers are required for the new workloads. Which advantage of cloud computing can help the company to provision additional infrastructure as quickly as possible?"
+    },
+    "choices": {
+      "kor": {
+        "A": "대규모 경제의 혜택",
+        "B": "속도와 민첩성 증가",
+        "C": "고정비용을 가변비용으로 교환",
+        "D": "몇 분 안에 글로벌화"
+      },
+      "eng": {
+        "A": "Benefit from massive economies of scale",
+        "B": "Increase speed and agility",
+        "C": "Trade fixed expense for variable expense",
+        "D": "Go global in minutes"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 30,
+    "oldIdx": 40,
+    "question": {
+      "kor": "AWS 클라우드의 탄력성은 다음 중 무엇을 의미합니까? (2개를 선택하십시오)",
+      "eng": "Elasticity in the AWS Cloud refers to which of the following? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon EC2 인스턴스를 얼마나 빨리 재시작할 수 있는지",
+        "B": "수요 변화에 따라 리소스를 적절하게 조정하는 능력",
+        "C": "Amazon EC2 인스턴스가 사용할 수 있는 최대 RAM 용량",
+        "D": "종량제 청구 모델",
+        "E": "리소스를 필요한 때 쉽게 조달할 수 있는 능력"
+      },
+      "eng": {
+        "A": "How quickly an Amazon EC2 instance can be restarted",
+        "B": "The ability to rightsize resources as demand shifts",
+        "C": "The maximum amount of RAM an Amazon EC2 instance can use",
+        "D": "The pay-as-you-go billing model",
+        "E": "How easily resources can be procured when they are needed"
+      }
+    },
+    "answers": [
+      "B",
+      "E"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 31,
+    "oldIdx": 139,
+    "question": {
+      "kor": "AWS 클라우드의 특성 중 하나로 CPU 용량이 과소 활용되는 것을 제거할 수 있는 특성은 무엇입니까?",
+      "eng": "Which characteristic of the AWS Cloud helps users eliminate underutilized CPU capacity?"
+    },
+    "choices": {
+      "kor": {
+        "A": "민첩성",
+        "B": "탄력성",
+        "C": "신뢰성",
+        "D": "내구성"
+      },
+      "eng": {
+        "A": "Agility",
+        "B": "Elasticity",
+        "C": "Reliability",
+        "D": "Durability"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 32,
+    "oldIdx": 167,
+    "question": {
+      "kor": "AWS의 가치 제안 중 하나로 수요에 따라 인프라를 확장할 수 있는 사용자의 능력을 설명하는 것은 무엇입니까?",
+      "eng": "Which of the following is an AWS value proposition that describes a user’s ability to scale infrastructure based on demand?"
+    },
+    "choices": {
+      "kor": {
+        "A": "혁신 속도",
+        "B": "리소스 탄력성",
+        "C": "분리된 아키텍처",
+        "D": "글로벌 배포"
+      },
+      "eng": {
+        "A": "Speed of innovation",
+        "B": "Resource elasticity",
+        "C": "Decoupled architecture",
+        "D": "Global deployment"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 33,
+    "oldIdx": 347,
+    "question": {
+      "kor": "리소스를 필요할 때 배포하고 더 이상 필요하지 않을 때 리소스를 해제할 수 있는 능력을 설명하는 아키텍처 개념은 무엇입니까?",
+      "eng": "Which architecture concept describes the ability to deploy resources on demand and release resources when they are no longer needed?"
+    },
+    "choices": {
+      "kor": {
+        "A": "고가용성",
+        "B": "분리된 아키텍처",
+        "C": "복원력",
+        "D": "탄력성"
+      },
+      "eng": {
+        "A": "High availability",
+        "B": "Decoupled architecture",
+        "C": "Resilience",
+        "D": "Elasticity"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 34,
+    "oldIdx": 410,
+    "question": {
+      "kor": "AWS 클라우드가 사용자에게 제공하는 이점은 무엇입니까?",
+      "eng": "Which of the following is an advantage that the AWS Cloud provides to users?"
+    },
+    "choices": {
+      "kor": {
+        "A": "사용자는 인프라 용량 요구 사항을 추측할 필요가 없습니다.",
+        "B": "사용자는 IT 하드웨어의 단독 소유권을 유지함으로써 가변 비용을 줄일 수 있습니다.",
+        "C": "사용자는 기본 IT 인프라 하드웨어에 대한 제어를 유지합니다.",
+        "D": "사용자는 관리형 서비스의 운영 체제에 대한 제어를 유지합니다."
+      },
+      "eng": {
+        "A": "Users eliminate the need to guess about infrastructure capacity requirements.",
+        "B": "Users decrease their variable costs by maintaining sole ownership of IT hardware.",
+        "C": "Users maintain control of underlying IT infrastructure hardware.",
+        "D": "Users maintain control of operating systems for managed services."
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 35,
+    "oldIdx": 461,
+    "question": {
+      "kor": "회사가 리소스를 필요할 때 획득하고 더 이상 필요하지 않을 때 해제할 수 있는 기능이 필요합니다. 이 회사의 목표를 설명하는 AWS 개념은 무엇입니까?",
+      "eng": "A company needs the ability to acquire resources when the resources are needed. The company also needs the ability to release the resources when the resources are no longer needed. Which AWS concept represents the company's goals?"
+    },
+    "choices": {
+      "kor": {
+        "A": "확장성",
+        "B": "지속 가능성",
+        "C": "탄력성",
+        "D": "운영 우수성"
+      },
+      "eng": {
+        "A": "Scalability",
+        "B": "Sustainability",
+        "C": "Elasticity",
+        "D": "Operational excellence"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 36,
+    "oldIdx": 540,
+    "question": {
+      "kor": "클라우드 컴퓨팅의 어떤 이점이 애플리케이션이 지원하는 부하량에 따라 리소스를 확장하거나 축소할 수 있도록 합니까?",
+      "eng": "Which advantage of cloud computing allows users to scale resources up and down based on the amount of load that an application supports?"
+    },
+    "choices": {
+      "kor": {
+        "A": "몇 분 안에 전 세계로 확장",
+        "B": "용량 추측 중지",
+        "C": "대규모 경제의 혜택",
+        "D": "고정 비용을 가변 비용으로 전환"
+      },
+      "eng": {
+        "A": "Go global in minutes",
+        "B": "Stop guessing capacity",
+        "C": "Benefit from massive economies of scale",
+        "D": "Trade fixed expense for variable expense"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 37,
+    "oldIdx": 638,
+    "question": {
+      "kor": "한 회사가 필요에 따라 리소스를 자동으로 확보하고 더 이상 필요하지 않을 때 리소스를 해제할 수 있는 기능을 원합니다. 이 기능을 설명하는 클라우드 개념은 무엇입니까?",
+      "eng": "A company wants the ability to automatically acquire resources as needed and release the resources when they are no longer needed. Which cloud concept describes this functionality?"
+    },
+    "choices": {
+      "kor": {
+        "A": "가용성",
+        "B": "탄력성",
+        "C": "내구성",
+        "D": "신뢰성"
+      },
+      "eng": {
+        "A": "Availability",
+        "B": "Elasticity",
+        "C": "Durability",
+        "D": "Reliability"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 38,
+    "oldIdx": 673,
+    "question": {
+      "kor": "회사는 AWS 클라우드로 마이그레이션하려고 하며, 자원이 필요할 때 자원을 확보하고 더 이상 필요하지 않을 때 자원을 해제할 수 있어야 합니다. 이 요구 사항을 충족하는 AWS 클라우드의 아키텍처 개념은 무엇입니까?",
+      "eng": "A company wants to migrate to the AWS Cloud. The company needs the ability to acquire resources when the resources are necessary. The company also needs the ability to release those resources when the resources are no longer necessary. Which architecture concept of the AWS Cloud meets these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "탄력성 (Elasticity)",
+        "B": "가용성 (Availability)",
+        "C": "신뢰성 (Reliability)",
+        "D": "내구성 (Durability)"
+      },
+      "eng": {
+        "A": "Elasticity",
+        "B": "Availability",
+        "C": "Reliability",
+        "D": "Durability"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 39,
+    "oldIdx": 692,
+    "question": {
+      "kor": "한 회사가 새로운 사내 애플리케이션을 개발했습니다. 이 회사는 애플리케이션이 생성할 사용 수요를 예측하거나 결정할 방법이 없습니다. 이 회사가 추구하는 AWS 클라우드 컴퓨팅의 이점은 무엇입니까?",
+      "eng": "A company has developed a new In-house application. The company does not have a way to determine or predict the usage demand that the application will create. Which AWS Cloud computing benefit is the company seeking?"
+    },
+    "choices": {
+      "kor": {
+        "A": "사용하기 쉬움",
+        "B": "비용 효율적",
+        "C": "안전함",
+        "D": "확장 가능하고 높은 성능"
+      },
+      "eng": {
+        "A": "Easy to use",
+        "B": "Cost-effective",
+        "C": "Secure",
+        "D": "Scalable and high performance"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 40,
+    "oldIdx": 705,
+    "question": {
+      "kor": "어떤 회사가 새로운 애플리케이션을 테스트하고 싶어합니다. 어떤 AWS 원칙이 회사가 애플리케이션을 테스트하는 데 도움이 될까요?",
+      "eng": "A company wants to test a new application. Which AWS principle will help the company test the application?"
+    },
+    "choices": {
+      "kor": {
+        "A": "비용 할인을 받는 대가로 장기적 약속을 합니다.",
+        "B": "장기적인 약속 없이도 필요에 따라 확장하거나 축소할 수 있습니다.",
+        "C": "애플리케이션 인프라를 완벽하게 제어합니다.",
+        "D": "클라우드와 관련된 모든 유지 관리 작업을 관리합니다."
+      },
+      "eng": {
+        "A": "Make long-term commitments in exchange for a cost discount.",
+        "B": "Scale up and down when needed without any long-term commitments.",
+        "C": "Have total control over the application infrastructure.",
+        "D": "Manage all of the maintenance tasks associated with the cloud."
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 41,
+    "oldIdx": 77,
+    "question": {
+      "kor": "AWS 클라우드의 이점 중 하나인 높은 가용성은 무엇을 의미합니까?",
+      "eng": "Which AWS Cloud benefit is shown by an architecture’s ability to withstand failures with minimal downtime?"
+    },
+    "choices": {
+      "kor": {
+        "A": "민첩성",
+        "B": "탄력성",
+        "C": "확장성",
+        "D": "고가용성"
+      },
+      "eng": {
+        "A": "Agility",
+        "B": "Elasticity",
+        "C": "Scalability",
+        "D": "High availability"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 42,
+    "oldIdx": 562,
+    "question": {
+      "kor": "회사가 단일 AWS 리전의 여러 가용 영역에 애플리케이션을 배포하려고 합니다. 이 배포가 회사에 제공하는 이점은 무엇입니까?",
+      "eng": "A company wants to deploy an application in multiple Availability Zones in a single AWS Region. Which benefit will this deployment provide to the company?"
+    },
+    "choices": {
+      "kor": {
+        "A": "글로벌 고객을 위한 연결 성능 향상",
+        "B": "탄력적인 아키텍처와 높은 가용성 솔루션",
+        "C": "전반적인 데이터 저장 비용 절감",
+        "D": "수요가 낮은 기간 동안 가용 영역을 종료할 수 있는 능력"
+      },
+      "eng": {
+        "A": "Improved connection performance for global customers",
+        "B": "Resilient architecture and a highly available solution",
+        "C": "Reduced overall data storage costs",
+        "D": "Ability to shut down an Availability Zone during periods of low demand"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS global infrastructure",
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 43,
+    "oldIdx": 275,
+    "question": {
+      "kor": "회사가 다른 국가의 사용자에게 애플리케이션 가용성을 높이기 위해 AWS 리전을 사용할 때 적용하는 클라우드 컴퓨팅 이점은 무엇입니까?",
+      "eng": "Which cloud computing advantage is a company applying when it uses AWS Regions to increase application availability to users in different countries?"
+    },
+    "choices": {
+      "kor": {
+        "A": "종량제 가격",
+        "B": "용량 예측",
+        "C": "규모의 경제",
+        "D": "글로벌 도달 범위"
+      },
+      "eng": {
+        "A": "Pay-as-you-go pricing",
+        "B": "Capacity forecasting",
+        "C": "Economies of scale",
+        "D": "Global reach"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 44,
+    "oldIdx": 372,
+    "question": {
+      "kor": "클라우드 컴퓨팅의 어떤 이점이 회사에 AWS 리전, 가용 영역 및 엣지 로케이션 네트워크를 통해 전 세계 사용자에게 애플리케이션을 배포할 수 있는 기능을 제공합니까?",
+      "eng": "Which benefit of cloud computing gives a company the ability to deploy applications to users all over the world through a network of AWS Regions, Availability Zones, and edge locations?"
+    },
+    "choices": {
+      "kor": {
+        "A": "규모의 경제",
+        "B": "글로벌 도달 범위",
+        "C": "민첩성",
+        "D": "고가용성"
+      },
+      "eng": {
+        "A": "Economy of scale",
+        "B": "Global reach",
+        "C": "Agility",
+        "D": "High availability"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 45,
+    "oldIdx": 688,
+    "question": {
+      "kor": "회사는 전 세계 사용자에게 낮은 지연 시간을 제공하고자 합니다. 이 요구 사항을 충족할 수 있는 AWS 클라우드의 기능은 무엇입니까?",
+      "eng": "A company wants to provide low latency to its users around the world. Which feature of the AWS Cloud meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "글로벌 인프라",
+        "B": "사용량 기반 요금제",
+        "C": "관리형 서비스",
+        "D": "규모의 경제"
+      },
+      "eng": {
+        "A": "Global infrastructure",
+        "B": "Pay as-you-go pricing",
+        "C": "Managed services",
+        "D": "Economy of scale"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Advantage of Cloud Computing"
+    ]
+  },
+  {
+    "idx": 46,
+    "oldIdx": 527,
+    "question": {
+      "kor": "AWS 글로벌 인프라 구성 요소 간의 관계를 정확하게 설명하는 것은 무엇입니까? (2개를 선택하십시오.)",
+      "eng": "Which statements accurately describe the relationships among components of AWS global infrastructure? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS 리전보다 가용 영역이 더 많습니다.",
+        "B": "엣지 로케이션이 AWS 리전보다 더 많습니다.",
+        "C": "엣지 로케이션은 가용 영역입니다.",
+        "D": "AWS 리전보다 엣지 로케이션이 더 많습니다.",
+        "E": "AWS 리전보다 가용 영역이 더 많습니다."
+      },
+      "eng": {
+        "A": "There are more AWS Regions than Availability Zones.",
+        "B": "There are more edge locations than AWS Regions.",
+        "C": "An edge location is an Availability Zone.",
+        "D": "There are more AWS Regions than edge locations.",
+        "E": "There are more Availability Zones than AWS Regions."
+      }
+    },
+    "answers": [
+      "B",
+      "E"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS global infrastructure"
+    ]
+  },
+  {
+    "idx": 47,
+    "oldIdx": 529,
+    "question": {
+      "kor": "규정 준수를 위해 특정 지리적 영역에 애플리케이션을 호스팅해야 합니다. AWS 글로벌 인프라의 어떤 기능이 이 요구 사항을 충족하는 데 도움이 됩니까?",
+      "eng": "A company needs to host an application in a specific geographic area to comply with regulations. Which feature of the AWS global infrastructure will help the company meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "확장성",
+        "B": "글로벌 발자국",
+        "C": "가용성",
+        "D": "성능"
+      },
+      "eng": {
+        "A": "Scalability",
+        "B": "Global footprint",
+        "C": "Availability",
+        "D": "Performance"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS global infrastructure"
+    ]
+  },
+  {
+    "idx": 48,
+    "oldIdx": 22,
+    "question": {
+      "kor": "AWS 글로벌 인프라의 물리적 위치는 무엇입니까?",
+      "eng": "Which option is a physical location of the AWS global infrastructure?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS DataSync",
+        "B": "AWS 리전",
+        "C": "Amazon Connect",
+        "D": "AWS Organizations"
+      },
+      "eng": {
+        "A": "AWS DataSync",
+        "B": "AWS Region",
+        "C": "Amazon Connect",
+        "D": "AWS Organizations"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS global infrastructure"
+    ]
+  },
+  {
+    "idx": 49,
+    "oldIdx": 543,
+    "question": {
+      "kor": "AWS 클라우드 글로벌 인프라를 구성하는 AWS 서비스 또는 기능은 무엇입니까? (2개를 선택하십시오.)",
+      "eng": "Which AWS services or features form the AWS Cloud global infrastructure? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "가용 영역",
+        "B": "Amazon ElastiCache",
+        "C": "AWS 리전",
+        "D": "Amazon S3",
+        "E": "Amazon VPC"
+      },
+      "eng": {
+        "A": "Availability Zones",
+        "B": "Amazon ElastiCache",
+        "C": "AWS Regions",
+        "D": "Amazon S3",
+        "E": "Amazon VPC"
+      }
+    },
+    "answers": [
+      "A",
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS global infrastructure"
+    ]
+  },
+  {
+    "idx": 50,
+    "oldIdx": 47,
+    "question": {
+      "kor": "회사는 온프레미스 관계형 데이터베이스를 AWS 클라우드로 마이그레이션하려고 합니다. 회사는 현재 지리적 위치와 최대한 가까운 인프라를 사용하길 원합니다. 회사가 Amazon RDS 배포 영역을 선택하는 데 사용할 수 있는 AWS 서비스 또는 리소스는 무엇입니까?",
+      "eng": "A company wants to migrate its on-premises relational databases to the AWS Cloud. The company wants to use infrastructure as close to its current geographical location as possible. Which AWS service or resource should the company use to select its Amazon RDS deployment area?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Connect",
+        "B": "AWS Wavelength",
+        "C": "AWS 리전",
+        "D": "AWS Direct Connect"
+      },
+      "eng": {
+        "A": "Amazon Connect",
+        "B": "AWS Wavelength",
+        "C": "AWS Regions",
+        "D": "AWS Direct Connect"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS global infrastructure"
+    ]
+  },
+  {
+    "idx": 51,
+    "oldIdx": 147,
+    "question": {
+      "kor": "회사는 특정 지리적 영역에서 자연 재해가 발생해도 고가용성 환경에서 Amazon EC2 인스턴스를 운영하려고 합니다. 이 목표를 달성하는 방법은 무엇입니까?",
+      "eng": "A company wants its Amazon EC2 instances to operate in a highly available environment, even if there is a natural disaster in a particular geographic area. Which approach will achieve this goal?"
+    },
+    "choices": {
+      "kor": {
+        "A": "여러 AWS 리전에서 EC2 인스턴스 사용",
+        "B": "여러 Amazon CloudFront 위치에서 EC2 인스턴스 사용",
+        "C": "여러 엣지 위치에서 EC2 인스턴스 사용",
+        "D": "AWS Local Zones에서 EC2 인스턴스 사용"
+      },
+      "eng": {
+        "A": "Use EC2 instances in multiple AWS Regions.",
+        "B": "Use EC2 instances in multiple Amazon CloudFront locations.",
+        "C": "Use EC2 instances in multiple edge locations.",
+        "D": "Use EC2 instances in AWS Local Zones."
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS global infrastructure"
+    ]
+  },
+  {
+    "idx": 52,
+    "oldIdx": 472,
+    "question": {
+      "kor": "회사가 특정 지리적 영역에서 자연 재해가 발생하더라도 Amazon EC2 인스턴스가 고가용성 환경에서 운영되도록 하고자 합니다. 이 목표를 달성하는 솔루션은 무엇입니까?",
+      "eng": "A company wants its Amazon EC2 instances to operate in a highly available environment, even if there is a natural disaster in a particular geographic area. Which solution achieves this goal?"
+    },
+    "choices": {
+      "kor": {
+        "A": "여러 AWS 리전에 EC2 인스턴스 사용",
+        "B": "여러 엣지 로케이션에 EC2 인스턴스 사용",
+        "C": "동일한 가용 영역의 다른 AWS 리전에 EC2 인스턴스 사용",
+        "D": "Amazon CloudFront를 사용하여 EC2 인스턴스를 소스로 구성"
+      },
+      "eng": {
+        "A": "Use EC2 instances in multiple AWS Regions.",
+        "B": "Use EC2 instances in multiple edge locations.",
+        "C": "Use EC2 instances in the same Availability Zone but in different AWS Regions.",
+        "D": "Use Amazon CloudFront with the EC2 instances configured as the source."
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS global infrastructure"
+    ]
+  },
+  {
+    "idx": 53,
+    "oldIdx": 150,
+    "question": {
+      "kor": "하나 이상의 데이터 센터로 구성된 환경은 무엇입니까?",
+      "eng": "Which option is an environment that consists of one or more data centers?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon CloudFront",
+        "B": "가용 영역",
+        "C": "VPC",
+        "D": "AWS Outposts"
+      },
+      "eng": {
+        "A": "Amazon CloudFront",
+        "B": "Availability Zone",
+        "C": "VPC",
+        "D": "AWS Outposts"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS global infrastructure"
+    ]
+  },
+  {
+    "idx": 54,
+    "oldIdx": 441,
+    "question": {
+      "kor": "회사가 동일한 지리적 영역에 있지만 다른 위치에 있는 Amazon EC2 인스턴스를 사용하고자 합니다. 회사는 또한 여러 전력망과 독립적인 네트워킹 연결을 사용하고자 합니다. 이 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company wants its Amazon EC2 instances to be in different locations but share the same geographic area. The company also wants to use multiple power grids and independent networking connectivity for the EC2 instances. Which solution meets these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "동일한 AWS 리전의 여러 엣지 로케이션에 EC2 인스턴스를 사용",
+        "B": "동일한 AWS 리전의 여러 가용 영역에 EC2 인스턴스를 사용",
+        "C": "동일한 AWS 리전의 여러 Amazon Connect 위치에 EC2 인스턴스를 사용",
+        "D": "동일한 AWS 리전의 여러 AWS Artifact 위치에 EC2 인스턴스를 사용"
+      },
+      "eng": {
+        "A": "Use EC2 instances in multiple edge locations in the same AWS Region.",
+        "B": "Use EC2 instances in multiple Availability Zones in the same AWS Region.",
+        "C": "Use EC2 instances in multiple Amazon Connect locations in the same AWS Region.",
+        "D": "Use EC2 instances in multiple AWS Artifact locations in the same AWS Region."
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS global infrastructure"
+    ]
+  },
+  {
+    "idx": 55,
+    "oldIdx": 525,
+    "question": {
+      "kor": "회사는 Amazon RDS에 PostgreSQL 데이터베이스를 배포해야 합니다. 데이터베이스는 높은 가용성과 내결함성을 가져야 합니다. 이 요구 사항을 충족하기 위해 어떤 AWS 솔루션을 사용해야 합니까?",
+      "eng": "A company needs to deploy a PostgreSQL database into Amazon RDS. The database must be highly available and fault tolerant. Which AWS solution should the company use to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "단일 가용 영역의 Amazon RDS",
+        "B": "Amazon RDS 스냅샷",
+        "C": "다중 가용 영역의 Amazon RDS",
+        "D": "AWS Database Migration Service (AWS DMS)"
+      },
+      "eng": {
+        "A": "Amazon RDS with a single Availability Zone",
+        "B": "Amazon RDS snapshots",
+        "C": "Amazon RDS with multiple Availability Zones",
+        "D": "AWS Database Migration Service (AWS DMS)"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS global infrastructure"
+    ]
+  },
+  {
+    "idx": 56,
+    "oldIdx": 62,
+    "question": {
+      "kor": "AWS 인프라, AWS 서비스, API 및 도구를 데이터 센터, 코로케이션 환경 또는 온프레미스 시설로 확장할 수 있는 하이브리드 아키텍처를 지원하는 AWS 서비스는 무엇입니까?",
+      "eng": "Which AWS service supports a hybrid architecture that gives users the ability to extend AWS infrastructure, AWS services, APIs, and tools to data centers, co-location environments, or on-premises facilities?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Snowmobile",
+        "B": "AWS Local Zones",
+        "C": "AWS Outposts",
+        "D": "AWS Fargate"
+      },
+      "eng": {
+        "A": "AWS Snowmobile",
+        "B": "AWS Local Zones",
+        "C": "AWS Outposts",
+        "D": "AWS Fargate"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS Outposts"
+    ]
+  },
+  {
+    "idx": 57,
+    "oldIdx": 360,
+    "question": {
+      "kor": "회사가 일부 리소스를 AWS 클라우드에 배포하려고 합니다. 규제 요구 사항을 충족하기 위해 데이터는 로컬에 남아 있어야 하며 온프레미스에 있어야 합니다. 또한 AWS와 회사 리소스 간의 저지연이 필요합니다. 이 요구 사항을 충족할 수 있는 AWS 서비스 또는 기능은 무엇입니까?",
+      "eng": "A company wants to deploy some of its resources in the AWS Cloud. To meet regulatory requirements, the data must remain local and on premises. There must be low latency between AWS and the company resources. Which AWS service or feature can be used to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Local Zones",
+        "B": "가용 영역",
+        "C": "AWS Outposts",
+        "D": "AWS Wavelength Zones"
+      },
+      "eng": {
+        "A": "AWS Local Zones",
+        "B": "Availability Zones",
+        "C": "AWS Outposts",
+        "D": "AWS Wavelength Zones"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS Outposts"
+    ]
+  },
+  {
+    "idx": 58,
+    "oldIdx": 459,
+    "question": {
+      "kor": "회사가 AWS를 사용하고자 합니다. 회사는 온프레미스 시스템에 대한 저지연 액세스와 데이터 거주에 대한 엄격한 요구 사항이 있습니다. 이 요구 사항을 충족하기 위해 회사를 설계하는 데 사용할 AWS 서비스는 무엇입니까?",
+      "eng": "A company wants to use AWS. The company has stringent requirements about low-latency access to on-premises systems and data residency. Which AWS service should the company use to design a solution that meets these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Wavelength",
+        "B": "AWS Transit Gateway",
+        "C": "AWS Ground Station",
+        "D": "AWS Outposts"
+      },
+      "eng": {
+        "A": "AWS Wavelength",
+        "B": "AWS Transit Gateway",
+        "C": "AWS Ground Station",
+        "D": "AWS Outposts"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS Outposts"
+    ]
+  },
+  {
+    "idx": 59,
+    "oldIdx": 600,
+    "question": {
+      "kor": "회사는 온프레미스 공장 장비를 제어하는 애플리케이션을 보유하고 있습니다. 어떤 AWS 서비스를 사용하여 이 애플리케이션을 가장 낮은 지연 시간으로 실행할 수 있습니까?",
+      "eng": "A company has applications that control on-premises factory equipment. Which AWS service should the company use to run these applications with the LEAST latency?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Outposts",
+        "B": "Amazon EC2",
+        "C": "AWS Lambda",
+        "D": "AWS Fargate"
+      },
+      "eng": {
+        "A": "AWS Outposts",
+        "B": "Amazon EC2",
+        "C": "AWS Lambda",
+        "D": "AWS Fargate"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS Outposts"
+    ]
+  },
+  {
+    "idx": 60,
+    "oldIdx": 651,
+    "question": {
+      "kor": "회사는 규제 지침을 준수하기 위해 일부 워크로드를 온프레미스에서 실행해야 합니다. 회사는 온프레미스에서 실행할 필요가 없는 워크로드를 AWS 클라우드에서 실행하고 싶습니다. 회사는 온프레미스 워크로드와 클라우드 워크로드에 대해 동일한 API 호출을 사용할 수 있기를 원합니다. 이 요구 사항을 충족하기 위해 회사는 어떤 AWS 서비스 또는 기능을 사용해야 합니까?",
+      "eng": "A company needs to run some of its workloads on premises to comply with regulatory guidelines. The company wants to use the AWS Cloud to run workloads that are not required to be on premises. The company also wants to be able to use the same API calls for the on-premises workloads and the cloud workloads. Which AWS service or feature should the company use to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "전용 호스트",
+        "B": "AWS Outposts",
+        "C": "가용 영역",
+        "D": "AWS Wavelength"
+      },
+      "eng": {
+        "A": "Dedicated Hosts",
+        "B": "AWS Outposts",
+        "C": "Availability Zones",
+        "D": "AWS Wavelength"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS Outposts"
+    ]
+  },
+  {
+    "idx": 61,
+    "oldIdx": 714,
+    "question": {
+      "kor": "어떤 회사가 Amazon EC2 인스턴스에서 애플리케이션을 실행하려고 합니다. 회사는 규정 준수 요구 사항을 충족하기 위해 애플리케이션을 온프레미스에 유지해야 합니다. 어떤 AWS 오퍼링이 이러한 요구 사항을 충족할까요?",
+      "eng": "A company wants to run its application on Amazon EC2 instances. The company needs to keep the application on-premises to meet a compliance requirement. Which AWS offering will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "전용 인스턴스",
+        "B": "아마존 클라우드프론트",
+        "C": "AWS Fargate",
+        "D": "AWS 아웃포스트"
+      },
+      "eng": {
+        "A": "Dedicated Instances",
+        "B": "Amazon CloudFront",
+        "C": "AWS Fargate",
+        "D": "AWS Outposts"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS Outposts"
+    ]
+  },
+  {
+    "idx": 62,
+    "oldIdx": 717,
+    "question": {
+      "kor": "회사는 일부 워크로드를 AWS 클라우드에서 실행해야 합니다. 회사는 규정 준수 이유로 일부 워크로드를 자체 온사이트 데이터 센터에 보관해야 합니다. 어떤 AWS 서비스가 이러한 요구 사항을 충족할까요?",
+      "eng": "A company needs to run some of its workload in the AWS Cloud. The company needs to keep some of the workload in its own on-site data center due to compliance reasons. Which AWS service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Config",
+        "B": "AWS 아웃포스트",
+        "C": "아마존 라이트세일",
+        "D": "아마존 커넥트"
+      },
+      "eng": {
+        "A": "AWS Config",
+        "B": "AWS Outposts",
+        "C": "Amazon Lightsail",
+        "D": "Amazon Connect"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS Outposts"
+    ]
+  },
+  {
+    "idx": 63,
+    "oldIdx": 581,
+    "question": {
+      "kor": "어떤 AWS 서비스 또는 기능이 회사가 AWS 클라우드에서 자체적으로 논리적으로 격리된 구역을 갖도록 허용합니까?",
+      "eng": "Which AWS service or feature allows a company to have its own logically isolated section of the AWS Cloud?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS VPN",
+        "B": "Availability Zones",
+        "C": "Amazon Virtual Private Cloud (Amazon VPC)",
+        "D": "AWS Regions"
+      },
+      "eng": {
+        "A": "AWS VPN",
+        "B": "Availability Zones",
+        "C": "Amazon Virtual Private Cloud (Amazon VPC)",
+        "D": "AWS Regions"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS global infrastructure"
+    ]
+  },
+  {
+    "idx": 64,
+    "oldIdx": 307,
+    "question": {
+      "kor": "어떤 AWS 클라우드 배포 모델이 AWS Outposts를 애플리케이션 배포 인프라의 일부로 사용합니까?",
+      "eng": "Which AWS Cloud deployment model uses AWS Outposts as part of the application deployment infrastructure?"
+    },
+    "choices": {
+      "kor": {
+        "A": "온프레미스",
+        "B": "서버리스",
+        "C": "클라우드 네이티브",
+        "D": "하이브리드"
+      },
+      "eng": {
+        "A": "On-premises",
+        "B": "Serverless",
+        "C": "Cloud-native",
+        "D": "Hybrid"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Cloud deployment model"
+    ]
+  },
+  {
+    "idx": 65,
+    "oldIdx": 455,
+    "question": {
+      "kor": "사용자가 로컬 데이터 센터에서 작업을 AWS 클라우드와 로컬 데이터 센터 간에 분산된 아키텍처로 이동하는 것은 어떤 유형의 마이그레이션입니까?",
+      "eng": "A user is moving a workload from a local data center to an architecture that is distributed between the local data center and the AWS Cloud. Which type of migration is this?"
+    },
+    "choices": {
+      "kor": {
+        "A": "온프레미스에서 클라우드 네이티브로",
+        "B": "하이브리드에서 클라우드 네이티브로",
+        "C": "온프레미스에서 하이브리드로",
+        "D": "클라우드 네이티브에서 하이브리드로"
+      },
+      "eng": {
+        "A": "On-premises to cloud native",
+        "B": "Hybrid to cloud native",
+        "C": "On-premises to hybrid",
+        "D": "Cloud native to hybrid"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Cloud deployment model"
+    ]
+  },
+  {
+    "idx": 66,
+    "oldIdx": 341,
+    "question": {
+      "kor": "회사는 애플리케이션을 전 세계에 배포하기 위해 AWS 클라우드를 사용하려고 합니다. 이 요구 사항을 충족할 아키텍처 배포 모델은 무엇입니까?",
+      "eng": "A company wants to use the AWS Cloud to deploy an application globally. Which architecture deployment model should the company use to meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "멀티 리전",
+        "B": "단일 리전",
+        "C": "멀티 AZ",
+        "D": "단일 AZ"
+      },
+      "eng": {
+        "A": "Multi-Region",
+        "B": "Single-Region",
+        "C": "Multi-AZ",
+        "D": "Single-AZ"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Cloud deployment model"
+    ]
+  },
+  {
+    "idx": 67,
+    "oldIdx": 178,
+    "question": {
+      "kor": "회사는 AWS 클라우드로 애플리케이션을 마이그레이션하려고 합니다. 회사의 마이그레이션 준비 상태를 분석하고 평가하기 위해 사용할 수 있는 AWS 도구 또는 리소스는 무엇입니까?",
+      "eng": "A company is planning to migrate its application to the AWS Cloud. Which AWS tool or set of resources should the company use to analyze and assess its readiness for migration?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Cloud Adoption Framework (AWS CAF)",
+        "B": "AWS Pricing Calculator",
+        "C": "AWS Well-Architected Framework",
+        "D": "AWS Budgets"
+      },
+      "eng": {
+        "A": "AWS Cloud Adoption Framework (AWS CAF)",
+        "B": "AWS Pricing Calculator",
+        "C": "AWS Well-Architected Framework",
+        "D": "AWS Budgets"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CAF"
+    ]
+  },
+  {
+    "idx": 68,
+    "oldIdx": 258,
+    "question": {
+      "kor": "회사는 AWS 클라우드로 애플리케이션을 마이그레이션하고 싶어합니다. 회사는 비즈니스 전환 기회를 식별하고 우선 순위를 정하고 AWS 클라우드 준비 상태를 평가할 계획입니다. 이 요구 사항을 충족하는 AWS 서비스 또는 도구는 무엇입니까?",
+      "eng": "A company wants to migrate its applications to the AWS Cloud. The company plans to identify and prioritize any business transformation opportunities and evaluate its AWS Cloud readiness. Which AWS service or tool should the company use to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS 클라우드 채택 프레임워크 (AWS CAF)",
+        "B": "AWS 관리 서비스 (AMS)",
+        "C": "AWS 웰-아키텍티드 프레임워크",
+        "D": "AWS 마이그레이션 허브"
+      },
+      "eng": {
+        "A": "AWS Cloud Adoption Framework (AWS CAF)",
+        "B": "AWS Managed Services (AMS)",
+        "C": "AWS Well-Architected Framework",
+        "D": "AWS Migration Hub"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CAF"
+    ]
+  },
+  {
+    "idx": 69,
+    "oldIdx": 114,
+    "question": {
+      "kor": "회사는 AWS 클라우드로 마이그레이션을 계획하고 있습니다. 회사는 AWS Cloud Adoption Framework(AWS CAF) 관점을 사용하여 기능 격차를 식별하고자 합니다. 이 식별 활동은 클라우드 전환 여정의 어느 단계에 속합니까?",
+      "eng": "A company is planning its migration to the AWS Cloud. The company is identifying its capability gaps by using the AWS Cloud Adoption Framework (AWS CAF) perspectives. Which phase of the cloud transformation journey includes these identification activities?"
+    },
+    "choices": {
+      "kor": {
+        "A": "구상",
+        "B": "정렬",
+        "C": "확장",
+        "D": "출시"
+      },
+      "eng": {
+        "A": "Envision",
+        "B": "Align",
+        "C": "Scale",
+        "D": "Launch"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CAF"
+    ]
+  },
+  {
+    "idx": 70,
+    "oldIdx": 145,
+    "question": {
+      "kor": "AWS Cloud Adoption Framework(AWS CAF)의 클라우드 전환 여정 단계 중 비즈니스 결과를 가속화하는 데 클라우드가 어떻게 도움이 되는지 시연하는 단계는 무엇입니까?",
+      "eng": "Which cloud transformation journey phase of the AWS Cloud Adoption Framework (AWS CAF) focuses on demonstrating how the cloud helps accelerate business outcomes?"
+    },
+    "choices": {
+      "kor": {
+        "A": "확장",
+        "B": "구상",
+        "C": "정렬",
+        "D": "출시"
+      },
+      "eng": {
+        "A": "Scale",
+        "B": "Envision",
+        "C": "Align",
+        "D": "Launch"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CAF"
+    ]
+  },
+  {
+    "idx": 71,
+    "oldIdx": 335,
+    "question": {
+      "kor": "AWS Cloud Adoption Framework (AWS CAF) 클라우드 변환 여정의 추천 사항은 무엇입니까? (2개를 선택하십시오)",
+      "eng": "Which options are AWS Cloud Adoption Framework (AWS CAF) cloud transformation journey recommendations? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "Envision 단계",
+        "B": "Align 단계",
+        "C": "Assess 단계",
+        "D": "Mobilize 단계",
+        "E": "마이그레이션 및 현대화 단계"
+      },
+      "eng": {
+        "A": "Envision phase",
+        "B": "Align phase",
+        "C": "Assess phase",
+        "D": "Mobilize phase",
+        "E": "Migrate and modernize phase"
+      }
+    },
+    "answers": [
+      "A",
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CAF"
+    ]
+  },
+  {
+    "idx": 72,
+    "oldIdx": 351,
+    "question": {
+      "kor": "회사는 AWS 클라우드로 마이그레이션을 계획하고 있습니다. 회사는 마이그레이션 결정을 설명할 수 있는 측정 가능한 비즈니스 결과를 식별하고자 합니다. 클라우드 변환 여정의 어느 단계에서 이러한 활동이 포함됩니까?",
+      "eng": "A company is planning to migrate to the AWS Cloud. The company wants to identify measurable business outcomes that will explain the value of the company's decision to migrate. Which phase of the cloud transformation journey includes these activities?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Envision",
+        "B": "Align",
+        "C": "Scale",
+        "D": "Launch"
+      },
+      "eng": {
+        "A": "Envision",
+        "B": "Align",
+        "C": "Scale",
+        "D": "Launch"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CAF"
+    ]
+  },
+  {
+    "idx": 73,
+    "oldIdx": 134,
+    "question": {
+      "kor": "AWS Cloud Adoption Framework(AWS CAF)의 비즈니스 관점 기능은 무엇입니까?",
+      "eng": "Which option is an AWS Cloud Adoption Framework (AWS CAF) business perspective capability?"
+    },
+    "choices": {
+      "kor": {
+        "A": "문화 진화",
+        "B": "이벤트 관리",
+        "C": "데이터 수익화",
+        "D": "플랫폼 아키텍처"
+      },
+      "eng": {
+        "A": "Culture evolution",
+        "B": "Event management",
+        "C": "Data monetization",
+        "D": "Platform architecture"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CAF"
+    ]
+  },
+  {
+    "idx": 74,
+    "oldIdx": 379,
+    "question": {
+      "kor": "AWS Cloud Adoption Framework (AWS CAF)의 어떤 비즈니스 관점 기능이 있습니까?",
+      "eng": "Which AWS Cloud Adoption Framework (AWS CAF) capability belongs to the business perspective?"
+    },
+    "choices": {
+      "kor": {
+        "A": "프로그램 및 프로젝트 관리",
+        "B": "데이터 과학",
+        "C": "가시성",
+        "D": "변경 및 릴리스 관리"
+      },
+      "eng": {
+        "A": "Program and project management",
+        "B": "Data science",
+        "C": "Observability",
+        "D": "Change and release management"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CAF"
+    ]
+  },
+  {
+    "idx": 75,
+    "oldIdx": 676,
+    "question": {
+      "kor": "AWS Cloud Adoption Framework (AWS CAF) 관점 중 전략에 대한 질문에 답하고 실시간 통찰력을 제공하는 것은 무엇입니까?",
+      "eng": "Which AWS Cloud Adoption Framework (AWS CAF) perspective focuses on real-time insights and answers questions about strategy?"
+    },
+    "choices": {
+      "kor": {
+        "A": "운영 (Operations)",
+        "B": "사람 (People)",
+        "C": "비즈니스 (Business)",
+        "D": "플랫폼 (Platform)"
+      },
+      "eng": {
+        "A": "Operations",
+        "B": "People",
+        "C": "Business",
+        "D": "Platform"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CAF"
+    ]
+  },
+  {
+    "idx": 76,
+    "oldIdx": 709,
+    "question": {
+      "kor": "한 회사가 AWS Cloud Adoption Framework(AWS CAF)의 관점에 대해 알아보고 있습니다. AWS CAF의 어떤 관점이 전략 관리 역량을 다루고 있습니까?",
+      "eng": "A company is learning about the perspectives of the AWS Cloud Adoption Framework (AWS CAF). Which perspective of the AWS CAF addresses the strategy management capability?"
+    },
+    "choices": {
+      "kor": {
+        "A": "사업적 관점",
+        "B": "사람들의 관점",
+        "C": "거버넌스 관점",
+        "D": "운영 관점"
+      },
+      "eng": {
+        "A": "Business perspective",
+        "B": "People perspective",
+        "C": "Governance perspective",
+        "D": "Operations perspective"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CAF"
+    ]
+  },
+  {
+    "idx": 77,
+    "oldIdx": 45,
+    "question": {
+      "kor": "AWS 클라우드 도입 프레임워크(AWS CAF)의 역량 중 사람 관점에 해당하는 것은 무엇입니까?",
+      "eng": "Which AWS Cloud Adoption Framework (AWS CAF) capability belongs to the people perspective?"
+    },
+    "choices": {
+      "kor": {
+        "A": "데이터 아키텍처",
+        "B": "이벤트 관리",
+        "C": "클라우드 유연성",
+        "D": "전략적 파트너십"
+      },
+      "eng": {
+        "A": "Data architecture",
+        "B": "Event management",
+        "C": "Cloud fluency",
+        "D": "Strategic partnership"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CAF"
+    ]
+  },
+  {
+    "idx": 78,
+    "oldIdx": 315,
+    "question": {
+      "kor": "회사가 디지털적으로 유능한 고성능 인력을 유치하고 개발하여 인력을 변혁하려고 합니다. 회사는 기술 및 비기술적 기술의 적절한 혼합을 가진 다양한 포용적인 인력을 유치하고자 합니다. 이 요구 사항을 충족할 AWS Cloud Adoption Framework (AWS CAF) 관점은 무엇입니까?",
+      "eng": "A company wants to transform its workforce by attracting and developing a digitally fluent high-performance workforce. The company wants to attract a diverse and inclusive workforce with appropriate mix of technical and non-technical skills. Which AWS Cloud Adoption Framework (AWS CAF) perspective will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "비즈니스",
+        "B": "사람",
+        "C": "플랫폼",
+        "D": "운영"
+      },
+      "eng": {
+        "A": "Business",
+        "B": "People",
+        "C": "Platform",
+        "D": "Operations"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CAF"
+    ]
+  },
+  {
+    "idx": 79,
+    "oldIdx": 382,
+    "question": {
+      "kor": "AWS Cloud Adoption Framework (AWS CAF)의 사람 관점 기능은 무엇입니까? (2개를 선택하십시오)",
+      "eng": "Which options are AWS Cloud Adoption Framework (AWS CAF) people perspective capabilities? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "조직 정렬",
+        "B": "포트폴리오 관리",
+        "C": "조직 설계",
+        "D": "리스크 관리",
+        "E": "현대 애플리케이션 개발"
+      },
+      "eng": {
+        "A": "Organizational alignment",
+        "B": "Portfolio management",
+        "C": "Organization design",
+        "D": "Risk management",
+        "E": "Modern application development"
+      }
+    },
+    "answers": [
+      "A",
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CAF"
+    ]
+  },
+  {
+    "idx": 80,
+    "oldIdx": 383,
+    "question": {
+      "kor": "회사가 연속적인 성장과 학습 문화를 발전시키기 위해 기술과 비즈니스를 연결하려고 합니다. 이 연결을 제공하는 AWS Cloud Adoption Framework (AWS CAF) 관점은 무엇입니까?",
+      "eng": "A company needs a bridge between technology and business to help evolve to a culture of continuous growth and learning. Which perspective in the AWS Cloud Adoption Framework (AWS CAF) serves as this bridge?"
+    },
+    "choices": {
+      "kor": {
+        "A": "사람",
+        "B": "거버넌스",
+        "C": "운영",
+        "D": "보안"
+      },
+      "eng": {
+        "A": "People",
+        "B": "Governance",
+        "C": "Operations",
+        "D": "Security"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CAF"
+    ]
+  },
+  {
+    "idx": 81,
+    "oldIdx": 507,
+    "question": {
+      "kor": "회사가 AWS 클라우드로의 마이그레이션을 계획하고 있습니다. 회사는 조직적 변화를 수행하고 고객 문의 및 피드백에 더 신속하게 대응하고자 합니다. AWS Cloud Adoption Framework (AWS CAF)에 따르면 회사가 이러한 요구 사항을 충족하기 위해 수행해야 할 작업은 무엇입니까?",
+      "eng": "A company is planning to migrate to the AWS Cloud. The company is conducting organizational transformation and wants to become more responsive to customer inquiries and feedback. Which task should the company perform to meet these requirements, according to the AWS Cloud Adoption Framework (AWS CAF)?"
+    },
+    "choices": {
+      "kor": {
+        "A": "팀을 제품 및 가치 흐름에 맞추어 재정렬",
+        "B": "새로운 제품 및 서비스로 새로운 가치 제안 창출",
+        "C": "실행 가능한 인사이트를 만들기 위한 새로운 데이터 및 분석 플랫폼 사용",
+        "D": "레거시 인프라 마이그레이션 및 현대화"
+      },
+      "eng": {
+        "A": "Realign teams to focus on products and value streams.",
+        "B": "Create new value propositions with new products and services.",
+        "C": "Use a new data and analytics platform to create actionable insights.",
+        "D": "Migrate and modernize legacy infrastructure."
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CAF"
+    ]
+  },
+  {
+    "idx": 82,
+    "oldIdx": 670,
+    "question": {
+      "kor": "회사는 AWS 클라우드로의 마이그레이션을 계획하고 있습니다. 회사는 조직 변화를 진행 중이며 고객 문의 및 피드백에 더 민첩하게 대응하고 싶어합니다. AWS Cloud Adoption Framework (AWS CAF)에 따라 이러한 요구 사항을 충족하기 위해 회사가 수행해야 하는 작업은 무엇입니까? (두 가지 선택)",
+      "eng": "A company is planning to migrate to the AWS Cloud. The company is conducting organizational transformation and wants to become more responsive to customer inquiries and feedback. Which task should the company perform to meet these requirements, according to the AWS Cloud Adoption Framework (AWS CAF)? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "팀을 재조정하여 제품 및 가치 흐름에 집중하도록 한다.",
+        "B": "새로운 제품과 서비스로 새로운 가치 제안을 생성한다.",
+        "C": "민첩한 방법을 사용하여 신속하게 반복하고 발전시킨다.",
+        "D": "새로운 데이터 및 분석 플랫폼을 사용하여 실행 가능한 통찰력을 생성한다.",
+        "E": "레거시 인프라를 마이그레이션하고 현대화한다."
+      },
+      "eng": {
+        "A": "Realign teams to focus on products and value streams.",
+        "B": "Create new value propositions with new products and services.",
+        "C": "Use agile methods to rapidly iterate and evolve.",
+        "D": "Use a new data and analytics platform to create actionable insights.",
+        "E": "Migrate and modernize legacy infrastructure."
+      }
+    },
+    "answers": [
+      "A",
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CAF"
+    ]
+  },
+  {
+    "idx": 83,
+    "oldIdx": 6,
+    "question": {
+      "kor": "AWS 클라우드 도입 프레임워크(AWS CAF)의 기초 역량을 포함하는 관점은 무엇입니까?",
+      "eng": "Which option is a perspective that includes foundational capabilities of the AWS Cloud Adoption Framework (AWS CAF)?"
+    },
+    "choices": {
+      "kor": {
+        "A": "지속 가능성",
+        "B": "성능 효율성",
+        "C": "거버넌스",
+        "D": "신뢰성"
+      },
+      "eng": {
+        "A": "Sustainability",
+        "B": "Performance efficiency",
+        "C": "Governance",
+        "D": "Reliability"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CAF"
+    ]
+  },
+  {
+    "idx": 84,
+    "oldIdx": 142,
+    "question": {
+      "kor": "회사는 AWS 클라우드로 마이그레이션을 계획하고 있습니다. 회사는 AWS Cloud Adoption Framework(AWS CAF)를 사용하여 클라우드 전환 여정의 일환으로 비즈니스 결과를 정의하고 추적하려고 합니다. 이 요구 사항을 충족하는 AWS CAF의 거버넌스 관점 기능은 무엇입니까?",
+      "eng": "A company plans to migrate to the AWS Cloud. The company wants to use the AWS Cloud Adoption Framework (AWS CAF) to define and track business outcomes as part of its cloud transformation journey. Which AWS CAF governance perspective capability will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "혜택 관리",
+        "B": "위험 관리",
+        "C": "애플리케이션 포트폴리오 관리",
+        "D": "클라우드 재무 관리"
+      },
+      "eng": {
+        "A": "Benefits management",
+        "B": "Risk management",
+        "C": "Application portfolio management",
+        "D": "Cloud financial management"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CAF"
+    ]
+  },
+  {
+    "idx": 85,
+    "oldIdx": 344,
+    "question": {
+      "kor": "AWS Cloud Adoption Framework (AWS CAF) 거버넌스 관점 기능은 무엇입니까? (2개를 선택하십시오)",
+      "eng": "Which options are AWS Cloud Adoption Framework (AWS CAF) governance perspective capabilities? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "아이덴티티 및 접근 관리",
+        "B": "클라우드 재무 관리",
+        "C": "애플리케이션 포트폴리오 관리",
+        "D": "혁신 관리",
+        "E": "제품 관리"
+      },
+      "eng": {
+        "A": "Identity and access management",
+        "B": "Cloud financial management",
+        "C": "Application portfolio management",
+        "D": "Innovation management",
+        "E": "Product management"
+      }
+    },
+    "answers": [
+      "B",
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CAF"
+    ]
+  },
+  {
+    "idx": 86,
+    "oldIdx": 387,
+    "question": {
+      "kor": "어떤 AWS Cloud Adoption Framework (AWS CAF) 거버넌스 관점 기능이 있습니까? (2개를 선택하십시오)",
+      "eng": "Which AWS Cloud Adoption Framework (AWS CAF) capabilities belong to the governance perspective? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "프로그램 및 프로젝트 관리",
+        "B": "제품 관리",
+        "C": "포트폴리오 관리",
+        "D": "리스크 관리",
+        "E": "이벤트 관리"
+      },
+      "eng": {
+        "A": "Program and project management",
+        "B": "Product management",
+        "C": "Portfolio management",
+        "D": "Risk management",
+        "E": "Event management"
+      }
+    },
+    "answers": [
+      "A",
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CAF"
+    ]
+  },
+  {
+    "idx": 87,
+    "oldIdx": 601,
+    "question": {
+      "kor": "AWS Cloud Adoption Framework (AWS CAF)의 어떤 관점이 데이터 카탈로그에서 데이터 제품의 인벤토리를 정리하는 데 중점을 둡니까?",
+      "eng": "Which AWS Cloud Adoption Framework (AWS CAF) perspective focuses on organizing an inventory of data products in a data catalog?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Operations",
+        "B": "Governance",
+        "C": "Business",
+        "D": "Platform"
+      },
+      "eng": {
+        "A": "Operations",
+        "B": "Governance",
+        "C": "Business",
+        "D": "Platform"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CAF"
+    ]
+  },
+  {
+    "idx": 88,
+    "oldIdx": 101,
+    "question": {
+      "kor": "AWS Cloud Adoption Framework(AWS CAF)의 플랫폼 관점 기능은 무엇입니까?",
+      "eng": "Which option is an AWS Cloud Adoption Framework (AWS CAF) platform perspective capability?"
+    },
+    "choices": {
+      "kor": {
+        "A": "데이터 아키텍처",
+        "B": "데이터 보호",
+        "C": "데이터 거버넌스",
+        "D": "데이터 과학"
+      },
+      "eng": {
+        "A": "Data architecture",
+        "B": "Data protection",
+        "C": "Data governance",
+        "D": "Data science"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CAF"
+    ]
+  },
+  {
+    "idx": 89,
+    "oldIdx": 292,
+    "question": {
+      "kor": "AWS Cloud Adoption Framework(AWS CAF)의 플랫폼 관점에서 어떤 기능이 있습니까? (두 가지를 선택하세요)",
+      "eng": "Which capabilities are in the platform perspective of the AWS Cloud Adoption Framework (AWS CAF)? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "성능 및 용량 관리",
+        "B": "데이터 엔지니어링",
+        "C": "지속적 통합 및 지속적 전달(CI/CD)",
+        "D": "인프라 보호",
+        "E": "변경 및 릴리스 관리"
+      },
+      "eng": {
+        "A": "Performance and capacity management",
+        "B": "Data engineering",
+        "C": "Continuous integration and continuous delivery (CI/CD)",
+        "D": "Infrastructure protection",
+        "E": "Change and release management"
+      }
+    },
+    "answers": [
+      "B",
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CAF"
+    ]
+  },
+  {
+    "idx": 90,
+    "oldIdx": 381,
+    "question": {
+      "kor": "AWS Cloud Adoption Framework (AWS CAF)의 어느 관점에 잘 설계된 데이터 및 분석 아키텍처에 대한 기능이 포함됩니까?",
+      "eng": "Which perspective in the AWS Cloud Adoption Framework (AWS CAF) includes a capability for well-designed data and analytics architecture?"
+    },
+    "choices": {
+      "kor": {
+        "A": "보안",
+        "B": "거버넌스",
+        "C": "운영",
+        "D": "플랫폼"
+      },
+      "eng": {
+        "A": "Security",
+        "B": "Governance",
+        "C": "Operations",
+        "D": "Platform"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CAF"
+    ]
+  },
+  {
+    "idx": 91,
+    "oldIdx": 137,
+    "question": {
+      "kor": "AWS Cloud Adoption Framework(AWS CAF)의 보안 관점 기능은 무엇입니까? (2개를 선택하십시오)",
+      "eng": "Which options are AWS Cloud Adoption Framework (AWS CAF) security perspective capabilities? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "가시성",
+        "B": "사건 및 문제 관리",
+        "C": "사건 대응",
+        "D": "인프라 보호",
+        "E": "가용성 및 연속성"
+      },
+      "eng": {
+        "A": "Observability",
+        "B": "Incident and problem management",
+        "C": "Incident response",
+        "D": "Infrastructure protection",
+        "E": "Availability and continuity"
+      }
+    },
+    "answers": [
+      "C",
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CAF"
+    ]
+  },
+  {
+    "idx": 92,
+    "oldIdx": 325,
+    "question": {
+      "kor": "회사는 AWS 클라우드로 마이그레이션하고 있습니다. 회사는 잠재적인 보안 구성 오류 또는 예상치 못한 동작을 이해하고 식별하고자 합니다. 회사는 필요한 보호 제어를 우선 순위로 지정하고자 합니다. 이 요구 사항을 충족할 AWS Cloud Adoption Framework (AWS CAF) 보안 관점 기능은 무엇입니까?",
+      "eng": "A company is migrating to the AWS Cloud. The company wants to understand and identify potential security misconfigurations or unexpected behaviors. The company wants to prioritize any protective controls it might need. Which AWS Cloud Adoption Framework (AWS CAF) security perspective capability will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "아이덴티티 및 접근 관리",
+        "B": "위협 탐지",
+        "C": "플랫폼 엔지니어링",
+        "D": "가용성 및 연속성 관리"
+      },
+      "eng": {
+        "A": "Identity and access management",
+        "B": "Threat detection",
+        "C": "Platform engineering",
+        "D": "Availability and continuity management"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CAF"
+    ]
+  },
+  {
+    "idx": 93,
+    "oldIdx": 422,
+    "question": {
+      "kor": "AWS Cloud Adoption Framework (AWS CAF)의 어느 관점이 대규모로 아이덴티티와 권한을 관리하는 데 중점을 둡니까?",
+      "eng": "Which AWS Cloud Adoption Framework (AWS CAF) perspective focuses on managing identities and permissions at scale?"
+    },
+    "choices": {
+      "kor": {
+        "A": "운영",
+        "B": "플랫폼",
+        "C": "거버넌스",
+        "D": "보안"
+      },
+      "eng": {
+        "A": "Operations",
+        "B": "Platform",
+        "C": "Governance",
+        "D": "Security"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CAF"
+    ]
+  },
+  {
+    "idx": 94,
+    "oldIdx": 439,
+    "question": {
+      "kor": "AWS Cloud Adoption Framework (AWS CAF) 관점은 무엇입니까? (2개를 선택하십시오.)",
+      "eng": "Which options are AWS Cloud Adoption Framework (AWS CAF) perspectives? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "클라우드 유창성",
+        "B": "보안",
+        "C": "변화 가속화",
+        "D": "아키텍처",
+        "E": "비즈니스"
+      },
+      "eng": {
+        "A": "Cloud fluency",
+        "B": "Security",
+        "C": "Change acceleration",
+        "D": "Architecture",
+        "E": "Business"
+      }
+    },
+    "answers": [
+      "B",
+      "E"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CAF"
+    ]
+  },
+  {
+    "idx": 95,
+    "oldIdx": 252,
+    "question": {
+      "kor": "회사는 워크로드를 AWS로 마이그레이션했습니다. 회사는 AWS를 대규모로 도입하고 효율적이고 안전하게 운영하려고 합니다. 운영 지원을 위해 회사가 사용해야 하는 AWS 서비스 또는 프레임워크는 무엇입니까?",
+      "eng": "A company has migrated its workloads to AWS. The company wants to adopt AWS at scale and operate more efficiently and securely. Which AWS service or framework should the company use for operational support?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Support",
+        "B": "AWS Cloud Adoption Framework (AWS CAF)",
+        "C": "AWS Managed Services (AMS)",
+        "D": "AWS Well-Architected Framework"
+      },
+      "eng": {
+        "A": "AWS Support",
+        "B": "AWS Cloud Adoption Framework (AWS CAF)",
+        "C": "AWS Managed Services (AMS)",
+        "D": "AWS Well-Architected Framework"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CAF"
+    ]
+  },
+  {
+    "idx": 96,
+    "oldIdx": 127,
+    "question": {
+      "kor": "AWS Cloud Adoption Framework(AWS CAF)의 관점 중 구성 관리 및 패치 관리 기능을 포함하는 관점은 무엇입니까?",
+      "eng": "Which perspective in the AWS Cloud Adoption Framework (AWS CAF) includes capabilities for configuration management and patch management?"
+    },
+    "choices": {
+      "kor": {
+        "A": "플랫폼",
+        "B": "운영",
+        "C": "보안",
+        "D": "거버넌스"
+      },
+      "eng": {
+        "A": "Platform",
+        "B": "Operations",
+        "C": "Security",
+        "D": "Governance"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CAF"
+    ]
+  },
+  {
+    "idx": 97,
+    "oldIdx": 257,
+    "question": {
+      "kor": "회사는 워크로드 성능을 모니터링하고 싶어합니다. 회사는 클라우드 서비스가 비즈니스 요구 사항을 충족하는 수준으로 제공되는지 확인하고 싶어합니다. 이 요구 사항을 충족하는 AWS Cloud Adoption Framework (AWS CAF) 관점은 무엇입니까?",
+      "eng": "A company wants to monitor its workload performance. The company wants to ensure that the cloud services are delivered at a level that meets its business needs. Which AWS Cloud Adoption Framework (AWS CAF) perspective will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "비즈니스",
+        "B": "거버넌스",
+        "C": "플랫폼",
+        "D": "운영"
+      },
+      "eng": {
+        "A": "Business",
+        "B": "Governance",
+        "C": "Platform",
+        "D": "Operations"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CAF"
+    ]
+  },
+  {
+    "idx": 98,
+    "oldIdx": 301,
+    "question": {
+      "kor": "다음 중 AWS 계정 루트 사용자의 특징은 무엇입니까?",
+      "eng": "Which of the following is a characteristic of the AWS account root user?"
+    },
+    "choices": {
+      "kor": {
+        "A": "루트 사용자는 다중 요소 인증(MFA)으로 구성할 수 있는 유일한 사용자입니다.",
+        "B": "루트 사용자는 AWS Management Console에 액세스할 수 있는 유일한 사용자입니다.",
+        "C": "루트 사용자는 AWS 계정이 생성될 때 사용 가능한 첫 번째 로그인 아이덴티티입니다.",
+        "D": "루트 사용자는 비밀번호를 변경할 수 없습니다."
+      },
+      "eng": {
+        "A": "The root user is the only user that can be configured with multi-factor authentication (MFA).",
+        "B": "The root user is the only user that can access the AWS Management Console.",
+        "C": "The root user is the first sign-in identity that is available when an AWS account is created.",
+        "D": "The root user has a password that cannot be changed."
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Root user"
+    ]
+  },
+  {
+    "idx": 99,
+    "oldIdx": 348,
+    "question": {
+      "kor": "사용자가 AWS 계정 루트 사용자로 로그인해야 하는 작업은 무엇입니까?",
+      "eng": "Which task requires a user to sign in as the AWS account root user?"
+    },
+    "choices": {
+      "kor": {
+        "A": "IAM 사용자 삭제",
+        "B": "AWS 계정 삭제",
+        "C": "AWS Organizations에서 조직 생성",
+        "D": "Amazon EC2 인스턴스 삭제"
+      },
+      "eng": {
+        "A": "The deletion of IAM users",
+        "B": "The deletion of an AWS account",
+        "C": "The creation of an organization in AWS Organizations",
+        "D": "The deletion of Amazon EC2 instances"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Root user"
+    ]
+  },
+  {
+    "idx": 100,
+    "oldIdx": 584,
+    "question": {
+      "kor": "회사는 AWS Identity and Access Management (IAM)를 사용하고 있습니다. 누가 AWS 계정 루트 사용자 액세스 키를 관리할 수 있습니까?",
+      "eng": "A company is using AWS Identity and Access Management (IAM). Who can manage the access keys of the AWS account root user?"
+    },
+    "choices": {
+      "kor": {
+        "A": "동일 계정의 IAM 사용자로 권한이 부여된 사용자",
+        "B": "권한이 부여된 IAM 역할을 가진 모든 계정",
+        "C": "권한이 부여된 IAM 사용자 및 역할",
+        "D": "AWS 계정 소유자"
+      },
+      "eng": {
+        "A": "IAM users in the same account that have been granted permission",
+        "B": "IAM roles in any account that have been granted permission",
+        "C": "IAM users and roles that have been granted permission",
+        "D": "The AWS account owner"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Root user"
+    ]
+  },
+  {
+    "idx": 101,
+    "oldIdx": 75,
+    "question": {
+      "kor": "회사는 웹 인터페이스를 통해 AWS 클라우드 리소스를 관리하려고 합니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A company wants to manage its AWS Cloud resources through a web interface. Which AWS service will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Management Console",
+        "B": "AWS CLI",
+        "C": "AWS SDK",
+        "D": "AWS Cloud9"
+      },
+      "eng": {
+        "A": "AWS Management Console",
+        "B": "AWS CLI",
+        "C": "AWS SDK",
+        "D": "AWS Cloud9"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS Management Console"
+    ]
+  },
+  {
+    "idx": 102,
+    "oldIdx": 342,
+    "question": {
+      "kor": "회사는 다양한 AWS 서비스와 상호 작용하는 웹 애플리케이션을 만들고자 합니다. 이 요구 사항을 충족할 AWS 서비스 또는 리소스는 무엇입니까?",
+      "eng": "A company wants a web application to interact with various AWS services. Which AWS service or resource will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS CloudShell",
+        "B": "AWS Marketplace",
+        "C": "AWS Management Console",
+        "D": "AWS CLI"
+      },
+      "eng": {
+        "A": "AWS CloudShell",
+        "B": "AWS Marketplace",
+        "C": "AWS Management Console",
+        "D": "AWS CLI"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS Management Console"
+    ]
+  },
+  {
+    "idx": 103,
+    "oldIdx": 633,
+    "question": {
+      "kor": "어떤 AWS 서비스나 도구가 사용자가 AWS 서비스를 관리할 수 있는 그래픽 인터페이스를 제공합니까?",
+      "eng": "Which AWS service or tool provides users with a graphical interface that they can use to manage AWS services?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Copilot",
+        "B": "AWS CLI",
+        "C": "AWS Management Console",
+        "D": "AWS 소프트웨어 개발 키트 (SDK)"
+      },
+      "eng": {
+        "A": "AWS Copilot",
+        "B": "AWS CLI",
+        "C": "AWS Management Console",
+        "D": "AWS software development kits (SDKs)"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS Management Console"
+    ]
+  },
+  {
+    "idx": 104,
+    "oldIdx": 32,
+    "question": {
+      "kor": "사용자가 AWS CLI 또는 AWS API를 통해 AWS 리소스에 대한 프로그래밍적 액세스를 필요로 합니다. 적절한 액세스를 제공하는 옵션은 무엇입니까?",
+      "eng": "A user needs programmatic access to AWS resources through the AWS CLI or the AWS API. Which option will provide the user with the appropriate access?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Inspector",
+        "B": "액세스 키",
+        "C": "SSH 공개 키",
+        "D": "AWS Key Management Service (AWS KMS) 키"
+      },
+      "eng": {
+        "A": "Amazon Inspector",
+        "B": "Access keys",
+        "C": "SSH public keys",
+        "D": "AWS Key Management Service (AWS KMS) keys"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CLI",
+      "AWS access key"
+    ]
+  },
+  {
+    "idx": 105,
+    "oldidx": 605,
+    "question": {
+      "kor": "개발자가 AWS CLI를 사용하여 AWS와 상호 작용해야 합니다. 이 요구 사항을 충족하기 위해 개발자의 AWS 계정에서 프로비저닝해야 하는 보안 기능 또는 서비스는 무엇입니까?",
+      "eng": "A developer needs to interact with AWS by using the AWS CLI. Which security feature or AWS service must be provisioned in the developer's account to meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "사용자 이름과 비밀번호",
+        "B": "AWS Systems Manager",
+        "C": "루트 비밀번호 액세스",
+        "D": "AWS 액세스 키"
+      },
+      "eng": {
+        "A": "User name and password",
+        "B": "AWS Systems Manager",
+        "C": "Root password access",
+        "D": "AWS access key"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CLI",
+      "AWS access key"
+    ]
+  },
+  {
+    "idx": 106,
+    "oldIdx": 125,
+    "question": {
+      "kor": "회사는 AWS 서비스와 일관된 방법으로 상호 작용할 수 있는 통합 도구를 원합니다. 이 요구 사항을 충족하는 AWS 서비스 또는 도구는 무엇입니까?",
+      "eng": "A company wants a unified tool to provide a consistent method to interact with AWS services. Which AWS service or tool will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS CLI",
+        "B": "Amazon Elastic Container Service (Amazon ECS)",
+        "C": "AWS Cloud9",
+        "D": "AWS Virtual Private Network (AWS VPN)"
+      },
+      "eng": {
+        "A": "AWS CLI",
+        "B": "Amazon Elastic Container Service (Amazon ECS)",
+        "C": "AWS Cloud9",
+        "D": "AWS Virtual Private Network (AWS VPN)"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CLI"
+    ]
+  },
+  {
+    "idx": 107,
+    "oldIdx": 149,
+    "question": {
+      "kor": "시스템 관리자가 개발자를 위해 새 IAM 사용자를 생성하고 사용자 이름과 암호 대신 액세스 키를 할당했습니다. 액세스 키는 무엇을 위해 사용됩니까?",
+      "eng": "A systems administrator created a new IAM user for a developer and assigned the user an access key instead of a user name and password. What is the access key used for?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS 계정의 루트 사용자로 액세스",
+        "B": "AWS Management Console을 통해 AWS 계정에 액세스",
+        "C": "CLI를 통해 AWS 계정에 액세스",
+        "D": "회사의 모든 AWS 계정에 액세스"
+      },
+      "eng": {
+        "A": "To access the AWS account as the AWS account root user",
+        "B": "To access the AWS account through the AWS Management Console",
+        "C": "To access the AWS account through a CLI",
+        "D": "To access all of a company’s AWS accounts"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CLI"
+    ]
+  },
+  {
+    "idx": 108,
+    "oldIdx": 303,
+    "question": {
+      "kor": "회사의 애플리케이션 개발자들은 스크립트를 사용하여 AWS 서비스를 신속하게 프로비저닝하고 관리할 필요가 있습니다. 이 요구 사항을 충족하기 위해 개발자들이 사용해야 할 AWS 서비스는 무엇입니까?",
+      "eng": "A company's application developers need to quickly provision and manage AWS services by using scripts. Which AWS offering should the developers use to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS CLI",
+        "B": "AWS CodeBuild",
+        "C": "AWS Cloud Adoption Framework (AWS CAF)",
+        "D": "AWS Systems Manager Session Manager"
+      },
+      "eng": {
+        "A": "AWS CLI",
+        "B": "AWS CodeBuild",
+        "C": "AWS Cloud Adoption Framework (AWS CAF)",
+        "D": "AWS Systems Manager Session Manager"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CLI"
+    ]
+  },
+  {
+    "idx": 109,
+    "oldIdx": 534,
+    "question": {
+      "kor": "사용자가 자신의 IAM 사용자 비밀번호를 변경할 수 있는 권한을 부여받았습니다. 사용자가 비밀번호를 변경할 수 있는 AWS 서비스는 무엇입니까? (2개를 선택하십시오.)",
+      "eng": "A user has been granted permission to change their own IAM user password. Which AWS services can the user use to change the password? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Command Line Interface (AWS CLI)",
+        "B": "AWS Key Management Service (AWS KMS)",
+        "C": "AWS Management Console",
+        "D": "AWS Resource Access Manager (AWS RAM)",
+        "E": "AWS Secrets Manager"
+      },
+      "eng": {
+        "A": "AWS Command Line Interface (AWS CLI)",
+        "B": "AWS Key Management Sen/ice (AWS KMS)",
+        "C": "AWS Management Console",
+        "D": "AWS Resource Access Manager (AWS RAM)",
+        "E": "AWS Secrets Manager"
+      }
+    },
+    "answers": [
+      "A",
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS Management Console",
+      "AWS CLI"
+    ]
+  },
+  {
+    "idx": 110,
+    "oldIdx": 69,
+    "question": {
+      "kor": "웹 브라우저에서 AWS 도구 및 리소스에 대한 명령줄 액세스를 제공하는 AWS 서비스는 무엇입니까?",
+      "eng": "Which AWS service provides command line access to AWS tools and resources directly from a web browser?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS CloudHSM",
+        "B": "AWS CloudShell",
+        "C": "Amazon WorkSpaces",
+        "D": "AWS Cloud Map"
+      },
+      "eng": {
+        "A": "AWS CloudHSM",
+        "B": "AWS CloudShell",
+        "C": "Amazon WorkSpaces",
+        "D": "AWS Cloud Map"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CloudShell"
+    ]
+  },
+  {
+    "idx": 111,
+    "oldIdx": 189,
+    "question": {
+      "kor": "AWS Management Console에서 직접 시작할 수 있는 브라우저 기반, 사전 인증된 서비스는 무엇입니까?",
+      "eng": "Which AWS service or feature is a browser-based, pre-authenticated service that can be launched directly from the AWS Management Console?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS API",
+        "B": "AWS Lightsail",
+        "C": "AWS Cloud9",
+        "D": "AWS CloudShell"
+      },
+      "eng": {
+        "A": "AWS API",
+        "B": "AWS Lightsail",
+        "C": "AWS Cloud9",
+        "D": "AWS CloudShell"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS CloudShell"
+    ]
+  },
+  {
+    "idx": 112,
+    "oldIdx": 160,
+    "question": {
+      "kor": "AWS 계정 루트 사용자에 대한 모범 보안 사례는 무엇입니까? (2개를 선택하십시오)",
+      "eng": "Which actions are best practices for an AWS account root user? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "팀 구성원과 루트 사용자 자격 증명 공유",
+        "B": "계정에 대해 환경별로 여러 루트 사용자 생성",
+        "C": "루트 사용자에 대해 다중 요소 인증(MFA) 활성화",
+        "D": "일상적인 관리 작업을 위해 루트 사용자 대신 관리자 권한을 가진 IAM 사용자 생성",
+        "E": "루트 사용자 및 암호 대신 프로그래밍적 접근 사용"
+      },
+      "eng": {
+        "A": "Share root user credentials with team members.",
+        "B": "Create multiple root users for the account, separated by environment.",
+        "C": "Enable multi-factor authentication (MFA) on the root user.",
+        "D": "Create an IAM user with administrator privileges for daily administrative tasks, instead of using the root user.",
+        "E": "Use programmatic access instead of the root user and password."
+      }
+    },
+    "answers": [
+      "C",
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS best practice"
+    ]
+  },
+  {
+    "idx": 113,
+    "oldIdx": 177,
+    "question": {
+      "kor": "AWS 클라우드의 보안을 강화하기 위해 수행할 작업은 무엇입니까?",
+      "eng": "Which action will help increase security in the AWS Cloud?"
+    },
+    "choices": {
+      "kor": {
+        "A": "모든 IAM 사용자에 대해 프로그래밍적 접근 권한 활성화",
+        "B": "IAM 역할 대신 IAM 사용자 사용하여 권한 위임",
+        "C": "주기적으로 액세스 키 회전",
+        "D": "인라인 정책 대신 고객 관리 정책 사용"
+      },
+      "eng": {
+        "A": "Enable programmatic access for all IAM users.",
+        "B": "Use IAM users instead of IAM roles to delegate permissions.",
+        "C": "Rotate access keys on a reoccurring basis.",
+        "D": "Use inline policies instead of customer managed policies."
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS best practice"
+    ]
+  },
+  {
+    "idx": 114,
+    "oldIdx": 447,
+    "question": {
+      "kor": "회사가 AWS 계정의 보안을 강화하기 위해 취해야 하는 조치는 무엇입니까?",
+      "eng": "Which action should a company take to improve security in its AWS account?"
+    },
+    "choices": {
+      "kor": {
+        "A": "권한이 있는 사용자에 대해 다중 요소 인증(MFA) 요구",
+        "B": "루트 사용자 계정 제거",
+        "C": "AWS 계정 루트 사용자에 대한 액세스 키 생성",
+        "D": "권한이 있는 각 사용자에 대한 액세스 키 생성"
+      },
+      "eng": {
+        "A": "Require multi-factor authentication (MFA) for privileged users.",
+        "B": "Remove the root user account.",
+        "C": "Create an access key for the AWS account root user.",
+        "D": "Create an access key for each privileged user."
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS best practice"
+    ]
+  },
+  {
+    "idx": 115,
+    "oldIdx": 482,
+    "question": {
+      "kor": "AWS Identity and Access Management (IAM)를 사용하는 AWS 모범 사례 권장 사항은 무엇입니까? (2개를 선택하십시오.)",
+      "eng": "Which of the following are AWS best practice recommendations for the use of AWS Identity and Access Management (IAM)? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "일일 액세스를 위해 AWS 계정 루트 사용자 사용",
+        "B": "Amazon EC2에서 액세스 키 및 비밀 액세스 키 사용",
+        "C": "자격 증명을 정기적으로 회전",
+        "D": "시스템 관리자를 위한 공용 액세스 키 집합 생성",
+        "E": "다중 요소 인증(MFA) 구성"
+      },
+      "eng": {
+        "A": "Use the AWS account root user for daily access.",
+        "B": "Use access keys and secret access keys on Amazon EC2.",
+        "C": "Rotate credentials on a regular basis.",
+        "D": "Create a shared set of access keys for system administrators.",
+        "E": "Configure multi-factor authentication (MFA)."
+      }
+    },
+    "answers": [
+      "C",
+      "E"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS best practice"
+    ]
+  },
+  {
+    "idx": 116,
+    "oldIdx": 531,
+    "question": {
+      "kor": "구성 요소 실패가 발생해도 운영이 가능한 AWS 워크로드를 설계할 때 AWS의 모범 사례는 무엇입니까?",
+      "eng": "When designing AWS workloads to be operational even when there are component failures, what is an AWS best practice?"
+    },
+    "choices": {
+      "kor": {
+        "A": "분기별 재해 복구 테스트 수행",
+        "B": "주요 구성 요소를 us-east-1 리전에 배치",
+        "C": "자동 장애 조치(failover)를 건강한 리소스로 설계",
+        "D": "단일 Amazon EC2 인스턴스에 워크로드 설계"
+      },
+      "eng": {
+        "A": "Perform quarterly disaster recovery tests.",
+        "B": "Place the main component on the us-east-1 Region.",
+        "C": "Design for automatic failover to healthy resources.",
+        "D": "Design workloads to fit on a single Amazon EC2 instance."
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "AWS best practice"
+    ]
+  },
+  {
+    "idx": 117,
+    "oldIdx": 186,
+    "question": {
+      "kor": "회사는 2TB의 데이터를 전송해야 합니다. 이 데이터를 전송하는 데 비용이 들지 않는 전송 유형은 무엇입니까?",
+      "eng": "A company that uses AWS needs to transfer 2 TB of data. Which type of transfer of that data would result in no cost for the company?"
+    },
+    "choices": {
+      "kor": {
+        "A": "인터넷에서의 인바운드 데이터 전송",
+        "B": "인터넷으로의 아웃바운드 데이터 전송",
+        "C": "AWS 리전 간 데이터 전송",
+        "D": "가용 영역 간 데이터 전송"
+      },
+      "eng": {
+        "A": "Inbound data transfer from the internet",
+        "B": "Outbound data transfer to the internet",
+        "C": "Data transfer between AWS Regions",
+        "D": "Data transfer between Availability Zones"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "transfer fee"
+    ]
+  },
+  {
+    "idx": 118,
+    "oldIdx": 249,
+    "question": {
+      "kor": "AWS 공유 책임 모델에 따르면 AWS와 고객 간에 공유되는 제어는 무엇입니까?",
+      "eng": "Which option is a shared control between AWS and the customer, according to the AWS shared responsibility model?"
+    },
+    "choices": {
+      "kor": {
+        "A": "구성 관리",
+        "B": "물리적 및 환경적 제어",
+        "C": "데이터 무결성 인증",
+        "D": "신원 및 접근 관리"
+      },
+      "eng": {
+        "A": "Configuration management",
+        "B": "Physical and environmental controls",
+        "C": "Data integrity authentication",
+        "D": "Identity and access management"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 119,
+    "oldIdx": 585,
+    "question": {
+      "kor": "어떤 그룹이 AWS 계정 및 리소스의 보안 및 컴플라이언스에 대한 책임을 AWS와 함께 나누고 있습니까?",
+      "eng": "Which group shares responsibility with AWS for security and compliance of AWS accounts and resources?"
+    },
+    "choices": {
+      "kor": {
+        "A": "제3자 공급업체",
+        "B": "고객",
+        "C": "리셀러 파트너",
+        "D": "인터넷 제공업체"
+      },
+      "eng": {
+        "A": "Third-party vendors",
+        "B": "Customers",
+        "C": "Reseller partners",
+        "D": "Internet providers"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 120,
+    "oldIdx": 130,
+    "question": {
+      "kor": "AWS 공유 책임 모델에 따라 AWS와 고객 간에 공유되는 책임은 무엇입니까?",
+      "eng": "Which option is a shared responsibility between AWS and its customers under the AWS shared responsibility model?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon EC2 인스턴스 운영 체제 구성",
+        "B": "애플리케이션 파일 시스템 서버 측 암호화",
+        "C": "패치 관리",
+        "D": "물리적 인프라 보안"
+      },
+      "eng": {
+        "A": "Configuration of Amazon EC2 instance operating systems",
+        "B": "Application file system server-side encryption",
+        "C": "Patch management",
+        "D": "Security of the physical infrastructure"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 121,
+    "oldIdx": 99,
+    "question": {
+      "kor": "AWS 서비스를 사용할 때 AWS의 책임은 무엇입니까?",
+      "eng": "Which task is the responsibility of AWS when using AWS services?"
+    },
+    "choices": {
+      "kor": {
+        "A": "IAM 사용자 권한 관리",
+        "B": "아웃바운드 액세스에 대한 보안 그룹 규칙 생성",
+        "C": "물리적 및 환경적 제어 유지",
+        "D": "Amazon EC2 운영 체제 패치 적용"
+      },
+      "eng": {
+        "A": "Management of IAM user permissions",
+        "B": "Creation of security group rules for outbound access",
+        "C": "Maintenance of physical and environmental controls",
+        "D": "Application of Amazon EC2 operating system patches"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 122,
+    "oldIdx": 483,
+    "question": {
+      "kor": "AWS 공유 책임 모델에서 AWS가 책임지는 것은 무엇입니까?",
+      "eng": "Which option is AWS responsible for under the AWS shared responsibility model?"
+    },
+    "choices": {
+      "kor": {
+        "A": "네트워크 및 방화벽 구성",
+        "B": "클라이언트 측 데이터 암호화",
+        "C": "사용자 권한 관리",
+        "D": "하드웨어 및 인프라"
+      },
+      "eng": {
+        "A": "Network and firewall configuration",
+        "B": "Client-side data encryption",
+        "C": "Management of user permissions",
+        "D": "Hardware and infrastructure"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 123,
+    "oldIdx": 198,
+    "question": {
+      "kor": "AWS 공유 책임 모델에 따르면 AWS의 책임은 무엇입니까?",
+      "eng": "Which task is a responsibility of AWS, according to the AWS shared responsibility model?"
+    },
+    "choices": {
+      "kor": {
+        "A": "애플리케이션에 대한 신원 및 액세스 관리 구성",
+        "B": "AWS에 저장된 데이터에 대한 암호화 옵션 관리",
+        "C": "Amazon EC2 인스턴스에 대한 보안 그룹 구성",
+        "D": "인프라의 물리적 하드웨어 유지 관리"
+      },
+      "eng": {
+        "A": "Configure identity and access management for applications.",
+        "B": "Manage encryption options for data that is stored on AWS.",
+        "C": "Configure security groups for Amazon EC2 instances.",
+        "D": "Maintain the physical hardware of the infrastructure."
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 124,
+    "oldIdx": 437,
+    "question": {
+      "kor": "AWS 공유 책임 모델에서 \"클라우드의 보안\"은 무엇을 의미합니까?",
+      "eng": "What does \"security of the cloud\" refer to in the AWS shared responsibility model?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon EC2와 같은 AWS 서비스의 가용성",
+        "B": "모든 AWS 서비스를 실행하는 클라우드 인프라의 보안",
+        "C": "IAM 사용자를 위한 비밀번호 정책 구현",
+        "D": "AWS Network Firewall 파트너를 사용하여 고객 환경 보안"
+      },
+      "eng": {
+        "A": "Availability of AWS services such as Amazon EC2",
+        "B": "Security of the cloud infrastructure that runs all the AWS services",
+        "C": "Implementation of password policies for IAM users",
+        "D": "Security of customer environments by using AWS Network Firewall partners"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 125,
+    "oldIdx": 475,
+    "question": {
+      "kor": "Amazon WorkSpaces를 사용 중인 회사입니다. AWS 공유 책임 모델에 따라 AWS의 책임은 무엇입니까?",
+      "eng": "A company uses Amazon WorkSpaces. Which task is the responsibility of AWS, according to the AWS shared responsibility model?"
+    },
+    "choices": {
+      "kor": {
+        "A": "각 WorkSpaces 사용자 계정에 대해 다중 요소 인증(MFA) 설정",
+        "B": "WorkSpaces를 호스팅하는 AWS 인프라의 환경 안전 및 보안 보장",
+        "C": "AWS Identity and Access Management (IAM)를 통한 WorkSpaces 사용자 계정 보안 제공",
+        "D": "AWS CloudTrail을 구성하여 API 호출 및 사용자 활동 기록"
+      },
+      "eng": {
+        "A": "Set up multi-factor authentication (MFA) for each WorkSpaces user account.",
+        "B": "Ensure the environmental safety and security of the AWS infrastructure that hosts WorkSpaces.",
+        "C": "Provide security for WorkSpaces user accounts through AWS Identity and Access Management (IAM).",
+        "D": "Configure AWS CloudTrail to log API calls and user activity."
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 126,
+    "oldIdx": 239,
+    "question": {
+      "kor": "Amazon EC2 인스턴스를 배포한 회사가 있습니다. AWS 공유 책임 모델에 따라 AWS의 책임은 무엇입니까?",
+      "eng": "A company has deployed an Amazon EC2 instance. Which option is an AWS responsibility under the AWS shared responsibility model?"
+    },
+    "choices": {
+      "kor": {
+        "A": "애플리케이션 데이터 관리 및 암호화",
+        "B": "게스트 운영 체제의 업데이트 및 보안 패치 설치",
+        "C": "인프라 장치 구성",
+        "D": "각 인스턴스의 보안 그룹 구성"
+      },
+      "eng": {
+        "A": "Managing and encrypting application data",
+        "B": "Installing updates and security patches of guest operating system",
+        "C": "Configuration of infrastructure devices",
+        "D": "Configuration of security groups on each instance"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 127,
+    "oldIdx": 300,
+    "question": {
+      "kor": "다음 중 AWS 공유 책임 모델에 따라 전적으로 AWS의 책임은 무엇입니까?",
+      "eng": "Which of the following is entirely the responsibility of AWS, according to the AWS shared responsibility model?"
+    },
+    "choices": {
+      "kor": {
+        "A": "보안 인식 및 교육",
+        "B": "IAM 암호 정책 개발",
+        "C": "게스트 운영 체제 패치",
+        "D": "물리적 및 환경적 통제"
+      },
+      "eng": {
+        "A": "Security awareness and training",
+        "B": "Development of an IAM password policy",
+        "C": "Patching of the guest operating system",
+        "D": "Physical and environmental controls"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 128,
+    "oldIdx": 544,
+    "question": {
+      "kor": "AWS 공유 책임 모델에 따르면 다음 중 AWS의 책임은 무엇입니까? (2개를 선택하십시오.)",
+      "eng": "According to the AWS shared responsibility model, which of the following are AWS responsibilities? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "네트워크 인프라 및 가상화된 인프라",
+        "B": "애플리케이션 데이터의 보안",
+        "C": "게스트 운영 체제",
+        "D": "하드웨어의 물리적 보안",
+        "E": "자격 증명 및 정책"
+      },
+      "eng": {
+        "A": "Network infrastructure and virtualization of infrastructure",
+        "B": "Security of application data",
+        "C": "Guest operating systems",
+        "D": "Physical security of hardware",
+        "E": "Credentials and policies"
+      }
+    },
+    "answers": [
+      "A",
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 129,
+    "oldIdx": 334,
+    "question": {
+      "kor": "AWS 공유 책임 모델에 따라 AWS의 책임은 무엇입니까?",
+      "eng": "Which task is a responsibility of AWS, according to the AWS shared responsibility model?"
+    },
+    "choices": {
+      "kor": {
+        "A": "애플리케이션 데이터 암호화",
+        "B": "애플리케이션 사용자 인증",
+        "C": "물리적 네트워크 인프라 보호",
+        "D": "방화벽 구성"
+      },
+      "eng": {
+        "A": "Encryption of application data",
+        "B": "Authentication of application users",
+        "C": "Protection of physical network infrastructure",
+        "D": "Configuration of firewalls"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 130,
+    "oldIdx": 200,
+    "question": {
+      "kor": "AWS 공유 책임 모델에 따르면 AWS의 책임은 무엇입니까? (2개를 선택하십시오)",
+      "eng": "Which actions are the responsibility of AWS, according to the AWS shared responsibility model? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "가상화 계층 보안",
+        "B": "Amazon EC2 인스턴스의 운영 체제 패치",
+        "C": "IAM 사용자에 대한 엄격한 암호 정책 시행",
+        "D": "Amazon RDS 인스턴스의 운영 체제 패치",
+        "E": "보안 그룹 및 네트워크 ACL 구성"
+      },
+      "eng": {
+        "A": "Securing the virtualization layer",
+        "B": "Patching the operating system on Amazon EC2 instances",
+        "C": "Enforcing a strict password policy for IAM users",
+        "D": "Patching the operating system on Amazon RDS instances",
+        "E": "Configuring security groups and network ACLs"
+      }
+    },
+    "answers": [
+      "A",
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 131,
+    "oldIdx": 610,
+    "question": {
+      "kor": "AWS에 따르면 어떤 작업이 AWS의 책임입니까? (두 가지를 선택하십시오.)",
+      "eng": "Which tasks are the responsibility of AWS according to the AWS shared responsibility model? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Identity and Access Management (IAM) 구성",
+        "B": "Amazon EC2 인스턴스에서 보안 그룹 구성",
+        "C": "AWS 물리적 시설의 접근 보안",
+        "D": "Amazon EC2 인스턴스에서 실행되는 애플리케이션 패치",
+        "E": "인프라 패치 및 유지 관리 수행"
+      },
+      "eng": {
+        "A": "Configure AWS Identity and Access Management (IAM).",
+        "B": "Configure security groups on Amazon EC2 instances.",
+        "C": "Secure the access of physical AWS facilities.",
+        "D": "Patch applications that run on Amazon EC2 instances.",
+        "E": "Perform infrastructure patching and maintenance."
+      }
+    },
+    "answers": [
+      "C",
+      "E"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 132,
+    "oldIdx": 132,
+    "question": {
+      "kor": "AWS 공유 책임 모델에 따르면 AWS의 책임은 무엇입니까?",
+      "eng": "Which task is a responsibility of AWS, according to the AWS shared responsibility model?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon S3에 저장된 객체에 대한 클라이언트 측 암호화 활성화",
+        "B": "최소 권한 원칙을 준수하도록 IAM 보안 정책 구성",
+        "C": "Amazon EC2 인스턴스의 게스트 운영 체제 패치",
+        "D": "Nitro Hypervisor에 대한 업데이트 적용"
+      },
+      "eng": {
+        "A": "Enable client-side encryption for objects that are stored in Amazon S3.",
+        "B": "Configure IAM security policies to comply with the principle of least privilege.",
+        "C": "Patch the guest operating system on an Amazon EC2 instance.",
+        "D": "Apply updates to the Nitro Hypervisor."
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 133,
+    "oldIdx": 384,
+    "question": {
+      "kor": "AWS 공유 책임 모델에서 AWS의 책임은 무엇입니까?",
+      "eng": "Which option is a responsibility of AWS under the AWS shared responsibility model?"
+    },
+    "choices": {
+      "kor": {
+        "A": "애플리케이션 데이터 보안",
+        "B": "Amazon EC2 인스턴스에서 실행되는 애플리케이션의 패치 관리",
+        "C": "관리형 서비스의 기본 인프라 패치 관리",
+        "D": "애플리케이션 아이덴티티 및 액세스 관리"
+      },
+      "eng": {
+        "A": "Application data security",
+        "B": "Patch management for applications that run on Amazon EC2 instances",
+        "C": "Patch management of the underlying infrastructure for managed services",
+        "D": "Application identity and access management"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 134,
+    "oldIdx": 592,
+    "question": {
+      "kor": "다음 중 AWS 공유 책임 모델에 따라 AWS의 책임인 작업은 무엇입니까?",
+      "eng": "Which task is the responsibility of AWS, according to the AWS shared responsibility model?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon EC2 인스턴스에 대한 게스트 운영 체제 패치 적용",
+        "B": "인적 자원 정보 관리 시스템 (HRIM) 모니터링 제공",
+        "C": "Amazon RDS 인스턴스의 자동 백업 수행",
+        "D": "AWS 서비스 실행 비용 최적화"
+      },
+      "eng": {
+        "A": "Apply guest operating system patches to Amazon EC2 instances.",
+        "B": "Provide monitoring of human resources information management (HRIM) systems.",
+        "C": "Perform automated backups of Amazon RDS instances.",
+        "D": "Optimize the costs of running AWS services."
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 135,
+    "oldIdx": 173,
+    "question": {
+      "kor": "AWS 공유 책임 모델에 따르면 고객이 항상 관리해야 하는 것은 무엇입니까?",
+      "eng": "What is the customer ALWAYS responsible for managing, according to the AWS shared responsibility model?"
+    },
+    "choices": {
+      "kor": {
+        "A": "소프트웨어 라이선스",
+        "B": "네트워킹",
+        "C": "고객 데이터",
+        "D": "암호화 키"
+      },
+      "eng": {
+        "A": "Software licenses",
+        "B": "Networking",
+        "C": "Customer data",
+        "D": "Encryption keys"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 136,
+    "oldIdx": 105,
+    "question": {
+      "kor": "AWS 공유 책임 모델에 따르면 고객의 책임은 무엇입니까? (2개를 선택하십시오)",
+      "eng": "Which tasks are the customer’s responsibility, according to the AWS shared responsibility model? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "글로벌 인프라 설정",
+        "B": "클라이언트 측 데이터 암호화 수행",
+        "C": "IAM 자격 증명 구성",
+        "D": "엣지 위치 보안",
+        "E": "Amazon RDS DB 인스턴스 패치"
+      },
+      "eng": {
+        "A": "Establish the global infrastructure.",
+        "B": "Perform client-side data encryption.",
+        "C": "Configure IAM credentials.",
+        "D": "Secure edge locations.",
+        "E": "Patch Amazon RDS DB instances."
+      }
+    },
+    "answers": [
+      "B",
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 137,
+    "oldIdx": 282,
+    "question": {
+      "kor": "다음 중 AWS 공유 책임 모델에서 고객의 책임은 무엇입니까? (두 가지를 선택하세요)",
+      "eng": "Which of the following is the customer's responsibility under the AWS shared responsibility model? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "인프라 장치의 구성 유지",
+        "B": "하드웨어 인프라 내에서 패치 및 업데이트 유지",
+        "C": "게스트 운영 체제 및 애플리케이션의 구성 유지",
+        "D": "암호화 옵션에 대한 결정 관리",
+        "E": "인프라 하드웨어 유지"
+      },
+      "eng": {
+        "A": "Maintain the configuration of infrastructure devices.",
+        "B": "Maintain patching and updates within the hardware infrastructure.",
+        "C": "Maintain the configuration of guest operating systems and applications.",
+        "D": "Manage decisions involving encryption options.",
+        "E": "Maintain infrastructure hardware."
+      }
+    },
+    "answers": [
+      "C",
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 138,
+    "oldIdx": 627,
+    "question": {
+      "kor": "AWS 공유 책임 모델에 따라 고객의 책임인 작업은 무엇입니까? (두 가지 선택)",
+      "eng": "Which tasks are responsibilities of the customer, according to the AWS shared responsibility model? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "가상화 계층 보안",
+        "B": "데이터 암호화 및 데이터 무결성 유지",
+        "C": "Amazon RDS 운영 체제 패치",
+        "D": "ID 및 액세스 관리 제어 유지",
+        "E": "가용 영역 보안"
+      },
+      "eng": {
+        "A": "Secure the virtualization layer.",
+        "B": "Encrypt data and maintain data integrity.",
+        "C": "Patch the Amazon RDS operating system.",
+        "D": "Maintain identity and access management controls.",
+        "E": "Secure Availability Zones."
+      }
+    },
+    "answers": [
+      "B",
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 139,
+    "oldIdx": 545,
+    "question": {
+      "kor": "회사는 데이터베이스 서비스로 Amazon Aurora를 사용하고 있습니다. 회사는 데이터베이스와 데이터베이스 백업을 암호화하고자 합니다. AWS 공유 책임 모델에 따르면 데이터베이스 클러스터와 데이터베이스 스냅샷의 암호화를 관리하는 주체는 누구입니까?",
+      "eng": "A company uses Amazon Aurora as its database service. The company wants to encrypt its databases and database backups. Which party manages the encryption of the database clusters and database snapshots, according to the AWS shared responsibility model?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS",
+        "B": "회사",
+        "C": "AWS 마켓플레이스 파트너",
+        "D": "제3자 파트너"
+      },
+      "eng": {
+        "A": "AWS",
+        "B": "The company",
+        "C": "AWS Marketplace partners",
+        "D": "Third-party partners"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 140,
+    "oldIdx": 146,
+    "question": {
+      "kor": "AWS 공유 책임 모델에 따라 고객의 책임은 무엇입니까?",
+      "eng": "Which option is a customer responsibility under the AWS shared responsibility model?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon EC2 인스턴스의 하드웨어 유지 보수",
+        "B": "애플리케이션 데이터 보안",
+        "C": "데이터 센터의 물리적 보안",
+        "D": "VPC 구성 요소 유지 보수"
+      },
+      "eng": {
+        "A": "Maintenance of underlying hardware of Amazon EC2 instances",
+        "B": "Application data security",
+        "C": "Physical security of data centers",
+        "D": "Maintenance of VPC components"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 141,
+    "oldIdx": 163,
+    "question": {
+      "kor": "회사는 Amazon S3 버킷과 온프레미스 애플리케이션 간에 데이터를 전송하려고 합니다. AWS 공유 책임 모델에 따르면 이 데이터의 보안에 대한 책임은 누구에게 있습니까?",
+      "eng": "A company needs to transfer data between an Amazon S3 bucket and an on-premises application. Who is responsible for the security of this data, according to the AWS shared responsibility model?"
+    },
+    "choices": {
+      "kor": {
+        "A": "회사",
+        "B": "AWS",
+        "C": "방화벽 공급업체",
+        "D": "AWS Marketplace 파트너"
+      },
+      "eng": {
+        "A": "The company",
+        "B": "AWS",
+        "C": "Firewall vendor",
+        "D": "AWS Marketplace partner"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 142,
+    "oldIdx": 297,
+    "question": {
+      "kor": "AWS 공유 책임 모델에 따르면 IAM 사용자 액세스 및 비밀 키를 관리하는 책임은 누구에게 있습니까?",
+      "eng": "Who is responsible for managing IAM user access and secret keys according to the AWS shared responsibility model?"
+    },
+    "choices": {
+      "kor": {
+        "A": "IAM 액세스 및 비밀 키는 정적이므로 회전할 필요가 없습니다.",
+        "B": "고객이 키를 회전할 책임이 있습니다.",
+        "C": "AWS는 필요할 때마다 키를 회전합니다.",
+        "D": "AWS Support 팀이 고객의 요청에 따라 키를 회전합니다."
+      },
+      "eng": {
+        "A": "IAM access and secret keys are static, so there is no need to rotate them.",
+        "B": "The customer is responsible for rotating keys.",
+        "C": "AWS will rotate the keys whenever required.",
+        "D": "The AWS Support team will rotate keys when requested by the customer."
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 143,
+    "oldIdx": 29,
+    "question": {
+      "kor": "AWS 공유 책임 모델에 따르면 고객의 책임은 무엇입니까? (2개를 선택하십시오)",
+      "eng": "Which tasks are customer responsibilities, according to the AWS shared responsibility model? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS에서 제공한 보안 그룹 방화벽 구성",
+        "B": "AWS 클라우드에 있는 회사 자산 분류",
+        "C": "Amazon S3 버킷에 사용할 가용 영역 결정",
+        "D": "Amazon DynamoDB의 패치 또는 업그레이드",
+        "E": "AWS Lambda에서 실행할 Amazon EC2 인스턴스 선택"
+      },
+      "eng": {
+        "A": "Configure the AWS provided security group firewall.",
+        "B": "Classify company assets in the AWS Cloud.",
+        "C": "Determine which Availability Zones to use for Amazon S3 buckets.",
+        "D": "Patch or upgrade Amazon DynamoDB.",
+        "E": "Select Amazon EC2 instances to run AWS Lambda on."
+      }
+    },
+    "answers": [
+      "A",
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 144,
+    "oldIdx": 79,
+    "question": {
+      "kor": "AWS 공유 책임 모델에 따르면 고객의 책임은 무엇입니까?",
+      "eng": "Which task is the customer’s responsibility, according to the AWS shared responsibility model?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS 클라우드의 보안을 유지",
+        "B": "방화벽 및 네트워크 구성",
+        "C": "Amazon RDS 인스턴스의 운영 체제 패치",
+        "D": "물리적 및 환경적 제어 구현"
+      },
+      "eng": {
+        "A": "Maintain the security of the AWS Cloud.",
+        "B": "Configure firewalls and networks.",
+        "C": "Patch the operating system of Amazon RDS instances.",
+        "D": "Implement physical and environmental controls."
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 145,
+    "oldIdx": 156,
+    "question": {
+      "kor": "AWS 공유 책임 모델에 따르면 고객의 책임은 무엇입니까?",
+      "eng": "Which task is a customer’s responsibility, according to the AWS shared responsibility model?"
+    },
+    "choices": {
+      "kor": {
+        "A": "게스트 운영 체제 관리",
+        "B": "인프라 장치 구성 유지",
+        "C": "호스트 운영 체제 및 가상화 관리",
+        "D": "가용 영역을 지원하는 소프트웨어 유지"
+      },
+      "eng": {
+        "A": "Management of the guest operating systems",
+        "B": "Maintenance of the configuration of infrastructure devices",
+        "C": "Management of the host operating systems and virtualization",
+        "D": "Maintenance of the software that powers Availability Zones"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 146,
+    "oldIdx": 293,
+    "question": {
+      "kor": "AWS 공유 책임 모델에 따르면 고객이 최신 보안 업데이트 및 패치를 적용해야 하는 것은 무엇입니까?",
+      "eng": "According to the AWS shared responsibility model, the customer is responsible for applying the latest security updates and patches for which of the following?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon DynamoDB",
+        "B": "Amazon EC2 인스턴스",
+        "C": "Amazon RDS 인스턴스",
+        "D": "Amazon S3"
+      },
+      "eng": {
+        "A": "Amazon DynamoDB",
+        "B": "Amazon EC2 instances",
+        "C": "Amazon RDS instances",
+        "D": "Amazon S3"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 147,
+    "oldIdx": 497,
+    "question": {
+      "kor": "AWS 공유 책임 모델에 따르면 고객의 책임은 무엇입니까?",
+      "eng": "According to the AWS shared responsibility model, which task is the customer's responsibility?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Lambda를 실행하는 데 필요한 인프라 유지 관리",
+        "B": "Amazon DynamoDB 인스턴스의 운영 체제 업데이트",
+        "C": "Amazon S3 인프라 유지 관리",
+        "D": "Amazon EC2 인스턴스의 게스트 운영 체제 업데이트"
+      },
+      "eng": {
+        "A": "Maintaining the infrastructure needed to run AWS Lambda",
+        "B": "Updating the operating system of Amazon DynamoDB instances",
+        "C": "Maintaining Amazon S3 infrastructure",
+        "D": "Updating the guest operating system on Amazon EC2 instances"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 148,
+    "oldIdx": 535,
+    "question": {
+      "kor": "AWS 공유 책임 모델에 따라 고객의 책임은 무엇입니까?",
+      "eng": "Which task is the customer's responsibility, according to the AWS shared responsibility model?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon EC2 인스턴스에 배포된 게스트 운영 체제 패치",
+        "B": "AWS 데이터 센터에 대한 물리적 접근 제어",
+        "C": "AWS 하드웨어 기반에 대한 접근 제어",
+        "D": "Amazon S3에 배포된 호스트 운영 체제 패치"
+      },
+      "eng": {
+        "A": "Patch a guest operating system that is deployed on an Amazon EC2 instance.",
+        "B": "Control physical access to an AWS data center.",
+        "C": "Control access to AWS underlying hardware.",
+        "D": "Patch a host operating system that is deployed on Amazon S3."
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 149,
+    "oldIdx": 38,
+    "question": {
+      "kor": "전자 상거래 회사는 IT 인프라를 온프레미스 데이터 센터에서 AWS 클라우드로 마이그레이션했습니다. 회사의 직접적인 책임은 무엇입니까?",
+      "eng": "An ecommerce company has migrated its IT infrastructure from an on-premises data center to the AWS Cloud. Which cost is the company’s direct responsibility?"
+    },
+    "choices": {
+      "kor": {
+        "A": "애플리케이션 소프트웨어 라이선스 비용",
+        "B": "AWS의 하드웨어 인프라 비용",
+        "C": "AWS 서버의 전력 비용",
+        "D": "AWS 데이터 센터의 물리적 보안 비용"
+      },
+      "eng": {
+        "A": "Cost of application software licenses",
+        "B": "Cost of the hardware infrastructure on AWS",
+        "C": "Cost of power for the AWS servers",
+        "D": "Cost of physical security for the AWS data center"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 150,
+    "oldIdx": 631,
+    "question": {
+      "kor": "AWS 공유 책임 모델에 따라 고객의 책임은 다음 중 무엇입니까?",
+      "eng": "Under the AWS shared responsibility model, which of the following is a responsibility of the customer?"
+    },
+    "choices": {
+      "kor": {
+        "A": "데이터 센터를 떠나기 전에 디스크 드라이브를 분쇄",
+        "B": "하이퍼바이저 수준에서 패킷을 수집하거나 트래픽을 수집하는 고객을 방지",
+        "C": "게스트 운영 체제를 최신 보안 패치로 패치",
+        "D": "데이터 센터의 물리적 모니터링을 제공하는 보안 시스템 유지"
+      },
+      "eng": {
+        "A": "Shred disk drives before they leave a data center.",
+        "B": "Prevent customers from gathering packets or collecting traffic at the hypervisor level.",
+        "C": "Patch the guest operating system with the latest security patches.",
+        "D": "Maintain security systems that provide physical monitoring of data centers."
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 151,
+    "oldIdx": 8,
+    "question": {
+      "kor": "회사는 Amazon EC2 인스턴스에서 NoSQL 데이터베이스를 실행하려고 합니다. 이 시나리오에서 AWS의 책임은 무엇입니까?",
+      "eng": "A company wants to run a NoSQL database on Amazon EC2 instances. Which task is the responsibility of AWS in this scenario?"
+    },
+    "choices": {
+      "kor": {
+        "A": "EC2 인스턴스의 게스트 운영 체제 업데이트",
+        "B": "데이터베이스 계층에서 높은 가용성 유지",
+        "C": "EC2 인스턴스를 호스팅하는 물리적 인프라 패치",
+        "D": "보안 그룹 방화벽 구성"
+      },
+      "eng": {
+        "A": "Update the guest operating system of the EC2 instances.",
+        "B": "Maintain high availability at the database layer.",
+        "C": "Patch the physical infrastructure that hosts the EC2 instances.",
+        "D": "Configure the security group firewall."
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 152,
+    "oldIdx": 88,
+    "question": {
+      "kor": "회사가 Amazon EC2 인스턴스에서 데이터베이스를 호스팅할 때 AWS의 책임은 무엇입니까?",
+      "eng": "Which responsibility belongs to AWS when a company hosts its databases on Amazon EC2 instances?"
+    },
+    "choices": {
+      "kor": {
+        "A": "데이터베이스 백업",
+        "B": "데이터베이스 소프트웨어 패치",
+        "C": "운영 체제 패치",
+        "D": "운영 체제 설치"
+      },
+      "eng": {
+        "A": "Database backups",
+        "B": "Database software patches",
+        "C": "Operating system patches",
+        "D": "Operating system installations"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 153,
+    "oldIdx": 243,
+    "question": {
+      "kor": "AWS 공유 책임 모델에 따르면 고객의 책임인 유지 보수 작업은 무엇입니까?",
+      "eng": "Which maintenance task is the customer’s responsibility, according to the AWS shared responsibility model?"
+    },
+    "choices": {
+      "kor": {
+        "A": "가용 영역 간의 물리적 연결",
+        "B": "네트워크 스위치 유지 관리",
+        "C": "하드웨어 업데이트 및 펌웨어 패치",
+        "D": "Amazon EC2 업데이트 및 보안 패치"
+      },
+      "eng": {
+        "A": "Physical connectivity among Availability Zones",
+        "B": "Network switch maintenance",
+        "C": "Hardware updates and firmware patches",
+        "D": "Amazon EC2 updates and security patches"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 154,
+    "oldIdx": 498,
+    "question": {
+      "kor": "AWS 공유 책임 모델에 따라 Amazon EC2 인스턴스와 관련된 책임이 회사에 있는 작업은 무엇입니까? (2개를 선택하십시오.)",
+      "eng": "A company is learning about its responsibilities that are related to the management of Amazon EC2 instances. Which tasks for EC2 instances are the company’s responsibility, according to the AWS shared responsibility model? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "머신 하이퍼바이저 설치 및 패치",
+        "B": "게스트 운영 체제 패치",
+        "C": "연결된 스토리지의 데이터 암호화",
+        "D": "물리적 하드웨어 및 케이블 설치",
+        "E": "EC2 인스턴스의 물리적 보안 제공"
+      },
+      "eng": {
+        "A": "Install and patch the machine hypervisor.",
+        "B": "Patch the guest operating system.",
+        "C": "Encrypt data at rest on associated storage.",
+        "D": "Install the physical hardware and cabling.",
+        "E": "Provide physical security for the EC2 instances."
+      }
+    },
+    "answers": [
+      "B",
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 155,
+    "oldIdx": 231,
+    "question": {
+      "kor": "Amazon Elastic Block Store (Amazon EBS)에서 데이터 암호화를 활성화하는 주체는 누구입니까?",
+      "eng": "Who enables encryption of data at rest for Amazon Elastic Block Store (Amazon EBS)?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Support",
+        "B": "AWS 고객",
+        "C": "AWS Key Management Service (AWS KMS)",
+        "D": "AWS Trusted Advisor"
+      },
+      "eng": {
+        "A": "AWS Support",
+        "B": "AWS customers",
+        "C": "AWS Key Management Service (AWS KMS)",
+        "D": "AWS Trusted Advisor"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 156,
+    "oldIdx": 660,
+    "question": {
+      "kor": "회사는 Amazon S3 버킷에 데이터를 저장합니다. 어떤 작업이 AWS의 책임입니까?",
+      "eng": "A company stores data in an Amazon S3 bucket. Which task is the responsibility of AWS?"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 수명 주기 정책 구성",
+        "B": "S3 버전 관리 활성화",
+        "C": "S3 버킷 정책 구성",
+        "D": "S3 저장소를 지원하는 인프라 보호"
+      },
+      "eng": {
+        "A": "Configure an S3 Lifecycle policy.",
+        "B": "Activate S3 Versioning.",
+        "C": "Configure S3 bucket policies.",
+        "D": "Protect the infrastructure that supports S3 storage."
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 157,
+    "oldIdx": 56,
+    "question": {
+      "kor": "회사에서 Amazon DynamoDB를 사용하고 있습니다. AWS 공유 책임 모델에 따르면 회사의 책임은 무엇입니까?",
+      "eng": "A company is using Amazon DynamoDB. Which task is the company’s responsibility, according to the AWS shared responsibility model?"
+    },
+    "choices": {
+      "kor": {
+        "A": "운영 체제 패치",
+        "B": "호스트 프로비저닝",
+        "C": "데이터베이스 액세스 권한 관리",
+        "D": "운영 체제 보안"
+      },
+      "eng": {
+        "A": "Patch the operating system.",
+        "B": "Provision hosts.",
+        "C": "Manage database access permissions.",
+        "D": "Secure the operating system."
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 158,
+    "oldIdx": 241,
+    "question": {
+      "kor": "회사는 Amazon DynamoDB를 사용하고 있습니다. AWS 공유 책임 모델에 따라 AWS의 책임은 무엇입니까? (2개를 선택하십시오)",
+      "eng": "A company is using Amazon DynamoDB for its application database. Which tasks are the responsibility of AWS, according to the AWS shared responsibility model? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "데이터 분류",
+        "B": "액세스 권한 구성",
+        "C": "암호화 옵션 관리",
+        "D": "데이터를 저장하고 검색하기 위한 공용 엔드포인트 제공",
+        "E": "인프라 계층 및 운영 체제 관리"
+      },
+      "eng": {
+        "A": "Classify data.",
+        "B": "Configure access permissions.",
+        "C": "Manage encryption options.",
+        "D": "Provide public endpoints to store and retrieve data.",
+        "E": "Manage the infrastructure layer and the operating system."
+      }
+    },
+    "answers": [
+      "D",
+      "E"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 159,
+    "oldIdx": 409,
+    "question": {
+      "kor": "AWS 공유 책임 모델에 따라 Amazon RDS를 사용하는 회사의 책임은 무엇입니까?",
+      "eng": "Which task is the responsibility of a company that is using Amazon RDS?"
+    },
+    "choices": {
+      "kor": {
+        "A": "기본 인프라 프로비저닝",
+        "B": "서비스에 대한 관리 액세스를 제어하는 IAM 정책 생성",
+        "C": "컴퓨팅 및 스토리지 하드웨어 연결을 위한 케이블 설치",
+        "D": "RDS 운영 체제 설치 및 패치"
+      },
+      "eng": {
+        "A": "Provision the underlying infrastructure.",
+        "B": "Create IAM policies to control administrative access to the service.",
+        "C": "Install the cables to connect the hardware for compute and storage.",
+        "D": "Install and patch the RDS operating system."
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 160,
+    "oldIdx": 5,
+    "question": {
+      "kor": "AWS 공유 책임 모델에 따라 Amazon DynamoDB를 사용하는 경우 고객의 책임은 무엇입니까?",
+      "eng": "Which option is a customer responsibility when using Amazon DynamoDB under the AWS Shared Responsibility Model?"
+    },
+    "choices": {
+      "kor": {
+        "A": "DynamoDB의 물리적 보안",
+        "B": "DynamoDB의 패치",
+        "C": "DynamoDB 테이블에 대한 액세스",
+        "D": "DynamoDB의 데이터 암호화"
+      },
+      "eng": {
+        "A": "Physical security of DynamoDB",
+        "B": "Patching of DynamoDB",
+        "C": "Access to DynamoDB tables",
+        "D": "Encryption of data at rest in DynamoDB"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 161,
+    "oldIdx": 42,
+    "question": {
+      "kor": "AWS 공유 책임 모델에 따르면, AWS Lambda를 사용할 때 고객의 책임은 무엇입니까?",
+      "eng": "What is a customer responsibility when using AWS Lambda according to the AWS shared responsibility model?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Lambda 함수 내의 코드 관리",
+        "B": "데이터 센터에서 하드웨어 작동 확인",
+        "C": "운영 체제 패치",
+        "D": "더 이상 사용되지 않는 Lambda 함수 종료"
+      },
+      "eng": {
+        "A": "Managing the code within the Lambda function",
+        "B": "Confirming that the hardware is working in the data center",
+        "C": "Patching the operating system",
+        "D": "Shutting down Lambda functions when they are no longer in use"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 162,
+    "oldIdx": 434,
+    "question": {
+      "kor": "회사가 AWS Lambda를 사용하여 Python 코드를 실행하는 애플리케이션을 구축하려고 합니다. AWS 공유 책임 모델에 따라 회사가 책임져야 할 작업은 무엇입니까? (2개를 선택하십시오.)",
+      "eng": "A company wants to build an application that uses AWS Lambda to run Python code. Under the AWS shared responsibility model, which tasks will be the company’s responsibility? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "기본 인프라 관리",
+        "B": "운영 체제 관리",
+        "C": "비즈니스 로직 코드 작성",
+        "D": "컴퓨터 언어 런타임 설치",
+        "E": "AWS Identity and Access Management (IAM)를 통해 Lambda 서비스에 대한 액세스 제공"
+      },
+      "eng": {
+        "A": "Management of the underlying infrastructure.",
+        "B": "Management of the operating system.",
+        "C": "Writing the business logic code.",
+        "D": "Installation of the computer language runtime.",
+        "E": "Providing AWS Identity and Access Management (IAM) access to the Lambda service."
+      }
+    },
+    "answers": [
+      "C",
+      "E"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 163,
+    "oldIdx": 609,
+    "question": {
+      "kor": "AWS Lambda를 사용할 때 AWS 공유 책임 모델에 따라 고객의 책임은 무엇입니까?",
+      "eng": "What is a customer responsibility under the AWS shared responsibility model when using AWS Lambda?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Lambda 하드웨어 유지 관리",
+        "B": "Lambda 네트워킹 인프라 유지 관리",
+        "C": "Lambda 함수에서 실행되는 코드 및 라이브러리",
+        "D": "Lambda 서버 소프트웨어"
+      },
+      "eng": {
+        "A": "Maintenance of the underlying Lambda hardware.",
+        "B": "Maintenance of the Lambda networking infrastructure.",
+        "C": "The code and libraries that run in the Lambda functions.",
+        "D": "The Lambda server software."
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 164,
+    "oldIdx": 106,
+    "question": {
+      "kor": "대규모 회사에 고용된 개발자가 AWS 자격 증명이 필요합니다. 따라야 할 보안 모범 사례는 무엇입니까? (2개를 선택하십시오)",
+      "eng": "A developer has been hired by a large company and needs AWS credentials. Which are security best practices that should be followed? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "개발자에게 작업을 수행하는 데 필요한 AWS 리소스에 대한 접근 권한만 부여",
+        "B": "개발자와 AWS 계정 루트 사용자 자격 증명 공유",
+        "C": "개발자를 AWS IAM의 관리자 그룹에 추가",
+        "D": "개발자의 암호를 변경할 수 없도록 암호 정책 구성",
+        "E": "계정 암호 정책이 최소 길이를 요구하도록 설정"
+      },
+      "eng": {
+        "A": "Grant the developer access to only the AWS resources needed to perform the job.",
+        "B": "Share the AWS account root user credentials with the developer.",
+        "C": "Add the developer to the administrator’s group in AWS IAM.",
+        "D": "Configure a password policy that ensures the developer’s password cannot be changed.",
+        "E": "Ensure the account password policy requires a minimum length."
+      }
+    },
+    "answers": [
+      "A",
+      "E"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 165,
+    "oldIdx": 511,
+    "question": {
+      "kor": "AWS 공유 책임 모델에 따라 고객의 책임은 무엇입니까?",
+      "eng": "Which task is the responsibility of the customer, according to the AWS shared responsibility model?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon DynamoDB 운영 체제 패치",
+        "B": "최소 권한 원칙에 따라 물리적 접근을 허용하여 Amazon CloudFront 엣지 위치 보안",
+        "C": "AWS 서비스가 실행되는 하드웨어 보호",
+        "D": "최소 권한 원칙에 따라 AWS Identity and Access Management (IAM) 사용"
+      },
+      "eng": {
+        "A": "Patch the Amazon DynamoDB operating system.",
+        "B": "Secure Amazon CloudFront edge locations by allowing physical access according to the principle of least privilege.",
+        "C": "Protect the hardware that runs AWS services.",
+        "D": "Use AWS Identity and Access Management (IAM) according to the principle of least privilege."
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  },
+  {
+    "idx": 166,
+    "oldIdx": 648,
+    "question": {
+      "kor": "다음 중 AWS 공유 책임 모델에 따라 고객의 책임은 무엇입니까?",
+      "eng": "Which of the following is a customer responsibility according to the AWS shared responsibility model?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon S3 인프라 장치에 대한 보안 패치 적용",
+        "B": "AWS 데이터 센터에 대한 물리적 보안 제공",
+        "C": "Lambda@Edge에서 운영 체제 업데이트 설치",
+        "D": "IAM 사용자 계정에 대한 다단계 인증 (MFA) 구현"
+      },
+      "eng": {
+        "A": "Apply security patches for Amazon S3 infrastructure devices.",
+        "B": "Provide physical security for AWS datacenters.",
+        "C": "Install operating system updates on Lambda@Edge.",
+        "D": "Implement multi-factor authentication (MFA) for IAM user accounts."
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Cloud Fundamentals"
+    ],
+    "subcategory": [
+      "Shared Responsibility Model"
+    ]
+  }
+]

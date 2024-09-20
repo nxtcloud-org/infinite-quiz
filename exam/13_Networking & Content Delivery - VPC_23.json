@@ -1,0 +1,753 @@
+[
+  {
+    "idx": 486,
+    "oldIdx": 414,
+    "question": {
+      "kor": "AWS 클라우드의 VPC 구성 요소가 될 수 있는 것은 무엇입니까? (2개를 선택하십시오.)",
+      "eng": "Which of the following can be components of a VPC in the AWS Cloud? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon API Gateway",
+        "B": "Amazon S3 버킷 및 객체",
+        "C": "AWS Storage Gateway",
+        "D": "인터넷 게이트웨이",
+        "E": "서브넷"
+      },
+      "eng": {
+        "A": "Amazon API Gateway",
+        "B": "Amazon S3 buckets and objects",
+        "C": "AWS Storage Gateway",
+        "D": "Internet gateway",
+        "E": "Subnet"
+      }
+    },
+    "answers": [
+      "D",
+      "E"
+    ],
+    "category": [
+      "Networking & Content Delivery",
+      "VPC"
+    ],
+    "subcategory": [
+      "Subnet",
+      "Internet gateway"
+    ]
+  },
+  {
+    "idx": 487,
+    "oldIdx": 24,
+    "question": {
+      "kor": "VPC 내 인터넷 게이트웨이를 사용하는 목적은 무엇입니까?",
+      "eng": "What is the purpose of having an internet gateway within a VPC?"
+    },
+    "choices": {
+      "kor": {
+        "A": "VPC와 VPN 연결을 생성",
+        "B": "VPC와 인터넷 간의 통신을 허용",
+        "C": "인터넷 트래픽에 대한 대역폭 제약 적용",
+        "D": "인터넷에서 Amazon EC2 인스턴스로의 트래픽 로드 밸런싱"
+      },
+      "eng": {
+        "A": "To create a VPN connection to the VPC",
+        "B": "To allow communication between the VPC and the internet",
+        "C": "To impose bandwidth constraints on internet traffic",
+        "D": "To load balance traffic from the internet across Amazon EC2 instances"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Networking & Content Delivery",
+      "VPC"
+    ],
+    "subcategory": [
+      "Internet gateway"
+    ]
+  },
+  {
+    "idx": 488,
+    "oldIdx": 352,
+    "question": {
+      "kor": "어떤 AWS 서비스 또는 구성 요소가 인터넷에서 VPC로 인바운드 트래픽을 허용합니까?",
+      "eng": "Which AWS service or component allows inbound traffic from the internet to access a VPC?"
+    },
+    "choices": {
+      "kor": {
+        "A": "인터넷 게이트웨이",
+        "B": "NAT 게이트웨이",
+        "C": "AWS WAF",
+        "D": "VPC 피어링"
+      },
+      "eng": {
+        "A": "Internet gateway",
+        "B": "NAT gateway",
+        "C": "AWS WAF",
+        "D": "VPC peering"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Networking & Content Delivery",
+      "VPC"
+    ],
+    "subcategory": [
+      "Internet gateway"
+    ]
+  },
+  {
+    "idx": 489,
+    "oldIdx": 516,
+    "question": {
+      "kor": "VPC에 인바운드 인터넷 액세스를 가능하게 하려면 어떤 구성 요소를 첨부해야 합니까?",
+      "eng": "Which component must be attached to a VPC to enable inbound internet access?"
+    },
+    "choices": {
+      "kor": {
+        "A": "NAT 게이트웨이",
+        "B": "VPC 엔드포인트",
+        "C": "VPN 연결",
+        "D": "인터넷 게이트웨이"
+      },
+      "eng": {
+        "A": "NAT gateway",
+        "B": "VPC endpoint",
+        "C": "VPN connection",
+        "D": "Internet gateway"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Networking & Content Delivery",
+      "VPC"
+    ],
+    "subcategory": [
+      "Internet gateway"
+    ]
+  },
+  {
+    "idx": 490,
+    "oldIdx": 184,
+    "question": {
+      "kor": "특정 Amazon EC2 인스턴스에 보안 규칙을 적용할 수 있는 AWS 서비스 또는 기능은 무엇입니까?",
+      "eng": "Which AWS service or feature can a company use to apply security rules to specific Amazon EC2 instances?"
+    },
+    "choices": {
+      "kor": {
+        "A": "네트워크 ACL",
+        "B": "보안 그룹",
+        "C": "AWS Trusted Advisor",
+        "D": "AWS WAF"
+      },
+      "eng": {
+        "A": "Network ACLs",
+        "B": "Security groups",
+        "C": "AWS Trusted Advisor",
+        "D": "AWS WAF"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Networking & Content Delivery",
+      "VPC"
+    ],
+    "subcategory": [
+      "Security groups"
+    ]
+  },
+  {
+    "idx": 491,
+    "oldIdx": 214,
+    "question": {
+      "kor": "인스턴스 수준 방화벽으로 작동하여 인바운드 및 아웃바운드 액세스를 제어하는 것은 무엇입니까?",
+      "eng": "Which of the following acts as an instance-level firewall to control inbound and outbound access?"
+    },
+    "choices": {
+      "kor": {
+        "A": "네트워크 액세스 제어 목록",
+        "B": "보안 그룹",
+        "C": "AWS Trusted Advisor",
+        "D": "가상 프라이빗 게이트웨이"
+      },
+      "eng": {
+        "A": "Network access control list",
+        "B": "Security groups",
+        "C": "AWS Trusted Advisor",
+        "D": "Virtual private gateways"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Networking & Content Delivery",
+      "VPC"
+    ],
+    "subcategory": [
+      "Security groups"
+    ]
+  },
+  {
+    "idx": 492,
+    "oldIdx": 289,
+    "question": {
+      "kor": "회사는 AWS 클라우드에서 보안 그룹을 사용하여 어떤 작업을 수행할 수 있습니까?",
+      "eng": "Which task can a company perform by using security groups in the AWS Cloud?"
+    },
+    "choices": {
+      "kor": {
+        "A": "특정 포트를 통해 Amazon EC2 인스턴스에 대한 액세스를 허용합니다.",
+        "B": "서브넷 수준에서 악성 IP 주소에 대한 액세스를 거부합니다.",
+        "C": "Amazon CloudFront에 의해 캐시된 데이터를 보호합니다.",
+        "D": "Amazon EC2 인스턴스에 상태 비저장 방화벽을 적용합니다."
+      },
+      "eng": {
+        "A": "Allow access to an Amazon EC2 instance through only a specific port.",
+        "B": "Deny access to malicious IP addresses at a subnet level.",
+        "C": "Protect data that is cached by Amazon CloudFront.",
+        "D": "Apply a stateless firewall to an Amazon EC2 instance."
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Networking & Content Delivery",
+      "VPC"
+    ],
+    "subcategory": [
+      "Security groups"
+    ]
+  },
+  {
+    "idx": 493,
+    "oldIdx": 340,
+    "question": {
+      "kor": "회사가 Amazon EC2 인스턴스를 생성했습니다. 회사는 인스턴스 수준에서 들어오고 나가는 네트워크 트래픽을 제어하려고 합니다. 이 요구 사항을 충족할 AWS 리소스 또는 서비스는 무엇입니까?",
+      "eng": "A company created an Amazon EC2 instance. The company wants to control the incoming and outgoing network traffic at the instance level. Which AWS resource or service will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Shield",
+        "B": "보안 그룹",
+        "C": "Network Access Analyzer",
+        "D": "VPC 엔드포인트"
+      },
+      "eng": {
+        "A": "AWS Shield",
+        "B": "Security groups",
+        "C": "Network Access Analyzer",
+        "D": "VPC endpoints"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Networking & Content Delivery",
+      "VPC"
+    ],
+    "subcategory": [
+      "Security groups"
+    ]
+  },
+  {
+    "idx": 494,
+    "oldIdx": 413,
+    "question": {
+      "kor": "회사가 VPC 내 여러 Amazon EC2 인스턴스 간의 네트워크 트래픽을 제어하기 위해 기본 AWS 보안 리소스를 사용하고자 합니다. 이 요구 사항을 충족할 AWS 서비스 또는 기능은 무엇입니까?",
+      "eng": "A company runs many Amazon EC2 instances in its VPC. The company wants to use a native AWS security resource to control network traffic between certain EC2 instances. Which AWS service or feature will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "네트워크 ACL",
+        "B": "AWS WAF",
+        "C": "Amazon GuardDuty",
+        "D": "보안 그룹"
+      },
+      "eng": {
+        "A": "Network ACLs",
+        "B": "AWS WAF",
+        "C": "Amazon GuardDuty",
+        "D": "Security groups"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Networking & Content Delivery",
+      "VPC"
+    ],
+    "subcategory": [
+      "Security groups"
+    ]
+  },
+  {
+    "idx": 495,
+    "oldIdx": 554,
+    "question": {
+      "kor": "회사는 단일 Amazon EC2 인스턴스에 대한 네트워크 연결을 제어할 방화벽을 필요로 합니다. 이 방화벽은 동일한 서브넷에 있는 다른 인스턴스에 대한 네트워크 연결을 제어하지 않습니다. 이 요구 사항을 충족하기 위해 어떤 AWS 서비스 또는 기능을 사용할 수 있습니까?",
+      "eng": "A company needs a firewall that will control network connections to and from a single Amazon EC2 instance. This firewall will not control network connections to and from other instances that are in the same subnet. Which AWS service or feature can the company use to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "네트워크 ACL",
+        "B": "AWS WAF",
+        "C": "라우트 테이블",
+        "D": "보안 그룹"
+      },
+      "eng": {
+        "A": "Network ACL",
+        "B": "AWS WAF",
+        "C": "Route table",
+        "D": "Security group"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Networking & Content Delivery",
+      "VPC"
+    ],
+    "subcategory": [
+      "Security groups"
+    ]
+  },
+  {
+    "idx": 496,
+    "oldIdx": 604,
+    "question": {
+      "kor": "어떤 VPC 구성 요소를 사용하여 Amazon EC2 인스턴스 수준에서 가상 방화벽을 설정할 수 있습니까?",
+      "eng": "Which VPC component can a company use to set up a virtual firewall at the Amazon EC2 instance level?"
+    },
+    "choices": {
+      "kor": {
+        "A": "네트워크 ACL (Network ACL)",
+        "B": "보안 그룹 (Security group)",
+        "C": "라우트 테이블 (Route table)",
+        "D": "NAT 게이트웨이 (NAT gateway)"
+      },
+      "eng": {
+        "A": "Network ACL",
+        "B": "Security group",
+        "C": "Route table",
+        "D": "NAT gateway"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Networking & Content Delivery",
+      "VPC"
+    ],
+    "subcategory": [
+      "Security groups"
+    ]
+  },
+  {
+    "idx": 497,
+    "oldIdx": 95,
+    "question": {
+      "kor": "Amazon VPC 서브넷으로 들어오고 나가는 트래픽을 제어하기 위해 방화벽을 설정할 수 있는 AWS 서비스 또는 도구는 무엇입니까?",
+      "eng": "Which AWS service or tool can be used to set up a firewall to control traffic going into and coming out of an Amazon VPC subnet?"
+    },
+    "choices": {
+      "kor": {
+        "A": "보안 그룹",
+        "B": "AWS WAF",
+        "C": "AWS Firewall Manager",
+        "D": "네트워크 ACL"
+      },
+      "eng": {
+        "A": "Security group",
+        "B": "AWS WAF",
+        "C": "AWS Firewall Manager",
+        "D": "Network ACL"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Networking & Content Delivery",
+      "VPC"
+    ],
+    "subcategory": [
+      "NACL"
+    ]
+  },
+  {
+    "idx": 498,
+    "oldIdx": 291,
+    "question": {
+      "kor": "다음 중 AWS 클라우드에서 네트워크 ACL의 기능은 무엇입니까? (두 가지를 선택하세요)",
+      "eng": "Which of the following are features of network ACLs as they are used in the AWS Cloud? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "상태 비저장입니다.",
+        "B": "상태 저장입니다.",
+        "C": "트래픽을 허용하기 전에 모든 규칙을 평가합니다.",
+        "D": "트래픽을 허용할지 여부를 결정할 때 가장 낮은 번호의 규칙부터 시작하여 순서대로 규칙을 처리합니다.",
+        "E": "인스턴스 수준에서 작동합니다."
+      },
+      "eng": {
+        "A": "They are stateless.",
+        "B": "They are stateful.",
+        "C": "They evaluate all rules before allowing traffic.",
+        "D": "They process rules in order, starting with the lowest numbered rule, when deciding whether to allow traffic.",
+        "E": "They operate at the instance level."
+      }
+    },
+    "answers": [
+      "A",
+      "D"
+    ],
+    "category": [
+      "Networking & Content Delivery",
+      "VPC"
+    ],
+    "subcategory": [
+      "NACL"
+    ]
+  },
+  {
+    "idx": 499,
+    "oldIdx": 417,
+    "question": {
+      "kor": "서브넷 수준에서 네트워크 액세스를 제한하도록 구성할 수 있는 AWS 서비스 또는 기능은 무엇입니까?",
+      "eng": "Which AWS service or feature can a user configure to limit network access at the subnet level?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Shield",
+        "B": "AWS WAF",
+        "C": "네트워크 ACL",
+        "D": "보안 그룹"
+      },
+      "eng": {
+        "A": "AWS Shield",
+        "B": "AWS WAF",
+        "C": "Network ACL",
+        "D": "Security group"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Networking & Content Delivery",
+      "VPC"
+    ],
+    "subcategory": [
+      "NACL"
+    ]
+  },
+  {
+    "idx": 500,
+    "oldIdx": 493,
+    "question": {
+      "kor": "VPC 서브넷 수준에서 방화벽 역할을 하는 AWS 도구 또는 기능은 무엇입니까?",
+      "eng": "Which AWS tool or feature acts as a VPC firewall at the subnet level?"
+    },
+    "choices": {
+      "kor": {
+        "A": "보안 그룹",
+        "B": "네트워크 ACL",
+        "C": "트래픽 미러링",
+        "D": "인터넷 게이트웨이"
+      },
+      "eng": {
+        "A": "Security group",
+        "B": "Network ACL",
+        "C": "Traffic Mirroring",
+        "D": "Internet gateway"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Networking & Content Delivery",
+      "VPC"
+    ],
+    "subcategory": [
+      "NACL"
+    ]
+  },
+  {
+    "idx": 501,
+    "oldIdx": 536,
+    "question": {
+      "kor": "어떤 AWS 서비스 또는 기능이 VPC 내에서 서브넷 수준의 방화벽을 제공합니까?",
+      "eng": "Which AWS service or feature provides a firewall at the subnet level within a VPC?"
+    },
+    "choices": {
+      "kor": {
+        "A": "보안 그룹",
+        "B": "네트워크 ACL",
+        "C": "Elastic 네트워크 인터페이스",
+        "D": "AWS WAF"
+      },
+      "eng": {
+        "A": "Security group",
+        "B": "Network ACL",
+        "C": "Elastic network interface",
+        "D": "AWS WAF"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Networking & Content Delivery",
+      "VPC"
+    ],
+    "subcategory": [
+      "NACL"
+    ]
+  },
+  {
+    "idx": 502,
+    "oldIdx": 665,
+    "question": {
+      "kor": "회사는 VPC에 대해 상태 비저장 네트워크 필터링이 필요합니다. 이 요구 사항을 충족할 수 있는 AWS 서비스, 도구 또는 기능은 무엇입니까?",
+      "eng": "A company needs stateless network filtering for its VPC. Which AWS service, tool, or feature will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS PrivateLink",
+        "B": "보안 그룹",
+        "C": "네트워크 액세스 제어 목록 (ACL)",
+        "D": "AWS WAF"
+      },
+      "eng": {
+        "A": "AWS PrivateLink",
+        "B": "Security group",
+        "C": "Network access control list (ACL)",
+        "D": "AWS WAF"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Networking & Content Delivery",
+      "VPC"
+    ],
+    "subcategory": [
+      "NACL"
+    ]
+  },
+  {
+    "idx": 503,
+    "oldIdx": 59,
+    "question": {
+      "kor": "인스턴스로의 네트워크 트래픽을 차단하는 데 사용할 수 있는 서비스는 무엇입니까? (2개를 선택하십시오)",
+      "eng": "Which of the following services can be used to block network traffic to an instance? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "보안 그룹",
+        "B": "Amazon Virtual Private Cloud (Amazon VPC) 흐름 로그",
+        "C": "네트워크 ACL",
+        "D": "Amazon CloudWatch",
+        "E": "AWS CloudTrail"
+      },
+      "eng": {
+        "A": "Security groups",
+        "B": "Amazon Virtual Private Cloud (Amazon VPC) flow logs",
+        "C": "Network ACLs",
+        "D": "Amazon CloudWatch",
+        "E": "AWS CloudTrail"
+      }
+    },
+    "answers": [
+      "A",
+      "C"
+    ],
+    "category": [
+      "Networking & Content Delivery",
+      "VPC"
+    ],
+    "subcategory": [
+      "Security groups",
+      "NACL"
+    ]
+  },
+  {
+    "idx": 504,
+    "oldIdx": 614,
+    "question": {
+      "kor": "다음 중 어떤 AWS 네트워크 서비스나 기능이 IP 주소 범위를 제공할 때 CIDR 블록 표기법을 허용하는 것은 무엇입니까? (두 가지를 선택하십시오.)",
+      "eng": "Which AWS network services or features allow CIDR block notation when providing an IP address range? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "보안 그룹 (Security groups)",
+        "B": "Amazon Machine Image (AMI)",
+        "C": "네트워크 액세스 제어 목록 (네트워크 ACL)",
+        "D": "AWS Budgets",
+        "E": "Amazon Elastic Block Store (Amazon EBS)"
+      },
+      "eng": {
+        "A": "Security groups",
+        "B": "Amazon Machine Image (AMI)",
+        "C": "Network access control list (network ACL)",
+        "D": "AWS Budgets",
+        "E": "Amazon Elastic Block Store (Amazon EBS)"
+      }
+    },
+    "answers": [
+      "A",
+      "C"
+    ],
+    "category": [
+      "Networking & Content Delivery",
+      "VPC"
+    ],
+    "subcategory": [
+      "Security groups",
+      "NACL"
+    ]
+  },
+  {
+    "idx": 505,
+    "oldIdx": 199,
+    "question": {
+      "kor": "회사는 비공개 서브넷에 Amazon EC2 인스턴스를 보유하고 있습니다. 회사는 인스턴스가 인터넷에서 운영 체제 업데이트를 가져올 수 있도록 하면서 인터넷 트래픽이 EC2 인스턴스에 액세스하지 못하도록 하려 합니다. 이 요구 사항을 충족하는 AWS 관리형 서비스는 무엇입니까?",
+      "eng": "A company has an Amazon EC2 instance in a private subnet. The company wants to initiate a connection to the internet to pull operating system updates while preventing traffic from the internet from accessing the EC2 instance. Which AWS managed service allows this?"
+    },
+    "choices": {
+      "kor": {
+        "A": "VPC 엔드포인트",
+        "B": "NAT 게이트웨이",
+        "C": "Amazon PrivateLink",
+        "D": "VPC 피어링"
+      },
+      "eng": {
+        "A": "VPC endpoint",
+        "B": "NAT gateway",
+        "C": "Amazon PrivateLink",
+        "D": "VPC peering"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Networking & Content Delivery",
+      "VPC"
+    ],
+    "subcategory": [
+      "NAT gateway"
+    ]
+  },
+  {
+    "idx": 506,
+    "oldIdx": 119,
+    "question": {
+      "kor": "Amazon VPC의 네트워크 인터페이스에 대한 인바운드 및 아웃바운드 트래픽의 로그 정보를 제공하는 AWS 서비스 또는 기능은 무엇입니까?",
+      "eng": "Which AWS service or feature provides log information of the inbound and outbound traffic on network interfaces in a VPC?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon CloudWatch Logs",
+        "B": "AWS CloudTrail",
+        "C": "VPC 흐름 로그",
+        "D": "AWS Identity and Access Management (IAM)"
+      },
+      "eng": {
+        "A": "Amazon CloudWatch Logs",
+        "B": "AWS CloudTrail",
+        "C": "VPC Flow Logs",
+        "D": "AWS Identity and Access Management (IAM)"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Networking & Content Delivery",
+      "VPC"
+    ],
+    "subcategory": [
+      "VPC Flow Logs"
+    ]
+  },
+  {
+    "idx": 507,
+    "oldIdx": 172,
+    "question": {
+      "kor": "Amazon VPC의 인바운드 및 아웃바운드 트래픽에 대한 정보를 캡처할 수 있는 AWS 서비스 또는 도구는 무엇입니까?",
+      "eng": "Which AWS service or tool can be used to capture information about inbound and outbound traffic in an Amazon VPC?"
+    },
+    "choices": {
+      "kor": {
+        "A": "VPC Flow Logs",
+        "B": "Amazon Inspector",
+        "C": "VPC 엔드포인트 서비스",
+        "D": "NAT 게이트웨이"
+      },
+      "eng": {
+        "A": "VPC Flow Logs",
+        "B": "Amazon Inspector",
+        "C": "VPC endpoint services",
+        "D": "NAT gateway"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Networking & Content Delivery",
+      "VPC"
+    ],
+    "subcategory": [
+      "VPC Flow Logs"
+    ]
+  },
+  {
+    "idx": 508,
+    "oldIdx": 310,
+    "question": {
+      "kor": "어떤 AWS 서비스 또는 기능이 사용자에게 VPC 내 네트워크 트래픽에 대한 정보를 캡처할 수 있는 기능을 제공합니까?",
+      "eng": "Which AWS service or feature gives users the ability to capture information about network traffic in a VPC?"
+    },
+    "choices": {
+      "kor": {
+        "A": "VPC Flow Logs",
+        "B": "Amazon Inspector",
+        "C": "VPC 라우트 테이블",
+        "D": "AWS CloudTrail"
+      },
+      "eng": {
+        "A": "VPC Flow Logs",
+        "B": "Amazon Inspector",
+        "C": "VPC route tables",
+        "D": "AWS CloudTrail"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Networking & Content Delivery",
+      "VPC"
+    ],
+    "subcategory": [
+      "VPC Flow Logs"
+    ]
+  }
+]

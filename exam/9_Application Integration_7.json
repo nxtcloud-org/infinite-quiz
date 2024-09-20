@@ -1,0 +1,223 @@
+[
+  {
+    "idx": 343,
+    "oldIdx": 81,
+    "question": {
+      "kor": "회사는 전자 상거래 애플리케이션 세트를 보유하고 있습니다. 애플리케이션은 서로에게 메시지를 보낼 수 있어야 합니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A company has a set of ecommerce applications. The applications need to be able to send messages to each other. Which AWS service meets this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Auto Scaling",
+        "B": "Elastic Load Balancing",
+        "C": "Amazon Simple Queue Service (Amazon SQS)",
+        "D": "Amazon Kinesis Data Streams"
+      },
+      "eng": {
+        "A": "AWS Auto Scaling",
+        "B": "Elastic Load Balancing",
+        "C": "Amazon Simple Queue Service (Amazon SQS)",
+        "D": "Amazon Kinesis Data Streams"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Application Integration"
+    ],
+    "subcategory": [
+      "Amazon SQS"
+    ]
+  },
+  {
+    "idx": 344,
+    "oldIdx": 188,
+    "question": {
+      "kor": "애플리케이션 구성 요소 간에 메시지를 보내고, 저장하고, 수신할 수 있는 애플리케이션을 구축하려는 회사가 있습니다. 메시지를 선입선출(FIFO) 순서로 처리해야 합니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A company is building an application that requires the ability to send, store, and receive messages between application components. The company has another requirement to process messages in first-in, first-out (FIFO) order. Which AWS service should the company use?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Step Functions",
+        "B": "Amazon Simple Notification Service (Amazon SNS)",
+        "C": "Amazon Kinesis Data Streams",
+        "D": "Amazon Simple Queue Service (Amazon SQS)"
+      },
+      "eng": {
+        "A": "AWS Step Functions",
+        "B": "Amazon Simple Notification Service (Amazon SNS)",
+        "C": "Amazon Kinesis Data Streams",
+        "D": "Amazon Simple Queue Service (Amazon SQS)"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Application Integration"
+    ],
+    "subcategory": [
+      "Amazon SQS"
+    ]
+  },
+  {
+    "idx": 345,
+    "oldIdx": 140,
+    "question": {
+      "kor": "느슨한 결합 아키텍처를 달성하는 데 사용할 수 있는 AWS 서비스는 무엇입니까? (2개를 선택하십시오)",
+      "eng": "Which AWS services can a company use to achieve a loosely coupled architecture? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon WorkSpaces",
+        "B": "Amazon Simple Queue Service (Amazon SQS)",
+        "C": "Amazon Connect",
+        "D": "AWS Trusted Advisor",
+        "E": "AWS Step Functions"
+      },
+      "eng": {
+        "A": "Amazon WorkSpaces",
+        "B": "Amazon Simple Queue Service (Amazon SQS)",
+        "C": "Amazon Connect",
+        "D": "AWS Trusted Advisor",
+        "E": "AWS Step Functions"
+      }
+    },
+    "answers": [
+      "B",
+      "E"
+    ],
+    "category": [
+      "Application Integration"
+    ],
+    "subcategory": [
+      "Amazon SQS",
+      "AWS Step Functions"
+    ]
+  },
+  {
+    "idx": 346,
+    "oldIdx": 31,
+    "question": {
+      "kor": "분산 애플리케이션에서 텍스트와 이메일 메시지를 보낼 수 있는 AWS 서비스는 무엇입니까?",
+      "eng": "Which AWS service or feature is used to send both text and email messages from distributed applications?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Simple Notification Service (Amazon SNS)",
+        "B": "Amazon Simple Email Service (Amazon SES)",
+        "C": "Amazon CloudWatch 경고",
+        "D": "Amazon Simple Queue Service (Amazon SQS)"
+      },
+      "eng": {
+        "A": "Amazon Simple Notification Service (Amazon SNS)",
+        "B": "Amazon Simple Email Service (Amazon SES)",
+        "C": "Amazon CloudWatch alerts",
+        "D": "Amazon Simple Queue Service (Amazon SQS)"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Application Integration"
+    ],
+    "subcategory": [
+      "Amazon SNS"
+    ]
+  },
+  {
+    "idx": 347,
+    "oldIdx": 376,
+    "question": {
+      "kor": "어떤 AWS 서비스가 게시자와 구독자의 조합을 사용합니까?",
+      "eng": "Which AWS service uses a combination of publishers and subscribers?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Lambda",
+        "B": "Amazon Simple Notification Service (Amazon SNS)",
+        "C": "Amazon CloudWatch",
+        "D": "AWS CloudFormation"
+      },
+      "eng": {
+        "A": "AWS Lambda",
+        "B": "Amazon Simple Notification Service (Amazon SNS)",
+        "C": "Amazon CloudWatch",
+        "D": "AWS CloudFormation"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Application Integration"
+    ],
+    "subcategory": [
+      "Amazon SNS"
+    ]
+  },
+  {
+    "idx": 348,
+    "oldIdx": 495,
+    "question": {
+      "kor": "특정 Amazon CloudWatch 경보가 호출될 때 알림을 보낼 수 있는 AWS 서비스는 무엇입니까?",
+      "eng": "Which AWS service can be used to send alerts when a specific Amazon CloudWatch alarm is invoked?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS CloudTrail",
+        "B": "Amazon Simple Notification Service (Amazon SNS)",
+        "C": "Amazon Simple Queue Service (Amazon SQS)",
+        "D": "Amazon EventBridge"
+      },
+      "eng": {
+        "A": "AWS CloudTrail",
+        "B": "Amazon Simple Notification Service (Amazon SNS)",
+        "C": "Amazon Simple Queue Service (Amazon SQS)",
+        "D": "Amazon EventBridge"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Application Integration"
+    ],
+    "subcategory": [
+      "Amazon SNS"
+    ]
+  },
+  {
+    "idx": 349,
+    "oldIdx": 502,
+    "question": {
+      "kor": "사용자가 Amazon EC2 인스턴스가 'stopping' 상태로 들어갈 때 AWS Lambda 함수를 호출하고 싶어합니다. 이 사용 사례에 적합한 AWS 서비스는 무엇입니까?",
+      "eng": "A user wants to invoke an AWS Lambda function when an Amazon EC2 instance enters the “stopping” state. Which AWS service is appropriate for this use case?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon EventBridge",
+        "B": "AWS Config",
+        "C": "Amazon Simple Notification Service (Amazon SNS)",
+        "D": "AWS CloudFormation"
+      },
+      "eng": {
+        "A": "Amazon EventBridge",
+        "B": "AWS Config",
+        "C": "Amazon Simple Notification Service (Amazon SNS)",
+        "D": "AWS CloudFormation"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Application Integration"
+    ],
+    "subcategory": [
+      "Amazon EventBridge"
+    ]
+  }
+]

@@ -1,0 +1,440 @@
+[
+  {
+    "idx": 329,
+    "oldIdx": 43,
+    "question": {
+      "kor": "회사는 Amazon S3에 5TB의 데이터를 저장하고 있습니다. 회사는 가끔 데이터를 분석하기 위해 쿼리를 실행하려고 합니다. 이 요구 사항을 가장 비용 효율적으로 충족할 AWS 서비스는 무엇입니까?",
+      "eng": "A company has 5 TB of data stored in Amazon S3. The company plans to occasionally run queries on the data for analysis. Which AWS service should the company use to run these queries in the MOST cost-effective manner?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Redshift",
+        "B": "Amazon Athena",
+        "C": "Amazon Kinesis",
+        "D": "Amazon RDS"
+      },
+      "eng": {
+        "A": "Amazon Redshift",
+        "B": "Amazon Athena",
+        "C": "Amazon Kinesis",
+        "D": "Amazon RDS"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Analytics"
+    ],
+    "subcategory": [
+      "Amazon Athena"
+    ]
+  },
+  {
+    "idx": 330,
+    "oldIdx": 318,
+    "question": {
+      "kor": "회사가 월간 보고서를 Amazon S3 버킷에 저장하고 있습니다. 회사는 보고서 데이터를 쉼표로 구분된 값(.csv) 파일로 내보냅니다. 개발자는 이 파일들을 읽고 요약 보고서를 생성할 수 있는 간단한 쿼리를 작성하려고 합니다. 운영 오버헤드를 가장 적게 사용하여 이 요구 사항을 충족하기 위해 개발자가 사용해야 할 AWS 서비스 또는 기능은 무엇입니까?",
+      "eng": "A company has been storing monthly reports in an Amazon S3 bucket. The company exports the report data into comma-separated values (.csv) files. A developer wants to write a simple query that can read all of these files and generate a summary report. Which AWS service or feature should the developer use to meet these requirements with the LEAST amount of operational overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon S3 Select",
+        "B": "Amazon Athena",
+        "C": "Amazon Redshift",
+        "D": "Amazon EC2"
+      },
+      "eng": {
+        "A": "Amazon S3 Select",
+        "B": "Amazon Athena",
+        "C": "Amazon Redshift",
+        "D": "Amazon EC2"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Analytics"
+    ],
+    "subcategory": [
+      "Amazon Athena"
+    ]
+  },
+  {
+    "idx": 331,
+    "oldIdx": 550,
+    "question": {
+      "kor": "회사가 Amazon S3 버킷에 있는 객체를 직접 쿼리하기 위해 SQL 구문을 사용해야 합니다. 이 요구 사항을 충족하기 위해 어떤 AWS 서비스를 사용해야 합니까?",
+      "eng": "550A company needs to use SQL syntax to perform a direct query of objects in an Amazon S3 bucket. Which AWS service can the company use to meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Glue",
+        "B": "Amazon Athena",
+        "C": "AWS Lambda",
+        "D": "Amazon Kinesis"
+      },
+      "eng": {
+        "A": "AWS Glue",
+        "B": "Amazon Athena",
+        "C": "AWS Lambda",
+        "D": "Amazon Kinesis"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Analytics"
+    ],
+    "subcategory": [
+      "Amazon Athena"
+    ]
+  },
+  {
+    "idx": 332,
+    "oldIdx": 683,
+    "question": {
+      "kor": "회사는 프로그래밍 언어를 사용하여 Amazon S3의 데이터를 탐색하고 분석하고자 합니다. 이 요구 사항을 충족할 수 있는 AWS 서비스는 무엇입니까?",
+      "eng": "A company wants to explore and analyze data in Amazon S3 by using a programming language. Which AWS service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Kendra",
+        "B": "Amazon Athena",
+        "C": "Amazon Comprehend",
+        "D": "Amazon SageMaker"
+      },
+      "eng": {
+        "A": "Amazon Kendra",
+        "B": "Amazon Athena",
+        "C": "Amazon Comprehend",
+        "D": "Amazon SageMaker"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Analytics"
+    ],
+    "subcategory": [
+      "Amazon Athena"
+    ]
+  },
+  {
+    "idx": 333,
+    "oldIdx": 166,
+    "question": {
+      "kor": "AWS 서비스로 기계 학습 통찰력을 포함하는 대화형 비즈니스 인텔리전스 대시보드를 구축하여 생성할 수 있는 서비스는 무엇입니까?",
+      "eng": "Which AWS service gives users the ability to build interactive business intelligence dashboards that include machine learning insights?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Athena",
+        "B": "Amazon Kendra",
+        "C": "Amazon QuickSight",
+        "D": "Amazon Redshift"
+      },
+      "eng": {
+        "A": "Amazon Athena",
+        "B": "Amazon Kendra",
+        "C": "Amazon QuickSight",
+        "D": "Amazon Redshift"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Analytics"
+    ],
+    "subcategory": [
+      "Amazon QuickSight"
+    ]
+  },
+  {
+    "idx": 334,
+    "oldIdx": 452,
+    "question": {
+      "kor": "회사가 데이터에서 인사이트를 도출하고 대화형 데이터 시각화 대시보드를 구축하고자 합니다. 이 요구 사항을 충족할 AWS 서비스는 무엇입니까?",
+      "eng": "A company wants to gain insights from its data and build interactive data visualization dashboards. Which AWS service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon SageMaker",
+        "B": "Amazon Rekognition",
+        "C": "Amazon QuickSight",
+        "D": "Amazon Kinesis"
+      },
+      "eng": {
+        "A": "Amazon SageMaker",
+        "B": "Amazon Rekognition",
+        "C": "Amazon QuickSight",
+        "D": "Amazon Kinesis"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Analytics"
+    ],
+    "subcategory": [
+      "Amazon QuickSight"
+    ]
+  },
+  {
+    "idx": 335,
+    "oldIdx": 458,
+    "question": {
+      "kor": "회사가 대화형 비즈니스 인텔리전스 대시보드를 생성하고 게시해야 합니다. 대시보드는 기계 학습으로 구동되는 인사이트가 필요합니다. 이 요구 사항을 충족할 AWS 서비스 또는 도구는 무엇입니까?",
+      "eng": "A company needs to create and publish interactive business intelligence dashboards. The dashboards require insights that are powered by machine learning. Which AWS service or tool will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Glue Studio",
+        "B": "Amazon QuickSight",
+        "C": "Amazon Redshift",
+        "D": "Amazon Athena"
+      },
+      "eng": {
+        "A": "AWS Glue Studio",
+        "B": "Amazon QuickSight",
+        "C": "Amazon Redshift",
+        "D": "Amazon Athena"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Analytics"
+    ],
+    "subcategory": [
+      "Amazon QuickSight"
+    ]
+  },
+  {
+    "idx": 336,
+    "oldIdx": 617,
+    "question": {
+      "kor": "회사는 대시보드와 차트를 사용하여 비즈니스 데이터의 통찰력을 분석하고자 합니다. 어떤 AWS 서비스가 이러한 통찰력에 대한 대시보드와 차트를 제공합니까?",
+      "eng": "A company needs to use dashboards and charts to analyze insights from business data. Which AWS service will provide the dashboards and charts for these insights?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Macie",
+        "B": "Amazon Aurora",
+        "C": "Amazon QuickSight",
+        "D": "AWS CloudTrail"
+      },
+      "eng": {
+        "A": "Amazon Macie",
+        "B": "Amazon Aurora",
+        "C": "Amazon QuickSight",
+        "D": "AWS CloudTrail"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Analytics"
+    ],
+    "subcategory": [
+      "Amazon QuickSight"
+    ]
+  },
+  {
+    "idx": 337,
+    "oldIdx": 262,
+    "question": {
+      "kor": "다음 중 데이터 추출, 변환 및 로드(ETL) 작업에 특정적으로 사용되는 관리 AWS 서비스는 무엇입니까?",
+      "eng": "Which of the following is a managed AWS service that is used specifically for extract, transform, and load (ETL) data?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Athena",
+        "B": "AWS Glue",
+        "C": "Amazon S3",
+        "D": "AWS Snowball Edge"
+      },
+      "eng": {
+        "A": "Amazon Athena",
+        "B": "AWS Glue",
+        "C": "Amazon S3",
+        "D": "AWS Snowball Edge"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Analytics"
+    ],
+    "subcategory": [
+      "AWS Glue"
+    ]
+  },
+  {
+    "idx": 338,
+    "oldIdx": 430,
+    "question": {
+      "kor": "회사가 여러 소스의 데이터를 발견, 준비, 이동 및 통합하여 데이터 분석 및 기계 학습을 수행하려고 합니다. 이 요구 사항을 충족할 AWS 서버리스 데이터 통합 서비스는 무엇입니까?",
+      "eng": "A company wants to discover, prepare, move, and integrate data from multiple sources for data analytics and machine learning. Which AWS serverless data integration service should the company use to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Glue",
+        "B": "AWS Data Exchange",
+        "C": "Amazon Athena",
+        "D": "Amazon EMR"
+      },
+      "eng": {
+        "A": "AWS Glue",
+        "B": "AWS Data Exchange",
+        "C": "Amazon Athena",
+        "D": "Amazon EMR"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Analytics"
+    ],
+    "subcategory": [
+      "AWS Glue"
+    ]
+  },
+  {
+    "idx": 339,
+    "oldIdx": 14,
+    "question": {
+      "kor": "회사는 고객의 여러 유형의 데이터를 관리하기 위해 중앙 데이터 플랫폼을 사용하고 있습니다. 회사는 데이터를 발견, 변환 및 시각화하기 위해 AWS 서비스를 사용하고자 합니다. 이 요구 사항을 충족하기 위해 회사가 사용할 수 있는 AWS 서비스의 조합은 무엇입니까? (2개를 선택하십시오)",
+      "eng": "A company is using a central data platform to manage multiple types of data for its customers. The company wants to use AWS services to discover, transform, and visualize the data. Which combination of AWS services should the company use to meet these requirements? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Glue",
+        "B": "Amazon Elastic File System (Amazon EFS)",
+        "C": "Amazon Redshift",
+        "D": "Amazon QuickSight",
+        "E": "Amazon Quantum Ledger Database (Amazon QLDB)"
+      },
+      "eng": {
+        "A": "AWS Glue",
+        "B": "Amazon Elastic File System (Amazon EFS)",
+        "C": "Amazon Redshift",
+        "D": "Amazon QuickSight",
+        "E": "Amazon Quantum Ledger Database (Amazon QLDB)"
+      }
+    },
+    "answers": [
+      "A",
+      "D"
+    ],
+    "category": [
+      "Analytics"
+    ],
+    "subcategory": [
+      "AWS Glue",
+      "Amazon QuickSight"
+    ]
+  },
+  {
+    "idx": 340,
+    "oldIdx": 96,
+    "question": {
+      "kor": "회사는 데이터 웨어하우스를 운영하여 데이터를 분석하려고 합니다. 데이터 웨어하우스 인프라를 관리할 필요가 없습니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A company wants to operate a data warehouse to analyze data without managing the data warehouse infrastructure. Which AWS service will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Aurora",
+        "B": "Amazon Redshift Serverless",
+        "C": "AWS Lambda",
+        "D": "Amazon RDS"
+      },
+      "eng": {
+        "A": "Amazon Aurora",
+        "B": "Amazon Redshift Serverless",
+        "C": "AWS Lambda",
+        "D": "Amazon RDS"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Analytics"
+    ],
+    "subcategory": [
+      "Amazon Redshift"
+    ]
+  },
+  {
+    "idx": 341,
+    "oldIdx": 332,
+    "question": {
+      "kor": "회사는 데이터를 분석하기 위해 페타바이트 규모의 데이터 웨어하우스를 운영하고 있습니다. 회사는 수동 하드웨어 및 소프트웨어 관리를 필요로 하지 않는 솔루션을 원합니다. 이 요구 사항을 충족할 AWS 서비스는 무엇입니까?",
+      "eng": "A company operates a petabyte-scale data warehouse to analyze its data. The company wants a solution that will not require manual hardware and software management. Which AWS service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon DocumentDB (MongoDB 호환)",
+        "B": "Amazon Redshift",
+        "C": "Amazon Neptune",
+        "D": "Amazon ElastiCache"
+      },
+      "eng": {
+        "A": "Amazon DocumentDB (with MongoDB compatibility)",
+        "B": "Amazon Redshift",
+        "C": "Amazon Neptune",
+        "D": "Amazon ElastiCache"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Analytics"
+    ],
+    "subcategory": [
+      "Amazon Redshift"
+    ]
+  },
+  {
+    "idx": 342,
+    "oldIdx": 489,
+    "question": {
+      "kor": "대량의 데이터를 데이터 웨어하우스 환경에서 처리할 수 있도록 설계된 AWS 서비스는 무엇입니까?",
+      "eng": "Which AWS service is designed to help users handle large amounts of data in a data warehouse environment?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon RDS",
+        "B": "Amazon DynamoDB",
+        "C": "Amazon Redshift",
+        "D": "Amazon Aurora"
+      },
+      "eng": {
+        "A": "Amazon RDS",
+        "B": "Amazon DynamoDB",
+        "C": "Amazon Redshift",
+        "D": "Amazon Aurora"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Analytics"
+    ],
+    "subcategory": [
+      "Amazon Redshift"
+    ]
+  }
+]

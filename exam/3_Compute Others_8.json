@@ -1,0 +1,250 @@
+[
+  {
+    "idx": 246,
+    "oldIdx": 17,
+    "question": {
+      "kor": "개발자는 AWS 리소스를 수동으로 생성하지 않고 신속하게 애플리케이션을 배포하려고 합니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A developer wants to deploy an application quickly on AWS without manually creating the required resources. Which AWS service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon EC2",
+        "B": "AWS Elastic Beanstalk",
+        "C": "AWS CodeBuild",
+        "D": "Amazon Personalize"
+      },
+      "eng": {
+        "A": "Amazon EC2",
+        "B": "AWS Elastic Beanstalk",
+        "C": "AWS CodeBuild",
+        "D": "Amazon Personalize"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Compute"
+    ],
+    "subcategory": [
+      "AWS Elastic Beanstalk"
+    ]
+  },
+  {
+    "idx": 247,
+    "oldIdx": 193,
+    "question": {
+      "kor": "AWS 서비스에 대한 지식이 제한된 사용자가 AWS 클라우드에서 확장 가능한 Node.js 애플리케이션을 신속하게 배포하려고 합니다. 이 요구 사항을 충족하는 서비스는 무엇입니까?",
+      "eng": "A user has limited knowledge of AWS services, but wants to quickly deploy a scalable Node.js application in the AWS Cloud. Which service should be used to deploy the application?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS CloudFormation",
+        "B": "AWS Elastic Beanstalk",
+        "C": "Amazon EC2",
+        "D": "AWS OpsWorks"
+      },
+      "eng": {
+        "A": "AWS CloudFormation",
+        "B": "AWS Elastic Beanstalk",
+        "C": "Amazon EC2",
+        "D": "AWS OpsWorks"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Compute"
+    ],
+    "subcategory": [
+      "AWS Elastic Beanstalk"
+    ]
+  },
+  {
+    "idx": 248,
+    "oldIdx": 323,
+    "question": {
+      "kor": "회사가 가능한 한 빨리 AWS 클라우드에 애플리케이션을 배포해야 합니다. 또한 AWS 리소스 관리와 관련된 복잡성을 최소화해야 합니다. 이 요구 사항을 충족할 AWS 서비스는 무엇입니까?",
+      "eng": "A company needs to deploy applications in the AWS Cloud as quickly as possible. The company also needs to minimize the complexity that is related to the management of AWS resources. Which AWS service should the company use to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Config",
+        "B": "AWS Elastic Beanstalk",
+        "C": "Amazon EC2",
+        "D": "Amazon Personalize"
+      },
+      "eng": {
+        "A": "AWS Config",
+        "B": "AWS Elastic Beanstalk",
+        "C": "Amazon EC2",
+        "D": "Amazon Personalize"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Compute"
+    ],
+    "subcategory": [
+      "AWS Elastic Beanstalk"
+    ]
+  },
+  {
+    "idx": 249,
+    "oldIdx": 366,
+    "question": {
+      "kor": "AWS 클라우드에서 애플리케이션의 배포 및 관리를 지원하는 AWS 서비스는 무엇입니까?",
+      "eng": "Which AWS service supports the deployment and management of applications in the AWS Cloud?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon CodeGuru",
+        "B": "AWS Fargate",
+        "C": "AWS CodeCommit",
+        "D": "AWS Elastic Beanstalk"
+      },
+      "eng": {
+        "A": "Amazon CodeGuru",
+        "B": "AWS Fargate",
+        "C": "AWS CodeCommit",
+        "D": "AWS Elastic Beanstalk"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Compute"
+    ],
+    "subcategory": [
+      "AWS Elastic Beanstalk"
+    ]
+  },
+  {
+    "idx": 250,
+    "oldIdx": 397,
+    "question": {
+      "kor": "회사가 비컨테이너화된 Java 기반 웹 애플리케이션을 AWS에 배포하려고 합니다. 회사는 애플리케이션을 신속하게 배포하기 위해 관리형 서비스를 사용하고자 합니다. 서비스는 자동으로 용량을 프로비저닝하고 로드 밸런싱을 수행하며 확장하고 애플리케이션 상태를 모니터링해야 합니다. 이 요구 사항을 충족할 AWS 서비스는 무엇입니까?",
+      "eng": "A company wants to deploy a non-containerized Java-based web application on AWS. The company wants to use a managed service to quickly deploy the application. The company wants the service to automatically provision capacity, load balance, scale, and monitor application health. Which AWS service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Elastic Container Service (Amazon ECS)",
+        "B": "AWS Lambda",
+        "C": "Amazon Elastic Kubernetes Service (Amazon EKS)",
+        "D": "AWS Elastic Beanstalk"
+      },
+      "eng": {
+        "A": "Amazon Elastic Container Service (Amazon ECS)",
+        "B": "AWS Lambda",
+        "C": "Amazon Elastic Kubernetes Service (Amazon EKS)",
+        "D": "AWS Elastic Beanstalk"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Compute"
+    ],
+    "subcategory": [
+      "AWS Elastic Beanstalk"
+    ]
+  },
+  {
+    "idx": 251,
+    "oldIdx": 451,
+    "question": {
+      "kor": "회사가 모든 IT 인프라를 AWS에서 운영하고 있습니다. 회사의 개발자들은 자체적으로 애플리케이션을 배포할 수 있습니다. 개발자들은 인프라를 직접 프로비저닝하지 않고 애플리케이션을 배포하고자 합니다. 이 요구 사항을 충족하기 위해 개발자가 사용해야 하는 AWS 서비스는 무엇입니까?",
+      "eng": "A company is using AWS for all its IT infrastructure. The company's developers are allowed to deploy applications on their own. The developers want to deploy their applications without having to provision the infrastructure themselves. Which AWS service should the developers use to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS CloudFormation",
+        "B": "AWS CodeBuild",
+        "C": "AWS Elastic Beanstalk",
+        "D": "AWS CodeDeploy"
+      },
+      "eng": {
+        "A": "AWS CloudFormation",
+        "B": "AWS CodeBuild",
+        "C": "AWS Elastic Beanstalk",
+        "D": "AWS CodeDeploy"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Compute"
+    ],
+    "subcategory": [
+      "AWS Elastic Beanstalk"
+    ]
+  },
+  {
+    "idx": 252,
+    "oldIdx": 207,
+    "question": {
+      "kor": "회사는 수백만 개의 컴퓨팅 작업을 계획, 일정 및 실행해야 합니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A company needs to plan, schedule, and run hundreds of thousands of computing jobs on AWS. Which AWS service can the company use to meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Step Functions",
+        "B": "AWS Service Catalog",
+        "C": "Amazon Simple Queue Service (Amazon SQS)",
+        "D": "AWS Batch"
+      },
+      "eng": {
+        "A": "AWS Step Functions",
+        "B": "AWS Service Catalog",
+        "C": "Amazon Simple Queue Service (Amazon SQS)",
+        "D": "AWS Batch"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Compute"
+    ],
+    "subcategory": [
+      "AWS Batch"
+    ]
+  },
+  {
+    "idx": 253,
+    "oldIdx": 674,
+    "question": {
+      "kor": "회사는 웹 애플리케이션을 컨테이너화된 애플리케이션으로 배포하고자 합니다. 회사는 소스 코드에서 자동으로 컨테이너 이미지를 생성하고 컨테이너화된 애플리케이션을 배포할 수 있는 관리형 서비스를 사용하고자 합니다. 이 요구 사항을 충족할 수 있는 AWS 서비스는 무엇입니까?",
+      "eng": "A company wants to deploy a web application as a containerized application. The company wants to use a managed service that can automatically create container images from source code and deploy the containerized application. Which AWS service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Elastic Beanstalk",
+        "B": "Amazon Elastic Container Service (Amazon ECS)",
+        "C": "AWS App Runner",
+        "D": "Amazon EC2"
+      },
+      "eng": {
+        "A": "AWS Elastic Beanstalk",
+        "B": "Amazon Elastic Container Service (Amazon ECS)",
+        "C": "AWS App Runner",
+        "D": "Amazon EC2"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Compute"
+    ],
+    "subcategory": [
+      "AWS App Runner"
+    ]
+  }
+]

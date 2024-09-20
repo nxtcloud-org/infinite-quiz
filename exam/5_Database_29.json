@@ -1,0 +1,908 @@
+[
+  {
+    "idx": 259,
+    "oldIdx": 696,
+    "question": {
+      "kor": "어떤 AWS 서비스가 MySQL 데이터베이스 엔진을 지원합니까?",
+      "eng": "Which AWS service supports MySQL database engines?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon DynamoDB",
+        "B": "Amazon RDS",
+        "C": "Amazon DocumentDB (MongoDB 호환성)",
+        "D": "Amazon ElastiCache"
+      },
+      "eng": {
+        "A": "Amazon Dynamo DВ",
+        "B": "Amazon RDS",
+        "C": "Amazon DocumentDB (with MongoDB compatibility)",
+        "D": "Amazon ElastiCache"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Database"
+    ],
+    "subcategory": [
+      "Amazon RDS"
+    ]
+  },
+  {
+    "idx": 260,
+    "oldIdx": 63,
+    "question": {
+      "kor": "온라인 트랜잭션 처리(OLTP)를 제공하는 관리형 PostgreSQL 데이터베이스를 실행할 수 있는 AWS 서비스는 무엇입니까?",
+      "eng": "Which AWS service can run a managed PostgreSQL database that provides online transaction processing (OLTP)?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon DynamoDB",
+        "B": "Amazon Athena",
+        "C": "Amazon RDS",
+        "D": "Amazon EMR"
+      },
+      "eng": {
+        "A": "Amazon DynamoDB",
+        "B": "Amazon Athena",
+        "C": "Amazon RDS",
+        "D": "Amazon EMR"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Database"
+    ],
+    "subcategory": [
+      "Amazon RDS"
+    ]
+  },
+  {
+    "idx": 261,
+    "oldIdx": 190,
+    "question": {
+      "kor": "회사는 PostgreSQL과 호환되는 관리형 AWS 서비스를 원합니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까? (2개를 선택하십시오)",
+      "eng": "A company wants to migrate its database to a managed AWS service that is compatible with PostgreSQL. Which AWS services will meet these requirements? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Athena",
+        "B": "Amazon RDS",
+        "C": "Amazon EC2",
+        "D": "Amazon DynamoDB",
+        "E": "Amazon Aurora"
+      },
+      "eng": {
+        "A": "Amazon Athena",
+        "B": "Amazon RDS",
+        "C": "Amazon EC2",
+        "D": "Amazon DynamoDB",
+        "E": "Amazon Aurora"
+      }
+    },
+    "answers": [
+      "B",
+      "E"
+    ],
+    "category": [
+      "Database"
+    ],
+    "subcategory": [
+      "Amazon RDS",
+      "Amazon Aurora"
+    ]
+  },
+  {
+    "idx": 262,
+    "oldIdx": 587,
+    "question": {
+      "kor": "회사는 AWS 클라우드에서 관계형 데이터베이스를 실행하려고 합니다. 회사는 데이터베이스를 설치하고 정기적인 소프트웨어 업데이트를 수행하는 관리형 서비스를 사용하고자 합니다. 어떤 AWS 서비스가 이 요구 사항을 충족합니까?",
+      "eng": "A company wants to run relationship databases in the AWS Cloud. The company wants to use a managed service that will install the database and run regular software updates. Which AWS service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon S3",
+        "B": "Amazon RDS",
+        "C": "Amazon Elastic Block Store (Amazon EBS)",
+        "D": "Amazon DynamoDB"
+      },
+      "eng": {
+        "A": "Amazon S3",
+        "B": "Amazon RDS",
+        "C": "Amazon Elastic Block Store (Amazon EBS)",
+        "D": "Amazon DynamoDB"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Database"
+    ],
+    "subcategory": [
+      "Amazon RDS"
+    ]
+  },
+  {
+    "idx": 263,
+    "oldIdx": 664,
+    "question": {
+      "kor": "회사는 온프레미스 SQL Server 데이터베이스를 AWS 클라우드로 마이그레이션하고자 합니다. 회사는 AWS가 데이터베이스의 일상적인 관리를 처리하길 원합니다. 이 요구 사항을 충족할 수 있는 AWS 서비스는 무엇입니까?",
+      "eng": "A company wants to migrate its on-premises SQL Server database to the AWS Cloud. The company wants AWS to handle the day-to-day administration of the database. Which AWS service will meet the company's requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Microsoft SQL Server용 Amazon EC2",
+        "B": "Amazon DynamoDB",
+        "C": "Amazon RDS",
+        "D": "Amazon Aurora"
+      },
+      "eng": {
+        "A": "Amazon EC2 for Microsoft SQL Server",
+        "B": "Amazon DynamoDB",
+        "C": "Amazon RDS",
+        "D": "Amazon Aurora"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Database"
+    ],
+    "subcategory": [
+      "Amazon RDS"
+    ]
+  },
+  {
+    "idx": 264,
+    "oldIdx": 680,
+    "question": {
+      "kor": "회사는 데이터 센터에 여러 개의 SQL 기반 데이터베이스를 보유하고 있습니다. 회사는 물리적 서버 운영 비용을 줄이기 위해 모든 데이터베이스 서버를 AWS 클라우드로 마이그레이션해야 합니다. 최소한의 운영 오버헤드로 이 요구 사항을 충족할 수 있는 AWS 서비스 또는 리소스는 무엇입니까?",
+      "eng": "A company has multiple SQL-based databases located in a data center. The company needs to migrate all database servers to the AWS Cloud to reduce the cost of operating physical servers. Which AWS service or resource will meet these requirements with the LEAST operational overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon EC2 인스턴스",
+        "B": "Amazon RDS",
+        "C": "Amazon DynamoDB",
+        "D": "OpenSearch"
+      },
+      "eng": {
+        "A": "Amazon EC2 instances",
+        "B": "Amazon RDS",
+        "C": "Amazon DynamoDB",
+        "D": "OpenSearch"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Database"
+    ],
+    "subcategory": [
+      "Amazon RDS"
+    ]
+  },
+  {
+    "idx": 265,
+    "oldIdx": 322,
+    "question": {
+      "kor": "사용자가 하드웨어, 복원력 및 복제를 관리할 리소스가 없는 관계형 데이터베이스가 필요합니다. 사용자의 요구 사항을 충족하는 AWS 서비스 옵션은 무엇입니까?",
+      "eng": "A user needs a relational database but does not have the resources to manage the hardware, resiliency, and replication. Which AWS service option meets the user's requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Elastic Container Service (Amazon ECS)에서 MySQL 실행",
+        "B": "Amazon EC2에서 MySQL 실행",
+        "C": "Amazon RDS for MySQL 선택",
+        "D": "Amazon ElastiCache for Redis 선택"
+      },
+      "eng": {
+        "A": "Run MySQL on Amazon Elastic Container Service (Amazon ECS).",
+        "B": "Run MySQL on Amazon EC2.",
+        "C": "Choose Amazon RDS for MySQL.",
+        "D": "Choose Amazon ElastiCache for Redis."
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Database"
+    ],
+    "subcategory": [
+      "Amazon RDS"
+    ]
+  },
+  {
+    "idx": 266,
+    "oldIdx": 503,
+    "question": {
+      "kor": "한 회사가 온프레미스에 MariaDB 데이터베이스를 보유하고 있습니다. 회사는 데이터를 AWS 클라우드로 이동하고 싶어합니다. 운영 오버헤드가 가장 적은 상태로 이 데이터베이스를 호스팅할 수 있는 AWS 서비스는 무엇입니까?",
+      "eng": "A company has a MariaDB database on premises. The company wants to move the data to the AWS Cloud. Which AWS service will host this database with the LEAST amount of operational overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon RDS",
+        "B": "Amazon Neptune",
+        "C": "Amazon S3",
+        "D": "Amazon DynamoDB"
+      },
+      "eng": {
+        "A": "Amazon RDS",
+        "B": "Amazon Neptune",
+        "C": "Amazon S3",
+        "D": "Amazon DynamoDB"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Database"
+    ],
+    "subcategory": [
+      "Amazon RDS"
+    ]
+  },
+  {
+    "idx": 267,
+    "oldIdx": 718,
+    "question": {
+      "kor": "어떤 회사는 관계형 데이터베이스에 데이터를 저장하는 애플리케이션을 배포하려고 합니다. 회사는 자동 백업 및 데이터베이스 스냅샷과 같은 데이터베이스 작업을 AWS에서 관리하기를 원합니다. 어떤 AWS 서비스가 이러한 요구 사항을 충족할까요?",
+      "eng": "A company wants to deploy an application that stores data in a relational database. The company wants database tasks, such as automated backups and database snapshots, to be managed by AWS. Which AWS service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon DocumentDB",
+        "B": "Amazon RDS",
+        "C": "Amazon Elastic Block Store(Amazon EBS)",
+        "D": "Amazon S3"
+      },
+      "eng": {
+        "A": "Amazon DocumentDB",
+        "B": "Amazon RDS",
+        "C": "Amazon Elastic Block Store(Amazon EBS)",
+        "D": "Amazon S3"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Database"
+    ],
+    "subcategory": [
+      "Amazon RDS"
+    ]
+  },
+  {
+    "idx": 268,
+    "oldIdx": 161,
+    "question": {
+      "kor": "회사는 Amazon RDS DB 인스턴스에서 중요한 워크로드를 실행하고 있습니다. 복구 시간이 5분 미만이어야 합니다. 이 요구 사항을 충족하는 솔루션은 무엇입니까?",
+      "eng": "A company is running a critical workload on an Amazon RDS DB instance. The company needs the DB instance to be highly available with a recovery time of less than 5 minutes. Which solution will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "DB 인스턴스의 읽기 복제본 생성",
+        "B": "AWS CloudFormation을 사용하여 DB 인스턴스의 템플릿 생성",
+        "C": "DB 인스턴스의 스냅샷을 자주 찍고 Amazon S3에 저장",
+        "D": "DB 인스턴스를 다중 가용 영역 배포로 수정"
+      },
+      "eng": {
+        "A": "Create a read replica of the DB instance.",
+        "B": "Create a template of the DB instance by using AWS CloudFormation.",
+        "C": "Take frequent snapshots of the DB instance. Store the snapshots in Amazon S3.",
+        "D": "Modify the DB instance to be a Multi-AZ deployment."
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Database"
+    ],
+    "subcategory": [
+      "Amazon RDS"
+    ]
+  },
+  {
+    "idx": 269,
+    "oldIdx": 411,
+    "question": {
+      "kor": "Amazon RDS의 어떤 기능이 기본 데이터베이스 인스턴스를 자동으로 생성하고 다른 가용 영역에 있는 인스턴스로 데이터를 동기식으로 복제하는 기능을 제공합니까?",
+      "eng": "Which feature of Amazon RDS provides the ability to automatically create a primary database instance and to synchronously replicate data to an instance in another Availability Zone?"
+    },
+    "choices": {
+      "kor": {
+        "A": "읽기 복제본",
+        "B": "블루/그린 배포",
+        "C": "다중 AZ 배포",
+        "D": "예약 인스턴스"
+      },
+      "eng": {
+        "A": "Read replicas",
+        "B": "Blue/green deployment",
+        "C": "Multi-AZ deployment",
+        "D": "Reserved Instances"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Database"
+    ],
+    "subcategory": [
+      "Amazon RDS"
+    ]
+  },
+  {
+    "idx": 270,
+    "oldIdx": 551,
+    "question": {
+      "kor": "회사는 제품 데이터베이스로 Amazon RDS를 사용합니다. 회사는 데이터베이스가 고가용성을 보장하기를 원합니다. 이 요구 사항을 충족하는 Amazon RDS 기능은 무엇입니까?",
+      "eng": "A company uses Amazon RDS for a product database. The company wants to ensure the database is highly available. Which feature of Amazon RDS will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "읽기 복제본",
+        "B": "블루/그린 배포",
+        "C": "다중 AZ 배포",
+        "D": "예약 인스턴스"
+      },
+      "eng": {
+        "A": "Read replicas",
+        "B": "Blue/green deployment",
+        "C": "Multi-AZ deployment",
+        "D": "Reserved Instances"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Database"
+    ],
+    "subcategory": [
+      "Amazon RDS"
+    ]
+  },
+  {
+    "idx": 271,
+    "oldIdx": 61,
+    "question": {
+      "kor": "완전 관리형 MySQL 호환 데이터베이스는 무엇입니까?",
+      "eng": "Which of the following is a fully managed MySQL-compatible database?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon S3",
+        "B": "Amazon DynamoDB",
+        "C": "Amazon Redshift",
+        "D": "Amazon Aurora"
+      },
+      "eng": {
+        "A": "Amazon S3",
+        "B": "Amazon DynamoDB",
+        "C": "Amazon Redshift",
+        "D": "Amazon Aurora"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Database"
+    ],
+    "subcategory": [
+      "Amazon Aurora"
+    ]
+  },
+  {
+    "idx": 272,
+    "oldIdx": 370,
+    "question": {
+      "kor": "어떤 AWS 서비스가 MySQL 및 PostgreSQL과 호환되는 관계형 데이터베이스입니까?",
+      "eng": "Which AWS service is a relational database compatible with MySQL and PostgreSQL?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Redshift",
+        "B": "Amazon DynamoDB",
+        "C": "Amazon Aurora",
+        "D": "Amazon Neptune"
+      },
+      "eng": {
+        "A": "Amazon Redshift",
+        "B": "Amazon DynamoDB",
+        "C": "Amazon Aurora",
+        "D": "Amazon Neptune"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Database"
+    ],
+    "subcategory": [
+      "Amazon Aurora"
+    ]
+  },
+  {
+    "idx": 273,
+    "oldIdx": 469,
+    "question": {
+      "kor": "PostgreSQL 데이터베이스를 호스팅할 수 있는 AWS 서비스는 무엇입니까? (2개를 선택하십시오.)",
+      "eng": "Which AWS services can host PostgreSQL databases? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon S3",
+        "B": "Amazon Aurora",
+        "C": "Amazon EC2",
+        "D": "Amazon OpenSearch Service",
+        "E": "Amazon Elastic File System (Amazon EFS)"
+      },
+      "eng": {
+        "A": "Amazon S3",
+        "B": "Amazon Aurora",
+        "C": "Amazon EC2",
+        "D": "Amazon OpenSearch Service",
+        "E": "Amazon Elastic File System (Amazon EFS)"
+      }
+    },
+    "answers": [
+      "B",
+      "C"
+    ],
+    "category": [
+      "Database"
+    ],
+    "subcategory": [
+      "Amazon Aurora"
+    ]
+  },
+  {
+    "idx": 274,
+    "oldIdx": 240,
+    "question": {
+      "kor": "회사는 PostgreSQL 데이터베이스를 AWS로 마이그레이션하려고 합니다. 회사는 데이터베이스를 자주 사용하지 않습니다. 이 요구 사항을 관리 오버헤드 없이 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A company wants to migrate its PostgreSQL database to AWS. The company does not use the database frequently. Which AWS service or resource will meet these requirements with the LEAST management overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon EC2의 PostgreSQL",
+        "B": "Amazon RDS for PostgreSQL",
+        "C": "Amazon Aurora PostgreSQL-Compatible Edition",
+        "D": "Amazon Aurora Serverless"
+      },
+      "eng": {
+        "A": "PostgreSQL on Amazon EC2",
+        "B": "Amazon RDS for PostgreSQL",
+        "C": "Amazon Aurora PostgreSQL-Compatible Edition",
+        "D": "Amazon Aurora Serverless"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Database"
+    ],
+    "subcategory": [
+      "Amazon Aurora"
+    ]
+  },
+  {
+    "idx": 275,
+    "oldIdx": 662,
+    "question": {
+      "kor": "어떤 AWS 서비스가 완전 관리형 NoSQL 데이터베이스 서비스입니까?",
+      "eng": "Which AWS service is a fully managed NoSQL database service?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon RDS",
+        "B": "Amazon Redshift",
+        "C": "Amazon DynamoDB",
+        "D": "Amazon Aurora"
+      },
+      "eng": {
+        "A": "Amazon RDS",
+        "B": "Amazon Redshift",
+        "C": "Amazon DynamoDB",
+        "D": "Amazon Aurora"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Database"
+    ],
+    "subcategory": [
+      "Amazon DynamoDB"
+    ]
+  },
+  {
+    "idx": 276,
+    "oldIdx": 369,
+    "question": {
+      "kor": "어떤 AWS 서비스가 AWS 클라우드에서 NoSQL 데이터베이스를 호스팅할 수 있는 기능을 제공합니까?",
+      "eng": "Which AWS service provides the ability to host a NoSQL database in the AWS Cloud?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Aurora",
+        "B": "Amazon DynamoDB",
+        "C": "Amazon RDS",
+        "D": "Amazon Redshift"
+      },
+      "eng": {
+        "A": "Amazon Aurora",
+        "B": "Amazon DynamoDB",
+        "C": "Amazon RDS",
+        "D": "Amazon Redshift"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Database"
+    ],
+    "subcategory": [
+      "Amazon DynamoDB"
+    ]
+  },
+  {
+    "idx": 277,
+    "oldIdx": 596,
+    "question": {
+      "kor": "어떤 AWS 서비스가 NoSQL 데이터베이스를 포함한 워크로드를 실행하는 사용자를 위해 설계되었습니까?",
+      "eng": "Which AWS service is designed for users running workloads that include a NoSQL database?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon RDS",
+        "B": "Amazon S3",
+        "C": "Amazon Redshift",
+        "D": "Amazon DynamoDB"
+      },
+      "eng": {
+        "A": "Amazon RDS",
+        "B": "Amazon S3",
+        "C": "Amazon Redshift",
+        "D": "Amazon DynamoDB"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Database"
+    ],
+    "subcategory": [
+      "Amazon DynamoDB"
+    ]
+  },
+  {
+    "idx": 278,
+    "oldIdx": 182,
+    "question": {
+      "kor": "비관계형 데이터베이스를 AWS에 신속하게 배포하려는 사용자가 있습니다. 기본 하드웨어 또는 데이터베이스 소프트웨어를 관리하고 싶지 않습니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A user needs to quickly deploy a nonrelational database on AWS. The user does not want to manage the underlying hardware or the database software. Which AWS service can be used to accomplish this?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon RDS",
+        "B": "Amazon DynamoDB",
+        "C": "Amazon Aurora",
+        "D": "Amazon Redshift"
+      },
+      "eng": {
+        "A": "Amazon RDS",
+        "B": "Amazon DynamoDB",
+        "C": "Amazon Aurora",
+        "D": "Amazon Redshift"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Database"
+    ],
+    "subcategory": [
+      "Amazon DynamoDB"
+    ]
+  },
+  {
+    "idx": 279,
+    "oldIdx": 55,
+    "question": {
+      "kor": "비용 절감을 위해 NoSQL 데이터베이스를 AWS로 마이그레이션하려는 회사가 있습니다. 자동으로 데이터베이스 워크로드 수요를 충족하기 위해 처리량 용량을 조정할 수 있는 완전 관리형 AWS 서비스는 무엇입니까?",
+      "eng": "55To reduce costs, a company is planning to migrate a NoSQL database to AWS. Which AWS service is fully managed and can automatically scale throughput capacity to meet database workload demands?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Redshift",
+        "B": "Amazon Aurora",
+        "C": "Amazon DynamoDB",
+        "D": "Amazon RDS"
+      },
+      "eng": {
+        "A": "Amazon Redshift",
+        "B": "Amazon Aurora",
+        "C": "Amazon DynamoDB",
+        "D": "Amazon RDS"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Database"
+    ],
+    "subcategory": [
+      "Amazon DynamoDB"
+    ]
+  },
+  {
+    "idx": 280,
+    "oldIdx": 66,
+    "question": {
+      "kor": "대규모로 하위 밀리초 대기 시간을 제공하는 키-값 데이터베이스는 무엇입니까?",
+      "eng": "Which AWS service is a key-value database that provides sub-millisecond latency on a large scale?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon DynamoDB",
+        "B": "Amazon Aurora",
+        "C": "Amazon DocumentDB (MongoDB 호환)",
+        "D": "Amazon Neptune"
+      },
+      "eng": {
+        "A": "Amazon DynamoDB",
+        "B": "Amazon Aurora",
+        "C": "Amazon DocumentDB (with MongoDB compatibility)",
+        "D": "Amazon Neptune"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Database"
+    ],
+    "subcategory": [
+      "Amazon DynamoDB"
+    ]
+  },
+  {
+    "idx": 281,
+    "oldIdx": 438,
+    "question": {
+      "kor": "회사가 지속적으로 비구조화 데이터를 생성하는 애플리케이션을 보유하고 있습니다. 회사는 데이터를 내구성 있게 저장하고 쉽게 쿼리할 수 있도록 해야 합니다. 이 요구 사항을 충족할 AWS 서비스는 무엇입니까?",
+      "eng": "A company has an application that produces unstructured data continuously. The company needs to store the data so that the data is durable and easy to query. Which AWS service can the company use to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon RDS",
+        "B": "Amazon Aurora",
+        "C": "Amazon QuickSight",
+        "D": "Amazon DynamoDB"
+      },
+      "eng": {
+        "A": "Amazon RDS",
+        "B": "Amazon Aurora",
+        "C": "Amazon QuickSight",
+        "D": "Amazon DynamoDB"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Database"
+    ],
+    "subcategory": [
+      "Amazon DynamoDB"
+    ]
+  },
+  {
+    "idx": 282,
+    "oldIdx": 518,
+    "question": {
+      "kor": "회사가 초당 수백만 건의 데이터베이스 쿼리를 받을 애플리케이션을 구축하고 있습니다. 회사는 애플리케이션의 데이터 저장소가 이러한 요구를 충족할 수 있도록 확장할 수 있어야 합니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A company is building an application that will receive millions of database queries each second. The company needs the data store for the application to scale to meet these needs. Which AWS service will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon DynamoDB",
+        "B": "AWS Cloud9",
+        "C": "Amazon ElastiCache for Memcached",
+        "D": "Amazon Neptune"
+      },
+      "eng": {
+        "A": "Amazon DynamoDB",
+        "B": "AWS Cloud9",
+        "C": "Amazon ElastiCache for Memcached",
+        "D": "Amazon Neptune"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Database"
+    ],
+    "subcategory": [
+      "Amazon DynamoDB"
+    ]
+  },
+  {
+    "idx": 283,
+    "oldIdx": 248,
+    "question": {
+      "kor": "회사는 하루에 수조 개의 이벤트를 저장하고 분석하는 것이 더 쉬운 시계열 데이터베이스 서비스를 원합니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A company wants a time-series database service that makes it easier to store and analyze trillions of events each day. Which AWS service will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Neptune",
+        "B": "Amazon Timestream",
+        "C": "Amazon Forecast",
+        "D": "Amazon DocumentDB (MongoDB 호환)"
+      },
+      "eng": {
+        "A": "Amazon Neptune",
+        "B": "Amazon Timestream",
+        "C": "Amazon Forecast",
+        "D": "Amazon DocumentDB (with MongoDB compatibility)"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Database"
+    ],
+    "subcategory": [
+      "Amazon Timestream"
+    ]
+  },
+  {
+    "idx": 284,
+    "oldIdx": 308,
+    "question": {
+      "kor": "다음 중 AWS에서 완전 관리형 그래프 데이터베이스 서비스는 무엇입니까?",
+      "eng": "Which of the following is a fully managed graph database service on AWS?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Aurora",
+        "B": "Amazon FSx",
+        "C": "Amazon DynamoDB",
+        "D": "Amazon Neptune"
+      },
+      "eng": {
+        "A": "Amazon Aurora",
+        "B": "Amazon FSx",
+        "C": "Amazon DynamoDB",
+        "D": "Amazon Neptune"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Database"
+    ],
+    "subcategory": [
+      "Amazon Neptune"
+    ]
+  },
+  {
+    "idx": 285,
+    "oldIdx": 484,
+    "question": {
+      "kor": "회사가 신용 카드 사용자의 이름, 주소 및 거래를 제공하는 그래프 쿼리를 실행하고자 합니다. 회사는 이름, 주소 및 거래가 잠재적인 사기를 나타내는지 그래프로 보여주고자 합니다. 이 요구 사항을 충족할 AWS 데이터베이스 서비스는 무엇입니까?",
+      "eng": "A company wants to run a graph query that provides credit card users’ names, addresses, and transactions. The company wants the graph to show if the names, addresses, and transactions indicates possible fraud. Which AWS database service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon DocumentDB (MongoDB 호환)",
+        "B": "Amazon Timestream",
+        "C": "Amazon DynamoDB",
+        "D": "Amazon Neptune"
+      },
+      "eng": {
+        "A": "Amazon DocumentDB (with MongoDB compatibility)",
+        "B": "Amazon Timestream",
+        "C": "Amazon DynamoDB",
+        "D": "Amazon Neptune"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Database"
+    ],
+    "subcategory": [
+      "Amazon Neptune"
+    ]
+  },
+  {
+    "idx": 286,
+    "oldIdx": 588,
+    "question": {
+      "kor": "어떤 AWS 서비스가 고도로 연결된 데이터 세트를 위한 완전 관리형 그래프 데이터베이스를 제공합니까?",
+      "eng": "Which AWS service provides a fully managed graph database for highly connected datasets?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon DynamoDB",
+        "B": "Amazon RDS",
+        "C": "Amazon Neptune",
+        "D": "Amazon Aurora"
+      },
+      "eng": {
+        "A": "Amazon DynamoDB",
+        "B": "Amazon RDS",
+        "C": "Amazon Neptune",
+        "D": "Amazon Aurora"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Database"
+    ],
+    "subcategory": [
+      "Amazon Neptune"
+    ]
+  },
+  {
+    "idx": 287,
+    "oldIdx": 672,
+    "question": {
+      "kor": "회사는 실시간 사기 패턴 탐지를 위해 그래프 쿼리를 작성하고자 합니다. 이 요구 사항을 충족할 수 있는 AWS 서비스는 무엇입니까?",
+      "eng": "A company wants to build graph queries for real-time fraud pattern detection. Which AWS service will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Neptune",
+        "B": "Amazon DynamoDB",
+        "C": "Amazon Timestream",
+        "D": "Amazon Forecast"
+      },
+      "eng": {
+        "A": "Amazon Neptune",
+        "B": "Amazon DynamoDB",
+        "C": "Amazon Timestream",
+        "D": "Amazon Forecast"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Database"
+    ],
+    "subcategory": [
+      "Amazon Neptune"
+    ]
+  }
+]

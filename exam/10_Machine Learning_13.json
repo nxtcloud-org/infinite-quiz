@@ -1,0 +1,405 @@
+[
+  {
+    "idx": 350,
+    "oldIdx": 632,
+    "question": {
+      "kor": "어떤 AWS 서비스가 음성-텍스트 변환을 사용하여 사용자가 회의 기록을 작성하도록 돕습니까?",
+      "eng": "Which AWS service uses speech-to-text conversion to help users create meeting notes?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Polly",
+        "B": "Amazon Textract",
+        "C": "Amazon Rekognition",
+        "D": "Amazon Transcribe"
+      },
+      "eng": {
+        "A": "Amazon Polly",
+        "B": "Amazon Textract",
+        "C": "Amazon Rekognition",
+        "D": "Amazon Transcribe"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Machine Learning"
+    ],
+    "subcategory": [
+      "Amazon Transcribe"
+    ]
+  },
+  {
+    "idx": 351,
+    "oldIdx": 328,
+    "question": {
+      "kor": "어떤 AWS 서비스가 텍스트를 생동감 있는 목소리로 변환합니까?",
+      "eng": "Which AWS service converts text to lifelike voices?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Transcribe",
+        "B": "Amazon Rekognition",
+        "C": "Amazon Polly",
+        "D": "Amazon Textract"
+      },
+      "eng": {
+        "A": "Amazon Transcribe",
+        "B": "Amazon Rekognition",
+        "C": "Amazon Polly",
+        "D": "Amazon Textract"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Machine Learning"
+    ],
+    "subcategory": [
+      "Amazon Polly"
+    ]
+  },
+  {
+    "idx": 352,
+    "oldIdx": 615,
+    "question": {
+      "kor": "회사는 텍스트를 음성으로 변환하는 접근성 애플리케이션을 개발하고자 합니다. 어떤 AWS 서비스가 이 요구 사항을 충족합니까?",
+      "eng": "A company wants to develop an accessibility application that will convert text into audible speech. Which AWS service will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon MQ",
+        "B": "Amazon Polly",
+        "C": "Amazon Neptune",
+        "D": "Amazon Timestream"
+      },
+      "eng": {
+        "A": "Amazon MQ",
+        "B": "Amazon Polly",
+        "C": "Amazon Neptune",
+        "D": "Amazon Timestream"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Machine Learning"
+    ],
+    "subcategory": [
+      "Amazon Polly"
+    ]
+  },
+  {
+    "idx": 353,
+    "oldIdx": 333,
+    "question": {
+      "kor": "도서관이 책의 내용을 기반으로 전자책을 자동으로 분류하고자 합니다. 이 요구 사항을 충족할 AWS 서비스는 무엇입니까?",
+      "eng": "A library wants to automate the classification of electronic books based on the contents of the books. Which AWS service should the library use to meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Redshift",
+        "B": "Amazon CloudSearch",
+        "C": "Amazon Comprehend",
+        "D": "Amazon Aurora"
+      },
+      "eng": {
+        "A": "Amazon Redshift",
+        "B": "Amazon CloudSearch",
+        "C": "Amazon Comprehend",
+        "D": "Amazon Aurora"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Machine Learning"
+    ],
+    "subcategory": [
+      "Amazon Comprehend"
+    ]
+  },
+  {
+    "idx": 354,
+    "oldIdx": 113,
+    "question": {
+      "kor": "회사는 고객 데이터를 기반으로 제품 추천을 제공하는 AWS 서비스를 원합니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A company wants an AWS service to provide product recommendations based on its customer data. Which AWS service will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Polly",
+        "B": "Amazon Personalize",
+        "C": "Amazon Comprehend",
+        "D": "Amazon Rekognition"
+      },
+      "eng": {
+        "A": "Amazon Polly",
+        "B": "Amazon Personalize",
+        "C": "Amazon Comprehend",
+        "D": "Amazon Rekognition"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Machine Learning"
+    ],
+    "subcategory": [
+      "Amazon Personalize"
+    ]
+  },
+  {
+    "idx": 355,
+    "oldIdx": 485,
+    "question": {
+      "kor": "기계 학습 기능을 제공하여 이미지와 비디오의 콘텐츠를 감지하고 분석하는 AWS 서비스는 무엇입니까?",
+      "eng": "485Which AWS service provides machine learning capability to detect and analyze content in images and videos?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Connect",
+        "B": "Amazon Lightsail",
+        "C": "Amazon Personalize",
+        "D": "Amazon Rekognition"
+      },
+      "eng": {
+        "A": "Amazon Connect",
+        "B": "Amazon Lightsail",
+        "C": "Amazon Personalize",
+        "D": "Amazon Rekognition"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Machine Learning"
+    ],
+    "subcategory": [
+      "Amazon Rekognition"
+    ]
+  },
+  {
+    "idx": 356,
+    "oldIdx": 537,
+    "question": {
+      "kor": "회사가 자동화된 비디오 분석을 사용하여 사무실에 접근하는 직원을 식별하고자 합니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A company wants to use automated video analysis to identify employees that are accessing its offices. Which AWS service will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Rekognition",
+        "B": "Amazon Polly",
+        "C": "Amazon Cognito",
+        "D": "AWS Lambda"
+      },
+      "eng": {
+        "A": "Amazon Rekognition",
+        "B": "Amazon Polly",
+        "C": "Amazon Cognito",
+        "D": "AWS Lambda"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Machine Learning"
+    ],
+    "subcategory": [
+      "Amazon Rekognition"
+    ]
+  },
+  {
+    "idx": 357,
+    "oldIdx": 649,
+    "question": {
+      "kor": "회사가 많은 수의 이미지를 조직하고 특성화하며 검색하기 위해 사용할 수 있는 AWS 서비스는 무엇입니까?",
+      "eng": "Which AWS service should a company use to organize, characterize, and search large numbers of images?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Transcribe",
+        "B": "Amazon Rekognition",
+        "C": "Amazon Aurora",
+        "D": "Amazon QuickSight"
+      },
+      "eng": {
+        "A": "Amazon Transcribe",
+        "B": "Amazon Rekognition",
+        "C": "Amazon Aurora",
+        "D": "Amazon QuickSight"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Machine Learning"
+    ],
+    "subcategory": [
+      "Amazon Rekognition"
+    ]
+  },
+  {
+    "idx": 358,
+    "oldIdx": 598,
+    "question": {
+      "kor": "회사는 웹사이트에 대화형 챗봇을 추가하고자 합니다. 어떤 AWS 서비스를 사용하여 이 요구 사항을 충족할 수 있습니까?",
+      "eng": "A company wants to add a conversational chatbot to its website. Which AWS service can the company use to meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Textract",
+        "B": "Amazon Lex",
+        "C": "AWS Glue",
+        "D": "Amazon Rekognition"
+      },
+      "eng": {
+        "A": "Amazon Textract",
+        "B": "Amazon Lex",
+        "C": "AWS Glue",
+        "D": "Amazon Rekognition"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Machine Learning"
+    ],
+    "subcategory": [
+      "Amazon Lex"
+    ]
+  },
+  {
+    "idx": 359,
+    "oldIdx": 320,
+    "question": {
+      "kor": "회사가 Amazon S3에 저장된 문서에서 텍스트를 검색해야 합니다. 이 요구 사항을 충족할 AWS 서비스는 무엇입니까?",
+      "eng": "A company needs to search for text in documents that are stored in Amazon S3. Which AWS service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Kendra",
+        "B": "Amazon Rekognition",
+        "C": "Amazon Polly",
+        "D": "Amazon Lex"
+      },
+      "eng": {
+        "A": "Amazon Kendra",
+        "B": "Amazon Rekognition",
+        "C": "Amazon Polly",
+        "D": "Amazon Lex"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Machine Learning"
+    ],
+    "subcategory": [
+      "Amazon Kendra"
+    ]
+  },
+  {
+    "idx": 360,
+    "oldIdx": 699,
+    "question": {
+      "kor": "회사는 직원 생산성을 향상시키기 위해 직원들이 질문을 검색하고 특정 답변을 검색할 수 있는 방법을 제공하고자 합니다. 회사는 단일 지능형 검색 인터페이스를 사용하고 싶어합니다. 이 요구사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A company wants to improve employee productivity by providing a way for employees to search for questions and retrieve specific answers. The company wants to use a single intelligent search interface. Which AWS service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Connect",
+        "B": "Amazon Kendra",
+        "C": "Amazon Lex",
+        "D": "Amazon Comprehend"
+      },
+      "eng": {
+        "A": "Amazon Connect",
+        "B": "Amazon Kendra",
+        "C": "Amazon Lex",
+        "D": "Amazon Comprehend"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Machine Learning"
+    ],
+    "subcategory": [
+      "Amazon Kendra"
+    ]
+  },
+  {
+    "idx": 361,
+    "oldIdx": 367,
+    "question": {
+      "kor": "회사는 자연어 처리(NLP)를 비즈니스 인텔리전스(BI) 대시보드에 통합하려고 합니다. 회사는 질문을 하고 관련 시각화를 포함한 답변을 받고자 합니다. 이 요구 사항을 충족할 AWS 서비스 또는 도구는 무엇입니까?",
+      "eng": "A company wants to integrate natural language processing (NLP) into business intelligence (BI) dashboards. The company wants to ask questions and receive answers with relevant visualizations. Which AWS service or tool will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Macie",
+        "B": "Amazon Rekognition",
+        "C": "Amazon QuickSight Q",
+        "D": "Amazon Lex"
+      },
+      "eng": {
+        "A": "Amazon Macie",
+        "B": "Amazon Rekognition",
+        "C": "Amazon QuickSight Q",
+        "D": "Amazon Lex"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Machine Learning"
+    ],
+    "subcategory": [
+      "Amazon QuickSight Q"
+    ]
+  },
+  {
+    "idx": 362,
+    "oldIdx": 681,
+    "question": {
+      "kor": "회사는 기계 학습 (ML) 모델을 구축, 학습 및 배포하고자 합니다. 이 요구 사항을 충족할 수 있는 AWS 서비스는 무엇입니까?",
+      "eng": "A company wants to build, train, and deploy machine learning (ML) models. Which AWS service can the company use to meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Personalize",
+        "B": "Amazon Comprehend",
+        "C": "Amazon Forecast",
+        "D": "Amazon SageMaker"
+      },
+      "eng": {
+        "A": "Amazon Personalize",
+        "B": "Amazon Comprehend",
+        "C": "Amazon Forecast",
+        "D": "Amazon SageMaker"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Machine Learning"
+    ],
+    "subcategory": [
+      "Amazon SageMaker"
+    ]
+  }
+]

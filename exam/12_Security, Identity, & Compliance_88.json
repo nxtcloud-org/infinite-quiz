@@ -1,0 +1,2755 @@
+[
+  {
+    "idx": 398,
+    "oldIdx": 54,
+    "question": {
+      "kor": "항상 무료로 제공되는 AWS 서비스는 무엇입니까?",
+      "eng": "Which AWS service is always provided at no charge?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon S3",
+        "B": "AWS Identity and Access Management (IAM)",
+        "C": "Elastic Load Balancers",
+        "D": "AWS WAF"
+      },
+      "eng": {
+        "A": "Amazon S3",
+        "B": "AWS Identity and Access Management (IAM)",
+        "C": "Elastic Load Balancers",
+        "D": "AWS WAF"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS IAM"
+    ]
+  },
+  {
+    "idx": 399,
+    "oldIdx": 650,
+    "question": {
+      "kor": "어떤 AWS 서비스가 사용자에게 항상 무료로 제공됩니까?",
+      "eng": "Which AWS service is always available free of charge to users?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Athena",
+        "B": "AWS Identity and Access Management (IAM)",
+        "C": "AWS Secrets Manager",
+        "D": "Amazon ElastiCache"
+      },
+      "eng": {
+        "A": "Amazon Athena",
+        "B": "AWS Identity and Access Management (IAM)",
+        "C": "AWS Secrets Manager",
+        "D": "Amazon ElastiCache"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS IAM"
+    ]
+  },
+  {
+    "idx": 400,
+    "oldIdx": 343,
+    "question": {
+      "kor": "회사는 온프레미스 애플리케이션을 AWS 클라우드로 마이그레이션하고 있습니다. 회사는 애플리케이션이 필요한 모든 작업을 수행하기 위해 필요한 최소 권한만 할당되도록 보장하고자 합니다. 이 요구 사항을 충족할 AWS 서비스는 무엇입니까?",
+      "eng": "A company is migrating its applications from on-premises to the AWS Cloud. The company wants to ensure that the applications are assigned only the minimum permissions that are needed to perform all operations. Which AWS service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Identity and Access Management (IAM)",
+        "B": "Amazon CloudWatch",
+        "C": "Amazon Macie",
+        "D": "Amazon GuardDuty"
+      },
+      "eng": {
+        "A": "AWS Identity and Access Management (IAM)",
+        "B": "Amazon CloudWatch",
+        "C": "Amazon Macie",
+        "D": "Amazon GuardDuty"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS IAM"
+    ]
+  },
+  {
+    "idx": 401,
+    "oldIdx": 582,
+    "question": {
+      "kor": "다음 중 AWS Identity and Access Management (IAM)으로 제어할 수 있는 작업은 무엇입니까? (두 가지를 선택하십시오.)",
+      "eng": "Which of the following actions are controlled with AWS Identity and Access Management (IAM)? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS 서비스 API 및 기타 특정 리소스에 대한 액세스 제어",
+        "B": "지능형 위협 감지 및 지속적인 모니터링 제공",
+        "C": "AWS 환경 보호를 위한 다단계 인증 (MFA)",
+        "D": "AWS 데이터 센터에 대한 사용자 액세스 권한 부여",
+        "E": "애플리케이션에 대한 일반적인 웹 공격으로부터 방화벽 보호 제공"
+      },
+      "eng": {
+        "A": "Control access to AWS service APIs and to other specific resources.",
+        "B": "Provide intelligent threat detection and continuous monitoring.",
+        "C": "Protect the AWS environment using multi-factor authentication (MFA).",
+        "D": "Grant users access to AWS data centers.",
+        "E": "Provide firewall protection for applications from common web attacks."
+      }
+    },
+    "answers": [
+      "A",
+      "C"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS IAM"
+    ]
+  },
+  {
+    "idx": 402,
+    "oldIdx": 433,
+    "question": {
+      "kor": "회사가 사용자를 구성하여 그룹으로 사용자에게 권한을 부여할 수 있도록 하고자 합니다. 이 요구 사항을 충족할 AWS 서비스 또는 도구는 무엇입니까?",
+      "eng": "A company wants to organize its users so that the company can grant permissions to the users as a group. Which AWS service or tool can the company use to meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "보안 그룹",
+        "B": "AWS Identity and Access Management (IAM)",
+        "C": "리소스 그룹",
+        "D": "AWS Security Hub"
+      },
+      "eng": {
+        "A": "Security groups",
+        "B": "AWS Identity and Access Management (IAM)",
+        "C": "Resource groups",
+        "D": "AWS Security Hub"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS IAM"
+    ]
+  },
+  {
+    "idx": 403,
+    "oldIdx": 656,
+    "question": {
+      "kor": "회사가 IAM 역할 대신 IAM 사용자를 생성해야 하는 상황은 무엇입니까?",
+      "eng": "In which situations should a company create an IAM user instead of an IAM role?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon EC2 인스턴스에서 실행되는 애플리케이션이 다른 AWS 서비스에 액세스해야 하는 경우",
+        "B": "회사가 개인에 대한 AWS 액세스 자격 증명을 생성할 때",
+        "C": "회사가 AWS에 요청을 하는 모바일 애플리케이션을 생성할 때",
+        "D": "회사가 IAM 그룹에 사용자를 추가해야 하는 경우",
+        "E": "사용자가 회사 네트워크에서 인증을 받고 AWS에 두 번째로 로그인하지 않고 사용하려는 경우"
+      },
+      "eng": {
+        "A": "When an application that runs on Amazon EC2 instances requires access to other AWS services",
+        "B": "When the company creates AWS access credentials for individuals",
+        "C": "When the company creates an application that runs on a mobile phone that makes requests to AWS",
+        "D": "When the company needs to add users to IAM groups",
+        "E": "When users are authenticated in the corporate network and want to be able to use AWS without having to sign in a second time"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS IAM"
+    ]
+  },
+  {
+    "idx": 404,
+    "oldIdx": 296,
+    "question": {
+      "kor": "회사는 관리형 IAM 정책이 사용자가 필요한 작업을 수행할 수 있는 권한을 부여하지 않습니다. 이 문제를 해결하려면 어떻게 해야 합니까?",
+      "eng": "A company has a managed IAM policy that does not grant the necessary permissions for users to accomplish required tasks. How can this be resolved?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Shield Advanced를 활성화합니다.",
+        "B": "사용자 지정 IAM 정책을 만듭니다.",
+        "C": "AWS Marketplace에서 타사 웹 애플리케이션 방화벽(WAF) 관리 규칙을 사용합니다.",
+        "D": "AWS Key Management Service (AWS KMS)로 고객 관리 키를 만듭니다."
+      },
+      "eng": {
+        "A": "Enable AWS Shield Advanced.",
+        "B": "Create a custom IAM policy.",
+        "C": "Use a third-party web application firewall (WAF) managed rule from the AWS Marketplace.",
+        "D": "Use AWS Key Management Service (AWS KMS) to create a customer-managed key."
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS IAM",
+      "IAM policy"
+    ]
+  },
+  {
+    "idx": 405,
+    "oldIdx": 192,
+    "question": {
+      "kor": "회사는 여러 Amazon EC2 인스턴스에서 애플리케이션을 호스팅합니다. 애플리케이션은 Amazon Simple Notification Service (Amazon SNS)를 사용하여 메시지를 보냅니다. 필요한 AWS 서비스에 액세스할 수 있는 권한을 애플리케이션에 부여하는 AWS 서비스 또는 기능은 무엇입니까?",
+      "eng": "A company hosts an application on multiple Amazon EC2 instances. The application uses Amazon Simple Notification Service (Amazon SNS) to send messages. Which AWS service or feature will give the application permission to access required AWS services?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Certificate Manager (ACM)",
+        "B": "IAM 역할",
+        "C": "AWS Security Hub",
+        "D": "Amazon GuardDuty"
+      },
+      "eng": {
+        "A": "AWS Certificate Manager (ACM)",
+        "B": "IAM roles",
+        "C": "AWS Security Hub",
+        "D": "Amazon GuardDuty"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS IAM",
+      "IAM Role"
+    ]
+  },
+  {
+    "idx": 406,
+    "oldIdx": 98,
+    "question": {
+      "kor": "한 AWS 계정의 사용자에게 다른 AWS 계정의 리소스에 대한 액세스 권한을 부여하려는 회사가 있습니다. 사용자는 현재 리소스에 액세스할 수 있는 권한이 없습니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A company wants to grant users in one AWS account access to resources in another AWS account. The users do not currently have permission to access the resources. Which AWS service will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "IAM 그룹",
+        "B": "IAM 역할",
+        "C": "IAM 태그",
+        "D": "IAM Access Analyzer"
+      },
+      "eng": {
+        "A": "IAM group",
+        "B": "IAM role",
+        "C": "IAM tag",
+        "D": "IAM Access Analyzer"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS IAM",
+      "IAM Role"
+    ]
+  },
+  {
+    "idx": 407,
+    "oldIdx": 108,
+    "question": {
+      "kor": "애플리케이션이 다른 AWS 서비스에 호출을 할 수 있도록 하려는 사용자가 있습니다. 부여된 액세스는 안전해야 합니다. 이 요구 사항을 충족하는 AWS 서비스 또는 기능은 무엇입니까?",
+      "eng": "A user wants to allow applications running on an Amazon EC2 instance to make calls to other AWS services. The access granted must be secure. Which AWS service or feature should be used?"
+    },
+    "choices": {
+      "kor": {
+        "A": "보안 그룹",
+        "B": "AWS Firewall Manager",
+        "C": "IAM 역할",
+        "D": "IAM 사용자 SSH 키"
+      },
+      "eng": {
+        "A": "Security groups",
+        "B": "AWS Firewall Manager",
+        "C": "IAM roles",
+        "D": "IAM user SSH keys"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS IAM",
+      "IAM Role"
+    ]
+  },
+  {
+    "idx": 408,
+    "oldIdx": 216,
+    "question": {
+      "kor": "회사는 팀마다 다른 직무와 책임이 있습니다. 회사의 직원들은 자주 팀을 변경합니다. 회사는 직원의 권한을 관리하여 권한이 직무 책임에 적합하도록 해야 합니다. 이 요구 사항을 최소한의 운영 오버헤드로 충족하는 IAM 리소스는 무엇입니까?",
+      "eng": "A company has teams that have different job roles and responsibilities. The company’s employees often change teams. The company needs to manage permissions for the employees so that the permissions are appropriate for the job responsibilities. Which IAM resource should the company use to meet this requirement with the LEAST operational overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "IAM 사용자 그룹",
+        "B": "IAM 역할",
+        "C": "IAM 인스턴스 프로파일",
+        "D": "개별 사용자에 대한 IAM 정책"
+      },
+      "eng": {
+        "A": "IAM user groups",
+        "B": "IAM roles",
+        "C": "IAM instance profiles",
+        "D": "IAM policies for individual users"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS IAM",
+      "IAM Role"
+    ]
+  },
+  {
+    "idx": 409,
+    "oldIdx": 39,
+    "question": {
+      "kor": "회사는 AWS 계정에 AWS Identity and Access Management (IAM)를 설정하고 있습니다. IAM 보안 모범 사례를 준수하는 권장 사항은 무엇입니까?",
+      "eng": "A company is setting up AWS Identity and Access Management (IAM) on an AWS account. Which recommendation complies with IAM security best practices?"
+    },
+    "choices": {
+      "kor": {
+        "A": "계정 루트 사용자 액세스 키를 관리 작업에 사용",
+        "B": "회사의 모든 직원이 필요한 리소스에 접근할 수 있도록 광범위한 권한 부여",
+        "C": "로그인 프로세스 동안 추가 보안을 위해 다단계 인증(MFA) 활성화",
+        "D": "프로덕션 애플리케이션의 문제를 방지하기 위해 자격 증명 회전을 피함"
+      },
+      "eng": {
+        "A": "Use the account root user access keys for administrative tasks.",
+        "B": "Grant broad permissions so that all company employees can access the resources they need.",
+        "C": "Turn on multi-factor authentication (MFA) for added security during the login process.",
+        "D": "Avoid rotating credentials to prevent issues in production applications."
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS IAM",
+      "IAM best practice"
+    ]
+  },
+  {
+    "idx": 410,
+    "oldIdx": 94,
+    "question": {
+      "kor": "AWS Identity and Access Management (IAM)를 사용하여 작업을 수행하는 데 필요한 리소스에만 접근 권한을 부여하는 개념은 무엇입니까?",
+      "eng": "Using AWS Identity and Access Management (IAM) to grant access only to the resources needed to perform a task is a concept known as:"
+    },
+    "choices": {
+      "kor": {
+        "A": "제한된 액세스",
+        "B": "필요 시 액세스",
+        "C": "최소 권한 액세스",
+        "D": "토큰 액세스"
+      },
+      "eng": {
+        "A": "restricted access.",
+        "B": "as-needed access.",
+        "C": "least privilege access.",
+        "D": "token access."
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS IAM",
+      "IAM best practice"
+    ]
+  },
+  {
+    "idx": 411,
+    "oldIdx": 168,
+    "question": {
+      "kor": "Amazon S3 버킷에 저장된 민감한 데이터에 대한 액세스 보안의 모범 사례는 무엇입니까?",
+      "eng": "Which action is a security best practice for access to sensitive data that is stored in an Amazon S3 bucket?"
+    },
+    "choices": {
+      "kor": {
+        "A": "S3 간 지역 복제를 활성화",
+        "B": "S3 버킷에 액세스가 필요한 애플리케이션에 IAM 역할 사용",
+        "C": "S3 버킷에 대한 무단 액세스를 방지하기 위해 AWS WAF 구성",
+        "D": "S3 버킷에 대한 무단 액세스를 방지하기 위해 Amazon GuardDuty 구성"
+      },
+      "eng": {
+        "A": "Enable S3 Cross-Region Replication (CRR) on the S3 bucket.",
+        "B": "Use IAM roles for applications that require access to the S3 bucket.",
+        "C": "Configure AWS WAF to prevent unauthorized access to the S3 bucket.",
+        "D": "Configure Amazon GuardDuty to prevent unauthorized access to the S3 bucket."
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS IAM",
+      "IAM best practice"
+    ]
+  },
+  {
+    "idx": 412,
+    "oldIdx": 539,
+    "question": {
+      "kor": "AWS Identity and Access Management (IAM)를 사용할 때의 모범 사례는 무엇입니까? (2개를 선택하십시오.)",
+      "eng": "Which guidelines are best practices for using AWS Identity and Access Management (IAM)? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "액세스 키 공유",
+        "B": "개별 IAM 사용자 생성",
+        "C": "인라인 정책 대신 고객 관리 정책 사용",
+        "D": "IAM 사용자에게 최대 권한 부여",
+        "E": "그룹을 사용하여 IAM 사용자에게 권한 할당"
+      },
+      "eng": {
+        "A": "Share access keys.",
+        "B": "Create individual IAM users.",
+        "C": "Use inline policies instead of customer managed policies.",
+        "D": "Grant maximum privileges to IAM users.",
+        "E": "Use groups to assign permissions to IAM users."
+      }
+    },
+    "answers": [
+      "B",
+      "E"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS IAM",
+      "IAM best practice"
+    ]
+  },
+  {
+    "idx": 413,
+    "oldIdx": 428,
+    "question": {
+      "kor": "회사가 Amazon RDS에 대한 액세스를 직원에게 제공하고자 합니다. 회사는 AWS CLI 및 AWS 소프트웨어 개발 키트(SDK)에 대한 액세스만 허용하려고 합니다. 최소 권한 원칙을 따르면서 이 요구 사항을 충족하기 위해 회사가 취해야 할 조치는 무엇입니까? (2개를 선택하십시오.)",
+      "eng": "A company wants to provide one of its employees with access to Amazon RDS. The company also wants to limit the interaction to only the AWS CLI and AWS software development kits (SDKs). Which combination of actions should the company take to meet these requirements while following the principles of least privilege? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "IAM 사용자를 생성하고 AWS Management Console 액세스만 제공",
+        "B": "IAM 사용자를 생성하고 프로그래밍 방식 액세스만 제공",
+        "C": "IAM 역할을 생성하고 AWS Management Console 액세스만 제공",
+        "D": "관리자 액세스 권한이 있는 IAM 정책을 생성하고 IAM 사용자에 연결",
+        "E": "Amazon RDS 액세스 권한이 있는 IAM 정책을 생성하고 IAM 사용자에 연결"
+      },
+      "eng": {
+        "A": "Create an IAM user and provide AWS Management Console access only.",
+        "B": "Create an IAM user and provide programmatic access only.",
+        "C": "Create an IAM role and provide AWS Management Console access only.",
+        "D": "Create an IAM policy with administrator access and attach it to the IAM user.",
+        "E": "Create an IAM policy with Amazon RDS access and attach it to the IAM user."
+      }
+    },
+    "answers": [
+      "B",
+      "E"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS IAM",
+      "IAM best practice"
+    ]
+  },
+  {
+    "idx": 414,
+    "oldIdx": 4,
+    "question": {
+      "kor": "보안 모범 사례에 따라 Amazon EC2 인스턴스에 Amazon S3 버킷에 대한 액세스 권한을 부여하는 방법은 무엇입니까?",
+      "eng": "According to security best practices, how should an Amazon EC2 instance be given access to an Amazon S3 bucket?"
+    },
+    "choices": {
+      "kor": {
+        "A": "애플리케이션에 IAM 사용자의 비밀 키와 액세스 키를 하드 코딩하고 파일을 업로드합니다.",
+        "B": "IAM 사용자의 비밀 키와 액세스 키를 텍스트 파일에 저장하고 EC2 인스턴스에서 키를 읽은 후 파일을 업로드합니다.",
+        "C": "EC2 인스턴스가 파일을 업로드할 수 있는 권한을 얻기 위해 역할을 맡게 합니다.",
+        "D": "S3 버킷 정책을 수정하여 모든 서비스가 언제든지 업로드할 수 있도록 합니다."
+      },
+      "eng": {
+        "A": "Hard code an IAM user’s secret key and access key directly in the application, and upload the file.",
+        "B": "Store the IAM user’s secret key and access key in a text file on the EC2 instance, read the keys, then upload the file.",
+        "C": "Have the EC2 instance assume a role to obtain the privileges to upload the file.",
+        "D": "Modify the S3 bucket policy so that any service can upload to it at any time."
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS IAM",
+      "IAM best practice"
+    ]
+  },
+  {
+    "idx": 415,
+    "oldIdx": 36,
+    "question": {
+      "kor": "Amazon S3 버킷이나 IAM 역할이 외부 엔터티와 공유되었는지 식별하는 AWS 서비스 또는 기능은 무엇입니까?",
+      "eng": "Which AWS service or feature identifies whether an Amazon S3 bucket or an IAM role has been shared with an external entity?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Service Catalog",
+        "B": "AWS Systems Manager",
+        "C": "AWS IAM Access Analyzer",
+        "D": "AWS Organizations"
+      },
+      "eng": {
+        "A": "AWS Service Catalog",
+        "B": "AWS Systems Manager",
+        "C": "AWS IAM Access Analyzer",
+        "D": "AWS Organizations"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS IAM Access Analyzer"
+    ]
+  },
+  {
+    "idx": 416,
+    "oldIdx": 165,
+    "question": {
+      "kor": "회사에서는 다른 AWS 계정과 공유되는 Amazon S3 버킷을 식별하려고 합니다. 이러한 요구 사항을 충족하는 AWS 서비스 또는 기능은 무엇입니까?",
+      "eng": "A company wants to identify Amazon S3 buckets that are shared with another AWS account. Which AWS service or feature will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Lake Formation",
+        "B": "IAM 자격 증명 보고서",
+        "C": "Amazon CloudWatch",
+        "D": "IAM Access Analyzer"
+      },
+      "eng": {
+        "A": "AWS Lake Formation",
+        "B": "IAM credential report",
+        "C": "Amazon CloudWatch",
+        "D": "IAM Access Analyzer"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS IAM Access Analyzer"
+    ]
+  },
+  {
+    "idx": 417,
+    "oldIdx": 202,
+    "question": {
+      "kor": "지정된 날짜 범위 내에 사용자가 사용한 AWS 서비스를 식별하는 데 사용할 수 있는 AWS 서비스 또는 리소스는 무엇입니까?",
+      "eng": "Which AWS service or resource can be used to identify services that have been used by a user within a specified date range?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon S3 액세스 제어 목록 (ACL)",
+        "B": "AWS Certificate Manager (ACM)",
+        "C": "Network Access Analyzer",
+        "D": "AWS Identity and Access Management Access Analyzer"
+      },
+      "eng": {
+        "A": "Amazon S3 access control lists (ACLs)",
+        "B": "AWS Certificate Manager (ACM)",
+        "C": "Network Access Analyzer",
+        "D": "AWS Identity and Access Management Access Analyzer"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS IAM Access Analyzer"
+    ]
+  },
+  {
+    "idx": 418,
+    "oldIdx": 234,
+    "question": {
+      "kor": "AWS 리소스가 외부와 공유되었는지 검색할 수 있는 AWS 서비스 또는 기능은 무엇입니까?",
+      "eng": "Which AWS service or feature will search for and identify AWS resources that are shared externally?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon OpenSearch Service",
+        "B": "AWS Control Tower",
+        "C": "AWS IAM Access Analyzer",
+        "D": "AWS Fargate"
+      },
+      "eng": {
+        "A": "Amazon OpenSearch Service",
+        "B": "AWS Control Tower",
+        "C": "AWS IAM Access Analyzer",
+        "D": "AWS Fargate"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS IAM Access Analyzer"
+    ]
+  },
+  {
+    "idx": 419,
+    "oldIdx": 385,
+    "question": {
+      "kor": "어떤 AWS 서비스 또는 리소스가 한 AWS 계정에 공유된 IAM 리소스에 대한 보고서를 식별하고 제공할 수 있습니까?",
+      "eng": "Which AWS service or resource can identify and provide reports on IAM resources in one AWS account that is shared with another AWS account?"
+    },
+    "choices": {
+      "kor": {
+        "A": "IAM 자격 증명 보고서",
+        "B": "AWS IAM Identity Center (AWS Single Sign-On)",
+        "C": "AWS Identity and Access Management Access Analyzer",
+        "D": "Amazon Cognito 사용자 풀"
+      },
+      "eng": {
+        "A": "IAM credential report",
+        "B": "AWS IAM Identity Center (AWS Single Sign-On)",
+        "C": "AWS Identity and Access Management Access Analyzer",
+        "D": "Amazon Cognito user pool"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS IAM Access Analyzer"
+    ]
+  },
+  {
+    "idx": 420,
+    "oldIdx": 26,
+    "question": {
+      "kor": "회사는 AWS 계정을 가지고 있습니다. 회사는 규정 준수를 위해 암호를 감사하고 키 순환 세부 정보에 액세스하려고 합니다. 이 요구 사항을 충족하는 AWS 서비스 또는 도구는 무엇입니까?",
+      "eng": "A company has an AWS account. The company wants to audit its password and access key rotation details for compliance purposes. Which AWS service or tool will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "IAM Access Analyzer",
+        "B": "AWS Artifact",
+        "C": "IAM 자격 증명 보고서",
+        "D": "AWS Audit Manager"
+      },
+      "eng": {
+        "A": "IAM Access Analyzer",
+        "B": "AWS Artifact",
+        "C": "IAM credential report",
+        "D": "AWS Audit Manager"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "IAM credential report"
+    ]
+  },
+  {
+    "idx": 421,
+    "oldIdx": 283,
+    "question": {
+      "kor": "회사는 AWS 계정 내 모든 사용자에 대해 다중 요소 인증(MFA)이 활성화되어 있는지 확인하려고 합니다. 이 요구 사항을 충족하는 AWS 서비스 또는 리소스는 무엇입니까?",
+      "eng": "A company wants to verify if multi-factor authentication (MFA) is enabled for all users within its AWS accounts. Which AWS service or resource will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS 비용 및 사용 보고서",
+        "B": "IAM 자격 증명 보고서",
+        "C": "AWS 아티팩트",
+        "D": "Amazon CloudFront 보고서"
+      },
+      "eng": {
+        "A": "AWS Cost and Usage Report",
+        "B": "IAM credential reports",
+        "C": "AWS Artifact",
+        "D": "Amazon CloudFront reports"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "IAM credential report"
+    ]
+  },
+  {
+    "idx": 422,
+    "oldIdx": 288,
+    "question": {
+      "kor": "외부 감사자가 회사의 모든 IAM 사용자 목록을 포함하여 사용자의 자격 증명 및 액세스 키 상태를 제공하도록 요청했습니다. 이 정보를 제공하는 가장 간단한 방법은 무엇입니까?",
+      "eng": "An external auditor has requested that a company provide a list of all its IAM users, including the status of users' credentials and access keys. What is the SIMPLEST way to provide this information?"
+    },
+    "choices": {
+      "kor": {
+        "A": "감사자를 위해 IAM 사용자 계정을 생성하고 감사자에게 관리자 권한을 부여합니다.",
+        "B": "AWS Management Console에서 각 사용자의 페이지 스크린샷을 찍어 감사자에게 제공합니다.",
+        "C": "IAM 자격 증명 보고서를 다운로드한 다음 보고서를 감사자에게 제공합니다.",
+        "D": "AWS Trusted Advisor 보고서를 다운로드한 다음 보고서를 감사자에게 제공합니다."
+      },
+      "eng": {
+        "A": "Create an IAM user account for the auditor, granting the auditor administrator permissions.",
+        "B": "Take a screenshot of each user's page in the AWS Management Console, then provide the screenshots to the auditor.",
+        "C": "Download the IAM credential report, then provide the report to the auditor.",
+        "D": "Download the AWS Trusted Advisor report, then provide the report to the auditor."
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "IAM credential report"
+    ]
+  },
+  {
+    "idx": 423,
+    "oldIdx": 336,
+    "question": {
+      "kor": "회사가 IAM 사용자 목록을 생성하고자 합니다. 회사는 사용자와 관련된 비밀번호, 액세스 키 및 다중 요소 인증(MFA) 장치 등의 다양한 자격 증명 상태를 확인하고자 합니다. 이 요구 사항을 충족할 AWS 서비스 또는 기능은 무엇입니까?",
+      "eng": "A company wants to generate a list of IAM users. The company also wants to view the status of various credentials that are associated with the users, such as password, access keys, and multi-factor authentication (MFA) devices. Which AWS service or feature will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "IAM 자격 증명 보고서",
+        "B": "AWS IAM Identity Center (AWS Single Sign-On)",
+        "C": "AWS Identity and Access Management Access Analyzer",
+        "D": "AWS Cost and Usage Report"
+      },
+      "eng": {
+        "A": "IAM credential report",
+        "B": "AWS IAM Identity Center (AWS Single Sign-On)",
+        "C": "AWS Identity and Access Management Access Analyzer",
+        "D": "AWS Cost and Usage Report"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "IAM credential report"
+    ]
+  },
+  {
+    "idx": 424,
+    "oldIdx": 392,
+    "question": {
+      "kor": "회사가 모든 사용자가 회사의 AWS 계정 내에서 사용하는 다중 요소 인증(MFA) 장치의 상태를 나열하는 보고서를 원합니다. 이 요구 사항을 충족할 AWS 기능 또는 서비스는 무엇입니까?",
+      "eng": "A company wants a report that lists the status of multi-factor authentication (MFA) devices that all users in the company's AWS account use. Which AWS feature or service will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Cost and Usage Reports",
+        "B": "IAM 자격 증명 보고서",
+        "C": "상세 청구 보고서",
+        "D": "AWS Cost Explorer 보고서"
+      },
+      "eng": {
+        "A": "AWS Cost and Usage Reports",
+        "B": "IAM credential reports",
+        "C": "Detailed Billing Reports",
+        "D": "AWS Cost Explorer reports"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "IAM credential report"
+    ]
+  },
+  {
+    "idx": 425,
+    "oldIdx": 339,
+    "question": {
+      "kor": "회사가 여러 AWS 계정에 대해 단일 자격 증명 세트를 사용하여 인증 및 권한 부여를 허용하고자 합니다. 이 요구 사항을 충족할 AWS 서비스 또는 리소스는 무엇입니까?",
+      "eng": "A company wants to allow users to authenticate and authorize multiple AWS accounts by using a single set of credentials. Which AWS service or resource will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Organizations",
+        "B": "IAM 사용자",
+        "C": "AWS IAM Identity Center (AWS Single Sign-On)",
+        "D": "AWS Control Tower"
+      },
+      "eng": {
+        "A": "AWS Organizations",
+        "B": "IAM user",
+        "C": "AWS IAM Identity Center (AWS Single Sign-On)",
+        "D": "AWS Control Tower"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS IAM Identity Center"
+    ]
+  },
+  {
+    "idx": 426,
+    "oldIdx": 391,
+    "question": {
+      "kor": "회사가 워크포스 사용자를 위한 로그인 보안을 관리하고자 합니다. 회사는 워크포스 사용자를 생성하고 회사의 모든 AWS 계정 및 애플리케이션에 대한 액세스를 중앙에서 관리해야 합니다. 이 요구 사항을 충족할 AWS 서비스는 무엇입니까?",
+      "eng": "A company wants to manage sign-in security for workforce users. The company needs to create workforce users and centrally manage their access across all the company's AWS accounts and applications. Which AWS service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Audit Manager",
+        "B": "Amazon Cognito",
+        "C": "AWS Security Hub",
+        "D": "AWS IAM Identity Center (AWS Single Sign-On)"
+      },
+      "eng": {
+        "A": "AWS Audit Manager",
+        "B": "Amazon Cognito",
+        "C": "AWS Security Hub",
+        "D": "AWS IAM Identity Center (AWS Single Sign-On)"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS IAM Identity Center"
+    ]
+  },
+  {
+    "idx": 427,
+    "oldIdx": 474,
+    "question": {
+      "kor": "회사가 AWS Organizations 내의 동일한 조직에서 여러 AWS 계정에 대한 로그인을 관리해야 합니다. 이 요구 사항을 충족할 AWS 서비스는 무엇입니까?",
+      "eng": "A company needs to manage multiple logins across AWS accounts within the same organization in AWS Organizations. Which AWS service should the company use to meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon VPC",
+        "B": "Amazon GuardDuty",
+        "C": "Amazon Cognito",
+        "D": "AWS IAM Identity Center"
+      },
+      "eng": {
+        "A": "Amazon VPC",
+        "B": "Amazon GuardDuty",
+        "C": "Amazon Cognito",
+        "D": "AWS IAM Identity Center"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS IAM Identity Center"
+    ]
+  },
+  {
+    "idx": 428,
+    "oldIdx": 477,
+    "question": {
+      "kor": "회사가 서드파티 아이덴티티 제공자(IdP)를 사용합니다. 회사는 직원에게 추가 로그인 자격 증명 없이 AWS 계정 및 서비스에 대한 액세스를 제공하고자 합니다. 이 요구 사항을 충족할 AWS 서비스는 무엇입니까?",
+      "eng": "A company uses a third-party identity provider (IdP). The company wants to provide its employees with access to AWS accounts and services without requiring another set of login credentials. Which AWS service will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Directory Service",
+        "B": "Amazon Cognito",
+        "C": "AWS IAM Identity Center",
+        "D": "AWS Resource Access Manager (AWS RAM)"
+      },
+      "eng": {
+        "A": "AWS Directory Service",
+        "B": "Amazon Cognito",
+        "C": "AWS IAM Identity Center",
+        "D": "AWS Resource Access Manager (AWS RAM)"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS IAM Identity Center"
+    ]
+  },
+  {
+    "idx": 429,
+    "oldIdx": 571,
+    "question": {
+      "kor": "회사는 여러 AWS 계정에 대한 직원의 액세스를 중앙에서 관리하고자 합니다. 이 요구 사항을 충족할 수 있는 AWS 서비스 또는 기능은 무엇입니까?",
+      "eng": "A company wants to centrally manage its employee's access to multiple AWS accounts. Which AWS service or feature should the company use to meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Identity and Access Management Access Analyzer",
+        "B": "AWS Secrets Manager",
+        "C": "AWS IAM Identity Center",
+        "D": "AWS Security Token Service (AWS STS)"
+      },
+      "eng": {
+        "A": "AWS Identity and Access Management Access Analyzer",
+        "B": "AWS Secrets Manager",
+        "C": "AWS IAM Identity Center",
+        "D": "AWS Security Token Service (AWS STS)"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS IAM Identity Center"
+    ]
+  },
+  {
+    "idx": 430,
+    "oldIdx": 595,
+    "question": {
+      "kor": "회사는 제3자 소프트웨어 서비스 (SaaS) 애플리케이션에 대한 액세스 및 권한을 관리하려고 합니다. 회사는 최종 사용자가 할당된 AWS 계정과 AWS 클라우드 애플리케이션에 액세스할 수 있는 포털을 사용하고자 합니다. 어떤 AWS 서비스를 사용하여 이 요구 사항을 충족할 수 있습니까?",
+      "eng": "A company wants to manage access and permissions for its third-party software as a service (SaaS) applications. The company wants to use a portal where end users can access assigned AWS accounts and AWS Cloud applications. Which AWS service should the company use to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Cognito",
+        "B": "AWS IAM Identity Center (AWS Single Sign-On)",
+        "C": "AWS Identity and Access Management (IAM)",
+        "D": "AWS Directory Service for Microsoft Active Directory"
+      },
+      "eng": {
+        "A": "Amazon Cognito",
+        "B": "AWS IAM Identity Center (AWS Single Sign-On)",
+        "C": "AWS Identity and Access Management (IAM)",
+        "D": "AWS Directory Service for Microsoft Active Directory"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS IAM Identity Center"
+    ]
+  },
+  {
+    "idx": 431,
+    "oldIdx": 170,
+    "question": {
+      "kor": "사용자는 중앙 사용자 포털이 필요합니다. 사용자는 이 포털을 통해 SAML 2.0을 지원하는 타사 비즈니스 애플리케이션에 로그인할 수 있어야 합니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A company needs a central user portal so that users can log in to third-party business applications that support Security Assertion Markup Language (SAML) 2.0. Which AWS service will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Identity and Access Management (IAM)",
+        "B": "Amazon Cognito",
+        "C": "AWS IAM Identity Center (AWS Single Sign-On)",
+        "D": "AWS CLI"
+      },
+      "eng": {
+        "A": "AWS Identity and Access Management (IAM)",
+        "B": "Amazon Cognito",
+        "C": "AWS IAM Identity Center (AWS Single Sign-On)",
+        "D": "AWS CLI"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS IAM Identity Center"
+    ]
+  },
+  {
+    "idx": 432,
+    "oldIdx": 220,
+    "question": {
+      "kor": "회사는 온라인 쇼핑 웹사이트를 소셜 미디어 로그인 자격 증명과 통합하려고 합니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A company wants to integrate its online shopping website with social media login credentials. Which AWS service can the company use to make this integration?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Directory Service",
+        "B": "AWS Identity and Access Management (IAM)",
+        "C": "Amazon Cognito",
+        "D": "AWS IAM Identity Center (AWS Single Sign-On)"
+      },
+      "eng": {
+        "A": "AWS Directory Service",
+        "B": "AWS Identity and Access Management (IAM)",
+        "C": "Amazon Cognito",
+        "D": "AWS IAM Identity Center (AWS Single Sign-On)"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "Amazon Cognito"
+    ]
+  },
+  {
+    "idx": 433,
+    "oldIdx": 394,
+    "question": {
+      "kor": "회사가 AWS 클라우드에서 모바일 앱을 출시하려고 합니다. 회사는 앱의 사용자가 소셜 미디어 아이덴티티 제공자(IdP)를 통해 로그인할 수 있도록 하고자 합니다. 이 요구 사항을 충족할 AWS 서비스는 무엇입니까?",
+      "eng": "A company is launching a mobile app in the AWS Cloud. The company wants the app's users to sign in through social media identity providers (IdPs). Which AWS service will meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Lambda",
+        "B": "Amazon Cognito",
+        "C": "AWS Secrets Manager",
+        "D": "Amazon CloudFront"
+      },
+      "eng": {
+        "A": "AWS Lambda",
+        "B": "Amazon Cognito",
+        "C": "AWS Secrets Manager",
+        "D": "Amazon CloudFront"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "Amazon Cognito"
+    ]
+  },
+  {
+    "idx": 434,
+    "oldIdx": 509,
+    "question": {
+      "kor": "어떤 AWS 서비스가 모바일 및 웹 애플리케이션에 사용자 가입 기능과 인증을 지원합니까?",
+      "eng": "Which AWS service supports user sign-up functionality and authentication to mobile and web applications?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Cognito",
+        "B": "AWS Config",
+        "C": "Amazon GuardDuty",
+        "D": "AWS Systems Manager"
+      },
+      "eng": {
+        "A": "Amazon Cognito",
+        "B": "AWS Config",
+        "C": "Amazon GuardDuty",
+        "D": "AWS Systems Manager"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "Amazon Cognito"
+    ]
+  },
+  {
+    "idx": 435,
+    "oldIdx": 52,
+    "question": {
+      "kor": "여러 AWS 서비스와 상호 작용하는 애플리케이션을 개발 중인 회사가 임시 제한 권한 자격 증명을 사용하여 다른 AWS API와 인증해야 합니다. 이러한 인증 요구 사항을 충족하기 위해 사용할 AWS 서비스 또는 기능은 무엇입니까?",
+      "eng": "A company is developing an application that uses multiple AWS services. The application needs to use temporary, limited-privilege credentials for authentication with other AWS APIs. Which AWS service or feature should the company use to meet these authentication requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon API Gateway",
+        "B": "IAM 사용자",
+        "C": "AWS Security Token Service (AWS STS)",
+        "D": "IAM 인스턴스 프로필"
+      },
+      "eng": {
+        "A": "Amazon API Gateway",
+        "B": "IAM users",
+        "C": "AWS Security Token Service (AWS STS)",
+        "D": "IAM instance profiles"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS STS"
+    ]
+  },
+  {
+    "idx": 436,
+    "oldIdx": 279,
+    "question": {
+      "kor": "개발자는 AWS 사용자가 임시 보안 자격 증명을 사용하여 AWS 서비스에 액세스할 수 있도록 하고 싶어합니다. 개발자가 이러한 자격 증명을 제공하기 위해 사용할 AWS 서비스 또는 기능은 무엇입니까?",
+      "eng": "A developer wants AWS users to access AWS services by using temporary security credentials. Which AWS service or feature should the developer use to provide these credentials?"
+    },
+    "choices": {
+      "kor": {
+        "A": "IAM 정책",
+        "B": "IAM 사용자 그룹",
+        "C": "AWS 보안 토큰 서비스 (AWS STS)",
+        "D": "AWS IAM Identity Center (AWS Single Sign-On)"
+      },
+      "eng": {
+        "A": "IAM policies",
+        "B": "IAM user groups",
+        "C": "AWS Security Token Service (AWS STS)",
+        "D": "AWS IAM Identity Center (AWS Single Sign-On)"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS STS"
+    ]
+  },
+  {
+    "idx": 437,
+    "oldIdx": 620,
+    "question": {
+      "kor": "어느 AWS 서비스가 AWS 리소스에 접근하기 위해 일시적으로 연합된 보안 자격 증명을 제공합니까?",
+      "eng": "Which AWS service is used to temporarily provide federated security credentials to access AWS resources?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon GuardDuty",
+        "B": "AWS Simple Token Service (AWS STS)",
+        "C": "AWS Secrets Manager",
+        "D": "AWS Certificate Manager"
+      },
+      "eng": {
+        "A": "Amazon GuardDuty",
+        "B": "AWS Simple Token Service (AWS STS)",
+        "C": "AWS Secrets Manager",
+        "D": "AWS Certificate Manager"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS STS"
+    ]
+  },
+  {
+    "idx": 438,
+    "oldIdx": 526,
+    "question": {
+      "kor": "가장 안전한 방법으로 AWS에 비밀번호를 저장하는 방법은 무엇입니까?",
+      "eng": "What is the MOST secure way to store passwords on AWS?"
+    },
+    "choices": {
+      "kor": {
+        "A": "비밀번호를 Amazon S3 버킷에 저장",
+        "B": "비밀번호를 AWS CloudFormation 매개변수로 저장",
+        "C": "비밀번호를 AWS Storage Gateway에 저장",
+        "D": "비밀번호를 AWS Secrets Manager에 저장"
+      },
+      "eng": {
+        "A": "Store passwords in an Amazon S3 bucket.",
+        "B": "Store passwords as AWS CloudFormation parameters.",
+        "C": "Store passwords in AWS Storage Gateway.",
+        "D": "Store passwords in AWS Secrets Manager."
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS Secrets Manager"
+    ]
+  },
+  {
+    "idx": 439,
+    "oldIdx": 72,
+    "question": {
+      "kor": "회사는 데이터베이스 사용자 자격 증명의 회전 일정을 설정하려고 합니다. 가장 적은 운영 오버헤드로 이 요구 사항을 지원하는 AWS 서비스는 무엇입니까?",
+      "eng": "A company wants to establish a schedule for rotating database user credentials. Which AWS service will support this requirement with the LEAST amount of operational overhead?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Systems Manager",
+        "B": "AWS Secrets Manager",
+        "C": "AWS License Manager",
+        "D": "AWS Managed Services"
+      },
+      "eng": {
+        "A": "AWS Systems Manager",
+        "B": "AWS Secrets Manager",
+        "C": "AWS License Manager",
+        "D": "AWS Managed Services"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS Secrets Manager"
+    ]
+  },
+  {
+    "idx": 440,
+    "oldIdx": 158,
+    "question": {
+      "kor": "사용자가 응용 프로그램 간에 공유되는 자격 증명의 관리 및 회전을 자동화하려고 합니다. 작업 관리에 가장 적은 시간을 소비하고자 합니다. 이 요구 사항을 충족하는 AWS 서비스 또는 기능은 무엇입니까?",
+      "eng": "A user wants to securely automate the management and rotation of credentials that are shared between applications, while spending the least amount of time on managing tasks. Which AWS service or feature can be used to accomplish this?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS CloudHSM",
+        "B": "AWS Key Management Service (AWS KMS)",
+        "C": "AWS Secrets Manager",
+        "D": "서버 측 암호화"
+      },
+      "eng": {
+        "A": "AWS CloudHSM",
+        "B": "AWS Key Management Service (AWS KMS)",
+        "C": "AWS Secrets Manager",
+        "D": "Server-side encryption"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS Secrets Manager"
+    ]
+  },
+  {
+    "idx": 441,
+    "oldIdx": 217,
+    "question": {
+      "kor": "회사는 데이터베이스의 암호를 안전하게 저장하고 암호화하기 위해 어떤 AWS 서비스를 사용할 수 있습니까?",
+      "eng": "Which AWS service can a company use to securely store and encrypt passwords for a database?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Shield",
+        "B": "AWS Secrets Manager",
+        "C": "AWS Identity and Access Management (IAM)",
+        "D": "Amazon Cognito"
+      },
+      "eng": {
+        "A": "AWS Shield",
+        "B": "AWS Secrets Manager",
+        "C": "AWS Identity and Access Management (IAM)",
+        "D": "Amazon Cognito"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS Secrets Manager"
+    ]
+  },
+  {
+    "idx": 442,
+    "oldIdx": 423,
+    "question": {
+      "kor": "필요할 때 암호화된 자격 증명을 안전하게 저장하고 검색할 수 있는 기능을 제공하는 AWS 서비스 또는 기능은 무엇입니까?",
+      "eng": "Which AWS service or feature allows users to securely store encrypted credentials and retrieve these credentials when required?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Encryption SDK",
+        "B": "AWS Security Hub",
+        "C": "AWS Secrets Manager",
+        "D": "AWS Artifact"
+      },
+      "eng": {
+        "A": "AWS Encryption SDK",
+        "B": "AWS Security Hub",
+        "C": "AWS Secrets Manager",
+        "D": "AWS Artifact"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS Secrets Manager"
+    ]
+  },
+  {
+    "idx": 443,
+    "oldIdx": 623,
+    "question": {
+      "kor": "한 회사가 Amazon RDS 데이터베이스 자격 증명을 안전하게 저장하고 주기적으로 사용자 비밀번호를 자동으로 회전시키기를 원합니다. 어떤 AWS 서비스나 기능이 이 요구 사항을 충족합니까?",
+      "eng": "A company wants to securely store Amazon RDS database credentials and automatically rotate user passwords periodically. Which AWS service or capability will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon S3",
+        "B": "AWS Systems Manager Parameter Store",
+        "C": "AWS Secrets Manager",
+        "D": "AWS CloudTrail"
+      },
+      "eng": {
+        "A": "Amazon S3",
+        "B": "AWS Systems Manager Parameter Store",
+        "C": "AWS Secrets Manager",
+        "D": "AWS CloudTrail"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS Secrets Manager"
+    ]
+  },
+  {
+    "idx": 444,
+    "oldIdx": 74,
+    "question": {
+      "kor": "Amazon EBS를 암호화할 수 있는 AWS 서비스는 무엇입니까?",
+      "eng": "Which AWS service is used to provide encryption for Amazon EBS?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Certificate Manager",
+        "B": "AWS Systems Manager",
+        "C": "AWS KMS",
+        "D": "AWS Config"
+      },
+      "eng": {
+        "A": "AWS Certificate Manager",
+        "B": "AWS Systems Manager",
+        "C": "AWS KMS",
+        "D": "AWS Config"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS KMS"
+    ]
+  },
+  {
+    "idx": 445,
+    "oldIdx": 636,
+    "question": {
+      "kor": "어떤 AWS 서비스가 다른 AWS 서비스와 통합되어 데이터의 암호화를 제공합니까?",
+      "eng": "Which AWS service integrates with other AWS services to provide the ability to encrypt data at rest?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Key Management Service (AWS KMS)",
+        "B": "AWS Certificate Manager (ACM)",
+        "C": "AWS Identity and Access Management (IAM)",
+        "D": "AWS Security Hub"
+      },
+      "eng": {
+        "A": "AWS Key Management Service (AWS KMS)",
+        "B": "AWS Certificate Manager (ACM)",
+        "C": "AWS Identity and Access Management (IAM)",
+        "D": "AWS Security Hub"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS KMS"
+    ]
+  },
+  {
+    "idx": 446,
+    "oldIdx": 449,
+    "question": {
+      "kor": "클라우드에서 암호화 키를 관리하기 위해 사용할 수 있는 AWS 서비스는 무엇입니까?",
+      "eng": "Which AWS service can a company use to manage encryption keys in the cloud?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS License Manager",
+        "B": "AWS Certificate Manager (ACM)",
+        "C": "AWS CloudHSM",
+        "D": "AWS Directory Service"
+      },
+      "eng": {
+        "A": "AWS License Manager",
+        "B": "AWS Certificate Manager (ACM)",
+        "C": "AWS CloudHSM",
+        "D": "AWS Directory Service"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS CloudHSM"
+    ]
+  },
+  {
+    "idx": 447,
+    "oldIdx": 35,
+    "question": {
+      "kor": "회사는 SQL 삽입 공격을 차단해야 합니다. 이 요구 사항을 충족할 수 있는 AWS 서비스 또는 기능은 무엇입니까?",
+      "eng": "A company needs to block SQL injection attacks. Which AWS service or feature can meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS WAF",
+        "B": "AWS Shield",
+        "C": "네트워크 ACL",
+        "D": "보안 그룹"
+      },
+      "eng": {
+        "A": "AWS WAF",
+        "B": "AWS Shield",
+        "C": "Network ACLs",
+        "D": "Security groups"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS WAF"
+    ]
+  },
+  {
+    "idx": 448,
+    "oldIdx": 713,
+    "question": {
+      "kor": "회사는 SQL 주입 공격을 차단해야 합니다. 어떤 AWS 서비스 또는 기능이 이 기능을 제공합니까?",
+      "eng": "A company needs to block SQL injection attacks.Which AWS service or feature provides this functionality?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS WAF",
+        "B": "네트워크 ACL",
+        "C": "보안 그룹",
+        "D": "AWS Trusted Advisor"
+      },
+      "eng": {
+        "A": "AWS WAF",
+        "B": "Network ACLs",
+        "C": "Security groups",
+        "D": "AWS Trusted Advisor"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS WAF"
+    ]
+  },
+  {
+    "idx": 449,
+    "oldIdx": 124,
+    "question": {
+      "kor": "한 회사에서 SQL 인젝션 공격을 차단하려고 합니다. 회사에서 이 요구 사항을 충족하려면 어떤 AWS 서비스 또는 기능을 사용해야 합니까?",
+      "eng": "A company wants to block SQL injection attacks. Which AWS service or feature should the company use to meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS WAF",
+        "B": "네트워크 ACL",
+        "C": "보안 그룹",
+        "D": "AWS Certificate Manager (ACM)"
+      },
+      "eng": {
+        "A": "AWS WAF",
+        "B": "Network ACLs",
+        "C": "Security groups",
+        "D": "AWS Certificate Manager (ACM)"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS WAF"
+    ]
+  },
+  {
+    "idx": 450,
+    "oldIdx": 115,
+    "question": {
+      "kor": "소셜 미디어 회사는 SQL 삽입 및 크로스 사이트 스크립팅과 같은 일반적인 웹 공격으로부터 웹 애플리케이션을 보호하고자 합니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A social media company wants to protect its web application from common web exploits such as SQL injections and cross-site scripting. Which AWS service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Inspector",
+        "B": "AWS WAF",
+        "C": "Amazon GuardDuty",
+        "D": "Amazon CloudWatch"
+      },
+      "eng": {
+        "A": "Amazon Inspector",
+        "B": "AWS WAF",
+        "C": "Amazon GuardDuty",
+        "D": "Amazon CloudWatch"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS WAF"
+    ]
+  },
+  {
+    "idx": 451,
+    "oldIdx": 280,
+    "question": {
+      "kor": "글로벌 회사는 SQL 삽입 공격으로부터 보호하기 위한 관리형 보안 서비스를 사용하고 싶어합니다. 서비스는 또한 회사의 전자 상거래 애플리케이션에 대한 액세스에 대한 자세한 로깅 정보를 제공해야 합니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A global company wants to use a managed security service for protection from SQL injection attacks. The service also must provide detailed logging information about access to the company's ecommerce applications. Which AWS service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS 네트워크 방화벽",
+        "B": "Amazon RDS for SQL Server",
+        "C": "Amazon GuardDuty",
+        "D": "AWS WAF"
+      },
+      "eng": {
+        "A": "AWS Network Firewall",
+        "B": "Amazon RDS for SQL Server",
+        "C": "Amazon GuardDuty",
+        "D": "AWS WAF"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS WAF"
+    ]
+  },
+  {
+    "idx": 452,
+    "oldIdx": 468,
+    "question": {
+      "kor": "회사가 Amazon CloudFront 배포가 수신하는 악의적인 HTTP 및 HTTPS 요청을 모니터링하고 차단하려고 합니다. 이 요구 사항을 충족할 AWS 서비스는 무엇입니까?",
+      "eng": "A company wants to monitor and block malicious HTTP and HTTPS requests that its Amazon CloudFront distributions receive. Which AWS service should the company use to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon GuardDuty",
+        "B": "Amazon Inspector",
+        "C": "AWS WAF",
+        "D": "Amazon Detective"
+      },
+      "eng": {
+        "A": "Amazon GuardDuty",
+        "B": "Amazon Inspector",
+        "C": "AWS WAF",
+        "D": "Amazon Detective"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS WAF"
+    ]
+  },
+  {
+    "idx": 453,
+    "oldIdx": 546,
+    "question": {
+      "kor": "회사가 Amazon EC2 인스턴스에서 웹 애플리케이션을 호스팅하고 있습니다. 회사는 인바운드 웹 트래픽을 필터링하고 제어하기 위해 사용자 지정 조건을 구현하고자 합니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A company is hosting a web application on Amazon EC2 instances. The company wants to implement custom conditions to filter and control inbound web traffic. Which AWS service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon GuardDuty",
+        "B": "AWS WAF",
+        "C": "Amazon Macie",
+        "D": "AWS Shield"
+      },
+      "eng": {
+        "A": "Amazon GuardDuty",
+        "B": "AWS WAF",
+        "C": "Amazon Macie",
+        "D": "AWS Shield"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS WAF"
+    ]
+  },
+  {
+    "idx": 454,
+    "oldIdx": 606,
+    "question": {
+      "kor": "음식 배달 회사가 특정 국가의 사용자들이 웹사이트에 접근하지 못하도록 차단해야 합니다. 어떤 AWS 서비스를 사용하여 이 요구 사항을 충족할 수 있습니까?",
+      "eng": "A food delivery company needs to block users in certain countries from accessing its website. Which AWS service should the company use to meet this requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS WAF",
+        "B": "AWS Control Tower",
+        "C": "Amazon Fraud Detector",
+        "D": "Amazon Pinpoint"
+      },
+      "eng": {
+        "A": "AWS WAF",
+        "B": "AWS Control Tower",
+        "C": "Amazon Fraud Detector",
+        "D": "Amazon Pinpoint"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS WAF"
+    ]
+  },
+  {
+    "idx": 455,
+    "oldIdx": 211,
+    "question": {
+      "kor": "항상 켜져 있는 탐지 및 자동 인라인 완화를 통해 애플리케이션을 분산 서비스 거부 공격으로부터 보호하는 AWS 보안 서비스는 무엇입니까?",
+      "eng": "Which AWS security service protects applications from distributed denial of service attacks with always-on detection and automatic inline mitigations?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Inspector",
+        "B": "AWS Web Application Firewall (AWS WAF)",
+        "C": "Elastic Load Balancing (ELB)",
+        "D": "AWS Shield"
+      },
+      "eng": {
+        "A": "Amazon Inspector",
+        "B": "AWS Web Application Firewall (AWS WAF)",
+        "C": "Elastic Load Balancing (ELB)",
+        "D": "AWS Shield"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS Shield"
+    ]
+  },
+  {
+    "idx": 456,
+    "oldIdx": 223,
+    "question": {
+      "kor": "회사 웹사이트가 DDoS 공격을 받고 있습니다. 이 공격으로부터 회사 웹사이트를 보호할 수 있는 AWS 서비스는 무엇입니까?",
+      "eng": "A company website is experiencing DDoS attacks. Which AWS service can help protect the company website against these attacks?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Resource Access Manager",
+        "B": "AWS Amplify",
+        "C": "AWS Shield",
+        "D": "Amazon GuardDuty"
+      },
+      "eng": {
+        "A": "AWS Resource Access Manager",
+        "B": "AWS Amplify",
+        "C": "AWS Shield",
+        "D": "Amazon GuardDuty"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS Shield"
+    ]
+  },
+  {
+    "idx": 457,
+    "oldIdx": 490,
+    "question": {
+      "kor": "AWS 서비스 중 웹 애플리케이션을 네트워크 계층 DDoS 공격으로부터 방지하는 데 도움이 되는 것은 무엇입니까?",
+      "eng": "A company is building a web application using AWS. Which AWS service will help prevent network layer DDoS attacks against the web application?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Shield Standard",
+        "B": "AWS WAF",
+        "C": "Amazon GuardDuty",
+        "D": "AWS Shield Advanced"
+      },
+      "eng": {
+        "A": "AWS Shield Standard",
+        "B": "AWS WAF",
+        "C": "Amazon GuardDuty",
+        "D": "AWS Shield Advanced"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS Shield"
+    ]
+  },
+  {
+    "idx": 458,
+    "oldIdx": 589,
+    "question": {
+      "kor": "회사의 AWS 클라우드 환경에는 Amazon EC2 인스턴스와 Application Load Balancers가 포함되어 있습니다. 회사는 클라우드 리소스를 DDoS 공격으로부터 보호를 강화하고 DDoS 공격을 실시간으로 모니터링하고자 합니다. 어떤 AWS 서비스가 이 요구 사항을 충족합니까?",
+      "eng": "A company's cloud environment includes Amazon EC2 instances and Application Load Balancers. The company wants to improve protections for its cloud resources against DDoS attacks. The company also wants to have real-time visibility into any DDoS attacks. Which AWS service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Shield Standard",
+        "B": "AWS Firewall Manager",
+        "C": "AWS Shield Advanced",
+        "D": "Amazon GuardDuty"
+      },
+      "eng": {
+        "A": "AWS Shield Standard",
+        "B": "AWS Firewall Manager",
+        "C": "AWS Shield Advanced",
+        "D": "Amazon GuardDuty"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS Shield"
+    ]
+  },
+  {
+    "idx": 459,
+    "oldIdx": 640,
+    "question": {
+      "kor": "한 회사가 AWS Business 지원 계획을 가지고 있습니다. 회사는 DDoS 이벤트를 완화하기 위해 AWS DDoS 응답 팀 (DRT)에 액세스할 필요가 있습니다. 이 요구 사항을 충족하기 위해 회사는 어떤 AWS 서비스나 리소스를 사용해야 합니까?",
+      "eng": "A company has an AWS Business Support plan. The company needs to gain access to the AWS DDoS Response Team (DRT) to help mitigate DDoS events. Which AWS service or resource must the company use to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Shield Standard",
+        "B": "AWS Enterprise Support",
+        "C": "AWS WAF",
+        "D": "AWS Shield Advanced"
+      },
+      "eng": {
+        "A": "AWS Shield Standard",
+        "B": "AWS Enterprise Support",
+        "C": "AWS WAF",
+        "D": "AWS Shield Advanced"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS Shield"
+    ]
+  },
+  {
+    "idx": 460,
+    "oldIdx": 506,
+    "question": {
+      "kor": "회사가 AWS 계정, 워크로드 및 Amazon S3 버킷의 악의적 활동과 무단 행위를 지속적으로 모니터링할 수 있는 위협 탐지 서비스를 필요로 합니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A company needs a threat detection service that will continuously monitor its AWS accounts, workloads, and Amazon S3 buckets for malicious activity and unauthorized behavior. Which AWS service meets these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Shield",
+        "B": "AWS Firewall Manager",
+        "C": "Amazon GuardDuty",
+        "D": "Amazon Inspector"
+      },
+      "eng": {
+        "A": "AWS Shield",
+        "B": "AWS Firewall Manager",
+        "C": "Amazon GuardDuty",
+        "D": "Amazon Inspector"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "Amazon GuardDuty"
+    ]
+  },
+  {
+    "idx": 461,
+    "oldIdx": 519,
+    "question": {
+      "kor": "AWS 사용자가 인스턴스나 계정이 손상될 수 있는 경우 또는 공격 위협이 있을 경우 이를 사전에 탐지하고자 합니다. 사용자는 어떤 AWS 서비스를 선택해야 합니까?",
+      "eng": "An AWS user wants to proactively detect when an instance or account might be compromised or if there are threats from attacks. Which AWS service should the user choose?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon GuardDuty",
+        "B": "AWS WAF",
+        "C": "AWS Shield",
+        "D": "Amazon Inspector"
+      },
+      "eng": {
+        "A": "Amazon GuardDuty",
+        "B": "AWS WAF",
+        "C": "AWS Shield",
+        "D": "Amazon Inspector"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "Amazon GuardDuty"
+    ]
+  },
+  {
+    "idx": 462,
+    "oldIdx": 603,
+    "question": {
+      "kor": "Amazon GuardDuty의 주요 사용 사례는 무엇입니까?",
+      "eng": "What is the primary use case for Amazon GuardDuty?"
+    },
+    "choices": {
+      "kor": {
+        "A": "DDoS 공격 방지",
+        "B": "SQL 삽입 공격으로부터 보호",
+        "C": "AWS 워크로드에 대한 위협 자동 모니터링",
+        "D": "AWS 리소스 자동 프로비저닝"
+      },
+      "eng": {
+        "A": "Prevention of DDoS attacks",
+        "B": "Protection against SQL injection attacks",
+        "C": "Automatic monitoring for threats to AWS workloads",
+        "D": "Automatic provisioning of AWS resources"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "Amazon GuardDuty"
+    ]
+  },
+  {
+    "idx": 463,
+    "oldIdx": 58,
+    "question": {
+      "kor": "Amazon S3 버킷에 저장된 민감한 데이터를 검색하고 보호할 수 있는 AWS 서비스는 무엇입니까?",
+      "eng": "Which AWS service gives users the ability to discover and protect sensitive data that is stored in Amazon S3 buckets?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Macie",
+        "B": "Amazon Detective",
+        "C": "Amazon GuardDuty",
+        "D": "AWS IAM Access Analyzer"
+      },
+      "eng": {
+        "A": "Amazon Macie",
+        "B": "Amazon Detective",
+        "C": "Amazon GuardDuty",
+        "D": "AWS IAM Access Analyzer"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "Amazon Macie"
+    ]
+  },
+  {
+    "idx": 464,
+    "oldIdx": 159,
+    "question": {
+      "kor": "자동으로 민감한 데이터 또는 지적 재산을 AWS에서 인식하고 분류하는 보안 서비스는 무엇입니까?",
+      "eng": "Which security service automatically recognizes and classifies sensitive data or intellectual property on AWS?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon GuardDuty",
+        "B": "Amazon Macie",
+        "C": "Amazon Inspector",
+        "D": "AWS Shield"
+      },
+      "eng": {
+        "A": "Amazon GuardDuty",
+        "B": "Amazon Macie",
+        "C": "Amazon Inspector",
+        "D": "AWS Shield"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "Amazon Macie"
+    ]
+  },
+  {
+    "idx": 465,
+    "oldIdx": 229,
+    "question": {
+      "kor": "회사는 AWS에 대량의 데이터를 호스팅하고 있습니다. 회사는 데이터가 민감한지 여부를 식별하고자 합니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A company hosts a large amount of data in AWS. The company wants to identify if any of the data should be considered sensitive. Which AWS service will meet the requirement?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Inspector",
+        "B": "Amazon Macie",
+        "C": "AWS Identity and Access Management (IAM)",
+        "D": "Amazon CloudWatch"
+      },
+      "eng": {
+        "A": "Amazon Inspector",
+        "B": "Amazon Macie",
+        "C": "AWS Identity and Access Management (IAM)",
+        "D": "Amazon CloudWatch"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "Amazon Macie"
+    ]
+  },
+  {
+    "idx": 466,
+    "oldIdx": 286,
+    "question": {
+      "kor": "회사는 Amazon S3를 사용하여 개인 식별 정보(PII)를 포함할 수 있는 기록을 저장합니다. 회사는 모든 S3 버킷을 모니터링하고 PII를 즉시 감지하여 취약성을 경고할 수 있는 솔루션을 원합니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A company uses Amazon S3 to store records that can contain personally identifiable information (PII). The company wants a solution that can monitor all S3 buckets for PII and immediately alert staff about vulnerabilities. Which AWS service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon GuardDuty",
+        "B": "Amazon Detective",
+        "C": "Amazon Macie",
+        "D": "AWS Shield"
+      },
+      "eng": {
+        "A": "Amazon GuardDuty",
+        "B": "Amazon Detective",
+        "C": "Amazon Macie",
+        "D": "AWS Shield"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "Amazon Macie"
+    ]
+  },
+  {
+    "idx": 467,
+    "oldIdx": 416,
+    "question": {
+      "kor": "회사가 Amazon S3에 저장된 민감한 데이터를 식별하고 보호하기 위해 관리형 서비스를 사용하고자 합니다. 이 요구 사항을 충족할 AWS 서비스는 무엇입니까?",
+      "eng": "A company wants to use a managed service to identify and protect sensitive data that is stored in Amazon S3. Which AWS service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS IAM Access Analyzer",
+        "B": "Amazon GuardDuty",
+        "C": "Amazon Inspector",
+        "D": "Amazon Macie"
+      },
+      "eng": {
+        "A": "AWS IAM Access Analyzer",
+        "B": "Amazon GuardDuty",
+        "C": "Amazon Inspector",
+        "D": "Amazon Macie"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "Amazon Macie"
+    ]
+  },
+  {
+    "idx": 468,
+    "oldIdx": 2,
+    "question": {
+      "kor": "회사는 Amazon EC2 인스턴스에 애플리케이션을 배포했습니다. 회사는 애플리케이션 취약성을 평가하고 모범 사례를 충족하지 않는 인프라 배포를 식별해야 합니다. 회사가 이러한 요구 사항을 충족하기 위해 사용할 수 있는 AWS 서비스는 무엇입니까?",
+      "eng": "A company has deployed applications on Amazon EC2 instances. The company needs to assess application vulnerabilities and must identify infrastructure deployments that do not meet best practices. Which AWS service can the company use to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Trusted Advisor",
+        "B": "Amazon Inspector",
+        "C": "AWS Config",
+        "D": "Amazon GuardDuty"
+      },
+      "eng": {
+        "A": "AWS Trusted Advisor",
+        "B": "Amazon Inspector",
+        "C": "AWS Config",
+        "D": "Amazon GuardDuty"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "Amazon Inspector"
+    ]
+  },
+  {
+    "idx": 469,
+    "oldIdx": 117,
+    "question": {
+      "kor": "회사는 Amazon EC2 인스턴스를 지속적으로 소프트웨어 취약성에 대해 스캔하는 자동화된 프로세스를 원합니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A company wants an automated process to continuously scan its Amazon EC2 instances for software vulnerabilities. Which AWS service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon GuardDuty",
+        "B": "Amazon Inspector",
+        "C": "Amazon Detective",
+        "D": "Amazon Cognito"
+      },
+      "eng": {
+        "A": "Amazon GuardDuty",
+        "B": "Amazon Inspector",
+        "C": "Amazon Detective",
+        "D": "Amazon Cognito"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "Amazon Inspector"
+    ]
+  },
+  {
+    "idx": 470,
+    "oldIdx": 175,
+    "question": {
+      "kor": "사전 정의된 평가 템플릿을 사용하여 Amazon EC2 인스턴스의 취약점을 점검하는 AWS 서비스는 무엇입니까?",
+      "eng": "Which AWS service enables users to check for vulnerabilities on Amazon EC2 instances by using predefined assessment templates?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS WAF",
+        "B": "AWS Trusted Advisor",
+        "C": "Amazon Inspector",
+        "D": "AWS Shield"
+      },
+      "eng": {
+        "A": "AWS WAF",
+        "B": "AWS Trusted Advisor",
+        "C": "Amazon Inspector",
+        "D": "AWS Shield"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "Amazon Inspector"
+    ]
+  },
+  {
+    "idx": 471,
+    "oldIdx": 693,
+    "question": {
+      "kor": "어떤 AWS 서비스가 회사의 AWS 환경을 분석하여 Amazon EC2 인스턴스의 보안 취약성을 발견할 수 있습니까?",
+      "eng": "Which AWS offering can analyze a company’s AWS environment to discover security vulnerabilities on Amazon EC2 instances?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Inspector",
+        "B": "Amazon Macie",
+        "C": "AWS Shield Standard",
+        "D": "보안 그룹"
+      },
+      "eng": {
+        "A": "Amazon Inspector",
+        "B": "Amazon Macie",
+        "C": "AWS Shield Standard",
+        "D": "Security groups"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "Amazon Inspector"
+    ]
+  },
+  {
+    "idx": 472,
+    "oldIdx": 393,
+    "question": {
+      "kor": "회사가 Amazon EC2 인스턴스의 로그 데이터를 분석하고 보안 조사를 효율적으로 수행하기 위해 기계 학습 기능을 사용하고자 합니다. 이 요구 사항을 충족할 AWS 서비스는 무엇입니까?",
+      "eng": "A company wants to use machine learning capabilities to analyze log data from its Amazon EC2 instances and efficiently conduct security investigations. Which AWS service will meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon Inspector",
+        "B": "Amazon QuickSight",
+        "C": "Amazon Detective",
+        "D": "Amazon GuardDuty"
+      },
+      "eng": {
+        "A": "Amazon Inspector",
+        "B": "Amazon QuickSight",
+        "C": "Amazon Detective",
+        "D": "Amazon GuardDuty"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "Amazon Detective"
+    ]
+  },
+  {
+    "idx": 473,
+    "oldIdx": 197,
+    "question": {
+      "kor": "회사는 AWS Organizations 내에서 여러 AWS 계정의 Amazon VPC 보안 그룹을 중앙에서 구성 및 관리하려고 합니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A company needs to centrally configure and manage Amazon VPC security groups across multiple AWS accounts within an organization in AWS Organizations. Which AWS service should the company use to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Firewall Manager",
+        "B": "Amazon GuardDuty",
+        "C": "Amazon Detective",
+        "D": "AWS WAF"
+      },
+      "eng": {
+        "A": "AWS Firewall Manager",
+        "B": "Amazon GuardDuty",
+        "C": "Amazon Detective",
+        "D": "AWS WAF"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS Firewall Manager"
+    ]
+  },
+  {
+    "idx": 474,
+    "oldIdx": 53,
+    "question": {
+      "kor": "다양한 AWS 서비스 및 파트너 제품에서 발생하는 경고를 표준 형식으로 수집하는 클라우드 보안 상태 관리(CSPM) 서비스는 무엇입니까?",
+      "eng": "Which AWS service is a cloud security posture management (CSPM) service that aggregates alerts from various AWS services and partner products in a standardized format?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Security Hub",
+        "B": "AWS Trusted Advisor",
+        "C": "Amazon EventBridge",
+        "D": "Amazon GuardDuty"
+      },
+      "eng": {
+        "A": "AWS Security Hub",
+        "B": "AWS Trusted Advisor",
+        "C": "Amazon EventBridge",
+        "D": "Amazon GuardDuty"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS Security Hub"
+    ]
+  },
+  {
+    "idx": 475,
+    "oldIdx": 284,
+    "question": {
+      "kor": "회사는 AWS 보안 서비스 및 도구를 사용하고 있습니다. 회사는 보안 경고를 관리하고 경고를 단일 대시보드에 정리할 수 있는 서비스가 필요합니다. 이 요구 사항을 충족하는 AWS 서비스는 무엇입니까?",
+      "eng": "A company uses AWS security services and tools. The company needs a service to help manage the security alerts and must organize the alerts into a single dashboard. Which AWS service should the company use to meet these requirements?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon GuardDuty",
+        "B": "Amazon Inspector",
+        "C": "Amazon Macie",
+        "D": "AWS Security Hub"
+      },
+      "eng": {
+        "A": "Amazon GuardDuty",
+        "B": "Amazon Inspector",
+        "C": "Amazon Macie",
+        "D": "AWS Security Hub"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS Security Hub"
+    ]
+  },
+  {
+    "idx": 476,
+    "oldIdx": 448,
+    "question": {
+      "kor": "AWS에서 보안을 개선하는 방법은 무엇입니까? (2개를 선택하십시오.)",
+      "eng": "Which of the following are ways to improve security on AWS? (Choose two.)"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Artifact 사용",
+        "B": "모든 IAM 역할에 광범위한 권한 부여",
+        "C": "AWS Cloud에서 애플리케이션 코드 실행",
+        "D": "Amazon Cognito와 다중 요소 인증(MFA) 활성화",
+        "E": "AWS Trusted Advisor 보안 검사 사용"
+      },
+      "eng": {
+        "A": "Using AWS Artifact",
+        "B": "Granting the broadest permissions to all IAM roles",
+        "C": "Running application code with AWS Cloud",
+        "D": "Enabling multi-factor authentication (MFA) with Amazon Cognito",
+        "E": "Using AWS Trusted Advisor security checks"
+      }
+    },
+    "answers": [
+      "D",
+      "E"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "Security best practice"
+    ]
+  },
+  {
+    "idx": 477,
+    "oldIdx": 37,
+    "question": {
+      "kor": "클라우드 실무자가 AWS 클라우드로 마이그레이션하기 전에 AWS 준수 보고서를 얻어야 합니다. 이 보고서를 생성할 수 있는 방법은 무엇입니까?",
+      "eng": "A cloud practitioner needs to obtain AWS compliance reports before migrating an environment to the AWS Cloud. How can these reports be generated?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS 준수 팀에 문의",
+        "B": "AWS Artifact에서 보고서 다운로드",
+        "C": "AWS Support에 케이스 열기",
+        "D": "Amazon Macie로 보고서 생성"
+      },
+      "eng": {
+        "A": "Contact the AWS Compliance team.",
+        "B": "Download the reports from AWS Artifact.",
+        "C": "Open a case with AWS Support.",
+        "D": "Generate the reports with Amazon Macie."
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS Artifact"
+    ]
+  },
+  {
+    "idx": 478,
+    "oldIdx": 84,
+    "question": {
+      "kor": "사용자가 AWS의 규정 준수 관련 정보 및 보고서를 찾는 가장 좋은 리소스는 무엇입니까?",
+      "eng": "What is the best resource for a user to find compliance-related information and reports about AWS?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Artifact",
+        "B": "AWS Marketplace",
+        "C": "Amazon Inspector",
+        "D": "AWS Support"
+      },
+      "eng": {
+        "A": "AWS Artifact",
+        "B": "AWS Marketplace",
+        "C": "Amazon Inspector",
+        "D": "AWS Support"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS Artifact"
+    ]
+  },
+  {
+    "idx": 479,
+    "oldIdx": 174,
+    "question": {
+      "kor": "AWS 규정 준수 보고서를 필요에 따라 검색할 수 있는 서비스는 무엇입니까?",
+      "eng": "Which AWS service can be used to retrieve compliance reports on demand?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Secrets Manager",
+        "B": "AWS Artifact",
+        "C": "AWS Security Hub",
+        "D": "AWS Certificate Manager"
+      },
+      "eng": {
+        "A": "AWS Secrets Manager",
+        "B": "AWS Artifact",
+        "C": "AWS Security Hub",
+        "D": "AWS Certificate Manager"
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS Artifact"
+    ]
+  },
+  {
+    "idx": 480,
+    "oldIdx": 218,
+    "question": {
+      "kor": "AWS 보안 및 규정 준수 문서를 검색하고 감사인 또는 규제 기관에 증거로 제출하기 위해 클라우드 전문가가 사용할 수 있는 도구는 무엇입니까?",
+      "eng": "What can a cloud practitioner use to retrieve AWS security and compliance documents and submit them as evidence to an auditor or regulator?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Certificate Manager",
+        "B": "AWS Systems Manager",
+        "C": "AWS Artifact",
+        "D": "Amazon Inspector"
+      },
+      "eng": {
+        "A": "AWS Certificate Manager",
+        "B": "AWS Systems Manager",
+        "C": "AWS Artifact",
+        "D": "Amazon Inspector"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS Artifact"
+    ]
+  },
+  {
+    "idx": 481,
+    "oldIdx": 287,
+    "question": {
+      "kor": "어떤 AWS 서비스는 사용자가 AWS 인프라에 대한 보안 및 준수 보고서를 필요에 따라 다운로드할 수 있도록 합니까?",
+      "eng": "Which AWS service allows users to download security and compliance reports about the AWS infrastructure on demand?"
+    },
+    "choices": {
+      "kor": {
+        "A": "Amazon GuardDuty",
+        "B": "AWS Security Hub",
+        "C": "AWS Artifact",
+        "D": "AWS Shield"
+      },
+      "eng": {
+        "A": "Amazon GuardDuty",
+        "B": "AWS Security Hub",
+        "C": "AWS Artifact",
+        "D": "AWS Shield"
+      }
+    },
+    "answers": [
+      "C"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS Artifact"
+    ]
+  },
+  {
+    "idx": 482,
+    "oldIdx": 457,
+    "question": {
+      "kor": "AWS 서비스 중 AWS가 발행한 보고서, 인증서, 인증 및 서드파티 증명을 사용자에게 제공하는 것은 무엇입니까?",
+      "eng": "Which AWS service provides users with AWS issued reports, certifications, accreditations, and third-party attestations?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Artifact",
+        "B": "AWS Trusted Advisor",
+        "C": "AWS Health Dashboard",
+        "D": "AWS Config"
+      },
+      "eng": {
+        "A": "AWS Artifact",
+        "B": "AWS Trusted Advisor",
+        "C": "AWS Health Dashboard",
+        "D": "AWS Config"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS Artifact"
+    ]
+  },
+  {
+    "idx": 483,
+    "oldIdx": 479,
+    "question": {
+      "kor": "AWS가 발행한 보고서, 인증서, 인증 및 서드파티 증명에 대한 온디맨드 셀프 서비스 액세스를 제공하는 AWS 서비스는 무엇입니까?",
+      "eng": "Which AWS service gives users on-demand, self-service access to AWS compliance control reports?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Config",
+        "B": "Amazon GuardDuty",
+        "C": "AWS Trusted Advisor",
+        "D": "AWS Artifact"
+      },
+      "eng": {
+        "A": "AWS Config",
+        "B": "Amazon GuardDuty",
+        "C": "AWS Trusted Advisor",
+        "D": "AWS Artifact"
+      }
+    },
+    "answers": [
+      "D"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS Artifact"
+    ]
+  },
+  {
+    "idx": 484,
+    "oldIdx": 541,
+    "question": {
+      "kor": "회사가 AWS 보안 통제의 운영 효율성을 검증하는 결제 카드 산업(PCI) 보고서를 요청하고 있습니다. 이 보고서를 어떻게 얻을 수 있습니까?",
+      "eng": "A company is requesting Payment Card Industry (PCI) reports that validate the operating effectiveness of AWS security controls. How should the company obtain these reports?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Support에 문의",
+        "B": "AWS Artifact에서 보고서 다운로드",
+        "C": "AWS Security Hub에서 보고서 다운로드",
+        "D": "AWS 기술 계정 관리자(TAM)에게 문의"
+      },
+      "eng": {
+        "A": "Contact AWS Support.",
+        "B": "Download reports from AWS Artifact.",
+        "C": "Download reports from AWS Security Hub.",
+        "D": "Contact an AWS technical account manager (TAM)."
+      }
+    },
+    "answers": [
+      "B"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS Artifact"
+    ]
+  },
+  {
+    "idx": 485,
+    "oldIdx": 611,
+    "question": {
+      "kor": "회사의 컴플라이언스 담당자가 AWS Service Organization Control (SOC) 보고서를 검토하려고 합니다. 어떤 AWS 서비스 또는 기능을 사용하여 이 작업을 완료할 수 있습니까?",
+      "eng": "A company's compliance officer wants to review the AWS Service Organization Control (SOC) reports. Which AWS service or feature should the compliance officer use to complete this task?"
+    },
+    "choices": {
+      "kor": {
+        "A": "AWS Artifact",
+        "B": "AWS Concierge Support",
+        "C": "AWS Support",
+        "D": "AWS Trusted Advisor"
+      },
+      "eng": {
+        "A": "AWS Artifact",
+        "B": "AWS Concierge Support",
+        "C": "AWS Support",
+        "D": "AWS Trusted Advisor"
+      }
+    },
+    "answers": [
+      "A"
+    ],
+    "category": [
+      "Security, Identity, & Compliance"
+    ],
+    "subcategory": [
+      "AWS Artifact"
+    ]
+  }
+]
