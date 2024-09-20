@@ -7,26 +7,32 @@ from datetime import datetime
 # 버튼 키관리를 위한 현 페이지 정보
 current_page = __file__.split("/")[-1].split(".")[0]  # 예: '1_🔐_Login'
 
+
 # 데이터베이스 연결 함수
 def get_db_connection():
-    conn = sqlite3.connect('db/db.sqlite')
+    conn = sqlite3.connect("db/db.sqlite")
     conn.row_factory = sqlite3.Row
     return conn
+
 
 # 비밀번호 해시 함수
 def hash_password(password):
     return hashlib.sha256(str(password).encode()).hexdigest()
+
 
 # 로그인 함수
 def login(username, school, team, password):
     conn = get_db_connection()
     cursor = conn.cursor()
     hashed_password = hash_password(password)
-    cursor.execute("SELECT * FROM users WHERE name = ? AND school = ? AND team = ? AND password = ?", 
-                   (username, school, team, hashed_password))
+    cursor.execute(
+        "SELECT * FROM users WHERE name = ? AND school = ? AND team = ? AND password = ?",
+        (username, school, team, hashed_password),
+    )
     user = cursor.fetchone()
     conn.close()
     return user
+
 
 # 회원가입 함수
 def register(username, school, team, password):
@@ -34,14 +40,17 @@ def register(username, school, team, password):
     cursor = conn.cursor()
     hashed_password = hash_password(password)
     try:
-        cursor.execute("INSERT INTO users (name, school, team, password) VALUES (?, ?, ?, ?)", 
-                       (username, school, team, hashed_password))
+        cursor.execute(
+            "INSERT INTO users (name, school, team, password) VALUES (?, ?, ?, ?)",
+            (username, school, team, hashed_password),
+        )
         conn.commit()
         return True
     except sqlite3.IntegrityError:
         return False
     finally:
         conn.close()
+
 
 st.set_page_config(page_title="로그인/회원가입", page_icon="🔐", layout="wide")
 
@@ -75,12 +84,18 @@ with tab1:
             if len(login_password) == 4 and login_password.isdigit():
                 with st.spinner("로그인 중..."):
                     try:
-                        user = login(login_name, login_school, login_team, login_password)
+                        user = login(
+                            login_name, login_school, login_team, login_password
+                        )
                         if user:
                             st.session_state["user"] = dict(user)
                             st.success(f"{login_name}님, 환영합니다!")
-                            st.info("좌측 사이드바 'Home' 페이지에서 안내사항을 확인할 수 있습니다.")
-                            st.info("좌측 사이드바의 여러 페이지에서 공부를 시작하세요!")
+                            st.info(
+                                "좌측 사이드바 'Home' 페이지에서 안내사항을 확인할 수 있습니다."
+                            )
+                            st.info(
+                                "좌측 사이드바의 여러 페이지에서 공부를 시작하세요!"
+                            )
                         else:
                             st.error("로그인 정보가 올바르지 않습니다.")
                     except Exception as e:
@@ -128,7 +143,9 @@ with tab2:
                 with st.spinner("회원가입 처리 중..."):
                     try:
                         if register(new_name, new_school, new_team, new_password):
-                            st.success("회원가입이 완료되었습니다. 로그인탭에서 로그인해주세요.")
+                            st.success(
+                                "회원가입이 완료되었습니다. 로그인탭에서 로그인해주세요."
+                            )
                         else:
                             st.error("이미 존재하는 사용자입니다.")
                     except Exception as e:
