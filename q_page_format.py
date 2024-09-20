@@ -56,7 +56,7 @@ def initialize_session_state(questions, topic):
 
 
 def is_multiple_answer(question):
-    return len(question["answer"]) > 1
+    return len(question["answers"]) > 1
 
 
 @st.experimental_fragment
@@ -106,11 +106,11 @@ def display_result(question, user_answer, is_correct):
         if is_multiple_answer(question):
             st.error(f'당신의 오답: {", ".join(user_answer)}')
             st.success(
-                f'정답: {", ".join([question["choices"]["kor"][ans] for ans in question["answer"]])}'
+                f'정답: {", ".join([question["choices"]["kor"][ans] for ans in question["answers"]])}'
             )
         else:
             st.error(f"당신의 오답: {user_answer}")
-            st.success(f'정답: {question["choices"]["kor"][question["answer"][0]]}')
+            st.success(f'정답: {question["choices"]["kor"][question["answers"][0]]}')
 
 
 def display_progress(current_q, total_questions):
@@ -159,11 +159,11 @@ def render_question_page(topic):
             st.session_state[f"{topic}_user_answer"] = user_answer
             if is_multiple_answer(question):
                 correct_options = [
-                    question["choices"]["kor"][ans] for ans in question["answer"]
+                    question["choices"]["kor"][ans] for ans in question["answers"]
                 ]
                 is_correct = set(user_answer) == set(correct_options)
             else:
-                correct_option = question["choices"]["kor"][question["answer"][0]]
+                correct_option = question["choices"]["kor"][question["answers"][0]]
                 is_correct = user_answer == correct_option
 
             st.session_state[f"{topic}_answers"][current_q] = is_correct
