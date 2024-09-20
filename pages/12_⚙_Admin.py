@@ -3,11 +3,13 @@ import sqlite3
 import pandas as pd
 import config
 
+
 # 데이터베이스 연결 함수
 def get_db_connection():
-    conn = sqlite3.connect('db/db.sqlite')
+    conn = sqlite3.connect("db/db.sqlite")
     conn.row_factory = sqlite3.Row
     return conn
+
 
 # 테이블 목록 가져오기
 def get_tables():
@@ -18,6 +20,7 @@ def get_tables():
     conn.close()
     return [table[0] for table in tables]
 
+
 # 테이블 데이터 가져오기
 def get_table_data(table_name):
     conn = get_db_connection()
@@ -25,6 +28,7 @@ def get_table_data(table_name):
     df = pd.read_sql_query(query, conn)
     conn.close()
     return df
+
 
 # 데이터 수정하기
 def update_data(table_name, id_column, id_value, column, new_value):
@@ -35,6 +39,7 @@ def update_data(table_name, id_column, id_value, column, new_value):
     conn.commit()
     conn.close()
 
+
 # 데이터 삭제하기
 def delete_data(table_name, id_column, id_value):
     conn = get_db_connection()
@@ -44,13 +49,14 @@ def delete_data(table_name, id_column, id_value):
     conn.commit()
     conn.close()
 
+
 # 메인 앱
 def main():
     st.set_page_config(page_title="관리자 대시보드", page_icon="🔒", layout="wide")
     st.title("🔒 관리자 대시보드")
 
     # 세션 상태 초기화
-    if 'admin_authenticated' not in st.session_state:
+    if "admin_authenticated" not in st.session_state:
         st.session_state.admin_authenticated = False
 
     # 관리자 인증
@@ -86,7 +92,9 @@ def main():
         with col4:
             new_value = st.text_input("새 값 입력")
         if st.button("수정"):
-            update_data(selected_table, id_column, id_value, column_to_update, new_value)
+            update_data(
+                selected_table, id_column, id_value, column_to_update, new_value
+            )
             st.success("데이터가 수정되었습니다.")
             st.rerun()
 
@@ -94,9 +102,15 @@ def main():
         st.subheader("데이터 삭제")
         col1, col2 = st.columns(2)
         with col1:
-            delete_id_column = st.selectbox("삭제할 행의 ID 열 선택", df.columns, key="delete_id_column")
+            delete_id_column = st.selectbox(
+                "삭제할 행의 ID 열 선택", df.columns, key="delete_id_column"
+            )
         with col2:
-            delete_id_value = st.selectbox("삭제할 행의 ID 값 선택", df[delete_id_column].unique(), key="delete_id_value")
+            delete_id_value = st.selectbox(
+                "삭제할 행의 ID 값 선택",
+                df[delete_id_column].unique(),
+                key="delete_id_value",
+            )
         if st.button("삭제", type="primary"):
             delete_data(selected_table, delete_id_column, delete_id_value)
             st.success("데이터가 삭제되었습니다.")
@@ -106,6 +120,7 @@ def main():
     if st.sidebar.button("로그아웃"):
         st.session_state.admin_authenticated = False
         st.rerun()
+
 
 if __name__ == "__main__":
     main()
