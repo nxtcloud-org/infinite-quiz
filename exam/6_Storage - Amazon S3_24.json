@@ -659,7 +659,7 @@
       "eng": {
         "A": "S3 Versioning",
         "B": "S3 Transfer Acceleration",
-        "C": "S3ACLs",
+        "C": "S3 ACLs",
         "D": "S3 Intelligent-Tiering"
       }
     },
